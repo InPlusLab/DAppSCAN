@@ -1,0 +1,11 @@
+{
+ "node name": "strategy-curve-scrv-v4.test.json",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lines": "L34",
+   "sourcePath": "HAECHI_AUDIT-Pickle_Finance/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/src/controller-v3.sol"
+  }
+ ]
+}

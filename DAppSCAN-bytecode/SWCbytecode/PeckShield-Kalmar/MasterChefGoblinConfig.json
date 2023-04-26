@@ -1,0 +1,11 @@
+{
+ "node name": "MasterChefGoblinConfig.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "isStable",
+   "lines": "L68-L69",
+   "sourcePath": "PeckShield-Kalmar/leverage-yield-contracts-ad08aef5a2281639a3226f31d4d8d5aaba73967e/contracts/MasterChefGoblinConfig.sol"
+  }
+ ]
+}

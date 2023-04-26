@@ -1,0 +1,6 @@
+// SPDX-License-Identifier: GPL-3
+pragma solidity >=0.5.0;
+
+interface IImpossibleMigrator {
+    function migrate(address token, uint amountTokenMin, uint amountETHMin, address to, uint deadline) external;
+}

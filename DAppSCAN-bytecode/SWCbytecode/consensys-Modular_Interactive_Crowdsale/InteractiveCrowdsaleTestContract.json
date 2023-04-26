@@ -1,0 +1,29 @@
+{
+ "node name": "InteractiveCrowdsaleTestContract.json",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "N/A",
+   "lines": "L1-L655",
+   "sourcePath": "consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/IICOLib/truffle/contracts/InteractiveCrowdsaleLib.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "withdrawBid",
+   "lines": "L392-L395",
+   "sourcePath": "consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/IICOLib/truffle/contracts/InteractiveCrowdsaleLib.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "setCanceled",
+   "lines": "L543-550",
+   "sourcePath": "consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/IICOLib/truffle/contracts/InteractiveCrowdsaleLib.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "InteractiveCrowdsaleTestContract",
+   "lines": "L22",
+   "sourcePath": "consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/IICOLib/truffle/contracts/InteractiveCrowdsaleTestContract.sol"
+  }
+ ]
+}

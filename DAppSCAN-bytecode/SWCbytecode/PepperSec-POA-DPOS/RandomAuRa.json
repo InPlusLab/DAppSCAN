@@ -1,0 +1,11 @@
+{
+ "node name": "RandomAuRa.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "onlyValidatorSetContract",
+   "lines": "L24-L27",
+   "sourcePath": "PepperSec-POA-DPOS/posdao-contracts-fdaa685de851378b35741bdab986414dfd9042b1/contracts/abstracts/RandomBase.sol"
+  }
+ ]
+}

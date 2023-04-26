@@ -1,0 +1,17 @@
+{
+ "node name": "MarketOracle.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "getPriceAnd24HourVolume",
+   "lines": "L34 - L60",
+   "sourcePath": "Trail_of_Bits-ampleforth/market-oracle-888fccaf05786f3f7f49e18ff040f911d44906f4/contracts/MarketOracle.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "removeSourceAtIndex",
+   "lines": "L143",
+   "sourcePath": "Trail_of_Bits-ampleforth/market-oracle-888fccaf05786f3f7f49e18ff040f911d44906f4/contracts/MarketOracle.sol"
+  }
+ ]
+}

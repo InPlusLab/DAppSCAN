@@ -1,0 +1,11 @@
+{
+ "node name": "CompPayback.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "enterMarket",
+   "lines": "L27-138",
+   "sourcePath": "consensys-DeFi_Saver/defisaver-v3-contracts-cb29669a84c2d6fffaf2231c0938eb407c060919/contracts/actions/compound/helpers/CompHelper.sol"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "SpiritRouter.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "quote",
+   "lines": "L274",
+   "sourcePath": "QuillAudits-SpiritSwap-SpiritSwap/spiritswap-core-a23463f87fd3c7633e97fab5e8124b4499e1519e/SpiritRouter.sol"
+  }
+ ]
+}

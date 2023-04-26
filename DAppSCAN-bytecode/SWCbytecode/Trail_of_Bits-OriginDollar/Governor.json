@@ -1,0 +1,29 @@
+{
+ "node name": "Governor.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_queueOrRevert",
+   "lines": "L158 - L172",
+   "sourcePath": "Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/Governor.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "execute",
+   "lines": "L175 - L192",
+   "sourcePath": "Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/Governor.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "__queueSetTimelockPendingAdmin",
+   "lines": "L217 - L232",
+   "sourcePath": "Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/Governor.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "__executeSetTimelockPendingAdmin",
+   "lines": "L235 - L250",
+   "sourcePath": "Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/Governor.sol"
+  }
+ ]
+}

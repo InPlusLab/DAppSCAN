@@ -1,0 +1,11 @@
+{
+ "node name": "Bank.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "deposit",
+   "lines": "L107",
+   "sourcePath": "PeckShield-Kalmar/leverage-yield-contracts-ad08aef5a2281639a3226f31d4d8d5aaba73967e/contracts/Bank.sol"
+  }
+ ]
+}

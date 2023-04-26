@@ -1,0 +1,35 @@
+{
+ "node name": "EchidnaTester.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_moveTokensAndETHfromAdjustment",
+   "lines": "L351",
+   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/BorrowerOperations.sol"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "_requireValidRecipient",
+   "lines": "L212-L224",
+   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/LUSDToken.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "redeemCollateral",
+   "lines": "L920",
+   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "getTCR",
+   "lines": "L1276-L1284",
+   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "getEntireSystemColl",
+   "lines": "L1286-L1291",
+   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
+  }
+ ]
+}

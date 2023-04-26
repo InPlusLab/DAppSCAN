@@ -1,0 +1,11 @@
+{
+ "node name": "StabilityPoolTester.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_computeRewardsPerUnitStaked",
+   "lines": "L504",
+   "sourcePath": "Trail_of_Bits-LiquityProtocolandStabilityPoolFinalReport/dev-8cec3fda04b8c71994dc14858386bf6a161164fc/packages/contracts/contracts/StabilityPool.sol"
+  }
+ ]
+}

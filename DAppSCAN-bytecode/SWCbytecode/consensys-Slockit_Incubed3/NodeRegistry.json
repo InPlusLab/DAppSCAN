@@ -1,0 +1,17 @@
+{
+ "node name": "NodeRegistry.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "onlyActiveState",
+   "lines": "L125-133",
+   "sourcePath": "consensys-Slockit_Incubed3/in3-contracts-e25c758a115aef0c0640bc446027259aa7cb1a52/contracts/NodeRegistry.sol"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "convict",
+   "lines": "L152-159",
+   "sourcePath": "consensys-Slockit_Incubed3/in3-contracts-e25c758a115aef0c0640bc446027259aa7cb1a52/contracts/NodeRegistry.sol"
+  }
+ ]
+}

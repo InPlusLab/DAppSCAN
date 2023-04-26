@@ -1,0 +1,17 @@
+{
+ "node name": "CGUToken.json",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "getLockedAmount",
+   "lines": "L55",
+   "sourcePath": "Hacken-CGU/CGUToken0x747D74dB20cc422F39ab54EDB2A3Ce21f3C98AF1/contracts/CGUToken.sol"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "transferAndCall",
+   "lines": "L80",
+   "sourcePath": "Hacken-CGU/CGUToken0x747D74dB20cc422F39ab54EDB2A3Ce21f3C98AF1/contracts/CGUToken.sol"
+  }
+ ]
+}

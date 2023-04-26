@@ -1,0 +1,11 @@
+{
+ "node name": "TokenMintERC20Token0x887168120cb89Fb06F3E74Dc4AF20D67dF0977f6.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L13",
+   "sourcePath": "Hacken-Sekuritance/TokenMintERC20Token0x887168120cb89Fb06F3E74Dc4AF20D67dF0977f6/TokenMintERC20Token0x887168120cb89Fb06F3E74Dc4AF20D67dF0977f6.sol"
+  }
+ ]
+}

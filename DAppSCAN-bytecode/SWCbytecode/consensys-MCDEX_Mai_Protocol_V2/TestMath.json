@@ -1,0 +1,11 @@
+{
+ "node name": "TestMath.json",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "min",
+   "lines": "L90-96",
+   "sourcePath": "consensys-MCDEX_Mai_Protocol_V2/mai-protocol-v2-4b198083ec4ae2d6851e101fc44ea333eaa3cd92/contracts/lib/LibMath.sol"
+  }
+ ]
+}

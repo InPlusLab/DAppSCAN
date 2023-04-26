@@ -1,0 +1,11 @@
+{
+ "node name": "LensNFTBase.json",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lines": "L3",
+   "sourcePath": "PeckShield-LensProtocol/lens-protocol-dd137b2dee64c5edf288df297ee4249a0e6c11d4/contracts/core/base/ERC721Enumerable.sol"
+  }
+ ]
+}

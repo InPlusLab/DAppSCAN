@@ -1,0 +1,11 @@
+{
+ "node name": "JoinSplit.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "validateJoinSplit",
+   "lines": "L75-L78",
+   "sourcePath": "consensys-AZTEC_Protocol/AZTEC-develop/packages/protocol/contracts/ACE/validators/joinSplit/JoinSplit.sol"
+  }
+ ]
+}

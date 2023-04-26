@@ -1,0 +1,11 @@
+{
+ "node name": "YDai.json",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "permit",
+   "lines": "L48 - L77",
+   "sourcePath": "Trail_of_Bits-YieldProtocol/fyDai-4422fda75931f2bfea49f5041ec90dc026e5c03d/contracts/helpers/ERC20Permit.sol"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "node name": "Pool.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "isUsingAsCollateralOne",
+   "lines": "L122",
+   "sourcePath": "PeckShield-AaveV3/code/aave-v3-core-14f6148e21b477d78347db6a1603039c9559e275/contracts/protocol/libraries/configuration/UserConfiguration.sol"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "executeFlashLoanSimple",
+   "lines": "L182-L240",
+   "sourcePath": "PeckShield-AaveV3/code/aave-v3-core-14f6148e21b477d78347db6a1603039c9559e275/contracts/protocol/libraries/logic/FlashLoanLogic.sol"
+  },
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lines": "L213-L222",
+   "sourcePath": "PeckShield-AaveV3/code/aave-v3-core-14f6148e21b477d78347db6a1603039c9559e275/contracts/protocol/libraries/logic/ReserveLogic.sol"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "SigmoidCuratorVault.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "buyCuratorTokens",
+   "lines": "L95-L57",
+   "sourcePath": "Quantstamp-Rara/rara-protocol-a4a2474c9cbc8238f0ee7f6c1d1e9924bf9da95d/contracts/SigmoidCuratorVault/SigmoidCuratorVault.sol"
+  }
+ ]
+}

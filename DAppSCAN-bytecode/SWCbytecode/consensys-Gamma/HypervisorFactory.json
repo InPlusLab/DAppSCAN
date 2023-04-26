@@ -1,0 +1,23 @@
+{
+ "node name": "HypervisorFactory.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "deposit",
+   "lines": "L81-142",
+   "sourcePath": "consensys-Gamma/hypervisor-41fd4abf79864478523e87924d4e80d80df04879/contracts/Hypervisor.sol"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lines": "L175-216",
+   "sourcePath": "consensys-Gamma/hypervisor-41fd4abf79864478523e87924d4e80d80df04879/contracts/Hypervisor.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "uniswapV3MintCallback",
+   "lines": "L415",
+   "sourcePath": "consensys-Gamma/hypervisor-41fd4abf79864478523e87924d4e80d80df04879/contracts/Hypervisor.sol"
+  }
+ ]
+}

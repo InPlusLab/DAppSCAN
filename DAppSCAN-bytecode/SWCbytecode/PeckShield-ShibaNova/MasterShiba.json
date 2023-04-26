@@ -1,0 +1,11 @@
+{
+ "node name": "MasterShiba.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lines": "L339 - L341",
+   "sourcePath": "PeckShield-ShibaNova/Contracts-b6b1ce1fcaff83d360df8944309f49958842b7b8/shibanova/contracts/MasterShiba.sol"
+  }
+ ]
+}

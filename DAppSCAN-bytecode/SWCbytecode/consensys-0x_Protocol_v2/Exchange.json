@@ -1,0 +1,17 @@
+{
+ "node name": "Exchange.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L32",
+   "sourcePath": "consensys-0x_Protocol_v2/0x-monorepo-a05b14e4d9659be1cc495ee33fd8962ce773f87f/packages/contracts/src/2.0.0/protocol/Exchange/MixinAssetProxyDispatcher.sol"
+  },
+  {
+   "category": "SWC-Lack of Proper Signature Verification",
+   "function": "preSign",
+   "lines": "L52-L59",
+   "sourcePath": "consensys-0x_Protocol_v2/0x-monorepo-a05b14e4d9659be1cc495ee33fd8962ce773f87f/packages/contracts/src/2.0.0/protocol/Exchange/MixinSignatureValidator.sol"
+  }
+ ]
+}

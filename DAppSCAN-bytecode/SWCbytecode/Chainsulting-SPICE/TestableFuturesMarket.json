@@ -1,0 +1,11 @@
+{
+ "node name": "TestableFuturesMarket.json",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lines": "L3",
+   "sourcePath": "Chainsulting-SPICE/synthetix-develop/contracts/AddressResolver.sol"
+  }
+ ]
+}

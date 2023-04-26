@@ -1,0 +1,23 @@
+{
+ "node name": "xMPHEchidnaTest.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_deposit",
+   "lines": "L178",
+   "sourcePath": "Trail_of_Bits-88mph/88mph-contracts-76cd9d1fc45e65f5d0f686621fe6af85c40aa140/contracts/rewards/xMPH.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_withdraw",
+   "lines": "L196",
+   "sourcePath": "Trail_of_Bits-88mph/88mph-contracts-76cd9d1fc45e65f5d0f686621fe6af85c40aa140/contracts/rewards/xMPH.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_distributeReward",
+   "lines": "L212",
+   "sourcePath": "Trail_of_Bits-88mph/88mph-contracts-76cd9d1fc45e65f5d0f686621fe6af85c40aa140/contracts/rewards/xMPH.sol"
+  }
+ ]
+}

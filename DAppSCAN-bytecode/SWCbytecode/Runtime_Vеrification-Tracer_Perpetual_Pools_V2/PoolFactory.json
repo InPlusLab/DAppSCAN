@@ -1,0 +1,29 @@
+{
+ "node name": "PoolFactory.json",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "commit",
+   "lines": "L139-L181",
+   "sourcePath": "Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/perpetual-pools-contracts-846bbf62652d7c83aee1cf3766275c4d08b00c8a/contracts/implementation/PoolCommitter.sol"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "claim",
+   "lines": "L187-L201",
+   "sourcePath": "Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/perpetual-pools-contracts-846bbf62652d7c83aee1cf3766275c4d08b00c8a/contracts/implementation/PoolCommitter.sol"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "executeCommitments",
+   "lines": "L305-L315",
+   "sourcePath": "Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/perpetual-pools-contracts-846bbf62652d7c83aee1cf3766275c4d08b00c8a/contracts/implementation/PoolCommitter.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "updateAggregateBalance",
+   "lines": "L386",
+   "sourcePath": "Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/perpetual-pools-contracts-846bbf62652d7c83aee1cf3766275c4d08b00c8a/contracts/implementation/PoolCommitter.sol"
+  }
+ ]
+}

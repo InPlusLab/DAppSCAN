@@ -1,0 +1,11 @@
+{
+ "node name": "WaultSwapFactory0xB42E3FE71b7E0673335b3331B3e1053BD9822570.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L5",
+   "sourcePath": "Inspex-WSwap/WaultSwapFactory0xB42E3FE71b7E0673335b3331B3e1053BD9822570/WaultSwapFactory0xB42E3FE71b7E0673335b3331B3e1053BD9822570.sol"
+  }
+ ]
+}

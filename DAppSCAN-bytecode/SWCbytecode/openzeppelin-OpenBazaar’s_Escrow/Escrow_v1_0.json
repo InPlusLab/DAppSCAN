@@ -1,0 +1,17 @@
+{
+ "node name": "Escrow_v1_0.json",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lines": "L39",
+   "sourcePath": "openzeppelin-OpenBazaar\u2019s_Escrow/smart-contracts-c4f02cdd41cb85d28bba637a01f20a8ee8bb04bd/contracts/escrow/Escrow_v1_0.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transferFunds",
+   "lines": "L491",
+   "sourcePath": "openzeppelin-OpenBazaar\u2019s_Escrow/smart-contracts-c4f02cdd41cb85d28bba637a01f20a8ee8bb04bd/contracts/escrow/Escrow_v1_0.sol"
+  }
+ ]
+}

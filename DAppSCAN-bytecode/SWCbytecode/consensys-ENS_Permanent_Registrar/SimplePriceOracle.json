@@ -1,0 +1,11 @@
+{
+ "node name": "SimplePriceOracle.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "price",
+   "lines": "L27-L29",
+   "sourcePath": "consensys-ENS_Permanent_Registrar/ethregistrar-e52abfc2799ac361364aca6135fc20f9175a29fd/contracts/SimplePriceOracle.sol"
+  }
+ ]
+}

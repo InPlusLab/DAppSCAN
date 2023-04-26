@@ -1,0 +1,11 @@
+{
+ "node name": "SimpleMultiSig.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L2",
+   "sourcePath": "consensys-Paxos/simple-multisig-master/contracts/SimpleMultiSig.sol"
+  }
+ ]
+}

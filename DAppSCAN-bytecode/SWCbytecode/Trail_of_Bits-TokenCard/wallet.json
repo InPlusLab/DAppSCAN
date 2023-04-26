@@ -1,0 +1,29 @@
+{
+ "node name": "wallet.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L1 - L248",
+   "sourcePath": "Trail_of_Bits-TokenCard/contracts-b99b7d1670f9ad7b90335e8391fe63fd7e20de9b/contracts/licence.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L1 - L792",
+   "sourcePath": "Trail_of_Bits-TokenCard/contracts-b99b7d1670f9ad7b90335e8391fe63fd7e20de9b/contracts/wallet.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "convertToEther",
+   "lines": "L562",
+   "sourcePath": "Trail_of_Bits-TokenCard/contracts-b99b7d1670f9ad7b90335e8391fe63fd7e20de9b/contracts/wallet.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "convertToStablecoin",
+   "lines": "L707",
+   "sourcePath": "Trail_of_Bits-TokenCard/contracts-b99b7d1670f9ad7b90335e8391fe63fd7e20de9b/contracts/wallet.sol"
+  }
+ ]
+}

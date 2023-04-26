@@ -1,0 +1,11 @@
+{
+ "node name": "TestACLInterpreter.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "getTimestamp",
+   "lines": "L37-L39",
+   "sourcePath": "consensys-AragonOS_and_Aragon_Apps/aragonOS-a68479107f564e6be98a6b877b78f635fca96dbe/contracts/common/TimeHelpers.sol"
+  }
+ ]
+}

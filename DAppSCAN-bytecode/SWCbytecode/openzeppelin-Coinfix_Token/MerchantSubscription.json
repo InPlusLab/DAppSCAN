@@ -1,0 +1,11 @@
+{
+ "node name": "MerchantSubscription.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L2",
+   "sourcePath": "openzeppelin-Coinfix_Token/coinfix.io-smart-contracts-75edd659ce96c88fe2784f3e767d6617787e8b7c/merchant_subscription/MerchantSubscription.sol"
+  }
+ ]
+}

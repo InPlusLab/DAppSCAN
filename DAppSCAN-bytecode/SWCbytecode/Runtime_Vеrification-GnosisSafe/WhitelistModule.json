@@ -1,0 +1,29 @@
+{
+ "node name": "WhitelistModule.json",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "addOwnerWithThreshold",
+   "lines": "L53 - L68",
+   "sourcePath": "Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/base/OwnerManager.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "addOwnerWithThreshold",
+   "lines": "L64",
+   "sourcePath": "Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/base/OwnerManager.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "removeOwner",
+   "lines": "L82",
+   "sourcePath": "Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/base/OwnerManager.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "removeOwner",
+   "lines": "L89",
+   "sourcePath": "Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/base/OwnerManager.sol"
+  }
+ ]
+}

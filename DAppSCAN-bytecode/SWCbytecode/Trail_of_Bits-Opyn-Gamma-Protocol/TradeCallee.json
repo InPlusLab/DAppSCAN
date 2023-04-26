@@ -1,0 +1,11 @@
+{
+ "node name": "TradeCallee.json",
+ "SWCs": [
+  {
+   "category": "SWC-Authorization through tx.origin",
+   "function": "callFunction",
+   "lines": "L65",
+   "sourcePath": "Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/external/callees/TradeCallee.sol"
+  }
+ ]
+}

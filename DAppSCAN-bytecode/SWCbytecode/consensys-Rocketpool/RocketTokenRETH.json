@@ -1,0 +1,11 @@
+{
+ "node name": "RocketTokenRETH.json",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "burn",
+   "lines": "L107-124",
+   "sourcePath": "consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/token/RocketTokenRETH.sol"
+  }
+ ]
+}

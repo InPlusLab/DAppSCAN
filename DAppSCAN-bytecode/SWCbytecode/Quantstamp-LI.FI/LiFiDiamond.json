@@ -1,0 +1,11 @@
+{
+ "node name": "LiFiDiamond.json",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lines": "L3",
+   "sourcePath": "Quantstamp-LI.FI/contracts-7a4a6675f12f7980bde7794b60fb8fc7b3e6c9e8/src/LiFiDiamond.sol"
+  }
+ ]
+}

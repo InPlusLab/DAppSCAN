@@ -1,0 +1,11 @@
+{
+ "node name": "DutchCrowdsaleIdx.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "getRateAndTimeRemaining",
+   "lines": "L363 - L381",
+   "sourcePath": "PepperSec-POA-Network-Wizard/auth-os-applications-2840b97dea33c8cf455a67b2b9c7229e2cda1843/TokenWizard/crowdsale/DutchCrowdsale/contracts/DutchCrowdsaleIdx.sol"
+  }
+ ]
+}

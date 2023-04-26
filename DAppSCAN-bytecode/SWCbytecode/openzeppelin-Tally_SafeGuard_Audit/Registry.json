@@ -1,0 +1,11 @@
+{
+ "node name": "Registry.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "register",
+   "lines": "L30-L33",
+   "sourcePath": "openzeppelin-Tally_SafeGuard_Audit/safeguard-b2c63a9dfc4090be13320d999e7c6c1d842625d3/contracts/Registry.sol"
+  }
+ ]
+}

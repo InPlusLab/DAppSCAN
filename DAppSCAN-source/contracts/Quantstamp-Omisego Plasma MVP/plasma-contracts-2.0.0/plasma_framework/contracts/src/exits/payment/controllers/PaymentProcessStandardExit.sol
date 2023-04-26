@@ -1,0 +1,96 @@
+pragma solidity 0.5.11;
+pragma experimental ABIEncoderV2;
+
+import "../PaymentExitDataModel.sol";
+import "../routers/PaymentStandardExitRouterArgs.sol";
+import "../../../framework/PlasmaFramework.sol";
+import "../../../utils/SafeEthTransfer.sol";
+import "../../../vaults/EthVault.sol";
+import "../../../vaults/Erc20Vault.sol";
+
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
+
+library PaymentProcessStandardExit {
+    using SafeMath for uint256;
+
+    struct Controller {
+        PlasmaFramework framework;
+        EthVault ethVault;
+        Erc20Vault erc20Vault;
+        uint256 safeGasStipend;
+    }
+
+    event ExitOmitted(
+        uint168 indexed exitId
+    );
+
+    event ExitFinalized(
+        uint168 indexed exitId
+    );
+
+    event BondReturnFailed(
+        address indexed receiver,
+        uint256 amount
+    );
+
+    event BountyReturnFailed(
+        address indexed receiver,
+        uint256 amount
+    );
+
+    /**
+     * @notice Main logic function to process standard exit
+     * @dev emits ExitOmitted event if the exit is omitted
+     * @dev emits ExitFinalized event if the exit is processed and funds are withdrawn
+     * @param self The controller struct
+     * @param exitMap The storage of all standard exit data
+     * @param exitId The exitId of the standard exit
+     * @param token The ERC20 token address of the exit. Uses address(0) to represent ETH.
+     * @param processExitInitiator The processExits() initiator
+     */
+    function run(
+        Controller memory self,
+        PaymentExitDataModel.StandardExitMap storage exitMap,
+        uint168 exitId,
+        address token,
+        address payable processExitInitiator
+    )
+        public
+    {
+        PaymentExitDataModel.StandardExit memory exit = exitMap.exits[exitId];
+
+        if (!exit.exitable || self.framework.isOutputFinalized(exit.outputId)) {
+            emit ExitOmitted(exitId);
+            delete exitMap.exits[exitId];
+            return;
+        }
+
+        self.framework.flagOutputFinalized(exit.outputId, exitId);
+
+        // skip bond return if the bond is equal to bounty
+        if (exit.bondSize > exit.bountySize) {
+            uint256 bondReturnAmount = exit.bondSize.sub(exit.bountySize);
+            bool successBondReturn = SafeEthTransfer.transferReturnResult(exit.exitTarget, bondReturnAmount, self.safeGasStipend);
+
+            // we do not want to block a queue if bond return is unsuccessful
+            if (!successBondReturn) {
+                emit BondReturnFailed(exit.exitTarget, bondReturnAmount);
+            }
+        }
+
+        bool successBountyReturn = SafeEthTransfer.transferReturnResult(processExitInitiator, exit.bountySize, self.safeGasStipend);
+        if (!successBountyReturn) {
+            emit BountyReturnFailed(processExitInitiator, exit.bountySize);
+        }
+
+        if (token == address(0)) {
+            self.ethVault.withdraw(exit.exitTarget, exit.amount);
+        } else {
+            self.erc20Vault.withdraw(exit.exitTarget, token, exit.amount);
+        }
+
+        delete exitMap.exits[exitId];
+
+        emit ExitFinalized(exitId);
+    }
+}

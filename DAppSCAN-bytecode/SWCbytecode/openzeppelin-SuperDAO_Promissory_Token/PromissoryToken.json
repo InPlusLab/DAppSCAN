@@ -1,0 +1,29 @@
+{
+ "node name": "PromissoryToken.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L2-L417",
+   "sourcePath": "openzeppelin-SuperDAO_Promissory_Token/Superdao-Seed-Stage1-c20d6d45d911f59003122d97df701848cf597cab/contracts/PromissoryToken.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "PromissoryToken",
+   "lines": "L87",
+   "sourcePath": "openzeppelin-SuperDAO_Promissory_Token/Superdao-Seed-Stage1-c20d6d45d911f59003122d97df701848cf597cab/contracts/PromissoryToken.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "founderSwitchRequest",
+   "lines": "L87",
+   "sourcePath": "openzeppelin-SuperDAO_Promissory_Token/Superdao-Seed-Stage1-c20d6d45d911f59003122d97df701848cf597cab/contracts/PromissoryToken.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "setPrepaid",
+   "lines": "L163",
+   "sourcePath": "openzeppelin-SuperDAO_Promissory_Token/Superdao-Seed-Stage1-c20d6d45d911f59003122d97df701848cf597cab/contracts/PromissoryToken.sol"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "node name": "PayableProxyController.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_runActions",
+   "lines": "L451-L508",
+   "sourcePath": "openzeppelin-Opyn_Gamma_Protocol/GammaProtocol-d151621b33134789b29dc78eb89dad2b557b25b9/contracts/Controller.sol"
+  },
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "operate",
+   "lines": "L74",
+   "sourcePath": "openzeppelin-Opyn_Gamma_Protocol/GammaProtocol-d151621b33134789b29dc78eb89dad2b557b25b9/contracts/external/proxies/PayableProxyController.sol"
+  }
+ ]
+}

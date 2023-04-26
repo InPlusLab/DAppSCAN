@@ -1,0 +1,29 @@
+{
+ "node name": "ProjectKudos.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L1",
+   "sourcePath": "openzeppelin-EtherCamp_ProjectKudos_public_code/virtual-accelerator-6665fdd4b71088443a74d1ed9fda52c6a8c8b975/ProjectKudos.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L20-24,281-303,313-320",
+   "sourcePath": "openzeppelin-EtherCamp_ProjectKudos_public_code/virtual-accelerator-6665fdd4b71088443a74d1ed9fda52c6a8c8b975/ProjectKudos.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "duringVote",
+   "lines": "L330-334",
+   "sourcePath": "openzeppelin-EtherCamp_ProjectKudos_public_code/virtual-accelerator-6665fdd4b71088443a74d1ed9fda52c6a8c8b975/ProjectKudos.sol"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "onlyOwner",
+   "lines": "L331,332",
+   "sourcePath": "openzeppelin-EtherCamp_ProjectKudos_public_code/virtual-accelerator-6665fdd4b71088443a74d1ed9fda52c6a8c8b975/ProjectKudos.sol"
+  }
+ ]
+}

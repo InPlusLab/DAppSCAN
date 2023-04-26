@@ -1,0 +1,11 @@
+{
+ "node name": "TestSoloMargin.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_setPriceOracle",
+   "lines": "L258-L275",
+   "sourcePath": "openzeppelin-Solo_Margin_Protocol/solo-17df84db351d5438e1b7437572722b4f52c8b2b4/contracts/protocol/impl/AdminImpl.sol"
+  }
+ ]
+}

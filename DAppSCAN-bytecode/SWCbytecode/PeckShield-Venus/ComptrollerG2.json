@@ -1,0 +1,11 @@
+{
+ "node name": "ComptrollerG2.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L480-L488",
+   "sourcePath": "PeckShield-Venus/venus-protocol-48c7400f668116f5e5fa92299e28cf16b49b485c/contracts/VToken.sol"
+  }
+ ]
+}

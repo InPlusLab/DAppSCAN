@@ -1,0 +1,11 @@
+{
+ "node name": "OlympusERC20.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L1245-L1303",
+   "sourcePath": "PeckShield-OlympusDAO/olympus-contracts-cdd4afe9c31403d8d5e2e96cadc5aaee2d0e6c93/contracts/OlympusERC20.sol"
+  }
+ ]
+}

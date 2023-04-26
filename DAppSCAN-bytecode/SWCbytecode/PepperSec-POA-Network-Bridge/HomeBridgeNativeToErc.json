@@ -1,0 +1,11 @@
+{
+ "node name": "HomeBridgeNativeToErc.json",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "onExecuteAffirmation",
+   "lines": "L46",
+   "sourcePath": "PepperSec-POA-Network-Bridge/tokenbridge-contracts-2bf70c7e9fd42968aec2dc352017618907834401/contracts/upgradeable_contracts/native_to_erc20/HomeBridgeNativeToErc.sol"
+  }
+ ]
+}

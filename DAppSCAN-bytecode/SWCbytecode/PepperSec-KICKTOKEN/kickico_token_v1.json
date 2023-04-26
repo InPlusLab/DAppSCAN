@@ -1,0 +1,17 @@
+{
+ "node name": "kickico_token_v1.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "onlyWhitelisted",
+   "lines": "L71 - L81",
+   "sourcePath": "PepperSec-KICKTOKEN/public-audit-reports-master/sources/KIKCICO/kickico_token_v1.sol"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transferFrozenToken",
+   "lines": "L301",
+   "sourcePath": "PepperSec-KICKTOKEN/public-audit-reports-master/sources/KIKCICO/kickico_token_v1.sol"
+  }
+ ]
+}

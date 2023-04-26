@@ -1,0 +1,17 @@
+{
+ "node name": "VEReward.json",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "getBlockByTime",
+   "lines": "L119-134",
+   "sourcePath": "BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/VEReward.sol"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "claimRewardMany",
+   "lines": "L269-275",
+   "sourcePath": "BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/VEReward.sol"
+  }
+ ]
+}

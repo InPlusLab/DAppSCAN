@@ -1,0 +1,11 @@
+{
+ "node name": "Lockup.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "constructor",
+   "lines": "L55",
+   "sourcePath": "Hacken-FoilNetwork/tge-seed-round-smart-contract-D3522A4628CE735058E57852AB1425600D296FC8/Lockup.sol"
+  }
+ ]
+}

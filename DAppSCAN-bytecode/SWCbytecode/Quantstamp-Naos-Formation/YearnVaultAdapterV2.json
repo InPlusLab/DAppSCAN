@@ -1,0 +1,11 @@
+{
+ "node name": "YearnVaultAdapterV2.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "deposit",
+   "lines": "L65",
+   "sourcePath": "Quantstamp-Naos-Formation/NAOS-Formation-master/contracts/adapters/YearnVaultAdapter.sol"
+  }
+ ]
+}

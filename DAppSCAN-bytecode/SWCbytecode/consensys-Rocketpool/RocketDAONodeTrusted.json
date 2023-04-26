@@ -1,0 +1,11 @@
+{
+ "node name": "RocketDAONodeTrusted.json",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "MemberJoined",
+   "lines": "L21-22",
+   "sourcePath": "consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/dao/node/RocketDAONodeTrusted.sol"
+  }
+ ]
+}

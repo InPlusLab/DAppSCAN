@@ -1,0 +1,11 @@
+{
+ "node name": "Swap.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "getYD",
+   "lines": "L293-L295",
+   "sourcePath": "openzeppelin-Saddle_Contracts/saddle-contract-0b76f7fb519e34b878aa1d58cffc8d8dc0572c12/contracts/SwapUtils.sol"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "node name": "FinToken.json",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lines": "L7",
+   "sourcePath": "Chainsulting-NOM/FinToken/FinToken.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lines": "L226",
+   "sourcePath": "Chainsulting-NOM/FinToken/FinToken.sol"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "RocketMinipoolDelegate.json",
+ "SWCs": [
+  {
+   "category": "SWC sends",
+   "function": "payout",
+   "lines": "// It is payable to allow for very small amounts of ETH to be sent in the tx if the final amount is every so slightly innacurate to what the SWC sends",
+   "sourcePath": "consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/minipool/RocketMinipoolDelegate.sol"
+  }
+ ]
+}

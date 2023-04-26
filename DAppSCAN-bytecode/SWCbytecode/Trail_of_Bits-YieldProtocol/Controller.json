@@ -1,0 +1,11 @@
+{
+ "node name": "Controller.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "withdraw",
+   "lines": "L294 - L320",
+   "sourcePath": "Trail_of_Bits-YieldProtocol/fyDai-4422fda75931f2bfea49f5041ec90dc026e5c03d/contracts/Controller.sol"
+  }
+ ]
+}

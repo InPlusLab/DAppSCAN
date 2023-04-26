@@ -1,0 +1,11 @@
+{
+ "node name": "OracleRouter.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "price",
+   "lines": "L32",
+   "sourcePath": "openzeppelin-Origin_Dollar/origin-dollar-bf4ff28d5944ecc277e66294fd2c702fee5cd58b/contracts/contracts/oracle/OracleRouter.sol"
+  }
+ ]
+}

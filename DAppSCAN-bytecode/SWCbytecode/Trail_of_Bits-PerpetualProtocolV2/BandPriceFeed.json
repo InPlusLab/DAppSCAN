@@ -1,0 +1,11 @@
+{
+ "node name": "BandPriceFeed.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "update",
+   "lines": "L77 - L82",
+   "sourcePath": "Trail_of_Bits-PerpetualProtocolV2/perp-oracle-contract-ba78a5b87098dcffb7285fc585afff1001a87232/contracts/BandPriceFeed.sol"
+  }
+ ]
+}

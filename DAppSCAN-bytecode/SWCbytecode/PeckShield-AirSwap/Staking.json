@@ -1,0 +1,11 @@
+{
+ "node name": "Staking.json",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lines": "L39 - L52",
+   "sourcePath": "PeckShield-AirSwap/airswap-protocols-ac62b7109974d9069ff6bc153bc9660acc4e144f/source/staking/contracts/Staking.sol"
+  }
+ ]
+}

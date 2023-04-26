@@ -1,0 +1,23 @@
+{
+ "node name": "ExchangeIssuanceModule.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "executeExchangeOrders",
+   "lines": "L76",
+   "sourcePath": "Trail_of_Bits-setprotocol/set-protocol-contracts-b4acf144c10b1d9f3ecde4ee2820931df1cb8e4a/contracts/core/modules/lib/ExchangeExecution.sol"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "executeExchangeOrders",
+   "lines": "L76",
+   "sourcePath": "Trail_of_Bits-setprotocol/set-protocol-contracts-b4acf144c10b1d9f3ecde4ee2820931df1cb8e4a/contracts/core/modules/lib/ExchangeExecution.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "hasDuplicate",
+   "lines": "L303 - L315",
+   "sourcePath": "Trail_of_Bits-setprotocol/set-protocol-contracts-b4acf144c10b1d9f3ecde4ee2820931df1cb8e4a/contracts/lib/AddressArrayUtils.sol"
+  }
+ ]
+}

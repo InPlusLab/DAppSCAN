@@ -1,0 +1,29 @@
+{
+ "node name": "Api3Pool.json",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "userDelegateAt",
+   "lines": "L217 - L223",
+   "sourcePath": "Quantstamp-API3/api3-dao-283e6ba8bbf45a8d51bbb6fc166ca3d4673a0911/packages/pool/contracts/GetterUtils.sol"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "getUserLocked",
+   "lines": "L259 - L279",
+   "sourcePath": "Quantstamp-API3/api3-dao-283e6ba8bbf45a8d51bbb6fc166ca3d4673a0911/packages/pool/contracts/GetterUtils.sol"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "getValueAt",
+   "lines": "L297 - L304",
+   "sourcePath": "Quantstamp-API3/api3-dao-283e6ba8bbf45a8d51bbb6fc166ca3d4673a0911/packages/pool/contracts/GetterUtils.sol"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "setDaoApps",
+   "lines": "L222 - L252",
+   "sourcePath": "Quantstamp-API3/api3-dao-283e6ba8bbf45a8d51bbb6fc166ca3d4673a0911/packages/pool/contracts/StateUtils.sol"
+  }
+ ]
+}

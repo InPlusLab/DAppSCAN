@@ -1,0 +1,17 @@
+{
+ "node name": "HomoraBank.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lines": "L1-L499",
+   "sourcePath": "Quantstamp-AlphaHomoraV2/alpha-homora-v2-contract-16a6f9ac884ba09d2f8eac99b0038fb8a12e4ee8/contracts/HomoraBank.sol"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "initialize",
+   "lines": "L105-L117",
+   "sourcePath": "Quantstamp-AlphaHomoraV2/alpha-homora-v2-contract-16a6f9ac884ba09d2f8eac99b0038fb8a12e4ee8/contracts/HomoraBank.sol"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "LuckyToken.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_mint",
+   "lines": "L54",
+   "sourcePath": "PeckShield-LuckyToken/Lucky-Token-c9deec551edaa18f8419bbda5fca48776f191e80/contracts/LuckyToken.sol"
+  }
+ ]
+}

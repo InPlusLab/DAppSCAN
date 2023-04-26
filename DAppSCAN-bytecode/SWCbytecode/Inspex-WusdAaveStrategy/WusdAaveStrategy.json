@@ -1,0 +1,11 @@
+{
+ "node name": "WusdAaveStrategy.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L3",
+   "sourcePath": "Inspex-WusdAaveStrategy/WUSD-main/WusdAaveStrategy.sol"
+  }
+ ]
+}

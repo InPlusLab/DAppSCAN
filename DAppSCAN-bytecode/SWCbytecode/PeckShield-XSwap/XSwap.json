@@ -1,0 +1,11 @@
+{
+ "node name": "XSwap.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "setPrices",
+   "lines": "L152",
+   "sourcePath": "PeckShield-XSwap/xswap-326a3246b327cd2b8481fd8c22fe8d864e43b0da/contracts/XSwap.sol"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "node name": "StakefishServicesContract.json",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lines": "L33",
+   "sourcePath": "Runtime_V\u0435rification-stakefish_ethereum_staking_audit_report/eth2-validation-services-contract-d91928f3a270f6115831fe3a21a69eb98bf57b26/contracts/StakefishServicesContract.sol"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "endOperatorServices",
+   "lines": "L171-L189",
+   "sourcePath": "Runtime_V\u0435rification-stakefish_ethereum_staking_audit_report/eth2-validation-services-contract-d91928f3a270f6115831fe3a21a69eb98bf57b26/contracts/StakefishServicesContract.sol"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "approve",
+   "lines": "L226-L247",
+   "sourcePath": "Runtime_V\u0435rification-stakefish_ethereum_staking_audit_report/eth2-validation-services-contract-d91928f3a270f6115831fe3a21a69eb98bf57b26/contracts/StakefishServicesContract.sol"
+  }
+ ]
+}

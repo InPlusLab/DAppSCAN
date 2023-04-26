@@ -1,0 +1,11 @@
+{
+ "node name": "ShibaRouter.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "getReserves",
+   "lines": "L30 - L35",
+   "sourcePath": "PeckShield-ShibaNova/Contracts-b6b1ce1fcaff83d360df8944309f49958842b7b8/shibanova/contracts/libs/ShibaLibrary.sol"
+  }
+ ]
+}

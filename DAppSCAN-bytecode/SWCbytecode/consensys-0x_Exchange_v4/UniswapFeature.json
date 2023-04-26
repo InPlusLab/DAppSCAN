@@ -1,0 +1,11 @@
+{
+ "node name": "UniswapFeature.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "sellToUniswap",
+   "lines": "L203-206",
+   "sourcePath": "consensys-0x_Exchange_v4/protocol-475b608338561a1dce3199bfb9fb59ee9372149b/contracts/zero-ex/contracts/src/features/UniswapFeature.sol"
+  }
+ ]
+}

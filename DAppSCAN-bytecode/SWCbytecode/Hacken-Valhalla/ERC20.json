@@ -1,0 +1,17 @@
+{
+ "node name": "ERC20.json",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lines": "L4",
+   "sourcePath": "Hacken-Valhalla/Solidity-70de7d9daccb6d812b2ab96f20fb4aa2605e2601/erc20/ERC20.sol"
+  },
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L4",
+   "sourcePath": "Hacken-Valhalla/Solidity-70de7d9daccb6d812b2ab96f20fb4aa2605e2601/erc20/ERC20.sol"
+  }
+ ]
+}

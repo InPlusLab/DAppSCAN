@@ -1,0 +1,23 @@
+{
+ "node name": "FixedRateSwap.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_getReturn",
+   "lines": "L302-315",
+   "sourcePath": "openzeppelin-1inch_Fixed_Rate_Swap/fixed-rate-swap-b1600f61b77b6051388e6fb2cb0be776c5bcf2d1/FixedRateSwap.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_getVirtualAmountsForDepositImpl",
+   "lines": "L357",
+   "sourcePath": "openzeppelin-1inch_Fixed_Rate_Swap/fixed-rate-swap-b1600f61b77b6051388e6fb2cb0be776c5bcf2d1/FixedRateSwap.sol"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_powerHelper",
+   "lines": "L415-434",
+   "sourcePath": "openzeppelin-1inch_Fixed_Rate_Swap/fixed-rate-swap-b1600f61b77b6051388e6fb2cb0be776c5bcf2d1/FixedRateSwap.sol"
+  }
+ ]
+}

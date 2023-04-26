@@ -1,0 +1,11 @@
+{
+ "node name": "GoodGhostingPolygonWhitelisted.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L3",
+   "sourcePath": "Ackee_Blockchain-GoodGhosting/goodghosting-protocol-v1-dfda8d5d5990abb7f352bc9358ac950dce1bd677/goodghosting-protocol-v1-dfda8d5d5990abb7f352bc9358ac950dce1bd677/contracts/GoodGhosting.sol"
+  }
+ ]
+}

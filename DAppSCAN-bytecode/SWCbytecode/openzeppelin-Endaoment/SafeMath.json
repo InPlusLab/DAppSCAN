@@ -1,0 +1,11 @@
+{
+ "node name": "SafeMath.json",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lines": "L1-34",
+   "sourcePath": "openzeppelin-Endaoment/endaoment-contracts-f60aa253d3d869ad6460877f23e6092acb313add/SafeMath.sol"
+  }
+ ]
+}

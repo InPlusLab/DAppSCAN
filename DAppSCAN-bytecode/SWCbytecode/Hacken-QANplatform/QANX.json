@@ -1,0 +1,11 @@
+{
+ "node name": "QANX.json",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lines": "L2",
+   "sourcePath": "Hacken-QANplatform/qanx-token-ebf0352af6ccb8d991827a0fba3ac5cfe9ca6b70/QANX.sol"
+  }
+ ]
+}

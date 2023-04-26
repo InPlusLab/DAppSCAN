@@ -1,0 +1,11 @@
+{
+ "node name": "CLVTokenTester.json",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "_requireValidRecipient",
+   "lines": "L212-L224",
+   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/LUSDToken.sol"
+  }
+ ]
+}

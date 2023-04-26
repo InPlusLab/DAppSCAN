@@ -1,0 +1,11 @@
+{
+ "node name": "CrabStrategy.json",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "withdraw",
+   "lines": "L257-L264",
+   "sourcePath": "Trail_of_Bits-Opyn/squeeth-monorepo-427ba395545de44920206deaa4bcc217b3964952/packages/hardhat/contracts/strategy/CrabStrategy.sol"
+  }
+ ]
+}

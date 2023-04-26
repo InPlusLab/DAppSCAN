@@ -1,0 +1,23 @@
+{
+ "node name": "LendingPair.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "short",
+   "lines": "L429",
+   "sourcePath": "QuillAudits-SushiSwap-BentoBox/bentobox-c2e150b16b8764ebfe2e1e6e267ae14e10738065/contracts/LendingPair.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "liquidate",
+   "lines": "L499",
+   "sourcePath": "QuillAudits-SushiSwap-BentoBox/bentobox-c2e150b16b8764ebfe2e1e6e267ae14e10738065/contracts/LendingPair.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "liquidate",
+   "lines": "L522",
+   "sourcePath": "QuillAudits-SushiSwap-BentoBox/bentobox-c2e150b16b8764ebfe2e1e6e267ae14e10738065/contracts/LendingPair.sol"
+  }
+ ]
+}

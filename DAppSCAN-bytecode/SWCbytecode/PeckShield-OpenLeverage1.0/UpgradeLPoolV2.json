@@ -1,0 +1,11 @@
+{
+ "node name": "UpgradeLPoolV2.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "borrowFresh",
+   "lines": "L845-L885",
+   "sourcePath": "PeckShield-OpenLeverage1.0/openleverage-contracts-e31d971bcb38ec8737cf1942b8fdf6a9452e5834/contracts/liquidity/LPool.sol"
+  }
+ ]
+}

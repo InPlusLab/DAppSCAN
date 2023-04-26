@@ -1,0 +1,11 @@
+{
+ "node name": "DapiServer.json",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "conditionPspDapiUpdate",
+   "lines": "L471-L487",
+   "sourcePath": "Trail_of_Bits-API3/airnode-991af4d69e82c1954a5c6c8e247cde8eb76101de/packages/airnode-protocol-v1/contracts/dapis/DapiServer.sol"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+pragma solidity ^0.5.16;
+
+import "../BaseMigration.sol";
+import "../Owned.sol";
+
+contract MockMigration is BaseMigration {
+    constructor(address _owner) public BaseMigration(_owner) {}
+
+    function acceptOwnership(address someContract) external {
+        Owned(someContract).acceptOwnership();
+    }
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "Holdefi.json",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "repayBorrowInternal ",
+   "lines": "L1292-L1344",
+   "sourcePath": "PeckShield-Holdefi/Holdefi-5a1e6e0d582120142e8a531f6806eba6665ef2f4/contracts/Holdefi.sol"
+  }
+ ]
+}

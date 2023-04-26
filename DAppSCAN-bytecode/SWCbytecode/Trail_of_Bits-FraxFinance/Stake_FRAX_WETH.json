@@ -1,0 +1,41 @@
+{
+ "node name": "Stake_FRAX_WETH.json",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "removePool",
+   "lines": "L252 - L257",
+   "sourcePath": "Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Frax.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "mint1t1FRAX",
+   "lines": "L204",
+   "sourcePath": "Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Pools/FraxPool.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "mintFractionalFRAX",
+   "lines": "L250",
+   "sourcePath": "Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Pools/FraxPool.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "collectRedemption",
+   "lines": "L366",
+   "sourcePath": "Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Pools/FraxPool.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "collectRedemption",
+   "lines": "L370",
+   "sourcePath": "Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Pools/FraxPool.sol"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "recollateralizeFRAX",
+   "lines": "L401",
+   "sourcePath": "Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Pools/FraxPool.sol"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "Treasury.json",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "advisorShareWithdraw",
+   "lines": "L166 - L168",
+   "sourcePath": "QuillAudits-B-Cube-B-Cube/b-cube-ico-451e249a7200ea094fdfa1baa1a50cb7b17233f2/contracts/Treasury.sol"
+  }
+ ]
+}

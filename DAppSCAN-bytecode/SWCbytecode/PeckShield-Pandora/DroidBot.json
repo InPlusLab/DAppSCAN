@@ -1,0 +1,11 @@
+{
+ "node name": "DroidBot.json",
+ "SWCs": [
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "computerSeed",
+   "lines": "L20-L41",
+   "sourcePath": "PeckShield-Pandora/smart-contract-d0aa3193b8ffcd7fc84481c30e16283837319719/contracts/0.8.x/contracts/libraries/Random.sol"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "node name": "WaultSwapRouter0xD48745E39BbED146eEC15b79cBF964884F9877c2.json",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lines": "L5",
+   "sourcePath": "Inspex-WSwap/WaultSwapRouter0xD48745E39BbED146eEC15b79cBF964884F9877c2/WaultSwapRouter0xD48745E39BbED146eEC15b79cBF964884F9877c2.sol"
+  }
+ ]
+}
