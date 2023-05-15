@@ -1,0 +1,6 @@
+[submodule "DAppSCAN-bytecode/CFGBuilder"]
+	path = DAppSCAN-bytecode/CFGBuilder
+	url = https://github.com/MingxiYe/CFGBuilder.git
+[submodule "DAppSCAN-bytecode/solc-DApp"]
+	path = DAppSCAN-bytecode/solc-DApp
+	url = https://github.com/MingxiYe/solc-DApp.git
