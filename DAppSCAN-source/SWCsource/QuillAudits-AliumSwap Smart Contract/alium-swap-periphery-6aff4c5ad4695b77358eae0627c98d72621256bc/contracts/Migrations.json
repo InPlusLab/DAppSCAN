@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-AliumSwap Smart Contract/alium-swap-periphery-6aff4c5ad4695b77358eae0627c98d72621256bc/contracts/Migrations.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  }
+ ]
+}

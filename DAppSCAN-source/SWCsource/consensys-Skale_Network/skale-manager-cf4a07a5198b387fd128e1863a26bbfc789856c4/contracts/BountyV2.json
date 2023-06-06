@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/BountyV2.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "estimateBounty",
+   "lineNumber": "L142-159"
+  }
+ ]
+}

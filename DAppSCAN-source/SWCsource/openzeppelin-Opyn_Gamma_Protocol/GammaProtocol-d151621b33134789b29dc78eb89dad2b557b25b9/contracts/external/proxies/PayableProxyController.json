@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Opyn_Gamma_Protocol/GammaProtocol-d151621b33134789b29dc78eb89dad2b557b25b9/contracts/external/proxies/PayableProxyController.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "operate",
+   "lineNumber": "L74"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-ElementFinance/elf-contracts-b9ab6095a211ccb81941a5104c581e3564a97502/contracts/libraries/ERC20Permit.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Signature Malleability",
+   "function": "permit",
+   "lineNumber": "L211"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/vault/VaultAdmin.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "removeStrategy",
+   "lineNumber": "L148 - L150"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "transferToken",
+   "lineNumber": "L237 - L243"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "transferToken",
+   "lineNumber": "L240"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_harvest",
+   "lineNumber": "L266 - L298"
+  }
+ ]
+}

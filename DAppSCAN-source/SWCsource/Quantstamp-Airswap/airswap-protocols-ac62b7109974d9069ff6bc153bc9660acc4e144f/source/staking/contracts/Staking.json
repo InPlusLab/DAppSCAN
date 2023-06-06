@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Airswap/airswap-protocols-ac62b7109974d9069ff6bc153bc9660acc4e144f/source/staking/contracts/Staking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L38 - L52"
+  }
+ ]
+}

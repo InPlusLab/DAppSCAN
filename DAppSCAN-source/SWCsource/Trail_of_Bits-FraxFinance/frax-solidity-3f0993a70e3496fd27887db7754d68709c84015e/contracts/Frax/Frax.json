@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Frax.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "removePool",
+   "lineNumber": "L252 - L257"
+  }
+ ]
+}

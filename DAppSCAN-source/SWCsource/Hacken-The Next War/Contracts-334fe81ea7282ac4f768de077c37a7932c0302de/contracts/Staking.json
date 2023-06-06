@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-The Next War/Contracts-334fe81ea7282ac4f768de077c37a7932c0302de/contracts/Staking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "deposit",
+   "lineNumber": "L80"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "N/A",
+   "lineNumber": "L135"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "payTngReward",
+   "lineNumber": "L177"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "N/A",
+   "lineNumber": "L209"
+  }
+ ]
+}

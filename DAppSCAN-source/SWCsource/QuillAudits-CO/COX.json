@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-COX/COX.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma\uff1aL7",
+   "function": "N/A",
+   "lineNumber": "//SWC-Floating Pragma\uff1aL7"
+  }
+ ]
+}

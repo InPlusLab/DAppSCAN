@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-LensProtocol/lens-protocol-dd137b2dee64c5edf288df297ee4249a0e6c11d4/contracts/core/base/ERC721Enumerable.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  }
+ ]
+}

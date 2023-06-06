@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-CronosPad Smart Contract/cronospad-1605d38fab314cab399093f756b41093fdbc859f/contracts/cronospad.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  }
+ ]
+}

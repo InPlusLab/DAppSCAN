@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Amplify_Child_Token_Smart_Contract/contracts-31526ea5e5c5a1c308d0065aab1f57ec8d765fc6/AMPTChild.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility\uff1aL35",
+   "function": "N/A",
+   "lineNumber": "//SWC-State Variable Default Visibility\uff1aL35"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Cryptex/governance-staking-76961aeb6be63f547dc080659f64a4bf455582c0/src/DelegatorFactory.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "notifyRewardAmount",
+   "lineNumber": "L147 - L174"
+  }
+ ]
+}

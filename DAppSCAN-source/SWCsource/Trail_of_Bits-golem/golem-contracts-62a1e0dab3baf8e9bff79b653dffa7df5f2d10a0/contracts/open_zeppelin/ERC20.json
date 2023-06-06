@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-golem/golem-contracts-62a1e0dab3baf8e9bff79b653dffa7df5f2d10a0/contracts/open_zeppelin/ERC20.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "approve",
+   "lineNumber": "L14"
+  }
+ ]
+}

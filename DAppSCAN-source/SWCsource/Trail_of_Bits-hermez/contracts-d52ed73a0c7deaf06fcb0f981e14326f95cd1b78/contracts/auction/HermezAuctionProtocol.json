@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-hermez/contracts-d52ed73a0c7deaf06fcb0f981e14326f95cd1b78/contracts/auction/HermezAuctionProtocol.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "hermezAuctionProtocolInitializer",
+   "lineNumber": "L123 - L156"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "setAllocationRatio",
+   "lineNumber": "L273"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "forge",
+   "lineNumber": "L761 - L790"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "getClaimableHEZ",
+   "lineNumber": "L802"
+  }
+ ]
+}

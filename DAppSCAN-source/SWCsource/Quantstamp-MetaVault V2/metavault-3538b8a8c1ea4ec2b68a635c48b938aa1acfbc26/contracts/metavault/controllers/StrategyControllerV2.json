@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-MetaVault V2/metavault-3538b8a8c1ea4ec2b68a635c48b938aa1acfbc26/contracts/metavault/controllers/StrategyControllerV2.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "N/A",
+   "lineNumber": "L24"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "getBestStrategyEarn",
+   "lineNumber": "L488-L508"
+  }
+ ]
+}

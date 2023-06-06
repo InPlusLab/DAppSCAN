@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-AragonOS and Aragon Apps/aragon-apps-cdaee275d2831168a4ce2b9843a1f62abcf8e210/future-apps/payroll/contracts/Payroll.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "getTimestamp",
+   "lineNumber": "L465"
+  }
+ ]
+}

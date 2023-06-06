@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Didpha Release Smart Contract Audit/synthetix-d7b8c122f7aaa69918bb53d8c981eec98677f220/FeePool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Use of Deprecated Solidity Functions",
+   "function": "closeCurrentFeePeriod",
+   "lineNumber": "L257"
+  }
+ ]
+}

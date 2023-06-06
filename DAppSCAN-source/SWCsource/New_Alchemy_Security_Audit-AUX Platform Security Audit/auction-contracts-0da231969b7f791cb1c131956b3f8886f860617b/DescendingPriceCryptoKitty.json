@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/New_Alchemy_Security_Audit-AUX Platform Security Audit/auction-contracts-0da231969b7f791cb1c131956b3f8886f860617b/DescendingPriceCryptoKitty.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "bid",
+   "lineNumber": "L344"
+  }
+ ]
+}

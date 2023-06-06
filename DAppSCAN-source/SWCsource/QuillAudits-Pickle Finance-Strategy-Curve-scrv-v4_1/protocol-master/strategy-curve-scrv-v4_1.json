@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Pickle Finance-Strategy-Curve-scrv-v4_1/protocol-master/strategy-curve-scrv-v4_1.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "harvest",
+   "lineNumber": "L153-197"
+  }
+ ]
+}

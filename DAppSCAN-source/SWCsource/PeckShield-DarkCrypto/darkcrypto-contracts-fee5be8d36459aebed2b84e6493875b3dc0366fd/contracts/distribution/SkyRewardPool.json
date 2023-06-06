@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-DarkCrypto/darkcrypto-contracts-fee5be8d36459aebed2b84e6493875b3dc0366fd/contracts/distribution/SkyRewardPool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L217-L234"
+  }
+ ]
+}

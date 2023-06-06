@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-XSwap/xswap-326a3246b327cd2b8481fd8c22fe8d864e43b0da/contracts/XSwap.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "setPrices",
+   "lineNumber": "L152"
+  }
+ ]
+}

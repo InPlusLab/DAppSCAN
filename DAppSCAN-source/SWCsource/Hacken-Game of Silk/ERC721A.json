@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Game of Silks/ERC721A.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "tokenOfOwnerByIndex",
+   "lineNumber": "L102 - L125"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_numberMinted",
+   "lineNumber": "L153 - L159"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_setOwnersExplicit",
+   "lineNumber": "L457 - L476"
+  }
+ ]
+}

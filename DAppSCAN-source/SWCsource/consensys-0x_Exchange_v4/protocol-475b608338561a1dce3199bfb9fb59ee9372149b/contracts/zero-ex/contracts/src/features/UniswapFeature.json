@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-0x_Exchange_v4/protocol-475b608338561a1dce3199bfb9fb59ee9372149b/contracts/zero-ex/contracts/src/features/UniswapFeature.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "sellToUniswap",
+   "lineNumber": "L203-206"
+  }
+ ]
+}

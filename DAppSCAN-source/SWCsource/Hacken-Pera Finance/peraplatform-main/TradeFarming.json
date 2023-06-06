@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Pera Finance/peraplatform-main/TradeFarming.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "swapETHForExactTokens",
+   "lineNumber": "L351-389"
+  }
+ ]
+}

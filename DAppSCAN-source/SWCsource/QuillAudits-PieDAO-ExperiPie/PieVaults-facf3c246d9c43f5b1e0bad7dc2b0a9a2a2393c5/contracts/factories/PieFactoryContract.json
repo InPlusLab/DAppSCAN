@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-PieDAO-ExperiPie/PieVaults-facf3c246d9c43f5b1e0bad7dc2b0a9a2a2393c5/contracts/factories/PieFactoryContract.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "bakePie",
+   "lineNumber": "L73 - L77"
+  }
+ ]
+}

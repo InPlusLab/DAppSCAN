@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-hermez/contracts-d52ed73a0c7deaf06fcb0f981e14326f95cd1b78/contracts/withdrawalDelayer/WithdrawalDelayer.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "withdrawalDelayerInitializer",
+   "lineNumber": "L68 - L82"
+  }
+ ]
+}

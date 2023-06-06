@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Slockit_Incubed3/in3-contracts-e25c758a115aef0c0640bc446027259aa7cb1a52/contracts/NodeRegistry.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "onlyActiveState",
+   "lineNumber": "L125-133"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "convict",
+   "lineNumber": "L152-159"
+  }
+ ]
+}

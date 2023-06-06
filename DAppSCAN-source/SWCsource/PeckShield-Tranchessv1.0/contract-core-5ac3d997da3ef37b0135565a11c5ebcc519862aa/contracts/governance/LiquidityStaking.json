@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-Tranchessv1.0/contract-core-5ac3d997da3ef37b0135565a11c5ebcc519862aa/contracts/governance/LiquidityStaking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "deposit",
+   "lineNumber": "L60-L69"
+  }
+ ]
+}

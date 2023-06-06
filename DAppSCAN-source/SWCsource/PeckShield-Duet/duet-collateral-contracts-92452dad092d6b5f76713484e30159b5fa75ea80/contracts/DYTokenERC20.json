@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-Duet/duet-collateral-contracts-92452dad092d6b5f76713484e30159b5fa75ea80/contracts/DYTokenERC20.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "depositTo",
+   "lineNumber": "L29-L57"
+  }
+ ]
+}

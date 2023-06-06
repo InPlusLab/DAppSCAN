@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Kin_Token/kin-token-3ed3a383b9304274ec22f41769716cadb854727f/KinTokenSale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "addTokenGrant",
+   "lineNumber": "L148-161\u3001165-179"
+  }
+ ]
+}

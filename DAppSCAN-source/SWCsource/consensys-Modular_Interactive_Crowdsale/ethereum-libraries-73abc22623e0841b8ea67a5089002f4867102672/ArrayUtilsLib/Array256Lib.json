@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/ArrayUtilsLib/Array256Lib.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lineNumber": "L2-L230"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PepperSec-POA-Network-Wizard/auth-os-applications-2840b97dea33c8cf455a67b2b9c7229e2cda1843/TokenWizard/crowdsale/DutchCrowdsale/contracts/DutchCrowdsaleIdx.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "getRateAndTimeRemaining",
+   "lineNumber": "L363 - L381"
+  }
+ ]
+}

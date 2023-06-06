@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Dfyn Smart Contract/dual-farm-f44a4dcbeb41f38a9c02cb877a8c95b92685f972/contracts/StakingRewardsFactory.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "constructor",
+   "lineNumber": "L36"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "notifyRewardAmount",
+   "lineNumber": "L122"
+  }
+ ]
+}

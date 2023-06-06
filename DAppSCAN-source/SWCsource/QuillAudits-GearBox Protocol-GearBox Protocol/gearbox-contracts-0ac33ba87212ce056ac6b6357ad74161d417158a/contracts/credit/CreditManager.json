@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/credit/CreditManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_transferAssetsTo",
+   "lineNumber": "L594 - L595"
+  },
+  {
+   "category": "SWC-Write to Arbitrary Storage Location",
+   "function": "_convertAllAssetsToUnderlying",
+   "lineNumber": "L829"
+  }
+ ]
+}

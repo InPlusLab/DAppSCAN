@@ -1,0 +1,30 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-RICE - v1.2/RICEToken/RICEToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L891-894, 912-914"
+  },
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "transfer",
+   "lineNumber": "L962, 969, 970, 975"
+  },
+  {
+   "category": "SWC-Incorrect Inheritance Order",
+   "function": "transferFrom",
+   "lineNumber": "L963,971"
+  },
+  {
+   "category": "SWC-Unexpected Ether Balance,SWC-DoS With Block Gas Limit",
+   "function": "transferWithLock",
+   "lineNumber": "L974-984"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "",
+   "lineNumber": "L1055"
+  }
+ ]
+}

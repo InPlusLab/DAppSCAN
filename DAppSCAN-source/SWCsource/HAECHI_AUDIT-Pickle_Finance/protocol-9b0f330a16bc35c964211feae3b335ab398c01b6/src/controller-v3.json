@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Pickle_Finance/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/src/controller-v3.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L34"
+  }
+ ]
+}

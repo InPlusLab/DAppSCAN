@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-EIP-4337-Ethereum_Account_Abstraction/account-abstraction-8832d6e04b9f4f706f612261c6e46b3f1745d61a/EntryPoint.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "handleOp",
+   "lineNumber": "L52-78"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "handleOp",
+   "lineNumber": "L56-77, 95-113, 236-261, 266-282, 319-349"
+  }
+ ]
+}

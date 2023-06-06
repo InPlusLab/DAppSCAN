@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-VIDB - v1.0/VIDBToken/VIDBToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L5,all contract"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "getLockedAmount",
+   "lineNumber": "L722"
+  }
+ ]
+}

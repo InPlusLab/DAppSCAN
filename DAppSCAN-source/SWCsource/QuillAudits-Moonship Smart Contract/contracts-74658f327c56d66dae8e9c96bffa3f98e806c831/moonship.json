@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Moonship Smart Contract/contracts-74658f327c56d66dae8e9c96bffa3f98e806c831/moonship.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "transfer",
+   "lineNumber": "L995.1009"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_tokenTransfer",
+   "lineNumber": "L1245"
+  }
+ ]
+}

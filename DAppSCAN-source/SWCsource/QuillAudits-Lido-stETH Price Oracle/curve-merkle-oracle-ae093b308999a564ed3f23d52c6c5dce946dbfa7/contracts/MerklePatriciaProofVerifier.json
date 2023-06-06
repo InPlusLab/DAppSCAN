@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-stETH Price Oracle/curve-merkle-oracle-ae093b308999a564ed3f23d52c6c5dce946dbfa7/contracts/MerklePatriciaProofVerifier.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "extractProofValue",
+   "lineNumber": "L38"
+  }
+ ]
+}

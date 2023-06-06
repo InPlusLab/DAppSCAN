@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Airswap/airswap-protocols-b87d292aaf6e28ede564b7ea28ece39219994607/source/wrapper/contracts/Wrapper.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "swap",
+   "lineNumber": "L152"
+  }
+ ]
+}

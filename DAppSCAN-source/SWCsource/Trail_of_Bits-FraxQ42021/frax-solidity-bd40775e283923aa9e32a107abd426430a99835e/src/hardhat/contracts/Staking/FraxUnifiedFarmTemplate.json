@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-FraxQ42021/frax-solidity-bd40775e283923aa9e32a107abd426430a99835e/src/hardhat/contracts/Staking/FraxUnifiedFarmTemplate.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "retroCatchUp",
+   "lineNumber": "L465-L491"
+  }
+ ]
+}

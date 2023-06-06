@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-MCDEX_Mai_Protocol_V2/mai-protocol-v2-4b198083ec4ae2d6851e101fc44ea333eaa3cd92/contracts/perpetual/Perpetual.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "L4-5"
+  },
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "constructor",
+   "lineNumber": "L34-41"
+  },
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "liquidateFrom",
+   "lineNumber": "L270-289"
+  }
+ ]
+}

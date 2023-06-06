@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-0x Exchange v4/protocol-475b608338561a1dce3199bfb9fb59ee9372149b/contracts/zero-ex/contracts/src/features/MetaTransactionsFeature.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "refundsAttachedEth",
+   "lineNumber": "L98-106"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-SportsIcon-Audit Report/SportsIcon-Vesting-8a26ed5c3a52b7a4d1b22a38b40dd80783ecc6a3/SportsIconPrivateVesting.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "claim",
+   "lineNumber": "L60"
+  }
+ ]
+}

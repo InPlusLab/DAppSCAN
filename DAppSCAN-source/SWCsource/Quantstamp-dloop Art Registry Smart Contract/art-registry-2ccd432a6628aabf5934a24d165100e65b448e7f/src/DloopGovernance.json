@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-dloop Art Registry Smart Contract/art-registry-2ccd432a6628aabf5934a24d165100e65b448e7f/src/DloopGovernance.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  }
+ ]
+}

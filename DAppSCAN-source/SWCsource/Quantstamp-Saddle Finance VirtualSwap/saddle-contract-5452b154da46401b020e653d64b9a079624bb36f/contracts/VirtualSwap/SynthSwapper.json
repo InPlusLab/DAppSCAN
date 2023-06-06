@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Saddle Finance VirtualSwap/saddle-contract-5452b154da46401b020e653d64b9a079624bb36f/contracts/VirtualSwap/SynthSwapper.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "swapSynthToToken",
+   "lineNumber": "L88"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Polymath/polymath-token-672fabe081e8f90ea025252d92c2eb247d60010e/contracts/PolyDistribution.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "airdropTokens",
+   "lineNumber": "L121"
+  }
+ ]
+}

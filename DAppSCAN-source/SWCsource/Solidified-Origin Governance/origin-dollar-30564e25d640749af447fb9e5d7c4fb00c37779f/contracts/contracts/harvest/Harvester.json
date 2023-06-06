@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Solidified-Origin Governance/origin-dollar-30564e25d640749af447fb9e5d7c4fb00c37779f/contracts/contracts/harvest/Harvester.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "harvest",
+   "lineNumber": "L224-L233"
+  },
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "_harvestAndSwap",
+   "lineNumber": "L314"
+  }
+ ]
+}

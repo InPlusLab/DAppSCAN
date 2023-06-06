@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-The LAO/moloch-master/Moloch.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow\uff1aL652-654",
+   "function": "max",
+   "lineNumber": "//SWC-Integer Overflow and Underflow\uff1aL652-654"
+  }
+ ]
+}

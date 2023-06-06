@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-Element_Finance_Governance_Security_Audit_Report/council-3d751c959b42573c78ccd0bccbc80424bf6d9a90/contracts/features/Treasury.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "genericCall",
+   "lineNumber": "L73"
+  }
+ ]
+}

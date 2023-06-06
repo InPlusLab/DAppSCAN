@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-PoolTogether \u2014 Sushi and Yearn V2 Yield Sources/pooltogether-yearnv2-yield-source-a34857f1555908a6263d2ebd189f0cb40e1858da/contracts/yield-source/YearnV2YieldSource.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "supplyTokenTo",
+   "lineNumber": "L118-129"
+  }
+ ]
+}

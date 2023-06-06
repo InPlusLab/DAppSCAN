@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-SushiSwap/sushiswap-180bc9b642bba79c1ee4a63f71a3a0d36e64aa63/contracts/MasterChef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "add",
+   "lineNumber": "L108-L120"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L219-L230"
+  }
+ ]
+}

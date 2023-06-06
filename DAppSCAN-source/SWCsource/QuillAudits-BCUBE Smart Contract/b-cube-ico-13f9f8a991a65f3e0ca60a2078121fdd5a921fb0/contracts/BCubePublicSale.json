@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-BCUBE Smart Contract/b-cube-ico-13f9f8a991a65f3e0ca60a2078121fdd5a921fb0/contracts/BCubePublicSale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "isOpen",
+   "lineNumber": "L162"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "setPrivateAllocation",
+   "lineNumber": "L173"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "buyBcubeUsingUSDT",
+   "lineNumber": "L264 - L278"
+  }
+ ]
+}

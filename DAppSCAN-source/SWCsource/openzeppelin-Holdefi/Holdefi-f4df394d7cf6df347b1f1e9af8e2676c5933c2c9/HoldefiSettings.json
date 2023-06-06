@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/HoldefiSettings.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "getMarket",
+   "lineNumber": "L120-122"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Acid - DigixDAO Dissolution Contract/acid-solidity-8b43815f2bc29934442d0c28e293bfbddb54fc4f/contracts/Acid.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "burn",
+   "lineNumber": "L47-L59"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "burn",
+   "lineNumber": "L56"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "burn",
+   "lineNumber": "L56"
+  }
+ ]
+}

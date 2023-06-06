@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-RariCapital V2/rari-stable-pool-contracts-7f351ca3df72a0196f3640f30a6db73660ab1467/contracts/RariFundManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdrawFrom",
+   "lineNumber": "L751 - L768"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-COGI/cogi_contracts-c5dc614395f77a5b07c83223e5c8bac9d14d2e2c/contracts/CogiNFTMarket.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Message call with hardcoded gas amount",
+   "function": "purchaseExecution",
+   "lineNumber": "L87-L102"
+  }
+ ]
+}

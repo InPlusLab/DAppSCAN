@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-StakeHound/stakehound-core-0f1d6e4d35b841bcf09d3b66f62c62bebb67308a/contracts/DownstreamCaller.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L4"
+  }
+ ]
+}

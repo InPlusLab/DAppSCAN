@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Gamma/hypervisor-41fd4abf79864478523e87924d4e80d80df04879/contracts/Hypervisor.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "deposit",
+   "lineNumber": "L81-142"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L175-216"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "uniswapV3MintCallback",
+   "lineNumber": "L415"
+  }
+ ]
+}

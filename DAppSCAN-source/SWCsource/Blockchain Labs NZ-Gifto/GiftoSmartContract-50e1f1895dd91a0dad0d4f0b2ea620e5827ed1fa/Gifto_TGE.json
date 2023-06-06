@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-Gifto/GiftoSmartContract-50e1f1895dd91a0dad0d4f0b2ea620e5827ed1fa/Gifto_TGE.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L71 - L72"
+  },
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "validValue",
+   "lineNumber": "L116 - L121"
+  }
+ ]
+}

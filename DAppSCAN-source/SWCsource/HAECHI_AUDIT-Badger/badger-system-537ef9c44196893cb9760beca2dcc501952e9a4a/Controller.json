@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Badger/badger-system-537ef9c44196893cb9760beca2dcc501952e9a4a/Controller.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables\uff1aL28\u300129",
+   "function": "N/A",
+   "lineNumber": "//SWC-Presence of unused variables\uff1aL28\u300129"
+  }
+ ]
+}

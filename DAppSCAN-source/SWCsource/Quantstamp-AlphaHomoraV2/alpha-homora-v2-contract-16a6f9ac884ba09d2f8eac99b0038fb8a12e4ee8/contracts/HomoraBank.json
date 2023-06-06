@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-AlphaHomoraV2/alpha-homora-v2-contract-16a6f9ac884ba09d2f8eac99b0038fb8a12e4ee8/contracts/HomoraBank.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lineNumber": "L1-L499"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "initialize",
+   "lineNumber": "L105-L117"
+  }
+ ]
+}

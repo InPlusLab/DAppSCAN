@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-SpookySwap Integration & Fantom Expansion/bsc-alpaca-contract-4553a34a6dcfcfbf7aebc693bb5c5c6074c73129/contracts/6/protocol/strategies/spookyswap/SpookySwapStrategyAddBaseTokenOnly.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L14"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "execute",
+   "lineNumber": "L59"
+  }
+ ]
+}

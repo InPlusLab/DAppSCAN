@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Callisto_Network-Jarvis+ Token (JAR) Security Audit/JarvisPlusToken_flat.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transfer",
+   "lineNumber": "L97"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transferFrom",
+   "lineNumber": "L167 - L168"
+  }
+ ]
+}

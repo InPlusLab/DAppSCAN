@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Balancer_Finance/balancer-core-5d70da92b1bebaa515254d00a9e064ecac9bd18e/contracts/BNum.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "bmul",
+   "lineNumber": "L68-69"
+  }
+ ]
+}

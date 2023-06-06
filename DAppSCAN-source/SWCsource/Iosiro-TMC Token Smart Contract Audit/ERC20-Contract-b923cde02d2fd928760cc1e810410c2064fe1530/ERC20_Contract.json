@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-TMC Token Smart Contract Audit/ERC20-Contract-b923cde02d2fd928760cc1e810410c2064fe1530/ERC20_Contract.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "stop",
+   "lineNumber": "L86"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "start",
+   "lineNumber": "L90"
+  }
+ ]
+}

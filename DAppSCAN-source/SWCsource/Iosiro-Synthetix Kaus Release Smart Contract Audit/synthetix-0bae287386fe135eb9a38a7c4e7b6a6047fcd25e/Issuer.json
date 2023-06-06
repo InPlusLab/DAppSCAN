@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Kaus Release Smart Contract Audit/synthetix-0bae287386fe135eb9a38a7c4e7b6a6047fcd25e/Issuer.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_issueSynths",
+   "lineNumber": "L671"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_burnSynths",
+   "lineNumber": "L697"
+  }
+ ]
+}

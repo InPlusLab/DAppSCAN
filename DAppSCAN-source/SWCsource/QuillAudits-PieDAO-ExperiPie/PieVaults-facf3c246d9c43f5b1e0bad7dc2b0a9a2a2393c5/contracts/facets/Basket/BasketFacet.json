@@ -1,0 +1,40 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-PieDAO-ExperiPie/PieVaults-facf3c246d9c43f5b1e0bad7dc2b0a9a2a2393c5/contracts/facets/Basket/BasketFacet.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "removeToken",
+   "lineNumber": "L46 - L53"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "joinPool",
+   "lineNumber": "L128 - L132"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "exitPool",
+   "lineNumber": "L161 - L168"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "calcOutStandingAnnualizedFee",
+   "lineNumber": "L204"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "chargeOutstandingAnnualizedFee",
+   "lineNumber": "L214"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "calcTokensForAmount",
+   "lineNumber": "L278 - L287"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "calcTokensForAmountExit",
+   "lineNumber": "L301 - L308"
+  }
+ ]
+}

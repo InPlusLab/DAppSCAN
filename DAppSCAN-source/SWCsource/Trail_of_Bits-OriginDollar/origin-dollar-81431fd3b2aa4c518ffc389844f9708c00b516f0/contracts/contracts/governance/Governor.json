@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/Governor.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_queueOrRevert",
+   "lineNumber": "L158 - L172"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "execute",
+   "lineNumber": "L175 - L192"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "__queueSetTimelockPendingAdmin",
+   "lineNumber": "L217 - L232"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "__executeSetTimelockPendingAdmin",
+   "lineNumber": "L235 - L250"
+  }
+ ]
+}

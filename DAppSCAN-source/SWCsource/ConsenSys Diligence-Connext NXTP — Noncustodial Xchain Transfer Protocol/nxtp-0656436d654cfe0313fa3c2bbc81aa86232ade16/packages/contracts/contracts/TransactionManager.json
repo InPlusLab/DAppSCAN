@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-Connext NXTP \u2014 Noncustodial Xchain Transfer Protocol/nxtp-0656436d654cfe0313fa3c2bbc81aa86232ade16/packages/contracts/contracts/TransactionManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "removeLiquidity",
+   "lineNumber": "L229 - L254"
+  }
+ ]
+}

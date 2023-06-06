@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-starkex/starkex-contracts-master/scalable-dex/contracts/src/components/ApprovalChain.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "announceRemovalIntent",
+   "lineNumber": "L76"
+  }
+ ]
+}

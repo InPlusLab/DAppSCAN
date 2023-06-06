@@ -1,0 +1,45 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-C.R.E.A.M. Finance-Compound Protocol/compound-protocol-23a4ae93adc70334553f5a83429a4e967c1eefaa/contracts/Comptroller.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "mintAllowed",
+   "lineNumber": "L240"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "mintVerify",
+   "lineNumber": "L274"
+  },
+  {
+   "category": "SWC-Remove unused functions",
+   "function": "borrowVerify",
+   "lineNumber": "L412"
+  },
+  {
+   "category": "SWC-Remove unused functions",
+   "function": "repayBorrowVerify",
+   "lineNumber": "L462"
+  },
+  {
+   "category": "SWC-Remove unused functions",
+   "function": "liquidateBorrowVerify",
+   "lineNumber": "L530"
+  },
+  {
+   "category": "SWC-Remove unused functions",
+   "function": "seizeVerify",
+   "lineNumber": "L596"
+  },
+  {
+   "category": "SWC-Remove unused functions",
+   "function": "transferVerify",
+   "lineNumber": "L644"
+  },
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "claimComp",
+   "lineNumber": "L1266"
+  }
+ ]
+}

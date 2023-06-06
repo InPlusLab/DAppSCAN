@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-SynchroLife/synchrocoin-contracts-master/contracts/Migrations.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L2-24"
+  }
+ ]
+}

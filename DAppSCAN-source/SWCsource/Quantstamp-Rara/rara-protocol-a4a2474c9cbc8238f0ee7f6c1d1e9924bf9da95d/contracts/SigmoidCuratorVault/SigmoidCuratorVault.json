@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Rara/rara-protocol-a4a2474c9cbc8238f0ee7f6c1d1e9924bf9da95d/contracts/SigmoidCuratorVault/SigmoidCuratorVault.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "buyCuratorTokens",
+   "lineNumber": "L95-L57"
+  }
+ ]
+}

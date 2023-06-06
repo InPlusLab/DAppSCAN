@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Crazy Snake Smart Contract/CrazyToken-489ae9dab8eb5ba684fa1c7dbbd803c9db52dc9d/contracts/CrazyToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L12"
+  }
+ ]
+}

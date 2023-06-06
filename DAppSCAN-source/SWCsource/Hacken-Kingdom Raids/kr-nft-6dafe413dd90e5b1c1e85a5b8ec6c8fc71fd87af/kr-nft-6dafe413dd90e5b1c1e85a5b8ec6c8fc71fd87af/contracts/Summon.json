@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Kingdom Raids/kr-nft-6dafe413dd90e5b1c1e85a5b8ec6c8fc71fd87af/kr-nft-6dafe413dd90e5b1c1e85a5b8ec6c8fc71fd87af/contracts/Summon.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "setSignerPublicKey",
+   "lineNumber": "L42"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "setAcceptedToken",
+   "lineNumber": "L53"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "setHeroSmartContractAddress",
+   "lineNumber": "L67"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "setFee",
+   "lineNumber": "L79"
+  }
+ ]
+}

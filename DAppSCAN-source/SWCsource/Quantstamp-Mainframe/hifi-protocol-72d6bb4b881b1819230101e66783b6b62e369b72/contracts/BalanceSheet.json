@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Mainframe/hifi-protocol-72d6bb4b881b1819230101e66783b6b62e369b72/contracts/BalanceSheet.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  }
+ ]
+}

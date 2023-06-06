@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinfabrik-Woonkly Security Audit (DEX STAKE)/STAKESmartContractPreRelease-main/woonklyPOS.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "processReward",
+   "lineNumber": "L743 - L769"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "_withdrawAllrewardsCOIN",
+   "lineNumber": "L874 - L886"
+  }
+ ]
+}

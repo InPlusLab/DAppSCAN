@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-1inch/liquidity-protocol-master/contracts/ReferralFeeReceiver.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "N/A",
+   "lineNumber": "L11"
+  }
+ ]
+}

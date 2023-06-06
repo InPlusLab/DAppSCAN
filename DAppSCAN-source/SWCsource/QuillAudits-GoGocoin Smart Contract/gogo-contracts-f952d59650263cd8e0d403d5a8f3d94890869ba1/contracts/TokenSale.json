@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GoGocoin Smart Contract/gogo-contracts-f952d59650263cd8e0d403d5a8f3d94890869ba1/contracts/TokenSale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L12 - L22"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Golem_Network_Token/golem-crowdfunding-50100b27a7c6841ed430a028d100f5d45ba08fb1/GNTAllocation.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lineNumber": "L1-69"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "GNTAllocation",
+   "lineNumber": "L22"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-WstETH/lido-dao-ea6fa222004b88e6a24b566a51e5b56b0079272d/contracts/0.6.12/WstETH.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "wrap",
+   "lineNumber": "L58"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "unwrap",
+   "lineNumber": "L75"
+  }
+ ]
+}

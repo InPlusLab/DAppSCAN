@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-ACYC Token Smart Contracts/AllCoinsYieldCapital0xB56A1f3310578f23120182Fb2e58c087EFE6e147/src/contracts/acyc.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "setReflectionsTax",
+   "lineNumber": "L153"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "setTreasuryTax",
+   "lineNumber": "L160"
+  },
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "transfer",
+   "lineNumber": "L176"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_transfer",
+   "lineNumber": "L331"
+  }
+ ]
+}

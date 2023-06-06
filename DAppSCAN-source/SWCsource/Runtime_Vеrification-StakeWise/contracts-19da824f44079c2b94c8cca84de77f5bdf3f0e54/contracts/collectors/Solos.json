@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-StakeWise/contracts-19da824f44079c2b94c8cca84de77f5bdf3f0e54/contracts/collectors/Solos.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "addDeposit",
+   "lineNumber": "L89"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "cancelDeposit",
+   "lineNumber": "L116"
+  }
+ ]
+}

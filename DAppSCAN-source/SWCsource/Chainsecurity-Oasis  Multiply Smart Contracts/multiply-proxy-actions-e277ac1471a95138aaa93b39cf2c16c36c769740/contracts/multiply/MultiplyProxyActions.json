@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsecurity-Oasis  Multiply Smart Contracts/multiply-proxy-actions-e277ac1471a95138aaa93b39cf2c16c36c769740/contracts/multiply/MultiplyProxyActions.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "convertTo18",
+   "lineNumber": "L119"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "increaseMultipleDepositCollateral",
+   "lineNumber": "L172"
+  }
+ ]
+}

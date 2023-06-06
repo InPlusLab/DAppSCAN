@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-BarnBridge_Smart_Yield_Bonds/BarnBridge-SmartYieldBonds-943df3a8fcd8dd128af3beb0c85a0480c0e95ead/SmartYield.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "_beforeProviderOp",
+   "lineNumber": "L439-451"
+  }
+ ]
+}

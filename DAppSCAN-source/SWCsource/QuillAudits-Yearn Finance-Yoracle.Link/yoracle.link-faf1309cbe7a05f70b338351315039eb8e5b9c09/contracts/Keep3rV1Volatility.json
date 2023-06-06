@@ -1,0 +1,50 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Yoracle.Link/yoracle.link-faf1309cbe7a05f70b338351315039eb8e5b9c09/contracts/Keep3rV1Volatility.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "floorLog2",
+   "lineNumber": "L33"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "floorLog2",
+   "lineNumber": "L41"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "ln",
+   "lineNumber": "L56"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "ln",
+   "lineNumber": "L58"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "ln",
+   "lineNumber": "L65"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "ln",
+   "lineNumber": "L68"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "ln",
+   "lineNumber": "L70"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "ln",
+   "lineNumber": "L75"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "optimalExp",
+   "lineNumber": "L96 - L150"
+  }
+ ]
+}

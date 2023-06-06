@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Smartdec-TokenBridge (by POA Network) Smart Contracts Security Analysis/tokenbridge-contracts-bbb97a63c900f03a902d0e82358abac3b294e4d9/contracts/upgradeable_contracts/BaseFeeManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Assert Violation",
+   "function": "random",
+   "lineNumber": "L48-L50"
+  }
+ ]
+}

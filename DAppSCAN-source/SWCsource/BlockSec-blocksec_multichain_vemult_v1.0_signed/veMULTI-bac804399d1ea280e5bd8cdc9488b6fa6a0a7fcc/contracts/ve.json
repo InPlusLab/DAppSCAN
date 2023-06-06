@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Delegatecall to Untrusted Callee",
+   "function": "ownerOf",
+   "lineNumber": "L491-493"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "safeTransferFrom",
+   "lineNumber": "L675-697"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L1097-1104"
+  }
+ ]
+}

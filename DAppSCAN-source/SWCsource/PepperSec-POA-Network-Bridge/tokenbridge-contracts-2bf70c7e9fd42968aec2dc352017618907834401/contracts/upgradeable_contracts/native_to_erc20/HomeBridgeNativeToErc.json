@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PepperSec-POA-Network-Bridge/tokenbridge-contracts-2bf70c7e9fd42968aec2dc352017618907834401/contracts/upgradeable_contracts/native_to_erc20/HomeBridgeNativeToErc.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "onExecuteAffirmation",
+   "lineNumber": "L46"
+  }
+ ]
+}

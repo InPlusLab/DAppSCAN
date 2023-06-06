@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Gitcoin_Token_Distribution/governance-ee5e45a008d65021831de9f3e83053026f2a4dd2/contracts/GovernorAlpha.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L2"
+  }
+ ]
+}

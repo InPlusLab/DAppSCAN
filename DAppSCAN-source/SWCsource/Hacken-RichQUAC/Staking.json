@@ -1,0 +1,30 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-RichQUACK/Staking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "L27"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "startPool",
+   "lineNumber": "L123"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "endPool",
+   "lineNumber": "L134"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "deposit",
+   "lineNumber": "L176"
+  }
+ ]
+}

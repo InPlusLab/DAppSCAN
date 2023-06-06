@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Valhalla/Solidity-70de7d9daccb6d812b2ab96f20fb4aa2605e2601/erc20/ERC20.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L4"
+  },
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L4"
+  }
+ ]
+}

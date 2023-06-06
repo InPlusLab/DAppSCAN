@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-BscDragon Smart Contract/bridgeToken-9636c155e8fcfff5cda8b609a77c7d4527b5b402/bridgeToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma\uff1aL5",
+   "function": "N/A",
+   "lineNumber": "//SWC-Floating Pragma\uff1aL5"
+  },
+  {
+   "category": "SWC-Code With No Effects\uff1aL117",
+   "function": "_msgData",
+   "lineNumber": "//SWC-Code With No Effects\uff1aL117"
+  },
+  {
+   "category": "SWC-Function Default Visibility\uff1aL249\uff0c257",
+   "function": "symbol",
+   "lineNumber": "//SWC-Function Default Visibility\uff1aL249\uff0c257"
+  },
+  {
+   "category": "SWC-Code With No Effects\uff1aL485",
+   "function": "_burn",
+   "lineNumber": "//SWC-Code With No Effects\uff1aL485"
+  }
+ ]
+}

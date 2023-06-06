@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Vault.Inc/vault-tec-core-a0cd3ec5612da2dcdaa9747eaa49d6ceaae77d42/contracts/base/AbstractRewards.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_correctPointsForTransfer",
+   "lineNumber": "L107"
+  }
+ ]
+}

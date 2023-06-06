@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-Skyweaver/code/GoldCardsFactory.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit\uff1aL375-376",
+   "function": "mineGolds",
+   "lineNumber": "//SWC-DoS With Block Gas Limit\uff1aL375-376"
+  }
+ ]
+}

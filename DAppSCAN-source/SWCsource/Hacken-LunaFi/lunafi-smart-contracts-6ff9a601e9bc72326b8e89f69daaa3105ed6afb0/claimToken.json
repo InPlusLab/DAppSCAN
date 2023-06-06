@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-LunaFi/lunafi-smart-contracts-6ff9a601e9bc72326b8e89f69daaa3105ed6afb0/claimToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "burn",
+   "lineNumber": "L131-140"
+  },
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "mint",
+   "lineNumber": "L144-156"
+  }
+ ]
+}

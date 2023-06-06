@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-StakingPool, Vault, Strategy & VotingEscrow/scientix-contract-main/contracts/vaults/StratAlpaca.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "deposit",
+   "lineNumber": "L191"
+  }
+ ]
+}

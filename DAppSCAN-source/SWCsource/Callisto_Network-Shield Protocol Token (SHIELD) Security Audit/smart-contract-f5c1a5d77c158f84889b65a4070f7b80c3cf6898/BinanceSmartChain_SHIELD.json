@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Callisto_Network-Shield Protocol Token (SHIELD) Security Audit/smart-contract-f5c1a5d77c158f84889b65a4070f7b80c3cf6898/BinanceSmartChain_SHIELD.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "decimals",
+   "lineNumber": "L332 - L346"
+  }
+ ]
+}

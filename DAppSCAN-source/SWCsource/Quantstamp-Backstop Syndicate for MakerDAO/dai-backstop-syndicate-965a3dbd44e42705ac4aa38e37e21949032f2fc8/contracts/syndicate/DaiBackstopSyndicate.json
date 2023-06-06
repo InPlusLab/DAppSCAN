@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Backstop Syndicate for MakerDAO/dai-backstop-syndicate-965a3dbd44e42705ac4aa38e37e21949032f2fc8/contracts/syndicate/DaiBackstopSyndicate.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "enlist",
+   "lineNumber": "L94"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "enlist",
+   "lineNumber": "L100"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "enterAuction",
+   "lineNumber": "L176-L227"
+  }
+ ]
+}

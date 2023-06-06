@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Audius_Contracts/audius-protocol-6f3b31562b9d4c43cef91af0a011986a2580fba2/ServiceProviderFactory.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "_decreaseRequestIsPending",
+   "lineNumber": "L779"
+  }
+ ]
+}

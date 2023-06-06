@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Burst Token Smart Contract/BURST-Token-33b0e2e7ec14828e000ae95e7d4cef77e0796acd/burst.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version\uff0cSWC-Floating Pragma\uff1aL1",
+   "function": "N/A",
+   "lineNumber": "//SWC-Outdated Compiler Version\uff0cSWC-Floating Pragma\uff1aL1"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow\uff1aL60",
+   "function": "totalSupply",
+   "lineNumber": "//SWC-Integer Overflow and Underflow\uff1aL60"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence\uff1aL71-75",
+   "function": "approve",
+   "lineNumber": "//SWC-Transaction Order Dependence\uff1aL71-75"
+  }
+ ]
+}

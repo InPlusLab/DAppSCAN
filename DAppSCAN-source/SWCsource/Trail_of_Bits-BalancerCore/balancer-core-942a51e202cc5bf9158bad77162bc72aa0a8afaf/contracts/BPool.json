@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-BalancerCore/balancer-core-942a51e202cc5bf9158bad77162bc72aa0a8afaf/contracts/BPool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "joinPool",
+   "lineNumber": "L377"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "exitPool",
+   "lineNumber": "L403"
+  }
+ ]
+}

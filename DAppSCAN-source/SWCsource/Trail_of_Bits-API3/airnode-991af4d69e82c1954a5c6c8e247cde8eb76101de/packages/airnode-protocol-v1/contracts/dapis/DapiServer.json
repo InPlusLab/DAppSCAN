@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-API3/airnode-991af4d69e82c1954a5c6c8e247cde8eb76101de/packages/airnode-protocol-v1/contracts/dapis/DapiServer.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "conditionPspDapiUpdate",
+   "lineNumber": "L471-L487"
+  }
+ ]
+}

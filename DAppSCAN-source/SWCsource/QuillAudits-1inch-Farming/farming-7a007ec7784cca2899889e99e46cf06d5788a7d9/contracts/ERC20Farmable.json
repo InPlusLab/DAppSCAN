@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-Farming/farming-7a007ec7784cca2899889e99e46cf06d5788a7d9/contracts/ERC20Farmable.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "quitAll",
+   "lineNumber": "L71 - L73"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "_beforeTokenTransfer",
+   "lineNumber": "L118 - L137"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "_beforeTokenTransfer",
+   "lineNumber": "L123 - L130"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "_beforeTokenTransfer",
+   "lineNumber": "L140 - L147"
+  }
+ ]
+}

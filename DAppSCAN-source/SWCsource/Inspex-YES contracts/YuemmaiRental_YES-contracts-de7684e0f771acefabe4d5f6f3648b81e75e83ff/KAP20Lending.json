@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-YES contracts/YuemmaiRental_YES-contracts-de7684e0f771acefabe4d5f6f3648b81e75e83ff/KAP20Lending.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  }
+ ]
+}

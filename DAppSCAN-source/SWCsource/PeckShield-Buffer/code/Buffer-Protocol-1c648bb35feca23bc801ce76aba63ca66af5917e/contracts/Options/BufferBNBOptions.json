@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-Buffer/code/Buffer-Protocol-1c648bb35feca23bc801ce76aba63ca66af5917e/contracts/Options/BufferBNBOptions.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "create",
+   "lineNumber": "L142-L189"
+  }
+ ]
+}

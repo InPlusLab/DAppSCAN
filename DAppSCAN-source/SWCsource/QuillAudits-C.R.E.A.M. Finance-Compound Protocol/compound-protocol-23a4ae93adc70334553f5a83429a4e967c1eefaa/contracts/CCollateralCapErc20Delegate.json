@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-C.R.E.A.M. Finance-Compound Protocol/compound-protocol-23a4ae93adc70334553f5a83429a4e967c1eefaa/contracts/CCollateralCapErc20Delegate.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "_becomeImplementation",
+   "lineNumber": "L23"
+  },
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "_becomeImplementation",
+   "lineNumber": "L27 - L29"
+  }
+ ]
+}

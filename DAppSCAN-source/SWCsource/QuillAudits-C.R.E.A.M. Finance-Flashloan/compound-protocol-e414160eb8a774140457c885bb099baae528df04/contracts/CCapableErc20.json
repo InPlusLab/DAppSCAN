@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-C.R.E.A.M. Finance-Flashloan/compound-protocol-e414160eb8a774140457c885bb099baae528df04/contracts/CCapableErc20.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "gulp",
+   "lineNumber": "L133"
+  }
+ ]
+}

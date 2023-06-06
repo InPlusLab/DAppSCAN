@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Etherparty Smart Contract Audit/eth-smart-contracts-39ab46c841f2e8e5beff4508a3f05362bd583049/Crowdfund.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "duringCrowdfund",
+   "lineNumber": "L61\u300168\u300176\u3001162\u3001173\u3001180"
+  }
+ ]
+}

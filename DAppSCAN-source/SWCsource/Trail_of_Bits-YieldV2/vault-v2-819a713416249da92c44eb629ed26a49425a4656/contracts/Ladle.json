@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-YieldV2/vault-v2-819a713416249da92c44eb629ed26a49425a4656/contracts/Ladle.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Delegatecall to Untrusted Callee",
+   "function": "addModule",
+   "lineNumber": "L145 - L151"
+  },
+  {
+   "category": "SWC-Delegatecall to Untrusted Callee",
+   "function": "ality coded in a module, to be used with batch",
+   "lineNumber": "L187 - L198"
+  }
+ ]
+}

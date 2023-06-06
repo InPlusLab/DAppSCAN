@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-token/1inch-token-99fd056f91005ca521a02a005f7bcd8f77e06afc/contracts/ERC20Permit.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "permit",
+   "lineNumber": "L53"
+  }
+ ]
+}

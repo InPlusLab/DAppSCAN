@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Champions League Smart Contract/CLEToken/CLEToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Shadowing State Variables\uff1aL410-412",
+   "function": "_functionCallWithValue",
+   "lineNumber": "//SWC-Shadowing State Variables\uff1aL410-412"
+  },
+  {
+   "category": "SWC-Insufficient Gas Griefing\uff1aL887-898",
+   "function": "includeInReward",
+   "lineNumber": "//SWC-Insufficient Gas Griefing\uff1aL887-898"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Checkdot Smart Contract _New - QuillAudits/CheckDotPrivateSaleContract-84237ce510704d2761d4b88167686be2ac5ad807/contracts/CheckDotPrivateSale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  }
+ ]
+}

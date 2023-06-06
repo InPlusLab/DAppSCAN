@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-Gamma/hypervisor-9a7a3dd88e8e8b106bf5d0e4c56e879442a72181/contracts/Hypervisor.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L228-273"
+  }
+ ]
+}

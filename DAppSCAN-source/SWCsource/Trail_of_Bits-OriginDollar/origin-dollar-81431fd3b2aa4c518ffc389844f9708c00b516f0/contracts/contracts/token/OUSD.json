@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/token/OUSD.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "N/A",
+   "lineNumber": "L31"
+  },
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "N/A",
+   "lineNumber": "L40"
+  },
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "_executeTransfer",
+   "lineNumber": "L156 - L172"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_executeTransfer",
+   "lineNumber": "L192"
+  }
+ ]
+}

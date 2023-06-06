@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Ceres Token Smart Contract/Bridge/Bridge.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma\uff1aL1\uff0call contract",
+   "function": "N/A",
+   "lineNumber": "//SWC-Floating Pragma\uff1aL1\uff0call contract"
+  }
+ ]
+}

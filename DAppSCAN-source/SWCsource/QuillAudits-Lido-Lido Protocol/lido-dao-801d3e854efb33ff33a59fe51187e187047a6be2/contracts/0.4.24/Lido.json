@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-Lido Protocol/lido-dao-801d3e854efb33ff33a59fe51187e187047a6be2/contracts/0.4.24/Lido.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "mevTxFeeReceiver",
+   "lineNumber": "L140 - L143"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "receiveMevTxFee",
+   "lineNumber": "L160 - L167"
+  }
+ ]
+}

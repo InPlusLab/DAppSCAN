@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Naos-Formation/NAOS-Formation-master/contracts/adapters/YearnVaultAdapter.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "deposit",
+   "lineNumber": "L65"
+  }
+ ]
+}

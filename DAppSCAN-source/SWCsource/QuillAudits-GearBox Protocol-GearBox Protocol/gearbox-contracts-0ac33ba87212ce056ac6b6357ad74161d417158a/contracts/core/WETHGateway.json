@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/core/WETHGateway.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "addLiquidityETH",
+   "lineNumber": "L98 - L112"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "removeLiquidityETH",
+   "lineNumber": "L120 - L140"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "openCreditAccountETH",
+   "lineNumber": "L151 - L171"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "repayCreditAccountETH",
+   "lineNumber": "L179 - L199"
+  }
+ ]
+}

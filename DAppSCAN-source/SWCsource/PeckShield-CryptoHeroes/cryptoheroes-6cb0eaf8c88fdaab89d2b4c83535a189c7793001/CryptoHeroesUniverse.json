@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-CryptoHeroes/cryptoheroes-6cb0eaf8c88fdaab89d2b4c83535a189c7793001/CryptoHeroesUniverse.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "deposit",
+   "lineNumber": "L175 - L203"
+  }
+ ]
+}

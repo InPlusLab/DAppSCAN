@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-ERC20_LuckyChip/core-0d957aa387d29297fc6ebfc69140440be6d791c1/contracts/token/LCToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_delegate",
+   "lineNumber": "L222-L232"
+  }
+ ]
+}

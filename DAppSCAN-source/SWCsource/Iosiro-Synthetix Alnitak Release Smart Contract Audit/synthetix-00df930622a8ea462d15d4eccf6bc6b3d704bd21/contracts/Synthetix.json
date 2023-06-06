@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Alnitak Release Smart Contract Audit/synthetix-00df930622a8ea462d15d4eccf6bc6b3d704bd21/contracts/Synthetix.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Authorization through tx.origin",
+   "function": "exchangeWithTrackingForInitiator",
+   "lineNumber": "L96"
+  }
+ ]
+}

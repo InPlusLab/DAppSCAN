@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Multis/MULTISig-635f670c40ab2a83e846f8c6ca16b3cbe5bc6678/contracts/GSNMultiSigWallet.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lineNumber": "L1-L429"
+  },
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "revokeConfirmation",
+   "lineNumber": "L227-L256"
+  }
+ ]
+}

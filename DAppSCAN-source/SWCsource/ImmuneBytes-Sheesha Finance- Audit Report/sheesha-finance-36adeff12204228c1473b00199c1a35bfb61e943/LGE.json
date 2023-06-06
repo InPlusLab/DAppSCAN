@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-Sheesha Finance- Audit Report/sheesha-finance-36adeff12204228c1473b00199c1a35bfb61e943/LGE.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L34"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "after 2 weeks to mint LGE",
+   "lineNumber": "L91\u3001126\u3001134"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Decentraland_MANA_Token/mana-a13905356378cc0153dd3c2153c8ceae6400970d/MANACrowdsale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "",
+   "lineNumber": "L76-93"
+  }
+ ]
+}

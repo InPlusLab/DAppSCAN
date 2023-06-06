@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-DSG/core-6f607f77698936e132e4e9b5cb4d75580636d919/contracts/pools/SinglePool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "emergencyWithdraw",
+   "lineNumber": "L202-L214"
+  }
+ ]
+}

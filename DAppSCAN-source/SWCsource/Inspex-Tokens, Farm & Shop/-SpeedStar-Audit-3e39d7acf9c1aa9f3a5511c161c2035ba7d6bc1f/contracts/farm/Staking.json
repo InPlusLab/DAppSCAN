@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-Tokens, Farm & Shop/-SpeedStar-Audit-3e39d7acf9c1aa9f3a5511c161c2035ba7d6bc1f/contracts/farm/Staking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "depositStable",
+   "lineNumber": "L674"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Cystack-AOC BEP-20 - v1.3/AOC_BEP0x53cB59f3Ee1035daD6b63F88d9150EA70a1f2605/contracts/library/DateTime.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Stacker_Venture/StackerVC_VentureFund001-fund-2/FarmBossV1.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "govExecute",
+   "lineNumber": "L221"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Bollycoin staking Smart Contract/Bollystake.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma\uff1aL10",
+   "function": "N/A",
+   "lineNumber": "//SWC-Floating Pragma\uff1aL10"
+  },
+  {
+   "category": "SWC-Function Default Visibility\uff1aL772",
+   "function": "N/A",
+   "lineNumber": "//     SWC-Function Default Visibility\uff1aL772"
+  }
+ ]
+}

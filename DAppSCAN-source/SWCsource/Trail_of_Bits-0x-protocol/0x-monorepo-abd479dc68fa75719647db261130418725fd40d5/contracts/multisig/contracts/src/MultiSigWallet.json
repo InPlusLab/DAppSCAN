@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-0x-protocol/0x-monorepo-abd479dc68fa75719647db261130418725fd40d5/contracts/multisig/contracts/src/MultiSigWallet.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_addTransaction",
+   "lineNumber": "L303"
+  }
+ ]
+}

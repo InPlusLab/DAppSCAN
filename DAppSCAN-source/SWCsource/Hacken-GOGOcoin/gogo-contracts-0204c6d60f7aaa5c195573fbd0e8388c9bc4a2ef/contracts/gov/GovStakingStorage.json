@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-GOGOcoin/gogo-contracts-0204c6d60f7aaa5c195573fbd0e8388c9bc4a2ef/contracts/gov/GovStakingStorage.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "L7"
+  }
+ ]
+}

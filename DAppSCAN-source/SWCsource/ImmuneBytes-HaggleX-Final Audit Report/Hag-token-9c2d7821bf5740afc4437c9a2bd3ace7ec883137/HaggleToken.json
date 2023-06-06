@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-HaggleX-Final Audit Report/Hag-token-9c2d7821bf5740afc4437c9a2bd3ace7ec883137/HaggleToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "stake",
+   "lineNumber": "L1077"
+  }
+ ]
+}

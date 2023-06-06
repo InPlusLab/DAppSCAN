@@ -1,0 +1,30 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-FraxFinance/frax-solidity-3f0993a70e3496fd27887db7754d68709c84015e/contracts/Frax/Pools/FraxPool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "mint1t1FRAX",
+   "lineNumber": "L204"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "mintFractionalFRAX",
+   "lineNumber": "L250"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "collectRedemption",
+   "lineNumber": "L366"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "collectRedemption",
+   "lineNumber": "L370"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "recollateralizeFRAX",
+   "lineNumber": "L401"
+  }
+ ]
+}

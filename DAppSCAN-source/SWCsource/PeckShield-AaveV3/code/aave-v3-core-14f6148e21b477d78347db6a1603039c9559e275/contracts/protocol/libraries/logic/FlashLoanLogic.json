@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-AaveV3/code/aave-v3-core-14f6148e21b477d78347db6a1603039c9559e275/contracts/protocol/libraries/logic/FlashLoanLogic.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "executeFlashLoanSimple",
+   "lineNumber": "L182-L240"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Endaoment/endaoment-contracts-f60aa253d3d869ad6460877f23e6092acb313add/Administratable.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "onlyAdminOrRole",
+   "lineNumber": "L48"
+  }
+ ]
+}

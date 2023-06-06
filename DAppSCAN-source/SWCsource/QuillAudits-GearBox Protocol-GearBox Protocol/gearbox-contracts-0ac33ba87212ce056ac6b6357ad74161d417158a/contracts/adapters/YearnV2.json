@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/adapters/YearnV2.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_deposit",
+   "lineNumber": "L78"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "withdraw",
+   "lineNumber": "L132"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L132"
+  }
+ ]
+}

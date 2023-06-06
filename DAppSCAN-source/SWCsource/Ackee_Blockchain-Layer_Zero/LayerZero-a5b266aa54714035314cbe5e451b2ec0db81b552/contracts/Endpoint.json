@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Ackee_Blockchain-Layer_Zero/LayerZero-a5b266aa54714035314cbe5e451b2ec0db81b552/contracts/Endpoint.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "newVersion",
+   "lineNumber": "L152"
+  }
+ ]
+}

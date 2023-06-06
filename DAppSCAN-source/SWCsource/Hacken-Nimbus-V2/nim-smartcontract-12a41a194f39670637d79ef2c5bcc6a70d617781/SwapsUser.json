@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Nimbus-V2/nim-smartcontract-12a41a194f39670637d79ef2c5bcc6a70d617781/SwapsUser.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_swapsCall_internal",
+   "lineNumber": "L156-178"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Skale Proxy Contracts/IMA-c06cf391c72e09242f0dec49c24be8996a8ed024/proxy/contracts/OwnableForMainnet.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "setOwner",
+   "lineNumber": "L70"
+  }
+ ]
+}

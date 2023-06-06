@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-SuperRare Token/rarest-token-8c5abd3c3273de70520d7b519d16893f431830f9/contracts/erc20/SuperRareToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "permit",
+   "lineNumber": "67-91"
+  }
+ ]
+}

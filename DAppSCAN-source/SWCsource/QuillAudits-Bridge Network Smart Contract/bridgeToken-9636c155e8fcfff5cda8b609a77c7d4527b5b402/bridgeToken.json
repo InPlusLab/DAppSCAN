@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Bridge Network Smart Contract/bridgeToken-9636c155e8fcfff5cda8b609a77c7d4527b5b402/bridgeToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC\u2014Floating Pragma\uff1aL5",
+   "function": "N/A",
+   "lineNumber": "//SWC\u2014Floating Pragma\uff1aL5"
+  },
+  {
+   "category": "SWC\u2014Function Default Visibility",
+   "function": "transferOwnership",
+   "lineNumber": "L172"
+  },
+  {
+   "category": "SWC-Code With No Effects\uff1aL485-500",
+   "function": "_approve",
+   "lineNumber": "//SWC-Code With No Effects\uff1aL485-500"
+  }
+ ]
+}

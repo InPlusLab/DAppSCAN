@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-BsktEthLPPool Smart Contract/BsktEthLPPool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version\uff1aL7",
+   "function": "N/A",
+   "lineNumber": "//SWC-Outdated Compiler Version\uff1aL7"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time\uff1aL400\uff0c417",
+   "function": "updateReward",
+   "lineNumber": "//SWC-Block values as a proxy for time\uff1aL400\uff0c417"
+  },
+  {
+   "category": "SWC-Reentrancy\uff1aL459-462",
+   "function": "exit",
+   "lineNumber": "//SWC-Reentrancy\uff1aL459-462"
+  }
+ ]
+}

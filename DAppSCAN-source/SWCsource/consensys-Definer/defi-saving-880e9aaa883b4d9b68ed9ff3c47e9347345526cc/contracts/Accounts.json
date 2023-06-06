@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Definer/defi-saving-880e9aaa883b4d9b68ed9ff3c47e9347345526cc/contracts/Accounts.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "getBorrowETH",
+   "lineNumber": "L387"
+  }
+ ]
+}

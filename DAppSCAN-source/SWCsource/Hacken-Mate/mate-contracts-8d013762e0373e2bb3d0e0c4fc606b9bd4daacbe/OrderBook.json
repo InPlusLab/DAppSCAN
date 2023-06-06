@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Mate/mate-contracts-8d013762e0373e2bb3d0e0c4fc606b9bd4daacbe/OrderBook.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "placeOrder",
+   "lineNumber": "L76\u3001105\u3001145"
+  }
+ ]
+}

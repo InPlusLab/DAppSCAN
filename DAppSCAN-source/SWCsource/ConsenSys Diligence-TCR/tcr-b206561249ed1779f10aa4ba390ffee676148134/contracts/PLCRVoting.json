@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-TCR/tcr-b206561249ed1779f10aa4ba390ffee676148134/contracts/PLCRVoting.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "withdrawVotingRights",
+   "lineNumber": "L87"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "startPoll",
+   "lineNumber": "L211"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "hasBeenRevealed",
+   "lineNumber": "L294 - L298"
+  }
+ ]
+}

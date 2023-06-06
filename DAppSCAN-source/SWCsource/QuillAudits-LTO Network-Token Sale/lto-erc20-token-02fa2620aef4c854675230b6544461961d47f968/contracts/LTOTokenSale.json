@@ -1,0 +1,35 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-LTO Network-Token Sale/lto-erc20-token-02fa2620aef4c854675230b6544461961d47f968/contracts/LTOTokenSale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_calcProportion",
+   "lineNumber": "L144 - L150"
+  },
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "_withdrawal",
+   "lineNumber": "L216"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "withdrawal",
+   "lineNumber": "L224 - L226"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "withdrawalFor",
+   "lineNumber": "L229 - L234"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "clear",
+   "lineNumber": "L238 - L245"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "clear",
+   "lineNumber": "L238 - L245"
+  }
+ ]
+}

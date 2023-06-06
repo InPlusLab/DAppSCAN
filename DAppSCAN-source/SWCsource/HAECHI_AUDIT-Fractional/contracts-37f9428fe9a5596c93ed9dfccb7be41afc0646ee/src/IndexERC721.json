@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Fractional/contracts-37f9428fe9a5596c93ed9dfccb7be41afc0646ee/src/IndexERC721.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L16"
+  },
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L20"
+  }
+ ]
+}

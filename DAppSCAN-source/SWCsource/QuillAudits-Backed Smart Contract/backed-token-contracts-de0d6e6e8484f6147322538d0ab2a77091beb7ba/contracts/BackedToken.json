@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Backed Smart Contract/backed-token-contracts-de0d6e6e8484f6147322538d0ab2a77091beb7ba/contracts/BackedToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "N/A",
+   "lineNumber": "L12"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "unlock",
+   "lineNumber": "L28"
+  }
+ ]
+}

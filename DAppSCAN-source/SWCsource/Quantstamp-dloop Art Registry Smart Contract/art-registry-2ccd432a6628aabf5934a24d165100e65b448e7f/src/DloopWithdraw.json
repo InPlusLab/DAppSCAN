@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-dloop Art Registry Smart Contract/art-registry-2ccd432a6628aabf5934a24d165100e65b448e7f/src/DloopWithdraw.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "canWithdrawNow",
+   "lineNumber": "L83"
+  }
+ ]
+}

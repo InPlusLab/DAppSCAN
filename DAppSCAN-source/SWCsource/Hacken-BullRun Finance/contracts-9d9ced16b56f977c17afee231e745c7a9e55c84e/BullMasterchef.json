@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-BullRun Finance/contracts-9d9ced16b56f977c17afee231e745c7a9e55c84e/BullMasterchef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit\uff1aL196-201",
+   "function": "_massUpdatePools",
+   "lineNumber": "SWC-DoS With Block Gas Limit\uff1aL196-201"
+  }
+ ]
+}

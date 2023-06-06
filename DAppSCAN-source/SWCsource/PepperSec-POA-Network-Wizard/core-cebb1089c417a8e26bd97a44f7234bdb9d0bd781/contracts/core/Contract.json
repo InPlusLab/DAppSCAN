@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PepperSec-POA-Network-Wizard/core-cebb1089c417a8e26bd97a44f7234bdb9d0bd781/contracts/core/Contract.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "storing",
+   "lineNumber": "L334"
+  }
+ ]
+}

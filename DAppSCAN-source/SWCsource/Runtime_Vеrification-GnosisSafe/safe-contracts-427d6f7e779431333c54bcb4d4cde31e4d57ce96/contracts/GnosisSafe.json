@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/GnosisSafe.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "execTransaction",
+   "lineNumber": "L70 - L105"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "execTransaction",
+   "lineNumber": "L94"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "checkSignatures",
+   "lineNumber": "L142"
+  }
+ ]
+}

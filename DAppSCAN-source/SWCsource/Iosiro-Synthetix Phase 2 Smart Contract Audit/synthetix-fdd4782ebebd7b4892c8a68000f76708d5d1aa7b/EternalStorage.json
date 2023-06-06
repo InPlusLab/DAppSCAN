@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Phase 2 Smart Contract Audit/synthetix-fdd4782ebebd7b4892c8a68000f76708d5d1aa7b/EternalStorage.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L51-57"
+  }
+ ]
+}

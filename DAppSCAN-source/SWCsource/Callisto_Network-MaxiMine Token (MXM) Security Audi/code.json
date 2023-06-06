@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Callisto_Network-MaxiMine Token (MXM) Security Audit/code.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "transfer",
+   "lineNumber": "L76"
+  }
+ ]
+}

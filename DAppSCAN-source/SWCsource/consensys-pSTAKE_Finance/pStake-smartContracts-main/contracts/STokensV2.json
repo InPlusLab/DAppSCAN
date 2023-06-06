@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-pSTAKE_Finance/pStake-smartContracts-main/contracts/STokensV2.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "_calculatePendingRewards",
+   "lineNumber": "L249"
+  }
+ ]
+}

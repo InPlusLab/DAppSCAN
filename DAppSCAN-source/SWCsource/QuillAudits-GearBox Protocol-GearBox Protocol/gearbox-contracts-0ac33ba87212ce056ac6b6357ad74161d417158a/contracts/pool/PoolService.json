@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/pool/PoolService.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "addLiquidity",
+   "lineNumber": "L145"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "lendCreditAccount",
+   "lineNumber": "L238 - L258"
+  }
+ ]
+}

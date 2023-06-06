@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinfabrik-MintingFactoryV2, BaseUpgradableMarketplace & KODAV3UpgradableGatedMarketplace/known-origin-contracts-v3-d592c5f4fa4e0b6fc65a1fce43e302706aedf607/contracts/minter/MintingFactoryV2.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L3"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "mintBatchEdition",
+   "lineNumber": "L93 - L112"
+  }
+ ]
+}

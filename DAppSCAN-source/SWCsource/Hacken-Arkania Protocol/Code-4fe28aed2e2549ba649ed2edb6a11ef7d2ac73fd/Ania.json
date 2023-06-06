@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Arkania Protocol/Code-4fe28aed2e2549ba649ed2edb6a11ef7d2ac73fd/Ania.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L8"
+  },
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L8"
+  }
+ ]
+}

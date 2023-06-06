@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-TCR/tcr-b206561249ed1779f10aa4ba390ffee676148134/contracts/Parameterizer.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "proposeReparameterization",
+   "lineNumber": "L130"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "proposeReparameterization",
+   "lineNumber": "L135"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "challengeReparameterization",
+   "lineNumber": "L165"
+  }
+ ]
+}

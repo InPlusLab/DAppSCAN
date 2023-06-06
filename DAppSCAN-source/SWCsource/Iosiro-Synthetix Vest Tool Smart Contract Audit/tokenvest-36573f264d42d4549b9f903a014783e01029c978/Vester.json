@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Vest Tool Smart Contract Audit/tokenvest-36573f264d42d4549b9f903a014783e01029c978/Vester.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "redeemWithTransfer",
+   "lineNumber": "L51, 127"
+  }
+ ]
+}

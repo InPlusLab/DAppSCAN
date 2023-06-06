@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Idle_Finance/idle-tranches-d94ee7194e8cb17db13b16c338f3e780b62f5435/contracts/IdleCDO.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_deposit",
+   "lineNumber": "L242-258"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Hedgey Finance-V1/treasury_pools_core-7eb9dc8de364a1ab3b53ba0ad3194f380c03e94b/HedgeyAnySwap.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility\uff1aL49-53",
+   "function": "sortTokens",
+   "lineNumber": "//SWC-Function Default Visibility\uff1aL49-53"
+  }
+ ]
+}

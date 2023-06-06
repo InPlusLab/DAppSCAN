@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GameZilla Token Smart Contract/GameZilla.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma\uff1aL6",
+   "function": "N/A",
+   "lineNumber": "//SWC-Floating Pragma\uff1aL6"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-NAOS-Formation Updates/NAOS-Formation-c1404ec0f5de6f80189b528acf5f0923ff8d4e6e/contracts/adapters/AlpacaVaultAdapter.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "withdraw",
+   "lineNumber": "L132"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "indirectWithdraw",
+   "lineNumber": "L151-158"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "indirectWithdraw",
+   "lineNumber": "L162"
+  }
+ ]
+}

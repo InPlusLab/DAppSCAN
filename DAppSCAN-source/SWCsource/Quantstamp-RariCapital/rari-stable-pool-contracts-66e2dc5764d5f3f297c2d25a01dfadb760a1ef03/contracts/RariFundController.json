@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-RariCapital/rari-stable-pool-contracts-66e2dc5764d5f3f297c2d25a01dfadb760a1ef03/contracts/RariFundController.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L10"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "upgradeFundController",
+   "lineNumber": "L137-L149"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "checkLossRateLimit",
+   "lineNumber": "L538"
+  }
+ ]
+}

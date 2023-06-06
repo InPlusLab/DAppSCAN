@@ -1,0 +1,35 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Green House/GHS-af12003ab8ff8b614e0e49cfd688f7e41df21ed0/contracts/GreenHouse.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "AttemptToDistrubuteBonusPools",
+   "lineNumber": "L96"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "AttemptToDistrubuteBonusPools",
+   "lineNumber": "L98"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "bonusRewardPoolCountdown",
+   "lineNumber": "L209"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "monthlyRewardPoolCountdown",
+   "lineNumber": "L216"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "_maybeDistributeMonthlyRewardPool",
+   "lineNumber": "L386"
+  },
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "_maybeDistributeBonusRewardPool",
+   "lineNumber": "L400"
+  }
+ ]
+}

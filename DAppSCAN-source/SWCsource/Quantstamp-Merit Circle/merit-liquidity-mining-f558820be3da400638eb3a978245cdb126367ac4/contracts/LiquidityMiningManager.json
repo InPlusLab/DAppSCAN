@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Merit Circle/merit-liquidity-mining-f558820be3da400638eb3a978245cdb126367ac4/contracts/LiquidityMiningManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "N/A",
+   "lineNumber": "L70"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "distributeRewards",
+   "lineNumber": "L111-L144"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "distributeRewards",
+   "lineNumber": "L140"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "getPools",
+   "lineNumber": "L146-L148"
+  }
+ ]
+}

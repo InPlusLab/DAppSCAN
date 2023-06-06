@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Thales Airdrop and Staking Smart Contract Audit/contracts-a7a15db435b70be959f36c64f4367d54d68f3848/VestingEscrow.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_totalVestedOf",
+   "lineNumber": "L57"
+  }
+ ]
+}

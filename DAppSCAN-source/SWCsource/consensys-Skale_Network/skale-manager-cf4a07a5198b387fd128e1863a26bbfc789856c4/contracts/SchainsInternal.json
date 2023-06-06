@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/SchainsInternal.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "N/A",
+   "lineNumber": "L532"
+  }
+ ]
+}

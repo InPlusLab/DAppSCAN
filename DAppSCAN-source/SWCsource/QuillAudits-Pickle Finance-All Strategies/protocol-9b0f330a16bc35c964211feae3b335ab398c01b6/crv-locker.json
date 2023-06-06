@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Pickle Finance-All Strategies/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/crv-locker.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "execute",
+   "lineNumber": "L87"
+  }
+ ]
+}

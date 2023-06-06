@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Smartdec-TokenBridge (by POA Network) Smart Contracts Security Analysis/tokenbridge-contracts-bbb97a63c900f03a902d0e82358abac3b294e4d9/contracts/upgradeable_contracts/erc20_to_erc20/HomeBridgeErcToErc.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "",
+   "lineNumber": "L159-L161   "
+  }
+ ]
+}

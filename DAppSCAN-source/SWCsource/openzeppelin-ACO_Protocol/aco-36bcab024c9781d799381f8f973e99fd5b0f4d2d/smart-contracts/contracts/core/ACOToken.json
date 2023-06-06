@@ -1,0 +1,30 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "init",
+   "lineNumber": "L207"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "burnFrom",
+   "lineNumber": "L441-L443"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "_mintToken",
+   "lineNumber": "L570-L573"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_validateAndBurn",
+   "lineNumber": "L741"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_getFormattedStrikePrice",
+   "lineNumber": "L1018"
+  }
+ ]
+}

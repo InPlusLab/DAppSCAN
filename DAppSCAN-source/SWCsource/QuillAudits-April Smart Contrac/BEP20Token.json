@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-April Smart Contract/BEP20Token.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version\uff1aL5",
+   "function": "N/A",
+   "lineNumber": "//SWC-Outdated Compiler Version\uff1aL5"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Tally_SafeGuard_Audit/safeguard-b2c63a9dfc4090be13320d999e7c6c1d842625d3/contracts/SafeGuard.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "queueTransaction",
+   "lineNumber": "L63-L64"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "queueTransactionWithDescription",
+   "lineNumber": "L69-L71"
+  }
+ ]
+}

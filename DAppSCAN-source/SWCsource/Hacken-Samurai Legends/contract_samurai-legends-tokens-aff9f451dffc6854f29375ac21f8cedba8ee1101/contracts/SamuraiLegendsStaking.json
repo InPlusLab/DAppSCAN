@@ -1,0 +1,30 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Samurai Legends/contract_samurai-legends-tokens-aff9f451dffc6854f29375ac21f8cedba8ee1101/contracts/SamuraiLegendsStaking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "N/A",
+   "lineNumber": "L77"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "lastTimeRewardActiveAt",
+   "lineNumber": "L156"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "createPending",
+   "lineNumber": "L251"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "getClaimablePendingPortion",
+   "lineNumber": "L333"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "addReward",
+   "lineNumber": "L408"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Connext_NXTP_Noncustodial_Xchain_Transfer_Protocol/nxtp-494d07d3707df91658de45e2177a79adc80cf5fe/packages/contracts/contracts/TransactionManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Signature Malleability",
+   "function": "cancel",
+   "lineNumber": "L796-L818"
+  }
+ ]
+}

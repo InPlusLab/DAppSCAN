@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Shaula Release Smart Contract Audit/synthetix-82cc39e4a005576e00c9684e6f69fe0f8b623811/contracts/CollateralEth.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Message call with hardcoded gas amount",
+   "function": "claim",
+   "lineNumber": "L78"
+  }
+ ]
+}

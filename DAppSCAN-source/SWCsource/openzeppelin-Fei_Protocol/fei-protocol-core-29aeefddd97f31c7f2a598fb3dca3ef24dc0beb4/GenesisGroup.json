@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Fei_Protocol/fei-protocol-core-29aeefddd97f31c7f2a598fb3dca3ef24dc0beb4/GenesisGroup.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unexpected Ether Balance",
+   "function": "purchase",
+   "lineNumber": "L80-87"
+  },
+  {
+   "category": "SWC-Unprotected SELFDESTRUCT Instruction",
+   "function": "redeem",
+   "lineNumber": "L89-103"
+  }
+ ]
+}

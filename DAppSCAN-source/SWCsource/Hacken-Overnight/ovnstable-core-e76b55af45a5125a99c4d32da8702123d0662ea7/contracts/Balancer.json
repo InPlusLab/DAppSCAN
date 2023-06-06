@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Overnight/ovnstable-core-e76b55af45a5125a99c4d32da8702123d0662ea7/contracts/Balancer.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "buildBalanceActions",
+   "lineNumber": "L96"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "buildBalanceActions",
+   "lineNumber": "L102"
+  }
+ ]
+}

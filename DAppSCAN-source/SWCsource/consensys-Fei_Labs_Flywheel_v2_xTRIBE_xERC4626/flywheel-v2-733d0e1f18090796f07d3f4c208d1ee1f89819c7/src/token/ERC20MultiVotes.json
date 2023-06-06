@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Fei_Labs_Flywheel_v2_xTRIBE_xERC4626/flywheel-v2-733d0e1f18090796f07d3f4c208d1ee1f89819c7/src/token/ERC20MultiVotes.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Assert Violation",
+   "function": "_undelegate",
+   "lineNumber": "L252-261"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-CryptoGamez Smart Contract/CryptoGamez/CryptoGamez.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma\uff1aL6",
+   "function": "N/A",
+   "lineNumber": "//SWC-Floating Pragma\uff1aL6"
+  }
+ ]
+}

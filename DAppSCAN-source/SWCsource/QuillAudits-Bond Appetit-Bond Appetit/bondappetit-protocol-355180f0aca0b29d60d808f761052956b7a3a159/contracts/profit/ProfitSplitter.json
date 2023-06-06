@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Bond Appetit-Bond Appetit/bondappetit-protocol-355180f0aca0b29d60d808f761052956b7a3a159/contracts/profit/ProfitSplitter.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_payToRecipients",
+   "lineNumber": "L228"
+  }
+ ]
+}

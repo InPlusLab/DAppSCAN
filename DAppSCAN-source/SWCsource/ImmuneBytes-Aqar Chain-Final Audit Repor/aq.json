@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-Aqar Chain-Final Audit Report/aq.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Typographical Error",
+   "function": "seedusdt",
+   "lineNumber": "L444"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "seedbnb",
+   "lineNumber": "L467"
+  },
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "publicbnb",
+   "lineNumber": "L542"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "claim",
+   "lineNumber": "L559"
+  }
+ ]
+}

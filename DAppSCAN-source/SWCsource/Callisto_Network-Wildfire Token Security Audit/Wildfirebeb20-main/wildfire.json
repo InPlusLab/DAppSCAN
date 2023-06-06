@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Callisto_Network-Wildfire Token Security Audit/Wildfirebeb20-main/wildfire.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "includeInReward",
+   "lineNumber": "L809 - L817"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "_getCurrentSupply",
+   "lineNumber": "L898 - L902"
+  }
+ ]
+}

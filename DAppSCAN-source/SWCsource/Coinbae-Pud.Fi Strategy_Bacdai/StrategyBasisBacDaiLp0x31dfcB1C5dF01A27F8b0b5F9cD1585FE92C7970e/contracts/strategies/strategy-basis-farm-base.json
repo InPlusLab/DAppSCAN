@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-Pud.Fi Strategy_Bacdai/StrategyBasisBacDaiLp0x31dfcB1C5dF01A27F8b0b5F9cD1585FE92C7970e/contracts/strategies/strategy-basis-farm-base.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "harvest",
+   "lineNumber": "L78 - L152"
+  }
+ ]
+}

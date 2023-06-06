@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Talent Protocol/contracts-70acb4924503fad6416ffa44b117ab51bef3fd21/Staking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time\uff1aL444\u3001601\u3001650\u3001651\u3001748\u3001749",
+   "function": "adminWithdraw",
+   "lineNumber": "//SWC-Block values as a proxy for time\uff1aL444\u3001601\u3001650\u3001651\u3001748\u3001749"
+  }
+ ]
+}

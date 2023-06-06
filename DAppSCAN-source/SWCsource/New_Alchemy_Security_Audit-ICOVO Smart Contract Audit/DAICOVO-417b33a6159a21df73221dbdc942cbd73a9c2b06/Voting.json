@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/New_Alchemy_Security_Audit-ICOVO Smart Contract Audit/DAICOVO-417b33a6159a21df73221dbdc942cbd73a9c2b06/Voting.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "finalizeVoting ",
+   "lineNumber": "L83-101, 133-139"
+  }
+ ]
+}

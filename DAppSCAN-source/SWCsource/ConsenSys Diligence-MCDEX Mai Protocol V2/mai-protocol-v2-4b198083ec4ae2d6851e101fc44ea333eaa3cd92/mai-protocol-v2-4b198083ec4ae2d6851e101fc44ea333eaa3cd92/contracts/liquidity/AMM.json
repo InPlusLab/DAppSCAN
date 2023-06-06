@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-MCDEX Mai Protocol V2/mai-protocol-v2-4b198083ec4ae2d6851e101fc44ea333eaa3cd92/mai-protocol-v2-4b198083ec4ae2d6851e101fc44ea333eaa3cd92/contracts/liquidity/AMM.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L3"
+  },
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "mintShareTokenTo",
+   "lineNumber": "L502"
+  }
+ ]
+}

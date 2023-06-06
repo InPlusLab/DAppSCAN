@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-Deposit Security Module/lido-dao-5b449b740cddfbef5c107505677e6a576e2c2b69/contracts/0.4.24/Lido.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Insufficient Gas Griefing",
+   "function": "transferToVault",
+   "lineNumber": "L301"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "_distributeNodeOperatorsReward",
+   "lineNumber": "L618 - L626"
+  }
+ ]
+}

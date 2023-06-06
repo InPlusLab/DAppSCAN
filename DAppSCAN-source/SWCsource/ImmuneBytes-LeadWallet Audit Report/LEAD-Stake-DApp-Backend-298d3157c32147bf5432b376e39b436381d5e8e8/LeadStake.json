@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-LeadWallet Audit Report/LEAD-Stake-DApp-Backend-298d3157c32147bf5432b376e39b436381d5e8e8/LeadStake.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "adminWithdraw",
+   "lineNumber": "L322-329"
+  }
+ ]
+}

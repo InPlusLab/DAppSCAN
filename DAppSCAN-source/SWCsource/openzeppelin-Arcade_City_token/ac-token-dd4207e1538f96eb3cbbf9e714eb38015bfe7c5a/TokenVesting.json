@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Arcade_City_token/ac-token-dd4207e1538f96eb3cbbf9e714eb38015bfe7c5a/TokenVesting.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "totalSupply",
+   "lineNumber": "all contract"
+  },
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "sendTokens",
+   "lineNumber": "L133,190"
+  }
+ ]
+}

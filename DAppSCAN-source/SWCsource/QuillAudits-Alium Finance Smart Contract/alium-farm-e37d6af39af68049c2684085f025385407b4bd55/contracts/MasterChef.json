@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Alium Finance Smart Contract/alium-farm-e37d6af39af68049c2684085f025385407b4bd55/contracts/MasterChef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "emergencyWithdraw",
+   "lineNumber": "L163 - L171"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "blockReward",
+   "lineNumber": "L271 - L281"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "massUpdatePools",
+   "lineNumber": "L284 - L289"
+  }
+ ]
+}

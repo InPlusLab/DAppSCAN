@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Nasdex/NasDex-b575cab1663d4f5689c4650c42abb0d67adf879d/MasterChef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L40-44"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Blockchain_Capital_Token/BCAPToken-5cb5e76338cc47343ba9268663a915337c8b268e/sol/BCAPToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L2-L96"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transferFrom ",
+   "lineNumber": "L91 "
+  }
+ ]
+}

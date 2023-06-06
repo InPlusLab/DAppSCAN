@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-AutoCompoundVault/mondayclub-9ec29e0bb41a6bbef5484976502c924f4557ca02/StrategyCommonChefLP.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence\uff1aL137-149",
+   "function": "_harvest",
+   "lineNumber": "//SWC-Transaction Order Dependence\uff1aL137-149"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence\uff1aL169-183",
+   "function": "addLiquidity",
+   "lineNumber": "//SWC-Transaction Order Dependence\uff1aL169-183"
+  }
+ ]
+}

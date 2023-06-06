@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-GOGOcoin/gogo-contracts-0204c6d60f7aaa5c195573fbd0e8388c9bc4a2ef/contracts/gov/GovStaking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "claim",
+   "lineNumber": "L202 - L205"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "claimAll",
+   "lineNumber": "L208 - L212"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "earned",
+   "lineNumber": "L288 - l299"
+  }
+ ]
+}

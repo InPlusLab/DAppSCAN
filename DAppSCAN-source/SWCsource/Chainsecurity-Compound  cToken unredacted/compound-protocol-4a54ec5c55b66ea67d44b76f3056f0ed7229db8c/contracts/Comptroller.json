@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsecurity-Compound  cToken unredacted/compound-protocol-4a54ec5c55b66ea67d44b76f3056f0ed7229db8c/contracts/Comptroller.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "liquidateBorrowAllowed",
+   "lineNumber": "L465-501"
+  }
+ ]
+}

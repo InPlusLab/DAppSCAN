@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/CrowdsaleLib.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected SELFDESTRUCT Instruction",
+   "function": "withdrawOwnerEth",
+   "lineNumber": "L204-L208"
+  }
+ ]
+}

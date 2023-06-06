@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-origin/origin-4b31657825523962434c6d4e4c61feb0bb1ee518/origin-contracts/contracts/marketplace/v00/Marketplace.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "dispute",
+   "lineNumber": "L322-L333"
+  }
+ ]
+}

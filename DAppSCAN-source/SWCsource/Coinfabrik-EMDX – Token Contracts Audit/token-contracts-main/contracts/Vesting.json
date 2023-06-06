@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinfabrik-EMDX \u2013 Token Contracts Audit/token-contracts-main/contracts/Vesting.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "updateScore",
+   "lineNumber": "L139-199"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "updateScore",
+   "lineNumber": "L172-180"
+  }
+ ]
+}

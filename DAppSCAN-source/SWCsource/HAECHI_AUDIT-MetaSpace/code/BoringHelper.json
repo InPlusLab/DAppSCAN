@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-MetaSpace/code/BoringHelper.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects\uff1aL77",
+   "function": "getMETARate",
+   "lineNumber": "//SWC-Code With No Effects\uff1aL77"
+  }
+ ]
+}

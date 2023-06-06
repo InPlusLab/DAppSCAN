@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-FLUX Token Smart Contract Audit/Etherscan-0x54735d716995071585A4f6ba341a6Ded79756F09.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "stop",
+   "lineNumber": "L90"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "start",
+   "lineNumber": "L94"
+  }
+ ]
+}

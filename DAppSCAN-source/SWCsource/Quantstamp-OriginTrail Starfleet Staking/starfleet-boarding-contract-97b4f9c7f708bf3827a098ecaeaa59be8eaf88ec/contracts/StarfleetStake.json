@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-OriginTrail Starfleet Staking/starfleet-boarding-contract-97b4f9c7f708bf3827a098ecaeaa59be8eaf88ec/contracts/StarfleetStake.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "depositTokens",
+   "lineNumber": "L62 - L86"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "depositTokens",
+   "lineNumber": "L66"
+  }
+ ]
+}

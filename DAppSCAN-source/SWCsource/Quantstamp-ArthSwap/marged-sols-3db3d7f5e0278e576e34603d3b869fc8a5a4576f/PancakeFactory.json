@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-ArthSwap/marged-sols-3db3d7f5e0278e576e34603d3b869fc8a5a4576f/PancakeFactory.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "approve",
+   "lineNumber": "L166 - L169"
+  }
+ ]
+}

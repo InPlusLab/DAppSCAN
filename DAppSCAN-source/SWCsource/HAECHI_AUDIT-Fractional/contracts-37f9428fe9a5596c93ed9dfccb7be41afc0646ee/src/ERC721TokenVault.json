@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Fractional/contracts-37f9428fe9a5596c93ed9dfccb7be41afc0646ee/src/ERC721TokenVault.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "bid",
+   "lineNumber": "L262"
+  }
+ ]
+}

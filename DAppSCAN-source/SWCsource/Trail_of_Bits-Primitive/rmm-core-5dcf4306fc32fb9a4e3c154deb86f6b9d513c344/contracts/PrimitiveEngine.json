@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Delegatecall to Untrusted Callee",
+   "function": "withdraw",
+   "lineNumber": "L223 - L233"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "allocate",
+   "lineNumber": "L238 - L270"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "swap",
+   "lineNumber": "L304 - L403"
+  }
+ ]
+}

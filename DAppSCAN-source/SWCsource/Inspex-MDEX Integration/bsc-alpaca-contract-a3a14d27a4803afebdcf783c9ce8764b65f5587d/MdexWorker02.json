@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-MDEX Integration/bsc-alpaca-contract-a3a14d27a4803afebdcf783c9ce8764b65f5587d/MdexWorker02.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L14"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "_reinvest",
+   "lineNumber": "L234"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "_reinvest",
+   "lineNumber": "L239\u3001242\u3001243"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "_rewardToBeneficialVault",
+   "lineNumber": "L345-346\u3001352"
+  }
+ ]
+}

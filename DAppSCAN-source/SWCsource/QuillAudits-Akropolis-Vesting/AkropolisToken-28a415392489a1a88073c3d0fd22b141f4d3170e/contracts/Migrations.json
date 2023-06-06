@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Akropolis-Vesting/AkropolisToken-28a415392489a1a88073c3d0fd22b141f4d3170e/contracts/Migrations.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L2"
+  }
+ ]
+}

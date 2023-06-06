@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-UMA/protocol-1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/oracle/implementation/OptimisticOracle.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "hasPrice",
+   "lineNumber": "L495"
+  }
+ ]
+}

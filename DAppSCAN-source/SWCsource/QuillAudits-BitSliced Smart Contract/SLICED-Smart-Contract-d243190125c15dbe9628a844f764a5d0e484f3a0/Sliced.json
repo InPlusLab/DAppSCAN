@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-BitSliced Smart Contract/SLICED-Smart-Contract-d243190125c15dbe9628a844f764a5d0e484f3a0/Sliced.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Block values as a proxy for time\uff1aL72",
+   "function": "sendTokens",
+   "lineNumber": "//\tSWC-Block values as a proxy for time\uff1aL72"
+  }
+ ]
+}

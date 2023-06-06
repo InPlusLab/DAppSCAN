@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Yearn Finance-SNX/yearnV2-strat-SNX-staking-91b839df4a350d80cb583795bccafe0836fdb732/contracts/Strategy.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "liquidatePosition",
+   "lineNumber": "L253"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "liquidatePosition",
+   "lineNumber": "L262"
+  }
+ ]
+}

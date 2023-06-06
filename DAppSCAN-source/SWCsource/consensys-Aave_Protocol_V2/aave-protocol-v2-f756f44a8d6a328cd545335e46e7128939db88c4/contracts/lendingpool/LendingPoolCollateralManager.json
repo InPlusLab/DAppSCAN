@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Aave_Protocol_V2/aave-protocol-v2-f756f44a8d6a328cd545335e46e7128939db88c4/contracts/lendingpool/LendingPoolCollateralManager.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unprotected Ether Withdrawal",
+   "function": "swapLiquidity",
+   "lineNumber": "L490-517"
+  }
+ ]
+}

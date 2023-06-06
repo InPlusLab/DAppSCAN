@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-GSPI Club-project2/openzeppelin-contracts-3.2.0/contracts/access/AccessControl.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L4"
+  },
+  {
+   "category": "SWC-Old pragma version",
+   "function": "N/A",
+   "lineNumber": "L4"
+  }
+ ]
+}

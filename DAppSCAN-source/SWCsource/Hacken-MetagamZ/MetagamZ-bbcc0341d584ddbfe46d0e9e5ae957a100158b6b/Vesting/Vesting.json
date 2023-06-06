@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-MetagamZ/MetagamZ-bbcc0341d584ddbfe46d0e9e5ae957a100158b6b/Vesting/Vesting.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "createMultipleVesting",
+   "lineNumber": "L321 - L328"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "createMultipleVesting",
+   "lineNumber": "L322 - L329"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-KOK Token Smart Contract Audit/ERC-20-55a501fde12e782b99fe9d5756388c0de82f45ba/contract.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Incorrect Constructor Name",
+   "function": "KOKContract",
+   "lineNumber": "L63"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "stop",
+   "lineNumber": "L88"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "start",
+   "lineNumber": "L92"
+  }
+ ]
+}

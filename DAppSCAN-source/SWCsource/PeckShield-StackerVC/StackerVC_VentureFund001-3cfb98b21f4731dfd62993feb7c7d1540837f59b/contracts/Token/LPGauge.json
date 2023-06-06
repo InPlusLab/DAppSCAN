@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-StackerVC/StackerVC_VentureFund001-3cfb98b21f4731dfd62993feb7c7d1540837f59b/contracts/Token/LPGauge.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "deposit",
+   "lineNumber": "L75-L89"
+  }
+ ]
+}

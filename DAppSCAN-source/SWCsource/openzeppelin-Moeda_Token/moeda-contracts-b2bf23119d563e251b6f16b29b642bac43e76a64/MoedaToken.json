@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Moeda_Token/moeda-contracts-b2bf23119d563e251b6f16b29b642bac43e76a64/MoedaToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "create",
+   "lineNumber": "L51"
+  }
+ ]
+}

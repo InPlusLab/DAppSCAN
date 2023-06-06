@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-Limit Order Protocol/limit-order-protocol-a14bde6a260458de5083cee117d734221e1cbc05/contracts/LimitOrderProtocol.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "fillOrderTo",
+   "lineNumber": "L28 - L346"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "fillOrderTo",
+   "lineNumber": "L339"
+  }
+ ]
+}

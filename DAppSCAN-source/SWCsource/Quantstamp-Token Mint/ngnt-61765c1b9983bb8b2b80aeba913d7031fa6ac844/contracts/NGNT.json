@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Token Mint/ngnt-61765c1b9983bb8b2b80aeba913d7031fa6ac844/contracts/NGNT.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "removeMinter",
+   "lineNumber": "L242-L248"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "updateMasterMinter",
+   "lineNumber": "272-277"
+  }
+ ]
+}

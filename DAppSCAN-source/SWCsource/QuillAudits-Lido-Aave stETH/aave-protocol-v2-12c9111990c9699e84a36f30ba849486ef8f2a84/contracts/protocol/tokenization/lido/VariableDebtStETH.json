@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-Aave stETH/aave-protocol-v2-12c9111990c9699e84a36f30ba849486ef8f2a84/contracts/protocol/tokenization/lido/VariableDebtStETH.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "fetchStETHTotalSupply",
+   "lineNumber": "L175 - L177"
+  }
+ ]
+}

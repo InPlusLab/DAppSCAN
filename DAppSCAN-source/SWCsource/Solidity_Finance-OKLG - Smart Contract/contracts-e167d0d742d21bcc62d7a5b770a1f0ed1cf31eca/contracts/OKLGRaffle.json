@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Solidity_Finance-OKLG - Smart Contract/contracts-e167d0d742d21bcc62d7a5b770a1f0ed1cf31eca/contracts/OKLGRaffle.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "function": "drawWinner",
+   "lineNumber": "L115 - L159"
+  }
+ ]
+}

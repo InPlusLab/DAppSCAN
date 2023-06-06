@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-DIA-project1/yield.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L532 - L541"
+  },
+  {
+   "category": "SWC-DoS With Block Gas Limit",
+   "function": "triggerWithdrawAll",
+   "lineNumber": "L640 - L644"
+  }
+ ]
+}

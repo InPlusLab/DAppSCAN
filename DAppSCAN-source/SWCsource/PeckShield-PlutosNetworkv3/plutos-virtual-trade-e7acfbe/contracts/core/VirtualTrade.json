@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-PlutosNetworkv3/plutos-virtual-trade-e7acfbe/contracts/core/VirtualTrade.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Duplicate Asset Detection and Prevention",
+   "function": "add_asset",
+   "lineNumber": "L107-L112"
+  }
+ ]
+}

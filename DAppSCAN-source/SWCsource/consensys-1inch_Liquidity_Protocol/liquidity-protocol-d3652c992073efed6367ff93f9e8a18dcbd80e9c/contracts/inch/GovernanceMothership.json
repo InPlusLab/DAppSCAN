@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-1inch_Liquidity_Protocol/liquidity-protocol-d3652c992073efed6367ff93f9e8a18dcbd80e9c/contracts/inch/GovernanceMothership.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Write to Arbitrary Storage Location",
+   "function": "notifyFor",
+   "lineNumber": "L50"
+  }
+ ]
+}

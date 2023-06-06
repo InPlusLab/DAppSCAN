@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-API3/airnode-991af4d69e82c1954a5c6c8e247cde8eb76101de/packages/airnode-protocol-v1/contracts/protocol/StorageUtils.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Hash Collisions With Multiple Variable Length Arguments",
+   "function": "",
+   "lineNumber": "L137-L147"
+  }
+ ]
+}

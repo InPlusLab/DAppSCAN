@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "_stake",
+   "lineNumber": "L88 - L90"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_stake",
+   "lineNumber": "L93"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_withdraw",
+   "lineNumber": "L147"
+  }
+ ]
+}

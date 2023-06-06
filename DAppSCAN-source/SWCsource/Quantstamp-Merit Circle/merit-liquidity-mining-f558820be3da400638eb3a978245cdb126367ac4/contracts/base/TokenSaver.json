@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Merit Circle/merit-liquidity-mining-f558820be3da400638eb3a978245cdb126367ac4/contracts/base/TokenSaver.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "saveToken",
+   "lineNumber": "L26"
+  }
+ ]
+}

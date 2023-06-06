@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PepperSec-KICKTOKEN/public-audit-reports-master/sources/KIKCICO/kickico_token_v1.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "onlyWhitelisted",
+   "lineNumber": "L71 - L81"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transferFrozenToken",
+   "lineNumber": "L301"
+  }
+ ]
+}

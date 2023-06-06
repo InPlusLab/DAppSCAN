@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-Limit Order Protocol/limit-order-protocol-a14bde6a260458de5083cee117d734221e1cbc05/contracts/helpers/ERC721Proxy.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "constructor",
+   "lineNumber": "L16 - L17"
+  }
+ ]
+}

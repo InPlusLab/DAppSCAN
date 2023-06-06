@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-COSMOS_Fundraiser/fundraiser-lib-693cf3f32e9fd679216372876dda86fa57a3277e/src/truffle/contracts/Fundraiser.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "N/A",
+   "lineNumber": "L9-L133"
+  },
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L9-L133"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "donate",
+   "lineNumber": "L92"
+  }
+ ]
+}

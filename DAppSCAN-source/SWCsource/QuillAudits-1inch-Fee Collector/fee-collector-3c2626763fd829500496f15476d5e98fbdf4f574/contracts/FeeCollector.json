@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-Fee Collector/fee-collector-3c2626763fd829500496f15476d5e98fbdf4f574/contracts/FeeCollector.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "updateRewardNonLP",
+   "lineNumber": "L340 - L343"
+  },
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "trade",
+   "lineNumber": "L361"
+  }
+ ]
+}

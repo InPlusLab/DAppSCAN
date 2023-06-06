@@ -1,0 +1,45 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-Aqar Chain-Audit Report/aq.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Typographical Error",
+   "function": "seedusdt",
+   "lineNumber": "L444"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "seedbnb",
+   "lineNumber": "L467"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "privateusdt",
+   "lineNumber": "L484"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "privatebnb",
+   "lineNumber": "L505"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "publicusdt",
+   "lineNumber": "L525"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "publicbnb",
+   "lineNumber": "L546"
+  },
+  {
+   "category": "SWC-Requirement Violation",
+   "function": "publicbnb",
+   "lineNumber": "L548"
+  },
+  {
+   "category": "SWC-Typographical Error",
+   "function": "claim",
+   "lineNumber": "L562"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinspect-Tempus Audit/tempus-protocol-ee5964bd416770e00639a4053b45f346e4bf8b93/contracts/TempusController.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "exitTempusAMMAndRedeem",
+   "lineNumber": "L352-386"
+  },
+  {
+   "category": "SWC-Reentrancy",
+   "function": "completeExitAndRedeem",
+   "lineNumber": "L395-436"
+  }
+ ]
+}

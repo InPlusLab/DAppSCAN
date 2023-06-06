@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-FixedFeeSwap/fixed-rate-swap-ac5dbd4a5e46f501e0a4a728f1725095b11f3fbd/contracts/FixedFeeSwap.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "L21 -L21"
+  }
+ ]
+}

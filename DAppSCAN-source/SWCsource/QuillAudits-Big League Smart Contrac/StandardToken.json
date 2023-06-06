@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Big League Smart Contract/StandardToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call\uff1aL167",
+   "function": "_sellAndDistributeAccumulatedTKNFee",
+   "lineNumber": "//SWC-DoS with Failed Call\uff1aL167"
+  }
+ ]
+}

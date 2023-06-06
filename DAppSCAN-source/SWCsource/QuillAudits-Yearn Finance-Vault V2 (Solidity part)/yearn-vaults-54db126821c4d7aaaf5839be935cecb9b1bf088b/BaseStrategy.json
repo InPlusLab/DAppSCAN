@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Vault V2 (Solidity part)/yearn-vaults-54db126821c4d7aaaf5839be935cecb9b1bf088b/BaseStrategy.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "constructor",
+   "lineNumber": "L164"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "harvest",
+   "lineNumber": "L332"
+  }
+ ]
+}

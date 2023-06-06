@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Alpha_Finance_Homora_V2/alpha-homora-v2-contract-5efa332f2ecf8e9705c326cffda5305bc6f752f7/WMasterChef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "burn",
+   "lineNumber": "L63"
+  }
+ ]
+}

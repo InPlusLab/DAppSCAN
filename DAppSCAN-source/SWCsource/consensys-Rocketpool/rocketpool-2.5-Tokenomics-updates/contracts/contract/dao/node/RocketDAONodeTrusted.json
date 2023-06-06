@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/dao/node/RocketDAONodeTrusted.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Presence of unused variables",
+   "function": "MemberJoined",
+   "lineNumber": "L21-22"
+  }
+ ]
+}

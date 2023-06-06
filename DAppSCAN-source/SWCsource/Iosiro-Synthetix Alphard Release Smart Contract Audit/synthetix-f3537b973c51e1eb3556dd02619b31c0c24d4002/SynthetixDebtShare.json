@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Alphard Release Smart Contract Audit/synthetix-f3537b973c51e1eb3556dd02619b31c0c24d4002/SynthetixDebtShare.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "sharePercent",
+   "lineNumber": "L110-118"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "finishSetup",
+   "lineNumber": "L213-247"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Hyksos/hyksos-contracts-audit/HyksosCyberkongz.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value\uff1aL35-37",
+   "function": "payErc20",
+   "lineNumber": "//SWC-Unchecked Call Return Value\uff1aL35-37"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value\uff1aL39-46",
+   "function": "depositErc20",
+   "lineNumber": "//SWC-Unchecked Call Return Value\uff1aL39-46"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value\uff1aL48-54",
+   "function": "withdrawErc20",
+   "lineNumber": "//SWC-Unchecked Call Return Value\uff1aL48-54"
+  }
+ ]
+}

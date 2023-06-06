@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-Pud.Fi Masterchef_Audit/MasterChef0x15Bee180BB39eE5c0166E63313C33984376930Db/contracts/lib/erc20.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "N/A",
+   "lineNumber": "L280"
+  },
+  {
+   "category": "SWC-Shadowing State Variables",
+   "function": "N/A",
+   "lineNumber": "L282"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-0x-protocol/0x-monorepo-abd479dc68fa75719647db261130418725fd40d5/contracts/exchange/contracts/src/MixinSignatureValidator.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "setSignatureValidatorApproval",
+   "lineNumber": "L76 - L92"
+  }
+ ]
+}

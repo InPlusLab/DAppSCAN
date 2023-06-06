@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/core/ContractsRegister.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L17"
+  },
+  {
+   "category": "SWC-State Variable Default Visibility\uff1a L21",
+   "function": "N/A",
+   "lineNumber": "// SWC-State Variable Default Visibility\uff1a L21"
+  }
+ ]
+}

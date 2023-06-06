@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Sherlock/sherlock-v1-core-68bcb59daa631b9f295ae0e63256a02dc459dcff/contracts/strategies/AaveV2.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "withdrawAll",
+   "lineNumber": "L89"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "withdraw",
+   "lineNumber": "L97"
+  }
+ ]
+}

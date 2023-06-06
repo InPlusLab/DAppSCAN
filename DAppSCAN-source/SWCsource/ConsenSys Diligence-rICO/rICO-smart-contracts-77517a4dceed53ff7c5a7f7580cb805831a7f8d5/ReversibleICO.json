@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-rICO/rICO-smart-contracts-77517a4dceed53ff7c5a7f7580cb805831a7f8d5/ReversibleICO.sol",
+ "SWCs": [
+  {
+   "category": "SWC-DoS with Failed Call\uff1aL230-299",
+   "function": "init",
+   "lineNumber": "//    SWC-DoS with Failed Call\uff1aL230-299"
+  },
+  {
+   "category": "SWC-Shadowing State Variables\uff1aL948",
+   "function": "acceptContributions",
+   "lineNumber": "//        SWC-Shadowing State Variables\uff1aL948"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-MilkySwap/milkyswap-59f163e9959cf8bae4a521a9648219b553312e07/contracts/MasterMilker.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "emergencyWithdraw",
+   "lineNumber": "L237-L244"
+  }
+ ]
+}

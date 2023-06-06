@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-CGU/CGUToken0x747D74dB20cc422F39ab54EDB2A3Ce21f3C98AF1/contracts/CGUToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "getLockedAmount",
+   "lineNumber": "L55"
+  },
+  {
+   "category": "SWC-Function Default Visibility",
+   "function": "transferAndCall",
+   "lineNumber": "L80"
+  }
+ ]
+}

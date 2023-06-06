@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-MakerDAO Liquidations 2.0/dss-8aae83e0b46c009f4d4dd9306cd0f865ca7e2dc7/src/dog.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L21"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "bark",
+   "lineNumber": "L205"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-DECA DEcentralized CArbon tokens - ITDE (initial token distribution event)/dcc-fc1c63778abfcac6fa2a1ad7affc543f46e69a28/DECA_ERC20_0.4.18.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-DoS with Failed Call",
+   "function": "approve",
+   "lineNumber": "L53 - L58"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "",
+   "lineNumber": "L225 - L251"
+  }
+ ]
+}

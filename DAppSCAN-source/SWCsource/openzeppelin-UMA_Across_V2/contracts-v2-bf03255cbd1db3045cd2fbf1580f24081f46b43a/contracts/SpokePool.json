@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-UMA_Across_V2/contracts-v2-bf03255cbd1db3045cd2fbf1580f24081f46b43a/contracts/SpokePool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Signature Malleability",
+   "function": "speedUpDeposit",
+   "lineNumber": "L336"
+  },
+  {
+   "category": "SWC-Signature Malleability",
+   "function": "fillRelayWithUpdatedFee",
+   "lineNumber": "L439"
+  }
+ ]
+}

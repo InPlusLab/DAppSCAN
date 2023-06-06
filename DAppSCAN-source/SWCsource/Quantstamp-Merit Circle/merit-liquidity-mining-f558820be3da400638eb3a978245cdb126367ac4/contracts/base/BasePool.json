@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Merit Circle/merit-liquidity-mining-f558820be3da400638eb3a978245cdb126367ac4/contracts/base/BasePool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "N/A",
+   "lineNumber": "L47"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_mint",
+   "lineNumber": "L51-L54"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "_burn",
+   "lineNumber": "L56-L59"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "claimRewards",
+   "lineNumber": "L83"
+  }
+ ]
+}

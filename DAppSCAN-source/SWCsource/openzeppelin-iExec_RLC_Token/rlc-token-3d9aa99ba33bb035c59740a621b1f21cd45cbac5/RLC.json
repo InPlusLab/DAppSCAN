@@ -1,0 +1,20 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-iExec_RLC_Token/rlc-token-3d9aa99ba33bb035c59740a621b1f21cd45cbac5/RLC.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L1"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "RLC",
+   "lineNumber": "L37,49"
+  },
+  {
+   "category": "SWC-Code With No Effects",
+   "function": "transfer",
+   "lineNumber": "L62-67,69-76, 79-81, 83-87, 97-99"
+  }
+ ]
+}

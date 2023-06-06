@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Opyn_Gamma_Protocol/GammaProtocol-d151621b33134789b29dc78eb89dad2b557b25b9/contracts/Controller.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "_runActions",
+   "lineNumber": "L451-L508"
+  }
+ ]
+}

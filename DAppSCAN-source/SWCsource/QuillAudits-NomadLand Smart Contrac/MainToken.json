@@ -1,0 +1,35 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-NomadLand Smart Contract/MainToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "L20"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "actualBalanceOf",
+   "lineNumber": "L408"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "releaseOnce",
+   "lineNumber": "L481"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "releaseAll",
+   "lineNumber": "L509"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "toKey",
+   "lineNumber": "L511"
+  },
+  {
+   "category": "SWC-Block values as a proxy for time",
+   "function": "freeze",
+   "lineNumber": "L526"
+  }
+ ]
+}

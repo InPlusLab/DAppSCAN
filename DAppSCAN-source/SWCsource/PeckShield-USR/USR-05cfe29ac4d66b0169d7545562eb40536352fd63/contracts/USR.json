@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-USR/USR-05cfe29ac4d66b0169d7545562eb40536352fd63/contracts/USR.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "approve",
+   "lineNumber": "L279 - L282"
+  }
+ ]
+}

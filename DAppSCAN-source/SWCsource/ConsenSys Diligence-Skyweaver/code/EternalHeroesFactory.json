@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-Skyweaver/code/EternalHeroesFactory.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy\uff1aL279-285",
+   "function": "_buy",
+   "lineNumber": "//    SWC-Reentrancy\uff1aL279-285"
+  }
+ ]
+}

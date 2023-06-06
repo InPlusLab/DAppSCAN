@@ -1,0 +1,15 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Smartdec-BCShop Smart Contracts Security Analysis/bcshop.io-3023172e3192b317e291a68bc191840e6b5e462c/contracts/shop/EtherFund.sol",
+ "SWCs": [
+  {
+   "category": "SWC-State Variable Default Visibility",
+   "function": "EtherFund",
+   "lineNumber": "L32 - L40"
+  },
+  {
+   "category": "SWC-Integer Overflow and Underflow",
+   "function": "EtherFund",
+   "lineNumber": "L34"
+  }
+ ]
+}

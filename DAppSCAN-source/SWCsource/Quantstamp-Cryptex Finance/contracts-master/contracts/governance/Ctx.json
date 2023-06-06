@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Cryptex Finance/contracts-master/contracts/governance/Ctx.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Transaction Order Dependence",
+   "function": "approve",
+   "lineNumber": "L237-L246"
+  }
+ ]
+}

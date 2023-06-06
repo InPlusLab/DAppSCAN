@@ -1,0 +1,10 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Lixir/lixir-contracts-1423c9d8112f103d782bec2bff0558c6be1ca4cc/LixirStrategySimpleGWAP.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Code With No Effects\uff1aL193-198",
+   "function": "checkTick",
+   "lineNumber": "//  SWC-Code With No Effects\uff1aL193-198"
+  }
+ ]
+}

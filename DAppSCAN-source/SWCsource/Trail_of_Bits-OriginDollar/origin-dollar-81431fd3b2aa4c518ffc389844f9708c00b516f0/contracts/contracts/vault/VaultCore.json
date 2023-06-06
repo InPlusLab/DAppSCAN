@@ -1,0 +1,25 @@
+{
+ "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/vault/VaultCore.sol",
+ "SWCs": [
+  {
+   "category": "SWC-Reentrancy",
+   "function": "mintMultiple",
+   "lineNumber": "L88 - L128"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_redeem",
+   "lineNumber": "L142 - L184"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "_allocate",
+   "lineNumber": "L210 - L293"
+  },
+  {
+   "category": "SWC-Unchecked Call Return Value",
+   "function": "rebase",
+   "lineNumber": "L308 - L319"
+  }
+ ]
+}
