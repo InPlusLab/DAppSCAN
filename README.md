@@ -18,3 +18,6 @@ DAppSCAN consists of two datasets: DAppSCAN-source and DAppSCAN-bytecode.
 - SWCbytecode: the analysisi report of SWCs in the compiled bytecode.
 
 - solc-DApp: the code for compiling the source code into the bytecode in this repository.
+
+## Contact
+If you have any questions about our dataset, please contact sujzh3@mail2.sysu.edu.cn
