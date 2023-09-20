@@ -85,7 +85,7 @@ contract AaveV2 is IStrategy, Ownable {
     if (aBalance() == 0) {
       return 0;
     }
-    //SWC-Unchecked Call Return Value: L89
+    //SWC-104-Unchecked Call Return Value: L89
     return lp.withdraw(address(want), uint256(-1), msg.sender);
   }
 
@@ -93,7 +93,7 @@ contract AaveV2 is IStrategy, Ownable {
     require(_amount != uint256(-1), 'MAX');
 
     ILendingPool lp = getLp();
-    //SWC-Unchecked Call Return Value: L97
+    //SWC-104-Unchecked Call Return Value: L97
     lp.withdraw(address(want), _amount, msg.sender);
   }
 

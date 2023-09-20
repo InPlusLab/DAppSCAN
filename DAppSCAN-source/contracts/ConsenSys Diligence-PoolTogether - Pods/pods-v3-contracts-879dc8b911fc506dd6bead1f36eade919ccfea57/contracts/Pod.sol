@@ -271,7 +271,7 @@ contract Pod is Initializable, ERC20Upgradeable, OwnableUpgradeable, IPod {
         require(tokenAmount > 0, "Pod:invalid-amount");
 
         // Allocate Shares from Deposit To Amount
-        // SWC-Reentrancy: L275-282
+        // SWC-107-Reentrancy: L275-282
         uint256 shares = _deposit(to, tokenAmount);
 
         // Transfer Token Transfer Message Sender

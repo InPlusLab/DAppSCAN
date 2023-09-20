@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Algovest/AlgoVestStaking0x090e69e7F48AFC059e480F297042DEA396B971e7/srv/tecmie/algovest/AVS-staking/contracts/stakin_contract.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Algovest/AlgoVestStaking0x090e69e7F48AFC059e480F297042DEA396B971e7/srv/tecmie/algovest/AVS-staking/contracts/stakin_contract.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L5"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "AVSTokenDonation",
    "lineNumber": "L74 - L84"
   }

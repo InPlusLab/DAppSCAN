@@ -76,7 +76,7 @@ contract UniswapIncentive is IUniswapIncentive, UniRef {
         // TimeWeightInfo memory tw = timeWeightInfo;
         // timeWeightInfo = TimeWeightInfo(blockNo, tw.weight, tw.growthRate, tw.active);
     }
-//SWC-Code With No Effects:L76,77
+//SWC-135-Code With No Effects:L76,77
     function getGrowthRate() public view override returns (uint32) {
         return timeWeightInfo.growthRate;
     }

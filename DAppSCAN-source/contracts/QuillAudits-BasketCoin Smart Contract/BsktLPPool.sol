@@ -5,7 +5,8 @@
 /**
  *Submitted for verification at Etherscan.io on 2021-04-21
 */
-//SWC-Outdated Compiler Version，SWC-Floating Pragma：L9
+// SWC-102-Outdated Compiler Version: L10
+// SWC-103-Floating Pragma: L10
 pragma solidity ^0.5.0;
 
 library Math {
@@ -348,7 +349,7 @@ contract BsktLPPool is LPTokenWrapper {
     uint256 public lastUpdateTime;
     uint256 public rewardPerTokenStored;
     uint256 rewardAmount = 0;
-//SWC-Code With No Effects：L350，356-359
+//SWC-135-Code With No Effects: L350, L356-359
     mapping(address => uint256) public userRewardPerTokenPaid;
     mapping(address => uint256) public rewards;
     mapping(address => bool) public minimumBsktStakingEntry;
@@ -357,7 +358,7 @@ contract BsktLPPool is LPTokenWrapper {
     event Staked(address indexed user, uint256 amount);
     event Withdrawn(address indexed user, uint256 amount);
     event Rewarded(address indexed from, address indexed to, uint256 value);
-//SWC-Block values as a proxy for time：L363
+//SWC-116-Block values as a proxy for time: L363
     modifier checkStart() {
         require(
             block.timestamp >= starttime,

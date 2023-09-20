@@ -47,7 +47,7 @@ contract HoldefiPrices is Ownable {
     function addStableCoin(address asset) public onlyOwner {
         setPrice(asset, priceDecimal);
     }
-//    SWC-Function Default Visibility:L47-49
+//    SWC-100-Function Default Visibility:L47-49
     function() payable external {
         revert();
     }

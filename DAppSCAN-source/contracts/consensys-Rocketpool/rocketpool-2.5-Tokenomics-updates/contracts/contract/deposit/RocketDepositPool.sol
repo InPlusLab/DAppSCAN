@@ -112,7 +112,7 @@ contract RocketDepositPool is RocketBase, RocketDepositPoolInterface, RocketVaul
         // Check deposit settings
         require(rocketDAOProtocolSettingsDeposit.getAssignDepositsEnabled(), "Deposit assignments are currently disabled");
         // Assign deposits
-        // SWC-DoS With Block Gas Limit: L116-129
+        // SWC-128-DoS With Block Gas Limit: L116-129
         for (uint256 i = 0; i < rocketDAOProtocolSettingsDeposit.getMaximumDepositAssignments(); ++i) {
             // Get & check next available minipool capacity
             uint256 minipoolCapacity = rocketMinipoolQueue.getNextCapacity();

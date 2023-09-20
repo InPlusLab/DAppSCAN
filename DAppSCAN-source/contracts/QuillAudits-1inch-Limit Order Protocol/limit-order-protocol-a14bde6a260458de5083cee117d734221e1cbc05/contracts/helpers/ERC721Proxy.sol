@@ -11,7 +11,7 @@ import "./ImmutableOwner.sol";
 /* solhint-disable func-name-mixedcase */
 
 abstract contract ERC721Proxy is ImmutableOwner {
-    // SWC-Requirement Violation: L16 - L17
+    // SWC-123-Requirement Violation: L16 - L17
     constructor() {
         require(ERC721Proxy.func_40aVqeY.selector == bytes4(uint32(IERC20.transferFrom.selector) + 2), "ERC20Proxy: bad selector");
         require(ERC721Proxy.func_20xtkDI.selector == bytes4(uint32(IERC20.transferFrom.selector) + 3), "ERC20Proxy: bad selector");

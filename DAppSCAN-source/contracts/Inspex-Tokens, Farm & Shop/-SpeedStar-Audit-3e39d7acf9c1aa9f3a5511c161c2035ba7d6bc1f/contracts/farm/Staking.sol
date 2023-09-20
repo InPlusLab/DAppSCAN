@@ -670,7 +670,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         emit WithdrawFacility(msg.sender, _tokenId, popularity);
     }
 
-// SWC-Reentrancy: L674
+// SWC-107-Reentrancy: L674
     function depositStable(uint256 _tokenId)
         external
         plotLimitStaking(_tokenId)

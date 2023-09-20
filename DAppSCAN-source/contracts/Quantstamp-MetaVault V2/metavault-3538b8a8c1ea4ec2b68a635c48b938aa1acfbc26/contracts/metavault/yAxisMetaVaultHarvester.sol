@@ -210,7 +210,7 @@ contract yAxisMetaVaultHarvester { // solhint-disable-line contract-name-camelca
         Strategy storage strategy = strategies[_token];
         if (strategy.addresses.length == 0 ||
             // solhint-disable-next-line not-rely-on-time
-            //SWC-Block values as a proxy for time: L214
+            //SWC-116-Block values as a proxy for time: L214
             strategy.lastCalled > block.timestamp.sub(strategy.timeout)) {
             return false;
         }

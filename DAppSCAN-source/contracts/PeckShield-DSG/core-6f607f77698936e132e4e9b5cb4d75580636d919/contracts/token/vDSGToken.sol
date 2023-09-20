@@ -347,7 +347,7 @@ contract vDSGToken is Ownable {
         _MIN_PENALTY_RATIO_ = min;
         _MAX_PENALTY_RATIO_ = max;
     }
-    //SWC-Integer Overflow and Underflow: L351-L357
+    //SWC-101-Integer Overflow and Underflow: L351-L357
     function setMintLimitRatio(uint256 min, uint256 max) public onlyOwner {
         require(max < 10**18, "bad max");
         require( (max - min)/10**16 > 0, "bad max - min");

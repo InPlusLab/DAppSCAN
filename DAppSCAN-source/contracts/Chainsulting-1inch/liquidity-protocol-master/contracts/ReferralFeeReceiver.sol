@@ -8,7 +8,7 @@ import "./libraries/UniERC20.sol";
 import "./utils/Converter.sol";
 
 /// @title Referral fee collector
-// SWC-Reentrancy: L11
+// SWC-107-Reentrancy: L11
 contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
     using UniERC20 for IERC20;
 

@@ -4,7 +4,7 @@
   They are based on StandardToken from (https://github.com/ConsenSys/Tokens).
 
 */
-//SWC-Integer Overflow and Underflow:all contract
+//SWC-101-Integer Overflow and Underflow:all contract
 import "./EIP20.sol";
 
 pragma solidity ^0.4.18;
@@ -35,7 +35,7 @@ contract RGEToken is EIP20 {
         endTGE = _endTGE;
         crowdsale = address(0);
     }
-//    SWC-Integer Overflow and Underflow:L43,69,79,80
+//    SWC-101-Integer Overflow and Underflow:L43,69,79,80
     function startCrowdsaleY0(address _crowdsale) onlyBy(owner) public {
         require(crowdsale == address(0));
         require(now < endTGE);

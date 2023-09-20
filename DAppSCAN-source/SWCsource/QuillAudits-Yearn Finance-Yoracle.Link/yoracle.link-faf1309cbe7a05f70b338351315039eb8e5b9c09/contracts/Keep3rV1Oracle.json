@@ -1,153 +1,153 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Yoracle.Link/yoracle.link-faf1309cbe7a05f70b338351315039eb8e5b9c09/contracts/Keep3rV1Oracle.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Yoracle.Link/yoracle.link-faf1309cbe7a05f70b338351315039eb8e5b9c09/contracts/Keep3rV1Oracle.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "div",
    "lineNumber": "L102"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "mul",
    "lineNumber": "L110"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "fraction",
    "lineNumber": "L119"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "currentCumulativePrices",
    "lineNumber": "L158"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "currentCumulativePrices",
    "lineNumber": "L161"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "quote",
    "lineNumber": "L383"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "getAmountOut",
    "lineNumber": "L394"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "getAmountIn",
    "lineNumber": "L404"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_updateAll",
    "lineNumber": "L584 - L588"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "workable",
    "lineNumber": "L604 - L609"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "computeAmountOut",
    "lineNumber": "L630"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "current",
    "lineNumber": "L651"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "quote",
    "lineNumber": "L669"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "quote",
    "lineNumber": "L674 - L683"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "quote",
    "lineNumber": "L675"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "quote",
    "lineNumber": "L679"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "quote",
    "lineNumber": "L685 - L694"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "quote",
    "lineNumber": "L685"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "quote",
    "lineNumber": "L689"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "sample",
    "lineNumber": "L714 - L724"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
    "lineNumber": "L712"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "sample",
    "lineNumber": "L720, L721"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
    "lineNumber": "L717"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "sample",
    "lineNumber": "L726 - 736"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
    "lineNumber": "L723"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "sample",
    "lineNumber": "L733, L734"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
    "lineNumber": "L728"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sqrt",
    "lineNumber": "L770 - L776"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "stddev",
    "lineNumber": "L790 - L798"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_swap",
    "lineNumber": "L848"
   }

@@ -84,7 +84,7 @@ contract SynthSwapper {
             deadline
         );
         IERC20 tokenTo = swap.getToken(tokenToIndex);
-        // SWC-Unchecked Call Return Value: L88
+        // SWC-104-Unchecked Call Return Value: L88
         tokenTo.transfer(recipient, tokenTo.balanceOf(address(this)));
     }
 

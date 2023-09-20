@@ -81,7 +81,7 @@ contract VaultCore is VaultStorage {
      * @param _amounts Amount of each asset at the same index in the _assets
      *                 to deposit.
      */
-    //  SWC-Reentrancy: L88 - L128
+    //  SWC-107-Reentrancy: L88 - L128
     function mintMultiple(
         address[] calldata _assets,
         uint256[] calldata _amounts
@@ -138,7 +138,7 @@ contract VaultCore is VaultStorage {
         _redeem(_amount);
     }
 
-    // SWC-Unchecked Call Return Value: L142 - L184
+    // SWC-104-Unchecked Call Return Value: L142 - L184
     function _redeem(uint256 _amount) internal {
         require(_amount > 0, "Amount must be greater than 0");
 
@@ -206,7 +206,7 @@ contract VaultCore is VaultStorage {
      * @notice Allocate unallocated funds on Vault to strategies.
      * @dev Allocate unallocated funds on Vault to strategies.
      **/
-    //  SWC-Unchecked Call Return Value: L210 - L293
+    //  SWC-104-Unchecked Call Return Value: L210 - L293
     function _allocate() internal {
         uint256 vaultValue = _totalValueInVault();
         // Nothing in vault to allocate
@@ -304,7 +304,7 @@ contract VaultCore is VaultStorage {
      * @dev Calculate the total value of assets held by the Vault and all
      *         strategies and update the supply of oUSD
      */
-    //  SWC-Unchecked Call Return Value: L308 - L319
+    //  SWC-104-Unchecked Call Return Value: L308 - L319
     function rebase(bool sync) internal whenNotRebasePaused returns (uint256) {
         if (oUSD.totalSupply() == 0) return 0;
         uint256 oldTotalSupply = oUSD.totalSupply();

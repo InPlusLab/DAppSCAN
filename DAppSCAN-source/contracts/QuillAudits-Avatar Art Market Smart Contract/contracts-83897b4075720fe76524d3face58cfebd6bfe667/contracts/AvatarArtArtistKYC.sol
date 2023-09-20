@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity ^0.8.0;
 
 import "./core/Ownable.sol";
@@ -9,7 +9,7 @@ import "./interfaces/IAvatarArtArtistKYC.sol";
 * @dev Verify and unverify Artist KYC information
 * This approvement will be used to verify KYC so that Artist can create their own NFTs
 */
-// SWC-Code With No Effects: L12
+// SWC-135-Code With No Effects: L12
 contract AvatarArtArtistKYC is IAvatarArtArtistKYC, Ownable{
     mapping(address => bool) private _isVerifieds;
     

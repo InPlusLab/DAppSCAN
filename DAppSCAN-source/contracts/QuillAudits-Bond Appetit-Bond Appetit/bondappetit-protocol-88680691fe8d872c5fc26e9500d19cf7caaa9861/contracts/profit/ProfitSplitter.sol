@@ -215,7 +215,7 @@ contract ProfitSplitter is OwnablePausable {
     /**
      * @dev Pay incoming token to all recipients.
      */
-    //  SWC-Reentrancy: L228
+    //  SWC-107-Reentrancy: L228
     function _payToRecipients() internal returns (bool) {
         uint256 splitterIncomingBalance = incoming.balanceOf(address(this));
         if (splitterIncomingBalance == 0) return false;

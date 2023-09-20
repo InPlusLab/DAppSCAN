@@ -31,7 +31,7 @@ contract liquidator is AccessControl {
     );
     require(pair != address(0), "Vault: Liquidating pair not supported");
     // Distribute collaterals
-    // SWC-Unprotected Ether Withdrawal: L35
+    // SWC-105-Unprotected Ether Withdrawal: L35
     TransferHelper.safeTransfer(collateral, pair, IERC20Minimal(collateral).balanceOf(address(this)));
   }
 }

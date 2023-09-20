@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-CryptoZoan/code/code.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-CryptoZoan/code/code.sol",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lineNumber": "L44 - L56"
   }

@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "CollateralDustUpdated",
    "lineNumber": "L78 - L85"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "setCollateralDust",
    "lineNumber": "L107"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_convertAmountOnLivePrice",
    "lineNumber": "L895 - L909"
   }

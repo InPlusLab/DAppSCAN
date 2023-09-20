@@ -9,7 +9,7 @@ library Transfers {
     /// @param  token   ERC20 token to transfer
     /// @param  to      Recipient of the ERC20 token
     /// @param  value   Amount of ERC20 to transfer
-    // SWC-Unchecked Call Return Value: L13 - L22
+    // SWC-104-Unchecked Call Return Value: L13 - L22
     function safeTransfer(
         IERC20 token,
         address to,

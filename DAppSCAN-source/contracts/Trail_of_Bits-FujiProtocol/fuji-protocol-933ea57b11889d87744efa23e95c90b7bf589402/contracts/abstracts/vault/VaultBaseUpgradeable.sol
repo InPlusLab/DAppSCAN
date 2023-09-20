@@ -97,7 +97,7 @@ contract VaultBaseUpgradeable is VaultControlUpgradeable {
   {
     /* solhint-disable */
     assembly {
-      // SWC-Delegatecall to Untrusted Callee: L101
+      // SWC-112-Delegatecall to Untrusted Callee: L101
       let succeeded := delegatecall(sub(gas(), 5000), _target, add(_data, 0x20), mload(_data), 0, 0)
       let size := returndatasize()
 

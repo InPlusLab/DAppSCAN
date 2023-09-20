@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-ZIXXAR INTERNATIONAL DISTRIBUTION SRL/staking-smart-contracts-e6ba771bba2a1e2c438202e246c963da2f3aa00f/Staking.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-ZIXXAR INTERNATIONAL DISTRIBUTION SRL/staking-smart-contracts-e6ba771bba2a1e2c438202e246c963da2f3aa00f/Staking.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma\uff1aL2",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
-   "lineNumber": "//SWC-Floating Pragma\uff1aL2"
+   "lineNumber": "L2"
   }
  ]
 }

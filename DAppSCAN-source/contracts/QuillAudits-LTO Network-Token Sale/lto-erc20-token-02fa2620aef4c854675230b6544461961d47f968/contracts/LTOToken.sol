@@ -57,7 +57,7 @@ contract LTOToken is StandardToken {
   }
 
   function recalculateTotalSupply() internal {
-    // SWC-Integer Overflow and Underflow: L61
+    // SWC-101-Integer Overflow and Underflow: L61
     totalSupply_ = internalTotalSupply - balances[bridgeAddress];
   }
 

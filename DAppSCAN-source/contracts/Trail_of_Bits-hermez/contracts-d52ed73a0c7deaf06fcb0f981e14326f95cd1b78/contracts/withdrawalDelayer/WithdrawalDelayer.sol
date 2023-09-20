@@ -64,7 +64,7 @@ contract WithdrawalDelayer is Initializable, ReentrancyGuardUpgradeSafe {
      * @param _initialHermezGovernanceDAOAddress can claim the funds in an emergency mode
      * @param _initialWhiteHackGroupAddress can claim the funds in an emergency and MAX_EMERGENCY_MODE_TIME exceeded
      */
-    // SWC-Transaction Order Dependence: L68 - L82
+    // SWC-114-Transaction Order Dependence: L68 - L82
     function withdrawalDelayerInitializer(
         uint64 _initialWithdrawalDelay,
         address _initialHermezRollup,

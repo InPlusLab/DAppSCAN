@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-MetaGameStarter Smart Contract/Tokenomics-Contracts-f3899d0a31dbb7386eacb7efefbff2ac32ce7cbb/contracts/Staking/LockedStakingRewards.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-MetaGameStarter Smart Contract/Tokenomics-Contracts-f3899d0a31dbb7386eacb7efefbff2ac32ce7cbb/contracts/Staking/LockedStakingRewards.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "constructor",
    "lineNumber": "L30 - L32"
   }

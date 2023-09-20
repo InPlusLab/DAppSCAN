@@ -1,15 +1,15 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-1inch Exchange Staking Rewards Smart Contract Audit/liquidity-protocol-c9c8bc600e8e7897f70f84b006de601d4f4bcbe3/BaseRewards.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-1inch Exchange Staking Rewards Smart Contract Audit/liquidity-protocol-c9c8bc600e8e7897f70f84b006de601d4f4bcbe3/BaseRewards.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "getReward",
    "lineNumber": "L75"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow\uff1aL98",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "notifyRewardAmount",
-   "lineNumber": "//SWC-Integer Overflow and Underflow\uff1aL98"
+   "lineNumber": "L98"
   }
  ]
 }

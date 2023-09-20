@@ -42,7 +42,7 @@ contract AaveStrategy is InitializableAbstractStrategy {
      * @param _amount Amount of asset to withdraw
      * @return amountWithdrawn Amount of asset that was withdrawn
      */
-    //  SWC-Unprotected Ether Withdrawal: L46 - L66
+    //  SWC-105-Unprotected Ether Withdrawal: L46 - L66
     function withdraw(
         address _recipient,
         address _asset,
@@ -116,7 +116,7 @@ contract AaveStrategy is InitializableAbstractStrategy {
         uint256 assetCount = assetsMapped.length;
         address lendingPoolVault = _getLendingPoolCore();
         // approve the pool to spend the bAsset
-    //  SWC-DoS with Failed Call:  L120 - L125
+    //  SWC-113-DoS with Failed Call:  L120 - L125
         for (uint256 i = 0; i < assetCount; i++) {
             address asset = assetsMapped[i];
             // Safe approval

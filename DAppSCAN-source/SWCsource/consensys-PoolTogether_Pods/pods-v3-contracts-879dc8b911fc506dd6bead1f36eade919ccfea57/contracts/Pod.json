@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-PoolTogether_Pods/pods-v3-contracts-879dc8b911fc506dd6bead1f36eade919ccfea57/contracts/Pod.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-PoolTogether_Pods/pods-v3-contracts-879dc8b911fc506dd6bead1f36eade919ccfea57/contracts/Pod.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "depositTo",
    "lineNumber": "L275-282"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "depositTo",
    "lineNumber": "L279"
   }

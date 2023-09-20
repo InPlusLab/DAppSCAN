@@ -64,7 +64,7 @@ contract MasterChefGoblinConfig is Ownable, GoblinConfig {
         require(lastUpdate >= now - 7 days, "price too stale");
         uint256 lpPrice = r1.mul(1e18).div(r0);
         uint256 maxPriceDiff = goblins[goblin].maxPriceDiff;
-        //SWC-Integer Overflow and Underflow: L68-L69
+        //SWC-101-Integer Overflow and Underflow: L68-L69
         require(lpPrice <= price.mul(maxPriceDiff).div(10000), "price too high");
         require(lpPrice >= price.mul(10000).div(maxPriceDiff), "price too low");
         // 3. Done

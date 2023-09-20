@@ -65,7 +65,7 @@ contract OwnableForMainnet is Initializable {
     /**
      * @dev Sets new owner address.
      */
-    //  SWC-Function Default Visibility: L70
+    //  SWC-100-Function Default Visibility: L70
     function setOwner( address newAddressOwner ) public {
         _ownerAddress = newAddressOwner;
     }

@@ -1140,7 +1140,7 @@ contract SpaceDogeCoin is Context, IERC20, Ownable {
         );
     }
     
-    // SWC-Code With No Effects: L1144
+    // SWC-135-Code With No Effects: L1144
     function addLiquidity(uint256 tokenAmount, uint256 ethAmount) private {
         // approve token transfer to cover all possible scenarios
         _approve(address(this), address(uniswapV2Router), tokenAmount);
@@ -1168,7 +1168,7 @@ contract SpaceDogeCoin is Context, IERC20, Ownable {
         } else if (!_isExcluded[sender] && !_isExcluded[recipient]) {
             _transferStandard(sender, recipient, amount);
         } else if (_isExcluded[sender] && _isExcluded[recipient]) {
-            // SWC-Code With No Effects: L1171 - L1172
+            // SWC-135-Code With No Effects: L1171 - L1172
             _transferBothExcluded(sender, recipient, amount);
         } else {
             _transferStandard(sender, recipient, amount);

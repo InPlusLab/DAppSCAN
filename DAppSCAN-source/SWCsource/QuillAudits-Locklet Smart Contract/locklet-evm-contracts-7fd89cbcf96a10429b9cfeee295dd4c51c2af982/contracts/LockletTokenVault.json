@@ -1,48 +1,48 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Locklet Smart Contract/locklet-evm-contracts-7fd89cbcf96a10429b9cfeee295dd4c51c2af982/contracts/LockletTokenVault.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Locklet Smart Contract/locklet-evm-contracts-7fd89cbcf96a10429b9cfeee295dd4c51c2af982/contracts/LockletTokenVault.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L4"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "N/A",
    "lineNumber": "L166 - L184"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "revokeLock",
    "lineNumber": "L247 - L262"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "getLocks",
    "lineNumber": "L313 - L320"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "getLocksByInitiator",
    "lineNumber": "L332 - L335"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "getLocksByRecipient",
    "lineNumber": "L347 - L350"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "getRecipientIndexByAddress",
    "lineNumber": "L393 - L398"
   },
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "calculateClaim",
    "lineNumber": "L410"
   },
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "blockTime",
    "lineNumber": "430"
   }

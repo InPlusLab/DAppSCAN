@@ -1,5 +1,5 @@
 pragma solidity ^0.4.4;
-//SWC-Integer Overflow and Underflow:L1-69
+//SWC-101-Integer Overflow and Underflow:L1-69
 import "./Token.sol";
 
 contract GNTAllocation {
@@ -20,7 +20,7 @@ contract GNTAllocation {
     function GNTAllocation(address _golemFactory) internal {
         gnt = GolemNetworkToken(msg.sender);
         unlockedAt = now + 6 * 30 days;
-//SWC-Block values as a proxy for time:L22
+//SWC-116-Block values as a proxy for time:L22
         // For the Golem Factory:
         allocations[_golemFactory] = 20000; // 12/18 pp of 30000 allocations.
 

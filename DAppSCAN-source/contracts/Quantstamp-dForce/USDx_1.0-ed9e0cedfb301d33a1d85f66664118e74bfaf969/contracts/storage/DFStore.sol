@@ -134,7 +134,7 @@ contract DFStore is DSMath, DSAuth {
     function setBackupSectionIndex(uint _position, uint _backupIdx) public auth {
         secList[_position].backupIdx = _backupIdx;
     }
-    //SWC-DoS with Failed Call: L138-L179
+    //SWC-113-DoS with Failed Call: L138-L179
     function _setSection(address[] memory _wrappedTokens, uint[] memory _weight) internal {
         require(_wrappedTokens.length == _weight.length, "_SetSection: data not allow.");
 

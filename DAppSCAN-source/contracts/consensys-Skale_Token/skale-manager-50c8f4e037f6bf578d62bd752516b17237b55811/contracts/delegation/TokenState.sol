@@ -61,7 +61,7 @@ contract TokenState is Permissions {
         amount = 0;
         DelegationController delegationController = DelegationController(contractManager.getContract("DelegationController"));
         uint[] memory delegationIds = delegationController.getDelegationsByHolder(holder);
-        // SWC-DoS With Block Gas Limit: L65
+        // SWC-128-DoS With Block Gas Limit: L65
         for (uint i = 0; i < delegationIds.length; ++i) {
             uint id = delegationIds[i];
             if (isLocked(getState(id))) {
@@ -255,7 +255,7 @@ contract TokenState is Permissions {
                 break;
             }
         }
-        // SWC-Unprotected Ether Withdrawal: L259-265
+        // SWC-105-Unprotected Ether Withdrawal: L259-265
         if (_isPurchased[delegationId]) {
             address holder = delegation.holder;
             _totalDelegated[holder] += delegation.amount;

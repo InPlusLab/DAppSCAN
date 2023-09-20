@@ -68,7 +68,7 @@ contract WMasterChef is ERC1155('WMasterChef'), ReentrancyGuard, IERC20Wrapper {
     _mint(msg.sender, id, amount, '');
     return id;
   }
-//SWC-Unchecked Call Return Value:L63
+//SWC-104-Unchecked Call Return Value:L63
   /// @dev Burn ERC1155 token to redeem LP ERC20 token back plus SUSHI rewards.
   /// @param id Token id
   /// @param amount Token amount to burn

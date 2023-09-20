@@ -463,7 +463,7 @@ contract Ownable is Context {
     //Unlocks the contract for owner when _lockTime is exceeds
     function unlock() public virtual {
         require(_previousOwner == msg.sender, "You don't have permission to unlock the token contract");
-        // SWC-Requirement Violation: L467
+        // SWC-123-Requirement Violation: L467
         require(now > _lockTime , "Contract is locked until 7 days");
         emit OwnershipTransferred(_owner, _previousOwner);
         _owner = _previousOwner;
@@ -698,7 +698,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     mapping (address => mapping (address => uint256)) private _allowances;
 
     mapping (address => bool) private _isExcludedFromFee;
-  // SWC-Code With No Effect: L702 - L703
+  // SWC-135-Code With No Effects: L702 - L703
     mapping (address => bool) private _isExcluded;
     address[] private _excluded;
     address public router = 0x10ED43C718714eb63d5aA57B78B54704E256024E; // PCS v2 mainnet
@@ -706,7 +706,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     uint256 public _tTotal;
     uint256 private _rTotal;
     uint256 private _tFeeTotal;
-    // SWC-Presence of unused variables: L710
+    // SWC-131-Presence of unused variables: L710
     bool public mintedByDxsale = true;
     string public _name;
     string public _symbol;
@@ -790,7 +790,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
     function balanceOf(address account) public view override returns (uint256) {
-      // SWC-Code With No Effects: L793 - L794
+      // SWC-135-Code With No Effects: L793 - L794
         if (_isExcluded[account]) return _tOwned[account];
         return tokenFromReflection(_rOwned[account]);
     }
@@ -825,7 +825,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         return true;
     }
 
-    // SWC-Code With No Effects: L828 - L831
+    // SWC-135-Code With No Effects: L828 - L831
     function isExcludedFromReward(address account) public view returns (bool) {
         return _isExcluded[account];
     }
@@ -834,7 +834,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         return _tFeeTotal;
     }
 
-  // SWC-Code With No Effects: L837 - L844
+  // SWC-135-Code With No Effects: L837 - L844
     function deliver(uint256 tAmount) public {
         address sender = _msgSender();
         require(!_isExcluded[sender], "Excluded addresses cannot call this function");
@@ -862,7 +862,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
 
-  // SWC-Code With No Effects: L865 - L874
+  // SWC-135-Code With No Effects: L865 - L874
         function _transferBothExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
         _tOwned[sender] = _tOwned[sender].sub(tAmount);
@@ -938,7 +938,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         return rSupply.div(tSupply);
     }
 
-    // SWC-Code With No Effects: L941 - L951
+    // SWC-135-Code With No Effects: L941 - L951
     function _getCurrentSupply() private view returns(uint256, uint256) {
         uint256 rSupply = _rTotal;
         uint256 tSupply = _tTotal;      
@@ -951,7 +951,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         return (rSupply, tSupply);
     }
     
-    // SWC-Code With No Effects: L952 - L958
+    // SWC-135-Code With No Effects: L952 - L958
     function _takeLiquidity(uint256 tLiquidity) private {
         uint256 currentRate =  _getRate();
         uint256 rLiquidity = tLiquidity.mul(currentRate);
@@ -1102,7 +1102,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
     //this method is responsible for taking all fee, if takeFee is true
-    // SWC-Code With No Effects: L1103 - L1121
+    // SWC-135-Code With No Effects: L1103 - L1121
     function _tokenTransfer(address sender, address recipient, uint256 amount,bool takeFee) private {
         if(!takeFee)
             removeAllFee();
@@ -1133,7 +1133,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
 
-// SWC-Code With No Effects: L1134 - L1143
+// SWC-135-Code With No Effects: L1134 - L1143
     function _transferToExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
         _rOwned[sender] = _rOwned[sender].sub(rAmount);
@@ -1144,7 +1144,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         emit Transfer(sender, recipient, tTransferAmount);
     }
 
-// SWC-Code With No Effects: L1145 - L1153
+// SWC-135-Code With No Effects: L1145 - L1153
     function _transferFromExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
         _tOwned[sender] = _tOwned[sender].sub(tAmount);

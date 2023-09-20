@@ -49,7 +49,7 @@ contract MoedaToken is StandardToken, Ownable {
     function create(address recipient, uint256 amount) onlyOwner onlyDuringSale returns(bool) {
         if (amount == 0) throw;
         if (totalSupply + amount > MAX_TOKENS) throw;
-//SWC-Integer Overflow and Underflow:L51
+//SWC-101-Integer Overflow and Underflow:L51
         balances[recipient] = safeAdd(balances[recipient], amount);
         totalSupply = safeAdd(totalSupply, amount);
         Transfer(0, recipient, amount);

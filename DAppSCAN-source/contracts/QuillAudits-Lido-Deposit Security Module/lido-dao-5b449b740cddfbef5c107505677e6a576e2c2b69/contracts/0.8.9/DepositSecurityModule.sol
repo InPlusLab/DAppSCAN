@@ -58,7 +58,7 @@ contract DepositSecurityModule {
     address internal owner;
 
     address[] internal guardians;
-    // SWC-State Variable Default Visibility: L62
+    // SWC-108-State Variable Default Visibility: L62
     mapping(address => uint256) guardianIndicesOneBased; // 1-based
     uint256 internal quorum;
 
@@ -96,7 +96,7 @@ contract DepositSecurityModule {
         _setMinDepositBlockDistance(_minDepositBlockDistance);
         _setPauseIntentValidityPeriodBlocks(_pauseIntentValidityPeriodBlocks);
 
-        // SWC-Code With No Effects: L100 - L101
+        // SWC-135-Code With No Effects: L100 - L101
         paused = false;
         lastDepositBlock = 0;
     }

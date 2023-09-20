@@ -34,7 +34,7 @@ contract AllocatedCrowdsaleMixin is CrowdsaleBase {
   /**
    * Called from invest() to confirm if the curret investment does not break our cap rule.
    */
-  //  SWC-Function Default Visibility: L38
+  //  SWC-100-Function Default Visibility: L38
   function isBreakingCap(uint weiAmount, uint tokenAmount, uint weiRaisedTotal, uint tokensSoldTotal) constant returns (bool limitBroken) {
     if(tokenAmount > getTokensLeft()) {
       return true;

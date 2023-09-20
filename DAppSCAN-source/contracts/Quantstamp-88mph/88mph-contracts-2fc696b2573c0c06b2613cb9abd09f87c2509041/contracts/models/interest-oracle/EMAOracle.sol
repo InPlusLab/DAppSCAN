@@ -48,7 +48,7 @@ contract EMAOracle is IInterestOracle {
         moneyMarket = IMoneyMarket(_moneyMarket);
         lastIncomeIndex = moneyMarket.incomeIndex();
     }
-    //SWC-Function Default Visibility: L52-L74
+    //SWC-100-Function Default Visibility: L52-L74
     function updateAndQuery() public returns (bool updated, uint256 value) {
         uint256 timeElapsed = now - lastUpdateTimestamp;
         if (timeElapsed < UPDATE_INTERVAL) {

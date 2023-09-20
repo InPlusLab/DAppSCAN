@@ -29,7 +29,7 @@ contract StakefishServicesContract is IStakefishServicesContract {
     uint256 private constant WEEK = 7 * DAY;
     uint256 private constant YEAR = 365 * DAY;
     uint256 private constant MAX_SECONDS_IN_EXIT_QUEUE = 1 * YEAR;
-    // SWC-Presence of unused variables: L33
+    // SWC-131-Presence of unused variables: L33
     uint256 private constant MAX_TIME_TO_WITHDRAW = 1 * YEAR;
     uint256 private constant COMMISSION_RATE_SCALE = 1000000;
 
@@ -167,7 +167,7 @@ contract StakefishServicesContract is IStakefishServicesContract {
         );
         return _handleDeposit(depositor);
     }
-    // SWC-DoS with Failed Call: L171-L189
+    // SWC-113-DoS with Failed Call: L171-L189
     function endOperatorServices()
         external
         override
@@ -222,7 +222,7 @@ contract StakefishServicesContract is IStakefishServicesContract {
         require(_state != State.PostDeposit, WITHDRAWALS_NOT_ALLOWED);
         return _executeWithdrawal(msg.sender, beneficiary, amount);
     }
-    // SWC-Transaction Order Dependence: L226-L247
+    // SWC-114-Transaction Order Dependence: L226-L247
     function approve(
         address spender,
         uint256 amount

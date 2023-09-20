@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Byterocket-Orbit DeFi[05.29.2022]/orbit-defi-541460999b7d8fa80c4a4a86383f583392436b67/contracts/PositionManagerFactory.sol",
+ "filePath": "DAppSCAN-source/contracts/Byterocket-Orbit DeFi[05.29.2022]/orbit-defi-541460999b7d8fa80c4a4a86383f583392436b67/contracts/PositionManagerFactory.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "getAllPositionManagers",
    "lineNumber": "L87-90"
   }

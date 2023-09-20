@@ -73,7 +73,7 @@ contract BandPriceFeed is IPriceFeed, BlockContext {
         // so 255 + 1 will be 0
         currentObservationIndex++;
 
-    // SWC-Integer Overflow and Underflow: L77 - L82
+    // SWC-101-Integer Overflow and Underflow: L77 - L82
         uint256 elapsedTime = bandData.lastUpdatedBase - lastObservation.timestamp;
         observations[currentObservationIndex] = Observation({
             priceCumulative: lastObservation.priceCumulative + (lastObservation.price * elapsedTime),

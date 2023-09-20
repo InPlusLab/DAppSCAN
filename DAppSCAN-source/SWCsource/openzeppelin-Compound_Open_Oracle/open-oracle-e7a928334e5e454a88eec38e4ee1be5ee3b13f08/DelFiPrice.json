@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Compound_Open_Oracle/open-oracle-e7a928334e5e454a88eec38e4ee1be5ee3b13f08/DelFiPrice.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Compound_Open_Oracle/open-oracle-e7a928334e5e454a88eec38e4ee1be5ee3b13f08/DelFiPrice.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L19,22,25"
   }

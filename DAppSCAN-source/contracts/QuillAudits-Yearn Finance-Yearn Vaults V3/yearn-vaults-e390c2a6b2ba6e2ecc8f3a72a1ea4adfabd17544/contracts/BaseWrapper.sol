@@ -134,7 +134,7 @@ abstract contract BaseWrapper {
         deposited = beforeBal.sub(afterBal);
         // `receiver` now has shares of `_bestVault` as balance, converted to `token` here
         // Issue a refund if not everything was deposited
-        // SWC-Unchecked Call Return Value: L138
+        // SWC-104-Unchecked Call Return Value: L138
         if (depositor != address(this) && afterBal > 0) token.transfer(depositor, afterBal);
     }
 
@@ -149,7 +149,7 @@ abstract contract BaseWrapper {
         VaultAPI[] memory vaults = allVaults();
         _updateVaultCache(vaults);
 
-        // SWC-DoS With Block Gas Limit: L152 - L192
+        // SWC-128-DoS With Block Gas Limit: L152 - L192
         for (uint256 id = 0; id < vaults.length; id++) {
             if (!withdrawFromBest && vaults[id] == _bestVault) {
                 continue; // Don't withdraw from the best
@@ -170,7 +170,7 @@ abstract contract BaseWrapper {
             if (availableShares > 0) {
                 // Intermediate step to move shares to this contract before withdrawing
                 // NOTE: No need for share transfer if this contract is `sender`
-                // SWC-Unchecked Call Return Value: L174
+                // SWC-104-Unchecked Call Return Value: L174
                 if (sender != address(this)) vaults[id].transferFrom(sender, address(this), availableShares);
 
                 if (amount != WITHDRAW_EVERYTHING) {

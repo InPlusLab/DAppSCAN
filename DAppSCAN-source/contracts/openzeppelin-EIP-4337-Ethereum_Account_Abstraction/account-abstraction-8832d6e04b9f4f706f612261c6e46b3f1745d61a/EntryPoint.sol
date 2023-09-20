@@ -50,9 +50,9 @@ contract EntryPoint is StakeManager {
      * @param beneficiary the address to receive the fees
      */
     function handleOp(UserOperation calldata op, address payable beneficiary) public {
-//SWC-Code With No Effects:L52-78
+//SWC-135-Code With No Effects:L52-78
         uint preGas = gasleft();
-//SWC-Integer Overflow and Underflow:L56-77, 95-113, 236-261, 266-282, 319-349
+//SWC-101-Integer Overflow and Underflow:L56-77, 95-113, 236-261, 266-282, 319-349
     unchecked {
         bytes32 requestId = getRequestId(op);
         (uint256 prefund, PaymentMode paymentMode, bytes memory context) = _validatePrepayment(0, op, requestId);

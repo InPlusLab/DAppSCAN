@@ -371,7 +371,7 @@ contract GoldCardsFactory is Ownable {
     // Burn the non-refundable weave
     uint256 weave_to_burn = (_order.cardAmount.mul(goldPrice)).sub(_order.cardAmount.mul(goldRefund));
     weaveContract.burn(weaveID, weave_to_burn);
-//SWC-DoS With Block Gas Limit：L375-376
+//SWC-128-DoS With Block Gas Limit: L375-376
     // Mint gold cards
     skyweaverAssets.batchMint(_order.cardRecipient, _ids, amounts, "");
 

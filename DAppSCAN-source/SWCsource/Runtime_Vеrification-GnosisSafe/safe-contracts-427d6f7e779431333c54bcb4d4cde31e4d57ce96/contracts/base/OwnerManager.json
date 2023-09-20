@@ -1,23 +1,23 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/base/OwnerManager.sol",
+ "filePath": "DAppSCAN-source/contracts/Runtime_V\u0435rification-GnosisSafe/safe-contracts-427d6f7e779431333c54bcb4d4cde31e4d57ce96/contracts/base/OwnerManager.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "addOwnerWithThreshold",
    "lineNumber": "L53 - L68"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "addOwnerWithThreshold",
    "lineNumber": "L64"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "removeOwner",
    "lineNumber": "L82"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "removeOwner",
    "lineNumber": "L89"
   }

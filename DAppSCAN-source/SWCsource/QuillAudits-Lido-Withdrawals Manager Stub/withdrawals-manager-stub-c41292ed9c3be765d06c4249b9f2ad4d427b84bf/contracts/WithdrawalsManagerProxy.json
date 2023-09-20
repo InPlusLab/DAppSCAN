@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-Withdrawals Manager Stub/withdrawals-manager-stub-c41292ed9c3be765d06c4249b9f2ad4d427b84bf/contracts/WithdrawalsManagerProxy.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Lido-Withdrawals Manager Stub/withdrawals-manager-stub-c41292ed9c3be765d06c4249b9f2ad4d427b84bf/contracts/WithdrawalsManagerProxy.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "constructor",
    "lineNumber": "L71"
   }

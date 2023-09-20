@@ -1,9 +1,9 @@
 /**
  *Submitted for verification at Etherscan.io on 2021-05-24
 */
-// SWC-Outdated Compiler Version: L5
+// SWC-102-Outdated Compiler Version: L5
 pragma solidity ^0.5.17;
-// SWC-Outdated Compiler Version: L7
+// SWC-102-Outdated Compiler Version: L7
 pragma solidity >=0.4.22 <0.6.0;
 
 interface tokenRecipient { 
@@ -126,7 +126,7 @@ contract TokenERC20 {
         returns (bool success) {
         tokenRecipient spender = tokenRecipient(_spender);
         if (approve(_spender, _value)) {
-            // SWC-Requirement Violation: L130
+            // SWC-123-Requirement Violation: L130
             spender.receiveApproval(msg.sender, _value, address(this), _extraData);
             return true;
         }
@@ -165,7 +165,7 @@ contract TokenERC20 {
         return true;
     }
 }
-// SWC-Requirement Violation: L169
+// SWC-123-Requirement Violation: L169
 contract ZortCoin is TokenERC20 {
 
     constructor () public TokenERC20(1000000000,"Zort Coin", "ZORT") {

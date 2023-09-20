@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Skale_Token/skale-manager-50c8f4e037f6bf578d62bd752516b17237b55811/contracts/delegation/TokenState.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Skale_Token/skale-manager-50c8f4e037f6bf578d62bd752516b17237b55811/contracts/delegation/TokenState.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "N/A",
    "lineNumber": "L65"
   },
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "endingDelegatedToUnlocked",
    "lineNumber": "L259-265"
   }

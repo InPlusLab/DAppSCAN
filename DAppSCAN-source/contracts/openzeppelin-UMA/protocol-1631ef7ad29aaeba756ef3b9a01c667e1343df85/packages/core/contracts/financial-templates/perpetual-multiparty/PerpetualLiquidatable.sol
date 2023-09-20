@@ -91,7 +91,7 @@ contract PerpetualLiquidatable is PerpetualPositionManager {
 
     // Total collateral in liquidation.
     FixedPoint.Unsigned public rawLiquidationCollateral;
-    // SWC-Outdated Compiler Version: L95
+    // SWC-102-Outdated Compiler Version: L95
     // Immutable contract parameters:
     // Amount of time for pending liquidation before expiry.
     // !!Note: The lower the liquidation liveness value, the more risk incurred by sponsors.

@@ -155,7 +155,7 @@ contract Treasury is BCubePrivateSale {
 
     /// @dev allows existing advisors to withdraw their share of BCUBEs,
     /// 25% per 6 months, after listingTime
-    // SWC-Integer Overflow and Underflow: L166 - L168
+    // SWC-101-Integer Overflow and Underflow: L166 - L168
     function advisorShareWithdraw(uint256 bcubeAmount)
         external
         onlyAfterListing

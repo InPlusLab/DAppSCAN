@@ -126,7 +126,7 @@ contract DharmaSmartWalletFactoryV1 is DharmaSmartWalletFactoryV1Interface {
    * address for the next deployed contract (using `CREATE2`) based on the
    * contract creation code.
    */
-  //  SWC-DoS With Block Gas Limit: L130 - L170
+  //  SWC-128-DoS With Block Gas Limit: L130 - L170
   function _getSaltAndTarget(
     bytes memory initCode
   ) private view returns (uint256 nonce, address target) {

@@ -198,7 +198,7 @@ contract SinglePool is Ownable {
     }
 
     // Withdraw without caring about rewards. EMERGENCY ONLY.
-    //SWC-Reentrancy: L202-L214
+    //SWC-107-Reentrancy: L202-L214
     function emergencyWithdraw() public {
         PoolInfo storage pool = poolInfo[0];
         UserInfo storage user = userInfo[msg.sender];

@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Ribbon_Finance/ribbon-v2-3fa3bec15ad1e2b18ad87f979b87a68368497f13/contracts/vaults/base/RibbonVault.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Ribbon_Finance/ribbon-v2-3fa3bec15ad1e2b18ad87f979b87a68368497f13/contracts/vaults/base/RibbonVault.sol",
  "SWCs": [
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "initiateWithdraw",
    "lineNumber": "L308"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "redeem",
    "lineNumber": "L390"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "_redeem",
    "lineNumber": "L408"
   }

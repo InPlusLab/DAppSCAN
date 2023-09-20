@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-DEFINE Token Smart Contract/definetics-023ddbd2182d96306fb020573a64b50eaed0a87a/contracts/DefineDividendTracker.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-DEFINE Token Smart Contract/definetics-023ddbd2182d96306fb020573a64b50eaed0a87a/contracts/DefineDividendTracker.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   }

@@ -70,7 +70,7 @@ contract Swap is ISwap {
     * @notice Atomic Token Swap
     * @param order Types.Order Order to settle
     */
-    // SWC-Unchecked Call Return Value: L74 - L170
+    // SWC-104-Unchecked Call Return Value: L74 - L170
   function swap(
     Types.Order calldata order
   ) external {
@@ -175,7 +175,7 @@ contract Swap is ISwap {
     * @dev Emits a Cancel event
     * @param nonces uint256[] List of nonces to cancel
     */
-    // SWC-DoS with Failed Call: L178 - L187
+    // SWC-113-DoS with Failed Call: L178 - L187
   function cancel(
     uint256[] calldata nonces
   ) external {

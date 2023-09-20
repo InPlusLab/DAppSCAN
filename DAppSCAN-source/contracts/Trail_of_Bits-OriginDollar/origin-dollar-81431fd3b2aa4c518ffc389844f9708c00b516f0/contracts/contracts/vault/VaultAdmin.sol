@@ -144,7 +144,7 @@ contract VaultAdmin is VaultStorage {
         }
 
         if (strategyIndex < allStrategies.length) {
-            // SWC-Integer Overflow and Underflow: L148 - L150
+            // SWC-101-Integer Overflow and Underflow: L148 - L150
             allStrategies[strategyIndex] = allStrategies[allStrategies.length -
                 1];
             allStrategies.length--;
@@ -233,12 +233,12 @@ contract VaultAdmin is VaultStorage {
      * @param _asset Address for the asset
      * @param _amount Amount of the asset to transfer
      */
-    //  SWC-Unchecked Call Return Value: L237 - L243
+    //  SWC-104-Unchecked Call Return Value: L237 - L243
     function transferToken(address _asset, uint256 _amount)
         external
         onlyGovernor
     {
-        // SWC-Unchecked Call Return Value: L240
+        // SWC-104-Unchecked Call Return Value: L240
         IERC20(_asset).transfer(governor(), _amount);
     }
 
@@ -266,7 +266,7 @@ contract VaultAdmin is VaultStorage {
      *      supported stablecoin via Uniswap
      * @param _strategyAddr Address of the strategy to collect rewards from
      */
-    // SWC-Unchecked Call Return Value: L266 - L298
+    // SWC-104-Unchecked Call Return Value: L266 - L298
     function _harvest(address _strategyAddr) internal {
         IStrategy strategy = IStrategy(_strategyAddr);
         address rewardTokenAddress = strategy.rewardTokenAddress();

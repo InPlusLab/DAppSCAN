@@ -23,7 +23,7 @@ contract SimplePriceOracle is Ownable, PriceOracle {
      * @param duration How long the name is being registered or extended for, in seconds.
      * @return The price of this renewal or registration, in wei.
      */
-    // SWC-Integer Overflow and Underflow: L27-L29
+    // SWC-101-Integer Overflow and Underflow: L27-L29
     function price(string calldata /*name*/, uint /*expires*/, uint duration) external view returns(uint) {
         return duration * rentPrice;
     }

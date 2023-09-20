@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/SlowMist-Booster-Protocol_\u667a\u80fd\u5b89\u5168\u5ba1\u8ba1\u62a5\u544a/boosterProtocol-946b15629c410d706856584f3aa04001d6a55bd2/contracts/utils/BuybackBooToken.sol",
+ "filePath": "DAppSCAN-source/contracts/SlowMist-Booster-Protocol_\u667a\u80fd\u5b89\u5168\u5ba1\u8ba1\u62a5\u544a/boosterProtocol-946b15629c410d706856584f3aa04001d6a55bd2/contracts/utils/BuybackBooToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "buyback",
    "lineNumber": "L66"
   }

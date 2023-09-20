@@ -383,7 +383,7 @@ contract Accounts is Constant, Initializable{
     ) public view returns (uint256 borrowETH) {
         uint tokenNum = globalConfig.tokenInfoRegistry().getCoinLength();
         //console.log("tokenNum", tokenNum);
-        // SWC-DoS With Block Gas Limit: L387
+        // SWC-128-DoS With Block Gas Limit: L387
         for(uint i = 0; i < tokenNum; i++) {
             if(isUserHasBorrows(_accountAddr, uint8(i))) {
                 address tokenAddress = globalConfig.tokenInfoRegistry().addressFromIndex(i);

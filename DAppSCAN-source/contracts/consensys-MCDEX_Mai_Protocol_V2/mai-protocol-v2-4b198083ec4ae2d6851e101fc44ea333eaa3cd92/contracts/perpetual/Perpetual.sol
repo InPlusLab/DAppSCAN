@@ -1,6 +1,6 @@
 pragma solidity ^0.5.2;
 pragma experimental ABIEncoderV2; // to enable structure-type parameter
-// SWC-Code With No Effects: L4-5
+// SWC-135-Code With No Effects: L4-5
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 
@@ -30,7 +30,7 @@ contract Perpetual is Brokerage, Position {
     event Sell(address indexed guy, uint256 price, uint256 amount);
     event Liquidate(address indexed keeper, address indexed guy, uint256 price, uint256 amount);
     event EndGlobalSettlement();
-    // SWC-Shadowing State Variables: L34-41
+    // SWC-119-Shadowing State Variables: L34-41
     constructor(address globalConfig, address devAddress, address collateral, uint256 collateralDecimals)
         public
         Position(collateral, collateralDecimals)
@@ -266,7 +266,7 @@ contract Perpetual is Brokerage, Position {
     function isIMSafeWithPrice(address guy, uint256 currentMarkPrice) public returns (bool) {
         return availableMarginWithPrice(guy, currentMarkPrice) >= 0;
     }
-    // SWC-Unprotected Ether Withdrawal: L270-289
+    // SWC-105-Unprotected Ether Withdrawal: L270-289
     function liquidateFrom(address from, address guy, uint256 maxAmount) public returns (uint256, uint256) {
         require(maxAmount.mod(governance.lotSize) == 0, "invalid lot size");
         require(!isSafe(guy), "safe account");

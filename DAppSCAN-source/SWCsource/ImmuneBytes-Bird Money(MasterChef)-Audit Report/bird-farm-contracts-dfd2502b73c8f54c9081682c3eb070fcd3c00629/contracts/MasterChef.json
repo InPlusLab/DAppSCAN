@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-Bird Money(MasterChef)-Audit Report/bird-farm-contracts-dfd2502b73c8f54c9081682c3eb070fcd3c00629/contracts/MasterChef.sol",
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-Bird Money(MasterChef)-Audit Report/bird-farm-contracts-dfd2502b73c8f54c9081682c3eb070fcd3c00629/contracts/MasterChef.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "deposit",
    "lineNumber": "L262"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "emergencyWithdraw",
    "lineNumber": "L311"
   }

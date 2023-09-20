@@ -3,7 +3,7 @@ pragma solidity 0.6.12;
 import "./DynamicLiquidTokenConverter.sol";
 import "../../../token/interfaces/IDSToken.sol";
 import "../../../utility/TokenHolder.sol";
-// SWC-Code With No Effects: L7
+// SWC-135-Code With No Effects: L7
 import "../../interfaces/ITypedConverterFactory.sol";
 import "../../../token/DSToken.sol";
 

@@ -50,7 +50,7 @@ contract SNXFlashLoanTool is ISNXFlashLoanTool, IFlashLoanReceiver, Ownable {
     /// @param snxAmount Amount of SNX to sell in order to burn sUSD debt
     /// @param exchange Exchange address to swap on
     /// @param exchangeData Calldata to call exchange with
-    // SWC-Use of Deprecated Solidity Functions: L54
+    // SWC-111-Use of Deprecated Solidity Functions: L54
     function burn(
         uint256 sUSDAmount,
         uint256 snxAmount,
@@ -118,7 +118,7 @@ contract SNXFlashLoanTool is ISNXFlashLoanTool, IFlashLoanReceiver, Ownable {
     /// @notice Transfer a tokens balance left on this contract to the owner
     /// @dev Can only be called by owner
     /// @param token Address of token to transfer the balance of
-    // SWC-Use of Deprecated Solidity Functions: L122
+    // SWC-111-Use of Deprecated Solidity Functions: L122
     function transferToken(address token) external onlyOwner {
         IERC20(token).safeTransfer(msg.sender, IERC20(token).balanceOf(address(this)));
     }
@@ -139,7 +139,7 @@ contract SNXFlashLoanTool is ISNXFlashLoanTool, IFlashLoanReceiver, Ownable {
             exchange != address(LENDING_POOL) && exchange != address(synthetix) && exchange != address(snx),
             "SNXFlashLoanTool: Unauthorized address"
         );
-        // SWC-Reentrancy: L143
+        // SWC-107-Reentrancy: L143
         (bool success, ) = exchange.call(data);
         require(success, "SNXFlashLoanTool: Swap failed");
         return sUSD.balanceOf(address(this));

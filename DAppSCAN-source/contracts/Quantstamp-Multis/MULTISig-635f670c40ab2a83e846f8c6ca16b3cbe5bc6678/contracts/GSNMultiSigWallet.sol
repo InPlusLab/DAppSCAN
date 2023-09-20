@@ -1,5 +1,5 @@
-//SWC-Integer Overflow and Underflow: L1-L429
-//SWC-Floating Pragma: L2
+//SWC-101-Integer Overflow and Underflow: L1-L429
+//SWC-103-Floating Pragma: L2
 pragma solidity ^0.5.0;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/GSN/GSNRecipient.sol";
@@ -224,7 +224,7 @@ contract GSNMultiSigWallet is GSNRecipient {
 
     /// @dev Allows an owner to revoke a confirmation for a transaction.
     /// @param transactionId Transaction ID.
-    //SWC-Transaction Order Dependence: L227-L256
+    //SWC-114-Transaction Order Dependence: L227-L256
     function revokeConfirmation(uint transactionId)
         public
         ownerExists(_msgSender())

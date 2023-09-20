@@ -1,5 +1,5 @@
-// SWC-Outdated Compiler Version: L3
-// SWC-Floating Pragma: L3
+// SWC-102-Outdated Compiler Version: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.4.18;
 
    /**

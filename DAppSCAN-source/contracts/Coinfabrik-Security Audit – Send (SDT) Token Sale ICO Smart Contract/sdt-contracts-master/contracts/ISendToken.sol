@@ -1,4 +1,4 @@
-// SWC-Code With No Effects: L2 - L45
+// SWC-135-Code With No Effects: L2 - L45
 pragma solidity ^0.4.18;
 
 

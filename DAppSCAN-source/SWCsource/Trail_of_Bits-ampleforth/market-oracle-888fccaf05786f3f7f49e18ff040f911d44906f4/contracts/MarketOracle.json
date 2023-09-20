@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-ampleforth/market-oracle-888fccaf05786f3f7f49e18ff040f911d44906f4/contracts/MarketOracle.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-ampleforth/market-oracle-888fccaf05786f3f7f49e18ff040f911d44906f4/contracts/MarketOracle.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "getPriceAnd24HourVolume",
    "lineNumber": "L34 - L60"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "removeSourceAtIndex",
    "lineNumber": "L143"
   }

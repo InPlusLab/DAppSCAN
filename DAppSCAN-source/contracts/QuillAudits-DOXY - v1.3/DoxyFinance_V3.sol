@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-//SWC-Floating Pragma：L3，all contract
+//SWC-103-Floating Pragma: L3, all contract
 pragma solidity ^0.8.0;
 
 library Address {
@@ -266,7 +266,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
     string private _name;
     string private _symbol;
-//SWC-State Variable Default Visibility：L270
+//SWC-108-State Variable Default Visibility: L270
     bool inSwap;
     bool public liquiFlag = true;
 
@@ -282,7 +282,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     address public pancakeSwapRouter =
         address(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); // 10ed43c718714eb63d5aa57b78b54704e256024e for mainnet;
     address public USDT = address(0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47);   // BUSDT tesnet : 0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47 // USDT ropsten : 0xb03Ba6B311aaC34B06bdC97357E6f08BF2c12857
-//SWC-State Variable Default Visibility：L282-284
+//SWC-108-State Variable Default Visibility: L282-284
     address payable public liquidityWallet =
         payable(0x11cFc68B96A4da8BE01b6450b9bb34fE524cDe91);
     address payable public privateSaleWallet =
@@ -313,7 +313,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         uint256 selling_threshold; //this is value/1000 %
         uint256 extra_tax; //this is value %
     }
-//SWC-Code With No Effects：L284，312-315
+//SWC-135-Code With No Effects: L284, L312-315
     feeRatesStruct public buyFees =
         feeRatesStruct({
             taxFee: 0,
@@ -341,7 +341,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         _name = name_;
         _symbol = symbol_;
     }
-//SWC-Typographical Error：L339, 488, 500, 514, 658, 661, 780, 781, 782, 783, 784, 785, 821, 261, 262
+//SWC-129-Typographical Error: L339, 488, 500, 514, 658, 661, 780, 781, 782, 783, 784, 785, 821, 261, 262
    
 
     function name() public view virtual override returns (string memory) {
@@ -369,7 +369,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     {
         return _balances[account];
     }
-//SWC-Function Default Visibility：L373-381, 393-411, 413-430, 432-443, 445-460, 679-695, 754-756, 758-764, 824-826, 828-830, 832-834, 836-838, 881-883, 972-974, 976-978, 980-982, 984-986, 988-990, 998-1000, 1002-1004, 1010-1012, 1014-1016, 1077-1079
+//SWC-100-Function Default Visibility: L373-381, 393-411, 413-430, 432-443, 445-460, 679-695, 754-756, 758-764, 824-826, 828-830, 832-834, 836-838, 881-883, 972-974, 976-978, 980-982, 984-986, 988-990, 998-1000, 1002-1004, 1010-1012, 1014-1016, 1077-1079
     function transfer(address recipient, uint256 amount)
         public
         virtual
@@ -493,7 +493,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
                         "You can't sell more than sellLimit"
                     );
                     _totSells[sender] += amount;
-//SWC-Lack of Proper Signature Verification：L497-502，511-516
+//SWC-122-Lack of Proper Signature Verification: L497-502，511-516
                     if (block.timestamp < timeLimit + 24 * 1 hours) {
                         maxSellPerDayLimit += amount;
                     } else if (block.timestamp > timeLimit + 24 * 1 hours) {
@@ -805,7 +805,7 @@ contract DoxyFinance_V3 is ERC20, Ownable {
         _includeInSell[communityAirdropWallet] = true;
         _includeInSell[burnWallet] = true;
         _includeInSell[address(this)] = true;
-//SWC-Code With No Effects：L809-818
+//SWC-135-Code With No Effects: L809-818
         IRouter _pancakeRouter = IRouter(
             0xD99D1c33F9fC3444f8101754aBC46c52416550D1 // replace with 0x10ED43C718714eb63d5aA57B78B54704E256024E while deploying to mainnet
         );
@@ -918,7 +918,7 @@ contract DoxyFinance_V3 is ERC20, Ownable {
         whitelistWallet(marketingWallet) ; 
         return true;
     }
-//SWC-Typographical Error：L918, 928, 938, 948, 958, 968
+//SWC-129-Typographical Error: L918, 928, 938, 948, 958, 968
     function setAirdropWallet(address payable _address)
         external
         onlyOwner

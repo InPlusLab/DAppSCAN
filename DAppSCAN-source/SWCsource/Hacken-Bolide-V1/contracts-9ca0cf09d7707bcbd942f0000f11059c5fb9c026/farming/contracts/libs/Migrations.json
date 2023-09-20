@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Bolide-V1/contracts-9ca0cf09d7707bcbd942f0000f11059c5fb9c026/farming/contracts/libs/Migrations.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Bolide-V1/contracts-9ca0cf09d7707bcbd942f0000f11059c5fb9c026/farming/contracts/libs/Migrations.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   }

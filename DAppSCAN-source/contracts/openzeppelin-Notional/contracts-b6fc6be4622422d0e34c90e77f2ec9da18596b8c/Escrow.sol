@@ -203,7 +203,7 @@ contract Escrow is EscrowStorage, Governed, IERC777Recipient, IEscrowCallable {
      */
     function listCurrency(address token, TokenOptions memory options) public onlyOwner {
         require(addressToCurrencyId[token] == 0 && token != WETH, $$(ErrorCode(INVALID_CURRENCY)));
-//SWC-Integer Overflow and Underflow:L207
+//SWC-101-Integer Overflow and Underflow:L207
         maxCurrencyId++;
         // We don't do a lot of checking here but since this is purely an administrative
         // activity we just rely on governance not to set this improperly.

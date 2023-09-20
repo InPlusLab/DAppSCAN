@@ -8,7 +8,7 @@ import "./utils/ERC1155Base.sol";
 import "./interface/IERC1155TokenReceiver.sol";
 
 import "./CashMarket.sol";
-//SWC-Code With No Effects:L10
+//SWC-135-Code With No Effects:L10
 /**
  * @notice Implements the ERC1155 token standard for transferring fCash tokens within Notional. ERC1155 ids
  * encode an identifier that represents assets that are fungible with each other. For example, two fCash tokens

@@ -240,7 +240,7 @@ contract Amoss is IERC20, Ownable {
         return _totalSupply;
     }
 
-// SWC-Code With No Effects: L244 - L246
+// SWC-135-Code With No Effects: L244 - L246
     function getOwner() external override view returns (address){
         return owner();
     }

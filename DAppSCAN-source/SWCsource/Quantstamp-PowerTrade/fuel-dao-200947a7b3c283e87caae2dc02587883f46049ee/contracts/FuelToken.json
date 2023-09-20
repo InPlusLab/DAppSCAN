@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-PowerTrade/fuel-dao-200947a7b3c283e87caae2dc02587883f46049ee/contracts/FuelToken.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-PowerTrade/fuel-dao-200947a7b3c283e87caae2dc02587883f46049ee/contracts/FuelToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   }

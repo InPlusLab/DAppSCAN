@@ -111,7 +111,7 @@ contract AOC_BEP is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20
      * construction.
      */
     function initialize() public initializer {
-        // SWC-Incorrect Constructor Name: L115 - L126
+        // SWC-118-Incorrect Constructor Name: L115 - L126
         _mint(_msgSender(), (1000 * 10**9 * 10**18)); //mint the initial total supply
         ltafPercentage = 50;
 
@@ -357,8 +357,8 @@ contract AOC_BEP is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20
         _unpause();
     }
 
-// SWC-Code With No Effects: L360
-// SWC-Unprotected Ether Withdrawal: L361
+// SWC-135-Code With No Effects: L360
+// SWC-105-Unprotected Ether Withdrawal: L361
     function withdrawBNBFromContract(address payable recipient, uint256 amount) external onlyOwner payable {
         require(recipient != address(0), "Address cant be zero address");
         require(amount <= address(this).balance, "withdrawBNBFromContract: withdraw amount exceeds BNB balance");              

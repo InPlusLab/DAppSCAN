@@ -688,7 +688,7 @@ contract VaultManager is VaultManagerPermit, IVaultManagerFunctions {
                 emit InternalDebtUpdated(vaultIDs[i], vault.normalizedDebt, 0);
             } else {
                 vaultData[vaultIDs[i]].collateralAmount -= collateralReleased;
-                // SWC-Unchecked Call Return Value: L692
+                // SWC-104-Unchecked Call Return Value: L692
                 _repayDebt(
                     vaultIDs[i],
                     (amounts[i] * liquidationSurcharge) / BASE_PARAMS,

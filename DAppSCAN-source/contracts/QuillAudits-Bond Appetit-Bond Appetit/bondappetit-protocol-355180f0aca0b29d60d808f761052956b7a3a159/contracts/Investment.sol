@@ -141,7 +141,7 @@ contract Investment is OwnablePausable {
      * @param amount Cumulative amount invested
      * @return Amount governance token after swap
      */
-    //  SWC-Integer Overflow and Underflow: L148
+    //  SWC-101-Integer Overflow and Underflow: L148
     function _governanceTokenPrice(uint256 amount) internal view returns (uint256) {
         uint256 decimals = cumulative.decimals();
 

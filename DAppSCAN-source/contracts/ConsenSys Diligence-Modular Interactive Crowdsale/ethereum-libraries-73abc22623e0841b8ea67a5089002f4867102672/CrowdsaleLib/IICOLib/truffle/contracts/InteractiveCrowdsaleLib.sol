@@ -388,7 +388,7 @@ library InteractiveCrowdsaleLib {
                                   (self.endWithdrawalTime - self.base.startTime);
       refundWei = (multiplierPercent * self.base.hasContributed[msg.sender]) / 100;
 
-// SWC-Integer Overflow and Underflow: L392 - L393
+// SWC-101-Integer Overflow and Underflow: L392 - L393
       self.valuationSums[self.personalCaps[msg.sender]] -= refundWei;
       self.numBidsAtValuation[self.personalCaps[msg.sender]] -= 1;
 

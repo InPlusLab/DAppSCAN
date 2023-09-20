@@ -100,7 +100,7 @@ contract GenericAave is GenericLenderBase {
     /// @notice Trigger to claim rewards once every 10 days
     /// Only callable if the token is incentivised by Aave Governance (_checkCooldown returns true)
     /// @dev Only for incentivised aTokens
-    // SWC-Transaction Order Dependence: L104-134
+    // SWC-114-Transaction Order Dependence: L104-134
     function harvest() external {
         require(_checkCooldown(), "conditions are not met");
         // redeem AAVE from stkAave

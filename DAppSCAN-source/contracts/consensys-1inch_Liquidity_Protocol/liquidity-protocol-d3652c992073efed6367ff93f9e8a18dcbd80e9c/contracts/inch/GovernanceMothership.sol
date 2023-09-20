@@ -46,7 +46,7 @@ contract GovernanceMothership is Ownable, BalanceAccounting {
     }
 
     function notifyFor(address account) external {
-        // SWC-Write to Arbitrary Storage Location: L50
+        // SWC-124-Write to Arbitrary Storage Location: L50
         _notifyFor(account, balanceOf(msg.sender));
     }
 

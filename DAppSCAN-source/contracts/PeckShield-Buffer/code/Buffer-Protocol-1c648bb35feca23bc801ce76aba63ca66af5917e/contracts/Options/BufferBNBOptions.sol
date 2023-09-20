@@ -138,7 +138,7 @@ contract BufferBNBOptions is
      * @param optionType Call or Put option type
      * @return optionID Created option's ID
      */
-     //SWC-Reentrancy: L142-L189
+     //SWC-107-Reentrancy: L142-L189
     function create(
         uint256 period,
         uint256 amount,

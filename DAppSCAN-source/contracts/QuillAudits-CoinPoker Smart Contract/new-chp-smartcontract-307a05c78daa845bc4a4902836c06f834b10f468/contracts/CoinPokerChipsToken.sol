@@ -2,7 +2,7 @@
 
 pragma solidity 0.7.4;
 
-// SWC-Code With No Effects: L5 - L8
+// SWC-135-Code With No Effects: L5 - L8
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";

@@ -887,7 +887,7 @@ contract Ownable is Context {
 }
 
 contract RICEToken is ERC20, ERC20Detailed, ERC20Capped, ERC20Pausable, ERC20Burnable, Ownable {
-//SWC-State Variable Default Visibility:L891-894, 912-914
+//SWC-108-State Variable Default Visibility: L891-894, 912-914
     address FoundingTeam = 0x12B8665E7b4684178a54122e121B83CC41d9d9C3;
     address UserAcquisition = 0xdf7E62218B2f889a35a5510e65f9CD4288CB6D6E;
     address PublicSales = 0x876443e20778Daa70BFd2552e815A674D0aA7BF8;
@@ -956,13 +956,13 @@ contract RICEToken is ERC20, ERC20Detailed, ERC20Capped, ERC20Pausable, ERC20Bur
         transfer(PublicSales, 10000000 * 10 ** uint256(decimals()));
 
     }
-//SWC-Requirement Violation:L962, 969, 970, 975
+//SWC-123-Requirement Violation: L962, 969, 970, 975
     function transfer(address _receiver, uint256 _amount) public returns (bool success) {
         require(_receiver != address(0));
         require(_amount <= getAvailableBalance(msg.sender));
         return ERC20.transfer(_receiver, _amount);
     }
-//SWC-Incorrect Inheritance Order:L963,971
+//SWC-125-Incorrect Inheritance Order: L963,971
     function transferFrom(address _from, address _receiver, uint256 _amount) public returns (bool) {
         require(_from != address(0));
         require(_receiver != address(0));
@@ -970,7 +970,8 @@ contract RICEToken is ERC20, ERC20Detailed, ERC20Capped, ERC20Pausable, ERC20Bur
         require(_amount <= getAvailableBalance(_from));
         return ERC20.transferFrom(_from, _receiver, _amount);
     }
-//SWC-Unexpected Ether Balance,SWC-DoS With Block Gas Limit:L974-984
+// SWC-132-Unexpected Ether balance: L975-985
+// SWC-128-DoS With Block Gas Limit: L975-985
     function transferWithLock(address _receiver, uint256 _amount, uint256 _releaseDate) public returns (bool success) {
         require(msg.sender == FoundingTeam || msg.sender == PrivateSales || msg.sender == owner());
         ERC20._transfer(msg.sender,_receiver,_amount);
@@ -1055,7 +1056,7 @@ contract RICEToken is ERC20, ERC20Detailed, ERC20Capped, ERC20Pausable, ERC20Bur
             transferWithLock(investorsList[investorId].wallet, (investorsList[investorId].amount / 8) * 10 ** uint256(decimals()), PrivateSalesMap[y]);
         }
     }
-//SWC-Integer Overflow and Underflow:L1055
+//SWC-101-Integer Overflow and Underflow:L1055
     function () payable external {
         revert();
     }

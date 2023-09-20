@@ -40,7 +40,7 @@ contract OneSwapBuyback is IOneSwapBuyback {
         }
     }
     // remove token from main token list
-    //SWC-Code With No Effects: L44-L59
+    //SWC-135-Code With No Effects: L44-L59
     function removeMainToken(address token) external override {
         require(msg.sender == IOneSwapToken(ones).owner(), "OneSwapBuyback: NOT_ONES_OWNER");
         require(token != ones, "OneSwapBuyback: REMOVE_ONES_FROM_MAIN");

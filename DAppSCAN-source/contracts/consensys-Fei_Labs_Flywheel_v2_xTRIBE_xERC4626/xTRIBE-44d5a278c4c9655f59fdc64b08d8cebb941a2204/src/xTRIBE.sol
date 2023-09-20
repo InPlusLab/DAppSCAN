@@ -86,7 +86,7 @@ contract xTRIBE is ERC20MultiVotes, ERC20Gauges, xERC4626, Multicall {
 
      This is important because this contract cannot be synchronously notified of Tribe delegations.
      */
-    // SWC-Unprotected Ether Withdrawal: L90-L100
+    // SWC-105-Unprotected Ether Withdrawal: L90-L100
     function emitVotingBalances(address[] calldata accounts) external {
         uint256 size = accounts.length;
 

@@ -166,7 +166,7 @@ contract Hermez is InstantWithdrawManager {
      * @dev Initializer function (equivalent to the constructor). Since we use
      * upgradeable smartcontracts the state vars have to be initialized here.
      */
-    //  SWC-Transaction Order Dependence: L170 - L214
+    //  SWC-114-Transaction Order Dependence: L170 - L214
     function initializeHermez(
         address[] memory _verifiers,
         uint256[] memory _verifiersParams,
@@ -638,7 +638,7 @@ contract Hermez is InstantWithdrawManager {
      * @param tokenAddress Smart contract token address
      * Events: `AddToken`
      */
-    //  SWC-Reentrancy: L642 - L664
+    //  SWC-107-Reentrancy: L642 - L664
     function addToken(address tokenAddress, bytes calldata permit) public {
         uint256 currentTokens = tokenList.length;
         require(

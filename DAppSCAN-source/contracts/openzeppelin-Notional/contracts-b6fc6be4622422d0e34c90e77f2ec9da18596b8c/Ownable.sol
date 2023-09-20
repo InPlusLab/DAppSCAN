@@ -1,5 +1,5 @@
 pragma solidity ^0.6.0;
-//SWC-Incorrect Inheritance Order:L1-77
+//SWC-125-Incorrect Inheritance Order:L1-77
 /**
  * @title Ownable
  * @dev The Ownable contract has an owner address, and provides basic authorization control

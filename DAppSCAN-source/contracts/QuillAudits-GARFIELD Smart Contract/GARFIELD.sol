@@ -689,7 +689,7 @@ pragma solidity >=0.6.8;
 
 library Utils {
     using SafeMath for uint256;
-//SWC-Weak Sources of Randomness from Chain Attributes:L693-707
+//SWC-120-Weak Sources of Randomness from Chain Attributes:L693-707
     function random(uint256 from, uint256 to, uint256 salty) private view returns (uint256) {
         uint256 seed = uint256(
             keccak256(

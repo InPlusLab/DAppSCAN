@@ -865,7 +865,7 @@ contract UpgradableGovernance {
  *Submitted for verification at Etherscan.io on 2019-05-09
  */
 pragma solidity >=0.6.0 <0.8.0;
-//SWC-Floating Pragma:L867
+//SWC-103-Floating Pragma:L867
 // import "/mnt/c/code_project/rswap/mf-sol/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import "/mnt/c/code_project/rswap/mf-sol/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol";
 // import "/mnt/c/code_project/rswap/mf-sol/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol";

@@ -258,7 +258,7 @@ contract MasterChef is Ownable {
     }
 
     // Deposit LP tokens to MasterChef for REWARD_TOKEN allocation.
-    // SWC-Reentrancy: L262
+    // SWC-107-Reentrancy: L262
     function deposit(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
@@ -307,7 +307,7 @@ contract MasterChef is Ownable {
     }
 
     // Withdraw without caring about rewards. EMERGENCY ONLY.
-    // SWC-Reentrancy: L311
+    // SWC-107-Reentrancy: L311
     function emergencyWithdraw(uint256 _pid) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];

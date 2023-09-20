@@ -3,8 +3,8 @@
 
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
 
-// SWC-Outdated Compiler Version: L8
-// SWC-Floating Pragma: L8
+// SWC-102-Outdated Compiler Version: L8
+// SWC-103-Floating Pragma: L8
 pragma solidity ^0.8.0;
 
 /**

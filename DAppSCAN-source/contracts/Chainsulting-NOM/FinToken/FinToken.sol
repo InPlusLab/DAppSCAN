@@ -3,7 +3,7 @@
 */
 
 
-// SWC-Floating Pragma: L7
+// SWC-103-Floating Pragma: L7
 pragma solidity ^0.4.21;
 
 
@@ -222,7 +222,7 @@ contract FinToken is StandardToken {
 	string public constant symbol = "FIN";
 	uint8 public constant decimals = 18;
 
-	// SWC-Integer Overflow and Underflow: L226
+	// SWC-101-Integer Overflow and Underflow: L226
 	uint256 public constant INITIAL_SUPPLY = 2623304 * (10 ** uint256(decimals));
 	
 	mapping (address => bool) internal verificatorAddresses;

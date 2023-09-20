@@ -1,5 +1,5 @@
 // Liquidity contract with pegged value
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.5.0;
 
 /**

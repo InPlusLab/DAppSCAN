@@ -71,8 +71,8 @@ contract ExchangeExecution is
             );
 
             // Verify exchange has not already been called
-            // SWC-Integer Overflow and Underflow: L76
-            // SWC-Transaction Order Dependence: L76
+            // SWC-101-Integer Overflow and Underflow: L76
+            // SWC-114-Transaction Order Dependence: L76
             uint256 exchangeBitIndex = CommonMath.safePower(2, header.exchange);
             require(
                 (calledExchanges & exchangeBitIndex) == 0,

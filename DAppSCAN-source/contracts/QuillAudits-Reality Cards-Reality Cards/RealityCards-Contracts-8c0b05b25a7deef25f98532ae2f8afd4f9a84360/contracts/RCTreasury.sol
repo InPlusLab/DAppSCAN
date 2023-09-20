@@ -81,7 +81,7 @@ contract RCTreasury is Ownable, NativeMetaTransaction {
     modifier balancedBooks {
         _;
         // using >= not == because forced Ether send via selfdestruct will not trigger a deposit via the fallback
-        // SWC-Integer Overflow and Underflow: L85
+        // SWC-101-Integer Overflow and Underflow: L85
         assert(address(this).balance >= totalDeposits + totalMarketPots);
     }
 

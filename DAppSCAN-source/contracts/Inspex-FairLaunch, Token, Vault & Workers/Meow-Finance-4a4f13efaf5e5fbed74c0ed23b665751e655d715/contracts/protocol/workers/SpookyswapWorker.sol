@@ -135,7 +135,7 @@ contract SpookyswapWorker is OwnableUpgradeSafe, ReentrancyGuardUpgradeSafe, ISp
   }
 
   /// @dev Re-invest whatever this worker has earned back to staked LP tokens.
-  // SWC-Transaction Order Dependence: L139
+  // SWC-114-Transaction Order Dependence: L139
   function reinvest() external override onlyEOA onlyReinvestor nonReentrant {
     // 1. Approve tokens
     boo.safeApprove(address(router), uint256(-1));

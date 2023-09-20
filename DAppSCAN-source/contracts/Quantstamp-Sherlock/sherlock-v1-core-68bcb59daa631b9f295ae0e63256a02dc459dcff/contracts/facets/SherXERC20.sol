@@ -84,7 +84,7 @@ contract SherXERC20 is IERC20, ISherXERC20 {
     emit Approval(msg.sender, _spender, sx20.allowances[msg.sender][_spender]);
     return true;
   }
-  //SWC-Transaction Order Dependence: L88-L92
+  //SWC-114-Transaction Order Dependence: L88-L92
   function approve(address _spender, uint256 _amount) external override returns (bool) {
     require(_spender != address(0), 'SPENDER');
     emit Approval(msg.sender, _spender, _amount);

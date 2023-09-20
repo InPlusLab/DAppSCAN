@@ -51,7 +51,7 @@ contract CGUToken is ERC20, IERC677, Ownable {
         emit Burn(_msgSender(), amount);
     }
 
-// SWC-Function Default Visibility: L55
+// SWC-100-Function Default Visibility: L55
     function getLockedAmount(address account) public view returns (uint256) {
         return locks[account].timestamp > block.timestamp ? locks[account].amount : 0;
     }
@@ -77,7 +77,7 @@ contract CGUToken is ERC20, IERC677, Ownable {
         return true;
     }
 
-// SWC-Function Default Visibility: L80
+// SWC-100-Function Default Visibility: L80
     function transferAndCall(address _to, uint _value, bytes memory _data) public override returns (bool success)
     {
         _checksForLock(_msgSender(), _value);

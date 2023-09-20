@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-SIGH Finance-Final Audit Report/SIGH-Finance-Contracts-9feee84e18cabb4015ca60dc016340f2c94af27a/SIGHFinanceContracts/contracts/NFTBoosters/SIGHBoostersSale.sol",
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-SIGH Finance-Final Audit Report/SIGH-Finance-Contracts-9feee84e18cabb4015ca60dc016340f2c94af27a/SIGHFinanceContracts/contracts/NFTBoosters/SIGHBoostersSale.sol",
  "SWCs": [
   {
-   "category": "SWC-Typographical Error",
+   "category": "SWC-129-Typographical Error",
    "function": "buyBoosters",
    "lineNumber": "L96"
   }

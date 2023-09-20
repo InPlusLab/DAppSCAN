@@ -1,23 +1,23 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-AAVE-Incentives Proposal/incentives-controller-ad534cdedd91d8db5ac1302ef2c200de75377790/contracts/incentives/StakedTokenIncentivesController.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-AAVE-Incentives Proposal/incentives-controller-ad534cdedd91d8db5ac1302ef2c200de75377790/contracts/incentives/StakedTokenIncentivesController.sol",
  "SWCs": [
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "getRewardsBalance",
    "lineNumber": "L97"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "claimRewards",
    "lineNumber": "L123"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "claimRewardsOnBehalf",
    "lineNumber": "L129"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "_claimRewards",
    "lineNumber": "L185"
   }

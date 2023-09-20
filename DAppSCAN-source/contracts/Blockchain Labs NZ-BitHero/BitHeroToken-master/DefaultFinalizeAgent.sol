@@ -4,7 +4,7 @@
  * Licensed under the Apache License, version 2.0: https://github.com/TokenMarketNet/ico/blob/master/LICENSE.txt
  */
 
-// SWC-Outdated Compiler Version: L8
+// SWC-102-Outdated Compiler Version: L8
 pragma solidity ^0.4.6;
 
 import "./Crowdsale.sol";

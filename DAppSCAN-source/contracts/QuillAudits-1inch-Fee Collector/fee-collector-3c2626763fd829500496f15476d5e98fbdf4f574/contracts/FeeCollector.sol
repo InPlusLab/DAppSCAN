@@ -336,7 +336,7 @@ contract FeeCollector is Ownable, BalanceAccounting {
         _updateReward(IERC20(msg.sender), referral, amount);
     }
 
-    // SWC-Reentrancy: L340 - L343
+    // SWC-107-Reentrancy: L340 - L343
     function updateRewardNonLP(IERC20 erc20, address referral, uint256 amount) external {
         erc20.safeTransferFrom(msg.sender, address(this), amount);
         _updateReward(erc20, referral, amount);
@@ -358,7 +358,7 @@ contract FeeCollector is Ownable, BalanceAccounting {
             tokenBalance += currentEpochBalance.totalSupply - currentEpochBalance.tokenSpent;
         }
 
-        // SWC-Transaction Order Dependence: L361
+        // SWC-114-Transaction Order Dependence: L361
         uint256 returnAmount = amount * tokenBalance / value(erc20);
         require(tokenBalance >= returnAmount, "not enough tokens");
 

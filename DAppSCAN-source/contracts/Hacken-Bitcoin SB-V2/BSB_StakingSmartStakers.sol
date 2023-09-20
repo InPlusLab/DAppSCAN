@@ -389,7 +389,7 @@ contract BSB_StakingSmartStakers is Ownable {
     function end() public onlyOwner returns (bool){
         require(!ended, "Staking already ended");
         address _aux;
-        // SWC-DoS With Block Gas Limit: L393 - L401
+        // SWC-128-DoS With Block Gas Limit: L393 - L401
         for(uint i = 0; i < holders.length(); i = i.add(1)){
             _aux = holders.at(i);
             rewardEnded[_aux] = getPendingRewards(_aux);
@@ -412,7 +412,7 @@ contract BSB_StakingSmartStakers is Ownable {
             _res = 0;
         }else{
             uint totalPending;
-        // SWC-DoS With Block Gas Limit: L416 - L418
+        // SWC-128-DoS With Block Gas Limit: L416 - L418
             for(uint i = 0; i < holders.length(); i = i.add(1)){
                 totalPending = totalPending.add(getPendingRewards(holders.at(i)));
             }

@@ -3,7 +3,7 @@
 */
 
 // SPDX-License-Identifier: none
-// SWC-Floating Pragma: L7
+// SWC-103-Floating Pragma: L7
 pragma solidity ^0.8.6; 
 
 contract Owned {

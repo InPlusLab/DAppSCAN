@@ -1,7 +1,8 @@
 /**
  *Submitted for verification at BscScan.com on 2021-05-19
 */
-//SWC-Outdated Compiler Version,SWC-Floating Pragma:L5
+// SWC-102-Outdated Compiler Version: L6
+// SWC-103-Floating Pragma: L6
 pragma solidity ^0.6.12;
 // SPDX-License-Identifier: Unlicensed
 interface IERC20 {
@@ -505,7 +506,7 @@ contract GLONK is Context, IERC20, Ownable {
     function allowance(address owner, address spender) public view override returns (uint256) {
         return _allowances[owner][spender];
     }
-//SWC-Transaction Order Dependence:L509-512
+//SWC-114-Transaction Order Dependence: L510-513
     function approve(address spender, uint256 amount) public override returns (bool) {
         _approve(_msgSender(), spender, amount);
         return true;
@@ -800,7 +801,7 @@ contract GLONK is Context, IERC20, Ownable {
             block.timestamp
         );
     }
-//SWC-Weak Sources of Randomness from Chain Attributes:L800-815
+//SWC-120-Weak Sources of Randomness from Chain Attributes: L805-818
     function addLiquidity(uint256 tokenAmount, uint256 ethAmount) private {
         // approve token transfer to cover all possible scenarios
         _approve(address(this), address(uniswapV2Router), tokenAmount);

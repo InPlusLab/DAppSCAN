@@ -146,7 +146,7 @@ contract RocketNodeStaking is RocketBase, RocketNodeStakingInterface {
         require(rplToken.transferFrom(msg.sender, address(this), _amount), "Could not transfer RPL to staking contract");
         // Deposit RPL tokens to vault
         require(rplToken.approve(rocketVaultAddress, _amount), "Could not approve vault RPL deposit");
-        // SWC-Unchecked Call Return Value: L150
+        // SWC-104-Unchecked Call Return Value: L150
         rocketVault.depositToken("rocketNodeStaking", rplTokenAddress, _amount);
         // Update RPL stake amounts & node RPL staked block
         increaseTotalRPLStake(_amount);
@@ -163,7 +163,7 @@ contract RocketNodeStaking is RocketBase, RocketNodeStakingInterface {
         RocketDAOProtocolSettingsRewardsInterface rocketDAOProtocolSettingsRewards = RocketDAOProtocolSettingsRewardsInterface(getContractAddress("rocketDAOProtocolSettingsRewards"));
         RocketVaultInterface rocketVault = RocketVaultInterface(getContractAddress("rocketVault"));
         // Check cooldown period (one claim period) has passed since RPL last staked
-        // SWC-Transaction Order Dependence: L166
+        // SWC-114-Transaction Order Dependence: L166
         require(block.number.sub(getNodeRPLStakedBlock(msg.sender)) >= rocketDAOProtocolSettingsRewards.getRewardsClaimIntervalBlocks(), "The withdrawal cooldown period has not passed");
         // Get & check node's current RPL stake
         uint256 rplStake = getNodeRPLStake(msg.sender);

@@ -5,7 +5,7 @@ pragma solidity ^0.6.10;
 import "./Administratable.sol";
 import "./OrgFactory.sol";
 import "./Fund.sol";
-//SWC-Code With No Effects:L6
+//SWC-135-Code With No Effects:L6
 // FUND FACTORY CONTRACT
 /**
  * @title FundFactory

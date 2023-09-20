@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Stake Technologies Lockdrop/lockdrop-ui-e6d8357ebfb7c3ed5125b3c9e79fd1e41a9885ed/contracts/Lockdrop.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-Stake Technologies Lockdrop/lockdrop-ui-e6d8357ebfb7c3ed5125b3c9e79fd1e41a9885ed/contracts/Lockdrop.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L1"
   },
   {
-   "category": "SWC-DoS with Failed Call",
+   "category": "SWC-113-DoS with Failed Call",
    "function": "lock",
    "lineNumber": "L47"
   }

@@ -9,7 +9,7 @@ contract TncToken is ERC20, Ownable {
     mapping (address => bool) internal authorizations;
 
     constructor(
-        // SWC-Shadowing State Variables: L13 - L16
+        // SWC-119-Shadowing State Variables: L13 - L16
         string memory name,
         string memory symbol,
         uint256 totalSupply,

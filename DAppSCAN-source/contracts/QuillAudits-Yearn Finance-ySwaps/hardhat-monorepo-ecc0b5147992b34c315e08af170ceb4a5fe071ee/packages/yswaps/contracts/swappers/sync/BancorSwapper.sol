@@ -49,7 +49,7 @@ contract BancorSwapper is IBancorSwapper, SyncSwapper {
   }
 
   // path and minReturn generated on chain
-  // SWC-Code With No Effects: L53-L62
+  // SWC-135-Code With No Effects: L53-L62
   function trade(
     address _sourceToken,
     address _targetToken,

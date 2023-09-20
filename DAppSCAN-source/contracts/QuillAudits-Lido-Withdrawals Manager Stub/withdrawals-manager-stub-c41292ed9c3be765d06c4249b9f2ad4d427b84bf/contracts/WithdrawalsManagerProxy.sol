@@ -66,7 +66,7 @@ contract WithdrawalsManagerProxy is ERC1967Proxy {
     /**
      * @dev Initializes the upgradeable proxy with the initial stub implementation.
      */
-    //  SWC-Code With No Effects: L71
+    //  SWC-135-Code With No Effects: L71
     constructor() ERC1967Proxy(address(new WithdrawalsManagerStub()), new bytes(0)) {
         assert(ADMIN_SLOT == bytes32(uint256(keccak256("eip1967.proxy.admin")) - 1));
         _setAdmin(LIDO_VOTING);

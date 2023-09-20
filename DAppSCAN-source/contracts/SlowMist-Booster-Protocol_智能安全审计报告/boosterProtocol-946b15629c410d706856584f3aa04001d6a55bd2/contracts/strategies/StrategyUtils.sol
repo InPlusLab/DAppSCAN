@@ -341,7 +341,7 @@ contract StrategyUtils is Ownable {
         address[] memory path = new address[](2);
         path[0] = _tokenIn;
         path[1] = _tokenOut;
-        // SWC-Transaction Order Dependence: L345
+        // SWC-114-Transaction Order Dependence: L345
         uint256[] memory result = router.getAmountsIn(_amountOut, path);
         if(result.length == 0) {
             return 0;
@@ -391,7 +391,7 @@ contract StrategyUtils is Ownable {
         uint256 amountOutMin = 0;
         IERC20(_tokenIn).approve(address(router), uint256(-1));
         require(IERC20(_tokenIn).balanceOf(address(this)) >= _amountIn, 'getTokenInTo not amount in');
-        // SWC-Transaction Order Dependence: L395
+        // SWC-114-Transaction Order Dependence: L395
         uint256[] memory result = router.swapExactTokensForTokens(_amountIn, amountOutMin, path, _toAddress, block.timestamp.add(60));
         if(result.length == 0) {
             value = 0;

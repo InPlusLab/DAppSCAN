@@ -1,5 +1,5 @@
-// SWC-Integer Overflow and Underflow: L9-L133
-// SWC-Outdated Compiler Version: L9-L133
+// SWC-101-Integer Overflow and Underflow: L9-L133
+// SWC-102-Outdated Compiler Version: L9-L133
 
 //! Fundraiser contract. Just records who sent what.
 //! By Parity Technologies, 2017.
@@ -91,7 +91,7 @@ contract Fundraiser {
 	if (!(sha3(bytes32(_donor)^bytes32(_returnAddress)) == checksum)) throw;
 
 	// forward the funds to the treasurer
-        // SWC-Reentrancy: L92
+        // SWC-107-Reentrancy: L92
         if (!treasury.call.value(msg.value)()) throw;
 
 	// calculate the number of atoms at the current rate

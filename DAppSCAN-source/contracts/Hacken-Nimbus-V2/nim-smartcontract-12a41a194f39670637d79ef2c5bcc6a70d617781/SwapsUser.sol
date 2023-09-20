@@ -152,7 +152,7 @@ contract SwapsUser is State, SwapsEvents, FeesHelper {
 
         return (destTokenAmountReceived, sourceTokenAmountUsed);
     }
-//SWC-Integer Overflow and Underflow:L156-178
+//SWC-101-Integer Overflow and Underflow:L156-178
     function _swapsCall_internal(
         address[5] memory addrs,
         uint256[3] memory vals)

@@ -184,7 +184,7 @@ contract LixirStrategySimpleGWAP is LixirBase, ILixirStrategy {
    * @dev Sanity checks on current tick, expected tick from keeper, and GWAP tick
    * @param expectedTick Expected tick passed by keeper
    */
-//  SWC-Code With No Effects：L193-198
+//  SWC-135-Code With No Effects: L193-198
   function checkTick(
     int24 tick,
     int24 expectedTick,

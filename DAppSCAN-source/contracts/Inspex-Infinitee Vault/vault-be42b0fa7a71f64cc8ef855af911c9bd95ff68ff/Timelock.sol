@@ -14,7 +14,7 @@
 
 // XXX: pragma solidity ^0.5.16;
 pragma solidity 0.6.6;
-//SWC-Outdated Compiler Version:L16
+//SWC-102-Outdated Compiler Version:L16
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
 contract Timelock {

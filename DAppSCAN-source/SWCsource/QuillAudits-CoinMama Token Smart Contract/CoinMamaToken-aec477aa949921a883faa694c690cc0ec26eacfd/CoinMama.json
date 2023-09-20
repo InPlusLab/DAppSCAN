@@ -1,20 +1,20 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-CoinMama Token Smart Contract/CoinMamaToken-aec477aa949921a883faa694c690cc0ec26eacfd/CoinMama.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-CoinMama Token Smart Contract/CoinMamaToken-aec477aa949921a883faa694c690cc0ec26eacfd/CoinMama.sol",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version\uff1aL1",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
-   "lineNumber": "// SWC-Outdated Compiler Version\uff1aL1"
+   "lineNumber": "L1"
   },
   {
-   "category": "SWC-Code With No Effects\uff1aL648-652",
+   "category": "SWC-135-Code With No Effects",
    "function": "_beforeTokenTransfer",
-   "lineNumber": "//SWC-Code With No Effects\uff1aL648-652"
+   "lineNumber": "L648-652"
   },
   {
-   "category": "SWC-Unprotected Ether Withdrawal\uff1aL1137-1139",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "withdraw",
-   "lineNumber": "// SWC-Unprotected Ether Withdrawal\uff1aL1137-1139"
+   "lineNumber": "L1137-1139"
   }
  ]
 }

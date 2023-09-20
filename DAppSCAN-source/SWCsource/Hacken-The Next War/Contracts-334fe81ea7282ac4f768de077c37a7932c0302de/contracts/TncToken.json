@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-The Next War/Contracts-334fe81ea7282ac4f768de077c37a7932c0302de/contracts/TncToken.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-The Next War/Contracts-334fe81ea7282ac4f768de077c37a7932c0302de/contracts/TncToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "N/A",
    "lineNumber": "L13 - L16"
   }

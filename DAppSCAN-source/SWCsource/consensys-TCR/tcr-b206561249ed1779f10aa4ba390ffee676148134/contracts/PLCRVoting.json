@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-TCR/tcr-b206561249ed1779f10aa4ba390ffee676148134/contracts/PLCRVoting.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-TCR/tcr-b206561249ed1779f10aa4ba390ffee676148134/contracts/PLCRVoting.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "startPoll",
    "lineNumber": "L213"
   }

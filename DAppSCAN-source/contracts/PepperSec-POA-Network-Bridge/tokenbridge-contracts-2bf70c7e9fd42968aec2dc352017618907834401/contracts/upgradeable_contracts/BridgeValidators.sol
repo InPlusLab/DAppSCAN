@@ -27,7 +27,7 @@ contract BridgeValidators is IBridgeValidators, EternalStorage, Ownable {
             setValidator(_initialValidators[i], true);
             emit ValidatorAdded(_initialValidators[i]);
         }
-        //SWC-Code With No Effects: L31
+        //SWC-135-Code With No Effects: L31
         require(validatorCount() >= _requiredSignatures);
         uintStorage[keccak256(abi.encodePacked("requiredSignatures"))] = _requiredSignatures;
         setInitialize(true);

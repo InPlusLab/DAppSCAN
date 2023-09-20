@@ -713,7 +713,7 @@ contract WUSDMaster is Ownable, Withdrawable, ReentrancyGuard {
         }
         uint256 wexAmount = amount * wexPermille / 1000;
         usdt.approve(address(wswapRouter), wexAmount);
-        // SWC-Transaction reordering issues: L717-L723
+        // SWC-114-Transaction Order Dependence: L717-L723
         wswapRouter.swapExactTokensForTokensSupportingFeeOnTransferTokens(
             wexAmount,
             0,

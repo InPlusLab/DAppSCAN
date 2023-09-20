@@ -35,7 +35,7 @@ contract Escrow_v1_0 {
     event Funded(bytes32 scriptHash, address indexed from, uint256 value);
 
     struct Transaction {
-        //SWC-Presence of unused variables: L39
+        //SWC-131-Presence of unused variables: L39
         bytes32 scriptHash;//This is unique indentifier for a transaction
         uint256 value;
         uint256 lastModified;//Time at which transaction was last modified
@@ -487,7 +487,7 @@ contract Escrow_v1_0 {
 
                 require(token.transfer(destinations[j], amounts[j]), "Token transfer failed.");
             }
-        // SWC-Code With No Effects: L491
+        // SWC-135-Code With No Effects: L491
         } else {
             //transaction type is not supported. Ideally this state should never be reached
             revert("Transation type is not supported.");

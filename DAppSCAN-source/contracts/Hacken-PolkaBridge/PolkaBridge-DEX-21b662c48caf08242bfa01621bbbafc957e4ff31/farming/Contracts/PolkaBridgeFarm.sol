@@ -181,7 +181,7 @@ contract PolkaBridgeFarm is Ownable, ReentrancyGuard {
     // Update reward vairables for all pools. Be careful of gas spending!
     function massUpdatePools() public {
         uint256 length = poolInfo.length;
-    // SWC-DoS With Block Gas Limit: L185
+    // SWC-128-DoS With Block Gas Limit: L185
         for (uint256 pid = 0; pid < length; ++pid) {
             updatePool(pid);
         }

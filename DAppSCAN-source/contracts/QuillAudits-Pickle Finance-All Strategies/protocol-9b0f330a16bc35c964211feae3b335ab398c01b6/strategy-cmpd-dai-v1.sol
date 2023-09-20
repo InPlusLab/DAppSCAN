@@ -279,7 +279,7 @@ contract StrategyCmpdDaiV1 is StrategyBase, Exponential {
                 _supplyAmount <= unleveragedSupply.mul(leverage).div(1e18),
             "!leverage"
         );
-//SWC-DoS With Block Gas Limit:L287
+//SWC-128-DoS With Block Gas Limit:L287
         // Since we're only leveraging one asset
         // Supplied = borrowed
         uint256 _borrowAndSupply;

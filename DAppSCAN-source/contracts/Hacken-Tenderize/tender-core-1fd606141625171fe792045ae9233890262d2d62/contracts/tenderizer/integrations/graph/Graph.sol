@@ -78,11 +78,11 @@ contract Graph is Tenderizer {
         }
 
         // approve amount to Graph protocol
-        // SWC-Unchecked Call Return Value: L82
+        // SWC-104-Unchecked Call Return Value: L82
         steak.approve(address(graph), amount);
 
         // stake tokens
-        // SWC-Unchecked Call Return Value: L86
+        // SWC-104-Unchecked Call Return Value: L86
         graph.delegate(_node, amount);
 
         emit Stake(_node, amount);
@@ -132,7 +132,7 @@ contract Graph is Tenderizer {
         uint256 amount = withdrawPool.withdraw(_withdrawalID, _account);
 
         // Transfer amount from unbondingLock to _account
-        // SWC-Unchecked Call Return Value: L135
+        // SWC-104-Unchecked Call Return Value: L135
         try steak.transfer(_account, amount) {} catch {
             // Account for roundoff errors in shares calculations
             uint256 steakBal = steak.balanceOf(address(this));

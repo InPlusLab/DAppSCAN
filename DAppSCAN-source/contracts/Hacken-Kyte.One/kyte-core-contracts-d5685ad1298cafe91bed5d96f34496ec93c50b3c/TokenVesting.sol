@@ -1,6 +1,6 @@
 //SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.0;
-//    SWC-Floating Pragma：L2
+//    SWC-103-Floating Pragma: L2
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
@@ -282,7 +282,7 @@ contract TokenVesting is ITokenVesting, Ownable, ReentrancyGuard {
     /**
      * @dev Returns all vesting schedules of the holder
      */
-//    SWC-DoS With Block Gas Limit：L286-302
+//    SWC-128-DoS With Block Gas Limit: L286-302
     function getAllVestingScheduleForHolder(address holder)
         public
         view

@@ -8,7 +8,7 @@ import "../erc20/TokenInterface.sol";
 import "../utils/SafeMath.sol";
 import "../erc20/IERC20.sol";
 
-//SWC-Code With No Effects: L11-L12
+//SWC-135-Code With No Effects: L11-L12
 contract PLiquidateAgent is Ownable{
 
   using SafeMath for uint256;

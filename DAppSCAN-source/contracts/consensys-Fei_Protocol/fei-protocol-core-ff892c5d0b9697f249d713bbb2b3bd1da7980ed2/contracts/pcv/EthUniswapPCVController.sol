@@ -119,7 +119,7 @@ contract EthUniswapPCVController is IUniswapPCVController, UniRef {
 		
 		IWETH weth = IWETH(router.WETH());
 		weth.deposit{value: amount}();
-		// SWC-Unchecked Call Return Value: L123
+		// SWC-104-Unchecked Call Return Value: L123
 		weth.transfer(address(pair), amount);
 
 		(uint amount0Out, uint amount1Out) = pair.token0() == address(weth) ? (uint(0), amountOut) : (amountOut, uint(0));

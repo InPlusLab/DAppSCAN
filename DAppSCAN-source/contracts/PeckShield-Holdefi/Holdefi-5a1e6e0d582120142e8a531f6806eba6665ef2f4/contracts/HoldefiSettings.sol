@@ -318,7 +318,7 @@ contract HoldefiSettings is HoldefiOwnable {
 	/// @param market Address of the new market
 	/// @param borrowRate BorrowRate of the new market
 	/// @param suppliersShareRate SuppliersShareRate of the new market
-	//SWC-Code With No Effects: L322-L341
+	//SWC-135-Code With No Effects: L322-L341
 	function addMarket (address market, uint256 borrowRate, uint256 suppliersShareRate)
 		external
 		onlyOwner

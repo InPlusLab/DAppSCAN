@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-CryptoBatz Smart Contract/crypto-batz-contracts-07ee07dd442c34622798f1ee5b73ef8ff59cef48/contracts/CryptoBatz.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-CryptoBatz Smart Contract/crypto-batz-contracts-07ee07dd442c34622798f1ee5b73ef8ff59cef48/contracts/CryptoBatz.sol",
  "SWCs": [
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "rollStartIndex",
    "lineNumber": "L355 - L374"
   }

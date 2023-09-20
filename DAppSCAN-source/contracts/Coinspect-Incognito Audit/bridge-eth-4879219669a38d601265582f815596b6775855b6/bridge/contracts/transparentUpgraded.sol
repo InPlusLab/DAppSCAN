@@ -295,7 +295,7 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
     /**
      * @dev Successor claims thronze.
      */
-    //  SWC-Function Default Visibility: L299 - L303
+    //  SWC-100-Function Default Visibility: L299 - L303
     function claim() external {
         require(msg.sender == _successor(), "TransparentUpgradeableProxy: unauthorized");
         emit Claim(_successor());

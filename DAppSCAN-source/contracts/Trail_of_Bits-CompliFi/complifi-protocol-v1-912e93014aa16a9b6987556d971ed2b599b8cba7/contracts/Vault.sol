@@ -171,7 +171,7 @@ contract Vault is Ownable, Pausable, IPausableVault, ReentrancyGuard {
 
     /// @notice Initialize vault by creating derivative token and switching to Live state
     /// @dev Extracted from constructor to reduce contract gas creation amount
-    // SWC-Transaction Order Dependence: L175 - L189
+    // SWC-114-Transaction Order Dependence: L175 - L189
     function initialize(int256[] calldata _underlyingStarts) external {
         require(state == State.Created, "Incorrect state.");
 

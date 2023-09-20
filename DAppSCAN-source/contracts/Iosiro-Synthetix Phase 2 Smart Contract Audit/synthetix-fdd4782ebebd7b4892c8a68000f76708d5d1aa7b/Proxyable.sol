@@ -39,7 +39,7 @@ contract Proxyable is Owned {
      * Note that every function using this member must apply the onlyProxy or
      * optionalProxy modifiers, otherwise their invocations can use stale values. */
     address messageSender;
-//SWC-State Variable Default Visibility:L41
+//SWC-108-State Variable Default Visibility:L41
     constructor(address _proxy, address _owner)
         Owned(_owner)
         public

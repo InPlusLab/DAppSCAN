@@ -792,7 +792,7 @@ contract TransactionManager is ReentrancyGuard, ProposedOwnable, ITransactionMan
         // When the user could be unlocking funds through a relayer, validate
         // their signature and payout the relayer.
         if (relayerFee > 0) {
-          // SWC-Signature Malleability: L796-L818
+          // SWC-117-Signature Malleability: L796-L818
           require(msg.sender == txData.user || recoverSignature(txData.transactionId, relayerFee, "cancel", signature) == txData.user, "#C:022");
 
           Asset.transferAsset(txData.sendingAssetId, payable(msg.sender), relayerFee);

@@ -26,7 +26,7 @@ library HegicMath {
      **/
     function sqrt(uint256 x) internal pure returns (uint256 result) {
         result = x;
-        // SWC-Integer Overflow and Underflow: L30
+        // SWC-101-Integer Overflow and Underflow: L30
         uint256 k = (x + 1) >> 1;
         while (k < result) (result, k) = (k, (x / k + k) >> 1);
     }

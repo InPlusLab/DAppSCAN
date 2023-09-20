@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-Touch Social/Touch/Touch.sol",
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-Touch Social/Touch/Touch.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "N/A",
    "lineNumber": "L128"
   }

@@ -318,7 +318,7 @@ contract V00_Marketplace is Ownable {
     }
 
     // @dev Buyer or seller can dispute transaction during finalization window
-    // SWC-Transaction Order Dependence: L322-L333
+    // SWC-114-Transaction Order Dependence: L322-L333
     function dispute(uint listingID, uint offerID, bytes32 _ipfsHash) public {
         Listing storage listing = listings[listingID];
         Offer storage offer = offers[listingID][offerID];

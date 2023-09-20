@@ -54,7 +54,7 @@ library LibMath {
             ));
         }
 
-        // SWC-Integer Overflow and Underflow: L57
+        // SWC-101-Integer Overflow and Underflow: L57
         partialAmount = numerator.safeMul(target).safeDiv(denominator);
         return partialAmount;
     }

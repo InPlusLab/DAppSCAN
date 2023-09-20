@@ -126,7 +126,7 @@ contract DerivativeSpecification is IDerivativeSpecification {
         uint256 _authorFee,
         string memory _baseURI
     ) public {
-        // SWC-Delegatecall to Untrusted Callee: L130
+        // SWC-112-Delegatecall to Untrusted Callee: L130
         author_ = _author;
         name_ = _name;
         symbol_ = _symbol;

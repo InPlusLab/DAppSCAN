@@ -1,7 +1,7 @@
 // Copyright 2018 Golem Factory
 // Licensed under the GNU General Public License v3. See the LICENSE file.
 
-// SWC-Outdated Compiler Version: L5
+// SWC-102-Outdated Compiler Version: L5
 pragma solidity ^0.4.19;
 
 import "./ReceivingContract.sol";

@@ -357,7 +357,7 @@ library LibFixedMath {
     }
 
     /// @dev Adds two numbers, reverting on overflow.
-    // SWC-Integer Overflow and Underflow: L361-378
+    // SWC-101-Integer Overflow and Underflow: L361-378
     function _add(int256 a, int256 b) private pure returns (int256 c) {
         c = a + b;
         if (c > 0 && a < 0 && b < 0) {

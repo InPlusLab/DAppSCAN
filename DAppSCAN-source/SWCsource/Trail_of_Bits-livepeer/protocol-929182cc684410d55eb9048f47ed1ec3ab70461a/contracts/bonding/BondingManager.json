@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-livepeer/protocol-929182cc684410d55eb9048f47ed1ec3ab70461a/contracts/bonding/BondingManager.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-livepeer/protocol-929182cc684410d55eb9048f47ed1ec3ab70461a/contracts/bonding/BondingManager.sol",
  "SWCs": [
   {
-   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "category": "SWC-120-Weak Sources of Randomness from Chain Attributes",
    "function": "N/A",
    "lineNumber": "L21 - L955"
   }

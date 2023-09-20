@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Amplify Smart Contract/contracts-d8af5f11f3b6ab59d09a56ebc229012900dc1cc8/protocol/contracts/Liquidity/Pool.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Amplify Smart Contract/contracts-d8af5f11f3b6ab59d09a56ebc229012900dc1cc8/protocol/contracts/Liquidity/Pool.sol",
  "SWCs": [
   {
-   "category": "SWC-Block values as a proxy for time\uff1a L330",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "getBlockTimestamp",
-   "lineNumber": "// SWC-Block values as a proxy for time\uff1a L330"
+   "lineNumber": "L330"
   }
  ]
 }

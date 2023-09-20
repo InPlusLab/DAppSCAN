@@ -1,38 +1,38 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/adapters/UniswapV3.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-GearBox Protocol-GearBox Protocol/gearbox-contracts-0ac33ba87212ce056ac6b6357ad74161d417158a/contracts/adapters/UniswapV3.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "exactInputSingle",
    "lineNumber": "L52"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "exactInput",
    "lineNumber": "L106"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "exactInput",
    "lineNumber": "L105"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "exactOutputSingle",
    "lineNumber": "L153"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "exactOutputSingle",
    "lineNumber": "L154"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "exactOutput",
    "lineNumber": "L206"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "exactOutput",
    "lineNumber": "L210"
   }

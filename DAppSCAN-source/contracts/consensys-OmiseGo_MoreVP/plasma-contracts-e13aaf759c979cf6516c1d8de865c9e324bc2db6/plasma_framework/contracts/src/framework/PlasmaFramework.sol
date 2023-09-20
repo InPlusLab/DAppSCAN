@@ -3,10 +3,10 @@ pragma experimental ABIEncoderV2;
 
 import "./BlockController.sol";
 import "./ExitGameController.sol";
-// SWC-Code With No Effects: L7
+// SWC-135-Code With No Effects: L7
 import "./registries/VaultRegistry.sol";
 import "./registries/ExitGameRegistry.sol";
-// SWC-Code With No Effects: L10
+// SWC-135-Code With No Effects: L10
 contract PlasmaFramework is VaultRegistry, ExitGameRegistry, ExitGameController, BlockController {
     uint256 public constant CHILD_BLOCK_INTERVAL = 1000;
 

@@ -75,7 +75,7 @@ library Strings {
         }
         uint256 temp = value;
         uint256 digits;
-        // SWC-DoS With Block Gas Limit: L79
+        // SWC-128-DoS With Block Gas Limit: L79
         while (temp != 0) {
             digits++;
             temp /= 10;
@@ -83,7 +83,7 @@ library Strings {
         bytes memory buffer = new bytes(digits);
         uint256 index = digits - 1;
         temp = value;
-        // SWC-DoS With Block Gas Limit: L87
+        // SWC-128-DoS With Block Gas Limit: L87
         while (temp != 0) {
             buffer[index--] = byte(uint8(48 + temp % 10));
             temp /= 10;
@@ -1012,7 +1012,7 @@ contract NexxoTokensUpgrade1 is Initializable, PausableUpgradeSafe, OwnableUpgra
         require(msg.value < maxEthCapToBuyToken(),"Ether worth is greater than maxEthCapToBuyToken.");
 
         updateTotalEthInWei(totalEthInWei() + msg.value);
-        // SWC-Integer Overflow and Underflow: L1014
+        // SWC-101-Integer Overflow and Underflow: L1014
         uint256 amount = msg.value * unitsOneEthCanBuy();
         require(balanceOf(ownerWallet()) >= amount, "Custom-Token : amount more than balance");
 

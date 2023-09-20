@@ -41,7 +41,7 @@ contract View {
         liquidityMiningManager = LiquidityMiningManager(_liquidityMiningManager);
         escrowPool = TimeLockPool(_escrowPool);
     }
-    //SWC-DoS With Block Gas Limit: L45-L83
+    //SWC-128-DoS With Block Gas Limit: L45-L83
     function fetchData(address _account) external view returns (Data memory result) {
         uint256 rewardPerSecond = liquidityMiningManager.rewardPerSecond();
         uint256 lastDistribution = liquidityMiningManager.lastDistribution();

@@ -19,7 +19,7 @@
     along with SKALE Manager.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// SWC-Floating Pragma: L23
+// SWC-103-Floating Pragma: L23
 pragma solidity 0.8.11;
 
 import "@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol";
@@ -193,7 +193,7 @@ contract Distributor is Permissions, IERC777Recipient, IDistributor {
         earned = 0;
         endMonth = currentMonth;
         if (endMonth > startMonth + 12) {
-            // SWC-Integer Overflow and Underflow: L196
+            // SWC-101-Integer Overflow and Underflow: L196
             endMonth = startMonth + 12;
         }
         for (uint i = startMonth; i < endMonth; ++i) {

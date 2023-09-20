@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Ackee_Blockchain-Zunami_protocol/ZunamiProtocol-37dccabf5aa3697dce5eaf6457debb3ac7404fdd/contracts/Zunami.sol",
+ "filePath": "DAppSCAN-source/contracts/Ackee_Blockchain-Zunami_protocol/ZunamiProtocol-37dccabf5aa3697dce5eaf6457debb3ac7404fdd/contracts/Zunami.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lineNumber": "L45-47"
   },
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "calcManagementFee",
    "lineNumber": "L74"
   }

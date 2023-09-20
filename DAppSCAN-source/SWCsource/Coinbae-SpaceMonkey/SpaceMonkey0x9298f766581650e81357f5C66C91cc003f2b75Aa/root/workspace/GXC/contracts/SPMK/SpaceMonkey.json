@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-SpaceMonkey/SpaceMonkey0x9298f766581650e81357f5C66C91cc003f2b75Aa/root/workspace/GXC/contracts/SPMK/SpaceMonkey.sol",
+ "filePath": "DAppSCAN-source/contracts/Coinbae-SpaceMonkey/SpaceMonkey0x9298f766581650e81357f5C66C91cc003f2b75Aa/root/workspace/GXC/contracts/SPMK/SpaceMonkey.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "transfer",
    "lineNumber": "L53 - L64"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "allowance",
    "lineNumber": "L66"
   },
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "_approve",
    "lineNumber": "L193"
   }

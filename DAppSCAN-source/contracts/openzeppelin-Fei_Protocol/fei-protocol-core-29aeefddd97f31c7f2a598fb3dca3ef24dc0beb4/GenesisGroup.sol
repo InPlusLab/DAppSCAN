@@ -76,7 +76,7 @@ contract GenesisGroup is IGenesisGroup, CoreRef, ERC20, ERC20Burnable, Timed {
 		require(!isTimeEnded(), "GenesisGroup: Not in Genesis Period");
 		_;
 	}
-//SWC-Unexpected Ether Balance:L80-87
+//SWC-132-Unexpected Ether balance: L80-87
 	function purchase(address to, uint value) external override payable onlyGenesisPeriod {
 		require(msg.value == value, "GenesisGroup: value mismatch");
 		require(value != 0, "GenesisGroup: no value sent");
@@ -85,7 +85,7 @@ contract GenesisGroup is IGenesisGroup, CoreRef, ERC20, ERC20Burnable, Timed {
 
 		emit Purchase(to, value);
 	}
-//SWC-Unprotected SELFDESTRUCT Instruction:L89-103
+//SWC-106-Unprotected SELFDESTRUCT Instruction:L89-103
 	function redeem(address to) external override postGenesis {
 		Decimal.D256 memory ratio = _fgenRatio(to);
 		require(!ratio.equals(Decimal.zero()), "GensisGroup: No balance to redeem");

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Code With No Effects: L3-39
+// SWC-135-Code With No Effects: L3-39
 pragma solidity ^0.7.0;
 
 import "../auth/AdminAuth.sol";

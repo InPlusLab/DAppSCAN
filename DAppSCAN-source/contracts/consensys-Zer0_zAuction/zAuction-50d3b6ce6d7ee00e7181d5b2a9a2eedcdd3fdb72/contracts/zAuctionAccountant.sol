@@ -40,7 +40,7 @@ contract zAuctionAccountant {
         payable(msg.sender).transfer(amount);
         emit Withdrew(msg.sender, amount);
     }
-    // SWC-Code With No Effects: L44-52
+    // SWC-135-Code With No Effects: L44-52
     function zDeposit(address to) external payable onlyZauction {
         ethbalance[to] = SafeMath.add(ethbalance[to], msg.value);
         emit zDeposited(to, msg.value);
@@ -56,7 +56,7 @@ contract zAuctionAccountant {
         ethbalance[to] = SafeMath.add(ethbalance[to], amount);
         emit zExchanged(from, to, amount);
     } 
-    // SWC-Transaction Order Dependence: L60-68
+    // SWC-114-Transaction Order Dependence: L60-68
     function SetZauction(address zauctionaddress) external onlyAdmin{
         zauction = zauctionaddress;
         emit ZauctionSet(zauctionaddress);

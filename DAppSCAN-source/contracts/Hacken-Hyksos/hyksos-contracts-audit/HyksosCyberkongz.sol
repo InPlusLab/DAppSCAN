@@ -31,11 +31,11 @@ contract HyksosCyberkongz is HyksosBase {
         kongWorkValue = baseRate * depositLength / 1 days;
         loanAmount = kongWorkValue * roiPctg / 100;
     }
-//SWC-Unchecked Call Return Value：L35-37
+//SWC-104-Unchecked Call Return Value: L35-37
     function payErc20(address _receiver, uint256 _amount) internal override {
         require(erc20.transfer(_receiver, _amount));
     }
-//SWC-Unchecked Call Return Value：L39-46
+//SWC-104-Unchecked Call Return Value: L39-46
     function depositErc20(uint256 _amount) external override {
         require(_amount >= MIN_DEPOSIT, "Deposit amount too small.");
         erc20BalanceMap[msg.sender] += _amount;
@@ -44,7 +44,7 @@ contract HyksosCyberkongz is HyksosBase {
         require(erc20.transferFrom(msg.sender, address(this), _amount));
         emit Erc20Deposit(msg.sender, _amount);
     }
-//SWC-Unchecked Call Return Value：L48-54
+//SWC-104-Unchecked Call Return Value: L48-54
     function withdrawErc20(uint256 _amount) external override {
         require(_amount <= erc20BalanceMap[msg.sender], "Withdrawal amount too big.");
         totalErc20Balance -= _amount;

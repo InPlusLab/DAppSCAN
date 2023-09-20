@@ -24,7 +24,7 @@ contract Cloudbric is StandardToken, BurnableToken, Ownable {
 
     // Enable transfer after token sale is completed
     bool public transferEnabled = false;
-//SWC-State Variable Default Visibility:L29
+//SWC-108-State Variable Default Visibility:L29
     // Accounts to be locked for certain period
     mapping(address => uint256) private lockedAccounts;
 

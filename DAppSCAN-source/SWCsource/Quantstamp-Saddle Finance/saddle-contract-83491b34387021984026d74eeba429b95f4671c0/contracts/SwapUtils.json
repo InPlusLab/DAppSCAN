@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Saddle Finance/saddle-contract-83491b34387021984026d74eeba429b95f4671c0/contracts/SwapUtils.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-Saddle Finance/saddle-contract-83491b34387021984026d74eeba429b95f4671c0/contracts/SwapUtils.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "addLiquidity",
    "lineNumber": "L554-L613"
   },
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "updateUserWithdrawFee",
    "lineNumber": "L642"
   }

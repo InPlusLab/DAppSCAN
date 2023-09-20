@@ -38,7 +38,7 @@ contract Hero is ExtendERC721, IHero {
         return _supplyLimit;
     }
 
-// SWC-Function Default Visibility: L42
+// SWC-100-Function Default Visibility: L42
     function setSupplyLimit(uint256 _newLimit) public onlyOwner {
         require(
             _newLimit > _supplyLimit,

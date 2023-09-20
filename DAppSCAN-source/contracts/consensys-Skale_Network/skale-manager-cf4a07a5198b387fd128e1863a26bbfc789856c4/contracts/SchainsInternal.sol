@@ -528,7 +528,7 @@ contract SchainsInternal is Permissions {
         require(possibleNodes.length >= nodesInGroup.length, "Not enough nodes to create Schain");
         uint ignoringTail = 0;
         uint random = uint(keccak256(abi.encodePacked(uint(blockhash(block.number.sub(1))), schainId)));
-        // SWC-DoS With Block Gas Limit: L532
+        // SWC-128-DoS With Block Gas Limit: L532
         for (uint i = 0; i < nodesInGroup.length; ++i) {
             uint index = random % (possibleNodes.length.sub(ignoringTail));
             uint node = possibleNodes[index];

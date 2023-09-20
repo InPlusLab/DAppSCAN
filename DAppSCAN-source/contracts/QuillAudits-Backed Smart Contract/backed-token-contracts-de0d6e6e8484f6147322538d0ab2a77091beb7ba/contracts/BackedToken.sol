@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/ownership/Ownable.sol";
 contract BackedToken is ERC20, ERC20Detailed, Ownable {
     
     bool _unlocked;
-    // SWC-Shadowing State Variables: L12
+    // SWC-119-Shadowing State Variables: L12
     address private _owner;
 
     constructor() public ERC20() ERC20Detailed("BACKED", "BAKT", 18) {
@@ -25,7 +25,7 @@ contract BackedToken is ERC20, ERC20Detailed, Ownable {
         super._transfer(from, to, amount);
     }
 
-    // SWC-Function Default Visibility: L28
+    // SWC-100-Function Default Visibility: L28
     function unlock() public onlyOwner {
         _unlocked = true;
     }

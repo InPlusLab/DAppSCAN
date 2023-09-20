@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2-L96
+// SWC-102-Outdated Compiler Version: L2-L96
 /*
  * Blockchain Capital Token Smart Contract.  Copyright © 2017 by ABDK
  * Consulting.
@@ -87,7 +87,7 @@ contract BCAPToken is StandardToken {
    * Address of the owner of smart contract.  Only owner is allowed to
    * freeze/unfreeze transfers.
    */
-  // SWC-Code With No Effects: L91 
+  // SWC-135-Code With No Effects: L91 
   address owner;
 
   /**

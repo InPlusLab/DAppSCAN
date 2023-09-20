@@ -9,7 +9,7 @@ interface ERC20 {
 contract CollateralsWallet {
 
 	address public holdefiContract;
-//SWC-Function Default Visibility:L14-17
+//SWC-100-Function Default Visibility:L14-17
 	// Disposable function to Get in touch with Holdefi contract
 	function setHoldefiContract(address holdefiContractAddress) external {
 		require (holdefiContract == address(0),'Should be set once');

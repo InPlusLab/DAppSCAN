@@ -1,4 +1,4 @@
-//SWC-Integer Overflow and Underflow: L2-L801
+//SWC-101-Integer Overflow and Underflow: L2-L801
 import 'openzeppelin-solidity/contracts/token/ERC20/ERC20.sol';
 import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
 

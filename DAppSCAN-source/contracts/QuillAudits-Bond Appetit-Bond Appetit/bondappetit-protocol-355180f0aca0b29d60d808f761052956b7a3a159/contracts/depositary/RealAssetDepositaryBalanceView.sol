@@ -78,7 +78,7 @@ contract RealAssetDepositaryBalanceView is IDepositaryBalanceView, AccessControl
      * @param proofData Signed data.
      * @param proofSignature Data signature.
      */
-    //  SWC-Lack of Proper Signature Verification: L89
+    //  SWC-122-Lack of Proper Signature Verification: L89
     function put(
         string calldata id,
         uint256 amount,

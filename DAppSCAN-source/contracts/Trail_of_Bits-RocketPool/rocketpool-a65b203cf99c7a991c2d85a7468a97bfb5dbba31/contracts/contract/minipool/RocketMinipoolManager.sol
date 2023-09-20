@@ -213,7 +213,7 @@ contract RocketMinipoolManager is RocketBase, RocketMinipoolManagerInterface {
         address contractAddress = address(new RocketMinipool(RocketStorageInterface(rocketStorage), _nodeAddress, _depositType));
         RocketMinipoolInterface minipool = RocketMinipoolInterface(contractAddress);
         // Initialize minipool data
-        // SWC-Code With No Effects: L217
+        // SWC-135-Code With No Effects: L217
         setBool(keccak256(abi.encodePacked("minipool.exists", contractAddress)), true);
         // Add minipool to indexes
         addressSetStorage.addItem(keccak256(abi.encodePacked("minipools.index")), contractAddress);

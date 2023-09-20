@@ -303,7 +303,7 @@ contract BasePool is Initializable, ReentrancyGuard {
    * @param nextSecretHash The secret hash to use to open a new Draw
    * @param lastSecret The secret to reveal to reward the current committed Draw.
    */
-   //SWC-Transaction Order Dependence: L307-L310
+   //SWC-114-Transaction Order Dependence: L307-L310
   function rewardAndOpenNextDraw(bytes32 nextSecretHash, bytes32 lastSecret, bytes32 _salt) public onlyAdmin {
     reward(lastSecret, _salt);
     openNextDraw(nextSecretHash);
@@ -319,7 +319,7 @@ contract BasePool is Initializable, ReentrancyGuard {
    * Fires the Rewarded event.
    * @param _secret The secret to reveal for the current committed Draw
    */
-   //SWC-Transaction Order Dependence: L323-L374
+   //SWC-114-Transaction Order Dependence: L323-L374
   function reward(bytes32 _secret, bytes32 _salt) public onlyAdmin requireCommittedNoReward nonReentrant {
     // require that there is a committed draw
     // require that the committed draw has not been rewarded
@@ -410,7 +410,7 @@ contract BasePool is Initializable, ReentrancyGuard {
    * @param _grossWinnings The gross winnings to take a fraction of.
    */
   function calculateFee(uint256 _feeFraction, uint256 _grossWinnings) internal pure returns (uint256) {
-     //SWC-Integer Overflow and Underflow: L414-L415
+     //SWC-101-Integer Overflow and Underflow: L414-L415
     int256 grossWinningsFixed = FixidityLib.newFixed(int256(_grossWinnings));
     int256 feeFixed = FixidityLib.multiply(grossWinningsFixed, FixidityLib.newFixed(int256(_feeFraction), uint8(18)));
     return uint256(FixidityLib.fromFixed(feeFixed));

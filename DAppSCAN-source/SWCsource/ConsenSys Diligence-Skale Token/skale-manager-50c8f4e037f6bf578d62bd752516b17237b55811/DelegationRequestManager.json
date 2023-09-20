@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-Skale Token/skale-manager-50c8f4e037f6bf578d62bd752516b17237b55811/DelegationRequestManager.sol",
+ "filePath": "DAppSCAN-source/contracts/ConsenSys Diligence-Skale Token/skale-manager-50c8f4e037f6bf578d62bd752516b17237b55811/DelegationRequestManager.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow\uff1aL75-77",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "N/A",
-   "lineNumber": "//        SWC-Integer Overflow and Underflow\uff1aL75-77"
+   "lineNumber": "L75-77"
   }
  ]
 }

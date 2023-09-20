@@ -140,7 +140,7 @@ contract EthERC20 is LockAndDataOwnable, ContextUpgradeSafe, IERC20 {
     /**
      * @dev See {IERC20-allowance}.
      */
-    //  SWC-Transaction Order Dependence: L145
+    //  SWC-114-Transaction Order Dependence: L145
     function allowance(address owner, address spender) public view virtual override returns (uint256) {
         return _allowances[owner][spender];
     }

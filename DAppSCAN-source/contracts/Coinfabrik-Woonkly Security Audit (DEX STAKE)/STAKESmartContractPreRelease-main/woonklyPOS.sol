@@ -739,7 +739,7 @@ contract WOOPStake is Owners, Pausabled, Erc20Manager, ReentrancyGuard {
         return slot.dealed;
     }
 
-// SWC-Reentrancy: L743 - L769
+// SWC-107-Reentrancy: L743 - L769
     function processReward(address sc, uint256 amount)
         public
         nonReentrant
@@ -870,7 +870,7 @@ contract WOOPStake is Owners, Pausabled, Erc20Manager, ReentrancyGuard {
         Stake memory p;
 
         uint256 last = _stakes.getLastIndexStakes();
-        // SWC-DoS with Failed Call: L874 - L886
+        // SWC-113-DoS with Failed Call: L874 - L886
         for (uint256 i = 0; i < (last + 1); i++) {
             (p.account, p.bal, p.autoCompound, p.flag) = _stakes
                 .getStakeByIndex(i);

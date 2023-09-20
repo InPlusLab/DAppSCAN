@@ -348,7 +348,7 @@ contract TempusController is PermanentlyOwnable {
     /// @param tempusAMM TempusAMM instance to withdraw liquidity from
     /// @param sharesAmount Amount of Principals and Yields
     /// @param toBackingToken If true redeems to backing token, otherwise redeems to yield bearing
-    // SWC-Reentrancy: L352-386
+    // SWC-107-Reentrancy: L352-386
     function exitTempusAMMAndRedeem(
         ITempusAMM tempusAMM,
         uint256 sharesAmount,
@@ -391,7 +391,7 @@ contract TempusController is PermanentlyOwnable {
     /// @notice Can fail if there is not enough user balance
     /// @param tempusAMM TempusAMM instance to withdraw liquidity from
     /// @param toBackingToken If true redeems to backing token, otherwise redeems to yield bearing
-    // SWC-Reentrancy: L395-436
+    // SWC-107-Reentrancy: L395-436
     function completeExitAndRedeem(ITempusAMM tempusAMM, bool toBackingToken) external {
         ITempusPool tempusPool = tempusAMM.tempusPool();
         require(tempusPool.matured(), "Not supported before maturity");

@@ -1,7 +1,7 @@
 /**
  *Submitted for verification at BscScan.com on 2021-04-24
 */
-//SWC-Outdated Compiler Version：L5
+//SWC-102-Outdated Compiler Version: L5
 pragma solidity 0.5.16;
 
 interface IBEP20 {

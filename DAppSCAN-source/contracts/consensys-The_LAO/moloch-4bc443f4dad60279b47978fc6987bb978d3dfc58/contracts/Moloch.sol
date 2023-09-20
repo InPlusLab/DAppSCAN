@@ -262,7 +262,7 @@ contract Moloch is ReentrancyGuard {
         emit SubmitProposal(proposalCount, msg.sender, memberAddress, applicant, sharesRequested, lootRequested, tributeOffered, tributeToken, paymentRequested, paymentToken);
         proposalCount += 1;
     }
-    // SWC-Transaction Order Dependence: L266-305
+    // SWC-114-Transaction Order Dependence: L266-305
     function sponsorProposal(uint256 proposalId) public nonReentrant onlyDelegate {
         // collect proposal deposit from sponsor and store it in the Moloch until the proposal is processed
         require(depositToken.transferFrom(msg.sender, address(this), proposalDeposit), "proposal deposit token transfer failed");
@@ -404,7 +404,7 @@ contract Moloch is ReentrancyGuard {
         // PROPOSAL FAILED
         } else {
             // return all tokens to the applicant (skip if emergency processing)v
-            // SWC-Unprotected Ether Withdrawal: L408-413
+            // SWC-105-Unprotected Ether Withdrawal: L408-413
             if (!emergencyProcessing) {
                 require(
                     proposal.tributeToken.transfer(proposal.proposer, proposal.tributeOffered),
@@ -634,7 +634,7 @@ contract Moloch is ReentrancyGuard {
     /***************
     GETTER FUNCTIONS
     ***************/
-    // SWC-Integer Overflow and Underflow: L638-640
+    // SWC-101-Integer Overflow and Underflow: L638-640
     function max(uint256 x, uint256 y) internal pure returns (uint256) {
         return x >= y ? x : y;
     }

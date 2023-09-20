@@ -56,7 +56,7 @@ contract SportsIconPrivateVesting is ISportsIconPrivateVesting {
     function claim() external override returns (uint256) {
         uint256 tokens = freeTokens(msg.sender);
         claimedOf[msg.sender] = claimedOf[msg.sender].add(tokens);
-//SWC-Unchecked Call Return Value:L60
+//SWC-104-Unchecked Call Return Value:L60
         token.transfer(msg.sender, tokens);
 
         emit LogTokensClaimed(msg.sender, tokens);

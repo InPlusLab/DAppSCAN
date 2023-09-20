@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Code With No Effects: L1 - L82
+// SWC-135-Code With No Effects: L1 - L82
 pragma solidity ^0.8.7;
 
 import { ILiFi } from "../Interfaces/ILiFi.sol";

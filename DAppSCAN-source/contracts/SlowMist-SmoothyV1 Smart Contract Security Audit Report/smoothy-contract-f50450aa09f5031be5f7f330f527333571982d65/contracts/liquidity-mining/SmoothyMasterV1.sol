@@ -178,7 +178,7 @@ contract SmoothyMasterV1 is UpgradeableOwnable {
     // Update reward variables for all pools. Be careful of gas spending!
     function massUpdatePools() public {
         uint256 length = poolInfo.length;
-        // SWC-DoS with Failed Call: L182 - L184
+        // SWC-113-DoS with Failed Call: L182 - L184
         for (uint256 pid = 0; pid < length; ++pid) {
             updatePool(pid);
         }

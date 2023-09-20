@@ -225,7 +225,7 @@ contract TransactionManager is ReentrancyGuard, ProposedOwnable, ITransactionMan
     *                asset you're removing liquidity for
     * @param recipient The address that will receive the liquidity being removed
     */
-    // SWC-Reentrancy: L229 - L254
+    // SWC-107-Reentrancy: L229 - L254
   function removeLiquidity(
     uint256 amount,
     address assetId,

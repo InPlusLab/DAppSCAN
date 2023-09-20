@@ -176,7 +176,7 @@ contract Market is OwnablePausable {
      * @return product Amount of product token.
      * @return reward Amount of reward token.
      */
-    //  SWC-Code With No Effects: L189
+    //  SWC-135-Code With No Effects: L189
     function price(address currency, uint256 payment) public view returns (uint256 product, uint256 reward) {
         require(isAllowedToken(currency), "Market::price: currency not allowed");
 

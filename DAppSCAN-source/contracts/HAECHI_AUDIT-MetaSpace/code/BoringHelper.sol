@@ -59,7 +59,7 @@ contract BoringHelper is Ownable {
         factory = factory_;
         space = space_;
     }
-//SWC-Code With No Effects：L77
+//SWC-135-Code With No Effects: L77
     function getMETARate(IERC20 token) public view returns (uint256) {
         if (token == WMETA) {
             return 1e18;

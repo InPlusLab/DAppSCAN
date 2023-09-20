@@ -487,7 +487,7 @@ contract ve is IERC721, IERC721Metadata {
 
     /// @dev Returns the address of the owner of the NFT.
     /// @param _tokenId The identifier for an NFT.
-    // SWC-Delegatecall to Untrusted Callee: L491-493
+    // SWC-112-Delegatecall to Untrusted Callee: L491-493
     function ownerOf(uint _tokenId) public view returns (address) {
         return idToOwner[_tokenId];
     }
@@ -671,7 +671,7 @@ contract ve is IERC721, IERC721Metadata {
     /// @param _to The new owner.
     /// @param _tokenId The NFT to transfer.
     /// @param _data Additional data with no specified format, sent in call to `_to`.
-    // SWC-Unchecked Call Return Value: L675-697
+    // SWC-104-Unchecked Call Return Value: L675-697
     function safeTransferFrom(
         address _from,
         address _to,
@@ -1093,7 +1093,7 @@ contract ve is IERC721, IERC721Metadata {
         // _locked has only 0 end
         // Both can have >= 0 amount
         _checkpoint(_tokenId, _locked, LockedBalance(0,0));
-        // SWC-Reentrancy: L1097-1104
+        // SWC-107-Reentrancy: L1097-1104
         assert(IERC20(token).transfer(msg.sender, value));
 
         // Burn the NFT

@@ -281,7 +281,7 @@ contract RequesterAuthorizerWhitelisterWithToken is
     /// @notice Blocks requester globally
     /// @param requester Requester address
     /// @param status Requester block status (`true` represents being blocked)
-    // SWC-Transaction Order Dependence: L284-L292
+    // SWC-114-Transaction Order Dependence: L284-L292
     function setRequesterBlockStatus(address requester, bool status)
         external
         override

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-PoolTogether/pooltogether-pool-contracts-78ac6863f4616269f7d04a0ddd1d60bdfc454937/contracts/RecipientWhitelistERC777Pool.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-PoolTogether/pooltogether-pool-contracts-78ac6863f4616269f7d04a0ddd1d60bdfc454937/contracts/RecipientWhitelistERC777Pool.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L25-L26"
   }

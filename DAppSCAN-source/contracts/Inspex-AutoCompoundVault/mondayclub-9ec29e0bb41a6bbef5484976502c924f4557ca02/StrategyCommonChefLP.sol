@@ -132,7 +132,7 @@ contract StrategyCommonChefLP is StratManager, FeeManager, GasThrottler {
     function managerHarvest() external onlyManager {
         _harvest(tx.origin);
     }
-//SWC-Transaction Order Dependence：L137-149
+//SWC-114-Transaction Order Dependence: L137-149
     // compounds earnings and charges performance fee
     function _harvest(address callFeeRecipient) internal whenNotPaused {
         IMasterChef(chef).deposit(poolId, 0);
@@ -164,7 +164,7 @@ contract StrategyCommonChefLP is StratManager, FeeManager, GasThrottler {
         uint256 mondayFeeAmount = nativeBal.mul(mondayFee).div(MAX_FEE);
         IERC20(native).safeTransfer(mondayFeeRecipient, mondayFeeAmount);
     }
-//SWC-Transaction Order Dependence：L169-183
+//SWC-114-Transaction Order Dependence: L169-183
     // Adds liquidity to AMM and gets more LP tokens.
     function addLiquidity() internal {
         uint256 outputHalf = IERC20(output).balanceOf(address(this)).div(2);

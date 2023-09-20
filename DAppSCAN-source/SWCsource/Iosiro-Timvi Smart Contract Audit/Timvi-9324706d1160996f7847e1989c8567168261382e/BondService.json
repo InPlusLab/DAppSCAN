@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Timvi Smart Contract Audit/Timvi-9324706d1160996f7847e1989c8567168261382e/BondService.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Timvi Smart Contract Audit/Timvi-9324706d1160996f7847e1989c8567168261382e/BondService.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L18"
   }

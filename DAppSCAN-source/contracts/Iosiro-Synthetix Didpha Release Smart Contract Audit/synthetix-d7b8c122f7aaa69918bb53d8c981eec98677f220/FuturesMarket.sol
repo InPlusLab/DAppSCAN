@@ -945,7 +945,7 @@ contract FuturesMarket is Owned, Proxyable, MixinFuturesMarketSettings, IFutures
         // aren't using SignedSafeDecimalMath
         return 0 <= a * b;
     }
-//SWC-Integer Overflow and Underflow:L946
+//SWC-101-Integer Overflow and Underflow:L946
     /*
      * True if and only if the given status indicates an error.
      */

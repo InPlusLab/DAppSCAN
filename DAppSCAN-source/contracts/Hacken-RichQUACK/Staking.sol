@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity 0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -24,7 +24,7 @@ contract Staking is AccessControl, ReentrancyGuard, IStaking {
     uint256 public totalStaked;
     uint256 public feesCollected;
 
-// SWC-Code With No Effects: L27
+// SWC-135-Code With No Effects: L27
     address public relockOw;
 
     uint24 private constant DAY = 1 days;
@@ -119,7 +119,7 @@ contract Staking is AccessControl, ReentrancyGuard, IStaking {
         delete feesCollected;
     }
 
-// SWC-Block values as a proxy for time: L123
+// SWC-116-Block values as a proxy for time: L123
     function startPool() external onlyRole(DEFAULT_ADMIN_ROLE) {
         require(poolStartTime == 0, "Already started");
         poolStartTime = block.timestamp;
@@ -130,7 +130,7 @@ contract Staking is AccessControl, ReentrancyGuard, IStaking {
         onlyRole(DEFAULT_ADMIN_ROLE)
         startedAndNotEnded
     {
-        // SWC-Block values as a proxy for time: L134
+        // SWC-116-Block values as a proxy for time: L134
         poolEndTime = block.timestamp;
         uint256 toTransfer = QUACK.balanceOf(address(this)) -
             (totalStaked + feesCollected);
@@ -172,7 +172,7 @@ contract Staking is AccessControl, ReentrancyGuard, IStaking {
         stake.sumInLock[lockUp] += amount;
         stake.rewardTaken[lockUp] = 0;
         if (lockUp < 3) stake.reLocks[lockUp] = 0;
-        // SWC-Block values as a proxy for time: L176
+        // SWC-116-Block values as a proxy for time: L176
         stake.enteredAt[lockUp] = block.timestamp;
     }
 

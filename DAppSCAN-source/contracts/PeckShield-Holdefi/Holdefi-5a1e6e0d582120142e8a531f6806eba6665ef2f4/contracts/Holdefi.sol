@@ -1288,7 +1288,7 @@ contract Holdefi is HoldefiPausableOwnable {
 	}
 
 	/// @notice Perform repay borrow operation
-	//SWC-Reentrancy: L1292-L1344
+	//SWC-107-Reentrancy: L1292-L1344
 	function repayBorrowInternal (address account, address market, address collateral, uint256 amount)
 		internal
 		whenNotPaused("repayBorrow")

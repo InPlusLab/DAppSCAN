@@ -177,7 +177,7 @@ contract VCTreasuryV1 is ERC20, ReentrancyGuard {
 		fundCloseTime = block.timestamp.add(ONE_YEAR);
 
 		initETH = msg.value;
-		//SWC-Integer Overflow and UnderflowL L181
+		//SWC-101-Integer Overflow and Underflow: L181
 		maxInvestment = msg.value.div(max).mul(investmentCap);
 
 		_changeFundState(FundStates.active); // set fund active!

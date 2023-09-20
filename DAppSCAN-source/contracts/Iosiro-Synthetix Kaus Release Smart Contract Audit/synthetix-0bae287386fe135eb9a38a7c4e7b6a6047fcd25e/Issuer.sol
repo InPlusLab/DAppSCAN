@@ -669,7 +669,7 @@ contract Issuer is Owned, MixinSystemSettings, IIssuer {
 
         // Account for the issued debt in the cache
         debtCache().updateCachedsUSDDebt(int(amount));
-//SWC-Integer Overflow and Underflow:L671
+//SWC-101-Integer Overflow and Underflow:L671
         // Store their locked SNX amount to determine their fee % for the period
         _appendAccountIssuanceRecord(from);
     }
@@ -695,7 +695,7 @@ contract Issuer is Owned, MixinSystemSettings, IIssuer {
 
         // Account for the burnt debt in the cache.
         debtCache().updateCachedsUSDDebt(-int(amountBurnt));
-//SWC-Integer Overflow and Underflow:L697
+//SWC-101-Integer Overflow and Underflow:L697
         // Store their debtRatio against a fee period to determine their fee/rewards % for the period
         _appendAccountIssuanceRecord(debtAccount);
     }

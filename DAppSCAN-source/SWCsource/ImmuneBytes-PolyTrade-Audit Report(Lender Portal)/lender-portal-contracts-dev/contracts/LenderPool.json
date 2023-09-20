@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-PolyTrade-Audit Report(Lender Portal)/lender-portal-contracts-dev/contracts/LenderPool.sol",
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-PolyTrade-Audit Report(Lender Portal)/lender-portal-contracts-dev/contracts/LenderPool.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "_swapExactTokens",
    "lineNumber": "L375"
   }

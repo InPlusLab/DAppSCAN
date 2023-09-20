@@ -440,7 +440,7 @@ contract aqarchain is Ownable{
     function seedusdt(string calldata _first,string calldata _last,string calldata _country,string calldata _id, uint256 _amount)  external returns (string memory aqarid){
         require(_amount>=100000000000000000000 ,"Enter amount greater than 100 usd");
         require(seedamount<=7000000000000000000000000,"seed round token sale completed");
-        // SWC-Typographical Error: L444
+        // SWC-129-Typographical Error: L444
         require(seedrun = true,"seed round is not started or over");
 
         if(seedamount.add(_amount.mul(seedprice))<=7000000000000000000000000){
@@ -463,7 +463,7 @@ contract aqarchain is Ownable{
             "the input bnb amount should be greater than hundred"
         );
         require(seedamount<=7000000000000000000000000,"seed round token sale completed");
-        // SWC-Typographical Error: L467
+        // SWC-129-Typographical Error: L467
         require(seedrun = true,"seed round is not started or over");
       
        if(seedamount.add(msg.value.mul(getBnbRate()).mul(seedprice).div(1e18))<=7000000000000000000000000){
@@ -480,7 +480,7 @@ contract aqarchain is Ownable{
      function privateusdt(string calldata _first,string calldata _last,string calldata _country,string calldata _id, uint256 _amount)  external returns (string memory aqarid){
         require(_amount>=100000000000000000000,"Enter amount greter than 100 usd");
         require(privateamount<=12000000000000000000000000,"private round token sale completed");
-        // SWC-Typographical Error: L484
+        // SWC-129-Typographical Error: L484
         require(privaterun=true,"Private sale haven't started yet");
         
         if(privateamount.add(_amount.mul(privateprice).div(1000))<=12000000000000000000000000){
@@ -501,7 +501,7 @@ contract aqarchain is Ownable{
            msg.value.mul(getBnbRate()).div(1e18) >= 100000000000000000000 ,
             "the input bnb amount should be greater than hundred usd"
         );
-        // SWC-Typographical Error: L505
+        // SWC-129-Typographical Error: L505
         require(privaterun=true,"Private sale haven't started yet");
         require(privateamount<=12000000000000000000000000,"private round token sale completed");
         
@@ -521,7 +521,7 @@ contract aqarchain is Ownable{
          require(_amount>=100000000000000000000 ,"Enter amount more than 100 usd");
         
          require(publicamount<=1000000000000000000000000,"public round token sale completed");
-        // SWC-Typographical Error: L525
+        // SWC-129-Typographical Error: L525
          require(publicrun=true,"Public sale haven't started yet");
         
         if(publicamount.add(_amount.mul(publicprice).div(10))<=1000000000000000000000000){
@@ -542,9 +542,9 @@ contract aqarchain is Ownable{
              msg.value.mul(getBnbRate()).div(1e18) >= 100000000000000000000 ,
             "the input bnb amount should be greater than hundred and less than sfivethousand"
         );
-        // SWC-Typographical Error: L546
+        // SWC-129-Typographical Error: L546
         require(publicrun=true,"Public sale haven't started yet");
-        // SWC-Requirement Violation: L548
+        // SWC-123-Requirement Violation: L548
         require(privateamount<=1000000000000000000000000,"private round token sale completed");
      
       if(publicamount.add(msg.value.mul(getBnbRate()).mul(publicprice).div(1e18).div(10))<=1000000000000000000000000){
@@ -559,7 +559,7 @@ contract aqarchain is Ownable{
         }
     }
     function claim() external {
-        // SWC-Typographical Error: L562
+        // SWC-129-Typographical Error: L562
         require(claimbool = true,"claiming amount should be true");
        
         claimamount = usermappublic[msg.sender].amount.add(usermapseed[msg.sender].amount).add(usermapprivate[msg.sender].amount);

@@ -1,4 +1,4 @@
-// SWC-Function Default Visibility: L1-L655
+// SWC-100-Function Default Visibility: L1-L655
 pragma solidity ^0.4.18;
 
 /**
@@ -388,7 +388,7 @@ library InteractiveCrowdsaleLib {
       uint256 multiplierPercent = (100 * (self.endWithdrawalTime - now)) /
                                   (self.endWithdrawalTime - self.base.startTime);
       refundWei = (multiplierPercent * self.base.hasContributed[msg.sender]) / 100;
-      // SWC-Integer Overflow and Underflow: L392-L395
+      // SWC-101-Integer Overflow and Underflow: L392-L395
       self.valuationSums[self.personalCaps[msg.sender]] -= refundWei;
       self.numBidsAtValuation[self.personalCaps[msg.sender]] -= 1;
 
@@ -539,7 +539,7 @@ library InteractiveCrowdsaleLib {
   ///      This can either be if the minimum raise hasn't been met
   ///      or if it is 30 days after the sale and the owner hasn't finalized the sale.
   /// @return bool canceled indicating if the sale is canceled or not
-  // SWC-Unchecked Call Return Value: L543-550
+  // SWC-104-Unchecked Call Return Value: L543-550
   function setCanceled(InteractiveCrowdsaleStorage storage self) internal returns(bool){
     bool canceled = (self.totalValuation < self.minimumRaise) ||
                     ((now > (self.base.endTime + 30 days)) && !self.isFinalized);

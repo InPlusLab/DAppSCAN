@@ -386,7 +386,7 @@ contract ERC20 is Context, IERC20 {
         );
         _balances[sender] -= amount;
         _balances[recipient] += amount;
-//SWC-Integer Overflow and Underflow：L387
+//SWC-101-Integer Overflow and Underflow: L387
         emit Transfer(sender, recipient, amount);
     }
 
@@ -403,7 +403,7 @@ contract ERC20 is Context, IERC20 {
         require(account != address(0), "ERC20: mint to the zero address");
 
         _beforeTokenTransfer(address(0), account, amount);
-//SWC-Integer Overflow and Underflow：L407
+//SWC-101-Integer Overflow and Underflow: L407
         _totalSupply += amount;
         _balances[account] += amount;
         emit Transfer(address(0), account, amount);

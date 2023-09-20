@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Audius_Contracts/audius-protocol-6f3b31562b9d4c43cef91af0a011986a2580fba2/Staking.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Audius_Contracts/audius-protocol-6f3b31562b9d4c43cef91af0a011986a2580fba2/Staking.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L39-42"
   }

@@ -59,7 +59,7 @@ contract ERC20 is IERC20, IERC20Metadata {
         return _allowances[owner][spender];
     }
 
-// SWC-Transaction Order Dependence: L63 - L66
+// SWC-114-Transaction Order Dependence: L63 - L66
     function approve(address spender, uint amount) public virtual override returns (bool) {
         _approve(msg.sender, spender, amount);
         return true;

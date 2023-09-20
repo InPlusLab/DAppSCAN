@@ -85,7 +85,7 @@ contract Synthetix is BaseSynthetix {
         address rewardAddress,
         bytes32 trackingCode
     ) external exchangeActive(sourceCurrencyKey, destinationCurrencyKey) optionalProxy returns (uint amountReceived) {
-        // SWC-Authorization through tx.origin: L96
+        // SWC-115-Authorization through tx.origin: L96
         (amountReceived, ) = exchanger().exchange(
             messageSender,
             messageSender,

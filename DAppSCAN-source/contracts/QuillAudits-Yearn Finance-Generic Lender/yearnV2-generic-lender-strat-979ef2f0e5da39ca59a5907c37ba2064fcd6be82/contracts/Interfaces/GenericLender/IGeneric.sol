@@ -20,7 +20,7 @@ interface IGeneric {
 
     function weightedApr() external view returns (uint256);
 
-    // SWC-Code With No Effects: L24
+    // SWC-135-Code With No Effects: L24
     function enabled() external view returns (bool);
 
     function hasAssets() external view returns (bool);

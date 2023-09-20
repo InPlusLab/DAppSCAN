@@ -66,7 +66,7 @@ contract GnosisSafe is MasterCopy, BaseSafe, SignatureDecoder, SecuredTokenTrans
     /// @param gasToken Token address (or 0 if ETH) that is used for the payment.
     /// @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).
     /// @param signatures Packed signature data ({bytes32 r}{bytes32 s}{uint8 v})
-    // SWC-Reentrancy: L70 - L105
+    // SWC-107-Reentrancy: L70 - L105
     function execTransaction(
         address to,
         uint256 value,
@@ -90,7 +90,7 @@ contract GnosisSafe is MasterCopy, BaseSafe, SignatureDecoder, SecuredTokenTrans
         );
         require(checkSignatures(keccak256(txHashData), txHashData, signatures, true), "Invalid signatures provided");
         // Increase nonce and execute transaction.
-        // SWC-Integer Overflow and Underflow: L94
+        // SWC-101-Integer Overflow and Underflow: L94
         nonce++;
         require(gasleft() >= safeTxGas, "Not enough gas to execute safe transaction");
         // If no safeTxGas has been set and the gasPrice is 0 we assume that all available gas can be used
@@ -138,7 +138,7 @@ contract GnosisSafe is MasterCopy, BaseSafe, SignatureDecoder, SecuredTokenTrans
         returns (bool)
     {
         // Check that the provided signature data is not too short
-        // SWC-Integer Overflow and Underflow: L142
+        // SWC-101-Integer Overflow and Underflow: L142
         if (signatures.length < threshold * 65) {
             return false;
         }

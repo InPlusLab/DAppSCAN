@@ -236,7 +236,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
         require(!mintGuardianPaused[cToken], "mint is paused");
 
         // Shh - currently unused
-        // SWC-Presence of unused variables: L240
+        // SWC-131-Presence of unused variables: L240
         minter;
 
         if (!markets[cToken].isListed) {
@@ -271,7 +271,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param actualMintAmount The amount of the underlying asset being minted
      * @param mintTokens The number of tokens being minted
      */
-    //  SWC-Code With No Effects: L274
+    //  SWC-135-Code With No Effects: L274
     function mintVerify(address cToken, address minter, uint actualMintAmount, uint mintTokens) external {
         // Shh - currently unused
         cToken;
@@ -409,7 +409,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param borrower The address borrowing the underlying
      * @param borrowAmount The amount of the underlying asset requested to borrow
      */
-    //  SWC-Remove unused functions: L412
+    //  SWC-135-Code With No Effects: L412
     function borrowVerify(address cToken, address borrower, uint borrowAmount) external {
         // Shh - currently unused
         cToken;
@@ -459,7 +459,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param borrower The address of the borrower
      * @param actualRepayAmount The amount of underlying being repaid
      */
-    //  SWC-Remove unused functions: L462
+    //  SWC-135-Code With No Effects: L462
     function repayBorrowVerify(
         address cToken,
         address payer,
@@ -527,7 +527,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param borrower The address of the borrower
      * @param actualRepayAmount The amount of underlying being repaid
      */
-    //  SWC-Remove unused functions: L530
+    //  SWC-135-Code With No Effects: L530
     function liquidateBorrowVerify(
         address cTokenBorrowed,
         address cTokenCollateral,
@@ -593,7 +593,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param borrower The address of the borrower
      * @param seizeTokens The number of collateral tokens to seize
      */
-    //  SWC-Remove unused functions: L596
+    //  SWC-135-Code With No Effects: L596
     function seizeVerify(
         address cTokenCollateral,
         address cTokenBorrowed,
@@ -647,7 +647,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param dst The account which receives the tokens
      * @param transferTokens The number of cTokens to transfer
      */
-    //  SWC-Remove unused functions: L644
+    //  SWC-135-Code With No Effects: L644
     function transferVerify(address cToken, address src, address dst, uint transferTokens) external {
         // Shh - currently unused
         cToken;
@@ -1270,7 +1270,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param borrowers Whether or not to claim COMP earned by borrowing
      * @param suppliers Whether or not to claim COMP earned by supplying
      */
-    //  SWC-Insufficient Gas Griefing: L1266
+    //  SWC-126-Insufficient Gas Griefing: L1266
     function claimComp(address[] memory holders, CToken[] memory cTokens, bool borrowers, bool suppliers) public {
         for (uint i = 0; i < cTokens.length; i++) {
             CToken cToken = cTokens[i];

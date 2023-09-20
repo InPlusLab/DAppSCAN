@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Hyksos/hyksos-contracts-audit/HyksosBase.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Hyksos/hyksos-contracts-audit/HyksosBase.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit\uff1aL32-85",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "distributeRewards",
-   "lineNumber": "//SWC-DoS With Block Gas Limit\uff1aL32-85"
+   "lineNumber": "L32-85"
   }
  ]
 }

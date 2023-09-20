@@ -128,7 +128,7 @@ contract GenesisGroup is IGenesisGroup, CoreRef, ERC20, ERC20Burnable, Timed {
 		uint totalFGEN = circulatingFGEN + totalCommittedFGEN;
 
 		// subtract purchased TRIBE amount
-		// SWC-Integer Overflow and Underflow: L132
+		// SWC-101-Integer Overflow and Underflow: L132
 		uint totalGenesisTribe = tribeBalance() - totalCommittedTribe;
 
 		if (circulatingFGEN != 0) {

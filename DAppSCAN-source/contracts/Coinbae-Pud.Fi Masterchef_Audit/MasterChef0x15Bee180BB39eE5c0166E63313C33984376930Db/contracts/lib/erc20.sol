@@ -276,9 +276,9 @@ contract ERC20 is Context, IERC20 {
      * construction.
      */
     constructor (string memory name, string memory symbol) public {
-        // SWC-Shadowing State Variables: L280
+        // SWC-119-Shadowing State Variables: L280
         _name = name;
-        // SWC-Shadowing State Variables: L282
+        // SWC-119-Shadowing State Variables: L282
         _symbol = symbol;
         _decimals = 18;
     }

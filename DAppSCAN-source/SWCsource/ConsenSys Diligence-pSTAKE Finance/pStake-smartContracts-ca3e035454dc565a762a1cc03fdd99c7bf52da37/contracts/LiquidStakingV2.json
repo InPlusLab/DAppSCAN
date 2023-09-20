@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-pSTAKE Finance/pStake-smartContracts-ca3e035454dc565a762a1cc03fdd99c7bf52da37/contracts/LiquidStakingV2.sol",
+ "filePath": "DAppSCAN-source/contracts/ConsenSys Diligence-pSTAKE Finance/pStake-smartContracts-ca3e035454dc565a762a1cc03fdd99c7bf52da37/contracts/LiquidStakingV2.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "withdrawUnstakedTokens",
    "lineNumber": "L370-404"
   }

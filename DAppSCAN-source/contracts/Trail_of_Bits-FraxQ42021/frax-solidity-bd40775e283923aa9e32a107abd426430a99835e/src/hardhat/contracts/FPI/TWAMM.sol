@@ -131,7 +131,7 @@ contract TWAMM is ERC20 {
         //the ratio between the number of underlying tokens and the number of lp tokens must remain invariant after mint 
         uint256 amountAIn = lpTokenAmount * reserveMap[tokenA] / totalSupply();
         uint256 amountBIn = lpTokenAmount * reserveMap[tokenB] / totalSupply();
-        // SWC-Unchecked Call Return Value: L135-L136
+        // SWC-104-Unchecked Call Return Value: L135-L136
         ERC20(tokenA).transferFrom(msg.sender, address(this), amountAIn);
         ERC20(tokenB).transferFrom(msg.sender, address(this), amountBIn);
 

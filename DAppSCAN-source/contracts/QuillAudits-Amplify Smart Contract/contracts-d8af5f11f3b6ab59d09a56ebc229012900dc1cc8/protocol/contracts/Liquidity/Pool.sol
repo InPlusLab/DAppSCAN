@@ -326,7 +326,7 @@ contract Pool is Ownable, Lendable, Borrowable {
     }
 
     function getBlockTimestamp() public virtual override view returns(uint256) {
-        // SWC-Block values as a proxy for time： L330
+        // SWC-116-Block values as a proxy for time: L330
         return block.timestamp;
     }
 }

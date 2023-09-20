@@ -219,7 +219,7 @@ contract PrimitiveEngine is IPrimitiveEngine {
     }
 
     /// @inheritdoc IPrimitiveEngineActions
-    // SWC-Delegatecall to Untrusted Callee: L223 - L233
+    // SWC-112-Delegatecall to Untrusted Callee: L223 - L233
     function withdraw(
         address recipient,
         uint256 delRisky,
@@ -235,7 +235,7 @@ contract PrimitiveEngine is IPrimitiveEngine {
     // ===== Liquidity =====
 
     /// @inheritdoc IPrimitiveEngineActions
-    // SWC-Transaction Order Dependence: L238 - L270
+    // SWC-114-Transaction Order Dependence: L238 - L270
     function allocate(
         bytes32 poolId,
         address recipient,
@@ -301,7 +301,7 @@ contract PrimitiveEngine is IPrimitiveEngine {
     }
 
     /// @inheritdoc IPrimitiveEngineActions
-    // SWC-Transaction Order Dependence: L304 - L403
+    // SWC-114-Transaction Order Dependence: L304 - L403
     function swap(
         address recipient,
         bytes32 poolId,

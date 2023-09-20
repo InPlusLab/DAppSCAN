@@ -17,7 +17,7 @@
 */
 
 pragma solidity 0.4.24;
-// SWC-Code With No Effects: L21
+// SWC-135-Code With No Effects: L21
 import "../../utils/LibBytes/LibBytes.sol";
 import "./MixinAuthorizable.sol";
 

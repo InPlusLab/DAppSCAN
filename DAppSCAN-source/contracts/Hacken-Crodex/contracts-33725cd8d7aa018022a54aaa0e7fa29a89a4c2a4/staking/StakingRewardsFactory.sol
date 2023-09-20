@@ -48,7 +48,7 @@ contract StakingRewardsFactory is Ownable {
     ///// permissionless functions
 
     // call notifyRewardAmount for all staking tokens.
-    // SWC-Function Default Visibility: L52
+    // SWC-100-Function Default Visibility: L52
     function notifyRewardAmounts() public {
         require(stakingTokens.length > 0, 'StakingRewardsFactory::notifyRewardAmounts: called before any deploys');
         for (uint i = 0; i < stakingTokens.length; i++) {

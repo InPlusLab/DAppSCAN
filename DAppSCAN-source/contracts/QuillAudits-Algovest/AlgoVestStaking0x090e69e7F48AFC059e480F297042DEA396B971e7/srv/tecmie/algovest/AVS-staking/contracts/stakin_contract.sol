@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // File: node_modules@openzeppelin\contracts\token\ERC20\IERC20.sol
 // File: node_modules@openzeppelin\contracts\math\SafeMath.sol
-// SWC-Floating Pragma: L5
+// SWC-103-Floating Pragma: L5
 pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -70,7 +70,7 @@ contract AlgoVestStaking is Ownable {
         dayDurationSec = _dayDurationSec;
     }
 
-// SWC-Reentrancy: L74 - L84
+// SWC-107-Reentrancy: L74 - L84
     function AVSTokenDonation(uint256 amount) external {
         address sender = _msgSender();
         require(

@@ -127,7 +127,7 @@ contract claimToken is IERC20 {
     }
 
     /// @notice burn function burns the tokens of the token holder
-//    SWC-Unprotected Ether Withdrawal: L131-140
+//    SWC-105-Unprotected Ether Withdrawal: L131-140
     function burn( uint256 tokens) external  {
         uint256 accountBalance = balances[msg.sender];
         require(
@@ -140,7 +140,7 @@ contract claimToken is IERC20 {
     }
 
     /// @notice Mint Function checks for the maxCap and mints the specified amout of tokens.
-    //    SWC-Unprotected Ether Withdrawal: L144-156
+    //    SWC-105-Unprotected Ether Withdrawal: L144-156
     function mint(address account, uint256 tokens) external onlyAdmin {
         require(
             account != address(0),

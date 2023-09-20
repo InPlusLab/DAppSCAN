@@ -139,7 +139,7 @@ contract DistributorGovernance is AccessControlEnumerable, IGovernance {
      */
     function delegateBatch(address[] memory producers, address[] memory collectors) external onlyDelegator {
         require(producers.length == collectors.length, "length mismatch");
-        // SWC-DoS with Failed Call: L143 - L146
+        // SWC-113-DoS with Failed Call: L143 - L146
         for(uint i; i< producers.length; i++) {
             rewardCollector[producers[i]] = collectors[i];
             emit BlockProducerRewardCollectorChanged(producers[i], collectors[i]);

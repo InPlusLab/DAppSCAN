@@ -90,7 +90,7 @@ contract ArthController is AccessControl, IARTHController {
         _;
     }
 
-// SWC-Code With No Effects: L94
+// SWC-135-Code With No Effects: L94
     modifier onlyPools() {
         require(arthPools[msg.sender] == true, 'ARTHController: FORBIDDEN');
         _;
@@ -114,7 +114,7 @@ contract ArthController is AccessControl, IARTHController {
         _;
     }
 
-// SWC-Code With No Effects: L117
+// SWC-135-Code With No Effects: L117
     modifier onlyByOwnerGovernanceOrPool() {
         require(
             msg.sender == ownerAddress ||

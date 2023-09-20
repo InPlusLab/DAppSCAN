@@ -103,7 +103,7 @@ contract Bank is ERC20, ReentrancyGuard, Ownable {
     /// @dev Add more ETH to the bank. Hope to get some good returns.
     function deposit() external payable accrue(msg.value) nonReentrant {
         uint256 total = totalETH().sub(msg.value);
-        //SWC-Integer Overflow and Underflow: L107
+        //SWC-101-Integer Overflow and Underflow: L107
         uint256 share = total == 0 ? msg.value : msg.value.mul(totalSupply()).div(total);
         _mint(msg.sender, share);
     }

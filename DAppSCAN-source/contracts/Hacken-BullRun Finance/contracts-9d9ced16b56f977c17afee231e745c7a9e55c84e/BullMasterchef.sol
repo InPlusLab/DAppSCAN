@@ -191,7 +191,7 @@ contract MasterChef is ERC721Holder, Ownable, ReentrancyGuard {
         UserInfo storage user = userInfo[_pid][_user];
         return block.timestamp >= user.nextHarvestUntil;
     }
-SWC-DoS With Block Gas Limit：L196-201
+    // SWC-128-DoS With Block Gas Limit: L196-201
     /// @dev Update reward variables for all pools. Be careful of gas spending!
     function _massUpdatePools() private {
         uint256 length = poolInfo.length;

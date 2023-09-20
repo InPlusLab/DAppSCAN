@@ -213,7 +213,7 @@ contract SkyRewardPool {
     }
 
     // Withdraw LP tokens.
-    //SWC-Reentrancy: L217-L234
+    //SWC-107-Reentrancy: L217-L234
     function withdraw(uint256 _pid, uint256 _amount) public {
         address _sender = msg.sender;
         PoolInfo storage pool = poolInfo[_pid];

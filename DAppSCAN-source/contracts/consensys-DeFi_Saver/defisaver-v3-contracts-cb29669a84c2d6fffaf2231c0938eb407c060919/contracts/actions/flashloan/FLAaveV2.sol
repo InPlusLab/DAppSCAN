@@ -102,7 +102,7 @@ contract FLAaveV2 is ActionBase, StrategyData {
     }
 
     /// @notice Aave callback function that formats and calls back TaskExecutor
-    // SWC-Reentrancy: L106-137
+    // SWC-107-Reentrancy: L106-137
     function executeOperation(
         address[] memory _assets,
         uint256[] memory _amounts,

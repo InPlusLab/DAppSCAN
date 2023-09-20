@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-Barnbridge_Bond/YieldFarmBond0x3FdFb07472ea4771E1aD66FD3b87b265Cd4ec112/contracts/YieldFarm.sol",
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Barnbridge_Bond/YieldFarmBond0x3FdFb07472ea4771E1aD66FD3b87b265Cd4ec112/contracts/YieldFarm.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "massHarvest",
    "lineNumber": "L71"
   }

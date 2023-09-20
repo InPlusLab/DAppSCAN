@@ -6,7 +6,7 @@
  * No one is permitted to use the software for any purpose other than those allowed by this license.
  * This license is liable to change at any time at the sole discretion of David Lucid of Rari Capital, Inc.
  */
-//SWC-Floating Pragma: L10
+//SWC-103-Floating Pragma: L10
 pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
@@ -133,7 +133,7 @@ contract RariFundController is Ownable {
      * @dev Sets or upgrades RariFundController by withdrawing all tokens from all pools and forwarding them from the old to the new.
      * @param newContract The address of the new RariFundController contract.
      */
-    //SWC-DoS With Block Gas Limit: L137-L149
+    //SWC-128-DoS With Block Gas Limit: L137-L149
     function upgradeFundController(address payable newContract) external onlyOwner {
         for (uint256 i = 0; i < _supportedCurrencies.length; i++) {
             string memory currencyCode = _supportedCurrencies[i];
@@ -533,7 +533,7 @@ contract RariFundController is Ownable {
      */
     function checkLossRateLimit(int256 lossRate) internal view returns (bool) {
         int256 lossRateLastDay = 0;
-        //SWC-Block values as a proxy for time: L538
+        //SWC-116-Block values as a proxy for time: L538
         for (uint256 i = _lossRateHistory.length; i > 0; i--) {
             if (_lossRateHistory[i - 1].timestamp < block.timestamp.sub(86400)) break;
             lossRateLastDay = lossRateLastDay.add(_lossRateHistory[i - 1].lossRate);

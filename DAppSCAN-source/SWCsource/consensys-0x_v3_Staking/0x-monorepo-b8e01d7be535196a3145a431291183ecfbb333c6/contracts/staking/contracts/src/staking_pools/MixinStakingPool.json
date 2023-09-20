@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-0x_v3_Staking/0x-monorepo-b8e01d7be535196a3145a431291183ecfbb333c6/contracts/staking/contracts/src/staking_pools/MixinStakingPool.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-0x_v3_Staking/0x-monorepo-b8e01d7be535196a3145a431291183ecfbb333c6/contracts/staking/contracts/src/staking_pools/MixinStakingPool.sol",
  "SWCs": [
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "N/A",
    "lineNumber": "L1-350"
   }

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Audius_Contracts/audius-protocol-6f3b31562b9d4c43cef91af0a011986a2580fba2/ServiceTypeManager.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Audius_Contracts/audius-protocol-6f3b31562b9d4c43cef91af0a011986a2580fba2/ServiceTypeManager.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "initialize",
    "lineNumber": "L34,35"
   }

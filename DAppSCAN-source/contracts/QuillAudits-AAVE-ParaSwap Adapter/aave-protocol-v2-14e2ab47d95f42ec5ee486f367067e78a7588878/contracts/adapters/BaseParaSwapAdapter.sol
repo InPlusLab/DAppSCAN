@@ -76,7 +76,7 @@ abstract contract BaseParaSwapAdapter is FlashLoanReceiverBase, Ownable {
    * @param amount of tokens to be transferred to the contract
    * @param permitSignature struct containing the permit signature
    */
-  //  SWC-Reentrancy: L79
+  //  SWC-107-Reentrancy: L79
   function _pullAToken(
     address reserve,
     address reserveAToken,
@@ -99,7 +99,7 @@ abstract contract BaseParaSwapAdapter is FlashLoanReceiverBase, Ownable {
     // transfer from user to adapter
     IERC20(reserveAToken).safeTransferFrom(user, address(this), amount);
 
-    // SWC-Unchecked Call Return Value: L104
+    // SWC-104-Unchecked Call Return Value: L104
     // withdraw reserve
     LENDING_POOL.withdraw(reserve, amount, address(this));
   }

@@ -68,7 +68,7 @@ library FixedPointInt256 {
      * @param _roundDown True to round down the result, False to round up
      * @return the converted uint256
      */
-    //  SWC-Integer Overflow and Underflow: L72 - L95
+    //  SWC-101-Integer Overflow and Underflow: L72 - L95
     function toScaledUint(
         FixedPointInt memory _a,
         uint256 _decimals,

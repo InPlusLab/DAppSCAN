@@ -60,7 +60,7 @@ contract HoldefiPauser is Ownable {
     function unpause(uint index) public onlyOwner {
         paused[index] = 0;
     }
-//SWC-Function Default Visibility:L65-71
+//SWC-100-Function Default Visibility:L65-71
     // Called by pausers to pause, triggers stopped state for selected functions
     function batchPause(bool[8] memory newPaused) public onlyPausers {
         for (uint i=0; i<functionsNum; i++) {
@@ -69,7 +69,7 @@ contract HoldefiPauser is Ownable {
             }
         }
     }
-//SWC-Function Default Visibility:L74-80
+//SWC-100-Function Default Visibility:L74-80
     // Called by pausers to pause, returns to normal state for selected functions
     function batchUnpause(bool[8] memory newUnpaused) public onlyOwner {
         for (uint i=0; i<functionsNum; i++) {

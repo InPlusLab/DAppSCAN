@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-1inch_Fixed_Rate_Swap/fixed-rate-swap-b1600f61b77b6051388e6fb2cb0be776c5bcf2d1/FixedRateSwap.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-1inch_Fixed_Rate_Swap/fixed-rate-swap-b1600f61b77b6051388e6fb2cb0be776c5bcf2d1/FixedRateSwap.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_getReturn",
    "lineNumber": "L302-315"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_getVirtualAmountsForDepositImpl",
    "lineNumber": "L357"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_powerHelper",
    "lineNumber": "L415-434"
   }

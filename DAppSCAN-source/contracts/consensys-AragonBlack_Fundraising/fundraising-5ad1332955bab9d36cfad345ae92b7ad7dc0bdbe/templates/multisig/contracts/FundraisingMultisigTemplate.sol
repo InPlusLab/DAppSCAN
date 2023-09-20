@@ -331,7 +331,7 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
         (,,,, Controller controller) = _fundraisingAppsCache();
 
         // create and grant ADD_PROTECTED_TOKEN_ROLE to this template
-        // SWC-State Variable Default Visibility: L335
+        // SWC-108-State Variable Default Visibility: L335
         acl.createPermission(this, controller, controller.ADD_COLLATERAL_TOKEN_ROLE(), this);
         // add DAI both as a protected collateral and a tapped token
         controller.addCollateralToken(

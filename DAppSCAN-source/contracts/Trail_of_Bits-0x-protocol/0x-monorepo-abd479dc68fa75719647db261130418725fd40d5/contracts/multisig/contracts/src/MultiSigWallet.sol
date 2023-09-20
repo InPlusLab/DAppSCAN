@@ -299,7 +299,7 @@ contract MultiSigWallet {
             data: data,
             executed: false
         });
-        // SWC-Integer Overflow and Underflow: L303
+        // SWC-101-Integer Overflow and Underflow: L303
         transactionCount += 1;
         Submission(transactionId);
     }

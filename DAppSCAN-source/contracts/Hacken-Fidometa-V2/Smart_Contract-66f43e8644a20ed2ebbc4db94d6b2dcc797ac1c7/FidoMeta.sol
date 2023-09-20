@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity 0.8.11;
 
 // SPDX-License-Identifier: Unlicensed
@@ -508,7 +508,7 @@ contract Fidometa is Context, IERC20, Ownable {
         return true;
     }
 
-// SWC-Shadowing State Variables: L513 - L515
+// SWC-119-Shadowing State Variables: L513 - L515
     function _approve(
         address owner,
         address spender,
@@ -551,7 +551,7 @@ contract Fidometa is Context, IERC20, Ownable {
      * Can only be called by the current owner.
      */
 
-// SWC-Code With No Effects: L555 - L587
+// SWC-135-Code With No Effects: L555 - L587
     function setCharges(
         uint256 community_charge,
         uint256 ecoSysFee,
@@ -771,7 +771,7 @@ contract Fidometa is Context, IERC20, Ownable {
         uint256 rSupply = _rTotal;
         uint256 tSupply = _tTotal;
         uint cacheLength = _excluded.length;
-        // SWC-DoS With Block Gas Limit: L772 - L779
+        // SWC-128-DoS With Block Gas Limit: L772 - L779
         for (uint256 i = 0; i < cacheLength; i++) {
             if (
                 _rOwned[_excluded[i]] > rSupply ||
@@ -787,7 +787,7 @@ contract Fidometa is Context, IERC20, Ownable {
     /**
      * @dev take charges as per percentage
      */
-// SWC-Code With No Effects: L789 - L832
+// SWC-135-Code With No Effects: L789 - L832
     function takeCharges(
         uint256 tEcoSys,
         uint256 tSurcharge1,
@@ -974,7 +974,7 @@ contract Fidometa is Context, IERC20, Ownable {
             _isExcludedFromReward[sender] && _isExcludedFromReward[recipient]
         ) {
             _transferBothExcluded(sender, recipient, amount);
-            // SWC-Code With No Effects: L977 - L979
+            // SWC-135-Code With No Effects: L977 - L979
         } else {
             _transferStandard(sender, recipient, amount);
         }
@@ -1005,7 +1005,7 @@ contract Fidometa is Context, IERC20, Ownable {
             block.timestamp > startTime + (initialLock * 1 days),
             "UnLocking period is not opened"
         );
-        // SWC-Integer Overflow and Underflow: L1004 - L1005
+        // SWC-101-Integer Overflow and Underflow: L1004 - L1005
         uint256 timePassed = block.timestamp -
             (startTime + (initialLock * 1 days));
 
@@ -1043,7 +1043,7 @@ contract Fidometa is Context, IERC20, Ownable {
             locks[recipient].lockedToken == 0,
             "This address is already in vesting period"
         );
-        // SWC-Code With No Effects: L1044 - L1047
+        // SWC-135-Code With No Effects: L1044 - L1047
         require(
             initialLock >= 0,
             "timeindays should be greater than or equal to 0"
@@ -1058,7 +1058,7 @@ contract Fidometa is Context, IERC20, Ownable {
         );
     }
 
-// SWC-Code With No Effects: L1061 - L1063
+// SWC-135-Code With No Effects: L1061 - L1063
     function _transferFromExcluded(
         address sender,
         address recipient,

@@ -425,7 +425,7 @@ contract LendingPair is ERC20, Ownable, IMasterContract {
         bentoBox.transferFrom(asset, address(this), address(swapper), assetAmount);
 
         // Swaps the borrowable asset for collateral
-        // SWC-Unchecked Call Return Value: L429
+        // SWC-104-Unchecked Call Return Value: L429
         swapper.swap(asset, collateral, assetAmount, minCollateralAmount);
         uint256 returnedCollateralAmount = bentoBox.skim(collateral); // TODO: Reentrancy issue? Should we take a before and after balance?
         require(returnedCollateralAmount >= minCollateralAmount, "LendingPair: not enough");
@@ -496,7 +496,7 @@ contract LendingPair is ERC20, Ownable, IMasterContract {
 
             // Swaps the users' collateral for the borrowed asset
             bentoBox.transferFrom(collateral, address(this), address(swapper), allCollateralAmount);
-            // SWC-Unchecked Call Return Value: L499
+            // SWC-104-Unchecked Call Return Value: L499
             swapper.swap(collateral, asset, allCollateralAmount, allBorrowAmount);
             uint256 returnedAssetAmount = bentoBox.skim(asset); // TODO: Reentrancy issue? Should we take a before and after balance?
             uint256 extraAssetAmount = returnedAssetAmount.sub(allBorrowAmount);
@@ -518,7 +518,7 @@ contract LendingPair is ERC20, Ownable, IMasterContract {
             // Swap using a swapper freely chosen by the caller
             // Open (flash) liquidation: get proceeds first and provide the borrow after
             bentoBox.transferFrom(collateral, address(this), address(swapper), allCollateralAmount);
-            // SWC-Unchecked Call Return Value: L522
+            // SWC-104-Unchecked Call Return Value: L522
             swapper.swap(collateral, asset, allCollateralAmount, allBorrowAmount);
             uint256 returnedAssetAmount = bentoBox.skim(asset); // TODO: Reentrancy issue? Should we take a before and after balance?
             uint256 extraAssetAmount = returnedAssetAmount.sub(allBorrowAmount);

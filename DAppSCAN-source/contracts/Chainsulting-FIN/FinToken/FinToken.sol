@@ -2,7 +2,7 @@
  *Submitted for verification at Etherscan.io on 2018-04-27
 */
 
-// SWC-Floating Pragma: L6
+// SWC-103-Floating Pragma: L6
 pragma solidity ^0.4.21;
 
 
@@ -221,7 +221,7 @@ contract FinToken is StandardToken {
 	string public constant symbol = "FIN";
 	uint8 public constant decimals = 18;
 
-// SWC-Integer Overflow and Underflow: L225
+// SWC-101-Integer Overflow and Underflow: L225
 	uint256 public constant INITIAL_SUPPLY = 2623304 * (10 ** uint256(decimals));
 	
 	mapping (address => bool) internal verificatorAddresses;

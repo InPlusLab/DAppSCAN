@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2
+// SWC-102-Outdated Compiler Version: L2
 pragma solidity 0.5.11; // optimization runs: 200, evm version: petersburg
 
 import "@openzeppelin/contracts/ownership/Ownable.sol";

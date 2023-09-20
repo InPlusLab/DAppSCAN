@@ -34,7 +34,7 @@ contract ReferralFeeReceiver is IReferralFeeReceiver, Converter {
 
     // solhint-disable-next-line no-empty-blocks
     constructor(IERC20 _inchToken, IMooniswapFactory _mooniswapFactory) public Converter(_inchToken, _mooniswapFactory) {}
-    // SWC-Unprotected Ether Withdrawal: L38-50
+    // SWC-105-Unprotected Ether Withdrawal: L38-50
     function updateReward(address referral, uint256 amount) external override {
         Mooniswap mooniswap = Mooniswap(msg.sender);
         TokenInfo storage token = tokenInfo[mooniswap];

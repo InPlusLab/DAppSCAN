@@ -32,7 +32,7 @@ abstract contract BaseParaSwapSellAdapter is BaseParaSwapAdapter {
    * @param minAmountToReceive Minimum amount to be received from the swap
    * @return amountReceived The amount received from the swap
    */
-  //  SWC-Reentrancy: L35
+  //  SWC-107-Reentrancy: L35
   function _sellOnParaSwap(
     uint256 fromAmountOffset,
     bytes memory swapCalldata,
@@ -49,7 +49,7 @@ abstract contract BaseParaSwapSellAdapter is BaseParaSwapAdapter {
       uint256 fromAssetPrice = _getPrice(assetToSwapFrom);
       uint256 toAssetPrice = _getPrice(assetToSwapTo);
 
-      // SWC-Integer Overflow and Underflow: L53
+      // SWC-101-Integer Overflow and Underflow: L53
       uint256 expectedMinAmountOut =
         amountToSwap
           .mul(fromAssetPrice.mul(10**toAssetDecimals))

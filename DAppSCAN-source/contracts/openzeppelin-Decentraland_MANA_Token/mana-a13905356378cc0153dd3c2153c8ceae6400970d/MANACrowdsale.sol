@@ -71,7 +71,7 @@ contract MANACrowdsale is ContinuousCrowdsale, CappedCrowdsale, WhitelistedCrowd
         // otherwise compute the price for the auction
         return rate.sub(rateChange.mul(block.number - startBlock));
     }
-//SWC-Code With No Effects:L76-93
+//SWC-135-Code With No Effects:L76-93
     // low level token purchase function
     function processPurchase(address beneficiary) internal returns(uint256) {
         uint256 weiAmount = msg.value;

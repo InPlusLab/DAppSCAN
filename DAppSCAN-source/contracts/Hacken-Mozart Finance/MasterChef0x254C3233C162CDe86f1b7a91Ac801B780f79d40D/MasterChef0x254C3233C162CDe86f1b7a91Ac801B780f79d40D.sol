@@ -1495,7 +1495,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
     // Update reward variables for all pools. Be careful of gas spending!
     function massUpdatePools() public {
         uint256 length = poolInfo.length;
-        // SWC-DoS With Block Gas Limit： L1499
+        // SWC-128-DoS With Block Gas Limit: L1499
         for (uint256 pid = 0; pid < length; ++pid) {
             updatePool(pid);
         }

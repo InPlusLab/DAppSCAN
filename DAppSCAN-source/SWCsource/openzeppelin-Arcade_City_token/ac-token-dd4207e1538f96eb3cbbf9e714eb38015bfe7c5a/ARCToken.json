@@ -1,23 +1,23 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Arcade_City_token/ac-token-dd4207e1538f96eb3cbbf9e714eb38015bfe7c5a/ARCToken.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Arcade_City_token/ac-token-dd4207e1538f96eb3cbbf9e714eb38015bfe7c5a/ARCToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "safeMul",
    "lineNumber": "all contract"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "ARCToken",
    "lineNumber": "L167"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "price",
    "lineNumber": "L188-204"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "buyRecipient",
    "lineNumber": "L231"
   }

@@ -104,7 +104,7 @@ contract GearToken {
         balances[account] = uint96(totalSupply);
         emit Transfer(address(0), account, totalSupply);
         manager = msg.sender;
-        // SWC-Code With No Effects: L108
+        // SWC-135-Code With No Effects: L108
         transfersAllowed = false;
     }
 

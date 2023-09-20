@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinfabrik-Beluga Pay (BBI) Security Audit/contractBBIT-master/bbi.sol",
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Beluga Pay (BBI) Security Audit/contractBBIT-master/bbi.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "buyBBITokens",
    "lineNumber": "L223"
   },
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "",
    "lineNumber": "L243 - L245"
   }

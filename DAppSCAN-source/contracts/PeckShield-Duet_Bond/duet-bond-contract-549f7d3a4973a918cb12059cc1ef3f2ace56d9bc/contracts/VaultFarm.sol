@@ -107,7 +107,7 @@ contract VaultFarm is IVaultFarm, CloneFactory, OwnableUpgradeable {
       Pool(pooladdr).liquidate(_user);
     }
   }
-  //SWC-Function Default Visibility: L111-L126
+  //SWC-100-Function Default Visibility: L111-L126
   function massUpdatePools(address[] memory epochs, uint256[] memory rewards) public {
     uint256 poolLen = pools.length;
     uint256 epochLen = epochs.length;

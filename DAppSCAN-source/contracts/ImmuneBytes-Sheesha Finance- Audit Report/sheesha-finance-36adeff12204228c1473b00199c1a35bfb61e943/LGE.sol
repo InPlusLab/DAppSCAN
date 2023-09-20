@@ -32,7 +32,7 @@ contract LGE is SHEESHA {
     uint256 public userCount;
     ISHEESHAGlobals public sheeshaGlobals;
     uint256 public stakeCount;
-//SWC-Presence of unused variables:L34
+//SWC-131-Presence of unused variables:L34
     mapping(address => uint256) public ethContributed;
     mapping(address => bool) public claimed;
     mapping(uint256 => address) public userList;
@@ -86,7 +86,7 @@ contract LGE is SHEESHA {
         );
         return SHEESHAxWETHPair;
     }
-//SWC-Typographical Error:L91、126、134
+//SWC-129-Typographical Error:L91、126、134
     //anyone/admin will call this function after 2 weeks to mint LGE
     // Sends all avaibile balances and mints LP tokens
     // Possible ways this could break addressed

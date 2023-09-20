@@ -219,7 +219,7 @@ contract StateUtils is IStateUtils {
     /// @param _agentAppSecondary Address of the secondary Agent
     /// @param _votingAppPrimary Address of the primary Api3Voting
     /// @param _votingAppSecondary Address of the secondary Api3Voting
-    // SWC-Transaction Order Dependence: L222 - L252
+    // SWC-114-Transaction Order Dependence: L222 - L252
     function setDaoApps(
         address _agentAppPrimary,
         address _agentAppSecondary,

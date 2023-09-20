@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BSD 3-Clause
-//SWC-Code With No Effects:L1-34
+//SWC-135-Code With No Effects:L1-34
 pragma solidity ^0.6.10;
 
 library SafeMath {

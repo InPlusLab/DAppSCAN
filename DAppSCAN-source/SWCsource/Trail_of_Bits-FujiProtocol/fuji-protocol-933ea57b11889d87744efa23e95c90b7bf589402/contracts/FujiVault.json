@@ -1,28 +1,28 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol",
  "SWCs": [
   {
-   "category": "SWC-Unprotected SELFDESTRUCT Instruction",
+   "category": "SWC-106-Unprotected SELFDESTRUCT Instruction",
    "function": "N/A",
    "lineNumber": "L23 - L673"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "deposit",
    "lineNumber": "L177 - L178"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "withdraw",
    "lineNumber": "L227"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "borrow",
    "lineNumber": "L291"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "payback",
    "lineNumber": "L340"
   }

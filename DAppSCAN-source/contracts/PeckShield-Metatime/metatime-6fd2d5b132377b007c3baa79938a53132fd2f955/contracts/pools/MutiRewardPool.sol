@@ -174,7 +174,7 @@ contract MutiRewardPool is Ownable, IERC20, BasicMetaTransaction {
         massUpdatePools();
         BONUS_MULTIPLIER = multiplierNumber;
     }
-    //SWC-Code With No Effects: L178-L200
+    //SWC-135-Code With No Effects: L178-L200
     function addPool(
         uint256 _stakingDuration,
         uint256 _allocPoint

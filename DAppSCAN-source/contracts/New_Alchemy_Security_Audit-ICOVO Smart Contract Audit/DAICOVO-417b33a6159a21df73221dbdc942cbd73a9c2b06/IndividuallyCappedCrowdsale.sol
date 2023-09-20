@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-//SWC-Code With No Effects:L1-82
+//SWC-135-Code With No Effects:L1-82
 /**
  * Copyright (c) 2016 Smart Contract Solutions, Inc.
  * Released under the MIT license.
@@ -40,7 +40,7 @@ contract IndividuallyCappedCrowdsale is Crowdsale, Ownable {
       caps[_beneficiaries[i]] = _cap;
     }
   }
-//SWC-DoS With Block Gas Limit:L39
+//SWC-128-DoS With Block Gas Limit:L39
   /**
    * @dev Returns the cap of a specific user.
    * @param _beneficiary Address whose cap is to be checked

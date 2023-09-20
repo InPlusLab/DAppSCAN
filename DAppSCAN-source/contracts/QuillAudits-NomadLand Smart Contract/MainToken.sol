@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 pragma solidity ^0.4.23;
-//SWC-Outdated Compiler Version:L20
+//SWC-102-Outdated Compiler Version:L20
 
 /**
  * @title BEP20Basic
@@ -407,7 +407,7 @@ contract FreezableToken is StandardToken {
     function balanceOf(address _owner) public view returns (uint256 balance) {
         return super.balanceOf(_owner) + freezingBalance[_owner];
     }
-//SWC-Integer Overflow and Underflow:L408
+//SWC-101-Integer Overflow and Underflow:L408
     /**
      * @dev Gets the balance of the specified address without freezing tokens.
      * @param _owner The address to query the the balance of.
@@ -480,7 +480,7 @@ contract FreezableToken is StandardToken {
         require(head != 0);
         require(uint64(block.timestamp) > head);
         bytes32 currentKey = toKey(msg.sender, head);
-//SWC-Block values as a proxy for time:L481
+//SWC-116-Block values as a proxy for time:L481
         uint64 next = chains[currentKey];
 
         uint amount = freezings[currentKey];
@@ -497,7 +497,7 @@ contract FreezableToken is StandardToken {
         }
         emit Released(msg.sender, amount);
     }
-//SWC-Block values as a proxy for time:L509
+//SWC-116-Block values as a proxy for time:L509
     /**
      * @dev release all available for release freezing tokens. Gas usage is not deterministic!
      * @return how many tokens was released
@@ -512,7 +512,7 @@ contract FreezableToken is StandardToken {
             (release, balance) = getFreezing(msg.sender, 0);
         }
     }
-//SWC-Integer Overflow and Underflow:L511
+//SWC-101-Integer Overflow and Underflow:L511
     function toKey(address _addr, uint _release) internal pure returns (bytes32 result) {
         // WISH masc to increase entropy
         result = 0x5749534800000000000000000000000000000000000000000000000000000000;
@@ -521,7 +521,7 @@ contract FreezableToken is StandardToken {
             result := or(result, and(_release, 0xffffffffffffffff))
         }
     }
-//SWC-Block values as a proxy for time:L526
+//SWC-116-Block values as a proxy for time:L526
     function freeze(address _to, uint64 _until) internal {
         require(_until > block.timestamp);
         bytes32 key = toKey(_to, _until);

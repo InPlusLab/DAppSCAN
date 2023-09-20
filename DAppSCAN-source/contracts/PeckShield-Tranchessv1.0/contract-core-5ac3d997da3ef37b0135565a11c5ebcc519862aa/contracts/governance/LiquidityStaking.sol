@@ -56,7 +56,7 @@ contract LiquidityStaking {
         _checkpoint();
         _rewardCheckpoint(account);
     }
-    //SWC-Reentrancy: L60-L69
+    //SWC-107-Reentrancy: L60-L69
     function deposit(uint256 amount) external {
         userCheckpoint(msg.sender);
 

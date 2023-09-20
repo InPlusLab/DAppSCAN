@@ -47,7 +47,7 @@ contract PriceFeedProxy is ERC1967Proxy {
      *      specified by `priceFeedImpl`, calling its `initialize` function
      *      on the proxy contract state.
      */
-    //  SWC-Code With No Effects: L59
+    //  SWC-135-Code With No Effects: L59
     constructor(
         address priceFeedImpl,
         uint256 maxSafePriceDifference,
@@ -67,7 +67,7 @@ contract PriceFeedProxy is ERC1967Proxy {
             )
         )
     {
-        // SWC-Code With No Effects: L71
+        // SWC-135-Code With No Effects: L71
         assert(_ADMIN_SLOT == bytes32(uint256(keccak256("eip1967.proxy.admin")) - 1));
         _setAdmin(admin);
     }

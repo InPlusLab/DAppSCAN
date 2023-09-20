@@ -1,4 +1,4 @@
-//SWC-Floating Pragma: L2
+//SWC-103-Floating Pragma: L2
 pragma solidity ^0.5.11;
 
 import "@openzeppelin/contracts/math/SafeMath.sol";
@@ -550,7 +550,7 @@ library SwapUtils {
      * @param minToMint the minimum LP tokens adding this amount of liquidity
      *        should mint, otherwise revert. Handy for front-running mitigation
      */
-    //SWC-Reentrancy: L554-L613
+    //SWC-107-Reentrancy: L554-L613
     function addLiquidity(Swap storage self, uint256[] calldata amounts, uint256 minToMint)
         external {
         require(
@@ -638,7 +638,7 @@ library SwapUtils {
             .mul(FEE_DENOMINATOR)
             .div(toMint.add(currentBalance))
             .div(self.defaultWithdrawFee.add(1));
-        //SWC-Block values as a proxy for time: L642
+        //SWC-116-Block values as a proxy for time: L642
         self.depositTimestamp[user] = block.timestamp;
     }
 

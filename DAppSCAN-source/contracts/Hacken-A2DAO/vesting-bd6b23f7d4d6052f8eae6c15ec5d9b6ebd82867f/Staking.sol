@@ -134,7 +134,7 @@ contract Staking is IStaking, OwnableUpgradeable, ReentrancyGuardUpgradeable, Pa
         pool.stakingToken.safeTransferFrom(msg.sender, address(this), amount);
         emit Staked(msg.sender, amount);
     }
-//SWC-Function Default Visibility：L138
+//SWC-100-Function Default Visibility: L138
     function withdraw(uint256 _pid, uint256 _amount) public override nonReentrant updateReward(_pid, msg.sender) {
         PoolInfo storage pool = poolInfo[_pid];
 
@@ -199,17 +199,17 @@ contract Staking is IStaking, OwnableUpgradeable, ReentrancyGuardUpgradeable, Pa
         if (block.number < _from) return _to.sub(_from).add(1);
         return _to.sub(block.number);
     }
-//SWC-Function Default Visibility：L203
+//SWC-100-Function Default Visibility: L203
     function totalStaked(uint256 _pid) public view returns (uint256) {
         PoolInfo storage pool = poolInfo[_pid];
         return pool.totalStaked;
     }
-//SWC-Function Default Visibility：L208
+//SWC-100-Function Default Visibility: L208
     function userStaked(uint256 _pid, address _user) public view returns (uint256) {
         PoolInfo storage pool = poolInfo[_pid];
         return pool.staked[_user];
     }
-//SWC-Function Default Visibility：L213
+//SWC-100-Function Default Visibility: L213
     function userRewards(uint256 _pid, address _account) public view returns (uint256) {
         PoolInfo storage pool = poolInfo[_pid];
 

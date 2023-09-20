@@ -49,7 +49,7 @@ contract OwnerManager is SelfAuthorized {
     ///      This can only be done via a Safe transaction.
     /// @param owner New owner address.
     /// @param _threshold New threshold.
-    // SWC-Transaction Order Dependence: L53 - L68
+    // SWC-114-Transaction Order Dependence: L53 - L68
     function addOwnerWithThreshold(address owner, uint256 _threshold)
         public
         authorized
@@ -60,7 +60,7 @@ contract OwnerManager is SelfAuthorized {
         require(owners[owner] == address(0), "Address is already an owner");
         owners[owner] = owners[SENTINEL_OWNERS];
         owners[SENTINEL_OWNERS] = owner;
-        // SWC-Integer Overflow and Underflow: L64
+        // SWC-101-Integer Overflow and Underflow: L64
         ownerCount++;
         emit AddedOwner(owner);
         // Change threshold if threshold was changed.
@@ -78,14 +78,14 @@ contract OwnerManager is SelfAuthorized {
         authorized
     {
         // Only allow to remove an owner, if threshold can still be reached.
-        // SWC-Integer Overflow and Underflow: L82
+        // SWC-101-Integer Overflow and Underflow: L82
         require(ownerCount - 1 >= _threshold, "New owner count needs to be larger than new threshold");
         // Validate owner address and check that it corresponds to owner index.
         require(owner != address(0) && owner != SENTINEL_OWNERS, "Invalid owner address provided");
         require(owners[prevOwner] == owner, "Invalid prevOwner, owner pair provided");
         owners[prevOwner] = owners[owner];
         owners[owner] = address(0);
-        // SWC-Integer Overflow and Underflow: L89
+        // SWC-101-Integer Overflow and Underflow: L89
         ownerCount--;
         emit RemovedOwner(owner);
         // Change threshold if threshold was changed.

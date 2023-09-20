@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Maker Dai Delegate/maker-dai-delegate-97949a51062df956fd0172b7b1c778f66844b634/contracts/Strategy.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Maker Dai Delegate/maker-dai-delegate-97949a51062df956fd0172b7b1c778f66844b634/contracts/Strategy.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_buyInvestmentTokenWithWant",
    "lineNumber": "L857"
   }

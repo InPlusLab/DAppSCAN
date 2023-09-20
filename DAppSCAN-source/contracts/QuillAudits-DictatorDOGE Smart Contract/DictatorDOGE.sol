@@ -1017,7 +1017,7 @@ contract DictatorDOGE is Context, IERC20, Ownable {
 
         return amounts[1];
     }
-//SWC-DoS With Block Gas Limit：L1021-1034
+//SWC-128-DoS With Block Gas Limit: L1021-1034
     function _removeOldSellHistories() private {
         uint256 i = 0;
         uint256 maxStartTimeForHistories = block.timestamp - _buyBackMaxTimeForHistories;

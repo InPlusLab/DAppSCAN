@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.6.0) (access/AccessControlCrossChain.sol)
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.4;
 
 import "./AccessControlUpgradeable.sol";

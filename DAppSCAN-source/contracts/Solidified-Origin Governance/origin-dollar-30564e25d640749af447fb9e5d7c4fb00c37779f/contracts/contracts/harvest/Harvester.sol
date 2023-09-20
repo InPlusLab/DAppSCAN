@@ -220,7 +220,7 @@ contract Harvester is Governable {
     /**
      * @dev Collect reward tokens from all strategies
      */
-    // SWC-DoS With Block Gas Limit: L224-L233
+    // SWC-128-DoS With Block Gas Limit: L224-L233
     function harvest() external onlyGovernor nonReentrant {
         _harvest();
     }
@@ -310,7 +310,7 @@ contract Harvester is Governable {
         internal
     {
         _harvest(_strategyAddr);
-        // SWC-Presence of unused variables: L314
+        // SWC-131-Presence of unused variables: L314
         IStrategy strategy = IStrategy(_strategyAddr);
         address[] memory rewardTokens = strategy.getRewardTokenAddresses();
         for (uint256 i = 0; i < rewardTokens.length; i++) {

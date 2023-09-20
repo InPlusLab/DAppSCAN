@@ -1,13 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-AirSwap/airswap-protocols-b87d292aaf6e28ede564b7ea28ece39219994607/source/swap/contracts/Swap.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-AirSwap/airswap-protocols-b87d292aaf6e28ede564b7ea28ece39219994607/source/swap/contracts/Swap.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Level",
-   "function": "swap",
-   "lineNumber": "L74 - L170"
-  },
-  {
-   "category": "SWC-DoS with Failed Call",
+   "category": "SWC-113-DoS with Failed Call",
    "function": "cancel",
    "lineNumber": "L178 - L187"
   }

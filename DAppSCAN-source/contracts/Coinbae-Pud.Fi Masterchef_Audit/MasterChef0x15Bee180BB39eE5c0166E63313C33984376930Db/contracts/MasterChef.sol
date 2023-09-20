@@ -101,7 +101,7 @@ contract MasterChef is Ownable {
 
     // Add a new lp to the pool. Can only be called by the owner.
     // XXX DO NOT add the same LP token more than once. Rewards will be messed up if you do.
-    // SWC-Reentrancy: L105 - L127
+    // SWC-107-Reentrancy: L105 - L127
     function add(
         uint256 _allocPoint,
         IERC20 _lpToken,
@@ -127,7 +127,7 @@ contract MasterChef is Ownable {
     }
 
     // Update the given pool's Pud allocation point. Can only be called by the owner.
-    // SWC-Reentrancy: L131 - L143
+    // SWC-107-Reentrancy: L131 - L143
     function set(
         uint256 _pid,
         uint256 _allocPoint,
@@ -225,7 +225,7 @@ contract MasterChef is Ownable {
     }
 
     // Deposit LP tokens to MasterChef for Pud allocation.
-    // SWC-Reentrancy: L227 - L266
+    // SWC-107-Reentrancy: L227 - L266
     function deposit(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
@@ -243,7 +243,7 @@ contract MasterChef is Ownable {
         uint256 _pool = balance(_pid); //get _pid lptoken balance
         if (_amount > 0) {
             uint256 _before = pool.lpToken.balanceOf(pool.strategy);
-            // SWC-Reentrancy: L245 - L249
+            // SWC-107-Reentrancy: L245 - L249
             pool.lpToken.safeTransferFrom(
                 address(msg.sender),
                 pool.strategy,
@@ -268,7 +268,7 @@ contract MasterChef is Ownable {
     }
 
     // Withdraw LP tokens from MasterChef.
-    // SWC-Reentrancy: L270 - L304
+    // SWC-107-Reentrancy: L270 - L304
     function withdraw(uint256 _pid, uint256 _shares) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
@@ -306,7 +306,7 @@ contract MasterChef is Ownable {
     }
 
     // Withdraw without caring about rewards. EMERGENCY ONLY.
-    // SWC-Reentrancy: L307 - L326
+    // SWC-107-Reentrancy: L307 - L326
     function emergencyWithdraw(uint256 _pid) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
@@ -329,7 +329,7 @@ contract MasterChef is Ownable {
     }
 
     // Safe pud transfer function, just in case if rounding error causes pool to not have enough Pud.
-    // SWC-Unchecked Call Return Value: L328 - L345
+    // SWC-104-Unchecked Call Return Value: L328 - L345
     function safePudTransfer(address _to, uint256 _amount) internal {
         uint256 pudBal = pud.balanceOf(address(this));
         if (_amount > pudBal) {
@@ -374,13 +374,13 @@ contract MasterChef is Ownable {
         devFundDivRate = _devFundDivRate;
     }
 
-// SWC-Reentrancy: L378 - L381
+// SWC-107-Reentrancy: L378 - L381
     function balance(uint256 _pid) public view returns (uint256) {
         PoolInfo storage pool = poolInfo[_pid];
         return IStrategy(pool.strategy).balanceOf();
     }
 
-    // SWC-Unchecked Call Return Value: L378 - L384
+    // SWC-104-Unchecked Call Return Value: L378 - L384
     function setPoolStrategy(uint256 _pid,address _strategy) public onlyOwner {
         PoolInfo storage pool = poolInfo[_pid];
         IStrategy(pool.strategy).harvest();

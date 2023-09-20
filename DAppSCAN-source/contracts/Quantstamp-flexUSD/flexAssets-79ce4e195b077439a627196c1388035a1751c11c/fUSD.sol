@@ -4,7 +4,7 @@
 
 // SPDX-License-Identifier: MIT
 
-// SWC-Floating Pragma: L8
+// SWC-103-Floating Pragma: L8
 pragma solidity =0.6.0;
 
 import "./fUSDStorage.sol";	

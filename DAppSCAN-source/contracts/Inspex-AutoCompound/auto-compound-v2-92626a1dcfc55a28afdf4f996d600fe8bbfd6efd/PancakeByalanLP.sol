@@ -1338,7 +1338,7 @@ contract PancakeByalanLP is ByalanIsland, Sailor, IByalan, ReentrancyGuard {
     }
 
     // compounds earnings and charges performance fee
-    // SWC-Transaction Order Dependence： L1342
+    // SWC-114-Transaction Order Dependence: L1342
     function harvest() external override whenNotPaused onlyEOA onlyHarvester gasThrottle {
         IMasterChef(MASTERCHEF).deposit(pid, 0);
         chargeFees();

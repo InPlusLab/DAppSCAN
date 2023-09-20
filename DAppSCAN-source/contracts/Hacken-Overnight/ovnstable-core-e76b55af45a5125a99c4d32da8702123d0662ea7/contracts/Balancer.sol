@@ -92,13 +92,13 @@ contract Balancer is Initializable, AccessControlUpgradeable, UUPSUpgradeable {
 
     // ---  logic
 
-// SWC-Function Default Visibility: L96
+// SWC-100-Function Default Visibility: L96
     function buildBalanceActions() public returns (IActionBuilder.ExchangeAction[] memory) {
         // Same to zero withdrawal balance
         return buildBalanceActions(IERC20(address(0)), 0);
     }
 
-// SWC-Function Default Visibility: L102
+// SWC-100-Function Default Visibility: L102
     function buildBalanceActions(IERC20 withdrawToken, uint256 withdrawAmount)
         public
         returns (IActionBuilder.ExchangeAction[] memory)

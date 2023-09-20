@@ -56,7 +56,7 @@ contract WorthTokenTimeLock is Ownable{
         lockedToken[_id].unlockTime = _unlockTime;
         lockedToken[_id].withdrawn = false;
         
-        // SWC-Code With No Effects: L60
+        // SWC-135-Code With No Effects: L60
         allDepositIds.push(_id);
         depositsByWithdrawalAddress[_withdrawalAddress].push(_id);
         

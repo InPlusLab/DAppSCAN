@@ -43,7 +43,7 @@ contract UniswapV2Adapter is IUniswapV2Router02 {
      * @param deadline Unix timestamp after which the transaction will revert.
      * for more information check uniswap documentation: https://uniswap.org/docs/v2/smart-contracts/router02/
      */
-    //  SWC-Reentrancy: L56
+    //  SWC-107-Reentrancy: L56
     function swapTokensForExactTokens(
         uint256 amountOut,
         uint256 amountInMax,
@@ -106,7 +106,7 @@ contract UniswapV2Adapter is IUniswapV2Router02 {
         address,
         uint256 deadline
     ) external override returns (uint256[] memory amounts) {
-        // SWC-Reentrancy: L110
+        // SWC-107-Reentrancy: L110
         address creditAccount = creditManager.getCreditAccountOrRevert(
             msg.sender
         );

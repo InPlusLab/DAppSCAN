@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-Barnbridge_Staking_Pool/Staking0xb0Fa2BeEe3Cf36a7Ac7E99B885b48538Ab364853/contracts/Staking.sol",
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Barnbridge_Staking_Pool/Staking0xb0Fa2BeEe3Cf36a7Ac7E99B885b48538Ab364853/contracts/Staking.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L3"
   }

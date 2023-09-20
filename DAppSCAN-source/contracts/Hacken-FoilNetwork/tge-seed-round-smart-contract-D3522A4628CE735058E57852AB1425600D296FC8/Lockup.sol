@@ -50,7 +50,7 @@ contract Lockup {
     //event
     event Deposit(address userAddress, uint256 indexed side, uint256 amount);
     event Withdraw(uint256 amountAfterPercent);
-//SWC-Code With No Effects: L55
+//SWC-135-Code With No Effects: L55
     constructor(address payable _foilWallet, address _usdt) {
         require(_foilWallet != address(0), "The wallet address can not zero.");
         require(_usdt != address(0), "The USDT address can not zero.");

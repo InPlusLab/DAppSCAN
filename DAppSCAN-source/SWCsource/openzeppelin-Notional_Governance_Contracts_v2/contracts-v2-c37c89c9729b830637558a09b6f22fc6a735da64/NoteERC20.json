@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Notional_Governance_Contracts_v2/contracts-v2-c37c89c9729b830637558a09b6f22fc6a735da64/NoteERC20.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Notional_Governance_Contracts_v2/contracts-v2-c37c89c9729b830637558a09b6f22fc6a735da64/NoteERC20.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "transfer",
    "lineNumber": "L135"
   }

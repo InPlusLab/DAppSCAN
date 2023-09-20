@@ -177,7 +177,7 @@ contract Vesting is ReentrancyGuard, Ownable, NonZeroAddressGuard {
     function getSnapshot(address account) external nonZeroAddress(account) view returns(Snapshot[] memory) {
         Snapshot[] memory snapshot = new Snapshot[](entryIdsByRecipient[account].length);
 
-// SWC-DoS With Block Gas Limit: L181 - L193
+// SWC-128-DoS With Block Gas Limit: L181 - L193
         for(uint8 i=0; i < entryIdsByRecipient[account].length; i++) {
             Entry memory entry = entries[entryIdsByRecipient[account][i]];
             snapshot[i] = Snapshot({

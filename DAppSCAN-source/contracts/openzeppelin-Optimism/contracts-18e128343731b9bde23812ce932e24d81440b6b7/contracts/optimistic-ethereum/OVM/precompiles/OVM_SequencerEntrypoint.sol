@@ -59,7 +59,7 @@ contract OVM_SequencerEntrypoint {
         }
 
         // Now call into the EOA contract (which should definitely exist).
-        //SWC-Unchecked Call Return Value: L63-L70
+        //SWC-104-Unchecked Call Return Value: L63-L70
         Lib_SafeExecutionManagerWrapper.safeCALL(
             gasleft(),
             sender,

@@ -368,7 +368,7 @@ contract BEP20Token is Context, IBEP20, Ownable {
   function getOwner() external view returns (address) {
     return owner();
   }
-//SWC-Code With No Effects：L368-370
+//SWC-135-Code With No Effects: L368-370
   /**
    * @dev Returns the token decimals.
    */
@@ -561,7 +561,7 @@ contract BEP20Token is Context, IBEP20, Ownable {
     _totalSupply = _totalSupply.sub(amount);
     emit Transfer(account, address(0), amount);
   }
-//SWC-Code With No Effects：L557-563
+//SWC-135-Code With No Effects: L557-563
   /**
    * @dev Sets `amount` as the allowance of `spender` over the `owner`s tokens.
    *
@@ -582,7 +582,7 @@ contract BEP20Token is Context, IBEP20, Ownable {
     _allowances[owner][spender] = amount;
     emit Approval(owner, spender, amount);
   }
-//SWC-Code With No Effects：L592-595
+//SWC-135-Code With No Effects: L592-595
   /**
    * @dev Destroys `amount` tokens from `account`.`amount` is then deducted
    * from the caller's allowance.

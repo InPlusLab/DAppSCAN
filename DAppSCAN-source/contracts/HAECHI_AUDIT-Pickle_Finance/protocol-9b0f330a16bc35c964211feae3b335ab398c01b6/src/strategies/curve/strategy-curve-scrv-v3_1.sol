@@ -4,7 +4,7 @@ pragma solidity ^0.6.2;
 import "../../lib/erc20.sol";
 import "../../lib/safe-math.sol";
 
-// SWC-Code With No Effects: L8
+// SWC-135-Code With No Effects: L8
 import "./scrv-voter.sol";
 import "./crv-locker.sol";
 

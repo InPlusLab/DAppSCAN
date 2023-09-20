@@ -48,7 +48,7 @@ contract DharmaKeyRegistryV1 is Ownable {
    * of this contract, the new global key, and a specific message, that must
    * resolve to the supplied global key.
    */
-  //  SWC-Missing Protection against Signature Replay Attacks: L52 - L76
+  //  SWC-121-Missing Protection against Signature Replay Attacks: L52 - L76
   function setGlobalKey(
     address globalKey,
     bytes calldata signature

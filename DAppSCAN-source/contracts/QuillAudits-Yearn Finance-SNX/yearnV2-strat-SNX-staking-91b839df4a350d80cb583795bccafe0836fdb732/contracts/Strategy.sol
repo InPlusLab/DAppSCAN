@@ -249,7 +249,7 @@ contract Strategy is BaseStrategy {
         // if unlocked collateral balance is not enough, repay debt to unlock
         // enough `want` to repay debt.
         // unlocked collateral includes profit just claimed in `prepareReturn`
-        // SWC-Code With No Effects: L253
+        // SWC-135-Code With No Effects: L253
         uint256 unlockedWant = _unlockedWant();
         if (unlockedWant < _amountNeeded) {
             // NOTE: we use _unlockedWant because `want` balance is the total amount of staked + unstaked want (SNX)
@@ -258,7 +258,7 @@ contract Strategy is BaseStrategy {
 
         // Fetch the unlocked collateral for a second time
         // to update after repaying debt
-        // SWC-Code With No Effects: L262
+        // SWC-135-Code With No Effects: L262
         unlockedWant = _unlockedWant();
         // if not enough want in balance, it means the strategy lost `want`
         if (_amountNeeded > unlockedWant) {

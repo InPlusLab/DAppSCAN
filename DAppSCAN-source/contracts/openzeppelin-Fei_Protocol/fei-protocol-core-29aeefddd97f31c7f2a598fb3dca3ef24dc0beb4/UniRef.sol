@@ -167,7 +167,7 @@ abstract contract UniRef is IUniRef, OracleRef {
 
     /// @notice return current percent distance from peg
     /// @dev will return Decimal.zero() if above peg
-    //SWC-Code With No Effects:L186
+    //SWC-135-Code With No Effects:L186
     function getDistanceToPeg() internal view returns(Decimal.D256 memory distance) {
         (Decimal.D256 memory price, , ) = getUniswapPrice();
         return calculateDeviation(price, peg()); 

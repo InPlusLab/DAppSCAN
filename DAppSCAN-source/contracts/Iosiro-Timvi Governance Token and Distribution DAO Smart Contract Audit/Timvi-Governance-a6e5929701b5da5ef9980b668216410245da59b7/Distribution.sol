@@ -72,7 +72,7 @@ contract Distribution is LPTokenWrapper, IRewardDistributionRecipient {
     function lastTimeRewardApplicable() public view returns (uint256) {
         return Math.min(now, periodFinish);
     }
-//SWC-Use of Deprecated Solidity Functions:L73, 130-138
+//SWC-111-Use of Deprecated Solidity Functions:L73, 130-138
     function rewardPerToken() public view returns (uint256) {
         if (totalSupply() == 0) {
             return rewardPerTokenStored;
@@ -138,7 +138,7 @@ contract Distribution is LPTokenWrapper, IRewardDistributionRecipient {
         periodFinish = now.add(DURATION);
         emit RewardAdded(reward);
     }
-//SWC-Integer Overflow and Underflow:L138
+//SWC-101-Integer Overflow and Underflow:L138
     function distributeAdditionalRewards(IERC20 token, address[] calldata users, uint256[] calldata rewardAmounts)
         external
         onlyRewardDistribution

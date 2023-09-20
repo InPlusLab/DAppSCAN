@@ -328,7 +328,7 @@ contract SHIELDToken is Context, IBEP20, Ownable {
   /**
    * @dev Returns the token decimals.
    */
-  //  SWC-Code With No Effects: L332 - L346
+  //  SWC-135-Code With No Effects: L332 - L346
   function decimals() external view override returns (uint256) {
     return _decimals;
   }

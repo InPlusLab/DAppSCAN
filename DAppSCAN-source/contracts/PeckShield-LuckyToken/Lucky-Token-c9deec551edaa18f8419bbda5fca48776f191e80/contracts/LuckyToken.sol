@@ -50,7 +50,7 @@ contract LuckyToken is ERC20, Ownable {
      * @dev See {ERC20-_mint}.
      */
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
-    //SWC-Code With No Effects: L54
+    //SWC-135-Code With No Effects: L54
     function _mint(address _to, uint256 _amount) internal virtual onlyOwner override {
         require(ERC20.totalSupply() + _amount <= cap(), "ERC20Capped: cap exceeded");
         super._mint(_to, _amount);

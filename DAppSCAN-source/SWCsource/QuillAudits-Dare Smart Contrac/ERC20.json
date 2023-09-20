@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Dare Smart Contract/ERC20.sol",
+ "SWCs": [
+  {
+   "category": "SWC-104-Unchecked Call Return Value",
+   "function": "_transfer",
+   "lineNumber": "L211"
+  }
+ ]
+}

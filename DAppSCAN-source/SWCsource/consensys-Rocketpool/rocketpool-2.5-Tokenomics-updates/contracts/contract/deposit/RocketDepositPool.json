@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/deposit/RocketDepositPool.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/deposit/RocketDepositPool.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "assignDeposits",
    "lineNumber": "L116-129"
   }

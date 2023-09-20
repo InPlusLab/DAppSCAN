@@ -1,4 +1,4 @@
-//SWC-Integer Overflow and Underflow: L1-L499
+//SWC-101-Integer Overflow and Underflow: L1-L499
 pragma solidity 0.6.12;
 
 import 'OpenZeppelin/openzeppelin-contracts@3.2.0/contracts/token/ERC20/IERC20.sol';
@@ -101,7 +101,7 @@ contract HomoraBank is Initializable, Governable, ERC1155NaiveReceiver, IBank {
   /// @dev Initialize the bank smart contract, using msg.sender as the first governor.
   /// @param _oracle The oracle smart contract address.
   /// @param _feeBps The fee collected to Homora bank.
-  //SWC-Transaction Order Dependence: L105-L117
+  //SWC-114-Transaction Order Dependence: L105-L117
   function initialize(IOracle _oracle, uint _feeBps) public initializer {
     Governable.initialize();
     _GENERAL_LOCK = _NOT_ENTERED;

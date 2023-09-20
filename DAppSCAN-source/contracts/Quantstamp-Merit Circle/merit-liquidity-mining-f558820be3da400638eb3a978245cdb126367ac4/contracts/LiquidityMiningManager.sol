@@ -66,7 +66,7 @@ contract LiquidityMiningManager is TokenSaver {
         totalWeight += _weight;
 
         // Approve max token amount
-        //SWC-Unchecked Call Return Value: L70
+        //SWC-104-Unchecked Call Return Value: L70
         reward.safeApprove(_poolContract, type(uint256).max);
 
         emit PoolAdded(_poolContract, _weight);
@@ -107,7 +107,7 @@ contract LiquidityMiningManager is TokenSaver {
 
         emit RewardsPerSecondSet(_rewardPerSecond);
     }
-    //SWC-DoS With Block Gas Limit: L111-L144
+    //SWC-128-DoS With Block Gas Limit: L111-L144
     function distributeRewards() public onlyRewardDistributor {
         uint256 timePassed = block.timestamp - lastDistribution;
         uint256 totalRewardAmount = rewardPerSecond * timePassed;
@@ -136,13 +136,13 @@ contract LiquidityMiningManager is TokenSaver {
 
         // send back excess but ignore dust
         if(leftOverReward > 1) {
-            //SWC-Unchecked Call Return Value: L140
+            //SWC-104-Unchecked Call Return Value: L140
             reward.safeTransfer(rewardSource, leftOverReward);
         }
 
         emit RewardsDistributed(_msgSender(), totalRewardAmount);
     }
-    //SWC-DoS With Block Gas Limit: L146-L148
+    //SWC-128-DoS With Block Gas Limit: L146-L148
     function getPools() external view returns(Pool[] memory result) {
         return pools;
     }

@@ -275,7 +275,7 @@ contract USR is LibNote, Pausable, ERC20SafeTransfer {
         return true;
     }
 
-// SWC-Transaction Order Dependence: L279 - L282
+// SWC-114-Transaction Order Dependence: L279 - L282
     function approve(address _spender, uint _wad) external returns (bool) {
         allowance[msg.sender][_spender] = _wad;
         emit Approval(msg.sender, _spender, _wad);

@@ -359,7 +359,7 @@ contract Exchanger is Owned, MixinSystemSettings, IExchanger {
     }
 
     function _processTradingRewards(uint fee, address rewardAddress) internal {
-        // SWC-Code With No Effects: L363
+        // SWC-135-Code With No Effects: L363
         if (fee > 0 && rewardAddress != address(0) && getTradingRewardsEnabled()) {
             tradingRewards().recordExchangeFeeForAccount(fee, rewardAddress);
         }

@@ -51,7 +51,7 @@ contract MultiSigWalletWithTimeLock is
     }
 
     modifier pastTimeLock(uint256 transactionId) {
-        // SWC-Integer Overflow and Underflow: L55 - L58
+        // SWC-101-Integer Overflow and Underflow: L55 - L58
         require(
             block.timestamp >= confirmationTimes[transactionId] + secondsTimeLocked,
             "TIME_LOCK_INCOMPLETE"

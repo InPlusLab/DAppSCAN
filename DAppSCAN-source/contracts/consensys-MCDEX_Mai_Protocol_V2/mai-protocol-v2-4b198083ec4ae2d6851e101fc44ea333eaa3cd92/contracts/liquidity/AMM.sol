@@ -13,7 +13,7 @@ import "../token/ShareToken.sol";
 contract AMM is AMMGovernance {
     using LibMathSigned for int256;
     using LibMathUnsigned for uint256;
-    // SWC-Presence of unused variables: L17
+    // SWC-131-Presence of unused variables: L17
     uint256 private constant ONE_WAD_U = 10**18;
     int256 private constant ONE_WAD_S = 10**18;
 
@@ -496,7 +496,7 @@ contract AMM is AMMGovernance {
         require(perpetualProxy.isSafeWithPrice(trader, perpetualMarkPrice), "sender unsafe");
         require(perpetualProxy.isProxySafeWithPrice(perpetualMarkPrice), "amm unsafe");
     }
-    // SWC-Unchecked Call Return Value: L500-502
+    // SWC-104-Unchecked Call Return Value: L500-502
     function mintShareTokenTo(address guy, uint256 amount) internal {
         shareToken.mint(guy, amount);
     }

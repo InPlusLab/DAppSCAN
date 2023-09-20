@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-AAVE-Incentives Proposal/incentives-controller-ad534cdedd91d8db5ac1302ef2c200de75377790/contracts/incentives/DistributionManager.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-AAVE-Incentives Proposal/incentives-controller-ad534cdedd91d8db5ac1302ef2c200de75377790/contracts/incentives/DistributionManager.sol",
  "SWCs": [
   {
-   "category": "SWC-Shadowing State Variables",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "N/A",
    "lineNumber": "L29"
   }

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Synthetix Didpha Release Smart Contract Audit/synthetix-d7b8c122f7aaa69918bb53d8c981eec98677f220/Issuer.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Synthetix Didpha Release Smart Contract Audit/synthetix-d7b8c122f7aaa69918bb53d8c981eec98677f220/Issuer.sol",
  "SWCs": [
   {
-   "category": "SWC-Use of Deprecated Solidity Functions",
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
    "function": "_lastIssueEvent",
    "lineNumber": "L242"
   }

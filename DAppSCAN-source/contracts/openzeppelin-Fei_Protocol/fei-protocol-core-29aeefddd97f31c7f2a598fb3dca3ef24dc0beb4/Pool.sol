@@ -89,14 +89,14 @@ abstract contract Pool is IPool, ERC20, ERC20Burnable, Timed {
 	function rewardBalance() public view override returns (uint) {
 		return rewardToken.balanceOf(address(this));
 	}
-//SWC-Unprotected Ether Withdrawal:L93-98
+//SWC-105-Unprotected Ether Withdrawal:L93-98
 	function burnFrom(address account, uint amount) public override {
 		if (msg.sender == account) {
 			increaseAllowance(account, amount);
 		}
 		super.burnFrom(account, amount);
 	}
-//SWC-Requirement Violation:L100-112
+//SWC-123-Requirement Violation:L100-112
 	function _totalRedeemablePoolTokens() internal view returns(uint) {
 		uint total = totalSupply();
 		uint balance = _twfb(uint(totalStaked));
@@ -116,7 +116,7 @@ abstract contract Pool is IPool, ERC20, ERC20Burnable, Timed {
 	function _deposit(address from, address to, uint amount) internal {
 		require(initialized, "Pool: Uninitialized");
 		require(amount <= stakedToken.balanceOf(from), "Pool: Balance too low to stake");
-//SWC-Unchecked Call Return Value:L120,134
+//SWC-104-Unchecked Call Return Value:L120,134
 		stakedToken.transferFrom(from, address(this), amount);
 
 		stakedBalance[to] += amount;

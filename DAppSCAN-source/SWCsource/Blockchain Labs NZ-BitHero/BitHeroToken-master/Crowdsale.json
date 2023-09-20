@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-BitHero/BitHeroToken-master/Crowdsale.sol",
+ "filePath": "DAppSCAN-source/contracts/Blockchain Labs NZ-BitHero/BitHeroToken-master/Crowdsale.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "setRequireCustomerId",
    "lineNumber": "L149"
   },
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "setRequireSignedAddress",
    "lineNumber": "L160"
   }

@@ -1,4 +1,4 @@
-// SWC-Code With No Effects: L2-L96
+// SWC-135-Code With No Effects: L2-L96
 pragma solidity ^0.6.6;
 
 interface IUniswapV2Router01 {

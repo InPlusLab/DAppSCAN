@@ -118,7 +118,7 @@ contract Livepeer is Tenderizer {
         livepeer.withdrawStake(_withdrawalID);
 
         // Transfer amount from unbondingLock to _account
-        // SWC-Unchecked Call Return Value: L122
+        // SWC-104-Unchecked Call Return Value: L122
         steak.transfer(_account, amount);
 
         emit Withdraw(_account, amount, _withdrawalID);
@@ -159,7 +159,7 @@ contract Livepeer is Tenderizer {
                     amountOutMinimum: 0, // TODO: Set5% max slippage
                     sqrtPriceLimitX96: 0
                 });
-                // SWC-Unchecked Call Return Value: L162 - L164
+                // SWC-104-Unchecked Call Return Value: L162 - L164
                 try uniswapRouter.exactInputSingle(params) returns (
                     uint256 /*_swappedLPT*/
                 ) {} catch {}

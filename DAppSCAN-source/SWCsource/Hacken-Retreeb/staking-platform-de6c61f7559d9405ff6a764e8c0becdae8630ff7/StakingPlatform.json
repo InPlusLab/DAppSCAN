@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Retreeb/staking-platform-de6c61f7559d9405ff6a764e8c0becdae8630ff7/StakingPlatform.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Retreeb/staking-platform-de6c61f7559d9405ff6a764e8c0becdae8630ff7/StakingPlatform.sol",
  "SWCs": [
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "startStaking",
    "lineNumber": "L58-60\u300172\u300182\u300199\u3001125\u3001214\u3001217\u3001250\u3001252"
   }

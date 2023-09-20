@@ -3,7 +3,7 @@
 */
 
 // SPDX-License-Identifier: GPL-3.0-or-later
-// SWC-Floating Pragma: L7
+// SWC-103-Floating Pragma: L7
 pragma solidity >=0.5.0;
 pragma experimental ABIEncoderV2;
 

@@ -25,7 +25,7 @@ contract Keep3rV1Volatility {
 
     function floorLog2(uint256 _n) internal pure returns (uint8) {
         uint8 res = 0;
-        // SWC-Integer Overflow and Underflow: L33
+        // SWC-101-Integer Overflow and Underflow: L33
         if (_n < 256) {
             // At most 8 iterations
             while (_n > 1) {
@@ -37,7 +37,7 @@ contract Keep3rV1Volatility {
             for (uint8 s = 128; s > 0; s >>= 1) {
                 if (_n >= (uint(1) << s)) {
                     _n >>= s;
-                    // SWC-Integer Overflow and Underflow: L41
+                    // SWC-101-Integer Overflow and Underflow: L41
                     res |= s;
                 }
             }
@@ -52,26 +52,26 @@ contract Keep3rV1Volatility {
         // If x >= 2, then we compute the integer part of log2(x), which is larger than 0.
         if (x >= FIXED_2) {
             uint8 count = floorLog2(x / FIXED_1);
-            // SWC-Integer Overflow and Underflow: L56
+            // SWC-101-Integer Overflow and Underflow: L56
             x >>= count; // now x < 2
-            // SWC-Integer Overflow and Underflow: L58
+            // SWC-101-Integer Overflow and Underflow: L58
             res = count * FIXED_1;
         }
 
         // If x > 1, then we compute the fraction part of log2(x), which is larger than 0.
         if (x > FIXED_1) {
             for (uint8 i = 127; i > 0; --i) {
-                // SWC-Integer Overflow and Underflow: L65
+                // SWC-101-Integer Overflow and Underflow: L65
                 x = (x * x) / FIXED_1; // now 1 < x < 4
                 if (x >= FIXED_2) {
-                    // SWC-Integer Overflow and Underflow: L68
+                    // SWC-101-Integer Overflow and Underflow: L68
                     x >>= 1; // now 1 < x < 2
-                    // SWC-Integer Overflow and Underflow: L70
+                    // SWC-101-Integer Overflow and Underflow: L70
                     res += uint(1) << (i - 1);
                 }
             }
         }
-        // SWC-Integer Overflow and Underflow: L75
+        // SWC-101-Integer Overflow and Underflow: L75
         return res * LOG_E_2 / BASE;
     }
 
@@ -92,7 +92,7 @@ contract Keep3rV1Volatility {
         uint256 y;
         uint256 z;
 
-        // SWC-Integer Overflow and Underflow: L96 - L150
+        // SWC-101-Integer Overflow and Underflow: L96 - L150
         z = y = x % 0x10000000000000000000000000000000; // get the input modulo 2^(-3)
         z = (z * y) / FIXED_1;
         res += z * 0x10e1b3be415a0000; // add y^02 * (20! / 02!)

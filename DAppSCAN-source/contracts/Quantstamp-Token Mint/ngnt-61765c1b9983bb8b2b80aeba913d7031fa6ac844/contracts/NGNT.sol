@@ -239,7 +239,7 @@ contract V1 is GSNRecipient, Ownable, ERC20, Pausable, Blacklistable {
      * @param minter The address of the minter to remove
      * @return True if the operation was successful.
     */
-    //SWC-Transaction Order Dependence: L242-L248
+    //SWC-114-Transaction Order Dependence: L242-L248
     function removeMinter(address minter) onlyMasterMinter public returns (bool) {
         minters[minter] = false;
         minterAllowed[minter] = 0;
@@ -269,7 +269,7 @@ contract V1 is GSNRecipient, Ownable, ERC20, Pausable, Blacklistable {
      * Validates that caller is an owner
      * @param _newMasterMinter the new master minter address
     */
-    //SWC-Transaction Order Dependence: 272-277
+    //SWC-114-Transaction Order Dependence: 272-277
     function updateMasterMinter(address _newMasterMinter) onlyOwner public {
         require(_newMasterMinter != address(0));
         masterMinter = _newMasterMinter;

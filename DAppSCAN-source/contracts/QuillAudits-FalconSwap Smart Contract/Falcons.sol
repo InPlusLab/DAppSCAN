@@ -764,7 +764,7 @@ contract BEP20 is Context, IBEP20, Ownable {
         _balances[recipient] = _balances[recipient].add(amount);
         emit Transfer(sender, recipient, amount);
     }
-//SWC-Transaction Order Dependence:L755-766
+//SWC-114-Transaction Order Dependence:L755-766
     /** @dev Creates `amount` tokens and assigns them to `account`, increasing
      * the total supply.
      *

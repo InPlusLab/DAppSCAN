@@ -233,7 +233,7 @@ contract Ctx {
    *  and is subject to issues noted [here](https://eips.ethereum.org/EIPS/eip-20#approve)
    * @return Whether or not the approval succeeded
    */
-  //SWC-Transaction Order Dependence: L237-L246
+  //SWC-114-Transaction Order Dependence: L237-L246
   function approve(address spender, uint256 rawAmount) external returns (bool) {
     uint96 amount;
     if (rawAmount == uint256(-1)) {

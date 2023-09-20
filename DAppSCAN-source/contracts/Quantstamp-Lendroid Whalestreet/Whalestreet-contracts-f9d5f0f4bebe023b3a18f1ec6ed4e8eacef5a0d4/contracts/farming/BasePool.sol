@@ -117,7 +117,7 @@ abstract contract BasePool is LPTokenWrapper, Pacemaker {
     /**
         @notice Transfers earnings from previous epochs to the caller
     */
-    //SWC-DoS With Block Gas Limit: L121-L128
+    //SWC-128-DoS With Block Gas Limit: L121-L128
     function claim() public checkStart {
         uint256 reward = earned(msg.sender);
         if (reward > 0) {

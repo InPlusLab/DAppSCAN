@@ -70,7 +70,7 @@ contract PayableProxyController is ReentrancyGuard {
             require(sendEthTo != address(0), "PayableProxyController: cannot send ETH to address zero");
 
             weth.withdraw(remainingWeth);
-            //SWC-Insufficient Gas Griefing: L74
+            //SWC-126-Insufficient Gas Griefing: L74
             sendEthTo.transfer(remainingWeth);
         }
     }

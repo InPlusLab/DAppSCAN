@@ -1,5 +1,5 @@
 pragma solidity ^0.4.11;
-//SWC-Outdated Compiler Version:L1
+//SWC-102-Outdated Compiler Version:L1
 /**
  * Originally from https://github.com/TokenMarketNet/ico
  * Modified by https://www.coinfabrik.com/
@@ -237,7 +237,7 @@ contract Crowdsale is Haltable {
    *
    */
   function preallocate(address receiver, uint fullTokens, uint weiPrice) public onlyOwner {
-//SWC-Integer Overflow and Underflow:L241
+//SWC-101-Integer Overflow and Underflow:L241
     uint tokenAmount = fullTokens * 10**token.decimals();
     uint weiAmount = weiPrice * tokenAmount; // This can be also 0, in which case we give out tokens for free
 
@@ -487,7 +487,7 @@ contract Crowdsale is Haltable {
     else if (!isMinimumGoalReached() && weiRaised > 0 && loadedRefund >= weiRaised) return State.Refunding;
     else return State.Failure;
   }
-//SWC-Block values as a proxy for time:L484,485
+//SWC-116-Block values as a proxy for time:L484,485
   /** This is for manual testing of multisig wallet interaction */
   function setOwnerTestValue(uint val) onlyOwner {
     ownerTestValue = val;

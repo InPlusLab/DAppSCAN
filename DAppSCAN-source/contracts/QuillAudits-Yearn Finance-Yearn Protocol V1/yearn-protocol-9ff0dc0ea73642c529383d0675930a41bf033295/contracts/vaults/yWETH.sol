@@ -86,7 +86,7 @@ contract yWETH is ERC20, ERC20Detailed {
         _mint(msg.sender, shares);
     }
 
-    // SWC-Reentrancy: L90 - L104
+    // SWC-107-Reentrancy: L90 - L104
     function depositETH() public payable {
         uint _pool = balance();
         uint _before = token.balanceOf(address(this));
@@ -140,7 +140,7 @@ contract yWETH is ERC20, ERC20Detailed {
     }
 
     // No rebalance implementation for lower fees and faster swaps
-    // SWC-Reentrancy: L144 - L162
+    // SWC-107-Reentrancy: L144 - L162
     function withdrawETH(uint _shares) public {
         uint r = (balance().mul(_shares)).div(totalSupply());
         _burn(msg.sender, _shares);

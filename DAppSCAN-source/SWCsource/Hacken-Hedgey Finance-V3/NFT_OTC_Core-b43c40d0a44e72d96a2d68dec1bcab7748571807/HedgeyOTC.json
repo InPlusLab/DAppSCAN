@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Hedgey Finance-V3/NFT_OTC_Core-b43c40d0a44e72d96a2d68dec1bcab7748571807/HedgeyOTC.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Hedgey Finance-V3/NFT_OTC_Core-b43c40d0a44e72d96a2d68dec1bcab7748571807/HedgeyOTC.sol",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version\uff1aL2",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
-   "lineNumber": "//SWC-Outdated Compiler Version\uff1aL2"
+   "lineNumber": "L2"
   }
  ]
 }

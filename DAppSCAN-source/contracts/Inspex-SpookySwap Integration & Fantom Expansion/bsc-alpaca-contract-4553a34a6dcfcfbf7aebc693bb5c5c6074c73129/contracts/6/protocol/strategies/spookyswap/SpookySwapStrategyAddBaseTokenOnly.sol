@@ -10,7 +10,7 @@
 　 ξ_ξξ_ξ　ξ_ξξ_ξ
 Alpaca Fin Corporation
 */
-// SWC-Outdated Compiler Version: L14
+// SWC-102-Outdated Compiler Version: L14
 pragma solidity 0.6.6;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
@@ -55,7 +55,7 @@ contract SpookySwapStrategyAddBaseTokenOnly is OwnableUpgradeSafe, ReentrancyGua
   /// @notice This function is written base on fee=998, feeDenom=1000
   /// @dev Execute worker strategy. Take BaseToken. Return LP tokens.
   /// @param data Extra calldata information passed along to this strategy.
-  // SWC-Transaction Order Dependence: L59
+  // SWC-114-Transaction Order Dependence: L59
   function execute(
     address, /* user */
     uint256, /* debt */

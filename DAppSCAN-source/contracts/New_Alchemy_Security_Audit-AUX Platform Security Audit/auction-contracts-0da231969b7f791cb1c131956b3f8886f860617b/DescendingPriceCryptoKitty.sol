@@ -344,7 +344,7 @@ contract DescendingPriceAuction is AuctionBase, FeeCollector {
   function bid(uint256 auctionId) whenNotPaused onlyAcceptingBids(auctionId) whenNotPaused external payable {
     // Bidder must exist
     require(msg.sender != 0x0);
-//SWC-Code With No Effects:L344
+//SWC-135-Code With No Effects:L344
     uint256 currentPrice = getCurrentPrice(auctionId);
     // Bidder must bid the correct amount or greater
     require(msg.value >= currentPrice);

@@ -126,12 +126,12 @@ contract DefiFarmToken is BEP20 {
             uint256 taxAmount = amount.mul(transferTaxRate).div(10000);
             uint256 burnAmount = taxAmount.mul(burnRate).div(100);
             uint256 liquidityAmount = taxAmount.sub(burnAmount);
-            // SWC-Code With No Effects: L130
+            // SWC-135-Code With No Effects: L130
             require(taxAmount == burnAmount + liquidityAmount, "DEFIY::transfer: Burn value invalid");
 
             // default 92% of transfer sent to recipient
             uint256 sendAmount = amount.sub(taxAmount);
-            // SWC-Code With No Effects: L135
+            // SWC-135-Code With No Effects: L135
             require(amount == sendAmount + taxAmount, "DEFIY::transfer: Tax value invalid");
 
             super._transfer(sender, BURN_ADDRESS, burnAmount);

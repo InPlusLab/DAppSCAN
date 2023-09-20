@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Bitbook Staking Smart Contracts V2/BitBookStaking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "set",
+   "lineNumber": "L926"
+  }
+ ]
+}

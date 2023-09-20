@@ -194,7 +194,7 @@ contract FlywheelGaugeRewards is Auth, BaseFlywheelRewards {
             // Cycle queue already started
             require(queuedRewards.storedCycle < currentCycle);
             assert(queuedRewards.storedCycle == 0 || queuedRewards.storedCycle >= lastCycle);
-            // SWC-Assert Violation: L198
+            // SWC-110-Assert Violation: L198
             uint112 completedRewards = queuedRewards.storedCycle == lastCycle ? queuedRewards.cycleRewards : 0;
             uint256 nextRewards = gaugeToken.calculateGaugeAllocation(address(gauge), totalQueuedForCycle);
             require(nextRewards <= type(uint112).max); // safe cast

@@ -35,7 +35,7 @@ contract Staking is IStaking, Ownable {
   mapping(address => address) public proposedDelegates;
 
   // Mapping of account to delegate
-  // SWC-Presence of unused variables: L38 - L52
+  // SWC-131-Presence of unused variables: L38 - L52
   mapping(address => address) public accountDelegates;
 
   // Mapping of delegate to account

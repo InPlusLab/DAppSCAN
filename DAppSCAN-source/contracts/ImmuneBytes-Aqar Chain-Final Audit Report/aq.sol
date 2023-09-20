@@ -440,7 +440,7 @@ contract aqarchain is Ownable{
     function seedusdt(string calldata _first,string calldata _last,string calldata _country,string calldata _id, uint256 _amount)  external returns (string memory aqarid){
         require(_amount>=100000000000000000000 ,"Enter amount greater than 100 usd");
         require(seedamount<=7000000000000000000000000,"seed round token sale completed");
-        // SWC-Typographical Error: L444
+        // SWC-129-Typographical Error: L444
         require(seedrun = true,"seed round is not started or over");
 
         if(seedamount.add(_amount.mul(seedprice))<=7000000000000000000000000){
@@ -463,7 +463,7 @@ contract aqarchain is Ownable{
             "the input bnb amount should be greater than hundred"
         );
         require(seedamount<=7000000000000000000000000,"seed round token sale completed");
-        // SWC-Typographical Error: L467
+        // SWC-129-Typographical Error: L467
         require(seedrun = true,"seed round is not started or over");
       
        if(seedamount.add(msg.value.mul(getBnbRate()).mul(seedprice).div(1e18))<=7000000000000000000000000){
@@ -540,7 +540,7 @@ contract aqarchain is Ownable{
             "the input bnb amount should be greater than hundred and less than sfivethousand"
         );
         require(publicrun=true,"Public sale haven't started yet");
-        // SWC-Requirement Violation: L542
+        // SWC-123-Requirement Violation: L542
         require(privateamount<=1000000000000000000000000,"private round token sale completed");
      
       if(publicamount.add(msg.value.mul(getBnbRate()).mul(publicprice).div(1e18).div(10))<=1000000000000000000000000){
@@ -555,7 +555,7 @@ contract aqarchain is Ownable{
         }
     }
     function claim() external {
-        // SWC-Typographical Error: L559
+        // SWC-129-Typographical Error: L559
         require(claimbool = true,"claiming amount should be true");
        
         claimamount = usermappublic[msg.sender].amount.add(usermapseed[msg.sender].amount).add(usermapprivate[msg.sender].amount);

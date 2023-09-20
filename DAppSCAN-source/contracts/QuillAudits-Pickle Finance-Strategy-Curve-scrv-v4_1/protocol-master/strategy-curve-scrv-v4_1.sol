@@ -149,7 +149,7 @@ contract StrategyCurveSCRVv4_1 is StrategyBase {
     {
         return SCRVVoter(scrvVoter).withdraw(gauge, want, _amount);
     }
-//SWC-Transaction Order Dependence:L153-197
+//SWC-114-Transaction Order Dependence:L153-197
     function harvest() public override onlyBenevolent {
         // Anyone can harvest it at any given time.
         // I understand the possibility of being frontrun / sandwiched

@@ -69,7 +69,7 @@ contract PieFactoryContract is Ownable {
         pie.initialize(_initialSupply, _name, _symbol);
 
         // Transfer and add tokens
-        // SWC-DoS With Block Gas Limit: L73 - L77
+        // SWC-128-DoS With Block Gas Limit: L73 - L77
         for (uint256 i = 0; i < _tokens.length; i++) {
             IERC20 token = IERC20(_tokens[i]);
             token.safeTransferFrom(msg.sender, address(pie), _amounts[i]);

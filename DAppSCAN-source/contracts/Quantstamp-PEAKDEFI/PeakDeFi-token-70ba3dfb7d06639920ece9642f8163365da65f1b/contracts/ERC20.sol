@@ -1,4 +1,4 @@
-//SWC-Floating Pragma: L2
+//SWC-103-Floating Pragma: L2
 pragma solidity ^0.6.2;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";

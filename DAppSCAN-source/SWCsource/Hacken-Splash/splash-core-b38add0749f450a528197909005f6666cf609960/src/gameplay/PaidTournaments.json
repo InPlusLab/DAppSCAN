@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Splash/splash-core-b38add0749f450a528197909005f6666cf609960/src/gameplay/PaidTournaments.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Splash/splash-core-b38add0749f450a528197909005f6666cf609960/src/gameplay/PaidTournaments.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS with Failed Call",
+   "category": "SWC-113-DoS with Failed Call",
    "function": "playTournamentRound",
    "lineNumber": "L211"
   }

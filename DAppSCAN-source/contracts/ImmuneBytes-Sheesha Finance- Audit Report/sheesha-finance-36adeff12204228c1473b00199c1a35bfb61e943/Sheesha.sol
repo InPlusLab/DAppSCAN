@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SHEESHA is ERC20Burnable, Ownable {
     using SafeMath for uint256;
-//SWC-Presence of unused variables:L13-16
+//SWC-131-Presence of unused variables:L13-16
     //100,000 tokens
     uint256 public constant initialSupply = 100000e18;
     address public devAddress;
@@ -39,7 +39,7 @@ contract SHEESHA is ERC20Burnable, Ownable {
     function transferVaultRewards(address _vaultAddress) public onlyOwner {
         _transfer(address(this), _vaultAddress, initialSupply.mul(10).div(100));
     }
-//SWC-Typographical Error:L44
+//SWC-129-Typographical Error:L44
     //one time only
     function transferVaultLPewards(address _vaultLPAddress) public onlyOwner {
         _transfer(address(this), _vaultLPAddress, initialSupply.mul(20).div(100));

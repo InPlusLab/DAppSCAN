@@ -28,9 +28,9 @@ contract EtherFund is Owned, SafeMath, IFund {
     /**@dev The summation of ether deposited up to when a receiver last triggered a claim */
     uint public sumDeposits;    
 
-    // SWC-State Variable Default Visibility: L32 - L40
+    // SWC-108-State Variable Default Visibility: L32 - L40
     function EtherFund(address receiver1, uint16 share1, address receiver2, uint16 share2) {
-        // SWC-Integer Overflow and Underflow: L34
+        // SWC-101-Integer Overflow and Underflow: L34
         require(share1 + share2 == 1000);
 
         sharePermille[receiver1] = share1;

@@ -91,7 +91,7 @@ contract SigmoidCuratorVault is
     /// @dev Buy curator Tokens when reactions are spent.
     /// The reaction vault is the only account allowed to call this.
     /// @return Returns the amount of curator tokens purchased.
-    //SWC-Reentrancy: L95-L57
+    //SWC-107-Reentrancy: L95-L57
     function buyCuratorTokens(
         uint256 nftChainId,
         address nftAddress,

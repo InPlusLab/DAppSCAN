@@ -207,7 +207,7 @@ abstract contract ERC20Permit is IERC20Permit {
         // Require that the owner is not zero
         require(owner != address(0), "ERC20: invalid-address-0");
         // Require that we have a valid signature from the owner
-        // SWC-Signature Malleability: L211
+        // SWC-117-Signature Malleability: L211
         require(owner == ecrecover(digest, v, r, s), "ERC20: invalid-permit");
         // Require that the signature is not expired
         require(

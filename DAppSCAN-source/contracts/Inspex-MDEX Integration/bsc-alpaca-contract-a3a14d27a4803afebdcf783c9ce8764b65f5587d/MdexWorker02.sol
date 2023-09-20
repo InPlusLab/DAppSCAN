@@ -12,7 +12,7 @@ Alpaca Fin Corporation
 */
 
 pragma solidity 0.6.6;
-//SWC-Outdated Compiler Version:L14
+//SWC-102-Outdated Compiler Version:L14
 import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol";
@@ -226,7 +226,7 @@ contract MdexWorker02 is OwnableUpgradeSafe, ReentrancyGuardUpgradeSafe, IWorker
     // 2. Approve tokens
     mdx.safeApprove(address(router), uint256(-1));
     address(lpToken).safeApprove(address(bscPool), uint256(-1));
-//SWC-Transaction Order Dependence:L234
+//SWC-114-Transaction Order Dependence:L234
     // 3. Send the reward bounty to the _treasuryAccount.
     uint256 bounty = reward.mul(_treasuryBountyBps) / 10000;
     if (bounty > 0) {
@@ -234,7 +234,7 @@ contract MdexWorker02 is OwnableUpgradeSafe, ReentrancyGuardUpgradeSafe, IWorker
       if (beneficialVaultBounty > 0) _rewardToBeneficialVault(beneficialVaultBounty, _callerBalance);
       mdx.safeTransfer(_treasuryAccount, bounty.sub(beneficialVaultBounty));
     }
-//SWC-Transaction Order Dependence:L239、242、243
+//SWC-114-Transaction Order Dependence:L239、242、243
     // 4. Convert all the remaining rewards to BaseToken according to config path.
     router.swapExactTokensForTokens(reward.sub(bounty), 0, getReinvestPath(), address(this), now);
 
@@ -334,7 +334,7 @@ contract MdexWorker02 is OwnableUpgradeSafe, ReentrancyGuardUpgradeSafe, IWorker
     baseToken.safeTransfer(msg.sender, liquidatedAmount);
     emit Liquidate(id, liquidatedAmount);
   }
-//SWC-Transaction Order Dependence:L345-346、352
+//SWC-114-Transaction Order Dependence:L345-346、352
   /// @dev Some portion of a bounty from reinvest will be sent to beneficialVault to increase the size of totalToken.
   /// @param _beneficialVaultBounty - The amount of MDX to be swapped to BTOKEN & send back to the Vault.
   /// @param _callerBalance - The balance that is owned by the msg.sender within the execution scope.

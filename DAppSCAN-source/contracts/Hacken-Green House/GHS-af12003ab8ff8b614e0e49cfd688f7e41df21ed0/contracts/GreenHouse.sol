@@ -92,9 +92,9 @@ uint256 constant internal BONUS_POOL_NEW_STAKEHOLDER_TIME_ADDITION = 900;   // 1
 
     modifier AttemptToDistrubuteBonusPools() {
         if(_bonusPoolLastDistributedAt == 0 && _monthlyPoolLastDistributedAt== 0){
-            // SWC-Weak Sources of Randomness from Chain Attributes: L96
+            // SWC-120-Weak Sources of Randomness from Chain Attributes: L96
             _bonusPoolLastDistributedAt = block.timestamp;
-            // SWC-Weak Sources of Randomness from Chain Attributes: L98
+            // SWC-120-Weak Sources of Randomness from Chain Attributes: L98
             _monthlyPoolLastDistributedAt = block.timestamp;
         }
         _maybeDistributeMonthlyRewardPool();
@@ -205,14 +205,14 @@ uint256 constant internal BONUS_POOL_NEW_STAKEHOLDER_TIME_ADDITION = 900;   // 1
     }
 
     function bonusRewardPoolCountdown() public view returns(uint256) {
-        // SWC-Weak Sources of Randomness from Chain Attributes: L209
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L209
         uint256 timeSinceLastDistributed = block.timestamp - _bonusPoolLastDistributedAt;
         if (timeSinceLastDistributed >= _bonusPoolTimer) return 0;
         return _bonusPoolTimer - timeSinceLastDistributed;
     }
 
     function monthlyRewardPoolCountdown() public view returns(uint256) {
-        // SWC-Weak Sources of Randomness from Chain Attributes: L216
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L216
         uint256 timeSinceLastDistributed = block.timestamp - _monthlyPoolLastDistributedAt;
         if (timeSinceLastDistributed >= MONYHLY_POOL_TIMER) return 0;
         return MONYHLY_POOL_TIMER - timeSinceLastDistributed;
@@ -381,7 +381,7 @@ uint256 constant internal BONUS_POOL_NEW_STAKEHOLDER_TIME_ADDITION = 900;   // 1
         if (monthlyRewardPoolCountdown() == 0 && monthlyRewardPool != 0) {
             uint256 amountToDistribute = (monthlyRewardPool * MONTHLY_POOL_DISTRIBUTE_ALL_USERS_PERCENT) / 100;
             _rewardAllUsersStaked(amountToDistribute);
-        // SWC-Weak Sources of Randomness from Chain Attributes: L386
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L386
             _monthlyPoolLastDistributedAt = block.timestamp;
             monthlyRewardPool -= amountToDistribute;
             emit MonthlyRewardPoolDistributed(amountToDistribute);
@@ -396,7 +396,7 @@ uint256 constant internal BONUS_POOL_NEW_STAKEHOLDER_TIME_ADDITION = 900;   // 1
             uint256 leaderboardUsersCount = _bonusPoolLeaderboardUsersCount();
             uint256 amountToDistributeLeaderboard = (bonusRewardPool * BONUS_POOL_DISTRIBUTE_LEADERBOARD_PERCENT) / 100;
             _bonusPoolTimer = BONUS_POOL_TIMER_INITIAL;  // reset bonus pool timer
-        // SWC-Weak Sources of Randomness from Chain Attributes: L400
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L400
             _bonusPoolLastDistributedAt = block.timestamp;
             bonusRewardPool -= amountToDistributeAllUsers + amountToDistributeLeaderboard;
 

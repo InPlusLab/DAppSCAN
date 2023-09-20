@@ -200,7 +200,7 @@ contract FraxPool is AccessControl {
         frax_amount_d18 = (frax_amount_d18.mul(uint(1e6).sub(minting_fee))).div(1e6); //remove precision at the end
         require(FRAX_out_min <= frax_amount_d18, "Slippage limit reached");
 
-        // SWC-Unchecked Call Return Value: L204
+        // SWC-104-Unchecked Call Return Value: L204
         collateral_token.transferFrom(msg.sender, address(this), collateral_amount);
         FRAX.pool_mint(msg.sender, frax_amount_d18);
     }
@@ -246,7 +246,7 @@ contract FraxPool is AccessControl {
         require(FRAX_out_min <= mint_amount, "Slippage limit reached");
         require(fxs_needed <= fxs_amount, "Not enough FXS inputted");
 
-        // SWC-Unchecked Call Return Value: L250
+        // SWC-104-Unchecked Call Return Value: L250
         FXS.pool_burn_from(msg.sender, fxs_needed);
         collateral_token.transferFrom(msg.sender, address(this), collateral_amount);
         FRAX.pool_mint(msg.sender, mint_amount);
@@ -363,11 +363,11 @@ contract FraxPool is AccessControl {
         }
 
         if(sendFXS == true){
-            // SWC-Unchecked Call Return Value: L366
+            // SWC-104-Unchecked Call Return Value: L366
             FXS.transfer(msg.sender, FXSAmount);
         }
         if(sendCollateral == true){
-            // SWC-Unchecked Call Return Value: L370
+            // SWC-104-Unchecked Call Return Value: L370
             collateral_token.transfer(msg.sender, CollateralAmount);
         }
     }
@@ -398,7 +398,7 @@ contract FraxPool is AccessControl {
         uint256 fxs_paid_back = amount_to_recollat.mul(uint(1e6).add(bonus_rate).sub(recollat_fee)).div(fxs_price);
 
         require(FXS_out_min <= fxs_paid_back, "Slippage limit reached");
-        // SWC-Unchecked Call Return Value: L401
+        // SWC-104-Unchecked Call Return Value: L401
         collateral_token.transferFrom(msg.sender, address(this), collateral_units_precision);
         FXS.pool_mint(msg.sender, fxs_paid_back);
         

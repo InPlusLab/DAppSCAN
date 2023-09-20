@@ -162,7 +162,7 @@ contract ConstantsHolder is Permissions, IConstantsHolder {
      * @dev Allows the Owner to set the new check time.
      * This function is only for tests.
      */
-    //  SWC-DoS with Failed Call: L166
+    //  SWC-113-DoS with Failed Call: L166
     function setCheckTime(uint newCheckTime) external override onlyConstantsHolderManager {
         require(rewardPeriod - deltaPeriod >= checkTime, "Incorrect check time");
         emit ConstantUpdated(

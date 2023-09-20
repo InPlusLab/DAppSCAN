@@ -20,7 +20,7 @@ contract StrategyControllerV2 is IController {
     using SafeMath for uint256;
 
     bool public globalInvestEnabled;
-    //SWC-DoS With Block Gas Limit: L24
+    //SWC-128-DoS With Block Gas Limit: L24
     uint256 public maxStrategies;
     IVaultManager public vaultManager;
 
@@ -484,7 +484,7 @@ contract StrategyControllerV2 is IController {
      * @param _token The address of the token
      * @param _amount The amount that will be invested
      */
-    //SWC-Integer Overflow and Underflow: L488-L508
+    //SWC-101-Integer Overflow and Underflow: L488-L508
     function getBestStrategyEarn(
         address _token,
         uint256 _amount

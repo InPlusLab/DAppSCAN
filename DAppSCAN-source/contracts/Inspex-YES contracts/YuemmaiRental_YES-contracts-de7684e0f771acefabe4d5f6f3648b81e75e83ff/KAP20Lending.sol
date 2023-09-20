@@ -1,6 +1,6 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-//SWC-Floating Pragma:L2
+//SWC-103-Floating Pragma:L2
 import "./modules/kap20/interfaces/IKAP20.sol";
 import "./modules/kap20/interfaces/IKToken.sol";
 import "./modules/erc20/interfaces/IEIP20NonStandard.sol";

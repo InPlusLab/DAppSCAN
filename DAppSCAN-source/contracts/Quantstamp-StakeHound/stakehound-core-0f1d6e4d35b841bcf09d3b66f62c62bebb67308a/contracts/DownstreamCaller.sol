@@ -1,6 +1,6 @@
 // contracts/DownstreamCaller.sol
 // SPDX-License-Identifier: MIT
-//SWC-Floating Pragma: L4
+//SWC-103-Floating Pragma: L4
 pragma solidity ^0.6.10;
 
 import "@openzeppelin/contracts/access/Ownable.sol";

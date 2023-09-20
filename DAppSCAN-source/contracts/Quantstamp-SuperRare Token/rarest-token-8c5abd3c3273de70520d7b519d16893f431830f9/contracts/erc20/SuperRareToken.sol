@@ -63,7 +63,7 @@ contract SuperRareToken is InitializableV2,
             )
         );
     }
-    //SWC-Transaction Order Dependence: 67-91
+    //SWC-114-Transaction Order Dependence: 67-91
     function permit(
         address owner,
         address spender,

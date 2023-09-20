@@ -43,16 +43,16 @@ abstract contract BasePool is ERC20Votes, AbstractRewards, IBasePool, TokenSaver
         escrowDuration = _escrowDuration;
 
         if(_rewardToken != address(0) && _escrowPool != address(0)) {
-            //SWC-Unchecked Call Return Value: L47
+            //SWC-104-Unchecked Call Return Value: L47
             IERC20(_rewardToken).safeApprove(_escrowPool, type(uint256).max);
         }
     }
-    //SWC-Integer Overflow and Underflow: L51-L54
+    //SWC-101-Integer Overflow and Underflow: L51-L54
     function _mint(address _account, uint256 _amount) internal virtual override {
 		super._mint(_account, _amount);
         _correctPoints(_account, -(_amount.toInt256()));
 	}
-	//SWC-Integer Overflow and Underflow: L56-L59
+	//SWC-101-Integer Overflow and Underflow: L56-L59
 	function _burn(address _account, uint256 _amount) internal virtual override {
 		super._burn(_account, _amount);
         _correctPoints(_account, _amount.toInt256());
@@ -79,7 +79,7 @@ abstract contract BasePool is ERC20Votes, AbstractRewards, IBasePool, TokenSaver
 
         // ignore dust
         if(nonEscrowedRewardAmount > 1) {
-            //SWC-Unchecked Call Return Value: L83
+            //SWC-104-Unchecked Call Return Value: L83
             rewardToken.safeTransfer(_receiver, nonEscrowedRewardAmount);
         }
 

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-SpiritSwap-SpiritSwap/spiritswap-core-a23463f87fd3c7633e97fab5e8124b4499e1519e/SpiritRouter.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-SpiritSwap-SpiritSwap/spiritswap-core-a23463f87fd3c7633e97fab5e8124b4499e1519e/SpiritRouter.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "quote",
    "lineNumber": "L274"
   }

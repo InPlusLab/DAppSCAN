@@ -1,4 +1,4 @@
-// SWC-Function Default Visibility: L2-24
+// SWC-100-Function Default Visibility: L2-24
 pragma solidity ^0.4.4;
 
 contract Migrations {

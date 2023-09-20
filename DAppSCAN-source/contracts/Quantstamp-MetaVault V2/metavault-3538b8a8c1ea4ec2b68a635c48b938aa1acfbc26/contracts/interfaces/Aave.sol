@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-//SWC-Floating Pragma: L3
+//SWC-103-Floating Pragma: L3
 pragma solidity ^0.6.2;
 
 interface Aave {

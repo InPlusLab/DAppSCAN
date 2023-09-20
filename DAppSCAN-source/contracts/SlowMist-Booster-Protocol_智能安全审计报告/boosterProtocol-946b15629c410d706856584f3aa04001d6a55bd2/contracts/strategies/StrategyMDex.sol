@@ -237,7 +237,7 @@ contract StrategyMDex is StrategyMDexPools, Ownable, IStrategyLink, IActionTrigg
             return ;
         }
 
-        // SWC-Transaction Order Dependence: L241
+        // SWC-114-Transaction Order Dependence: L241
         uint256 newRewardBase = utils.getTokenIn(rewardToken, newRewards, pool.baseToken);
 
         // reinvestment fee

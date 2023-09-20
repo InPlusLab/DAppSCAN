@@ -159,7 +159,7 @@ contract MasterChef is Ownable {
     }
 
     // Withdraw without caring about rewards. EMERGENCY ONLY.
-    // SWC-Reentrancy: L163 - L171
+    // SWC-107-Reentrancy: L163 - L171
     function emergencyWithdraw(uint256 _pid) external {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
@@ -268,7 +268,7 @@ contract MasterChef is Ownable {
         return user.amount.mul(accALMPerShare).div(1e12).sub(user.rewardDebt);
     }
 
-    // SWC-DoS With Block Gas Limit: L271 - L281
+    // SWC-128-DoS With Block Gas Limit: L271 - L281
     function blockReward() public view returns (uint256 reward) {
         uint l = _blockRewards.length;
         for (uint i = 0; i < l; i++) {
@@ -282,7 +282,7 @@ contract MasterChef is Ownable {
     }
 
     // Update reward variables for all pools. Be careful of gas spending!
-    // SWC-DoS With Block Gas Limit: L284 - L289
+    // SWC-128-DoS With Block Gas Limit: L284 - L289
     function massUpdatePools() public {
         uint256 length = poolInfo.length;
         for (uint256 pid = 0; pid < length; ++pid) {

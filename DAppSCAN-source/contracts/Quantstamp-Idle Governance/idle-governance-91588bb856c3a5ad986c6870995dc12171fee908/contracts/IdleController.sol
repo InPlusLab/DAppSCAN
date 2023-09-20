@@ -52,7 +52,7 @@ contract IdleController is IdleControllerStorage, Exponential {
     function adminOrInitializing() internal view returns (bool) {
         return msg.sender == admin || msg.sender == comptrollerImplementation;
     }
-    //SWC-DoS With Block Gas Limit: L56-L62
+    //SWC-128-DoS With Block Gas Limit: L56-L62
     function refreshIdleSpeeds() public {
         require(
             msg.sender == tx.origin,

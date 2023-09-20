@@ -7,7 +7,7 @@
 
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)
 
-// SWC-Floating Pragma: L11
+// SWC-103-Floating Pragma: L11
 pragma solidity ^0.8.0;
 
 /**

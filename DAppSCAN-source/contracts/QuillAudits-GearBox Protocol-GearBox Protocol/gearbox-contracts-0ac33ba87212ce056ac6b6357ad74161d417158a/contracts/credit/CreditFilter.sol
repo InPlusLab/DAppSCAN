@@ -153,7 +153,7 @@ contract CreditFilter is ICreditFilter, ACLTrait {
         require(allowedTokens.length < 256, Errors.CF_TOO_MUCH_ALLOWED_TOKENS); // T:[CF-5]
 
         // Checks that contract has balanceOf method and it returns uint256
-        // SWC-Code With No Effects: L157
+        // SWC-135-Code With No Effects: L157
         require(IERC20(token).balanceOf(address(this)) >= 0); // T:[CF-11]
 
         // Checks that pair token - underlyingToken has priceFeed
@@ -192,7 +192,7 @@ contract CreditFilter is ICreditFilter, ACLTrait {
         allowedAdapters[adapter] = true; // T:[CF-9, 10]
 
         allowedContractsSet.add(targetContract);
-        // SWC-Code With No Effects: L196
+        // SWC-135-Code With No Effects: L196
         contractToAdapter[targetContract] = adapter; // T:[CF-9, 10]
 
         emit ContractAllowed(targetContract, adapter); // T:[CF-12]
@@ -295,7 +295,7 @@ contract CreditFilter is ICreditFilter, ACLTrait {
         adapterOnly // T:[CF-20]
     {
         // Convert to WETH is more gas efficient and doesn't make difference for ratio
-        // SWC-Code With No Effects: L299 - L300
+        // SWC-135-Code With No Effects: L299 - L300
         uint256 amountInCollateral = 0;
         uint256 amountOutCollateral = 0;
 
@@ -342,7 +342,7 @@ contract CreditFilter is ICreditFilter, ACLTrait {
             fastCheckCounter[creditAccount]++; // T:[CF-25, 33]
         } else {
             // Require Hf > 1
-            // SWC-Code With No Effects: L346
+            // SWC-135-Code With No Effects: L346
             console.log(calcCreditAccountHealthFactor(creditAccount));
             require(
                 calcCreditAccountHealthFactor(creditAccount) >=

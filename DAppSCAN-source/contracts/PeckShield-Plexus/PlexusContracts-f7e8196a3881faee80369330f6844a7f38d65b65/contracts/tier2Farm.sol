@@ -63,7 +63,7 @@ library SafeMath {
 
 
 
-//SWC-Removal Of Unused Variables And Code: L67-L93
+//SWC-135-Code With No Effects: L67-L93
 contract Tier2FarmController{
 
   using SafeMath

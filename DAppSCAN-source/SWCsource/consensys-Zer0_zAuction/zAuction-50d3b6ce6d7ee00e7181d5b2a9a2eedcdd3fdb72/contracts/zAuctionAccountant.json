@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Zer0_zAuction/zAuction-50d3b6ce6d7ee00e7181d5b2a9a2eedcdd3fdb72/contracts/zAuctionAccountant.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Zer0_zAuction/zAuction-50d3b6ce6d7ee00e7181d5b2a9a2eedcdd3fdb72/contracts/zAuctionAccountant.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "zDeposit",
    "lineNumber": "L44-52"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "SetZauction",
    "lineNumber": "L60-68"
   }

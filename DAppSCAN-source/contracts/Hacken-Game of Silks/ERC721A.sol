@@ -98,7 +98,7 @@ contract ERC721A is
    * This read function is O(totalSupply). If calling from a separate contract, be sure to test gas first.
    * It may also degrade with extremely large collection sizes (e.g >> 10000), test for your use case.
    */
-  //  SWC-DoS With Block Gas Limit: L102 - L125
+  //  SWC-128-DoS With Block Gas Limit: L102 - L125
   function tokenOfOwnerByIndex(address owner, uint256 index)
     public
     view
@@ -149,7 +149,7 @@ contract ERC721A is
     return uint256(_addressData[owner].balance);
   }
 
-// SWC-Code With No Effects: L153 - L159
+// SWC-135-Code With No Effects: L153 - L159
   function _numberMinted(address owner) internal view returns (uint256) {
     require(
       owner != address(0),
@@ -453,7 +453,7 @@ contract ERC721A is
   /**
    * @dev Explicitly set `owners` to eliminate loops in future calls of ownerOf().
    */
-  //  SWC-Code With No Effects: L457 - L476
+  //  SWC-135-Code With No Effects: L457 - L476
   function _setOwnersExplicit(uint256 quantity) internal {
     uint256 oldNextOwnerToSet = nextOwnerToExplicitlySet;
     require(quantity > 0, "quantity must be nonzero");

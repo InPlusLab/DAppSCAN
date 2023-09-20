@@ -64,7 +64,7 @@ contract HoneyToken is ERC20 {
             require(amount == sendAmount + taxAmount, "HONEY::transfer: Tax value invalid");
             super._transfer(sender, BURN_ADDRESS, taxAmount);
             super._transfer(sender, recipient, sendAmount);
-            // SWC-Code With No Effects: L68
+            // SWC-135-Code With No Effects: L68
             amount = sendAmount;
         }
     }

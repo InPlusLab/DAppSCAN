@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-PROPS_Rewards_Engine_Contracts/props-token-distribution-e5ce0b2df1fbe108458d86820da578db56ac28d1/contracts/token/PropsRewards.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-PROPS_Rewards_Engine_Contracts/props-token-distribution-e5ce0b2df1fbe108458d86820da578db56ac28d1/contracts/token/PropsRewards.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "submitDailyRewards",
    "lineNumber": "L152-L199"
   }

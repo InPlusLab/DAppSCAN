@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Callisto_Network-DeFiFarms Protocol Security Audit/BSCSCAN-0xd023618fa3d91f7862d277d59f2e8ad560df01fc#code.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "_transfer",
+   "lineNumber": "L130"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "_transfer",
+   "lineNumber": "L135"
+  }
+ ]
+}

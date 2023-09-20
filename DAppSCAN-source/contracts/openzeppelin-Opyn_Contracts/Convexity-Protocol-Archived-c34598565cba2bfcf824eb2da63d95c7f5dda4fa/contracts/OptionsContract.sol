@@ -506,7 +506,7 @@ contract OptionsContract is Ownable, OptionsUtils, ERC20 {
 
         uint256 amtCollateral = calculateCollateralToPay(_oTokens, Number(1, 0));
         uint256 amtIncentive = calculateCollateralToPay(_oTokens, liquidationIncentive);
-        //SWC-Integer Overflow and Underflow: 510
+        //SWC-101-Integer Overflow and Underflow: 510
         uint256 amtCollateralToPay = amtCollateral + amtIncentive;
 
         // Fees
@@ -579,7 +579,7 @@ contract OptionsContract is Ownable, OptionsUtils, ERC20 {
         uint256 ethToStrikePrice = getPrice(address(strike));
 
         // check `putsOutstanding * collateralizationRatio * strikePrice <= collAmt * collateralToStrikePrice`
-        //SWC-Integer Overflow and Underflow: 583
+        //SWC-101-Integer Overflow and Underflow: 583
         uint256 leftSideVal = putsOutstanding.mul(collateralizationRatio.value).mul(strikePrice.value);
         int32 leftSideExp = collateralizationRatio.exponent + strikePrice.exponent;
 

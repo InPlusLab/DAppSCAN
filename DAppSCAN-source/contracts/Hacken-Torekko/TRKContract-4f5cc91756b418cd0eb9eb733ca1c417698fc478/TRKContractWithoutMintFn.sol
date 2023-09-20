@@ -19,7 +19,7 @@ contract TRKTestToken is ERC20, Ownable, Pausable  {
     /**
      * @dev called by the owner to pause, triggers stopped state
      */
-    //  SWC-Function Default Visibility: L23
+    //  SWC-100-Function Default Visibility: L23
     function pause() public onlyOwner whenNotPaused {
        _pause();
     }
@@ -27,7 +27,7 @@ contract TRKTestToken is ERC20, Ownable, Pausable  {
     /**
      * @dev called by the owner to unpause, returns to normal state
      */
-    //  SWC-Function Default Visibility: L31
+    //  SWC-100-Function Default Visibility: L31
     function unpause() public onlyOwner whenPaused {
        _unpause();
     }

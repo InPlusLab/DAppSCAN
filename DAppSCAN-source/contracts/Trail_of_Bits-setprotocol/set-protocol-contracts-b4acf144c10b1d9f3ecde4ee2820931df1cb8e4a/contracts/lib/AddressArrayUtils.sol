@@ -299,7 +299,7 @@ library AddressArrayUtils {
      * @param A Array to search
      * @return Returns true if duplicate, false otherwise
      */
-    //  SWC-Integer Overflow and Underflow: L303 - L315
+    //  SWC-101-Integer Overflow and Underflow: L303 - L315
     function hasDuplicate(address[] memory A) internal pure returns (bool) {
         if (A.length == 0) { 
             return false;

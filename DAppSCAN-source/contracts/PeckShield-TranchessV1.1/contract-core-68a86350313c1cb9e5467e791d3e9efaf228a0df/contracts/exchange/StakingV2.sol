@@ -336,7 +336,7 @@ abstract contract StakingV2 is ITrancheIndex, CoreUtility, ManagedPausable {
     /// @dev Deposit to get rewards
     /// @param tranche Tranche of the share
     /// @param amount The amount to deposit
-    //SWC-Reentrancy: L340-L359
+    //SWC-107-Reentrancy: L340-L359
     function deposit(uint256 tranche, uint256 amount) public whenNotPaused {
         uint256 rebalanceSize = _fundRebalanceSize();
         _checkpoint(rebalanceSize);

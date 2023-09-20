@@ -103,7 +103,7 @@ contract VirtualTrade is Ownable{
         emit RemoveAsset(name);
     }
     event NewAsset(string name, address type_addr, bytes call_data);
-    //SWC-Duplicate Asset Detection and Prevention: L107-L112
+    //SWC-135-Code With No Effects: L107-L112
     function add_asset(string memory name, address type_addr, bytes memory call_data) public onlyOwner{
         all_names.push(name);
         all_assets[name].exist = true;

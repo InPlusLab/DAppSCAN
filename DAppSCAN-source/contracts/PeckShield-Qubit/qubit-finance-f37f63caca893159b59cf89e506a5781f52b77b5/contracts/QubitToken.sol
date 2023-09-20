@@ -36,7 +36,7 @@ pragma solidity ^0.6.12;
 */
 
 import "./library/BEP20Upgradeable.sol";
-//SWC-Code With No Effects: L40-57
+//SWC-135-Code With No Effects: L40-57
 contract QubitToken is BEP20Upgradeable {
     /* ========== STATE VARIABLES ========== */
 

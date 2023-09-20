@@ -67,7 +67,7 @@ contract MixinScheduler is
 
         // validate that we can increment the current epoch
         uint256 epochEndTime = getCurrentEpochEarliestEndTimeInSeconds();
-        // SWC-Block values as a proxy for time: L71
+        // SWC-116-Block values as a proxy for time: L71
         if (epochEndTime > currentBlockTimestamp) {
             LibRichErrors.rrevert(LibStakingRichErrors.BlockTimestampTooLowError(
                 epochEndTime,

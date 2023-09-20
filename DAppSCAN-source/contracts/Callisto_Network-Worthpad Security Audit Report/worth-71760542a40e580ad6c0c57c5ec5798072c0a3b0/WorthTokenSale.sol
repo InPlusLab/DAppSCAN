@@ -275,7 +275,7 @@ contract WorthTokenSale is ReentrancyGuard, Context, Ownable {
     /* Parameters 1 : Address where token should be sent */
     /* Parameters 2 : Token Address */
     /* Only Owner Function */
-    // SWC-Unprotected Ether Withdrawal: L279 - L282
+    // SWC-105-Unprotected Ether Withdrawal: L279 - L282
     function withdrawTokens(address beneficiary, address _tokenAddr) external nonZeroAddress(beneficiary) onlyOwner _contractUp() _saleEnded() {
         require(Token(_tokenAddr).transfer(beneficiary, Token(_tokenAddr).balanceOf(address(this))));
         emit TokenWithdrawn(_tokenAddr, Token(_tokenAddr).balanceOf(address(this)));

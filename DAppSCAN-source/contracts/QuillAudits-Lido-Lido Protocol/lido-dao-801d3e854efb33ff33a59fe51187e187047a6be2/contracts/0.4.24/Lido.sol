@@ -136,7 +136,7 @@ contract Lido is ILido, IsContract, StETH, AragonApp {
     * @dev We need a separate function because funds received by default payable function
     * will go through entire deposit algorithm
     */
-    // SWC-Code With No Effects: L140 - L143
+    // SWC-135-Code With No Effects: L140 - L143
     function mevTxFeeReceiver() external payable {
         require(msg.sender == MEV_TX_FEE_VAULT_POSITION.getStorageAddress());
         emit MevTxFeeReceived(msg.value);
@@ -156,7 +156,7 @@ contract Lido is ILido, IsContract, StETH, AragonApp {
     * @dev We need a separate payable function because funds received by default payable function
     * are considered as funds submitted for minting stETH
     */
-    // SWC-Code With No Effects: L160 - L167
+    // SWC-135-Code With No Effects: L160 - L167
     function receiveMevTxFee() external payable {
         require(msg.sender == MEV_TX_FEE_VAULT_POSITION.getStorageAddress());
 

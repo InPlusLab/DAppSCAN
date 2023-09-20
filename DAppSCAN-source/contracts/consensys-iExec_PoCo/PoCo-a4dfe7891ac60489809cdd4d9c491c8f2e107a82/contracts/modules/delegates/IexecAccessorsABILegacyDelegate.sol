@@ -110,7 +110,7 @@ contract IexecAccessorsABILegacyDelegate is IexecAccessorsABILegacy, DelegateBas
 			task.consensusValue,
 			task.revealCounter,
 			task.winnerCounter,
-			// SWC-DoS With Block Gas Limit: L114
+			// SWC-128-DoS With Block Gas Limit: L114
 			task.contributors,
 			task.results
 		);

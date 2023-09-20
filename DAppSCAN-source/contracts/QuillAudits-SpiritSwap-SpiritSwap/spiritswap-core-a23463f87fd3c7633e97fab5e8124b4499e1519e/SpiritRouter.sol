@@ -275,7 +275,7 @@ library PancakeLibrary {
         (uint reserve0, uint reserve1,) = IPancakePair(pairFor(factory, tokenA, tokenB)).getReserves();
         (reserveA, reserveB) = tokenA == token0 ? (reserve0, reserve1) : (reserve1, reserve0);
     }
-//SWC-Code With No Effects:L274
+//SWC-135-Code With No Effects:L274
     // given some amount of an asset and pair reserves, returns an equivalent amount of the other asset
     function quote(uint amountA, uint reserveA, uint reserveB) internal pure returns (uint amountB) {
         require(amountA > 0, 'SpiritLibrary: INSUFFICIENT_AMOUNT');

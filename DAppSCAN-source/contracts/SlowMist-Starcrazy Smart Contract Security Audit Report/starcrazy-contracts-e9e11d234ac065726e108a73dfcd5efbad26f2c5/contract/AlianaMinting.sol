@@ -250,7 +250,7 @@ contract AlianaMinting is GFAccessControl {
         }
 
         aliana.transferFrom(address(_from), address(this), _tokenId);
-        // SWC-Unchecked Call Return Value: L254
+        // SWC-104-Unchecked Call Return Value: L254
         insert(user.amountToken, _tokenId, _amount);
         user.balance = user.balance.add(1);
 

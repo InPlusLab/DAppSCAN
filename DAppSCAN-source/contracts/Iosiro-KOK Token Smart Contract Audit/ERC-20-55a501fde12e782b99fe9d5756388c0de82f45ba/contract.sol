@@ -59,7 +59,7 @@ contract KOK_Contract is ERC20Interface, Owned {
     }
 
 // constructor
-// SWC-Incorrect Constructor Name: L63
+// SWC-118-Incorrect Constructor Name: L63
 	function KOKContract() public {
 		balances[msg.sender] = totalSupply;
 	}
@@ -85,11 +85,11 @@ contract KOK_Contract is ERC20Interface, Owned {
     }
 
 // stop the contract
-// SWC-Function Default Visibility: L88
+// SWC-100-Function Default Visibility: L88
 	function stop() onlyOwner {
         stopped = true;
     }
-// SWC-Function Default Visibility: L92
+// SWC-100-Function Default Visibility: L92
     function start() onlyOwner {
         stopped = false;
     }

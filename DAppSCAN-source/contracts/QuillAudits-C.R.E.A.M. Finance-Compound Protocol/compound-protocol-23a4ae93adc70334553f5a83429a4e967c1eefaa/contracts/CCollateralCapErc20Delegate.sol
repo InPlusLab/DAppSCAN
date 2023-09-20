@@ -19,11 +19,11 @@ contract CCollateralCapErc20Delegate is CCollateralCapErc20 {
      */
     function _becomeImplementation(bytes memory data) public {
         // Shh -- currently unused
-        // SWC-Presence of unused variables: L23
+        // SWC-131-Presence of unused variables: L23
         data;
 
         // Shh -- we don't ever want this hook to be marked pure
-        // SWC-Presence of unused variables: L27 - L29
+        // SWC-131-Presence of unused variables: L27 - L29
         if (false) {
             implementation = address(0);
         }

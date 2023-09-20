@@ -98,7 +98,7 @@ contract PerpetualCreator is ContractCreator, Testable, Lockable {
         tokenCurrency.resetOwner(derivative);
 
         _registerContract(new address[](0), address(derivative));
-        // SWC-Code With No Effects: L102
+        // SWC-135-Code With No Effects: L102
         emit CreatedPerpetual(address(derivative), msg.sender);
 
         return address(derivative);

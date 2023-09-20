@@ -9,7 +9,7 @@
 // File: contracts\open-zeppelin-contracts\token\ERC20\IERC20.sol
 
 
-// SWC-Outdated Compiler Version: L13
+// SWC-102-Outdated Compiler Version: L13
 pragma solidity ^0.5.0;
 
 

@@ -1,4 +1,4 @@
-//SWC-DoS With Block Gas Limit: L2-L333
+//SWC-128-DoS With Block Gas Limit: L2-L333
 pragma solidity ^0.5.2;
 
 import '../token/interfaces/IDSToken.sol';

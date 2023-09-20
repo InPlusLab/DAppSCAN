@@ -461,7 +461,7 @@ contract Comptroller is ComptrollerV5Storage, ComptrollerInterface, ComptrollerE
      * @param borrower The address of the borrower
      * @param repayAmount The amount of underlying being repaid
      */
-    // SWC-Reentrancy: L465-501
+    // SWC-107-Reentrancy: L465-501
     function liquidateBorrowAllowed(
         address cTokenBorrowed,
         address cTokenCollateral,

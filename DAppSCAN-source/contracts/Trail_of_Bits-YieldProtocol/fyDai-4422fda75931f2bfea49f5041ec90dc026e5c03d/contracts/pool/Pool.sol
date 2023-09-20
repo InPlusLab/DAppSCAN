@@ -83,7 +83,7 @@ contract Pool is IPool, ERC20, Delegable {
     /// @dev Mint initial liquidity tokens.
     /// The liquidity provider needs to have called `dai.approve`
     /// @param daiIn The initial Dai liquidity to provide.
-    // SWC-Transaction Order Dependence: L87 - L99
+    // SWC-114-Transaction Order Dependence: L87 - L99
     function init(uint128 daiIn)
         external
         beforeMaturity

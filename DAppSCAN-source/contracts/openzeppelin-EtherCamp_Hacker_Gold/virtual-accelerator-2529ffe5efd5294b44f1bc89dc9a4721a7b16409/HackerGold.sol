@@ -1,6 +1,6 @@
 
 import "StandardToken.sol";
-//SWC-Integer Overflow and Underflow:L1-165
+//SWC-101-Integer Overflow and Underflow:L1-165
 pragma solidity ^0.4.0;
 
 /**
@@ -28,7 +28,7 @@ contract HackerGold is StandardToken {
     
     // total value in wei
     uint totalValue;
-    //SWC-Code With No Effects:L30
+    //SWC-135-Code With No Effects:L30
     // multisig holding the value
     address wallet;
 
@@ -88,7 +88,7 @@ contract HackerGold is StandardToken {
         if (getTotalValue() + msg.value > 4000000 ether) throw; 
     
         uint tokens = msg.value / 1000000000000000 * getPrice();
-//SWC-Code With No Effects:L90
+//SWC-135-Code With No Effects:L90
         totalSupply += tokens;
         balances[holder] += tokens;
         totalValue += msg.value;

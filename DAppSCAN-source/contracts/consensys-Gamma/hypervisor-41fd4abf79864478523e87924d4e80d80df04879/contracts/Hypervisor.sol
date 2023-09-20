@@ -77,7 +77,7 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
     // @param to Address to which liquidity tokens are minted
     // @param from Address from which asset tokens are transferred
     // @return shares Quantity of liquidity tokens minted as a result of deposit
-    // SWC-Unprotected Ether Withdrawal: L81-142
+    // SWC-105-Unprotected Ether Withdrawal: L81-142
     function deposit(
         uint256 deposit0,
         uint256 deposit1,
@@ -171,7 +171,7 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
     // @param from Address from which liquidity tokens are sent
     // @return amount0 Amount of token0 redeemed by the submitted liquidity tokens
     // @return amount1 Amount of token1 redeemed by the submitted liquidity tokens
-    // SWC-Reentrancy: L175-216
+    // SWC-107-Reentrancy: L175-216
     function withdraw(
         uint256 shares,
         address to,
@@ -413,7 +413,7 @@ contract Hypervisor is IVault, IUniswapV3MintCallback, IUniswapV3SwapCallback, E
     ) external override {
         require(msg.sender == address(pool));
         address payer = abi.decode(data, (address));
-        // SWC-Code With No Effects: L415
+        // SWC-135-Code With No Effects: L415
         if (payer == address(this)) {
             if (amount0 > 0) token0.safeTransfer(msg.sender, amount0);
             if (amount1 > 0) token1.safeTransfer(msg.sender, amount1);

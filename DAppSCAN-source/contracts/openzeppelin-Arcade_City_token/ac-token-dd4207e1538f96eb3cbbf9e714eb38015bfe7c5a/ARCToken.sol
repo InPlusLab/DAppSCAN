@@ -5,7 +5,7 @@
  */
 contract SafeMath {
   //internals
-//SWC-Outdated Compiler Version:all contract
+//SWC-102-Outdated Compiler Version:all contract
   function safeMul(uint a, uint b) internal returns (uint) {
     uint c = a * b;
     assert(a == 0 || c / a == b);
@@ -167,7 +167,7 @@ contract ARCToken is StandardToken, SafeMath {
     uint public presaleEtherRaised = 0; //this will keep track of the Ether raised during the crowdsale
     bool public halted = false; //the founder address can set this to true to halt the crowdsale due to emergency
     event Buy(address indexed sender, uint eth, uint fbt);
-//SWC-Code With No Effects:L167
+//SWC-135-Code With No Effects:L167
     function ARCToken(address multisigInput, uint startBlockInput, uint endBlockInput) {
         owner = msg.sender;
         multisig = multisigInput;
@@ -184,7 +184,7 @@ contract ARCToken is StandardToken, SafeMath {
         rewards = rewardsInput;
         rewardAddressesSet = true;
     }
-//SWC-Code With No Effects:L188-204
+//SWC-135-Code With No Effects:L188-204
     function price() constant returns(uint) {
         if (block.number>=startBlock && block.number<startBlock+250) return 125; //power hour
         if (block.number<startBlock || block.number>endBlock) return 75; //default price
@@ -229,7 +229,7 @@ contract ARCToken is StandardToken, SafeMath {
         presaleEtherRaised = safeAdd(presaleEtherRaised, msg.value);
 
         if (!multisig.call.value(msg.value)()) throw; //immediately send Ether to multisig address
-//SWC-Reentrancy:L231
+//SWC-107-Reentrancy:L231
         // if etherCap is reached - activate the market
         if (presaleEtherRaised == etherCap && !marketactive){
             marketactive = true;

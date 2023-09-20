@@ -1,15 +1,15 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-AutoCompoundVault/mondayclub-9ec29e0bb41a6bbef5484976502c924f4557ca02/StrategyCommonChefLP.sol",
+ "filePath": "DAppSCAN-source/contracts/Inspex-AutoCompoundVault/mondayclub-9ec29e0bb41a6bbef5484976502c924f4557ca02/StrategyCommonChefLP.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence\uff1aL137-149",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "_harvest",
-   "lineNumber": "//SWC-Transaction Order Dependence\uff1aL137-149"
+   "lineNumber": "L137-149"
   },
   {
-   "category": "SWC-Transaction Order Dependence\uff1aL169-183",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "addLiquidity",
-   "lineNumber": "//SWC-Transaction Order Dependence\uff1aL169-183"
+   "lineNumber": "L169-183"
   }
  ]
 }

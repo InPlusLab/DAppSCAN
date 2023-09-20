@@ -747,7 +747,7 @@ contract RariFundManager is Initializable, Ownable {
      * @param amounts The amounts of the tokens to be withdrawn.
      * @return Array of amounts withdrawn after fees.
      */
-    // SWC-Reentrancy: L751 - L768
+    // SWC-107-Reentrancy: L751 - L768
     function withdrawFrom(address from, string[] calldata currencyCodes, uint256[] calldata amounts) external onlyProxy cachePoolBalances returns (uint256[] memory) {
         // Input validation
         require(currencyCodes.length > 0 && currencyCodes.length == amounts.length, "Lengths of currency code and amount arrays must be greater than 0 and equal.");

@@ -681,7 +681,7 @@ contract RCMarket is Initializable, NativeMetaTransaction {
                 emit LogAddToOrderbook(msgSender(), _newPrice, _timeHeldLimit, orderbook[_tokenId][msgSender()].prev, _tokenId);
             // case 1B: new price is higher than current price but by less than X%- revert the tx to prevent frontrunning
             } else if (_newPrice > price[_tokenId]) {
-                // SWC-Requirement Violation: L685
+                // SWC-123-Requirement Violation: L685
                 require(false, "Not 10% higher");
             // case 1C: new price is equal or below old price
             } else {

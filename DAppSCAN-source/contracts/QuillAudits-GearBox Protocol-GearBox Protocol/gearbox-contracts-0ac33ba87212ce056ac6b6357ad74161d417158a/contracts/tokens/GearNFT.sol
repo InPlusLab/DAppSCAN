@@ -11,7 +11,7 @@ contract GearBeta is ERC721, Ownable {
 
     function mint(address to, uint256 tokenId) external onlyOwner {
         _mint(to, tokenId);
-        // SWC-Code With No Effects: L15
+        // SWC-135-Code With No Effects: L15
         _setBaseURI("https://nft.gearbox.fi/");
     }
 }

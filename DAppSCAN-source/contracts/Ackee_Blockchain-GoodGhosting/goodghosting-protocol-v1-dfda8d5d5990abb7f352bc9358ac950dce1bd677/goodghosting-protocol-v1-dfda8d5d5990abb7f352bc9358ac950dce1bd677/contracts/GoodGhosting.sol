@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-// SWC-Outdated Compiler Version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity 0.6.11;
 
 import "@openzeppelin/contracts/access/Ownable.sol";

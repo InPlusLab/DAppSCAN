@@ -109,7 +109,7 @@ contract Ownable is Context {
     _owner = msgSender;
     emit OwnershipTransferred(address(0), msgSender);
   }
-//SWC-Function Default Visibility：L113
+//SWC-100-Function Default Visibility: L113
   function owner() public view returns (address) {
     return _owner;
   }

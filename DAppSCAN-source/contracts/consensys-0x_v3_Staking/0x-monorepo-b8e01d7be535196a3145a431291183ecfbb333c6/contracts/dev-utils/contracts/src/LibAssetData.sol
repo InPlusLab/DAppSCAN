@@ -36,7 +36,7 @@ contract LibAssetData {
     using LibBytes for bytes;
 
     // solhint-disable var-name-mixedcase
-    // SWC-Shadowing State Variables: L40
+    // SWC-119-Shadowing State Variables: L40
     IExchange internal _EXCHANGE;
     address internal _ERC20_PROXY_ADDRESS;
     address internal _ERC721_PROXY_ADDRESS;

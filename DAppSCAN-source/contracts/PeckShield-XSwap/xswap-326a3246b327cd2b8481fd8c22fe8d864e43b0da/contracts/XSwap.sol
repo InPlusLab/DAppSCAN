@@ -148,7 +148,7 @@ contract XSwap is DSAuth {
 		setPrices(_output, _input, _priceOutIn);
 		return true;
 	}
-	//SWC-Integer Overflow and Underflow: L152
+	//SWC-101-Integer Overflow and Underflow: L152
 	function setPrices(address _input, address _output, uint256 _price) public auth returns (bool) {
 		prices[_input][_output] = _price;
 		return true;

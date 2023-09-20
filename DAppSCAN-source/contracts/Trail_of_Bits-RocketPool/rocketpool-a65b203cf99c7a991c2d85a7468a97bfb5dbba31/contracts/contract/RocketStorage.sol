@@ -40,7 +40,7 @@ contract RocketStorage is RocketStorageInterface {
         } else {
             // Only Dapp and the guardian account are allowed access during initialisation.
             // tx.origin is only safe to use in this case for deployment since no external contracts are interacted with
-            // SWC-Authorization through tx.origin: L45
+            // SWC-115-Authorization through tx.origin: L45
             require((
                 _getBool(keccak256(abi.encodePacked("contract.exists", msg.sender))) || tx.origin == guardian
             ), "Invalid or outdated network contract attempting access during deployment");
@@ -203,7 +203,7 @@ contract RocketStorage is RocketStorageInterface {
     }
 
     /// @param _key The key for the record
-    // SWC-Write to Arbitrary Storage Location: L206 - L210
+    // SWC-124-Write to Arbitrary Storage Location: L206 - L210
     function setUint(bytes32 _key, uint _value) onlyLatestRocketNetworkContract override external {
         assembly {
             sstore (_key, _value)
@@ -228,7 +228,7 @@ contract RocketStorage is RocketStorageInterface {
     }
 
     /// @param _key The key for the record
-    // SWC-Write to Arbitrary Storage Location: L231 - L235
+    // SWC-124-Write to Arbitrary Storage Location: L231 - L235
     function setInt(bytes32 _key, int _value) onlyLatestRocketNetworkContract override external {
         assembly {
             sstore (_key, _value)

@@ -17,11 +17,11 @@ contract SealedController {
 
 	using SafeMath for uint256;
 
-	// SWC-Function Default Visibility: L21
+	// SWC-100-Function Default Visibility: L21
 	function calculateSealed(address from, uint256 amount) public view returns (uint256){
 		return amount.mul(1e5);
 	}
-	// SWC-Function Default Visibility: L24
+	// SWC-100-Function Default Visibility: L24
 	function calculateWithdrawAmount(address to, uint256 amount) public view returns (uint256){
 		return amount.mul(1e5);
 	}
@@ -75,12 +75,12 @@ contract Vault is Ownable {
 		sealedController = SealedController(_sealedController);
 	}
 
-	// SWC-Function Default Visibility: L79
+	// SWC-100-Function Default Visibility: L79
 	function setTimeController(address _timeController) public onlyOwner {
 		timeController = TimeController(_timeController);
 	}
 
-// SWC-Function Default Visibility: L84
+// SWC-100-Function Default Visibility: L84
 	function setBlocks(uint256 _startBlock, uint256 _endLockBlock) public onlyOwner {
 		startBlock = _startBlock;
 		endLockBlock = _endLockBlock;
@@ -92,7 +92,7 @@ contract Vault is Ownable {
 		return (sealedAmount, timeAmount);
 	}
 
-	// SWC-Function Default Visibility: L94
+	// SWC-100-Function Default Visibility: L94
     function lockFor(uint256 amount, address _user) public returns (uint256) {
 		require(block.number > startBlock && block.number < endLockBlock, 'inappropriate time for locking');
 
@@ -108,7 +108,7 @@ contract Vault is Ownable {
 		return sealedAmount;
     }
 
-	// SWC-Function Default Visibility: L112
+	// SWC-100-Function Default Visibility: L112
 	function lock(uint256 amount) external returns (uint256) {
 		return lockFor(amount, msg.sender);
 	}
@@ -118,7 +118,7 @@ contract Vault is Ownable {
 		return sealedController.calculateWithdrawAmount(user, withdrawShare);
 	} 
 
-		// SWC-Function Default Visibility: L122
+		// SWC-100-Function Default Visibility: L122
     function withdraw(uint256 amount) public returns (uint256) {
 		require(block.number > endLockBlock , 'inappropriate time to withdraw');
 
@@ -136,7 +136,7 @@ contract Vault is Ownable {
     // Add temporary withdrawal functionality for owner(DAO) to transfer all tokens to a safe place.
     // Contract ownership will transfer to address(0x) after full auditing of codes.
 
-		// SWC-Function Default Visibility: L140
+		// SWC-100-Function Default Visibility: L140
     function withdrawAllLockedTokens(address to) public onlyOwner {
         uint256 totalLockedTokens = lockedToken.balanceOf(address(this));
         lockedToken.transfer(to, totalLockedTokens);
@@ -145,7 +145,7 @@ contract Vault is Ownable {
 	// Add temporary withdrawal functionality for owner(DAO) to transfer all tokens to a safe place.
     // Contract ownership will transfer to address(0x) after full auditing of codes.
 
-		// SWC-Function Default Visibility: L149
+		// SWC-100-Function Default Visibility: L149
     function withdrawLockedTokens(address to, uint256 amount) public onlyOwner {
         lockedToken.transfer(to, amount);
     }

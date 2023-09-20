@@ -338,7 +338,7 @@ contract MainWorkflow is DataStore, ReentrancyGuard {
     function _transferOut(address to, uint amount, DataTypes.FundType fundType) internal  {
         _transferOut(to, _getAddress(fundType), amount);
     }
-//    SWC-Reentrancy:L342
+//    SWC-107-Reentrancy:L342
     function _transferOut(address to, address token, uint amount) internal  {
         
         if (amount > 0 && to != Constant.ZERO_ADDRESS) {

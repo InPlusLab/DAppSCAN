@@ -43,7 +43,7 @@ contract OKLGPasswordManager is OKLGProduct {
     returns (AccountInfo memory)
   {
     AccountInfo[] memory _userInfo = userAccounts[msg.sender];
-    // SWC-DoS With Block Gas Limit: L47 - L51
+    // SWC-128-DoS With Block Gas Limit: L47 - L51
     for (uint256 _i = 0; _i < _userInfo.length; _i++) {
       if (_compareStr(_userInfo[_i].id, _id)) {
         return _userInfo[_i];

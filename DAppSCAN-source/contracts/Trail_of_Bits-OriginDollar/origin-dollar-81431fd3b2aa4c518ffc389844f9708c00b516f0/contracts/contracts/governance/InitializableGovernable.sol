@@ -10,7 +10,7 @@ import {
 
 import { Governable } from "./Governable.sol";
 
-// SWC-Code With No Effects: L14 - L18
+// SWC-135-Code With No Effects: L14 - L18
 contract InitializableGovernable is Governable, Initializable {
     function _initialize(address _governor) internal {
         _changeGovernor(_governor);

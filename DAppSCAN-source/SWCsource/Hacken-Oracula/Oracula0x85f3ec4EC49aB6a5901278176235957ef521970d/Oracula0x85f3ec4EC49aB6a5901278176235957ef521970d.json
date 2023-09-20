@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "renounceOwnership",
    "lineNumber": "L206 - L212"
   },
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "transferOwnership",
    "lineNumber": "L219 - L227"
   },
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L860 - L884"
   }

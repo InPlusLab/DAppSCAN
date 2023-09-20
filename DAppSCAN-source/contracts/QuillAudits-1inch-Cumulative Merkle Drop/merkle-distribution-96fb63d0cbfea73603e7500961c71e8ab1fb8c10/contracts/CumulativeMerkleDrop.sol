@@ -11,7 +11,7 @@ import "./interfaces/ICumulativeMerkleDrop.sol";
 
 contract CumulativeMerkleDrop is Ownable, ICumulativeMerkleDrop {
     using SafeERC20 for IERC20;
-    // SWC-Code With No Effects: L14
+    // SWC-135-Code With No Effects: L14
     using MerkleProof for bytes32[];
 
     address public immutable override token;

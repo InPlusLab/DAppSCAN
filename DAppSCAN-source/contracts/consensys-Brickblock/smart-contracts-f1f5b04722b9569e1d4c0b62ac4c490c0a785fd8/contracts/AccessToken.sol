@@ -1,4 +1,4 @@
-// SWC-Integer Overflow and Underflow: L2-308
+// SWC-101-Integer Overflow and Underflow: L2-308
 pragma solidity 0.4.23;
 
 import "openzeppelin-solidity/contracts/token/ERC20/PausableToken.sol";
@@ -298,7 +298,7 @@ contract AccessToken is PausableToken {
   }
 
   // prevent anyone from sending funds other than selfdestructs of course :)
-  // SWC-Code With No Effects: L302-307
+  // SWC-135-Code With No Effects: L302-307
   function()
     public
     payable

@@ -467,7 +467,7 @@ contract DapiServer is
     /// @param conditionParameters Subscription condition parameters (a
     /// `uint256` encoded in contract ABI)
     /// @return If the dAPI update subscription should be fulfilled
-    // SWC-Unprotected Ether Withdrawal: L471-L487
+    // SWC-105-Unprotected Ether Withdrawal: L471-L487
     function conditionPspDapiUpdate(
         bytes32 subscriptionId, // solhint-disable-line no-unused-vars
         bytes calldata data,

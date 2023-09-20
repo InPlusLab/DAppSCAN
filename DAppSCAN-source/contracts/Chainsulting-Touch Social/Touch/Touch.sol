@@ -124,7 +124,7 @@ contract Touch is Moderated {
 		string public symbol = "TST";
 		uint8 public decimals = 18;
 
-// SWC-Integer Overflow and Underflow: L128
+// SWC-101-Integer Overflow and Underflow: L128
         uint256 public maximumTokenIssue = 1000000000 * 10**18;
 
 		mapping(address => uint256) internal balances;

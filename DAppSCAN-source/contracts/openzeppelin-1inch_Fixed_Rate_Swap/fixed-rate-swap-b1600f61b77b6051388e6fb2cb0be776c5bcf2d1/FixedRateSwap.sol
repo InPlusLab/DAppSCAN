@@ -298,7 +298,7 @@ contract FixedRateSwap is ERC20 {
             (token0RealAmount, token1RealAmount) = (token0VirtualAmount, token1VirtualAmount);
         }
     }
-//SWC-Integer Overflow and Underflow:L302-315
+//SWC-101-Integer Overflow and Underflow:L302-315
     function _getReturn(uint256 fromBalance, uint256 toBalance, uint256 inputAmount) private pure returns(uint256 outputAmount) {
         unchecked {
             uint256 totalBalance = fromBalance + toBalance;
@@ -356,7 +356,7 @@ contract FixedRateSwap is ERC20 {
             dy = _getReturn(xBalance, yBalance, dx);
             shift = _checkVirtualAmountsFormula(x - dx, y + dy, xBalance + dx, yBalance - dy);
         }
-//SWC-Integer Overflow and Underflow:L357
+//SWC-101-Integer Overflow and Underflow:L357
         return (x - dx, y + dy);
     }
 
@@ -417,7 +417,7 @@ contract FixedRateSwap is ERC20 {
             return int256(x * yBalance - y * xBalance);
         }
     }
-//SWC-Integer Overflow and Underflow:L415-434
+//SWC-101-Integer Overflow and Underflow:L415-434
     function _powerHelper(uint256 x) private pure returns(uint256 p) {
         unchecked {
             if (x > _C3) {

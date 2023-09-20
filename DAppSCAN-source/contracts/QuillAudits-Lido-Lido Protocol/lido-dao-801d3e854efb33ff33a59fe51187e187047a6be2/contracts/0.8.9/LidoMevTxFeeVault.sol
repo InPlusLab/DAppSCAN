@@ -76,7 +76,7 @@ contract LidoMevTxFeeVault {
     * @notice Allows the contract to receive ETH
     * @dev MEV rewards may be sent as plain ETH transfers
     */
-    // SWC-Unprotected Ether Withdrawal: L80 - L82
+    // SWC-105-Unprotected Ether Withdrawal: L80 - L82
     receive() external payable {
         totalRewardsReceivedViaTransactions = totalRewardsReceivedViaTransactions + msg.value;
     }

@@ -7,7 +7,7 @@
  * @FilePath: /CrazyToken/contracts/CrazyToken.sol
  * MIT License
  */
-// SWC-Floating Pragma: L12
+// SWC-103-Floating Pragma: L12
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 

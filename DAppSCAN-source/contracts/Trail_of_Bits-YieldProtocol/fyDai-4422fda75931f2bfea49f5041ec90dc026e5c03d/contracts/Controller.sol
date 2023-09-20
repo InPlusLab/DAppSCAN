@@ -290,7 +290,7 @@ contract Controller is IController, Orchestrated(), Delegable(), DecimalMath {
     /// @param to Wallet to put the collateral in.
     /// @param amount Amount of collateral to move.
     // us(from) --- Token ---> to
-    // SWC-Unprotected Ether Withdrawal: L294 - L320
+    // SWC-105-Unprotected Ether Withdrawal: L294 - L320
     function withdraw(bytes32 collateral, address from, address to, uint256 amount)
         public override
         validCollateral(collateral)

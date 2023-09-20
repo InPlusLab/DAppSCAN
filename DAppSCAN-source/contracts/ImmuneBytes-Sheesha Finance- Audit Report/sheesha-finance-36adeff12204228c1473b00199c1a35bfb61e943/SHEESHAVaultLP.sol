@@ -192,7 +192,7 @@ contract SHEESHAVaultLP is Ownable {
         emit Deposit(_depositFor, _pid, _amount);
 
     }
-//SWC-Typographical Error:L196
+//SWC-129-Typographical Error:L196
     // Withdraw LP tokens or claim rewrads if amount is 0
     function withdraw(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];

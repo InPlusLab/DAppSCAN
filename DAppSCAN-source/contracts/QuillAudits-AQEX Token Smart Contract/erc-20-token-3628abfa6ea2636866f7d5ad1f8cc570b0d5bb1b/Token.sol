@@ -1,6 +1,6 @@
 
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.0;
 
 abstract contract Context {

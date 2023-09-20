@@ -237,7 +237,7 @@ contract ChimVesting is Ownable, ReentrancyGuard {
         if (_releaseTime == 0 || _releaseTime > block.timestamp || lockPlanId_ == 0 || lockPlanId_ > Counters.current(_lockPLanIdTracker)) {
             return (0, 0, 0, 0, 0, 0, 0);
         }
-//    SWC-Block values as a proxy for time：L242
+//    SWC-116-Block values as a proxy for time: L242
         LockPlanData storage lockPlan = _lockPLans[lockPlanId_];
         afterReleaseTime = block.timestamp.sub(_releaseTime);
         unlockPercents = lockPlan.startPercent;

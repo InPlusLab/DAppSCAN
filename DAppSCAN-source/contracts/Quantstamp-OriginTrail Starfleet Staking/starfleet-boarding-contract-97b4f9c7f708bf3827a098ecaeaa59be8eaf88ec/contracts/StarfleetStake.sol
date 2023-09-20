@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity >=0.6.0 <=0.8.0;
 
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
@@ -59,12 +59,12 @@ contract StarfleetStake is Ownable {
   }
 
 // Functional requirement FR1
-// SWC-Unchecked Call Return Value: L62 - L86
+// SWC-104-Unchecked Call Return Value: L62 - L86
  function depositTokens(uint256 amount) public {
 
   require(now >= tZero);
   require(now < tZero + BOARDING_PERIOD_LENGTH);
-  // SWC-Integer Overflow and Underflow: L66
+  // SWC-101-Integer Overflow and Underflow: L66
   require(token.balanceOf(address(this)) + amount <= MAX_THRESHOLD, "Sender cannot deposit amounts that would cross the MAX_THRESHOLD");
   require(token.allowance(msg.sender, address(this)) >= amount, "Sender allowance must be equal to or higher than chosen amount");
   require(token.balanceOf(msg.sender) >= amount, "Sender balance must be equal to or higher than chosen amount!");

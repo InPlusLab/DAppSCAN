@@ -27,7 +27,7 @@ contract OUSD is Initializable, InitializableToken, Governable {
     );
 
     uint256 private constant MAX_SUPPLY = ~uint128(0); // (2^128) - 1
-    // SWC-Shadowing State Variables: L31
+    // SWC-119-Shadowing State Variables: L31
     uint256 private _totalSupply;
     uint256 public rebasingCredits;
     // Exchange rate between internal credits and OUSD
@@ -36,7 +36,7 @@ contract OUSD is Initializable, InitializableToken, Governable {
     mapping(address => uint256) private _creditBalances;
 
     // Allowances denominated in OUSD
-    // SWC-Shadowing State Variables: L40
+    // SWC-119-Shadowing State Variables: L40
     mapping(address => mapping(address => uint256)) private _allowances;
 
     address public vaultAddress = address(0);
@@ -152,7 +152,7 @@ contract OUSD is Initializable, InitializableToken, Governable {
      * @param _to The address you want to transfer to.
      * @param _value Amount of OUSD to transfer
      */
-    //  SWC-Unprotected Ether Withdrawal: L156 - L172
+    //  SWC-105-Unprotected Ether Withdrawal: L156 - L172
     function _executeTransfer(
         address _from,
         address _to,
@@ -190,7 +190,7 @@ contract OUSD is Initializable, InitializableToken, Governable {
             // Transfer between two non rebasing accounts. They may have
             // different exchange rates so update the count of non rebasing
             // credits with the difference
-            // SWC-Integer Overflow and Underflow: L192
+            // SWC-101-Integer Overflow and Underflow: L192
             nonRebasingCredits =
                 nonRebasingCredits +
                 creditsCredited -

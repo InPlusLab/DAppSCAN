@@ -3,7 +3,7 @@ pragma solidity 0.5.8;
 import "./ownership/PayableOwnable.sol";
 import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
-// SWC-Code With No Effects: L7
+// SWC-135-Code With No Effects: L7
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Mintable.sol";
 
 /// @title PumaPay Pull Payment - Contract that facilitates our pull payment protocol

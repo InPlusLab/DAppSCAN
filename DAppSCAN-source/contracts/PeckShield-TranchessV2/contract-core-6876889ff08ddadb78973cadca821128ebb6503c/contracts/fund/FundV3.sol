@@ -26,7 +26,7 @@ contract FundV3 is IFundV3, Ownable, ReentrancyGuard, FundRolesV2, CoreUtility {
     using SafeMath for uint256;
     using SafeDecimalMath for uint256;
     using SafeERC20 for IERC20;
-    //SWC-Code With No Effects: L30-L41
+    //SWC-135-Code With No Effects: L30-L41
     event ProfitReported(uint256 profit, uint256 performanceFee);
     event LossReported(uint256 loss);
     event ObsoletePrimaryMarketAdded(address obsoletePrimaryMarket);

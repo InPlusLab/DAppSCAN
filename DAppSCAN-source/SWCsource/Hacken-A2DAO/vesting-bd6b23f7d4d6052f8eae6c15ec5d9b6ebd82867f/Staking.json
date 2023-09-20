@@ -1,25 +1,25 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-A2DAO/vesting-bd6b23f7d4d6052f8eae6c15ec5d9b6ebd82867f/Staking.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-A2DAO/vesting-bd6b23f7d4d6052f8eae6c15ec5d9b6ebd82867f/Staking.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility\uff1aL138",
+   "category": "SWC-100-Function Default Visibility",
    "function": "withdraw",
-   "lineNumber": "//SWC-Function Default Visibility\uff1aL138"
+   "lineNumber": "L138"
   },
   {
-   "category": "SWC-Function Default Visibility\uff1aL203",
+   "category": "SWC-100-Function Default Visibility",
    "function": "totalStaked",
-   "lineNumber": "//SWC-Function Default Visibility\uff1aL203"
+   "lineNumber": "L203"
   },
   {
-   "category": "SWC-Function Default Visibility\uff1aL208",
+   "category": "SWC-100-Function Default Visibility",
    "function": "userStaked",
-   "lineNumber": "//SWC-Function Default Visibility\uff1aL208"
+   "lineNumber": "L208"
   },
   {
-   "category": "SWC-Function Default Visibility\uff1aL213",
+   "category": "SWC-100-Function Default Visibility",
    "function": "userRewards",
-   "lineNumber": "//SWC-Function Default Visibility\uff1aL213"
+   "lineNumber": "L213"
   }
  ]
 }

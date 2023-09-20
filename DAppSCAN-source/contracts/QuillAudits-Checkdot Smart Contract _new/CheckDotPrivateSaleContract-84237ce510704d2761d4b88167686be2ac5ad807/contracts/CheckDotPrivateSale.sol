@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";

@@ -208,7 +208,7 @@ contract LUSDToken is ILUSDToken {
     }
 
     // --- 'require' functions ---
-    // SWC-DoS with Failed Call: L212-L224
+    // SWC-113-DoS with Failed Call: L212-L224
     function _requireValidRecipient(address _recipient) internal view {
         require(
             _recipient != address(0) && 

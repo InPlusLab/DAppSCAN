@@ -74,7 +74,7 @@ contract YearnAdapter is IYVault {
             msg.sender
         );
 
-        // SWC-Reentrancy: L78
+        // SWC-107-Reentrancy: L78
         creditManager.provideCreditAccountAllowance(
             creditAccount,
             yVault,
@@ -128,8 +128,8 @@ contract YearnAdapter is IYVault {
             msg.sender
         );
 
-        // SWC-Code With No Effects: L132
-        // SWC-Reentrancy: L132
+        // SWC-135-Code With No Effects: L132
+        // SWC-107-Reentrancy: L132
         creditManager.provideCreditAccountAllowance(
             creditAccount,
             yVault,

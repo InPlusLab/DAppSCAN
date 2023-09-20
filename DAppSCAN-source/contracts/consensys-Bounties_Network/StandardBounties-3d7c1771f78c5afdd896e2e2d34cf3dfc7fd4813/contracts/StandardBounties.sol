@@ -1,5 +1,5 @@
-// SWC-State Variable Default Visibility: L2-L725
-// SWC-Floating Pragma: L3
+// SWC-108-State Variable Default Visibility: L2-L725
+// SWC-103-Floating Pragma: L3
 pragma solidity 0.5.0;
 pragma experimental ABIEncoderV2;
 
@@ -44,7 +44,7 @@ contract StandardBounties {
 
   uint public numBounties; // An integer storing the total number of bounties in the contract
   mapping(uint => Bounty) public bounties; // A mapping of bountyIDs to bounties
-  // SWC-State Variable Default Visibility: L48-L49
+  // SWC-108-State Variable Default Visibility: L48-L49
   address owner; // The address of the individual who's allowed to set the metaTxRelayer address
   address metaTxRelayer; // The address of the meta transaction relayer whose _sender is automatically trusted for all contract calls
 
@@ -242,10 +242,10 @@ contract StandardBounties {
     senderIsValid(_sender)
     validateBountyArrayIndex(_bountyId)
   {
-    // SWC-State Variable Default Visibility: L246-L265
+    // SWC-108-State Variable Default Visibility: L246-L265
     bounties[_bountyId].contributions.push(
       Contribution(_sender, _amount, false)); // Adds the contribution to the bounty
-    // SWC-Integer Overflow and Underflow: L249
+    // SWC-101-Integer Overflow and Underflow: L249
     bounties[_bountyId].balance += _amount; // Increments the balance of the bounty
 
     require(_amount > 0); // Contributions of the amount 0 should fail

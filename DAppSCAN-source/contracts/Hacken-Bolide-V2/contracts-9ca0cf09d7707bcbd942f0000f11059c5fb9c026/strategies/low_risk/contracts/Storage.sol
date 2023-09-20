@@ -59,7 +59,7 @@ contract StorageV2 is Initializable, OwnableUpgradeable, PausableUpgradeable {
         logicContract = _logicContract;
     }
 
-// SWC-State Variable Default Visibility: L63 - L76
+// SWC-108-State Variable Default Visibility: L63 - L76
     mapping(uint256 => EarnBLID) private earnBLID;
     uint256 private countEarns;
     uint256 private countTokens;

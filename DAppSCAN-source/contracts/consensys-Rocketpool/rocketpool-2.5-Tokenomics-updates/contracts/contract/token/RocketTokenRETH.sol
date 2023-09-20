@@ -103,7 +103,7 @@ contract RocketTokenRETH is RocketBase, ERC20, RocketTokenRETHInterface {
         emit TokensMinted(_to, rethAmount, _ethAmount, block.timestamp);
     }
     // Burn rETH for ETH
-    // SWC-Transaction Order Dependence: L107-124
+    // SWC-114-Transaction Order Dependence: L107-124
     function burn(uint256 _rethAmount) override external {
         // Check rETH amount
         require(_rethAmount > 0, "Invalid token burn amount");

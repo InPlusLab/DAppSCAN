@@ -784,7 +784,7 @@ contract ServiceProviderFactory is InitializableV2 {
             spDetails[_sp].deployerStake == 0 || spDetails[_sp].deployerStake >= minDeployerStake,
             "Direct stake restriction violated for this service provider");
     }
-//SWC-Requirement Violation:L779
+//SWC-123-Requirement Violation:L779
     /**
      * @notice Get whether a decrease request has been initiated for service provider
      * @param _serviceProvider - address of service provider

@@ -121,7 +121,7 @@ contract NodeRegistry {
 
     /// version: major minor fork(000) date(yyyy/mm/dd)
     uint constant public VERSION = 12300020190709;
-    // SWC-Code With No Effects: L125-133
+    // SWC-135-Code With No Effects: L125-133
     modifier onlyActiveState(address _signer) {
 
         SignerInformation memory si = signerIndex[_signer];
@@ -148,7 +148,7 @@ contract NodeRegistry {
     /// @param _blockNumber the blocknumber of the wrong blockhash
     /// @param _hash keccak256(wrong blockhash, msg.sender, v, r, s); used to prevent frontrunning.
     /// @dev The v,r,s paramaters are from the signature of the wrong blockhash that the node provided
-    // SWC-Transaction Order Dependence: L152-159
+    // SWC-114-Transaction Order Dependence: L152-159
     function convict(uint _blockNumber, bytes32 _hash) external {
 
         ConvictInformation memory ci;

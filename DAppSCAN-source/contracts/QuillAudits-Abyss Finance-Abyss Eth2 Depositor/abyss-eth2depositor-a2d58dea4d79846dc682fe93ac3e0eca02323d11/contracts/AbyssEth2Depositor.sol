@@ -58,8 +58,8 @@ contract AbyssEth2Depositor is Pausable, Ownable {
      * - signatures             - Array of BLS12-381 signatures.
      * - deposit_data_roots     - Array of the SHA-256 hashes of the SSZ-encoded DepositData objects.
      */
-    //  SWC-Lack of Proper Signature Verification: L61 - L90
-    // SWC-Reentrancy: L82
+    //  SWC-122-Lack of Proper Signature Verification: L61 - L90
+    // SWC-107-Reentrancy: L82
     function deposit(
         bytes[] calldata pubkeys,
         bytes[] calldata withdrawal_credentials,

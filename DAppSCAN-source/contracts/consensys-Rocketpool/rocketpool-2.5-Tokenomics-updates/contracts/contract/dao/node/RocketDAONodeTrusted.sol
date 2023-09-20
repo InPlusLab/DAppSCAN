@@ -17,7 +17,7 @@ contract RocketDAONodeTrusted is RocketBase, RocketDAONodeTrustedInterface {
 
     using SafeMath for uint;
     // Events
-    // SWC-Presence of unused variables: L21-22
+    // SWC-131-Presence of unused variables: L21-22
     event MemberJoined(address indexed _nodeAddress, uint256 _rplBondAmount, uint256 time);  
     event MemberLeave(address indexed _nodeAddress, uint256 _rplBondAmount, uint256 time);
 

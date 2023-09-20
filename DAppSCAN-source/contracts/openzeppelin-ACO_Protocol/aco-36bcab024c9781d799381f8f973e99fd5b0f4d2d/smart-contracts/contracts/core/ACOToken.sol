@@ -203,7 +203,7 @@ contract ACOToken is ERC20 {
         strikeAssetDecimals = _getAssetDecimals(_strikeAsset);
         underlyingSymbol = _getAssetSymbol(_underlying);
         strikeAssetSymbol = _getAssetSymbol(_strikeAsset);
-        // SWC-Integer Overflow and Underflow: L207
+        // SWC-101-Integer Overflow and Underflow: L207
         underlyingPrecision = 10 ** uint256(underlyingDecimals);
 
         _transferSelector = bytes4(keccak256(bytes("transfer(address,uint256)")));
@@ -437,7 +437,7 @@ contract ACOToken is ERC20 {
      * @param account Address of the account.
      * @param tokenAmount Amount of tokens to be burned.
      */
-    // SWC-Transaction Order Dependence: L441-L443
+    // SWC-114-Transaction Order Dependence: L441-L443
     function burnFrom(address account, uint256 tokenAmount) external {
         _burn(account, tokenAmount);
     }
@@ -566,7 +566,7 @@ contract ACOToken is ERC20 {
      */
     function _mintToken(address account, uint256 collateralAmount) nonReentrant notExpired internal {
         require(collateralAmount > 0, "ACOToken::_mintToken: Invalid collateral amount");
-        // SWC-DoS With Block Gas Limit: L570-L573
+        // SWC-128-DoS With Block Gas Limit: L570-L573
         if (!_accountHasCollateral(account)) {
             tokenData[account].index = _collateralOwners.length;
             _collateralOwners.push(account);
@@ -737,7 +737,7 @@ contract ACOToken is ERC20 {
         
         // Whether an account has deposited collateral it only can exercise the extra amount of unassignable tokens.
         if (_accountHasCollateral(account)) {
-            // SWC-Code With No Effects: L741
+            // SWC-135-Code With No Effects: L741
             require(balanceOf(account) > tokenData[account].amount, "ACOToken::_validateAndBurn: Tokens compromised");
             require(tokenAmount <= balanceOf(account).sub(tokenData[account].amount), "ACOToken::_validateAndBurn: Token amount not available"); 
         }
@@ -1014,7 +1014,7 @@ contract ACOToken is ERC20 {
             } else if (number == 0) {
                 buffer[index--] = byte("0");
             } else {
-                // SWC-Code With No Effects: L1018
+                // SWC-135-Code With No Effects: L1018
                 if (representativeAt <= int256(i)) {
                     buffer[index--] = byte(uint8(48 + number % 10));
                 }

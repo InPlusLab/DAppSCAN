@@ -46,7 +46,7 @@ contract Administratable {
                     }
             } else {
                 require(msg.sender == endaomentAdmin.getRoleAddress(IEndaomentAdmin.Role.ADMIN), "Only ADMIN can access");
-//            SWC-Requirement Violation:L48
+//            SWC-123-Requirement Violation:L48
             }
         } else {
             require(msg.sender == endaomentAdmin.getRoleAddress(IEndaomentAdmin.Role.ADMIN), "Only ADMIN can access");

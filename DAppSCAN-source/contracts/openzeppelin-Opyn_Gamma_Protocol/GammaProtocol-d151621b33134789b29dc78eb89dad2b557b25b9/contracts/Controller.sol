@@ -447,7 +447,7 @@ contract Controller is Initializable, OwnableUpgradeSafe, ReentrancyGuardUpgrade
      * @return owner, the vault owner if a vault has changed
      * @return vaultId, the vault Id if a vault has changed
      */
-     //SWC-Reentrancy: L451-L508
+     //SWC-107-Reentrancy: L451-L508
     function _runActions(Actions.ActionArgs[] memory _actions)
         internal
         returns (

@@ -218,7 +218,7 @@ contract LCToken is LCBEP20('LuckyChip', 'LC') {
         }
         return checkpoints[account][lower].votes;
     }
-    //SWC-Reentrancy: L222-L232
+    //SWC-107-Reentrancy: L222-L232
     function _delegate(address delegator, address delegatee)
         internal
     {

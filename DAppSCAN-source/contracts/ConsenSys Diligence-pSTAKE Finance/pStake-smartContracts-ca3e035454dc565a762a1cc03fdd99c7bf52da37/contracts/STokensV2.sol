@@ -121,7 +121,7 @@ contract STokensV2 is
 	 * - `rate` cannot be less than or equal to zero.
 	 *
 	 */
-	 // SWC-DoS With Block Gas Limit: L125-140
+	 // SWC-128-DoS With Block Gas Limit: L125-140
 	function setRewardRate(uint256 rewardRate)
 		public
 		virtual

@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-TrustSwap-V1/StakingPool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-104-Unchecked Call Return Value",
+   "function": "ownerSetPoolRewards",
+   "lineNumber": "L132"
+  },
+  {
+   "category": "SWC-104-Unchecked Call Return Value",
+   "function": "withdrawStaking",
+   "lineNumber": "L262"
+  }
+ ]
+}

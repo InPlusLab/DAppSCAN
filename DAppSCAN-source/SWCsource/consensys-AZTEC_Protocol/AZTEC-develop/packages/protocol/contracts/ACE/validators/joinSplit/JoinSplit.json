@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-AZTEC_Protocol/AZTEC-develop/packages/protocol/contracts/ACE/validators/joinSplit/JoinSplit.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-AZTEC_Protocol/AZTEC-develop/packages/protocol/contracts/ACE/validators/joinSplit/JoinSplit.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "validateJoinSplit",
    "lineNumber": "L75-L78"
   }

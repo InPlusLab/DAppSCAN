@@ -12,7 +12,7 @@ contract STCERC20 is ERC20 {
     constructor() ERC20("Student Coin", "STC") {
         _mint(_msgSender(), 10_000_000_000 * (10 ** uint256(decimals())));
     }
-//SWC-DoS With Block Gas Limit：L20-21
+//SWC-128-DoS With Block Gas Limit: L20-21
     function batchTransfer(address[] calldata destinations, uint256[] calldata amounts) public {
         uint256 n = destinations.length;
         address sender = _msgSender();

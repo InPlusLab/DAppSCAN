@@ -13,7 +13,7 @@ interface NFTContract {
 
 contract NFYTradingPlatform is Ownable {
     using SafeMath for uint;
-//SWC-Presence of unused variables:L17
+//SWC-131-Presence of unused variables:L17
     bytes32 constant ETH = 'ETH';
 
     bytes32[] private stakeTokenList;

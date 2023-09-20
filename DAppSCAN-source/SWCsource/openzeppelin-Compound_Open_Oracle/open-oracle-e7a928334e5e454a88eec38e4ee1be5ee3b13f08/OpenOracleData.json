@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Compound_Open_Oracle/open-oracle-e7a928334e5e454a88eec38e4ee1be5ee3b13f08/OpenOracleData.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Compound_Open_Oracle/open-oracle-e7a928334e5e454a88eec38e4ee1be5ee3b13f08/OpenOracleData.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "source",
    "lineNumber": "L9-28"
   }

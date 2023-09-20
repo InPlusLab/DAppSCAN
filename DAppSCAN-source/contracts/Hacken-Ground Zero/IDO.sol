@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.4;
 
 /**
@@ -8,7 +8,7 @@ pragma solidity ^0.8.4;
  */
 
 //FOR TESTING PURPOSES
-// SWC-Code With No Effects: L12 - L13
+// SWC-135-Code With No Effects: L12 - L13
 import "@openzeppelin/contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol";
 import "@openzeppelin/contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol";
 import "hardhat/console.sol";
@@ -81,8 +81,8 @@ contract IDO is Ownable {
         emit NewIDOParticipant(token, msg.sender, amountToSpent);
     }
 
-// SWC-Unprotected Ether Withdrawal: L83 - L106
-// SWC-Reentrancy: L84 - L107
+// SWC-105-Unprotected Ether Withdrawal: L83 - L106
+// SWC-107-Reentrancy: L84 - L107
     function claim() external {
         require(block.timestamp > idoFinish, "The IDO is not finished yet");
         require(pool[msg.sender].start != 0, "You're not participating in IDO");
@@ -96,7 +96,7 @@ contract IDO is Ownable {
             (pool[msg.sender].claimedAmount < pool[msg.sender].amountToClaim) &&
             ((pool[msg.sender].amountToClaim - pool[msg.sender].claimedAmount) >= allowedAmountToClaim)
         ) {
-            // SWC-Unchecked Call Return Value: L97
+            // SWC-104-Unchecked Call Return Value: L97
             GZT.transfer(msg.sender, allowedAmountToClaim);
             pool[msg.sender].claimedLastTime = block.timestamp;
         } else if (
@@ -145,11 +145,11 @@ contract IDO is Ownable {
         allowedAmountToClaim = _allowedAmountToClaim;
     }
 
-// SWC-Unprotected Ether Withdrawal: L145 - l149
+// SWC-105-Unprotected Ether Withdrawal: L145 - l149
     function claimTheInvestments(IERC20 token, uint256 amount) external onlyOwner {
         require(block.timestamp > idoFinish, "The IDO is not finished yet");
 
-// SWC-Unchecked Call Return Value: L150
+// SWC-104-Unchecked Call Return Value: L150
         token.transfer(msg.sender, amount);
     }
 

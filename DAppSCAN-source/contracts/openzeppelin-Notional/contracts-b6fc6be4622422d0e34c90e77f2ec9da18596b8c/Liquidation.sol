@@ -29,7 +29,7 @@ library Liquidation {
         uint128 collateralTransfer;
         int256 payerCollateralBalance;
     }
-//SWC-Presence of unused variables:L33
+//SWC-131-Presence of unused variables:L33
     struct CollateralCurrencyParameters {
         uint128 localCurrencyRequired;
         int256 localCurrencyAvailable;

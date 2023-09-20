@@ -33,7 +33,7 @@ contract Staking is
 {
     // this contract can receive ETH
     // solhint-disable no-empty-blocks
-    // SWC-Code With No Effects: L37-40
+    // SWC-135-Code With No Effects: L37-40
     function ()
         external
         payable

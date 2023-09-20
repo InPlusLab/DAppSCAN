@@ -21,7 +21,7 @@ abstract contract Context {
         return msg.sender;
     }
 
-// SWC-Code With No Effects: L25 - L27
+// SWC-135-Code With No Effects: L25 - L27
     function _msgData() internal view virtual returns (bytes calldata) {
         return msg.data;
     }

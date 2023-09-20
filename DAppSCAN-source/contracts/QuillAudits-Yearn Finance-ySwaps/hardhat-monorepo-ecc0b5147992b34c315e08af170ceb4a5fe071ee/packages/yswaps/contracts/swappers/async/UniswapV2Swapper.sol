@@ -49,7 +49,7 @@ contract UniswapV2Swapper is IUniswapV2Swapper, AsyncSwapper {
       _path,
       _receiver,
       block.timestamp
-    // SWC-Code With No Effects: L53
+    // SWC-135-Code With No Effects: L53
     )[_path.length - 1];
   }
 }

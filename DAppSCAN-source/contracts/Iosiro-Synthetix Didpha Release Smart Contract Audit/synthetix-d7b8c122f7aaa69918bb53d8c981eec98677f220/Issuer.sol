@@ -241,7 +241,7 @@ contract Issuer is Owned, MixinSystemSettings, IIssuer {
     function _canBurnSynths(address account) internal view returns (bool) {
         return now >= _lastIssueEvent(account).add(getMinimumStakeTime());
     }
-//SWC-Use of Deprecated Solidity Functions:L242
+//SWC-111-Use of Deprecated Solidity Functions:L242
     function _lastIssueEvent(address account) internal view returns (uint) {
         //  Get the timestamp of the last issue this account made
         return flexibleStorage().getUIntValue(CONTRACT_NAME, keccak256(abi.encodePacked(LAST_ISSUE_EVENT, account)));

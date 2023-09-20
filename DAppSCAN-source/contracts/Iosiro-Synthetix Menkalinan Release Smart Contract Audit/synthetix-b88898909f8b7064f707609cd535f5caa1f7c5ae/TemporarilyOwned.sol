@@ -10,7 +10,7 @@ contract TemporarilyOwned {
         temporaryOwner = _temporaryOwner;
         expiryTime = now + _ownershipDuration;
     }
-//SWC-Use of Deprecated Solidity Functions:L11, 20
+//SWC-111-Use of Deprecated Solidity Functions:L11, 20
     modifier onlyTemporaryOwner {
         _onlyTemporaryOwner();
         _;

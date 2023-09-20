@@ -26,7 +26,7 @@ library ShibaLibrary {
     }
 
     // fetches and sorts the reserves for a pair
-    // SWC-Code With No Effects: L30 - L35
+    // SWC-135-Code With No Effects: L30 - L35
     function getReserves(address factory, address tokenA, address tokenB) internal view returns (uint reserveA, uint reserveB) {
         (address token0,) = sortTokens(tokenA, tokenB);
         pairFor(factory, tokenA, tokenB);

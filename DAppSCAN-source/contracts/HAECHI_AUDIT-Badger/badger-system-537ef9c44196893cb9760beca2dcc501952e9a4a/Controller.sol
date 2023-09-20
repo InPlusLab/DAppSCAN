@@ -24,7 +24,7 @@ contract Controller is SettAccessControl {
     mapping(address => address) public strategies;
     mapping(address => mapping(address => address)) public converters;
     mapping(address => mapping(address => bool)) public approvedStrategies;
-//SWC-Presence of unused variables：L28、29
+//SWC-131-Presence of unused variables: L28, L29
     uint256 public split = 500;
     uint256 public constant max = 10000;
 

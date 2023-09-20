@@ -427,7 +427,7 @@ contract MixinMatchOrders is
     /// @param rightOrder Second matched order.
     /// @param takerAddress Address that matched the orders. The taker receives the spread between orders as profit.
     /// @param matchedFillResults Struct holding amounts to transfer between makers, taker, and fee recipients.
-    // SWC-DoS with Failed Call: L432 - L548
+    // SWC-113-DoS with Failed Call: L432 - L548
 
     function _settleMatchedOrders(
         bytes32 leftOrderHash,

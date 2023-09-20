@@ -133,7 +133,7 @@ contract Strategy is BaseStrategy {
     // lent assets plus loose assets
     function estimatedTotalAssets() public view override returns (uint256) {
         uint256 nav = lentTotalAssets();
-        // SWC-Integer Overflow and Underflow: L137
+        // SWC-101-Integer Overflow and Underflow: L137
         nav += want.balanceOf(address(this));
 
         return nav;
@@ -153,7 +153,7 @@ contract Strategy is BaseStrategy {
         uint256 weightedAPR = 0;
 
         for (uint256 i = 0; i < lenders.length; i++) {
-        // SWC-Integer Overflow and Underflow: L157
+        // SWC-101-Integer Overflow and Underflow: L157
             weightedAPR += lenders[i].weightedApr();
         }
 
@@ -179,7 +179,7 @@ contract Strategy is BaseStrategy {
 
         for (uint256 i = 0; i < lenders.length; i++) {
             if (i != aprChoice) {
-            // SWC-Integer Overflow and Underflow: L183
+            // SWC-101-Integer Overflow and Underflow: L183
                 weightedAPR += lenders[i].weightedApr();
             }
         }
@@ -206,7 +206,7 @@ contract Strategy is BaseStrategy {
 
         for (uint256 i = 0; i < lenders.length; i++) {
             if (i != aprChoice) {
-                // SWC-Integer Overflow and Underflow: L210
+                // SWC-101-Integer Overflow and Underflow: L210
                 weightedAPR += lenders[i].weightedApr();
             } else {
                 uint256 asset = lenders[i].nav();
@@ -214,7 +214,7 @@ contract Strategy is BaseStrategy {
                     //simplistic. not accurate
                     change = asset;
                 }
-                // SWC-Integer Overflow and Underflow: 218
+                // SWC-101-Integer Overflow and Underflow: 218
                 weightedAPR += lowestApr.mul(change);
             }
         }
@@ -289,7 +289,7 @@ contract Strategy is BaseStrategy {
     function lentTotalAssets() public view returns (uint256) {
         uint256 nav = 0;
         for (uint256 i = 0; i < lenders.length; i++) {
-            // SWC-Integer Overflow and Underflow: 293
+            // SWC-101-Integer Overflow and Underflow: 293
             nav += lenders[i].nav();
         }
         return nav;
@@ -396,7 +396,7 @@ contract Strategy is BaseStrategy {
 
         if (potential > lowestApr) {
             //apr should go down after deposit so wont be withdrawing from self
-            // SWC-Unchecked Call Return Value: L400
+            // SWC-104-Unchecked Call Return Value: L400
             lenders[lowest].withdrawAll();
         }
 
@@ -417,9 +417,9 @@ contract Strategy is BaseStrategy {
     function manualAllocation(lenderRatio[] memory _newPositions) public onlyAuthorized {
         uint256 share = 0;
 
-        // SWC-DoS With Block Gas Limit: L421 - L424
+        // SWC-128-DoS With Block Gas Limit: L421 - L424
         for (uint256 i = 0; i < lenders.length; i++) {
-            // SWC-Unchecked Call Return Value: L422
+            // SWC-104-Unchecked Call Return Value: L422
             lenders[i].withdrawAll();
         }
 
@@ -436,7 +436,7 @@ contract Strategy is BaseStrategy {
             }
             require(found, "NOT LENDER");
 
-            // SWC-Integer Overflow and Underflow: 437
+            // SWC-101-Integer Overflow and Underflow: 437
             share += _newPositions[i].share;
             uint256 toSend = assets.mul(_newPositions[i].share).div(1000);
             want.safeTransfer(_newPositions[i].lender, toSend);
@@ -471,7 +471,7 @@ contract Strategy is BaseStrategy {
             if (!lenders[lowest].hasAssets()) {
                 return amountWithdrawn;
             }
-            // SWC-Integer Overflow and Underflow: 472
+            // SWC-101-Integer Overflow and Underflow: 472
             amountWithdrawn += lenders[lowest].withdraw(_amount - amountWithdrawn);
             j++;
             //dont want infinite loop
@@ -555,7 +555,7 @@ contract Strategy is BaseStrategy {
 
             uint256 wantCallCost = _callCostToWant(callCost);
 
-            // SWC-Integer Overflow and Underflow: 556
+            // SWC-101-Integer Overflow and Underflow: 556
             return (wantCallCost * callCost < profitIncrease);
         }
     }

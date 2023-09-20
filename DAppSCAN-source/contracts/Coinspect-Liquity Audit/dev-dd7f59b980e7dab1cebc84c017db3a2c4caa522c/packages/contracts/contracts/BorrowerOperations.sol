@@ -317,7 +317,7 @@ contract BorrowerOperations is LiquityBase, Ownable, CheckContract, IBorrowerOpe
         );
     }
 
-// SWC-Unprotected Ether Withdrawal: L321 - L351
+// SWC-105-Unprotected Ether Withdrawal: L321 - L351
     function closeTrove() external override {
         ITroveManager troveManagerCached = troveManager;
         IActivePool activePoolCached = activePool;

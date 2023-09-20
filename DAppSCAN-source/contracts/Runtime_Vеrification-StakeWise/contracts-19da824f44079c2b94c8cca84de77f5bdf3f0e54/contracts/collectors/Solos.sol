@@ -85,7 +85,7 @@ contract Solos is ISolos, ReentrancyGuard, OwnablePausable {
         }
         // the deposit can be canceled after lock has expired and it was not yet sent for staking
         // solhint-disable-next-line not-rely-on-time
-        // SWC-Integer Overflow and Underflow: L89
+        // SWC-101-Integer Overflow and Underflow: L89
         solo.releaseTime = block.timestamp + cancelLockDuration;
 
         // emit event
@@ -112,7 +112,7 @@ contract Solos is ISolos, ReentrancyGuard, OwnablePausable {
         if (newAmount > 0) {
             solo.amount = newAmount;
             // solhint-disable-next-line not-rely-on-time
-            // SWC-Integer Overflow and Underflow: L116
+            // SWC-101-Integer Overflow and Underflow: L116
             solo.releaseTime = block.timestamp + cancelLockDuration;
         } else {
             delete solos[soloId];

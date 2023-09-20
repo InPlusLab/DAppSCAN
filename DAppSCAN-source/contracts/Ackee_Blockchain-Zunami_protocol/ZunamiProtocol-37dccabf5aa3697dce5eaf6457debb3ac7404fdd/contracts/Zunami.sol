@@ -41,7 +41,7 @@ contract Zunami is Context, Ownable, ERC20 {
     uint256 public managementFee = 10; // 1%
     bool public isLock = false;
     uint256 public constant MIN_LOCK_TIME = 86400; // 1 day
-    // SWC-Code With No Effects: L45-47
+    // SWC-135-Code With No Effects: L45-47
     address public admin;
     uint256 public completedDeposits;
     uint256 public completedWithdrawals;
@@ -70,7 +70,7 @@ contract Zunami is Context, Ownable, ERC20 {
         require(newManagementFee < FEE_DENOMINATOR, "Zunami: wrong fee");
         managementFee = newManagementFee;
     }
-    // SWC-Function Default Visibility: L74
+    // SWC-100-Function Default Visibility: L74
     function calcManagementFee(uint256 amount) public view virtual
     returns (uint256)
     {

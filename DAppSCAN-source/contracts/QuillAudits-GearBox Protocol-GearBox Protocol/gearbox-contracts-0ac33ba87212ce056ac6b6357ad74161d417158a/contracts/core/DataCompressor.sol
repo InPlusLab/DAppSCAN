@@ -69,7 +69,7 @@ contract DataCompressor {
         returns (DataTypes.CreditAccountData[] memory)
     {
         // Counts how much opened account a borrower has
-        // SWC-Code With No Effects: L73
+        // SWC-135-Code With No Effects: L73
         uint256 count = 0;
         for (
             uint256 i = 0;

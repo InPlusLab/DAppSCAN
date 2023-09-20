@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/HoldefiPrices.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/HoldefiPrices.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "",
    "lineNumber": "L47-49"
   }

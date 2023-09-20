@@ -99,7 +99,7 @@ contract RocketMinipool is RocketMinipoolStorageLayout {
     }
 
     // Delegate all other calls to minipool delegate contract
-    // SWC-Delegatecall to Untrusted Callee: L103 - L109
+    // SWC-112-Delegatecall to Untrusted Callee: L103 - L109
     fallback(bytes calldata _input) external payable returns (bytes memory) {
         // If useLatestDelegate is set, use the latest delegate contract
         address delegateContract = useLatestDelegate ? getContractAddress("rocketMinipoolDelegate") : rocketMinipoolDelegate;

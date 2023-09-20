@@ -114,7 +114,7 @@ contract YearnV2YieldSource is IYieldSource, ERC20Upgradeable, OwnableUpgradeabl
     /// @dev Asset tokens are supplied to the yield source, then deposited into Aave
     /// @param _amount The amount of asset tokens to be supplied
     /// @param to The user whose balance will receive the tokens
-    // SWC-Reentrancy: L118-L129
+    // SWC-107-Reentrancy: L118-L129
     function supplyTokenTo(uint256 _amount, address to) override external {
         uint256 shares = _tokenToShares(_amount);
 

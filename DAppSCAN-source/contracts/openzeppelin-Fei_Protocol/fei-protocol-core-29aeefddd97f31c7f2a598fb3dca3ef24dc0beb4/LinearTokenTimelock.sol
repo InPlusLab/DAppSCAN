@@ -56,7 +56,7 @@ contract LinearTokenTimelock is Timed {
     function totalToken() public view virtual returns(uint) {
         return lockedToken.balanceOf(address(this));
     }
-//SWC-Integer Overflow and Underflow:L60
+//SWC-101-Integer Overflow and Underflow:L60
     function alreadyReleasedAmount() public view returns(uint) {
         return initialBalance - totalToken();
     }

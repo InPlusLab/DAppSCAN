@@ -177,7 +177,7 @@ contract C98MSiG is MSiG {
     }
 
     /// @dev Owner vote for the current request. Then execute the request if enough votes
-    // SWC-Reentrancy: L181
+    // SWC-107-Reentrancy: L181
     function vote()
         isOwner(msg.sender)
         public override returns (bool) {

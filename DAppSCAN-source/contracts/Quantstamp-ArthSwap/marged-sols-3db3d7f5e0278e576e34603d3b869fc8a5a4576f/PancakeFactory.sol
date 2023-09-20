@@ -162,7 +162,7 @@ contract PancakeERC20 is IPancakeERC20 {
         emit Transfer(from, to, value);
     }
 
-// SWC-Transaction Order Dependence: L166 - L169
+// SWC-114-Transaction Order Dependence: L166 - L169
     function approve(address spender, uint value) external returns (bool) {
         _approve(msg.sender, spender, value);
         return true;

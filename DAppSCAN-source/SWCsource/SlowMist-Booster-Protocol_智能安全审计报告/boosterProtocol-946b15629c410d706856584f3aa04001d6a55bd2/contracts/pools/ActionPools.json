@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/SlowMist-Booster-Protocol_\u667a\u80fd\u5b89\u5168\u5ba1\u8ba1\u62a5\u544a/boosterProtocol-946b15629c410d706856584f3aa04001d6a55bd2/contracts/pools/ActionPools.sol",
+ "filePath": "DAppSCAN-source/contracts/SlowMist-Booster-Protocol_\u667a\u80fd\u5b89\u5168\u5ba1\u8ba1\u62a5\u544a/boosterProtocol-946b15629c410d706856584f3aa04001d6a55bd2/contracts/pools/ActionPools.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lineNumber": "L72 - L74"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "safeTokenTransfer",
    "lineNumber": "L372"
   }

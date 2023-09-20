@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity ^0.4.24;
 
 import "../Roles.sol";

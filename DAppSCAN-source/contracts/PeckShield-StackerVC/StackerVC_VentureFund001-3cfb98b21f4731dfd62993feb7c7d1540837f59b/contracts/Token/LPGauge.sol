@@ -71,7 +71,7 @@ contract LPGauge is ReentrancyGuard {
     	
     	endBlock = _block;
     }
-	//SWC-Reentrancy: L75-L89
+	//SWC-107-Reentrancy: L75-L89
     function deposit(uint256 _amount) nonReentrant external {
     	require(block.number <= endBlock, "LPGAUGE: distribution over");
 

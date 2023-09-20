@@ -18,7 +18,7 @@ contract UniswapSingleEthRouter is IUniswapSingleEthRouter {
 	}
 
     receive() external payable {
-        // SWC-Assert Violation: L22
+        // SWC-110-Assert Violation: L22
         assert(msg.sender == address(WETH)); // only accept ETH via fallback from the WETH contract
     }
 

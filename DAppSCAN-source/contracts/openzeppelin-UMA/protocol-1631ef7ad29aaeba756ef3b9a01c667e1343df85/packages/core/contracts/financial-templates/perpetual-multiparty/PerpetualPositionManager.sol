@@ -12,7 +12,7 @@ import "../../common/interfaces/ExpandedIERC20.sol";
 import "../../oracle/interfaces/OracleInterface.sol";
 import "../../oracle/interfaces/IdentifierWhitelistInterface.sol";
 import "../../oracle/implementation/Constants.sol";
-// SWC-Code With No Effects: L16
+// SWC-135-Code With No Effects: L16
 import "../common/FeePayer.sol";
 import "../common/FundingRateApplier.sol";
 
@@ -505,7 +505,7 @@ contract PerpetualPositionManager is FundingRateApplier {
      * Upon emergency shutdown, the contract settlement time is set to the shutdown time. This enables withdrawal
      * to occur via the `settleEmergencyShutdown` function.
      */
-    // SWC-Incorrect Inheritance Order: L509-L517
+    // SWC-125-Incorrect Inheritance Order: L509-L517
     function emergencyShutdown() external override notEmergencyShutdown() fees() nonReentrant() {
         // Note: revert reason removed to save bytecode.
         require(msg.sender == _getFinancialContractsAdminAddress());

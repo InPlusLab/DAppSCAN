@@ -1,6 +1,6 @@
 // contracts/LockletToken.sol
 // SPDX-License-Identifier: No License
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";

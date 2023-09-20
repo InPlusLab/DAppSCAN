@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Yearn Vaults V3/yearn-vaults-e390c2a6b2ba6e2ecc8f3a72a1ea4adfabd17544/contracts/BaseWrapper.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Yearn Finance-Yearn Vaults V3/yearn-vaults-e390c2a6b2ba6e2ecc8f3a72a1ea4adfabd17544/contracts/BaseWrapper.sol",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_deposit",
    "lineNumber": "L138"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_withdraw",
    "lineNumber": "L152 - L192"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_withdraw",
    "lineNumber": "L174"
   }

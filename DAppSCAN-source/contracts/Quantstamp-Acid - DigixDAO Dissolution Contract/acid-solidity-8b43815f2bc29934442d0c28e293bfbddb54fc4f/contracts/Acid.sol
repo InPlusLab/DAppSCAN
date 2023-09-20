@@ -1,4 +1,4 @@
-//SWC-Floating Pragma: L2
+//SWC-103-Floating Pragma: L2
 pragma solidity 0.5.16;
 
 import "./DGDInterface.sol";
@@ -43,7 +43,7 @@ contract Acid {
     isInitialized = true;
     _success = true;
   }
-  //SWC-Integer Overflow and Underflow: L47-L59
+  //SWC-101-Integer Overflow and Underflow: L47-L59
   function burn() public requireInitialized() returns (bool _success) {
     // Rate will be calculated based on the nearest decimal
     uint256 _amount = DGDInterface(dgdTokenContract).balanceOf(msg.sender);
@@ -51,8 +51,8 @@ contract Acid {
     require(address(this).balance >= _wei, "Contract does not have enough funds");
     require(DGDInterface(dgdTokenContract).transferFrom(msg.sender, 0x0000000000000000000000000000000000000000, _amount), "No DGDs or DGD account not authorized");
     address _user = msg.sender;
-    //SWC-Unchecked Call Return Value: L56
-    //SWC-DoS with Failed Call: L56
+    //SWC-104-Unchecked Call Return Value: L56
+    //SWC-113-DoS with Failed Call: L56
     (_success,) = _user.call.value(_wei)('');
     require(_success, "Transfer of Ether failed");
     emit Refund(_user, _amount, _wei);

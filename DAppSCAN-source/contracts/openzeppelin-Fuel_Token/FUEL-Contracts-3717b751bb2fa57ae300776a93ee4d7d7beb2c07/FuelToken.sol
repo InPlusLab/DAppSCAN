@@ -184,7 +184,7 @@ contract FuelToken is ERC20, Ownable, NonZero {
         vanbexTeamSupply = 0;
         return true;
     }
-//SWC-Transaction Order Dependence:L189
+//SWC-114-Transaction Order Dependence:L189
     // Finalize presale. If there are leftover FUEL, let them overflow to the crowdfund
     function finalizePresale() external onlyOwner returns (bool success) {
         require(presaleFinalized == false);

@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.5.16;
 
 // Inheritance

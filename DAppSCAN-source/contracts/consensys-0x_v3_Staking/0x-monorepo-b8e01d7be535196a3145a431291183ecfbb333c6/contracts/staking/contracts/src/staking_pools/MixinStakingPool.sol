@@ -1,4 +1,4 @@
-// SWC-Delegatecall to Untrusted Callee: L1-350
+// SWC-112-Delegatecall to Untrusted Callee: L1-350
 /*
 
   Copyright 2019 ZeroEx Intl.

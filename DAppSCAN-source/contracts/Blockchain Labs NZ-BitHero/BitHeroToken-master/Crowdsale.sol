@@ -145,7 +145,7 @@ contract Crowdsale is CrowdsaleBase {
    * Set policy do we need to have server-side customer ids for the investments.
    *
    */
-  //  SWC-Function Default Visibility: L149
+  //  SWC-100-Function Default Visibility: L149
   function setRequireCustomerId(bool value) onlyOwner {
     requireCustomerId = value;
     InvestmentPolicyChanged(requireCustomerId, requiredSignedAddress, signerAddress);
@@ -157,7 +157,7 @@ contract Crowdsale is CrowdsaleBase {
    * This is e.g. for the accredited investor clearing.
    *
    */
-  //  SWC-Function Default Visibility: L160
+  //  SWC-100-Function Default Visibility: L160
   function setRequireSignedAddress(bool value, address _signerAddress) onlyOwner {
     requiredSignedAddress = value;
     signerAddress = _signerAddress;

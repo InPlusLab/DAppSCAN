@@ -147,11 +147,11 @@ abstract contract BaseUpgradableMarketplace is ReentrancyGuardUpgradeable, Pausa
     function _handleSaleFunds(address _fundsReceiver, uint256 _platformCommission) internal {
         uint256 koCommission = (msg.value / modulo) * _platformCommission;
         if (koCommission > 0) {
-        // SWC-DoS with Failed Call: L151
+        // SWC-113-DoS with Failed Call: L151
             (bool koCommissionSuccess,) = platformAccount.call{value : koCommission}("");
             require(koCommissionSuccess, "commission payment failed");
         }
-        // SWC-DoS with Failed Call: L155
+        // SWC-113-DoS with Failed Call: L155
         (bool success,) = _fundsReceiver.call{value : msg.value - koCommission}("");
         require(success, "payment failed");
     }

@@ -129,7 +129,7 @@ contract CCapableErc20 is CToken, CCapableErc20Interface, CCapableDelegateInterf
     /**
      * @notice Absorb excess cash into reserves.
      */
-    //  SWC-Reentrancy: L133
+    //  SWC-107-Reentrancy: L133
     function gulp() external {
         uint256 cashOnChain = getCashOnChain();
         uint256 cashPrior = getCashPrior();

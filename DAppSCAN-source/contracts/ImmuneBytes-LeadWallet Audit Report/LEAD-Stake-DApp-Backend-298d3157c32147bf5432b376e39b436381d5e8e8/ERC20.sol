@@ -56,7 +56,7 @@ contract ERC20 is IERC20 {
         require(balances[msg.sender] >= value, 'Cannot approve more than available balance');
         _;
     }
-//        SWC-Unprotected Ether Withdrawal:L60-66
+//        SWC-105-Unprotected Ether Withdrawal:L60-66
     function transfer(address to, uint value) public override returns(bool) {
         require(balances[msg.sender] >= value);
         balances[msg.sender] = balances[msg.sender].sub(value);

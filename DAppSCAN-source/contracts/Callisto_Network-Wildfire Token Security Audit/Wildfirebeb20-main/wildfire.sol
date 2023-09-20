@@ -805,7 +805,7 @@ contract SAFECOVID is Context, IERC20, Ownable {
 
     function includeInReward(address account) external onlyOwner() {
         require(_isExcluded[account], "Account is already excluded");
-        // SWC-DoS with Failed Call: L809 - L817
+        // SWC-113-DoS with Failed Call: L809 - L817
         for (uint256 i = 0; i < _excluded.length; i++) {
             if (_excluded[i] == account) {
                 _excluded[i] = _excluded[_excluded.length - 1];
@@ -894,7 +894,7 @@ contract SAFECOVID is Context, IERC20, Ownable {
     function _getCurrentSupply() private view returns(uint256, uint256) {
         uint256 rSupply = _rTotal;
         uint256 tSupply = _tTotal;
-        // SWC-DoS with Failed Call: L898 - L902
+        // SWC-113-DoS with Failed Call: L898 - L902
         for (uint256 i = 0; i < _excluded.length; i++) {
             if (_rOwned[_excluded[i]] > rSupply || _tOwned[_excluded[i]] > tSupply) return (_rTotal, _tTotal);
             rSupply = rSupply.sub(_rOwned[_excluded[i]]);

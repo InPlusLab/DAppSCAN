@@ -218,7 +218,7 @@ contract Home is Version0, QueueManager, MerkleTreeManager, NomadBase {
      * @param _newRoot New merkle root to update the contract state to
      * @param _signature Updater signature on `_committedRoot` and `_newRoot`
      */
-    //  SWC-DoS With Block Gas Limit: L221 - L237
+    //  SWC-128-DoS With Block Gas Limit: L221 - L237
     function update(
         bytes32 _committedRoot,
         bytes32 _newRoot,

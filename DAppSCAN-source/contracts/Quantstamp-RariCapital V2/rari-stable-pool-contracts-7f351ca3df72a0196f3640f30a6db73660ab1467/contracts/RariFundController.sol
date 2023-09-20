@@ -148,7 +148,7 @@ contract RariFundController is Ownable {
         require(RariFundController(newContract).IS_RARI_FUND_CONTROLLER(), "New contract does not have IS_RARI_FUND_CONTROLLER set to true.");
 
         // For each supported currency:
-    //  SWC-DoS With Block Gas Limit: L52
+    //  SWC-128-DoS With Block Gas Limit: L52
         for (uint256 i = 0; i < _supportedCurrencies.length; i++) {
             string memory currencyCode = _supportedCurrencies[i];
 
@@ -601,7 +601,7 @@ contract RariFundController is Ownable {
         int256 lossRateLastDay = 0;
 
         for (uint256 i = _lossRateHistory.length; i > 0; i--) {
-            // SWC-Block values as a proxy for time: L605
+            // SWC-116-Block values as a proxy for time: L605
             if (_lossRateHistory[i - 1].timestamp < block.timestamp.sub(86400)) break;
             lossRateLastDay = lossRateLastDay.add(_lossRateHistory[i - 1].lossRate);
         }

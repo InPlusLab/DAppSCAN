@@ -14,7 +14,7 @@ import {IYVault} from "./IYVault.sol";
 import "hardhat/console.sol";
 
 /// @title Yearn Chainlink pricefeed adapter
-// SWC-Code With No Effects: L18 - L69
+// SWC-135-Code With No Effects: L18 - L69
 contract YearnPriceFeed is Proxy {
     using SafeMath for uint256;
     AggregatorV3Interface public priceFeed;

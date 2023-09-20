@@ -23,7 +23,7 @@ contract CompHelper {
     /// @notice Enters the Compound market so it can be deposited/borrowed
     /// @dev Markets can be entered multiple times, without the code reverting
     /// @param _cTokenAddr CToken address of the token
-    // SWC-Unchecked Call Return Value: L27-138
+    // SWC-104-Unchecked Call Return Value: L27-138
     function enterMarket(address _cTokenAddr) public {
         address[] memory markets = new address[](1);
         markets[0] = _cTokenAddr;

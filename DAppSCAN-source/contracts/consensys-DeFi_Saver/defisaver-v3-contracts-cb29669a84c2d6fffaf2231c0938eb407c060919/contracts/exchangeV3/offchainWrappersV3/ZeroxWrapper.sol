@@ -38,7 +38,7 @@ contract ZeroxWrapper is IOffchainWrapper, DFSExchangeHelper, AdminAuth, DSMath 
             uint srcAmount = wdiv(_exData.destAmount, _exData.offchainData.price) + 1; // + 1 so we round up
             IERC20(_exData.srcAddr).safeApprove(_exData.offchainData.allowanceTarget, srcAmount);
         }
-        // SWC-Integer Overflow and Underflow: L42-50
+        // SWC-101-Integer Overflow and Underflow: L42-50
         uint256 tokensBefore = _exData.destAddr.getBalance(address(this));
         (success, ) = _exData.offchainData.exchangeAddr.call{value: _exData.offchainData.protocolFee}(_exData.offchainData.callData);
         uint256 tokensSwaped = 0;

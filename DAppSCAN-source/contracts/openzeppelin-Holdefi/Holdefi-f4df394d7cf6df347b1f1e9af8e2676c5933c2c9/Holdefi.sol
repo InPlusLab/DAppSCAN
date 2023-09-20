@@ -209,7 +209,7 @@ contract Holdefi is HoldefiPauser {
 		updatePromotion(market);
 		
 		marketAssets[market].totalSupply = marketAssets[market].totalSupply.sub(remaining);	
-//			SWC-Message call with hardcoded gas amount:L214, 325, 397
+//			SWC-134-Message call with hardcoded gas amount:L214, 325, 397
 		if (market == address(0)){
 			msg.sender.transfer(transferAmount);
 		}
@@ -773,7 +773,7 @@ contract Holdefi is HoldefiPauser {
 	    marketAssets[market].promotionReserveLastUpdateTime = currentTime;
 		marketAssets[market].promotionDebtScaled = 0;
 		marketAssets[market].promotionDebtLastUpdateTime = currentTime;	
-//			SWC-Message call with hardcoded gas amount:L778
+//			SWC-134-Message call with hardcoded gas amount:L778
 	    if (market == address(0)){
 			msg.sender.transfer(amount);
 	    }

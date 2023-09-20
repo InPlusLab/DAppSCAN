@@ -42,7 +42,7 @@ contract HomeBridgeNativeToErc is EternalStorage, BasicBridge, BasicHomeBridge {
     }
 
     function onExecuteAffirmation(address _recipient, uint256 _value) internal returns(bool) {
-        //SWC-DoS with Failed Call: L46
+        //SWC-113-DoS with Failed Call: L46
         _recipient.transfer(_value);
         return true;
     }

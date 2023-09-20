@@ -366,7 +366,7 @@ contract LiquidStakingV2 is
 	 *
 	 * - `current block timestamp` should be after 21 days from the period where unstaked function is called.
 	 */
-	 // SWC-DoS With Block Gas Limit: L370-404
+	 // SWC-128-DoS With Block Gas Limit: L370-404
 	function withdrawUnstakedTokens(address staker)
 		public
 		virtual

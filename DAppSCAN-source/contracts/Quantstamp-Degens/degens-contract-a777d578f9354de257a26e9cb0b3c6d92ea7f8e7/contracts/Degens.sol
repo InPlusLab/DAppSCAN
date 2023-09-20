@@ -1,5 +1,5 @@
 // Degens Protocol (C) degens.com
-//SWC-Floating Pragma: L3
+//SWC-103-Floating Pragma: L3
 pragma solidity ^0.5.10;
 
 contract IERC20Token {
@@ -225,7 +225,7 @@ contract Degens {
     }
 
     function trade(uint amount, uint expiry, uint matchId, address token, uint[4][] calldata packedOrders) external {
-        //SWC-Block values as a proxy for time: L229
+        //SWC-116-Block values as a proxy for time: L229
         if (expiry != 0 && block.timestamp >= expiry) {
             emit LogTradeError(msg.sender, address(0), matchId, token, 0, uint16(TradeStatus.TRADE_EXPIRED));
             return;

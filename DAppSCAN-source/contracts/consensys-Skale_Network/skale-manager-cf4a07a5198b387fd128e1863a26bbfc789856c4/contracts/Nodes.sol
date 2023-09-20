@@ -796,7 +796,7 @@ contract Nodes is Permissions {
         nodesIPCheck[nodes[nodeIndex].ip] = false;
         nodesNameCheck[keccak256(abi.encodePacked(nodes[nodeIndex].name))] = false;
         delete nodesNameToIndex[keccak256(abi.encodePacked(nodes[nodeIndex].name))];
-        // SWC-Code With No Effects: L800
+        // SWC-135-Code With No Effects: L800
         if (nodes[nodeIndex].status == NodeStatus.Active) {
             numberOfActiveNodes--;
         } else {

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ConsenSys Diligence-Modular Interactive Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/IICOLib/truffle/contracts/InteractiveCrowdsaleLib.sol",
+ "filePath": "DAppSCAN-source/contracts/ConsenSys Diligence-Modular Interactive Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/CrowdsaleLib/IICOLib/truffle/contracts/InteractiveCrowdsaleLib.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "withdrawBid",
    "lineNumber": "L392 - L393"
   }

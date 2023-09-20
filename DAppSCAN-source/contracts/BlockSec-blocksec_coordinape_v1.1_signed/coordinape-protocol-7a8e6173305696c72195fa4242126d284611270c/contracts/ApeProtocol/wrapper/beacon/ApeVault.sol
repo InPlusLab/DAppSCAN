@@ -60,14 +60,14 @@ contract ApeVaultWrapperImplementation is BaseWrapperImplementation, OwnableImpl
 	uint256 constant TOTAL_SHARES = 10000;
 	
 	IERC20 public simpleToken;
-	// SWC-Code With No Effects: L64
+	// SWC-135-Code With No Effects: L64
 	mapping(address => bool) public hasAccess;
 
 	bool internal setup;
 	uint256 public underlyingValue;
 	address public apeRegistry;
 	VaultAPI public vault;
-	// SWC-Code With No Effects: L71
+	// SWC-135-Code With No Effects: L71
 	ApeAllowanceModule public allowanceModule;
 
 	function init(
@@ -129,7 +129,7 @@ contract ApeVaultWrapperImplementation is BaseWrapperImplementation, OwnableImpl
 	 * Used to withdraw non yield bearing tokens
 	 * @param _amount Amount of simpleToken to withdraw
 	 */
-	// SWC-Unprotected Ether Withdrawal: L133-135
+	// SWC-105-Unprotected Ether Withdrawal: L133-135
 	function apeWithdrawSimpleToken(uint256 _amount) public {
 		simpleToken.safeTransfer(msg.sender, _amount);
 	}

@@ -101,7 +101,7 @@ contract TokenDistributor{
     * @param merkleProof - proof hashes for leaf
     * @param leaf - leaf hash for user claim in merkle tree    
     **/
-    // SWC-Code With No Effects: L105-141
+    // SWC-135-Code With No Effects: L105-141
     function claimTokens(
         uint32 user_id, 
         address user_address, 
@@ -256,7 +256,7 @@ contract TokenDistributor{
     * @return boolean true on match
     */
     function _hashLeaf(uint32 user_id, uint256 user_amount, bytes32 leaf) private returns (bool) {
-        // SWC-Hash Collisions With Multiple Variable Length Arguments: L259
+        // SWC-133-Hash Collisions With Multiple Variable Length Arguments: L259
         bytes32 leaf_hash = keccak256(abi.encodePacked(keccak256(abi.encodePacked(user_id, user_amount))));
         return leaf == leaf_hash;
     } 

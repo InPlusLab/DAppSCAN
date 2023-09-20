@@ -4,7 +4,7 @@
  * https://github.com/ethereum/EIPs/issues/20
  */
 contract Token {
-//SWC-Outdated Compiler Version:all contract
+//SWC-102-Outdated Compiler Version:all contract
     /// @return total amount of tokens
     function totalSupply() constant returns (uint256 supply) {}
 
@@ -185,7 +185,7 @@ contract TokenVesting {
 		nextVestingBlock = block.number + period;
 	}
 
-//SWC-Shadowing State Variables:L133,190
+//SWC-119-Shadowing State Variables:L133,190
 	function sendTokens(uint256 _amount) private {
 	    uint256 vestAmount = _amount;
 		if (token.balanceOf(this) < _amount )

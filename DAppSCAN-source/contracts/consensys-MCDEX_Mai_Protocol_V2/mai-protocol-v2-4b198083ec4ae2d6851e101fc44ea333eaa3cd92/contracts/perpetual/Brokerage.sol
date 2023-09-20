@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2
+// SWC-102-Outdated Compiler Version: L2
 pragma solidity ^0.5.2;
 pragma experimental ABIEncoderV2; // to enable structure-type parameter
 

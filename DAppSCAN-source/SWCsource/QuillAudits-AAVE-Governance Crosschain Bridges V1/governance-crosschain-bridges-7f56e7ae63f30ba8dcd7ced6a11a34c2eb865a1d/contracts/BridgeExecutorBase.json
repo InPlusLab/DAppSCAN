@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-AAVE-Governance Crosschain Bridges V1/governance-crosschain-bridges-7f56e7ae63f30ba8dcd7ced6a11a34c2eb865a1d/contracts/BridgeExecutorBase.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-AAVE-Governance Crosschain Bridges V1/governance-crosschain-bridges-7f56e7ae63f30ba8dcd7ced6a11a34c2eb865a1d/contracts/BridgeExecutorBase.sol",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "_queue",
    "lineNumber": "L203"
   },
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "_executeTransaction",
    "lineNumber": "L237"
   },
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "_cancelTransaction",
    "lineNumber": "270"
   }

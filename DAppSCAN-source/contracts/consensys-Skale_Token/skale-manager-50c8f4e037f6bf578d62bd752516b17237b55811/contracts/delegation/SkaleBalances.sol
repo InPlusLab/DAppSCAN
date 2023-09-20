@@ -51,7 +51,7 @@ contract SkaleBalances is Permissions, IERC777Recipient {
         SkaleToken skaleToken = SkaleToken(contractManager.getContract("SkaleToken"));
         require(skaleToken.transfer(to, amountOfTokens), "Failed to transfer tokens");
     }
-    // SWC-Reentrancy: L55-68
+    // SWC-107-Reentrancy: L55-68
     function tokensReceived(
         address operator,
         address from,

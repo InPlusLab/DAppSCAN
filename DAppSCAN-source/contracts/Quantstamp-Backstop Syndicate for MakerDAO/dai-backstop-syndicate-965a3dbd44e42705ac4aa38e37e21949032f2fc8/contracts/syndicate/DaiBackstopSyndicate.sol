@@ -90,13 +90,13 @@ contract DaiBackstopSyndicate is
     );
 
     require(
-      //SWC-Reentrancy: L94
+      //SWC-107-Reentrancy: L94
       _DAI.transferFrom(msg.sender, address(this), daiAmount),
       "DaiBackstopSyndicate/enlist: Could not transfer Dai amount from caller."
     );
 
     // Place the supplied Dai into the central Maker ledger for use in auctions.
-    //SWC-Reentrancy: L100
+    //SWC-107-Reentrancy: L100
     _DAI_JOIN.join(address(this), daiAmount);
 
     // Mint tokens 1:1 to the caller in exchange for the supplied Dai.
@@ -172,7 +172,7 @@ contract DaiBackstopSyndicate is
 
   /// @notice Triggers syndicate participation in an auction, bidding 50k DAI for 500 MKR
   /// @param auctionId ID of the auction to participate in
-  //SWC-Transaction Order Dependence: L176-L227
+  //SWC-114-Transaction Order Dependence: L176-L227
   function enterAuction(uint256 auctionId) external notWhenDeactivated {
     require(
       !_activeAuctions.contains(auctionId),

@@ -8,7 +8,7 @@ contract ZipToken is PausableToken {
     uint8 public constant decimals = 18;
     uint public constant TOTAL_TOKEN_AMOUNT = 1000000000;
     uint public constant INITIAL_SUPPLY = TOTAL_TOKEN_AMOUNT * 10**uint(decimals);
-    // SWC-Presence of unused variables: L12
+    // SWC-131-Presence of unused variables: L12
     bool public filled = false;
 
     function ZipToken() public {

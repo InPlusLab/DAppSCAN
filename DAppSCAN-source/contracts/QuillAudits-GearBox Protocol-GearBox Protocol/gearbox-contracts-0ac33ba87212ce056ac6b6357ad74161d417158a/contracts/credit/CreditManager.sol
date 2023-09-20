@@ -590,7 +590,7 @@ contract CreditManager is ICreditManager, ACLTrait, ReentrancyGuard {
                         force
                     ); // T:[CM-14, 17, 22, 23]
 
-                    // SWC-Integer Overflow and Underflow: L594 - L595
+                    // SWC-101-Integer Overflow and Underflow: L594 - L595
                     totalValue += tv;
                     totalWeightedValue += tvw;
                 } // Michael Egorov gas efficiency trick
@@ -826,7 +826,7 @@ contract CreditManager is ICreditManager, ACLTrait, ReentrancyGuard {
                         tokenAddr
                     ); // T: [CM-44]
 
-                    // SWC-Write to Arbitrary Storage Location: L829
+                    // SWC-124-Write to Arbitrary Storage Location: L829
                     address[] memory currentPath = paths[i].path;
                     currentPath[0] = tokenAddr;
                     currentPath[paths[i].path.length - 1] = underlyingToken;

@@ -1251,7 +1251,7 @@ contract ConsiderationPure is ConsiderationBase {
      * @dev Internal pure function to revert and pass along the revert reason if
      *      data was returned by the last call.
      */
-    //  SWC-DoS With Block Gas Limit: L1255 - L1266
+    //  SWC-128-DoS With Block Gas Limit: L1255 - L1266
     function _revertWithReasonIfOneIsReturned() internal pure {
         assembly {
             // If data was returned...

@@ -164,7 +164,7 @@ contract GolemNetworkToken {
         // Log token creation event
         Transfer(0, msg.sender, numTokens);
     }
-//SWC-Code With No Effects:L158-165,194-196
+//SWC-135-Code With No Effects:L158-165,194-196
     // If cap was reached or crowdfunding has ended then:
     // transfer ETH to the Golem Factory address,
     // create GNT for the golemFactory (representing the company,

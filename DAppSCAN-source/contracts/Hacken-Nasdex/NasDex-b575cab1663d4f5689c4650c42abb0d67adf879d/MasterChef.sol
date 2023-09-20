@@ -36,7 +36,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
         uint256 lastRewardBlock;  // Last block number that NSDXs distribution occurs.
         uint256 accNSDXPerShare; // Accumulated NSDXs per share, times 1e12. See below.
     }
-//SWC-State Variable Default Visibility:L40-44
+//SWC-108-State Variable Default Visibility:L40-44
     // The NSDX TOKEN!
     NSDXToken immutable nsdx;
 

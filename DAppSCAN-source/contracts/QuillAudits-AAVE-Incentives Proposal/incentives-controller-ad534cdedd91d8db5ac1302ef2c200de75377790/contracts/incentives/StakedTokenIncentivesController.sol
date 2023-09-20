@@ -93,7 +93,7 @@ contract StakedTokenIncentivesController is
   }
 
   /// @inheritdoc IAaveIncentivesController
-  // SWC-Shadowing State Variables: L97
+  // SWC-119-Shadowing State Variables: L97
   function getRewardsBalance(address[] calldata assets, address user)
     external
     view
@@ -120,7 +120,7 @@ contract StakedTokenIncentivesController is
     address to
   ) external override returns (uint256) {
     require(to != address(0), 'INVALID_TO_ADDRESS');
-    // SWC-Shadowing State Variables: L123
+    // SWC-119-Shadowing State Variables: L123
     return _claimRewards(assets, amount, msg.sender, msg.sender, to);
   }
 
@@ -131,7 +131,7 @@ contract StakedTokenIncentivesController is
     address user,
     address to
   ) external override onlyAuthorizedClaimers(msg.sender, user) returns (uint256) {
-    // SWC-Shadowing State Variables: L129
+    // SWC-119-Shadowing State Variables: L129
     require(user != address(0), 'INVALID_USER_ADDRESS');
     require(to != address(0), 'INVALID_TO_ADDRESS');
     return _claimRewards(assets, amount, msg.sender, user, to);
@@ -180,7 +180,7 @@ contract StakedTokenIncentivesController is
    * @param to Address that will be receiving the rewards
    * @return Rewards claimed
    **/
-  //  SWC-Shadowing State Variables: L185
+  //  SWC-119-Shadowing State Variables: L185
   function _claimRewards(
     address[] calldata assets,
     uint256 amount,

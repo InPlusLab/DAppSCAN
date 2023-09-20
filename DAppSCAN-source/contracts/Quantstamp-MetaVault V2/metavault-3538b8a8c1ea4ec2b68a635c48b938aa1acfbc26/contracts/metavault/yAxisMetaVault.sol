@@ -241,7 +241,7 @@ contract yAxisMetaVault is ERC20, IMetaVault {
     function convert_rate(address _input, uint _amount) external override view returns (uint) {
         return converter.convert_rate(_input, address(token3CRV), _amount);
     }
-    //SWC-Unchecked Call Return Value: L245-L267
+    //SWC-104-Unchecked Call Return Value: L245-L267
     function deposit(uint _amount, address _input, uint _min_mint_amount, bool _isStake) external override checkContract {
         require(_amount > 0, "!_amount");
         uint _pool = balance();

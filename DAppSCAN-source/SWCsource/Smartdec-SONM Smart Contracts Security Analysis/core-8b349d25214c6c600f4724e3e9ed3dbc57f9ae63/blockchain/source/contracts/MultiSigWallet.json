@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Smartdec-SONM Smart Contracts Security Analysis/core-8b349d25214c6c600f4724e3e9ed3dbc57f9ae63/blockchain/source/contracts/MultiSigWallet.sol",
+ "filePath": "DAppSCAN-source/contracts/Smartdec-SONM Smart Contracts Security Analysis/core-8b349d25214c6c600f4724e3e9ed3dbc57f9ae63/blockchain/source/contracts/MultiSigWallet.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "getTransactionIds",
    "lineNumber": "L389"
   }

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-Pandora/smart-contract-d0aa3193b8ffcd7fc84481c30e16283837319719/contracts/0.8.x/contracts/libraries/Random.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-Pandora/smart-contract-d0aa3193b8ffcd7fc84481c30e16283837319719/contracts/0.8.x/contracts/libraries/Random.sol",
  "SWCs": [
   {
-   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "category": "SWC-120-Weak Sources of Randomness from Chain Attributes",
    "function": "computerSeed",
    "lineNumber": "L20-L41"
   }

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L1 -L93
+// SWC-102-Outdated Compiler Version: L1 -L93
 pragma solidity 0.6.12;
 
 /**

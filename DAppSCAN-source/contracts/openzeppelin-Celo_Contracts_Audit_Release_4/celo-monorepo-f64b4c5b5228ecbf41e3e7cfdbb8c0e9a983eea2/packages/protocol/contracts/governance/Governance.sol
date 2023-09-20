@@ -669,7 +669,7 @@ contract Governance is
    * @notice Revoke votes on all proposal of sender in the referendum stage.
    * @return Whether or not all votes of an account was successfully revoked.
    */
-  // SWC-DoS With Block Gas Limit: L673-L694
+  // SWC-128-DoS With Block Gas Limit: L673-L694
   function revokeVotes() external nonReentrant returns (bool) {
     address account = getAccounts().voteSignerToAccount(msg.sender);
     Voter storage voter = voters[account];
@@ -681,7 +681,7 @@ contract Governance is
       VoteRecord storage voteRecord = voter.referendumVotes[dequeueIndex];
       (Proposals.Proposal storage proposal, Proposals.Stage stage) =
         requireDequeuedAndDeleteExpired(voteRecord.proposalId, dequeueIndex); // prettier-ignore
-      // SWC-Requirement Violation: L685
+      // SWC-123-Requirement Violation: L685
       require(stage == Proposals.Stage.Referendum, "Incorrect proposal state");
       Proposals.VoteValue value = voteRecord.value;
       proposal.updateVote(voteRecord.weight, 0, value, Proposals.VoteValue.None);

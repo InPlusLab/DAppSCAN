@@ -187,7 +187,7 @@ contract StratAlpaca is UpgradeableOwnable, ReentrancyGuardPausable, ISimpleStra
         return _wantAmt.mul(alpacaVault.totalSupply()).div(alpacaVaultTotalToken());
     }
 
-// SWC-Transaction Order Dependence: L191
+// SWC-114-Transaction Order Dependence: L191
     function deposit(uint256 _wantAmt)
         external
         override

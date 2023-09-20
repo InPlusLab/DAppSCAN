@@ -1,4 +1,4 @@
-//SWC-Outdated Compiler Version: L2
+//SWC-102-Outdated Compiler Version: L2
 pragma solidity ^0.4.24;
 
 import './LighthouseAPI.sol';
@@ -20,7 +20,7 @@ contract LighthouseLib is LighthouseAPI, LighthouseABI {
 
     function withdraw(uint256 _value) external {
         require(balances[msg.sender] >= _value);
-        //SWC-Reentrancy: L24
+        //SWC-107-Reentrancy: L24
         require(xrt.transfer(msg.sender, _value));
         balances[msg.sender] -= _value;
 
@@ -50,7 +50,7 @@ contract LighthouseLib is LighthouseAPI, LighthouseABI {
         }
 
         // Consume one quota for transaction sending
-        //SWC-Integer Overflow and Underflow: L54
+        //SWC-101-Integer Overflow and Underflow: L54
         quota -= 1;
 
         _;
@@ -81,7 +81,7 @@ contract LighthouseLib is LighthouseAPI, LighthouseABI {
 
         _;
     }
-    //SWC-Authorization through tx.origin: L85
+    //SWC-115-Authorization through tx.origin: L85
     function to(address _to, bytes _data) external keepalive quoted member
     { require(_to.call(_data)); }
 

@@ -28,7 +28,7 @@ contract OracleRouterBase is IOracle {
             uint256 timeStamp,
             uint80 answeredInRound
         ) = AggregatorV3Interface(_feed).latestRoundData();
-        //SWC-Integer Overflow and Underflow: L32
+        //SWC-101-Integer Overflow and Underflow: L32
         uint256 _price = uint256(_iprice);
         require(_price <= MAX_DRIFT, "Oracle: Price exceeds max");
         require(_price >= MIN_DRIFT, "Oracle: Price under min");

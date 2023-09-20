@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-Zipper/zipt_token-0a3c4238353122cfc76b9fb01cd60b28b8b0c9e4/contracts/ZipToken.sol",
+ "filePath": "DAppSCAN-source/contracts/Blockchain Labs NZ-Zipper/zipt_token-0a3c4238353122cfc76b9fb01cd60b28b8b0c9e4/contracts/ZipToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lineNumber": "L12"
   }

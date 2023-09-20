@@ -39,7 +39,7 @@ library PropsRewardsLib {
     struct RewardedEntityList {
         mapping (address => bool) current;
         mapping (address => bool) previous;
-        //SWC-Code With No Effects: L43-L44
+        //SWC-135-Code With No Effects: L43-L44
         address[] currentList;
         address[] previousList;
         uint256 rewardsDay;

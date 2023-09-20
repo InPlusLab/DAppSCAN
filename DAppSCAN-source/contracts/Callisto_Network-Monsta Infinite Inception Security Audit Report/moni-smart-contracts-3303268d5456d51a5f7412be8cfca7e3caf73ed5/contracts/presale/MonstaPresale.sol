@@ -90,7 +90,7 @@ contract MonstaPresale is Pausable {
   /**
   * @dev Transfer all BNB held by the contract to the owner.
   */
-  // SWC-Unprotected Ether Withdrawal: L94-197
+  // SWC-105-Unprotected Ether Withdrawal: L94-197
   function reclaimBNB() external onlyOwner {
     owner.transfer(address(this).balance);
   }

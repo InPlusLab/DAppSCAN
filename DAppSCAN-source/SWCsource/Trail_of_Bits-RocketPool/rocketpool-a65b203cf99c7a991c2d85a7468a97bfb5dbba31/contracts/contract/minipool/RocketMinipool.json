@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-RocketPool/rocketpool-a65b203cf99c7a991c2d85a7468a97bfb5dbba31/contracts/contract/minipool/RocketMinipool.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-RocketPool/rocketpool-a65b203cf99c7a991c2d85a7468a97bfb5dbba31/contracts/contract/minipool/RocketMinipool.sol",
  "SWCs": [
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "getEffectiveDelegate",
    "lineNumber": "L103 - L109"
   }

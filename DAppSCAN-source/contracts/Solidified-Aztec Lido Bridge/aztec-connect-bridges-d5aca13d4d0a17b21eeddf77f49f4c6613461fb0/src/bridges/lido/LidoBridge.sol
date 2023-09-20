@@ -111,16 +111,16 @@ contract LidoBridge is IDefiBridge {
 
         if (curveStETHBalance > minOutput) {
             // exchange via curve since we can get a better rate
-            // SWC-Unchecked Call Return Value: L115
+            // SWC-104-Unchecked Call Return Value: L115
             curvePool.exchange{value: inputValue}(curveETHIndex, curveStETHIndex, inputValue, minOutput);
         } else {
             // deposit directly through lido since we cannot get better rate
-            // SWC-Unchecked Call Return Value: L119
+            // SWC-104-Unchecked Call Return Value: L119
             lido.submit{value: inputValue}(referral);
         }
 
         // since stETH is a rebase token, lets wrap it to wstETH before sending it back to the rollupProcessor
-        // SWC-Unchecked Call Return Value: L124
+        // SWC-104-Unchecked Call Return Value: L124
         uint256 outputStETHBalance = IERC20(address(lido)).balanceOf(address(this));
 
         IERC20(address(lido)).safeIncreaseAllowance(address(wrappedStETH), outputStETHBalance);

@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Hubii_Token/ico-142f43f3bec4afd0ffff3fce06946cf67cb0272f/Crowdsale.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Hubii_Token/ico-142f43f3bec4afd0ffff3fce06946cf67cb0272f/Crowdsale.sol",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lineNumber": "L1"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "preallocate",
    "lineNumber": "L241"
   },
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "isCrowdsale",
    "lineNumber": "L484,485"
   }

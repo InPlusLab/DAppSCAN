@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity 0.6.6;
 
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";

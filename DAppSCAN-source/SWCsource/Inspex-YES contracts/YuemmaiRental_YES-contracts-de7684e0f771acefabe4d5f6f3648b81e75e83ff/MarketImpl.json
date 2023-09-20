@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-YES contracts/YuemmaiRental_YES-contracts-de7684e0f771acefabe4d5f6f3648b81e75e83ff/MarketImpl.sol",
+ "filePath": "DAppSCAN-source/contracts/Inspex-YES contracts/YuemmaiRental_YES-contracts-de7684e0f771acefabe4d5f6f3648b81e75e83ff/MarketImpl.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "merketSell",
    "lineNumber": "L32-34\u300137\u300145-47"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "marketBuy",
    "lineNumber": "L82\u300184\u300194\u300197"
   }

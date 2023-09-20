@@ -117,7 +117,7 @@ contract PolyDistribution is Ownable {
   function airdropTokens(address[] _recipient) public onlyOwnerOrAdmin {
     require(now >= startTime);
     uint airdropped;
-    //SWC-Integer Overflow and Underflow: L121
+    //SWC-101-Integer Overflow and Underflow: L121
     for(uint8 i = 0; i< _recipient.length; i++)
     {
         if (!airdrops[_recipient[i]]) {

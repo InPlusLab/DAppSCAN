@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-Barnbridge_Vault/CommunityVault0xA3C299eEE1998F45c20010276684921EBE6423D9/contracts/CommunityVault.sol",
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Barnbridge_Vault/CommunityVault0xA3C299eEE1998F45c20010276684921EBE6423D9/contracts/CommunityVault.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "setAllowance",
    "lineNumber": "L18"
   }

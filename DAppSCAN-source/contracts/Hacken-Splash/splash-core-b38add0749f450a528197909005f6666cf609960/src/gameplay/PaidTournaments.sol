@@ -207,7 +207,7 @@ contract PaidTournaments is Ownable, MatchMaker {
     uint256 tournamentRandomness = registry.rng().getBlockRandom(msg.sender);
 
     uint256 remainingMatches = (tournament.k - tournament.j) / 2;
-    // SWC-DoS with Failed Call: L211
+    // SWC-113-DoS with Failed Call: L211
     for (uint256 i = 0; i < remainingMatches; i++) {
       tournament = idToTournament[tournamentId];
 

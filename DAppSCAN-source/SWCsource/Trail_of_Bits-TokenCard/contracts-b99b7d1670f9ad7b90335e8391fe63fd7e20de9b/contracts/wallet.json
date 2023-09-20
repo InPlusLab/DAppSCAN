@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-TokenCard/contracts-b99b7d1670f9ad7b90335e8391fe63fd7e20de9b/contracts/wallet.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-TokenCard/contracts-b99b7d1670f9ad7b90335e8391fe63fd7e20de9b/contracts/wallet.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lineNumber": "L1 - L792"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "convertToEther",
    "lineNumber": "L562"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "convertToStablecoin",
    "lineNumber": "L707"
   }

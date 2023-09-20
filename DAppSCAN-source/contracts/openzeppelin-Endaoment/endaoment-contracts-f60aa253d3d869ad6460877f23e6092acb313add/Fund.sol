@@ -109,7 +109,7 @@ contract Fund is Administratable {
 
         grants.push(newGrant);
     }
-//SWC-Reentrancy:L119-134
+//SWC-107-Reentrancy:L119-134
     /**
     * @notice Approve Grant Reccomendation
     * @param  index This Grant's index position

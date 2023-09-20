@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Reality Cards-Reality Cards/RealityCards-Contracts-8c0b05b25a7deef25f98532ae2f8afd4f9a84360/contracts/RCMarket.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Reality Cards-Reality Cards/RealityCards-Contracts-8c0b05b25a7deef25f98532ae2f8afd4f9a84360/contracts/RCMarket.sol",
  "SWCs": [
   {
-   "category": "SWC-Requirement Violation",
+   "category": "SWC-123-Requirement Violation",
    "function": "_updateBid",
    "lineNumber": "L685"
   }

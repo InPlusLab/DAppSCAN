@@ -448,7 +448,7 @@ contract KeepRandomBeaconOperator is ReentrancyGuard {
      * @param _groupSignature Group BLS signature over the concatenation of the
      * previous entry and seed.
      */
-    // SWC-Weak Sources of Randomness from Chain Attributes: L452-L494
+    // SWC-120-Weak Sources of Randomness from Chain Attributes: L452-L494
     function relayEntry(bytes memory _groupSignature) public nonReentrant {
         require(isEntryInProgress(), "Entry was submitted");
         require(!hasEntryTimedOut(), "Entry timed out");

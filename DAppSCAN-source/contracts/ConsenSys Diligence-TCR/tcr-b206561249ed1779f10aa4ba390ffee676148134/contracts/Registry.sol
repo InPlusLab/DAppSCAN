@@ -94,7 +94,7 @@ contract Registry {
         require(token.transferFrom(listing.owner, this, _amount));
 
         // Sets apply stage end time
-        // SWC-Integer Overflow and Underflow: L98
+        // SWC-101-Integer Overflow and Underflow: L98
         listing.applicationExpiry = block.timestamp + parameterizer.get("applyStageLen");
         listing.unstakedDeposit = _amount;
 

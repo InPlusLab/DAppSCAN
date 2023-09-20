@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-//SWC-Floating Pragma:L2
+//SWC-103-Floating Pragma:L2
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */

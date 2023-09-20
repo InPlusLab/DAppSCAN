@@ -1026,7 +1026,7 @@ contract FatAnimalToken is BEP20('FatAnimal Token', 'FAT') {
         return checkpoints[account][lower].votes;
     }
 
-// SWC-Reentrancy: L1030 - L1040
+// SWC-107-Reentrancy: L1030 - L1040
     function _delegate(address delegator, address delegatee)
         internal
     {

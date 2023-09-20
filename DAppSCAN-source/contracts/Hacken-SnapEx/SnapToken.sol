@@ -7,8 +7,8 @@
 */
 
 // File: openzeppelin-solidity/contracts/token/ERC20/IERC20.sol
-// SWC-Floating Pragma: L11
-// SWC-Outdated Compiler Version: L12
+// SWC-103-Floating Pragma: L11
+// SWC-102-Outdated Compiler Version: L12
 pragma solidity ^0.5.0;
 
 /**

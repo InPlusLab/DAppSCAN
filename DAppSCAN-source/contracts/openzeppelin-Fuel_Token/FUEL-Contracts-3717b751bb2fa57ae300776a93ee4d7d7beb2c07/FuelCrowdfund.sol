@@ -77,7 +77,7 @@ contract FuelCrowdfund is NonZero, Ownable {
         }
         TokenPurchase(_to, weiAmount, tokens);
     }
-//SWC-Unchecked Call Return Value:L84
+//SWC-104-Unchecked Call Return Value:L84
     // Function to close the crowdfund. Any unsold FUEL will go to the platform to be sold at 1$
     function closeCrowdfund() external onlyOwner returns (bool success) {
         AmountRaised(wallet, weiRaised);

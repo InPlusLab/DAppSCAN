@@ -26,7 +26,7 @@ library UserAccounting {
     }
 
     function farmed(Info storage info, address account, uint256 balance, uint256 fpt) internal view returns(uint256) {
-        // SWC-Integer Overflow and Underflow: L30
+        // SWC-101-Integer Overflow and Underflow: L30
         return uint256(int256(balance * fpt) - info.corrections[account]) / 1e18;
     }
 

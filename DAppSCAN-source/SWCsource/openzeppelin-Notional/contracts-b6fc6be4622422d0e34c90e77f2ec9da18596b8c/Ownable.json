@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/Ownable.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/Ownable.sol",
  "SWCs": [
   {
-   "category": "SWC-Incorrect Inheritance Order",
+   "category": "SWC-125-Incorrect Inheritance Order",
    "function": "N/A",
    "lineNumber": "L1-77"
   }

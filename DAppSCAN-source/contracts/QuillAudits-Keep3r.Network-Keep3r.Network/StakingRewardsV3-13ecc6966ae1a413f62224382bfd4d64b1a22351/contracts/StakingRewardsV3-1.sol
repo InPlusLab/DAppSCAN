@@ -6,7 +6,7 @@
 pragma solidity 0.8.6;
 
 library Math {
-    // SWC-Code With No Effects: L10 - L12
+    // SWC-135-Code With No Effects: L10 - L12
     function max(uint256 a, uint256 b) internal pure returns (uint256) {
         return a >= b ? a : b;
     }
@@ -100,7 +100,7 @@ contract StakingRewardsV3 {
     address immutable public reward;
     address immutable public pool;
 
-    // SWC-State Variable Default Visibility: L104 - L118
+    // SWC-108-State Variable Default Visibility: L104 - L118
     address constant factory = 0x1F98431c8aD98523631AE4a59f267346ea31F984;
     PositionManagerV3 constant nftManager = PositionManagerV3(0xC36442b4a4522E871399CD717aBDD847Ab11FE88);
     uint constant DURATION = 7 days;
@@ -206,7 +206,7 @@ contract StakingRewardsV3 {
         return rewardRate * DURATION;
     }
 
-    // SWC-Reentrancy: L210 - L226
+    // SWC-107-Reentrancy: L210 - L226
     function deposit(uint tokenId) external update(tokenId) {
         (,,address token0,address token1,uint24 fee,int24 tickLower,int24 tickUpper,uint128 _liquidity,,,,) = nftManager.positions(tokenId);
         address _pool = PoolAddress.computeAddress(factory,PoolAddress.PoolKey({token0: token0, token1: token1, fee: fee}));
@@ -294,7 +294,7 @@ contract StakingRewardsV3 {
         }
     }
 
-    // SWC-Code With No Effects: L298 - L301
+    // SWC-135-Code With No Effects: L298 - L301
     function deposit_reward_token(address token, uint _reward) external {
         require(token == reward);
         notify(_reward);

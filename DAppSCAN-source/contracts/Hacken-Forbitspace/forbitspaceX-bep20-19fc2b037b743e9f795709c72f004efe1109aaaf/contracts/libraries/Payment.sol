@@ -81,7 +81,7 @@ abstract contract Payment is IPayment, Ownable {
 		}
 	}
 
-// SWC-Function Default Visibility: L85
+// SWC-100-Function Default Visibility: L85
 	function setAdmin(address newAdmin) public override onlyOwner {
 		require(newAdmin != admin, "A_I_E"); // Admin is exist
 		admin = newAdmin;

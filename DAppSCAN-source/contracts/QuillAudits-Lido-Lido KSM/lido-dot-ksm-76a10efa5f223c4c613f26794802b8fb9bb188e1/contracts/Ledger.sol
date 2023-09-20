@@ -294,7 +294,7 @@ contract Ledger {
         uint128 _transferUpwardBalance = transferUpwardBalance;
         if (_transferUpwardBalance > 0) {
             uint128 ledgerFreeBalance = (totalBalance - lockedBalance);
-            // SWC-Integer Overflow and Underflow: L298
+            // SWC-101-Integer Overflow and Underflow: L298
             uint128 freeBalanceIncrement = _report.getFreeBalance() - ledgerFreeBalance;
 
             if (freeBalanceIncrement >= _transferUpwardBalance) {

@@ -130,7 +130,7 @@ contract AMOCoinSale is Pausable {
     modifier onlyValidPurchase() {
         require(round <= SaleRounds.CrowdSale);
         require(now >= startTime && now <= endTime);
-//SWC-Block values as a proxy for time:L132、349、358
+//SWC-116-Block values as a proxy for time:L132、349、358
         uint256 contributionInWei = msg.value;
         address purchaser = msg.sender;
 

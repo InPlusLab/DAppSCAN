@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-//SWC-Floating Pragma: L3
+//SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -85,7 +85,7 @@ contract ShrugSale is Exponential {
      * @dev Buy Function in ETH
      * @param _count Count of tokens to buy
      */
-     //SWC-Reentrancy: L89-L119
+     //SWC-107-Reentrancy: L89-L119
     function buyInETH(uint256 _count) external payable {
         require(
             _count < 100,

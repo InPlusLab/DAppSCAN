@@ -60,7 +60,7 @@ contract TradeCallee is CalleeInterface {
 
         // _sender is not always the user, could be the payable proxy, so we use tx.origin.
         // won't work with Argent (Wallet Connect).
-        // SWC-Authorization through tx.origin: L65
+        // SWC-115-Authorization through tx.origin: L65
         require(
             tx.origin == trader,
             "TradeCallee: funds can only be transferred in from the person sending the transaction"

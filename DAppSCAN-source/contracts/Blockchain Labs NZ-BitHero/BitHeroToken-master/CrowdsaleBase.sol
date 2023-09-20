@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L1 - L467
+// SWC-103-Floating Pragma: L1 - L467
 /**
  * This smart contract code is Copyright 2017 TokenMarket Ltd. For more information see https://tokenmarket.net
  *
@@ -405,7 +405,7 @@ contract CrowdsaleBase is Haltable {
     ownerTestValue = val;
   }
 
- // SWC-Typographical Error: L411 - L416
+ // SWC-129-Typographical Error: L411 - L416
   /**
    * Allow addresses to do early participation.
    *

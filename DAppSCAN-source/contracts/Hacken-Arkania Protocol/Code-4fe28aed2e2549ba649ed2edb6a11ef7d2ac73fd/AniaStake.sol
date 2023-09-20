@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L3
-// SWC-Floating Pragma: L8
+// SWC-102-Outdated Compiler Version: L3
+// SWC-103-Floating Pragma: L8
 pragma solidity ^0.8.2;
 
 import "./Ania.sol";
@@ -181,7 +181,7 @@ contract AniaStake {
     function redistributeRewards(address[] calldata users) public {
         //only owner can issue airdrop
         require(msg.sender == owner, "Only contract creator can redistribute");
-        // SWC-DoS With Block Gas Limit: L183 - L192    
+        // SWC-128-DoS With Block Gas Limit: L183 - L192    
         for (uint256 i = 0; i < users.length; i++) {
             uint256 index = stakes[users[i]];
             uint256 reward = calculateStakeReward(stakers[index].address_stake);

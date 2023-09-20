@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Amplify voting Smart Contract/contracts-9dd44ac15cb66685a5beb038065f1673bcd6a8bb/Voting.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Amplify voting Smart Contract/contracts-9dd44ac15cb66685a5beb038065f1673bcd6a8bb/Voting.sol",
  "SWCs": [
   {
-   "category": "SWC-Shadowing State Variables\uff1aL108-110",
+   "category": "SWC-119-Shadowing State Variables",
    "function": "userOwnsTheLock",
-   "lineNumber": "//SWC-Shadowing State Variables\uff1aL108-110"
+   "lineNumber": "L108-110"
   }
  ]
 }

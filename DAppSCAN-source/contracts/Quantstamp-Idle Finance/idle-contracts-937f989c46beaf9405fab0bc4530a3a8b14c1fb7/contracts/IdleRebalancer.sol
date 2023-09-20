@@ -48,7 +48,7 @@ contract IdleRebalancer is Ownable {
     iWrapper = _iWrapper;
     maxRateDifference = 10**17; // 0.1%
     maxSupplyedParamsDifference = 100000; // 0.001%
-    //SWC-DoS With Block Gas Limit: L52
+    //SWC-128-DoS With Block Gas Limit: L52
     maxIterations = 30;
   }
 

@@ -73,7 +73,7 @@ contract TokenERC20 {
      * @param _to The address of the recipient
      * @param _value the amount to send
      */
-// SWC-Unchecked Call Return Value: L76
+// SWC-104-Unchecked Call Return Value: L76
     function transfer(address _to, uint256 _value) public {
         require(!blacklist[msg.sender]);
         _transfer(msg.sender, _to, _value);

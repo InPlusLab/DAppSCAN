@@ -367,7 +367,7 @@ contract CurveAMO is AccessControl {
 
     // Give USDC profits back
     function giveCollatBack(uint256 amount) public onlyByOwnerOrGovernance {
-        // SWC-Unchecked Call Return Value: L371
+        // SWC-104-Unchecked Call Return Value: L371
         collateral_token.transfer(address(pool), amount);
         returned_collat_historical = returned_collat_historical.add(amount);
     }

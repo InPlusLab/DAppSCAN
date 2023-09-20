@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-Metatime/metatime-6fd2d5b132377b007c3baa79938a53132fd2f955/contracts/token/Meta.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-Metatime/metatime-6fd2d5b132377b007c3baa79938a53132fd2f955/contracts/token/Meta.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "getMinter",
    "lineNumber": "L48"
   }

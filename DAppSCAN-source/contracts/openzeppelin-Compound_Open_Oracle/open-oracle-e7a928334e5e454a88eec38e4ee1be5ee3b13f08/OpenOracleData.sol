@@ -26,7 +26,7 @@ contract OpenOracleData {
      * @return The claimed Unix timestamp for the data and the encoded value (defaults to (0, 0x))
      */
     //function get(address source, <Key> key) external view returns (uint, <Value>);
-//SWC-Code With No Effects: L9-28
+//SWC-135-Code With No Effects: L9-28
     /**
      * @notice Recovers the source address which signed a message
      * @dev Comparing to a claimed address would add nothing,

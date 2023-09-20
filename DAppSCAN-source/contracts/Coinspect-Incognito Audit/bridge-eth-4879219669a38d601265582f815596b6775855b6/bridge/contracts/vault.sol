@@ -405,7 +405,7 @@ contract Vault {
         } else {
             uint8 decimals = getDecimals(data.token);
             if (decimals > 9) {
-                // SWC-Integer Overflow and Underflow: L409
+                // SWC-101-Integer Overflow and Underflow: L409
                 data.amount = data.amount * (10 ** (uint(decimals) - 9));
             }
             require(IERC20(data.token).balanceOf(address(this)) >= data.amount.safeAdd(totalDepositedToSCAmount[data.token]), errorToString(Errors.TOKEN_NOT_ENOUGH));
@@ -508,8 +508,8 @@ contract Vault {
      * @param timestamp: unique data generated from client (timestamp for example)
      * @param signData: signature of an unique data that is signed by an account which is generated from user's incognito privkey
      */
-    //  SWC-Transaction Order Dependence: L512 - L547
-    // SWC-Unprotected Ether Withdrawal: L513 - 548
+    //  SWC-114-Transaction Order Dependence: L512 - L547
+    // SWC-105-Unprotected Ether Withdrawal: L513 - 548
     function execute(
         address token,
         uint amount,

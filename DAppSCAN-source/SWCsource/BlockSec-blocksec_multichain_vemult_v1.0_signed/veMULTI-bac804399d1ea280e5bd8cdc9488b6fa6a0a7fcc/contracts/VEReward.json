@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/VEReward.sol",
+ "filePath": "DAppSCAN-source/contracts/BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/VEReward.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS with Failed Call",
+   "category": "SWC-113-DoS with Failed Call",
    "function": "getBlockByTime",
    "lineNumber": "L119-134"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "claimRewardMany",
    "lineNumber": "L269-275"
   }

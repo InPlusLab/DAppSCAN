@@ -152,7 +152,7 @@ contract VaultManager is OracleRegistry, IVaultManager {
         desiredSupply = totalSupply * 1e8 / overallPrice; 
         emit Rebase(totalSupply, desiredSupply);
     }
-    // SWC-Integer Overflow and Underflow: L156-166
+    // SWC-101-Integer Overflow and Underflow: L156-166
     function isValidCDP(address collateral_, address debt_, uint256 cAmount_, uint256 dAmount_) public view override returns (bool) {
         (uint256 collateralValueTimes100Point00000, uint256 debtValue) = _calculateValues(collateral_, debt_, cAmount_, dAmount_);
 

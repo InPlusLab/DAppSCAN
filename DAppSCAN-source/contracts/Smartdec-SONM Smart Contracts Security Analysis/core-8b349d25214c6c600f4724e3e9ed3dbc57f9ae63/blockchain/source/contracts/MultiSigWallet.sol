@@ -385,7 +385,7 @@ contract MultiSigWallet {
                 count += 1;
             }
         _transactionIds = new uint[](to - from);
-        // SWC-DoS With Block Gas Limit: L389
+        // SWC-128-DoS With Block Gas Limit: L389
         for (i = from; i < to; i++)
             _transactionIds[i - from] = transactionIdsTemp[i];
     }

@@ -10,7 +10,7 @@ import "../refs/CoreRef.sol";
 /// @title IFei implementation
 /// @author Fei Protocol
 contract Fei is IFei, ERC20, ERC20Burnable, CoreRef {
-//SWC-Code With No Effects:L12
+//SWC-135-Code With No Effects:L12
     mapping (address => address) public override incentiveContract;
 
     bytes32 public DOMAIN_SEPARATOR;

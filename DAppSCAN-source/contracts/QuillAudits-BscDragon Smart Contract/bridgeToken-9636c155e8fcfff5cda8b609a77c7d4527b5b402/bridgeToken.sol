@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/ERC20.sol)
 
-//SWC-Floating Pragma：L5
+//SWC-103-Floating Pragma: L5
 pragma solidity ^0.8.0;
 
 /**
@@ -113,7 +113,7 @@ abstract contract Context {
     function _msgSender() internal view virtual returns (address) {
         return msg.sender;
     }
-//SWC-Code With No Effects：L117
+//SWC-135-Code With No Effects: L117
     function _msgData() internal view virtual returns (bytes calldata) {
         return msg.data;
     }
@@ -249,7 +249,7 @@ contract bridgeToken is Context, IERC20, IERC20Metadata , Ownable {
     function name() public view virtual override returns (string memory) {
         return _name;
     }
-//SWC-Function Default Visibility：L249，257
+//SWC-100-Function Default Visibility: L249, L257
     /**
      * @dev Returns the symbol of the token, usually a shorter version of the
      * name.
@@ -484,7 +484,7 @@ contract bridgeToken is Context, IERC20, IERC20Metadata , Ownable {
      */
     function _burn(address account, uint256 amount) internal virtual {
         require(account != address(0), "ERC20: burn from the zero address");
-//SWC-Code With No Effects：L485
+//SWC-135-Code With No Effects: L485
         _beforeTokenTransfer(account, address(0), amount);
 
         uint256 accountBalance = _balances[account];

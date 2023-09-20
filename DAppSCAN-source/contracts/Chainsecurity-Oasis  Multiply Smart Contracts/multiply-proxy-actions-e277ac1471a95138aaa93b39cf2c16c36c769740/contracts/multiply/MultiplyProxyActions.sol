@@ -115,7 +115,7 @@ contract MultiplyProxyActions is IERC3156FlashBorrower {
   function convertTo18(address gemJoin, uint256 amt) internal returns (uint256 wad) {
     // For those collaterals that have less than 18 decimals precision we need to do the conversion before passing to frob function
     // Adapters will automatically handle the difference of precision
-    // SWC-Integer Overflow and Underflow: L119
+    // SWC-101-Integer Overflow and Underflow: L119
     wad = amt.mul(10**(18 - IJoin(gemJoin).dec()));
   }
 
@@ -168,7 +168,7 @@ contract MultiplyProxyActions is IERC3156FlashBorrower {
       addressRegistry.multiplyProxyActions
     )
   { 
-    // SWC-Unchecked Call Return Value: L172
+    // SWC-104-Unchecked Call Return Value: L172
     IGem gem = IJoin(cdpData.gemJoin).gem();
 
     if (address(gem) == WETH) {

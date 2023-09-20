@@ -351,7 +351,7 @@ contract CryptoBatz is
   /// @notice Allows the owner to roll a pseudo-random number once, which will be used as the starting index for the token metadata.
   ///         This is used to prove randomness and fairness in the metadata distribution, in conjunction with the PROVENANCE_HASH
   /// @dev The starting index can only be set once, only after the start of the public sale, and only if the PROVENANCE_HASH has been set
-  // SWC-Block values as a proxy for time: L355 - L374
+  // SWC-116-Block values as a proxy for time: L355 - L374
   function rollStartIndex() external onlyOwner {
     require(PROVENANCE_HASH != 0, "Provenance hash not set");
     require(randomizedStartIndex == 0, "Index already set");

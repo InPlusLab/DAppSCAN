@@ -69,7 +69,7 @@ contract MyToken {
     }
 
     /* This unnamed function is called whenever someone tries to send ether to it */
-    // SWC-Code With No Effects: L73 - L75
+    // SWC-135-Code With No Effects: L73 - L75
     function () {
         throw;     // Prevents accidental sending of ether
     }

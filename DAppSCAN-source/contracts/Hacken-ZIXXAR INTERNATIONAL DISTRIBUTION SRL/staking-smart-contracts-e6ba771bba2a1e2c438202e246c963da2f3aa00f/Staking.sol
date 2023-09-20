@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
-//SWC-Floating Pragma：L2
+//SWC-103-Floating Pragma: L2
 /// @title The Staking Contract for XIDEN (XID) PoS Network
 /// @author Polygon-Edge TEAM and CryptoDATA TEAM (5381)
 /// @notice The Xiden network requires Node validators to stake 2 Million XID

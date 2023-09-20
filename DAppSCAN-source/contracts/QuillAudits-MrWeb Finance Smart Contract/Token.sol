@@ -1,7 +1,8 @@
 // 0.5.1-c8a2
 // Enable optimization
 pragma solidity ^0.5.0;
-//SWC-Floating Pragma,SWC-Outdated Compiler Version:L3
+// SWC-103-Floating Pragma: L3
+// SWC-102-Outdated Compiler Version: L3
 import "./ERC20.sol";
 import "./ERC20Detailed.sol";
 

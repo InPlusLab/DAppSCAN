@@ -46,7 +46,7 @@ library CompoundPoolController {
      */
     function getBalance(address erc20Contract) external returns (uint256) {
         CErc20 cErc20 = CErc20(getCErc20Contract(erc20Contract));
-        //SWC-Unchecked Call Return Value: L50
+        //SWC-104-Unchecked Call Return Value: L50
         cErc20.accrueInterest();
         return cErc20.balanceOf(address(this)).mul(cErc20.exchangeRateStored()).div(1e18);
     }

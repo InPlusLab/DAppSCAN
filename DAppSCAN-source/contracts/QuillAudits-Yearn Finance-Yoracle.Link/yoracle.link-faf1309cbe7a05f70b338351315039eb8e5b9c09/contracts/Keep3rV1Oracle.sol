@@ -98,7 +98,7 @@ library FixedPoint {
     // divide a UQ112x112 by a uint112, returning a UQ112x112
     function div(uq112x112 memory self, uint112 x) internal pure returns (uq112x112 memory) {
         require(x != 0, 'FixedPoint: DIV_BY_ZERO');
-        // SWC-Integer Overflow and Underflow: L102
+        // SWC-101-Integer Overflow and Underflow: L102
         return uq112x112(self._x / uint224(x));
     }
 
@@ -106,7 +106,7 @@ library FixedPoint {
     // reverts on overflow
     function mul(uq112x112 memory self, uint y) internal pure returns (uq144x112 memory) {
         uint z;
-        // SWC-Integer Overflow and Underflow: L110
+        // SWC-101-Integer Overflow and Underflow: L110
         require(y == 0 || (z = uint(self._x) * y) / y == uint(self._x), "FixedPoint: MULTIPLICATION_OVERFLOW");
         return uq144x112(z);
     }
@@ -115,7 +115,7 @@ library FixedPoint {
     // equivalent to encode(numerator).div(denominator)
     function fraction(uint112 numerator, uint112 denominator) internal pure returns (uq112x112 memory) {
         require(denominator > 0, "FixedPoint: DIV_BY_ZERO");
-        // SWC-Integer Overflow and Underflow: L119
+        // SWC-101-Integer Overflow and Underflow: L119
         return uq112x112((uint224(numerator) << RESOLUTION) / denominator);
     }
 
@@ -154,10 +154,10 @@ library UniswapV2OracleLibrary {
             uint32 timeElapsed = blockTimestamp - blockTimestampLast;
             // addition overflow is desired
             // counterfactual
-            // SWC-Integer Overflow and Underflow: L158
+            // SWC-101-Integer Overflow and Underflow: L158
             price0Cumulative += uint(FixedPoint.fraction(reserve1, reserve0)._x) * timeElapsed;
             // counterfactual
-            // SWC-Integer Overflow and Underflow: L161
+            // SWC-101-Integer Overflow and Underflow: L161
             price1Cumulative += uint(FixedPoint.fraction(reserve0, reserve1)._x) * timeElapsed;
         }
     }
@@ -379,7 +379,7 @@ library UniswapV2Library {
     function quote(uint amountA, uint reserveA, uint reserveB) internal pure returns (uint amountB) {
         require(amountA > 0, 'UniswapV2Library: INSUFFICIENT_AMOUNT');
         require(reserveA > 0 && reserveB > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');
-        // SWC-Integer Overflow and Underflow: L383
+        // SWC-101-Integer Overflow and Underflow: L383
         amountB = amountA.mul(reserveB) / reserveA;
     }
 
@@ -390,7 +390,7 @@ library UniswapV2Library {
         uint amountInWithFee = amountIn.mul(997);
         uint numerator = amountInWithFee.mul(reserveOut);
         uint denominator = reserveIn.mul(1000).add(amountInWithFee);
-        // SWC-Integer Overflow and Underflow: L394
+        // SWC-101-Integer Overflow and Underflow: L394
         amountOut = numerator / denominator;
     }
 
@@ -400,7 +400,7 @@ library UniswapV2Library {
         require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');
         uint numerator = reserveIn.mul(amountOut).mul(1000);
         uint denominator = reserveOut.sub(amountOut).mul(997);
-        // SWC-Integer Overflow and Underflow: L404
+        // SWC-101-Integer Overflow and Underflow: L404
         amountIn = (numerator / denominator).add(1);
     }
 
@@ -580,7 +580,7 @@ contract Keep3rV1Oracle {
     }
 
     function _updateAll() internal returns (bool updated) {
-        // SWC-DoS With Block Gas Limit: L584 - L588
+        // SWC-128-DoS With Block Gas Limit: L584 - L588
         for (uint i = 0; i < _pairs.length; i++) {
             if (_update(_pairs[i])) {
                 updated = true;
@@ -601,7 +601,7 @@ contract Keep3rV1Oracle {
     }
 
     function workable() external view returns (bool) {
-        // SWC-DoS With Block Gas Limit: L604 - L609
+        // SWC-128-DoS With Block Gas Limit: L604 - L609
         for (uint i = 0; i < _pairs.length; i++) {
             if (workable(_pairs[i])) {
                 return true;
@@ -628,7 +628,7 @@ contract Keep3rV1Oracle {
     ) private pure returns (uint amountOut) {
         // overflow is desired.
         FixedPoint.uq112x112 memory priceAverage = FixedPoint.uq112x112(
-            // SWC-Integer Overflow and Underflow: L630
+            // SWC-101-Integer Overflow and Underflow: L630
             uint224((priceCumulativeEnd - priceCumulativeStart) / timeElapsed)
         );
         amountOut = priceAverage.mul(amountIn).decode144();
@@ -649,7 +649,7 @@ contract Keep3rV1Oracle {
             _observation = observations[pair][observations[pair].length-2];
         }
 
-        // SWC-Integer Overflow and Underflow: L651
+        // SWC-101-Integer Overflow and Underflow: L651
         uint timeElapsed = block.timestamp - _observation.timestamp;
         timeElapsed = timeElapsed == 0 ? 1 : timeElapsed;
         if (token0 == tokenIn) {
@@ -665,32 +665,32 @@ contract Keep3rV1Oracle {
         (address token0,) = UniswapV2Library.sortTokens(tokenIn, tokenOut);
 
         uint priceAverageCumulative = 0;
-        // SWC-Write to Arbitrary Storage Location: L669
+        // SWC-124-Write to Arbitrary Storage Location: L669
         uint length = observations[pair].length-1;
         uint i = length.sub(granularity);
 
 
         uint nextIndex = 0;
         if (token0 == tokenIn) {
-            // SWC-DoS With Block Gas Limit: L674 - L683
+            // SWC-128-DoS With Block Gas Limit: L674 - L683
             for (; i < length; i++) {
-                // SWC-Integer Overflow and Underflow: L675
+                // SWC-101-Integer Overflow and Underflow: L675
                 nextIndex = i+1;
                 priceAverageCumulative += computeAmountOut(
                     observations[pair][i].price0Cumulative,
                     observations[pair][nextIndex].price0Cumulative,
-                    // SWC-Integer Overflow and Underflow: L679
+                    // SWC-101-Integer Overflow and Underflow: L679
                     observations[pair][nextIndex].timestamp - observations[pair][i].timestamp, amountIn);
             }
         } else {
             for (; i < length; i++) {
-                // SWC-DoS With Block Gas Limit: L685 - L694
+                // SWC-128-DoS With Block Gas Limit: L685 - L694
                 nextIndex = i+1;
-                // SWC-Integer Overflow and Underflow: L685
+                // SWC-101-Integer Overflow and Underflow: L685
                 priceAverageCumulative += computeAmountOut(
                     observations[pair][i].price1Cumulative,
                     observations[pair][nextIndex].price1Cumulative,
-                    // SWC-Integer Overflow and Underflow: L689
+                    // SWC-101-Integer Overflow and Underflow: L689
                     observations[pair][nextIndex].timestamp - observations[pair][i].timestamp, amountIn);
             }
         }
@@ -713,27 +713,27 @@ contract Keep3rV1Oracle {
 
         if (token0 == tokenIn) {
             for (; i < length; i+=window) {
-                // SWC-DoS With Block Gas Limit: L714 - L724
-                // SWC-Integer Overflow and Underflow: L712
+                // SWC-128-DoS With Block Gas Limit: L714 - L724
+                // SWC-101-Integer Overflow and Underflow: L712
                 nextIndex = i + window;
                 _prices[index] = computeAmountOut(
-                    // SWC-Write to Arbitrary Storage Location: L720, L721
+                    // SWC-124-Write to Arbitrary Storage Location: L720, L721
                     observations[pair][i].price0Cumulative,
                     observations[pair][nextIndex].price0Cumulative,
-                    // SWC-Integer Overflow and Underflow: L717
+                    // SWC-101-Integer Overflow and Underflow: L717
                     observations[pair][nextIndex].timestamp - observations[pair][i].timestamp, amountIn);
                 index = index + 1;
             }
         } else {
             for (; i < length; i+=window) {
-                // SWC-DoS With Block Gas Limit: L726 - 736
-                // SWC-Integer Overflow and Underflow: L723
+                // SWC-128-DoS With Block Gas Limit: L726 - 736
+                // SWC-101-Integer Overflow and Underflow: L723
                 nextIndex = i + window;
                 _prices[index] = computeAmountOut(
-                    // SWC-Write to Arbitrary Storage Location: L733, L734
+                    // SWC-124-Write to Arbitrary Storage Location: L733, L734
                     observations[pair][i].price1Cumulative,
                     observations[pair][nextIndex].price1Cumulative,
-                    // SWC-Integer Overflow and Underflow: L728
+                    // SWC-101-Integer Overflow and Underflow: L728
                     observations[pair][nextIndex].timestamp - observations[pair][i].timestamp, amountIn);
                 index = index + 1;
             }
@@ -776,7 +776,7 @@ contract Keep3rV1Oracle {
      * @param x uint256 number for the calculation of square root
      */
     function sqrt(uint256 x) public pure returns (uint256) {
-        // SWC-Integer Overflow and Underflow: L770 - L776
+        // SWC-101-Integer Overflow and Underflow: L770 - L776
         uint256 c = (x + 1) / 2;
         uint256 b = x;
         while (c < b) {
@@ -792,7 +792,7 @@ contract Keep3rV1Oracle {
      * @dev the decimal place must be moved prior to passing the params
      * @param numbers uint[] array of numbers to be used in calculation
      */
-     // SWC-Integer Overflow and Underflow: L790 - L798
+     // SWC-101-Integer Overflow and Underflow: L790 - L798
     function stddev(uint[] memory numbers) public pure returns (uint256 sd) {
         uint sum = 0;
         for(uint i = 0; i < numbers.length; i++) {
@@ -845,7 +845,7 @@ contract Keep3rV1Oracle {
     receive() external payable {}
 
     function _swap(uint _amount) internal returns (uint) {
-        // SWC-Unchecked Call Return Value: L848
+        // SWC-104-Unchecked Call Return Value: L848
         KP3R.approve(address(UNI), _amount);
 
         address[] memory path = new address[](2);

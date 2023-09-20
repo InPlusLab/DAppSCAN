@@ -74,7 +74,7 @@ contract MarginCalculator is Ownable {
     /// @dev oracle module
     OracleInterface public oracle;
 
-    // SWC-Presence of unused variables: L78 - L85
+    // SWC-131-Presence of unused variables: L78 - L85
     /// @notice emits an event when collateral dust is updated
     event CollateralDustUpdated(address indexed collateral, uint256 dust);
     /// @notice emits an event when new time to expiry is added for a specific product
@@ -103,7 +103,7 @@ contract MarginCalculator is Ownable {
     function setCollateralDust(address _collateral, uint256 _dust) external onlyOwner {
         require(_dust > 0, "MarginCalculator: dust amount should be greater than zero");
 
-        // SWC-Integer Overflow and Underflow: L107
+        // SWC-101-Integer Overflow and Underflow: L107
         dust[_collateral] = _dust;
     }
 
@@ -892,7 +892,7 @@ contract MarginCalculator is Ownable {
      * @param _assetB asset B
      * @return _amount in asset B
      */
-    //  SWC-Integer Overflow and Underflow: L895 - L909
+    //  SWC-101-Integer Overflow and Underflow: L895 - L909
     function _convertAmountOnLivePrice(
         FPI.FixedPointInt memory _amount,
         address _assetA,

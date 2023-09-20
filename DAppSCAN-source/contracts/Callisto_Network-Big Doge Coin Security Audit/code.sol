@@ -698,7 +698,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
 
     mapping (address => bool) private _isExcludedFromFee;
 
-// SWC-Code With No Effects: L702 - L703
+// SWC-135-Code With No Effects: L702 - L703
     mapping (address => bool) private _isExcluded;
     address[] private _excluded;
     address public router = 0x10ED43C718714eb63d5aA57B78B54704E256024E; // PCS v2 mainnet
@@ -706,7 +706,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     uint256 public _tTotal;
     uint256 private _rTotal;
     uint256 private _tFeeTotal;
-    // SWC-Code With No Effects: L709
+    // SWC-135-Code With No Effects: L709
     bool public mintedByDxsale = true;
     string public _name;
     string public _symbol;

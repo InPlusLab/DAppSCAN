@@ -128,7 +128,7 @@ contract StakingPool is Owned {
         poolEndTime = now + poolDuration;
         
         //transfer tokens to contract
-        // SWC-Unchecked Call Return Value: L132
+        // SWC-104-Unchecked Call Return Value: L132
         rewardToken.transferFrom(msg.sender, this, _rewardAmount);
         emit OwnerSetReward(_rewardAmount);
     }
@@ -258,7 +258,7 @@ contract StakingPool is Owned {
         rewardsWithdrawn = rewardsWithdrawn.add(rewardAmount);
         
         //transfer rewards and tokens
-        // SWC-Unchecked Call Return Value: L262
+        // SWC-104-Unchecked Call Return Value: L262
         rewardToken.transfer(msg.sender, rewardAmount);
         tswap.transfer(msg.sender, amount);
         

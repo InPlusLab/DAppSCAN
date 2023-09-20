@@ -3,7 +3,7 @@ pragma solidity ^0.8.4;
 
 import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-// SWC-Code With No Effects: L7
+// SWC-135-Code With No Effects: L7
 import "hardhat/console.sol";
 
 contract GovStakingStorage is Ownable {

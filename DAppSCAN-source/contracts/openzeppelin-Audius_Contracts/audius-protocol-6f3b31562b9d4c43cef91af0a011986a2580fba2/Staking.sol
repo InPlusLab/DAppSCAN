@@ -35,7 +35,7 @@ contract Staking is InitializableV2 {
 
     /// @dev total staked tokens at a given block
     Checkpointing.History internal totalStakedHistory;
-//SWC-State Variable Default Visibility:L39-42
+//SWC-108-State Variable Default Visibility:L39-42
     address governanceAddress;
     address claimsManagerAddress;
     address delegateManagerAddress;

@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Gitcoin_Token_Distribution/governance-ee5e45a008d65021831de9f3e83053026f2a4dd2/contracts/TokenDistributor.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Gitcoin_Token_Distribution/governance-ee5e45a008d65021831de9f3e83053026f2a4dd2/contracts/TokenDistributor.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "claimTokens",
    "lineNumber": "L105-141"
   },
   {
-   "category": "SWC-Hash Collisions With Multiple Variable Length Arguments",
+   "category": "SWC-133-Hash Collisions With Multiple Variable Length Arguments",
    "function": "_hashLeaf",
    "lineNumber": "L259"
   }

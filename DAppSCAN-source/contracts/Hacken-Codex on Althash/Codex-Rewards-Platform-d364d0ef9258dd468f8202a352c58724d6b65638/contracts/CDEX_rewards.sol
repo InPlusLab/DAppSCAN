@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.4.21;
 
 /**
@@ -360,7 +360,7 @@ contract CDEXStakingPool is ReentrancyGuard, Pausable {
 
     /// @notice Allows the users to stake tokens in the contract.
     /// @param amount The amount of tokens to be staked by the user.
-    // SWC-Unchecked Call Return Value: L362 - L391
+    // SWC-104-Unchecked Call Return Value: L362 - L391
     function stake(uint256 amount)
         external
         nonReentrant
@@ -393,7 +393,7 @@ contract CDEXStakingPool is ReentrancyGuard, Pausable {
 
     /// @notice Withdraws the informed amount from the staked balance into the sender's address
     /// @param amount The amount of tokens to be withdrawn.
-    // SWC-Unchecked Call Return Value: L395 - L420
+    // SWC-104-Unchecked Call Return Value: L395 - L420
     function withdraw(uint256 amount)
         public
         nonReentrant
@@ -414,14 +414,14 @@ contract CDEXStakingPool is ReentrancyGuard, Pausable {
             CDEXRanking.insert(_balances[msg.sender], msg.sender);
         }
         /// Transfers the tokens into the sender's address
-        // SWC-Unchecked Call Return Value: L415
+        // SWC-104-Unchecked Call Return Value: L415
         CDEXToken.transfer(msg.sender, amount);
         /// Emits the event
         emit Withdrawn(msg.sender, amount);
     }
     
     /// @notice Withdraws the reward accrued by the sender
-    // SWC-Unchecked Call Return Value: L424 - L456
+    // SWC-104-Unchecked Call Return Value: L424 - L456
     function getReward() 
         public 
         nonReentrant 
@@ -484,7 +484,7 @@ contract CDEXStakingPool is ReentrancyGuard, Pausable {
     /// @param amount The value of tokens to be added to the balance.
     ///        To make it easier for the contract owner, the expected amount
     ///        is in the integer format (without the 8 zeroes).
-    // SWC-Unchecked Call Return Value: L486 - L498
+    // SWC-104-Unchecked Call Return Value: L486 - L498
     function depositTokens(uint256 amount) public onlyOwner {
         /// Adding the decimal places to the amount
         amount = amount.mul(1e8);
@@ -611,7 +611,7 @@ contract CDEXStakingPool is ReentrancyGuard, Pausable {
     event RewardPaid(address indexed user, uint256 reward);
     event LoyaltyBonusPaid(address indexed user, uint256 loyaltyBonus);
     event RewardsDurationUpdated(uint256 newDuration);
-    // SWC-Code With No Effects: L615
+    // SWC-135-Code With No Effects: L615
     event Recovered(address token, uint256 amount);
     event RewardsDeposited(address sender, address receiver, uint256 reward);
     event LoyaltyTiersUpdated(uint256 loyaltyTier1, uint256 loyaltyTier2, uint256 loyaltyTier3);

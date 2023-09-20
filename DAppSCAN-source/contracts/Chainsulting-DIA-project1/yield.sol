@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity ^0.5.12;
 
 library Roles {
@@ -529,7 +529,7 @@ contract DIACompanyLockup is OTCRoles {
     IERC20 token;
     
     // Timeframe in which it it possible to deposit tokens
-    // SWC-State Variable Default Visibility: L532 - L541
+    // SWC-108-State Variable Default Visibility: L532 - L541
     uint256 beginDepositTime;
     uint256 endDepositTime;
     
@@ -637,7 +637,7 @@ contract DIACompanyLockup is OTCRoles {
 
     // Helper function to release everything    
     function triggerWithdrawAll() public {
-        // SWC-DoS With Block Gas Limit: L640 - L644
+        // SWC-128-DoS With Block Gas Limit: L640 - L644
         for (uint256 i = 0; i < lockBoxStructs.length; ++i) {
             if (lockBoxStructs[i].releaseTime <= now && lockBoxStructs[i].balance > 0) {
                 withdraw(i);

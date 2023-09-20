@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Crodex/contracts-33725cd8d7aa018022a54aaa0e7fa29a89a4c2a4/staking/StakingRewardsFactory.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Crodex/contracts-33725cd8d7aa018022a54aaa0e7fa29a89a4c2a4/staking/StakingRewardsFactory.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "notifyRewardAmounts",
    "lineNumber": "L52"
   }

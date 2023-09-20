@@ -121,7 +121,7 @@ library PaymentStartStandardExit {
         PaymentOutputModel.Output memory output = outputTx.outputs[utxoPos.outputIndex()];
         bool isTxDeposit = controller.isDeposit.test(utxoPos.blockNum());
         uint160 exitId = ExitId.getStandardExitId(isTxDeposit, args.rlpOutputTx, utxoPos);
-        // SWC-Block values as a proxy for time: L124
+        // SWC-116-Block values as a proxy for time: L124
         (, uint256 blockTimestamp) = controller.framework.blocks(utxoPos.blockNum());
 
         OutputGuardModel.Data memory outputGuardData = OutputGuardModel.Data({

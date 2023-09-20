@@ -148,7 +148,7 @@ contract Wrapper is Ownable {
 
       // Transfer ether to the user.
       // solium-disable-next-line security/no-call-value
-      // SWC-Unchecked Call Return Value: L152
+      // SWC-104-Unchecked Call Return Value: L152
       msg.sender.call.value(order.signer.param)("");
     }
   }

@@ -84,13 +84,13 @@ contract Matic is Tenderizer {
 
         // use default validator share contract if _node isn't specified
         IMatic matic_ = matic;
-        // SWC-Code With No Effects: L88 - L90
+        // SWC-135-Code With No Effects: L88 - L90
         if (_node != address(0)) {
             matic_ = IMatic(_node);
         }
 
         // approve tokens
-        // SWC-Unchecked Call Return Value: L93
+        // SWC-104-Unchecked Call Return Value: L93
         steak.approve(maticStakeManager, amount);
 
         // stake tokens
@@ -144,7 +144,7 @@ contract Matic is Tenderizer {
         require(amount > 0, "ZERO_AMOUNT");
 
         // Transfer amount from unbondingLock to _account
-        // SWC-Unchecked Call Return Value: L147
+        // SWC-104-Unchecked Call Return Value: L147
         steak.transfer(_account, amount);
 
         emit Withdraw(_account, amount, _withdrawalID);

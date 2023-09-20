@@ -44,7 +44,7 @@ contract UniswapV3Adapter is ISwapRouter {
         override
         returns (uint256 amountOut)
     {
-        // SWC-Reentrancy: L52
+        // SWC-107-Reentrancy: L52
         address creditAccount = creditManager.getCreditAccountOrRevert(
             msg.sender
         );
@@ -96,12 +96,12 @@ contract UniswapV3Adapter is ISwapRouter {
         override
         returns (uint256 amountOut)
     {
-        // SWC-Reentrancy: L106
+        // SWC-107-Reentrancy: L106
         address creditAccount = creditManager.getCreditAccountOrRevert(
             msg.sender
         );
 
-        // SWC-Write to Arbitrary Storage Location: L105
+        // SWC-124-Write to Arbitrary Storage Location: L105
         (address tokenIn, address tokenOut) = _extractTokens(params.path);
 
         creditManager.provideCreditAccountAllowance(
@@ -146,12 +146,12 @@ contract UniswapV3Adapter is ISwapRouter {
         override
         returns (uint256 amountIn)
     {
-        // SWC-Reentrancy: L153
+        // SWC-107-Reentrancy: L153
         address creditAccount = creditManager.getCreditAccountOrRevert(
             msg.sender
         );
 
-        // SWC-Reentrancy: L154
+        // SWC-107-Reentrancy: L154
         creditManager.provideCreditAccountAllowance(
             creditAccount,
             swapContract,
@@ -202,13 +202,13 @@ contract UniswapV3Adapter is ISwapRouter {
             msg.sender
         );
 
-        // SWC-Write to Arbitrary Storage Location: L206
+        // SWC-124-Write to Arbitrary Storage Location: L206
         (address tokenOut, address tokenIn) = _extractTokens(params.path);
 
         console.log(tokenIn);
         console.log(tokenOut);
 
-        // SWC-Reentrancy: L210
+        // SWC-107-Reentrancy: L210
         creditManager.provideCreditAccountAllowance(
             creditAccount,
             swapContract,

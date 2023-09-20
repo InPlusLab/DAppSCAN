@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/Ownable.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/Ownable.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "",
    "lineNumber": "L26-31,34-42"
   }

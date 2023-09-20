@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Thesis_tBTC_and_Keep/keep-core-b76b418f04bc94030d10aff18220d8e560a2ab09/contracts/solidity/contracts/KeepRandomBeaconOperator.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Thesis_tBTC_and_Keep/keep-core-b76b418f04bc94030d10aff18220d8e560a2ab09/contracts/solidity/contracts/KeepRandomBeaconOperator.sol",
  "SWCs": [
   {
-   "category": "SWC-Weak Sources of Randomness from Chain Attributes",
+   "category": "SWC-120-Weak Sources of Randomness from Chain Attributes",
    "function": "relayEntry",
    "lineNumber": "L452-L494"
   }

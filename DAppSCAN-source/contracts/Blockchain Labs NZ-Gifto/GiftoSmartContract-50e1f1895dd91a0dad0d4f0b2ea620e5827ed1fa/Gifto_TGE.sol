@@ -67,7 +67,7 @@ contract Gifto is ERC20Interface {
     // _icoSupply is the avalable unit. Initially, it is _totalSupply
     uint public _icoSupply = _totalSupply * _icoPercent / 100;
     
-    // SWC-Presence of unused variables: L71 - L72
+    // SWC-131-Presence of unused variables: L71 - L72
     // minimum buy 0.3 ETH
     uint public _minimumBuy = 3 * 10 ** 17;
     
@@ -112,7 +112,7 @@ contract Gifto is ERC20Interface {
      * value must greater than equal minimumBuyPrice
      * total deposit must less than equal maximumBuyPrice
      */
-    // SWC-Presence of unused variables: L116 - L121
+    // SWC-131-Presence of unused variables: L116 - L121
     modifier validValue(){
         // require value >= _minimumBuy AND total deposit of msg.sender <= maximumBuyPrice
         require ( (msg.value >= _minimumBuy) &&

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Naos-Formation/NAOS-Formation-master/contracts/StakingPools.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-Naos-Formation/NAOS-Formation-master/contracts/StakingPools.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_updatePools",
    "lineNumber": "L308-L313"
   }

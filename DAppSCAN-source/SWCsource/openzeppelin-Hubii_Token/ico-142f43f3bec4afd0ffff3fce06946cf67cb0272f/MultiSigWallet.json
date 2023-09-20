@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Hubii_Token/ico-142f43f3bec4afd0ffff3fce06946cf67cb0272f/MultiSigWallet.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Hubii_Token/ico-142f43f3bec4afd0ffff3fce06946cf67cb0272f/MultiSigWallet.sol",
  "SWCs": [
   {
-   "category": "SWC-Uninitialized Storage Pointer",
+   "category": "SWC-109-Uninitialized Storage Pointer",
    "function": "N/A",
    "lineNumber": "L10-360"
   }

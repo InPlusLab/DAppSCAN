@@ -144,7 +144,7 @@ library Array256Lib {
 
   /// @dev Sorts given array in place
   /// @param self Storage array containing uint256 type variables
-  // SWC-Integer Overflow and Underflow: L148 - L206
+  // SWC-101-Integer Overflow and Underflow: L148 - L206
   function heapSort(uint256[] storage self) public {
     uint256 end = self.length - 1;
     uint256 start = getParentI(end);

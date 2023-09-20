@@ -133,7 +133,7 @@ contract FixedRateSwap is ERC20 {
         }
 
         if (token0Amount > 0) {
-            // SWC-Reentrancy: L137
+            // SWC-107-Reentrancy: L137
             token0.safeTransferFrom(msg.sender, address(this), token0Amount);
         }
         if (token1Amount > 0) {
@@ -169,7 +169,7 @@ contract FixedRateSwap is ERC20 {
         token0Amount = token0.balanceOf(address(this)) * amount / _totalSupply;
         token1Amount = token1.balanceOf(address(this)) * amount / _totalSupply;
 
-        // SWC-Code With No Effects: L173 - L180
+        // SWC-135-Code With No Effects: L173 - L180
         _burn(msg.sender, amount);
         emit Withdrawal(msg.sender, token0Amount, token1Amount, amount);
         if (token0Amount > 0) {
@@ -211,7 +211,7 @@ contract FixedRateSwap is ERC20 {
 
         (token0Amount, token1Amount) = _getRealAmountsForWithdraw(amount, firstTokenShare);
 
-        // SWC-Code With No Effects: L214 - L222
+        // SWC-135-Code With No Effects: L214 - L222
         _burn(msg.sender, amount);
         emit Withdrawal(msg.sender, token0Amount, token1Amount, amount);
 
@@ -321,7 +321,7 @@ contract FixedRateSwap is ERC20 {
         require(inputAmount > 0, "Input amount should be > 0");
         outputAmount = getReturn(tokenFrom, tokenTo, inputAmount);
         require(outputAmount > 0, "Empty swap is not allowed");
-        // SWC-Reentrancy: L323
+        // SWC-107-Reentrancy: L323
         tokenFrom.safeTransferFrom(msg.sender, address(this), inputAmount);
         tokenTo.safeTransfer(to, outputAmount);
     }
@@ -345,7 +345,7 @@ contract FixedRateSwap is ERC20 {
         uint256 left = dx * 998 / 1000;
         uint256 right = Math.min(dx * 1002 / 1000, yBalance);
         uint256 dy = _getReturn(xBalance, yBalance, dx);
-        // SWC-Code With No Effects: L346 - L358
+        // SWC-135-Code With No Effects: L346 - L358
         int256 shift = _checkVirtualAmountsFormula(x - dx, y + dy, xBalance + dx, yBalance - dy);
 
         while (left + _THRESHOLD < right) {
@@ -388,7 +388,7 @@ contract FixedRateSwap is ERC20 {
         uint256 right = Math.min(dx * 1002 / 1000, balanceY);
         uint256 dy = _getReturn(balanceX, balanceY, dx);
 
-        // SWC-Code With No Effects: L388 - L401
+        // SWC-135-Code With No Effects: L388 - L401
         int256 shift = _checkVirtualAmountsFormula(virtualX - dx, virtualY + dy, firstTokenShare, secondTokenShare);
 
         while (left + _THRESHOLD < right) {

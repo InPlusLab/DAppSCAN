@@ -1,6 +1,6 @@
 // contracts/LockletPrivateSale.sol
 // SPDX-License-Identifier: No License
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";

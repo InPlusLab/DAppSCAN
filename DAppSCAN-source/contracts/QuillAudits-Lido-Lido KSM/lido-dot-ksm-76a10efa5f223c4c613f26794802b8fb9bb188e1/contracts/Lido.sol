@@ -198,7 +198,7 @@ contract Lido is stKSM, Initializable {
         _fee.developers = DEFAULT_DEVELOPERS_FEE;
         _fee.treasury = DEFAULT_TREASURY_FEE;
         FEE = _fee;
-        // SWC-Presence of unused variables: L202
+        // SWC-131-Presence of unused variables: L202
         GARANTOR = 0x00;
 
         treasury = _treasury;
@@ -606,7 +606,7 @@ contract Lido is stKSM, Initializable {
 
         fundRaisedBalance -= _totalLosses;
         if (ledgerShares[msg.sender] > 0) {
-            // SWC-Integer Overflow and Underflow: L609
+            // SWC-101-Integer Overflow and Underflow: L609
             ledgerStake[msg.sender] -= _totalLosses;
         }
 
@@ -729,7 +729,7 @@ contract Lido is stKSM, Initializable {
                 if (diffs[i] > 0 && (direction < 0 || ledgerSharesCache[i] > 0)) {
                     int256 change = diffs[i] * _stake / activeDiffsSum;
                     int256 newStake = ledgerStakesCache[i] + change;
-                    // SWC-Integer Overflow and Underflow: L732
+                    // SWC-101-Integer Overflow and Underflow: L732
                     ledgerStake[ledgersCache[i]] = uint256(newStake);
                     ledgerStakesCache[i] = newStake;
                     totalChange += change;

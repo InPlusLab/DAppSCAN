@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-RocketPool/rocketpool-a65b203cf99c7a991c2d85a7468a97bfb5dbba31/contracts/contract/RocketStorage.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-RocketPool/rocketpool-a65b203cf99c7a991c2d85a7468a97bfb5dbba31/contracts/contract/RocketStorage.sol",
  "SWCs": [
   {
-   "category": "SWC-Authorization through tx.origin",
+   "category": "SWC-115-Authorization through tx.origin",
    "function": "N/A",
    "lineNumber": "L45"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "setUint",
    "lineNumber": "L206 - L210"
   },
   {
-   "category": "SWC-Write to Arbitrary Storage Location",
+   "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "setInt",
    "lineNumber": "L231 - L235"
   }

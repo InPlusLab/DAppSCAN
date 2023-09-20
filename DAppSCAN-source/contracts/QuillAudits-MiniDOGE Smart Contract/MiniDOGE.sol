@@ -568,7 +568,7 @@ contract MiniDOGE is Context, IERC20, Ownable {
         if (_isExcluded[account]) return _tOwned[account];
         return tokenFromReflection(_rOwned[account]);
     }
-//SWC-Reentrancy:L572-575,586-590
+//SWC-107-Reentrancy:L572-575,586-590
     function transfer(address recipient, uint256 amount) public override returns (bool) {
         _transfer(_msgSender(), recipient, amount);
         return true;
@@ -1025,7 +1025,7 @@ contract MiniDOGE is Context, IERC20, Ownable {
     function _removeOldSellHistories() private {
         uint256 i = 0;
         uint256 maxStartTimeForHistories = block.timestamp - _buyBackMaxTimeForHistories;
-//SWC-DoS With Block Gas Limit:L1029-1045
+//SWC-128-DoS With Block Gas Limit:L1029-1045
         for (uint256 j = 0; j < _sellHistories.length; j ++) {
 
             if (_sellHistories[j].time >= maxStartTimeForHistories) {

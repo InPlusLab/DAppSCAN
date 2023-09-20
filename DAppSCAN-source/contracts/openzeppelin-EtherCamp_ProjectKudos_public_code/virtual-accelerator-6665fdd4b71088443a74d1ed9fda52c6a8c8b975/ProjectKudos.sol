@@ -1,5 +1,5 @@
 pragma solidity ^0.4.0;
-//SWC-Outdated Compiler Version:L1
+//SWC-102-Outdated Compiler Version:L1
 /**
  * @title Project Kudos
  * 
@@ -22,7 +22,7 @@ contract ProjectKudos {
         Twitter, 
         Fake
     }
-//    SWC-Code With No Effects:L20-24,281-303,313-320
+//    SWC-135-Code With No Effects:L20-24,281-303,313-320
     // keeps project votes data
     struct ProjectInfo {
         mapping(address => uint) kudosByUser;
@@ -323,7 +323,7 @@ contract ProjectKudos {
     // ********************* //
     // *     Modifiers     * //
     // ********************* //
-//    SWC-Code With No Effects:L330-334
+//    SWC-135-Code With No Effects:L330-334
     /**
      * @dev Throws if called not during the vote period
      */
@@ -332,7 +332,7 @@ contract ProjectKudos {
         if (now >= votePeriod.end) throw;
         _;
     }
-//    SWC-Block values as a proxy for time:L331,332
+//    SWC-116-Block values as a proxy for time:L331,332
     /**
      * @dev Throws if called not by contract's owner
      */

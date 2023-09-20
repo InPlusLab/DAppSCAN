@@ -221,7 +221,7 @@ library History {
         uint256 length
     ) private view returns (uint256, uint256) {
         // Load the bounds of our binary search
-        // SWC-Integer Overflow and Underflow: L225
+        // SWC-101-Integer Overflow and Underflow: L225
         uint256 maxIndex = length - 1;
         uint256 minIndex = startingMinIndex;
         uint256 staleIndex = 0;
@@ -275,7 +275,7 @@ library History {
     /// @param oldMin The first index to set to zero
     /// @param newMin The new minium filled index, ie clears to index < newMin
     /// @param data The storage array pointer
-    // SWC-DoS With Block Gas Limit: L279 - L301
+    // SWC-128-DoS With Block Gas Limit: L279 - L301
     function _clear(
         uint256 oldMin,
         uint256 newMin,

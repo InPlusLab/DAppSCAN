@@ -49,7 +49,7 @@ contract ERC20Facet is IERC20, IERC20Facet, CallProtection {
     LibERC20.burn(_from, _amount);
   }
 
-  // SWC-Transaction Order Dependence: L53 - L61
+  // SWC-114-Transaction Order Dependence: L53 - L61
   function approve(address _spender, uint256 _amount)
     external
     override

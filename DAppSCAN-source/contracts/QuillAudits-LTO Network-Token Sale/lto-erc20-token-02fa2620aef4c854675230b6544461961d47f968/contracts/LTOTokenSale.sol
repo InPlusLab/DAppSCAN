@@ -140,7 +140,7 @@ contract LTOTokenSale is Ownable {
   }
 
 
-  // SWC-Code With No Effects: L144 - L150
+  // SWC-135-Code With No Effects: L144 - L150
   function _calcProportion() internal {
     if (totalWannaBuyAmount == 0 || totalSaleAmount >= totalWannaBuyAmount) {
       proportion = 1 ether;
@@ -213,7 +213,7 @@ contract LTOTokenSale is Ownable {
       receiverAddr.transfer(purchase.used);
       require(token.transfer(purchaser, purchase.tokens));
       if (purchase.received.sub(purchase.used) > 0) {
-        // SWC-Insufficient Gas Griefing: L216
+        // SWC-126-Insufficient Gas Griefing: L216
         purchaser.transfer(purchase.received.sub(purchase.used));
       }
     } else {
@@ -221,20 +221,20 @@ contract LTOTokenSale is Ownable {
     }
     return;
   }
-  // SWC-Code With No Effects: L224 - L226
+  // SWC-135-Code With No Effects: L224 - L226
   function withdrawal() payable public onlyUserWithdrawalTime {
     _withdrawal(msg.sender);
   }
 
-  // SWC-Code With No Effects: L229 - L234
+  // SWC-135-Code With No Effects: L229 - L234
   function withdrawalFor(uint256 index, uint256 stop) payable public onlyAutoWithdrawalTime onlyOwner {
     for (; index < stop; index++) {
       _withdrawal(purchaserList[index]);
     }
   }
 
-  // SWC-Code With No Effects: L238 - L245
-  // SWC-Unchecked Call Return Value: L238 - L245
+  // SWC-135-Code With No Effects: L238 - L245
+  // SWC-104-Unchecked Call Return Value: L238 - L245
   function clear(uint256 tokenAmount, uint256 etherAmount) payable public purchasersAllWithdrawn onlyClearTime onlyOwner {
     if (tokenAmount > 0) {
       token.transfer(receiverAddr, tokenAmount);

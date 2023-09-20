@@ -1,4 +1,4 @@
-// SWC-Code With No Effects: L1 - L792
+// SWC-135-Code With No Effects: L1 - L792
 /**
  *  The Consumer Contract Wallet
  *  Copyright (C) 2019 The Contract Wallet Company Limited
@@ -558,7 +558,7 @@ contract Vault is AddressWhitelist, SpendLimit, ERC165, TokenWhitelistable {
         if (available) {
             require(rate != 0, "token rate is 0");
             // Safely convert the token amount to ether based on the exchange rate.
-            // SWC-Integer Overflow and Underflow: L562
+            // SWC-101-Integer Overflow and Underflow: L562
             return _amount.mul(rate).div(magnitude);
         }
         return 0;
@@ -703,7 +703,7 @@ contract Wallet is ENSResolvable, Vault, GasTopUpLimit, LoadLimit {
         require(stablecoinAvailable, "token is not available");
         require(stablecoinRate != 0, "stablecoin rate is 0");
         // Safely convert the token amount to stablecoin based on its exchange rate and the stablecoin exchange rate.
-        // SWC-Integer Overflow and Underflow: L707
+        // SWC-101-Integer Overflow and Underflow: L707
         return _amount.mul(stablecoinMagnitude).div(stablecoinRate);
     }
 

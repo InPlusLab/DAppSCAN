@@ -557,7 +557,7 @@ interface DSValue {
 }
 
 interface PoolData {
-    // SWC-Code With No Effects: L561 - L595
+    // SWC-135-Code With No Effects: L561 - L595
     struct ApiId {
         bytes4 typeOf;
         bytes4 currency;
@@ -607,7 +607,7 @@ interface QuotationData {
     enum HCIDStatus { NA, kycPending, kycPass, kycFailedOrRefunded, kycPassNoCover }
     enum CoverStatus { Active, ClaimAccepted, ClaimDenied, CoverExpired, ClaimSubmitted, Requested }
 
-    // SWC-Code With No Effects: L610 - L627
+    // SWC-135-Code With No Effects: L610 - L627
     struct Cover {
         address payable memberAddress;
         bytes4 currencyCode;
@@ -785,7 +785,7 @@ library NexusMutualCover {
         claims.submitClaim(coverId);
 
         ClaimsData claimsData = ClaimsData(data.nxMaster.getLatestAddress("CD"));
-        // SWC-Integer Overflow and Underflow: L788
+        // SWC-101-Integer Overflow and Underflow: L788
         uint claimId = claimsData.actualClaimLength() - 1;
         return claimId;
     }
@@ -910,9 +910,9 @@ contract Distributor is
     withdrawableTokens[coverCurrency] = withdrawableTokens[coverCurrency].add(requiredValue.sub(coverPrice));
 
     // mint token
-    // SWC-Integer Overflow and Underflow: L913
+    // SWC-101-Integer Overflow and Underflow: L913
     uint256 nextTokenId = issuedTokensCount++;
-    // SWC-Integer Overflow and Underflow: L914
+    // SWC-101-Integer Overflow and Underflow: L914
     uint expirationTimestamp = block.timestamp + coverAPI.getLockTokenTimeAfterCoverExpiry() + coverPeriod * 1 days;
     tokens[nextTokenId] = Token(expirationTimestamp,
       coverCurrency,

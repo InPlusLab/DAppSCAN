@@ -922,7 +922,7 @@ contract BitBookStaking is Ownable {
         }
         poolExists[address(_stakedToken)][address(_rewardToken)] = true;
     }
-//SWC-Function Default Visibility：L926
+//SWC-100-Function Default Visibility: L926
     function set(
         uint256 _pid,
         uint256 _tokenPerBlock,

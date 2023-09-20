@@ -86,7 +86,7 @@ library LibMathSigned {
         }
         r = roundHalfUp(t, z) / z;
     }
-    // SWC-Presence of unused variables: L90-96
+    // SWC-131-Presence of unused variables: L90-96
     function min(int256 x, int256 y) internal pure returns (int256 z) {
         return x <= y ? x : y;
     }

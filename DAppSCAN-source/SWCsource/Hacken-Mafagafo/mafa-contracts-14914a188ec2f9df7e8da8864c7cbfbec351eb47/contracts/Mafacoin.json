@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Mafagafo/mafa-contracts-14914a188ec2f9df7e8da8864c7cbfbec351eb47/contracts/Mafacoin.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Mafagafo/mafa-contracts-14914a188ec2f9df7e8da8864c7cbfbec351eb47/contracts/Mafacoin.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L21"
   },
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L40"
   }

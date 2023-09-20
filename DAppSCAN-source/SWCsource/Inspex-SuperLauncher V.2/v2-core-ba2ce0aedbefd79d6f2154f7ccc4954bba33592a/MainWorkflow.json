@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-SuperLauncher V.2/v2-core-ba2ce0aedbefd79d6f2154f7ccc4954bba33592a/MainWorkflow.sol",
+ "filePath": "DAppSCAN-source/contracts/Inspex-SuperLauncher V.2/v2-core-ba2ce0aedbefd79d6f2154f7ccc4954bba33592a/MainWorkflow.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "_transferOut",
    "lineNumber": "L342"
   }

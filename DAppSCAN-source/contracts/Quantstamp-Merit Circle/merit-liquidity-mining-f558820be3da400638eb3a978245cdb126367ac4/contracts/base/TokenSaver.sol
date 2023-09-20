@@ -22,7 +22,7 @@ contract TokenSaver is AccessControlEnumerable {
     }
 
     function saveToken(address _token, address _receiver, uint256 _amount) external onlyTokenSaver {
-        //SWC-Unchecked Call Return Value: L26
+        //SWC-104-Unchecked Call Return Value: L26
         IERC20(_token).safeTransfer(_receiver, _amount);
         emit TokenSaved(_msgSender(), _receiver, _token, _amount);
     }

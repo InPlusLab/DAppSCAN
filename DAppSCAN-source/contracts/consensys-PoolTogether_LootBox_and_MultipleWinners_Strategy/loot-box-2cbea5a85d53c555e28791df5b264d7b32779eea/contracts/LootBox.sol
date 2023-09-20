@@ -60,7 +60,7 @@ contract LootBox {
   /// @notice Transfers ether held by the contract to another account
   /// @param to The account to transfer Ether to
   /// @param amount The amount of Ether to transfer
-  // SWC-Function Default Visibility: L64-L68
+  // SWC-100-Function Default Visibility: L64-L68
   function transferEther(address payable to, uint256 amount) public {
     to.transfer(amount);
 

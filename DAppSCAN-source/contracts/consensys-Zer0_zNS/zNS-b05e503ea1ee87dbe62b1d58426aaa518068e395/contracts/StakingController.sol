@@ -89,7 +89,7 @@ contract StakingController is
       @param bidIPFSHash is the IPFS hash of the bids information
       @param signature is the signed hashed data for a domain bid request
     **/
-  // SWC-Unprotected Ether Withdrawal: L92-101
+  // SWC-105-Unprotected Ether Withdrawal: L92-101
   function approveDomainBid(
     uint256 parentId,
     string memory bidIPFSHash,
@@ -114,7 +114,7 @@ contract StakingController is
       @param lockOnCreation is a bool representing whether or not the metadata for this domain is locked
       @param recipient is the address receiving the new domain
     **/
-  // SWC-Lack of Proper Signature Verification: L121-153
+  // SWC-122-Lack of Proper Signature Verification: L121-153
   function fulfillDomainBid(
     uint256 parentId,
     uint256 bidAmount,
@@ -132,7 +132,7 @@ contract StakingController is
       bidIPFSHash,
       name
     );
-    // SWC-Signature Malleability: L135
+    // SWC-117-Signature Malleability: L135
     address recoveredBidder = recover(recoveredBidHash, signature);
     require(recipient == recoveredBidder, "ZNS: bid info doesnt match/exist");
     bytes32 hashOfSig = keccak256(abi.encode(signature));

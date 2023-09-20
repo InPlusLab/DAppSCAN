@@ -148,7 +148,7 @@ contract Endpoint is Ownable, ILayerZeroEndpoint {
     // LIBRARY UPGRADE step 1: set _newLayerZeroLibraryAddress be the new version
     function newVersion(address _newLayerZeroLibraryAddress) external onlyOwner {
         require(_newLayerZeroLibraryAddress != address(0x0), "LayerZero: new version cannot be zero address");
-        // SWC-Integer Overflow and Underflow: L152
+        // SWC-101-Integer Overflow and Underflow: L152
         require(latestVersion < 65535, "LayerZero: can not add new messaging library");
         latestVersion++;
         libraryLookup[latestVersion] = ILayerZeroMessagingLibrary(_newLayerZeroLibraryAddress);

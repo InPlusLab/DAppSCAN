@@ -461,7 +461,7 @@ contract FraxUnifiedFarmTemplate is Owned, ReentrancyGuard {
     // ------ FARM SYNCING ------
 
     // If the period expired, renew it
-    // SWC-Code With No Effects: L465-L491
+    // SWC-135-Code With No Effects: L465-L491
     function retroCatchUp() internal {
         // Pull in rewards from the rewards distributor
         rewards_distributor.distributeReward(address(this));

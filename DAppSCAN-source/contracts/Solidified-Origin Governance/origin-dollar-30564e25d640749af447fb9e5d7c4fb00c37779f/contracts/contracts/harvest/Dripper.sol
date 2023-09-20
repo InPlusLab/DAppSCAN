@@ -88,7 +88,7 @@ contract Dripper is Governable {
     ///  balance over if no collects were called during that time.
     function setDripDuration(uint256 _durationSeconds) external onlyGovernor {
         require(_durationSeconds > 0, "duration must be non-zero");
-        // SWC-Code With No Effects: L92-L93
+        // SWC-135-Code With No Effects: L92-L93
         dripDuration = uint192(_durationSeconds);
         Dripper(this).collect(); // duration change take immediate effect
     }

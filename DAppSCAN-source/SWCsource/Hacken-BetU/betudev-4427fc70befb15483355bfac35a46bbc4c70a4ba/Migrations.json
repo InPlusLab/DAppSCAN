@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-BetU/betudev-4427fc70befb15483355bfac35a46bbc4c70a4ba/Migrations.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-BetU/betudev-4427fc70befb15483355bfac35a46bbc4c70a4ba/Migrations.sol",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lineNumber": "L2"
   }

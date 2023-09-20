@@ -97,7 +97,7 @@ contract KyberWrapperV3 is DSMath, IExchangeV3, AdminAuth {
     /// @param _destAddr To token
     /// @param _srcAmount From amount
     /// @return rate Rate
-    // SWC-Integer Overflow and Underflow: L101-109
+    // SWC-101-Integer Overflow and Underflow: L101-109
     function getSellRate(address _srcAddr, address _destAddr, uint _srcAmount, bytes memory) public override view returns (uint rate) {
         (rate, ) = KyberNetworkProxyInterface(KYBER_INTERFACE)
             .getExpectedRate(IERC20(_srcAddr), IERC20(_destAddr), _srcAmount);

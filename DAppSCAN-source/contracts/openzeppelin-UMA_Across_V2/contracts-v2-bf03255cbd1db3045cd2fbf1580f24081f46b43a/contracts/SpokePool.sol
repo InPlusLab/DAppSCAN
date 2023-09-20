@@ -332,7 +332,7 @@ abstract contract SpokePool is SpokePoolInterface, Testable, Lockable, MultiCall
         uint32 depositId,
         bytes memory depositorSignature
     ) public override nonReentrant {
-        //SWC-Signature Malleability: L336
+        //SWC-117-Signature Malleability: L336
         _verifyUpdateRelayerFeeMessage(depositor, chainId(), newRelayerFeePct, depositId, depositorSignature);
 
         // Assuming the above checks passed, a relayer can take the signature and the updated relayer fee information
@@ -436,7 +436,7 @@ abstract contract SpokePool is SpokePoolInterface, Testable, Lockable, MultiCall
         uint32 depositId,
         bytes memory depositorSignature
     ) public override nonReentrant {
-        //SWC-Signature Malleability: L439
+        //SWC-117-Signature Malleability: L439
         _verifyUpdateRelayerFeeMessage(depositor, originChainId, newRelayerFeePct, depositId, depositorSignature);
 
         // Now follow the default fillRelay flow with the updated fee and the original relay hash.

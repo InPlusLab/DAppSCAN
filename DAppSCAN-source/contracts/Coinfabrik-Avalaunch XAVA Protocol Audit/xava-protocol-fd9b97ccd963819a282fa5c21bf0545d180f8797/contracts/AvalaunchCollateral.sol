@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
-// SWC-Outdated Compiler Version: L4
-// SWC-Floating Pragma: L4
+// SWC-102-Outdated Compiler Version: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.6.12;
 
 import "@openzeppelin/contracts/proxy/Initializable.sol";

@@ -42,7 +42,7 @@ contract VaultFactory is OwnableUpgradeSafe {
 
     /// @notice Initializes vault factory contract storage
     /// @dev Used only once when vault factory is created for the first time
-    // SWC-Transaction Order Dependence: L46 - L79
+    // SWC-114-Transaction Order Dependence: L46 - L79
     function initialize(
         address _derivativeSpecificationRegistry,
         address _oracleRegistry,

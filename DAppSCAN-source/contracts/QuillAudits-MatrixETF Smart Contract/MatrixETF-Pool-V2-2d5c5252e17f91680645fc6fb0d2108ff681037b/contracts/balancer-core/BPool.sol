@@ -555,7 +555,7 @@ contract BPool is BToken, BMath, BPoolInterface {
         require(balance >= MIN_BALANCE, "MIN_BALANCE");
 
         // Adjust the denorm and totalWeight
-        // SWC-Code With No Effects: L559 - L565
+        // SWC-135-Code With No Effects: L559 - L565
         uint oldWeight = _records[token].denorm;
         if (denorm > oldWeight) {
             _addTotalWeight(bsub(denorm, oldWeight));

@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Zer0_zNS/zNS-b05e503ea1ee87dbe62b1d58426aaa518068e395/contracts/StakingController.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Zer0_zNS/zNS-b05e503ea1ee87dbe62b1d58426aaa518068e395/contracts/StakingController.sol",
  "SWCs": [
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "approveDomainBid",
    "lineNumber": "L92-101"
   },
   {
-   "category": "SWC-Lack of Proper Signature Verification",
+   "category": "SWC-122-Lack of Proper Signature Verification",
    "function": "fulfillDomainBid",
    "lineNumber": "L121-153"
   },
   {
-   "category": "SWC-Signature Malleability",
+   "category": "SWC-117-Signature Malleability",
    "function": "fulfillDomainBid",
    "lineNumber": "L135"
   }

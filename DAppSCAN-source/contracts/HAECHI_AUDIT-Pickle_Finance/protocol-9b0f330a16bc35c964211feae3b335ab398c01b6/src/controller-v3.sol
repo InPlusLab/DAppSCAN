@@ -30,7 +30,7 @@ contract ControllerV3 {
     mapping(address => address) public jars;
     mapping(address => address) public strategies;
     mapping(address => mapping(address => address)) public converters;
-    // SWC-Presence of unused variables: L34
+    // SWC-131-Presence of unused variables: L34
     mapping(address => mapping(address => address)) public strategyConverters;
 
     mapping(address => mapping(address => bool)) public approvedStrategies;

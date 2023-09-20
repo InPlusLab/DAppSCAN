@@ -63,7 +63,7 @@ contract UniProxy {
 // @param from Address from which asset tokens are transferred
 // @param pos Address of hypervisor instance 
 // @return shares Quantity of liquidity tokens minted as a result of deposit
-// SWC-Unprotected Ether Withdrawal: L67-126
+// SWC-105-Unprotected Ether Withdrawal: L67-126
   function deposit(
     uint256 deposit0,
     uint256 deposit1,
@@ -72,7 +72,7 @@ contract UniProxy {
     address pos
   ) external returns (uint256 shares) {
     require(positions[pos].version != 0, 'not added');
-    // SWC-Reentrancy: L75-82
+    // SWC-107-Reentrancy: L75-82
     if (twapCheck || positions[pos].twapOverride) {
       // check twap
       checkPriceChange(
@@ -256,7 +256,7 @@ contract UniProxy {
   // @param deposit0 amount of token0 transfered from sender to hypervisor
   // @param deposit1 amount of token1 transfered from sender to hypervisor
   // @return bool is sufficiently proper 
-  // SWC-Code With No Effects: L259-276
+  // SWC-135-Code With No Effects: L259-276
   function properDepositRatio(
     address pos,
     uint256 deposit0,

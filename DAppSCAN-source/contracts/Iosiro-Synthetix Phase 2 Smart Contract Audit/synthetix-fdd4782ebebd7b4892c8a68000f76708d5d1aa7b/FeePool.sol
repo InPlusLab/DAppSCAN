@@ -257,7 +257,7 @@ contract FeePool is Proxyable, SelfDestructible, LimitedSetup {
         require(_percent >= 0, "Threshold should be positive");
         TARGET_THRESHOLD = (_percent * SafeDecimalMath.unit()) / 100;
     }
-//SWC-Integer Overflow and Underflow:L257-258
+//SWC-101-Integer Overflow and Underflow:L257-258
     /**
      * @notice The Synthetix contract informs us when fees are paid.
      */

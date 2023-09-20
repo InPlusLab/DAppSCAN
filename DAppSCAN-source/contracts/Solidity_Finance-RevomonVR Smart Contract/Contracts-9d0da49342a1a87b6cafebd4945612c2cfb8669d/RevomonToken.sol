@@ -935,7 +935,7 @@ abstract contract ERC20Capped is ERC20 {
  * @title RevomonToken
  * @author RevomonToken (https://github.com/RevomonVR/Contracts)
  */
-// SWC-Code With No Effects: L939
+// SWC-135-Code With No Effects: L939
 contract RevomonToken is ERC20Capped, ERC20Burnable, ERC1363, Roles, TokenRecover {
 
     constructor(

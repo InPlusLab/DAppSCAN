@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-Shopping-project2/openzeppelin-contracts-3.2.0/contracts/access/AccessControl.sol",
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-Shopping-project2/openzeppelin-contracts-3.2.0/contracts/access/AccessControl.sol",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lineNumber": "L4"
   },
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L4"
   }

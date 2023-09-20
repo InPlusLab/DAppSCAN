@@ -496,7 +496,7 @@ abstract contract ERC20Gauges is ERC20, Auth {
     }
 
     /// @notice set the new max gauges. Requires auth by `authority`.
-    // SWC-Assert Violation: L500-L505
+    // SWC-110-Assert Violation: L500-L505
     function setMaxGauges(uint256 newMax) external requiresAuth {
         uint256 oldMax = maxGauges;
         maxGauges = newMax;

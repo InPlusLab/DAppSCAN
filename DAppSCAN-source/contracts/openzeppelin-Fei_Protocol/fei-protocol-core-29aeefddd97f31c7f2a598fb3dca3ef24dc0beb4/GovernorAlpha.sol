@@ -22,7 +22,7 @@ contract GovernorAlpha {
 
     /// @notice The duration of voting on a proposal, in blocks
     function votingPeriod() public pure returns (uint) { return 17280; } // ~3 days in blocks (assuming 15s blocks)
-//SWC-Block values as a proxy for time:L24
+//SWC-116-Block values as a proxy for time:L24
     /// @notice The address of the Fei Protocol Timelock
     TimelockInterface public timelock;
 

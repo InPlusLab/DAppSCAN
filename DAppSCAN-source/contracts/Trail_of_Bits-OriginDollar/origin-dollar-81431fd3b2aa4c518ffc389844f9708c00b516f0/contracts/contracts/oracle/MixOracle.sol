@@ -59,7 +59,7 @@ contract MixOracle is IMinMaxOracle, InitializableGovernable {
         for (uint256 i = 0; i < ethUsdOracles.length; i++) {
             if (ethUsdOracles[i] == oracle) {
                 // swap with the last element of the array, and then delete last element (could be itself)
-                // SWC-Integer Overflow and Underflow: L63 - L65
+                // SWC-101-Integer Overflow and Underflow: L63 - L65
                 ethUsdOracles[i] = ethUsdOracles[ethUsdOracles.length - 1];
                 delete ethUsdOracles[ethUsdOracles.length - 1];
                 ethUsdOracles.length--;

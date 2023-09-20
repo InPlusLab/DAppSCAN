@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/token/RocketTokenRETH.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/token/RocketTokenRETH.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "burn",
    "lineNumber": "L107-124"
   }

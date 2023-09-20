@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Callisto_Network-Monsta Infinite Token Security Audit/moni-smart-contracts-3303268d5456d51a5f7412be8cfca7e3caf73ed5/contracts/presale/MonstaPresale.sol",
+ "filePath": "DAppSCAN-source/contracts/Callisto_Network-Monsta Infinite Token Security Audit/moni-smart-contracts-3303268d5456d51a5f7412be8cfca7e3caf73ed5/contracts/presale/MonstaPresale.sol",
  "SWCs": [
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "reclaimBNB",
    "lineNumber": "L94 - L96"
   }

@@ -214,7 +214,7 @@ abstract contract FarmBossV1 {
 			emit RmApproval(_newDepprovals[l].token, _newDepprovals[l].allow);
 		}
 	}
-//SWC-Unchecked Call Return Value:L221
+//SWC-104-Unchecked Call Return Value:L221
 	function govExecute(address payable _target, uint256 _value, bytes calldata _data) external returns (bool, bytes memory){
 		require(msg.sender == governance, "FARMBOSSV1: !governance");
 

@@ -841,7 +841,7 @@ contract LPool is DelegateInterface, Adminable, LPoolInterface, Exponential, Ree
       * Users borrow assets from the protocol to their own address
       * @param borrowAmount The amount of the underlying asset to borrow
       */
-    //SWC-Reentrancy: L845-L885
+    //SWC-107-Reentrancy: L845-L885
     function borrowFresh(address payable borrower, address payable payee, uint borrowAmount) internal sameBlock {
         /* Fail if borrow not allowed */
         (ControllerInterface(controller)).borrowAllowed(address(this), borrower, payee, borrowAmount);

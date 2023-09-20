@@ -50,7 +50,7 @@ abstract contract ERC20Permit is ERC20, IERC20Permit, EIP712 {
         require(signer == owner, "ERC20Permit: invalid signature");
 
         _nonces[owner].increment();
-        // SWC-Transaction Order Dependence: L53
+        // SWC-114-Transaction Order Dependence: L53
         _approve(owner, spender, amount);
     }
 

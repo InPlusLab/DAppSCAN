@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-BitHero/BitHeroToken-master/AllocatedCrowdsaleMixin.sol",
+ "filePath": "DAppSCAN-source/contracts/Blockchain Labs NZ-BitHero/BitHeroToken-master/AllocatedCrowdsaleMixin.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "isBreakingCap",
    "lineNumber": "L38"
   }

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity =0.8.4;
 
 contract AdminManage {

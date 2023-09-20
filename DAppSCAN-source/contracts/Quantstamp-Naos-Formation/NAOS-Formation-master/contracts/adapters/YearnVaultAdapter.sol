@@ -61,7 +61,7 @@ contract YearnVaultAdapter is IVaultAdapter {
     ///
     /// @param _amount the amount of tokens to deposit into the vault.
     function deposit(uint256 _amount) external override onlyAdmin {
-        //SWC-Unchecked Call Return Value: L65
+        //SWC-104-Unchecked Call Return Value: L65
         vault.deposit(_amount);
     }
 

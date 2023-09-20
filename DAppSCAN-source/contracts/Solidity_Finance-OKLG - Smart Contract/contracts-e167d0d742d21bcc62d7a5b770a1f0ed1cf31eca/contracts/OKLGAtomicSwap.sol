@@ -69,7 +69,7 @@ contract OKLGAtomicSwap is OKLGProduct {
     if (_changeAll) {
       uint256 _index = 0;
       uint256 _numLoops = _max > 0 ? _max : 50;
-      // SWC-DoS With Block Gas Limit: L73 - L79
+      // SWC-128-DoS With Block Gas Limit: L73 - L79
       while (_index + _start < _start + _numLoops) {
         OKLGAtomicSwapInstance _contract = OKLGAtomicSwapInstance(
           targetSwapContracts[_start].sourceContract

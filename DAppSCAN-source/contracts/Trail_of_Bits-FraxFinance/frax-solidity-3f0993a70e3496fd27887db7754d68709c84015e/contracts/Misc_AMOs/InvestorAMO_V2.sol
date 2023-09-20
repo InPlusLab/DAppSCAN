@@ -259,7 +259,7 @@ contract InvestorAMO_V2 is AccessControl {
             borrowed_balance = 0;
         }
         paid_back_historical = paid_back_historical.add(amount);
-        // SWC-Unchecked Call Return Value: L263
+        // SWC-104-Unchecked Call Return Value: L263
         collateral_token.transfer(address(pool), amount);
     }
    

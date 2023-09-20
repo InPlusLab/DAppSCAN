@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/SlowMist-SmoothyV1 Smart Contract Security Audit Report/smoothy-contract-f50450aa09f5031be5f7f330f527333571982d65/contracts/liquidity-mining/SmoothyMasterV1.sol",
+ "filePath": "DAppSCAN-source/contracts/SlowMist-SmoothyV1 Smart Contract Security Audit Report/smoothy-contract-f50450aa09f5031be5f7f330f527333571982d65/contracts/liquidity-mining/SmoothyMasterV1.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS with Failed Call",
+   "category": "SWC-113-DoS with Failed Call",
    "function": "massUpdatePools",
    "lineNumber": "L182 - L184"
   }

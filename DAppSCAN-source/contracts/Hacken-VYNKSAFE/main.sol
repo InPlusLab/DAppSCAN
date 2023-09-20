@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -114,7 +114,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
 
 
-// SWC-Unchecked Call Return Value: L117
+// SWC-104-Unchecked Call Return Value: L117
     function stake(uint256 amount) external nonReentrant {
         busd.transferFrom(msg.sender, address(this), amount);
         userInfo[msg.sender]
@@ -186,7 +186,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
     }
 
 
-// SWC-Unchecked Call Return Value: L189
+// SWC-104-Unchecked Call Return Value: L189
     function unStake(uint256 amount, uint256 unstakeOption)
         external
         nonReentrant
@@ -212,7 +212,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
             }
         }
 
-// SWC-Code With No Effects: L215 - L218
+// SWC-135-Code With No Effects: L215 - L218
         require(
             userInfo[msg.sender].lpAmount >= lpAmountNeeded,
             "withdraw: not good"
@@ -568,7 +568,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
 
 
-// SWC-Unchecked Call Return Value: L570
+// SWC-104-Unchecked Call Return Value: L570
     function claim() public nonReentrant {
         require(
             userInfo[msg.sender].isStaker == true ||

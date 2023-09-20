@@ -46,7 +46,7 @@ contract EternalStorage is State {
         public
     {
     }
-//SWC-State Variable Default Visibility:L51-57
+//SWC-108-State Variable Default Visibility:L51-57
     /* ========== DATA TYPES ========== */
     mapping(bytes32 => uint) UIntStorage;
     mapping(bytes32 => string) StringStorage;

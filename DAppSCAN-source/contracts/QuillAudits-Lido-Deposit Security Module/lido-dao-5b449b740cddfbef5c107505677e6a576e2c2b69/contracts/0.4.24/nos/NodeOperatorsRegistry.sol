@@ -211,7 +211,7 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
       */
     function trimUnusedKeys() external onlyLido {
         uint256 length = getNodeOperatorsCount();
-        // SWC-DoS With Block Gas Limit: L215 - L222
+        // SWC-128-DoS With Block Gas Limit: L215 - L222
         for (uint256 operatorId = 0; operatorId < length; ++operatorId) {
             uint64 totalSigningKeys = operators[operatorId].totalSigningKeys;
             uint64 usedSigningKeys = operators[operatorId].usedSigningKeys;
@@ -285,7 +285,7 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
         authP(MANAGE_SIGNING_KEYS, arr(_operator_id))
     {
         // removing from the last index to the highest one, so we won't get outside the array
-        // SWC-Integer Overflow and Underflow: L289
+        // SWC-101-Integer Overflow and Underflow: L289
         for (uint256 i = _index + _amount; i > _index ; --i) {
             _removeSigningKey(_operator_id, i - 1);
         }
@@ -310,7 +310,7 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
     function removeSigningKeysOperatorBH(uint256 _operator_id, uint256 _index, uint256 _amount) external {
         require(msg.sender == operators[_operator_id].rewardAddress, "APP_AUTH_FAILED");
         // removing from the last index to the highest one, so we won't get outside the array
-        // SWC-Integer Overflow and Underflow: L314
+        // SWC-101-Integer Overflow and Underflow: L314
         for (uint256 i = _index + _amount; i > _index ; --i) {
             _removeSigningKey(_operator_id, i - 1);
         }
@@ -538,7 +538,7 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
         return KEYS_OP_INDEX_POSITION.getStorageUint256();
     }
 
-    // SWC-Code With No Effects: L542 - L555
+    // SWC-135-Code With No Effects: L542 - L555
     function _isEmptySigningKey(bytes memory _key) internal pure returns (bool) {
         assert(_key.length == PUBKEY_LENGTH);
         // algorithm applicability constraint
@@ -563,13 +563,13 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
         return uint256(keccak256(abi.encodePacked(SIGNING_KEYS_MAPPING_NAME, _operator_id, _keyIndex)));
     }
 
-    // SWC-Code With No Effects: L567 - L590
+    // SWC-135-Code With No Effects: L567 - L590
     function _storeSigningKey(uint256 _operator_id, uint256 _keyIndex, bytes memory _key, bytes memory _signature) internal {
         assert(_key.length == PUBKEY_LENGTH);
         assert(_signature.length == SIGNATURE_LENGTH);
         // algorithm applicability constraints
         assert(PUBKEY_LENGTH >= 32 && PUBKEY_LENGTH <= 64);
-        // SWC-Code With No Effects: L573
+        // SWC-135-Code With No Effects: L573
         assert(0 == SIGNATURE_LENGTH % 32);
 
         // key
@@ -640,7 +640,7 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
 
     function _deleteSigningKey(uint256 _operator_id, uint256 _keyIndex) internal {
         uint256 offset = _signingKeyOffset(_operator_id, _keyIndex);
-        // SWC-Code With No Effects: L644
+        // SWC-135-Code With No Effects: L644
         for (uint256 i = 0; i < (PUBKEY_LENGTH + SIGNATURE_LENGTH) / 32 + 1; ++i) {
             assembly {
                 sstore(add(offset, i), 0)
@@ -648,10 +648,10 @@ contract NodeOperatorsRegistry is INodeOperatorsRegistry, IsContract, AragonApp 
         }
     }
 
-    // SWC-Code With No Effects: L650 - L676
+    // SWC-135-Code With No Effects: L650 - L676
     function _loadSigningKey(uint256 _operator_id, uint256 _keyIndex) internal view returns (bytes memory key, bytes memory signature) {
         // algorithm applicability constraints
-        // SWC-Code With No Effects: L655
+        // SWC-135-Code With No Effects: L655
         assert(PUBKEY_LENGTH >= 32 && PUBKEY_LENGTH <= 64);
         assert(0 == SIGNATURE_LENGTH % 32);
 

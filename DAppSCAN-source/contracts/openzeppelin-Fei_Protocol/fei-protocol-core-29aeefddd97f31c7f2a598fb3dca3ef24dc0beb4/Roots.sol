@@ -4,7 +4,7 @@ import "@uniswap/lib/contracts/libraries/Babylonian.sol";
 
 library Roots {
     // Newton's method https://en.wikipedia.org/wiki/Cube_root#Numerical_methods
-//    SWC-Integer Overflow and Underflow:L8
+//    SWC-101-Integer Overflow and Underflow:L8
     function cubeRoot(uint y) internal pure returns (uint z) {
         if (y > 7) {
             z = y;

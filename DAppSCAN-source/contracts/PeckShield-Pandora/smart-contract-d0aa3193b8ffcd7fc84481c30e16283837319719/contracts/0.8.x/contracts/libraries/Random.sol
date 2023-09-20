@@ -16,7 +16,7 @@ library Random {
         (, int256 _price, , , ) = priceFeed.latestRoundData();
         return uint256(_price);
     }
-    //SWC-Weak Sources of Randomness from Chain Attributes: L20-L41
+    //SWC-120-Weak Sources of Randomness from Chain Attributes: L20-L41
     function computerSeed(uint256 salt) internal view returns (uint256) {
         uint256 seed =
         uint256(

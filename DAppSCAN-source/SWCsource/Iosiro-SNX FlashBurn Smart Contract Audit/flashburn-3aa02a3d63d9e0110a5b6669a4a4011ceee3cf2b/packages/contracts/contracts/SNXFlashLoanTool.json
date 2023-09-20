@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-SNX FlashBurn Smart Contract Audit/flashburn-3aa02a3d63d9e0110a5b6669a4a4011ceee3cf2b/packages/contracts/contracts/SNXFlashLoanTool.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-SNX FlashBurn Smart Contract Audit/flashburn-3aa02a3d63d9e0110a5b6669a4a4011ceee3cf2b/packages/contracts/contracts/SNXFlashLoanTool.sol",
  "SWCs": [
   {
-   "category": "SWC-Use of Deprecated Solidity Functions",
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
    "function": "burn",
    "lineNumber": "L54"
   },
   {
-   "category": "SWC-Use of Deprecated Solidity Functions",
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
    "function": "transferToken",
    "lineNumber": "L122"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "swap",
    "lineNumber": "L143"
   }

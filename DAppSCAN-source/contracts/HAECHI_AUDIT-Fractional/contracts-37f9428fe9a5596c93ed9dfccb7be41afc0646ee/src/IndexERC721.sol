@@ -12,11 +12,11 @@ import "./OpenZeppelin/token/ERC721/ERC721Holder.sol";
 contract IndexERC721 is ERC721, ERC721Holder {
     using Counters for Counters.Counter;
 
-// SWC-Presence of unused variables: L16
+// SWC-131-Presence of unused variables: L16
     Counters.Counter private _tokenIdTracker;
 
     /// @notice mapping ERC721 address -> token ID -> token ID which owns the previous token ID
-    // SWC-Presence of unused variables: L20
+    // SWC-131-Presence of unused variables: L20
     mapping(address=>mapping(uint256=>uint256)) public tokenToIndexOwner;
 
     event Deposit(address token, uint256 tokenId, address from);

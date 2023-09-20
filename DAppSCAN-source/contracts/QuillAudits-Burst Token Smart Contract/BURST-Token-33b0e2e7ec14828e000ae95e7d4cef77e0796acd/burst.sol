@@ -1,5 +1,6 @@
 pragma solidity ^0.5.0;
-//SWC-Outdated Compiler Version，SWC-Floating Pragma：L1
+//  SWC-102-Outdated Compiler Version: L1
+//  SWC-103-Floating Pragma: L1
 // ----------------------------------------------------------------------------
 // ERC Token Standard #20 Interface
 //
@@ -55,7 +56,7 @@ contract BURST is ERC20Interface, SafeMath {
         balances[msg.sender] = _totalSupply;
         emit Transfer(address(0), msg.sender, _totalSupply);
     }
-//SWC-Integer Overflow and Underflow：L60
+//SWC-101-Integer Overflow and Underflow: L60
     function totalSupply() public view returns (uint) {
         return _totalSupply  - balances[address(0)];
     }
@@ -67,7 +68,7 @@ contract BURST is ERC20Interface, SafeMath {
     function allowance(address tokenOwner, address spender) public view returns (uint remaining) {
         return allowed[tokenOwner][spender];
     }
-//SWC-Transaction Order Dependence：L71-75
+//SWC-114-Transaction Order Dependence: L71-75
     function approve(address spender, uint tokens) public returns (bool success) {
         allowed[msg.sender][spender] = tokens;
         emit Approval(msg.sender, spender, tokens);

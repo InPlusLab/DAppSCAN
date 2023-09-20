@@ -1,13 +1,13 @@
 pragma solidity ^0.6.0;
 pragma experimental ABIEncoderV2;
-//SWC-Outdated Compiler Version:L1, all contract
+//SWC-102-Outdated Compiler Version:L1, all contract
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./Permissions.sol";
 import "./ICore.sol";
 import "../token/IFei.sol";
 import "../token/Fei.sol";
 import "../dao/Tribe.sol";
-//SWC-Code With No Effects:L7
+//SWC-135-Code With No Effects:L7
 /// @title ICore implementation
 /// @author Fei Protocol
 contract Core is ICore, Permissions {
@@ -39,7 +39,7 @@ contract Core is ICore, Permissions {
 	function allocateTribe(address to, uint amount) external override onlyGovernor {
 		IERC20 _tribe = tribe;
 		require(_tribe.balanceOf(address(this)) > amount, "Core: Not enough Tribe");
-//SWC-Requirement Violation:L41
+//SWC-123-Requirement Violation:L41
 		_tribe.transfer(to, amount);
 
 		emit TribeAllocation(to, amount);

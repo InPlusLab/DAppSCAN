@@ -3,7 +3,7 @@ pragma solidity 0.4.24;
 import "./ERC20Basic.sol";
 import "./ERC20.sol";
 
-//SWC-Assert Violation:L15、19、23
+//SWC-110-Assert Violation:L15、19、23
 /**
  * @title SafeERC20
  * @dev Wrappers around ERC20 operations that throw on failure.

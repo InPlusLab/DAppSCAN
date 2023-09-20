@@ -359,7 +359,7 @@ library DutchCrowdsaleIdx {
   @return current_rate: The price of 1 token (10^decimals) currently
   @return time_remaining: The amount of time remaining in the sale (factors in time till sale starts)
   */
-  // SWC-Integer Overflow and Underflow: L363 - L381
+  // SWC-101-Integer Overflow and Underflow: L363 - L381
   function getRateAndTimeRemaining(uint _start_time, uint _duration, uint _start_rate, uint _end_rate) internal view
   returns (uint current_rate, uint time_remaining)  {
     // If the sale has not started, return start rate and duration plus time till start

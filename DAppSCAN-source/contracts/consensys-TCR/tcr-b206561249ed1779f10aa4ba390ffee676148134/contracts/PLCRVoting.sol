@@ -209,7 +209,7 @@ contract PLCRVoting {
 
         pollMap[pollNonce] = Poll({
             voteQuorum: _voteQuorum,
-            // SWC-Integer Overflow and Underflow: L213
+            // SWC-101-Integer Overflow and Underflow: L213
             commitEndDate: block.timestamp + _commitDuration,
             revealEndDate: block.timestamp + _commitDuration + _revealDuration,
             votesFor: 0,

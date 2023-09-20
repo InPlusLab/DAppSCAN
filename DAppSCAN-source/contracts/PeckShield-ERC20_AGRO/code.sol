@@ -589,7 +589,7 @@ contract BEP20Token is Context, IBEP20, Ownable {
    *
    * See {_burn} and {_approve}.
    */
-  //  SWC-Code With No Effects: L592 - L594
+  //  SWC-135-Code With No Effects: L592 - L594
   function _burnFrom(address account, uint256 amount) internal {
     _burn(account, amount);
     _approve(account, _msgSender(), _allowances[account][_msgSender()].sub(amount, "BEP20: burn amount exceeds allowance"));

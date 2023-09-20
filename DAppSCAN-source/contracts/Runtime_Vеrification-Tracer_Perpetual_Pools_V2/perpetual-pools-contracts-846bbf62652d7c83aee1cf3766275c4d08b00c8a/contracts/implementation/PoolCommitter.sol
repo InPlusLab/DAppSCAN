@@ -135,7 +135,7 @@ contract PoolCommitter is IPoolCommitter, Initializable {
      * @param fromAggregateBalance If minting, burning, or rebalancing into a delta neutral position,
      *                             will tokens be taken from user's aggregate balance?
      */
-    // SWC-Transaction Order Dependence: L139-L181
+    // SWC-114-Transaction Order Dependence: L139-L181
     function commit(
         CommitType commitType,
         uint256 amount,
@@ -183,7 +183,7 @@ contract PoolCommitter is IPoolCommitter, Initializable {
     /**
      * @notice Claim user's balance. This can be done either by the user themself or by somebody else on their behalf.
      */
-    // SWC-Transaction Order Dependence: L187-L201
+    // SWC-114-Transaction Order Dependence: L187-L201
     function claim(address user) external override updateBalance {
         Balance memory balance = userAggregateBalance[user];
         ILeveragedPool pool = ILeveragedPool(leveragedPool);
@@ -301,7 +301,7 @@ contract PoolCommitter is IPoolCommitter, Initializable {
         uint32 counter = 2;
         uint256 lastPriceTimestamp = pool.lastPriceTimestamp();
         uint256 updateInterval = pool.updateInterval();
-        // SWC-DoS With Block Gas Limit: L305-L315
+        // SWC-128-DoS With Block Gas Limit: L305-L315
         while (true) {
             if (block.timestamp >= lastPriceTimestamp + updateInterval * counter) {
                 // Another update interval has passed, so we have to do the nextIntervalCommit as well
@@ -382,7 +382,7 @@ contract PoolCommitter is IPoolCommitter, Initializable {
                 update._newLongTokensSum += _newLongTokens;
                 update._newShortTokensSum += _newShortTokens;
                 update._newSettlementTokensSum += _newSettlementTokens;
-                // SWC-Code With No Effects: L386
+                // SWC-135-Code With No Effects: L386
                 delete userCommitments[user][i];
                 delete unAggregatedCommitments[user][i];
             } else {

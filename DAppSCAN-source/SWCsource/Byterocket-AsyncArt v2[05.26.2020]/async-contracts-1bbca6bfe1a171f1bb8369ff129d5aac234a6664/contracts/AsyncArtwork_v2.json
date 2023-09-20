@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Byterocket-AsyncArt v2[05.26.2020]/async-contracts-1bbca6bfe1a171f1bb8369ff129d5aac234a6664/contracts/AsyncArtwork_v2.sol",
+ "filePath": "DAppSCAN-source/contracts/Byterocket-AsyncArt v2[05.26.2020]/async-contracts-1bbca6bfe1a171f1bb8369ff129d5aac234a6664/contracts/AsyncArtwork_v2.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L156"
   },
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "useControlToken",
    "lineNumber": "L600"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "safeFundsTransfer",
    "lineNumber": "L647"
   }

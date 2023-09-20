@@ -65,7 +65,7 @@ contract StrategyUSDC3pool is BaseStrategy {
         return IERC20(y3crv).balanceOf(address(this));
     }
 
-    // SWC-Unchecked Call Return Value: L69
+    // SWC-104-Unchecked Call Return Value: L69
     function balanceOfy3CRVinWant() public view returns (uint256) {
         return balanceOfy3CRV()
                 .mul(yvERC20(y3crv).getPricePerFullShare()).div(1e18)
@@ -97,7 +97,7 @@ contract StrategyUSDC3pool is BaseStrategy {
         }
     }
 
-    // SWC-Presence of unused variables: L100
+    // SWC-131-Presence of unused variables: L100
     function adjustPosition(uint256 _debtOutstanding) internal override {
         rebalance();
         _deposit();

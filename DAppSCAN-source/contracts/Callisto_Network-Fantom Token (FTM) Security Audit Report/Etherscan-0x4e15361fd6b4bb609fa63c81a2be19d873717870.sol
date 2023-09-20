@@ -162,7 +162,7 @@ contract ERC20Token is ERC20Interface, Owned {
         return balances[_owner];
     }
 
-// SWC-Unprotected Ether Withdrawal: L166 - L172
+// SWC-105-Unprotected Ether Withdrawal: L166 - L172
     function transfer(address _to, uint _amount) public returns (bool) {
         require(_to != 0x0);
         balances[msg.sender] = balances[msg.sender].sub(_amount);

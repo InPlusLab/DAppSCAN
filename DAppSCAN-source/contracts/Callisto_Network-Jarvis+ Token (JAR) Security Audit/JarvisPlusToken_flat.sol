@@ -93,7 +93,7 @@ contract BasicToken is ERC20Basic {
   */
   function transfer(address _to, uint256 _value) public returns (bool) {
     require(_to != address(0));
-    // SWC-Code With No Effects: L97
+    // SWC-135-Code With No Effects: L97
     require(_value <= balances[msg.sender]);
 
     balances[msg.sender] = balances[msg.sender].sub(_value);
@@ -163,7 +163,7 @@ contract StandardToken is ERC20, BasicToken {
     returns (bool)
   {
     require(_to != address(0));
-    // SWC-Code With No Effects: L167 - L168
+    // SWC-135-Code With No Effects: L167 - L168
     require(_value <= balances[_from]);
     require(_value <= allowed[_from][msg.sender]);
 

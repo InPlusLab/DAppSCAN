@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-SynchroLife/synchrocoin-contracts-master/contracts/SynchroCoin.sol",
+ "filePath": "DAppSCAN-source/contracts/Blockchain Labs NZ-SynchroLife/synchrocoin-contracts-master/contracts/SynchroCoin.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "proxyWithdraw",
    "lineNumber": "L118"
   }

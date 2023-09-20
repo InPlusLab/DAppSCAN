@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2
+// SWC-102-Outdated Compiler Version: L2
 pragma solidity 0.4.24;
 
 import {SafeMath} from "./SafeMath.sol";
@@ -457,7 +457,7 @@ contract CasperToken is ERC20Interface, Owned {
 
     /// @notice purchases tokens, which a send to `_to` with 5% returned to `_ref`
     /// @notice 5% return must work only on crowdsale
-    // SWC-Integer Overflow and Underflow: L460-492
+    // SWC-101-Integer Overflow and Underflow: L460-492
     function purchaseWithPromoter(address _to, address _ref) payable public {
         require(now >= presaleStartTime && now <= crowdsaleEndTime);
 

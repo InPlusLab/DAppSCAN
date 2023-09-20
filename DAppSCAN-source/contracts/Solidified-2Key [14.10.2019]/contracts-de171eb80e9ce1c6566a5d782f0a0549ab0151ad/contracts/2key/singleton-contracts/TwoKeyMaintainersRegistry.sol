@@ -78,7 +78,7 @@ contract TwoKeyMaintainersRegistry is Upgradeable {
         require(onlyTwoKeyAdmin(msg.sender) == true);
         //If state variable, .balance, or .length is used several times, holding its value in a local variable is more gas efficient.
         uint numberOfMaintainers = _maintainers.length;
-        // SWC-DoS With Block Gas Limit: L82 - L84
+        // SWC-128-DoS With Block Gas Limit: L82 - L84
         for(uint i=0; i<numberOfMaintainers; i++) {
             addMaintainer(_maintainers[i]);
         }
@@ -97,7 +97,7 @@ contract TwoKeyMaintainersRegistry is Upgradeable {
         require(onlyTwoKeyAdmin(msg.sender) == true);
         //If state variable, .balance, or .length is used several times, holding its value in a local variable is more gas efficient.
         uint numberOfMaintainers = _maintainers.length;
-        // SWC-DoS With Block Gas Limit: L101 - L104
+        // SWC-128-DoS With Block Gas Limit: L101 - L104
         for(uint i=0; i<numberOfMaintainers; i++) {
 
             removeMaintainer(_maintainers[i]);

@@ -1,0 +1,25 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Hakka_Finance_wHakka/wHakka.sol",
+ "SWCs": [
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "stakingRateMax",
+   "lineNumber": "L509"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "stake",
+   "lineNumber": "L556 - L573"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "unstake",
+   "lineNumber": "L576 - L592"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "unstake",
+   "lineNumber": "L580"
+  }
+ ]
+}

@@ -7,7 +7,7 @@
 */
 
 // [LOW.8] Update solidity compiler accordingly security audition
-// SWC-Outdated Compiler Version: L11
+// SWC-102-Outdated Compiler Version: L11
 pragma solidity 0.7.5;
 
 /**

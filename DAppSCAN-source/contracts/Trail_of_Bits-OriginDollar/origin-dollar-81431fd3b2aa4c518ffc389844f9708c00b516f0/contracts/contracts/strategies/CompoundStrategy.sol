@@ -75,7 +75,7 @@ contract CompoundStrategy is InitializableAbstractStrategy {
             // Redeem entire balance of cToken
             ICERC20 cToken = _getCTokenFor(assetsMapped[i]);
             if (cToken.balanceOf(address(this)) > 0) {
-                // SWC-Unchecked Call Return Value: L79
+                // SWC-104-Unchecked Call Return Value: L79
                 cToken.redeem(cToken.balanceOf(address(this)));
                 // Transfer entire balance to Vault
                 IERC20 asset = IERC20(assetsMapped[i]);

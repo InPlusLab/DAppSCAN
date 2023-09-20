@@ -74,7 +74,7 @@ abstract contract StrategyBasisFarmBase is StrategyBase {
         return _amount;
     }
 
-    // SWC-Unchecked Call Return Value: L78 - L152
+    // SWC-104-Unchecked Call Return Value: L78 - L152
     function harvest() public override onlyBenevolent {
         // Anyone can harvest it at any given time.
         // I understand the possibility of being frontrun

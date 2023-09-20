@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Forbitspace/forbitspaceX-bep20-19fc2b037b743e9f795709c72f004efe1109aaaf/contracts/libraries/Payment.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Forbitspace/forbitspaceX-bep20-19fc2b037b743e9f795709c72f004efe1109aaaf/contracts/libraries/Payment.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "setAdmin",
    "lineNumber": "L85"
   }

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-RariCapital/rari-stable-pool-contracts-66e2dc5764d5f3f297c2d25a01dfadb760a1ef03/contracts/lib/pools/CompoundPoolController.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-RariCapital/rari-stable-pool-contracts-66e2dc5764d5f3f297c2d25a01dfadb760a1ef03/contracts/lib/pools/CompoundPoolController.sol",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "getBalance",
    "lineNumber": "L50"
   }

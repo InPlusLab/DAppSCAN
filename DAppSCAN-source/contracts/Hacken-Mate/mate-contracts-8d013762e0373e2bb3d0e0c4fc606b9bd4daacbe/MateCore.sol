@@ -3,7 +3,7 @@ pragma solidity >=0.8.0;
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./OrderBook.sol";
 import "./FeeManager.sol";
-//    SWC-Block values as a proxy for time:L86、166、225
+//    SWC-116-Block values as a proxy for time:L86、166、225
 contract MateCore is OrderBook, FeeManager, ReentrancyGuard {
     using SafeERC20 for IERC20;
 

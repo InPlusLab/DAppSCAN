@@ -435,7 +435,7 @@ contract SmartYield is
   // /publics
 
   // internals
-//SWC-Insufficient Gas Griefing:L439-451
+//SWC-126-Insufficient Gas Griefing:L439-451
     function _beforeProviderOp() internal {
       // this modifier will be added to the begginging of all (write) functions.
       // The first tx after a queued liquidation's timestamp will trigger the liquidation

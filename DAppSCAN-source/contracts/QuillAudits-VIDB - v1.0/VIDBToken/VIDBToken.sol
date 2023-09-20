@@ -1,7 +1,7 @@
 /**
  *Submitted for verification at Etherscan.io on 2020-12-11
 */
-//SWC-Outdated Compiler Version:L5,all contract
+//SWC-102-Outdated Compiler Version:L5,all contract
 pragma solidity ^0.5.0;
 
 /**
@@ -715,7 +715,7 @@ contract VIDBToken is ERC20Detailed, ERC20, Ownable {
 		
         return true;
 	}
-//SWC-Block values as a proxy for time:L722
+//SWC-116-Block values as a proxy for time:L722
 	function getLockedAmount(address lockedAddress) public view returns (uint256 _amount) {
 	    uint256 lockedAmount =0;
 	    for(uint256 j = 0; j<lockList[lockedAddress].length; j++) {

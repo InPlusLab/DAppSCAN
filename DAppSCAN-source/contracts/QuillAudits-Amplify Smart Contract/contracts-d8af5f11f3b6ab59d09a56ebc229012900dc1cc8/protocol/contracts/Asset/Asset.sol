@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 /// @dev size: 7.060 Kbytes
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.0;
 
 import "./AssetStorage.sol";

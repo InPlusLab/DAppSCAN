@@ -1,5 +1,5 @@
-// SWC-Outdated Compiler Version: L3
-// SWC-Floating Pragma: L3
+// SWC-102-Outdated Compiler Version: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.5.2;
 pragma experimental ABIEncoderV2; // to enable structure-type parameters
 
@@ -498,7 +498,7 @@ contract AMM is AMMGovernance {
         require(perpetualProxy.isSafeWithPrice(trader, perpetualMarkPrice), "sender unsafe");
         require(perpetualProxy.isProxySafeWithPrice(perpetualMarkPrice), "amm unsafe");
     }
-    // SWC-Unchecked Call Return Value: L502
+    // SWC-104-Unchecked Call Return Value: L502
     function mintShareTokenTo(address guy, uint256 amount) internal {
         shareToken.mint(guy, amount);
     }

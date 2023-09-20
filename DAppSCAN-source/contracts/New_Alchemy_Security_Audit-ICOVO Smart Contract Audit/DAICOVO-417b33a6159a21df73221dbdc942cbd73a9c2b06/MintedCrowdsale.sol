@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-//SWC-Code With No Effects:L1-28
+//SWC-135-Code With No Effects:L1-28
 /**
  * Copyright (c) 2016 Smart Contract Solutions, Inc.
  * Released under the MIT license.

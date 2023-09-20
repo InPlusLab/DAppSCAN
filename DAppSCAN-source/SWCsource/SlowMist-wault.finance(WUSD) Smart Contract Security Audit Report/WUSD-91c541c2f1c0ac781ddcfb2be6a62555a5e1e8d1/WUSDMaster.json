@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/SlowMist-wault.finance(WUSD) Smart Contract Security Audit Report/WUSD-91c541c2f1c0ac781ddcfb2be6a62555a5e1e8d1/WUSDMaster.sol",
+ "filePath": "DAppSCAN-source/contracts/SlowMist-wault.finance(WUSD) Smart Contract Security Audit Report/WUSD-91c541c2f1c0ac781ddcfb2be6a62555a5e1e8d1/WUSDMaster.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction reordering issues",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "stake",
    "lineNumber": "L717-L723"
   }

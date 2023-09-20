@@ -304,7 +304,7 @@ contract RibbonVault is OptionsVaultStorage {
      * @notice Initiates a withdrawal that can be processed once the round completes
      * @param shares is the number of shares to withdraw
      */
-     //SWC-Shadowing State Variables: L308
+     //SWC-119-Shadowing State Variables: L308
     function initiateWithdraw(uint128 shares) external nonReentrant {
         require(shares > 0, "!shares");
 
@@ -386,7 +386,7 @@ contract RibbonVault is OptionsVaultStorage {
      * @notice Redeems shares that are owed to the account
      * @param shares is the number of shares to redeem
      */
-     //SWC-Shadowing State Variables: L390
+     //SWC-119-Shadowing State Variables: L390
     function redeem(uint256 shares) external nonReentrant {
         require(shares > 0, "!shares");
         _redeem(shares, false);
@@ -404,7 +404,7 @@ contract RibbonVault is OptionsVaultStorage {
      * @param shares is the number of shares to redeem, could be 0 when isMax=true
      * @param isMax is flag for when callers do a max redemption
      */
-     //SWC-Shadowing State Variables: L408
+     //SWC-119-Shadowing State Variables: L408
     function _redeem(uint256 shares, bool isMax) internal {
         ShareMath.assertUint104(shares);
 

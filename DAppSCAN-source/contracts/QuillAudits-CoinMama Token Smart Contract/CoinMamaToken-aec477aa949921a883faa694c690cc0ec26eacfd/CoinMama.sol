@@ -1,5 +1,5 @@
 pragma solidity ^0.6.2;
-// SWC-Outdated Compiler Version：L1
+// SWC-102-Outdated Compiler Version: L1
 abstract contract Context {
     function _msgSender() internal view virtual returns (address) {
         return msg.sender;
@@ -651,7 +651,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         uint256 amount
     ) internal virtual {}
 }
-//SWC-Code With No Effects：L648-652
+//SWC-135-Code With No Effects: L648-652
 interface DividendPayingTokenOptionalInterface {
   /// @notice View the amount of dividend in wei that an address can withdraw.
   /// @param _owner The address of a token holder.
@@ -1133,7 +1133,7 @@ contract CoinMama is ERC20, Ownable {
     function setSwapTokensAtAmt(uint256 amount) external onlyOwner{
         swapTokensAtAmount = amount;
     }
-// SWC-Unprotected Ether Withdrawal：L1137-1139
+// SWC-105-Unprotected Ether Withdrawal: L1137-1139
     function withdraw(uint256 weiAmount) external onlyOwner{
         msg.sender.transfer(weiAmount);
     }

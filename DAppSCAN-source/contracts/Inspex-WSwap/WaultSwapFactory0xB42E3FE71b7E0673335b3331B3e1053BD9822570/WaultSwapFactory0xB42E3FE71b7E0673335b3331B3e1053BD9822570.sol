@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIТ
 
 
-// SWC-Outdated Compiler Version: L5
+// SWC-102-Outdated Compiler Version: L5
 pragma solidity =0.5.16;
 
 

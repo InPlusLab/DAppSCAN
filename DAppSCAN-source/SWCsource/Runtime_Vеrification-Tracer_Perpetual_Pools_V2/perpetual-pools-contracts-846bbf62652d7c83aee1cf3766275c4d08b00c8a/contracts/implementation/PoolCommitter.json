@@ -1,23 +1,23 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/perpetual-pools-contracts-846bbf62652d7c83aee1cf3766275c4d08b00c8a/contracts/implementation/PoolCommitter.sol",
+ "filePath": "DAppSCAN-source/contracts/Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/perpetual-pools-contracts-846bbf62652d7c83aee1cf3766275c4d08b00c8a/contracts/implementation/PoolCommitter.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "commit",
    "lineNumber": "L139-L181"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "claim",
    "lineNumber": "L187-L201"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "executeCommitments",
    "lineNumber": "L305-L315"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "updateAggregateBalance",
    "lineNumber": "L386"
   }

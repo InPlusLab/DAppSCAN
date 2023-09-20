@@ -119,7 +119,7 @@ contract HermezAuctionProtocol is Initializable, ReentrancyGuardUpgradeSafe {
      * @param governanceAddress Hermez Governance smartcontract
      * @param bootCoordinatorAddress Boot Coordinator Address
      */
-    //  SWC-Transaction Order Dependence: L123 - L156
+    //  SWC-114-Transaction Order Dependence: L123 - L156
     function hermezAuctionProtocolInitializer(
         address token,
         uint128 genesis,
@@ -269,7 +269,7 @@ contract HermezAuctionProtocol is Initializable, ReentrancyGuardUpgradeSafe {
         external
         onlyGovernance
     {
-    //  SWC-Integer Overflow and Underflow: L273
+    //  SWC-101-Integer Overflow and Underflow: L273
         require(
             (newAllocationRatio[0] +
                 newAllocationRatio[1] +
@@ -756,7 +756,7 @@ contract HermezAuctionProtocol is Initializable, ReentrancyGuardUpgradeSafe {
             } else if (_bootCoordinator != forger) {
                 // We save the minBid that this block has had
                 slots[slotToForge].closedMinBid = slots[slotToForge].bidAmount;
-                // SWC-Integer Overflow and Underflow: L761 - L790
+                // SWC-101-Integer Overflow and Underflow: L761 - L790
                 // calculation of token distribution
                 uint128 burnAmount = slots[slotToForge]
                     .bidAmount
@@ -797,7 +797,7 @@ contract HermezAuctionProtocol is Initializable, ReentrancyGuardUpgradeSafe {
      * @param bidder address to query
      * @return the total claimable HEZ by an address
      */
-    //  SWC-Integer Overflow and Underflow: L802
+    //  SWC-101-Integer Overflow and Underflow: L802
     function getClaimableHEZ(address bidder) public view returns (uint128) {
         return pendingBalances[bidder];
     }

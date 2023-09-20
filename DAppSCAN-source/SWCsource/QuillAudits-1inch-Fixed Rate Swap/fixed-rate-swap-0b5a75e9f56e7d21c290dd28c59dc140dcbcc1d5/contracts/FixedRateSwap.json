@@ -1,33 +1,33 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-1inch-Fixed Rate Swap/fixed-rate-swap-0b5a75e9f56e7d21c290dd28c59dc140dcbcc1d5/contracts/FixedRateSwap.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-1inch-Fixed Rate Swap/fixed-rate-swap-0b5a75e9f56e7d21c290dd28c59dc140dcbcc1d5/contracts/FixedRateSwap.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "depositFor",
    "lineNumber": "L137"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "withdrawFor",
    "lineNumber": "L173 - L180"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "withdrawForWithRatio",
    "lineNumber": "L214 - L222"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "_swap",
    "lineNumber": "L323"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_getVirtualAmountsForDepositImpl",
    "lineNumber": "L346 - L358"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_getRealAmountsForWithdrawImpl",
    "lineNumber": "L388 - L401"
   }

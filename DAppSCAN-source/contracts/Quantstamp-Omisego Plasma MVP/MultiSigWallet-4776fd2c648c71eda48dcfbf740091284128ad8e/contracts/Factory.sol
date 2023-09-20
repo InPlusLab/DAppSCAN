@@ -1,5 +1,5 @@
-// SWC-Floating Pragma: L2
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L2
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.4.15;
 
 contract Factory {

@@ -505,7 +505,7 @@ contract stakingRateModel {
 
     function stakingRateMax() public returns (uint256 rate) {
         uint256 timeElapsed = block.timestamp.sub(lastUpdateTimestamp);
-        // SWC-Block values as a proxy for time: L509
+        // SWC-116-Block values as a proxy for time: L509
         if(timeElapsed > 0) {
             lastUpdateTimestamp = block.timestamp;
             rate = timeElapsed.mul(ratePerSecond).add(1e18).mul(stakingRateStored).div(1e18);
@@ -553,7 +553,7 @@ contract wHakka is Ownable, ERC20Mintable{
         currentModel = stakingRateModel(newModel);
     }
 
-// SWC-Reentrancy: L556 - L573
+// SWC-107-Reentrancy: L556 - L573
     function stake(address to, uint256 amount, uint256 time) public returns (uint256 wAmount) {
         vault storage v = vaults[to][vaultCount[to]];
         wAmount = getStakingRate(time).mul(amount).div(1e18);
@@ -573,10 +573,10 @@ contract wHakka is Ownable, ERC20Mintable{
         emit Stake(to, msg.sender, amount, wAmount, time);
     }
 
-    // SWC-Reentrancy: L576 - L592
+    // SWC-107-Reentrancy: L576 - L592
     function unstake(address to, uint256 index, uint256 wAmount) public returns (uint256 amount) {
         vault storage v = vaults[msg.sender][index];
-        // SWC-Block values as a proxy for time: L580
+        // SWC-116-Block values as a proxy for time: L580
         require(block.timestamp >= v.unlockTime, "locked");
         require(wAmount <= v.wAmount, "exceed locked amount");
         amount = wAmount.mul(v.hakkaAmount).div(v.wAmount);

@@ -18,7 +18,7 @@ contract SMAOracle is IOracleWrapper {
     address public observer;
 
     /// Current SMA price
-    // SWC-Presence of unused variables: L22
+    // SWC-131-Presence of unused variables: L22
     int256 public price;
 
     /// Number of periods to use in calculating the SMA (`k` in the SMA equation)
@@ -130,7 +130,7 @@ contract SMAOracle is IOracleWrapper {
      * @param x Number to convert to wad value
      * @return `x` but wad
      */
-    // SWC-Code With No Effects: L134-L136
+    // SWC-135-Code With No Effects: L134-L136
     function toWad(int256 x) private view returns (int256) {
         return x * scaler;
     }

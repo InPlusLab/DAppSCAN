@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2
+// SWC-102-Outdated Compiler Version: L2
 pragma solidity ^0.4.21;
 
 import "Voting.sol";
@@ -47,7 +47,7 @@ contract Main{
     function createBallot(address[] candidates, uint256 correlationId) public returns (bool){
     
         Voting bl = new Voting(msg.sender, candidates, owner, correlationId);
-        // SWC-Reentrancy: L51
+        // SWC-107-Reentrancy: L51
         ballotAddresses.push(bl);
 
 		emit balloutCreated(bl, correlationId);

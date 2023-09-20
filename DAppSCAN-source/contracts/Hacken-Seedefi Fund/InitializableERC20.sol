@@ -10,7 +10,7 @@
     SPDX-License-Identifier: Apache-2.0
 
 */
-// SWC-Outdated Compiler Version: L14
+// SWC-102-Outdated Compiler Version: L14
 pragma solidity 0.6.9;
 
 
@@ -87,7 +87,7 @@ contract InitializableERC20 {
     event Transfer(address indexed from, address indexed to, uint256 amount);
     event Approval(address indexed owner, address indexed spender, uint256 amount);
 
-// SWC-Function Default Visibility: L97
+// SWC-100-Function Default Visibility: L97
     function init(
         address _creator,
         uint256 _totalSupply,
@@ -105,7 +105,7 @@ contract InitializableERC20 {
         emit Transfer(address(0), _creator, _totalSupply);
     }
 
-// SWC-Function Default Visibility: L109
+// SWC-100-Function Default Visibility: L109
     function transfer(address to, uint256 amount) public returns (bool) {
         require(to != address(0), "TO_ADDRESS_IS_EMPTY");
         require(amount <= balances[msg.sender], "BALANCE_NOT_ENOUGH");
@@ -116,12 +116,12 @@ contract InitializableERC20 {
         return true;
     }
 
-// SWC-Function Default Visibility: L120
+// SWC-100-Function Default Visibility: L120
     function balanceOf(address owner) public view returns (uint256 balance) {
         return balances[owner];
     }
 
-// SWC-Function Default Visibility: L128
+// SWC-100-Function Default Visibility: L128
     function transferFrom(
         address from,
         address to,
@@ -138,14 +138,14 @@ contract InitializableERC20 {
         return true;
     }
 
-// SWC-Function Default Visibility: L142
+// SWC-100-Function Default Visibility: L142
     function approve(address spender, uint256 amount) public returns (bool) {
         allowed[msg.sender][spender] = amount;
         emit Approval(msg.sender, spender, amount);
         return true;
     }
 
-// SWC-Function Default Visibility: L149
+// SWC-100-Function Default Visibility: L149
     function allowance(address owner, address spender) public view returns (uint256) {
         return allowed[owner][spender];
     }

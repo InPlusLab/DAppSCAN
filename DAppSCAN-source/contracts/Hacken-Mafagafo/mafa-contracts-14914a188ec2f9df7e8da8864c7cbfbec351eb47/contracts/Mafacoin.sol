@@ -17,7 +17,7 @@ contract MafaCoin is ERC20, Ownable {
     IUniswapV2Router02 public dexRouter;
     address public dexPair;
 
-    // SWC-State Variable Default Visibility: L21
+    // SWC-108-State Variable Default Visibility: L21
     address deadAddress = 0x000000000000000000000000000000000000dEaD;
 
     address public teamWallet;
@@ -36,7 +36,7 @@ contract MafaCoin is ERC20, Ownable {
 
     mapping(address => bool) public isExcludedFromFees;
     mapping(address => bool) public automatedMarketMakerPairs;
-    // SWC-State Variable Default Visibility: L40
+    // SWC-108-State Variable Default Visibility: L40
     mapping(address => bool) isBlacklisted;
 
     constructor() ERC20("MafaCoin", "MAFA") {

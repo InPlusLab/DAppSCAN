@@ -500,7 +500,7 @@ contract StabilityPool is LiquityBase, Ownable, CheckContract, IStabilityPool {
             * which ensures the error in any given compoundedLUSDDeposit favors the Stability Pool.
             */
             LUSDLossPerUnitStaked = (LUSDLossNumerator.div(_totalLUSDDeposits)).add(1);
-            // SWC-Integer Overflow and Underflow: L504
+            // SWC-101-Integer Overflow and Underflow: L504
             lastLUSDLossError_Offset = (LUSDLossPerUnitStaked.mul(_totalLUSDDeposits)).sub(LUSDLossNumerator);
         }
 

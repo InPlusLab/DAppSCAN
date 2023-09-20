@@ -76,7 +76,7 @@ contract Staking is Ownable {
         lpTokenDeposited = lpTokenDeposited.add(amount);
 
         // Transfer token into the contract
-// SWC-Unchecked Call Return Value: L80
+// SWC-104-Unchecked Call Return Value: L80
         lpToken.transferFrom(msg.sender, address(this), amount);
         
         emit Deposit(msg.sender, amount);
@@ -131,7 +131,7 @@ contract Staking is Ownable {
         lpTokenDeposited = lpTokenDeposited.sub(_amount);
 
         // Transfer tokens to user
-// SWC-Unchecked Call Return Value: L135
+// SWC-104-Unchecked Call Return Value: L135
         lpToken.transfer(msg.sender, _amount);
 
         // Transfer pending rewards if there is any
@@ -173,7 +173,7 @@ contract Staking is Ownable {
     }
 
     function payTngReward(uint256 _pendingTng, address _to) internal {
-        // SWC-Unchecked Call Return Value: L177
+        // SWC-104-Unchecked Call Return Value: L177
         tngToken.transfer(_to, _pendingTng);
         pendingTngRewards = pendingTngRewards.sub(_pendingTng);
     }
@@ -205,7 +205,7 @@ contract Staking is Ownable {
 
     function rescueToken(address _token, address _to) external onlyOwner {
         uint256 _contractBalance = IERC20(_token).balanceOf(address(this));
-        // SWC-Unchecked Call Return Value: L209
+        // SWC-104-Unchecked Call Return Value: L209
         IERC20(_token).transfer(_to, _contractBalance);
     }
 

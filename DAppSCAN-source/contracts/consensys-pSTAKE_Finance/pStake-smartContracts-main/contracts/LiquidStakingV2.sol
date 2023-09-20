@@ -400,7 +400,7 @@ contract LiquidStakingV2 is
 			.length > _batchingLimit.add(_counter)
 			? _batchingLimit.add(_counter)
 			: _unstakingExpiration[staker].length;
-		// SWC-DoS With Block Gas Limit: L404-408
+		// SWC-128-DoS With Block Gas Limit: L404-408
 		for (
 			uint256 i = _counter;
 			i < _unstakingExpirationLength;

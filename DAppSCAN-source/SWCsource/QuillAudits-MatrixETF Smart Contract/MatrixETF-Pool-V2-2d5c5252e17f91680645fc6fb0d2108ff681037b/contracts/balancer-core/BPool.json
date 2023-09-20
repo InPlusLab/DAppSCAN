@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-MatrixETF Smart Contract/MatrixETF-Pool-V2-2d5c5252e17f91680645fc6fb0d2108ff681037b/contracts/balancer-core/BPool.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-MatrixETF Smart Contract/MatrixETF-Pool-V2-2d5c5252e17f91680645fc6fb0d2108ff681037b/contracts/balancer-core/BPool.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "rebind",
    "lineNumber": "L559 - L565"
   }

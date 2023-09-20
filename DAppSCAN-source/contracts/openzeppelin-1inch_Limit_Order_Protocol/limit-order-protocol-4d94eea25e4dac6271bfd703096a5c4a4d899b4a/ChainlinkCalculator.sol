@@ -29,7 +29,7 @@ contract ChainlinkCalculator {
             return amount * spread * uint256(oracle.latestAnswer()) / 1e18 / _SPREAD_DENOMINATOR;
         }
     }
-//SWC-Code With No Effects:L23,27
+//SWC-135-Code With No Effects:L23,27
     /// @notice Calculates price of token A relative to token B. Note that order is important
     /// @return Result Token A relative price times amount
     function doublePrice(AggregatorInterface oracle1, AggregatorInterface oracle2, uint256 spread, uint256 amount) external view returns(uint256) {

@@ -135,7 +135,7 @@ contract Vesting is Ownable {
     /// @notice This function it's executed by the oracle account to update the
     /// Percentil Score value and release the funds if it is possible.
     /// @param _newScore new percentile score value.
-    // SWC-DoS with Failed Call: L139-199
+    // SWC-113-DoS with Failed Call: L139-199
     function updateScore(uint8 _newScore)
         external
         onlyOracle
@@ -168,7 +168,7 @@ contract Vesting is Ownable {
         if (_newScore != 0) {
             for (uint256 i = 0; i < beneficiaries.length; i++) {
                 // current beneficiary
-                // SWC-Integer Overflow and Underflow: L172-180
+                // SWC-101-Integer Overflow and Underflow: L172-180
                 LockVesting memory lock = locks[beneficiaries[i]];
                 // calculate already vested percentage
                 uint256 remainingAmount = lock.totalAmount.sub(

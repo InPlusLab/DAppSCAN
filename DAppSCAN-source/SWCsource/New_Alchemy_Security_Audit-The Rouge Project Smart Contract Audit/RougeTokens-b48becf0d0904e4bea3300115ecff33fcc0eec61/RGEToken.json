@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/New_Alchemy_Security_Audit-The Rouge Project Smart Contract Audit/RougeTokens-b48becf0d0904e4bea3300115ecff33fcc0eec61/RGEToken.sol",
+ "filePath": "DAppSCAN-source/contracts/New_Alchemy_Security_Audit-The Rouge Project Smart Contract Audit/RougeTokens-b48becf0d0904e4bea3300115ecff33fcc0eec61/RGEToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "N/A",
    "lineNumber": "all contract"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "startCrowdsaleY0",
    "lineNumber": "L43,69,79,80"
   }

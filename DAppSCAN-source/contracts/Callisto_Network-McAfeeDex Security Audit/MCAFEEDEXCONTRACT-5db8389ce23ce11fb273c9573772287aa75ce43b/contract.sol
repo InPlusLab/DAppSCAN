@@ -19,7 +19,7 @@ contract SafeMath {
   }
 
   function assert(bool assertion) internal {
-    // SWC-Use of Deprecated Solidity Functions: L23
+    // SWC-111-Use of Deprecated Solidity Functions: L23
     if (!assertion) throw;
   }
 }
@@ -117,7 +117,7 @@ contract ReserveToken is StandardToken, SafeMath {
     minter = msg.sender;
   }
   function create(address account, uint amount) {
-    // SWC-Use of Deprecated Solidity Functions: L121
+    // SWC-111-Use of Deprecated Solidity Functions: L121
     if (msg.sender != minter) throw;
     balances[account] = safeAdd(balances[account], amount);
     totalSupply = safeAdd(totalSupply, amount);
@@ -153,11 +153,11 @@ contract AccountLevelsTest is AccountLevels {
 contract SwitchDex is SafeMath {
   address public admin; //the admin address
   address public feeAccount; //the account that will receive fees
-  // SWC-Code With No Effects: L157
+  // SWC-135-Code With No Effects: L157
   address public accountLevelsAddr; //the address of the AccountLevels contract
   uint public feeMake; //percentage times (1 ether)
   uint public feeTake; //percentage times (1 ether)
-  // SWC-Code With No Effects: L161
+  // SWC-135-Code With No Effects: L161
   uint public feeRebate; //percentage times (1 ether)
   mapping (address => mapping (address => uint)) public tokens; //mapping of token addresses to mapping of account balances (token=0 means Ether)
   mapping (address => mapping (bytes32 => bool)) public orders; //mapping of user accounts to mapping of order hashes to booleans (true = submitted by user, equivalent to offchain signature)
@@ -222,7 +222,7 @@ contract SwitchDex is SafeMath {
   function withdraw(uint amount) {
     if (tokens[0][msg.sender] < amount) throw;
     tokens[0][msg.sender] = safeSub(tokens[0][msg.sender], amount);
-    // SWC-Reentrancy: L224
+    // SWC-107-Reentrancy: L224
     if (!msg.sender.call.value(amount)()) throw;
     Withdraw(0, msg.sender, amount, tokens[0][msg.sender]);
   }

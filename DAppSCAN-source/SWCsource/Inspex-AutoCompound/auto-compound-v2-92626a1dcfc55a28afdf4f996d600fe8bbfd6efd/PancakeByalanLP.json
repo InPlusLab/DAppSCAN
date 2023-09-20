@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Inspex-AutoCompound/auto-compound-v2-92626a1dcfc55a28afdf4f996d600fe8bbfd6efd/PancakeByalanLP.sol",
+ "filePath": "DAppSCAN-source/contracts/Inspex-AutoCompound/auto-compound-v2-92626a1dcfc55a28afdf4f996d600fe8bbfd6efd/PancakeByalanLP.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence\uff1a L1342",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "harvest",
-   "lineNumber": "// SWC-Transaction Order Dependence\uff1a L1342"
+   "lineNumber": "L1342"
   }
  ]
 }

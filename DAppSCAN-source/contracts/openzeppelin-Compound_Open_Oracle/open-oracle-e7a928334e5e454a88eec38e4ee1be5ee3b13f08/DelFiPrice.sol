@@ -14,7 +14,7 @@ contract DelFiPrice is OpenOracleView {
 
     /// @notice The event emitted when new prices are posted but the median price is not updated due to the anchor
     event PriceGuarded(string symbol, uint64 median, uint64 anchor);
-//SWC-State Variable Default Visibility:L19,22,25
+//SWC-108-State Variable Default Visibility:L19,22,25
     /// @notice The reporter address whose prices checked against the median for safety
     address anchor;
 

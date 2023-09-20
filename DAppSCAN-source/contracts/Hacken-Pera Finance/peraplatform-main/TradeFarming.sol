@@ -347,7 +347,7 @@ contract TradeFarming is ITradeFarming, Ownable {
      * @dev @param @return Takes and returns the same parameters and values with router functions. 
                            See at: https://docs.uniswap.org/protocol/V2/reference/smart-contracts/router-01#swapethforexacttokens
      */
-//    SWC-Insufficient Gas Griefing:L351-389
+//    SWC-126-Insufficient Gas Griefing:L351-389
     function swapETHForExactTokens(
         uint256 amountOut,
         address[] calldata path,

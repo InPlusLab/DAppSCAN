@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Cystack-AOC ERC-20 V2 - v1.2/AOC_ERC200x41cc978FaE6f34B25553A498D1e245FDF944FF3E/contracts/AOC_ERC20.sol",
+ "filePath": "DAppSCAN-source/contracts/Cystack-AOC ERC-20 V2 - v1.2/AOC_ERC200x41cc978FaE6f34B25553A498D1e245FDF944FF3E/contracts/AOC_ERC20.sol",
  "SWCs": [
   {
-   "category": "SWC-Incorrect Constructor Name",
+   "category": "SWC-118-Incorrect Constructor Name",
    "function": "initialize",
    "lineNumber": "L116"
   }

@@ -20,5 +20,5 @@ contract BurnableToken is StandardToken {
         totalSupply = totalSupply.sub(_value);
         Burn(msg.sender, _value);
     }
-//SWC-Transaction Order Dependence:L17-22
+//SWC-114-Transaction Order Dependence:L17-22
 }

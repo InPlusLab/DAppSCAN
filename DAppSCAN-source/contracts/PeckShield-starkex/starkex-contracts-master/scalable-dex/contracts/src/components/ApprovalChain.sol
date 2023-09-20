@@ -72,7 +72,7 @@ abstract contract ApprovalChain is MainStorage, MApprovalChain, MGovernance, MFr
         require(idx != ENTRY_NOT_FOUND, "ENTRY_DOES_NOT_EXIST");
     }
 
-// SWC-Integer Overflow and Underflow: L76
+// SWC-101-Integer Overflow and Underflow: L76
     function announceRemovalIntent(
         StarkExTypes.ApprovalChainData storage chain,
         address entry,

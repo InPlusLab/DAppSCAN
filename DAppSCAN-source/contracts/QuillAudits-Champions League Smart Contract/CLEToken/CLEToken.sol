@@ -396,7 +396,7 @@ library Address {
         require(address(this).balance >= value, "Address: insufficient balance for call");
         return _functionCallWithValue(target, data, value, errorMessage);
     }
-//SWC-Shadowing State Variables：L410-412
+//SWC-119-Shadowing State Variables: L410-412
     function _functionCallWithValue(address target, bytes memory data, uint256 weiValue, string memory errorMessage) private returns (bytes memory) {
         require(isContract(target), "Address: call to non-contract");
 
@@ -883,7 +883,7 @@ contract CLEToken is Context, IERC20, Ownable {
         _isExcluded[account] = true;
         _excluded.push(account);
     }
-//SWC-Insufficient Gas Griefing：L887-898
+//SWC-126-Insufficient Gas Griefing: L887-898
     function includeInReward(address account) external onlyOwner() {
         require(_isExcluded[account], "Account is already included");
         for (uint256 i = 0; i < _excluded.length; i++) {

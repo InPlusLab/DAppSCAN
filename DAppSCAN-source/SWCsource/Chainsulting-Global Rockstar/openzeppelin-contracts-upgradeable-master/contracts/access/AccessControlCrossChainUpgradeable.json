@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-Global Rockstar/openzeppelin-contracts-upgradeable-master/contracts/access/AccessControlCrossChainUpgradeable.sol",
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-Global Rockstar/openzeppelin-contracts-upgradeable-master/contracts/access/AccessControlCrossChainUpgradeable.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L4"
   }

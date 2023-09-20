@@ -33,7 +33,7 @@ contract ServiceTypeManager is InitializableV2 {
     event SetServiceVersion(bytes32 _serviceType, bytes32 _serviceVersion);
     event Test(string msg, bool value);
     event TestAddr(string msg, address addr);
-//SWC-Code With No Effects:L34,35
+//SWC-135-Code With No Effects:L34,35
     /**
      * @notice Function to initialize the contract
      * @param _governanceAddress - Governance proxy address

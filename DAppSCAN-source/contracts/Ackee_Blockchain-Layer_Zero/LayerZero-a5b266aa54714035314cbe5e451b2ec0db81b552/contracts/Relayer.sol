@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BUSL-1.1
-// SWC-Outdated Compiler Version: L4
-// SWC-Floating Pragma: L4
+// SWC-102-Outdated Compiler Version: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.7.6;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -17,7 +17,7 @@ import "./interfaces/ILayerZeroUltraLightNodeV1.sol";
 
 contract Relayer is ILayerZeroRelayer, ReentrancyGuard, OwnableUpgradeable, Proxied {
     using SafeERC20 for IERC20;
-    // SWC-Integer Overflow and Underflow: L20-22
+    // SWC-101-Integer Overflow and Underflow: L20-22
     using SafeMath for uint;
     using SafeMath for uint128;
     using SafeMath for uint64;

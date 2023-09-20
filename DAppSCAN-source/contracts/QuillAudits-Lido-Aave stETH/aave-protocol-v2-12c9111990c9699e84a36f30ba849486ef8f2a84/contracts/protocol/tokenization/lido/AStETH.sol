@@ -591,7 +591,7 @@ contract AStETH is VersionedInitializable, IncentivizedERC20, IAToken {
    **/
   function _scaledTotalSupply(ExtData memory e) private view returns (uint256) {
     return
-    // SWC-Integer Overflow and Underflow: L595
+    // SWC-101-Integer Overflow and Underflow: L595
       ISTETH(UNDERLYING_ASSET_ADDRESS).getPooledEthByShares(
         uint256(_totalShares - e.totalSharesBorrowed)
       ) + e.totalPrincipalBorrowed;

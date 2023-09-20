@@ -78,7 +78,7 @@ abstract contract TradeFactoryExecutor is ITradeFactoryExecutor, TradeFactoryPos
     address _swapper = strategySyncSwapper[msg.sender];
     if (_tradeExecutionDetails._tokenIn == address(0) || _tradeExecutionDetails._tokenOut == address(0)) revert CommonErrors.ZeroAddress();
     if (_tradeExecutionDetails._amountIn == 0) revert CommonErrors.ZeroAmount();
-    // SWC-Code With No Effects: L82
+    // SWC-135-Code With No Effects: L82
     if (_tradeExecutionDetails._maxSlippage == 0) revert CommonErrors.ZeroSlippage();
     IERC20(_tradeExecutionDetails._tokenIn).safeTransferFrom(msg.sender, _swapper, _tradeExecutionDetails._amountIn);
     uint256 _preSwapBalanceOut = IERC20(_tradeExecutionDetails._tokenOut).balanceOf(msg.sender);

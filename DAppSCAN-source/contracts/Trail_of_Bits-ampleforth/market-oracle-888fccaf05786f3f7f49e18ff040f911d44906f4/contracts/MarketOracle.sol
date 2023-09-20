@@ -30,7 +30,7 @@ contract MarketOracle is Ownable {
      * @return exchangeRate: Volume weighted average of exchange rates.
      *         volume: Total trade volume of the last reported 24 hours in Token volume.
      */
-    //  SWC-Reentrancy: L34 - L60
+    //  SWC-107-Reentrancy: L34 - L60
     function getPriceAnd24HourVolume()
         external
         returns (uint256, uint256)
@@ -139,7 +139,7 @@ contract MarketOracle is Ownable {
         if (index != _whitelist.length-1) {
             _whitelist[index] = _whitelist[_whitelist.length-1];
         }
-        // SWC-Integer Overflow and Underflow: L143
+        // SWC-101-Integer Overflow and Underflow: L143
         _whitelist.length--;
     }
 }

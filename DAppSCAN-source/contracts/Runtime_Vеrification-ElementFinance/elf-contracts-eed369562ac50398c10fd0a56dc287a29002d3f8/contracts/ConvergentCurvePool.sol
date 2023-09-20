@@ -604,7 +604,7 @@ contract ConvergentCurvePool is IMinimalSwapInfoPool, BalancerPoolToken {
             governance
         );
         // Safe math sanity checks
-        // SWC-Integer Overflow and Underflow: L607 - L612
+        // SWC-101-Integer Overflow and Underflow: L607 - L612
         require(
             localFeeUnderlying >= (feesUsedUnderlying).div(percentFeeGov),
             "Underflow"

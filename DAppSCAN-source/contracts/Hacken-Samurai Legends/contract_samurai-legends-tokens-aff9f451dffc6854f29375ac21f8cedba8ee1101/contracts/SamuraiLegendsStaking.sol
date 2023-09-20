@@ -73,7 +73,7 @@ contract SamuraiLegendsStaking is Ownable, Pausable, Generatable, Recoverable {
 
     uint160 public rewardRate;
     uint32 public rewardDuration = 12 weeks;
-    // SWC-Block values as a proxy for time: L77
+    // SWC-116-Block values as a proxy for time: L77
     uint32 private _rewardUpdatedAt = uint32(block.timestamp);
     uint32 public rewardFinishedAt;
 
@@ -152,7 +152,7 @@ contract SamuraiLegendsStaking is Ownable, Pausable, Generatable, Recoverable {
     @return lastTimeRewardActiveAt A timestamp of the last time the update reward modifier was called
     */
     function lastTimeRewardActiveAt() public view returns (uint) {
-    // SWC-Block values as a proxy for time: L156
+    // SWC-116-Block values as a proxy for time: L156
         return rewardFinishedAt > block.timestamp ? block.timestamp : rewardFinishedAt;
     }
 
@@ -247,7 +247,7 @@ contract SamuraiLegendsStaking is Ownable, Pausable, Generatable, Recoverable {
         uint id = unique();
         _userPendingIds[msg.sender].push(id);
         _userPending[msg.sender][id] = PendingAmount({  
-    // SWC-Block values as a proxy for time: L251
+    // SWC-116-Block values as a proxy for time: L251
             createdAt: uint32(block.timestamp), 
             fullAmount: uint112(amount), 
             claimedAmount: 0,
@@ -329,7 +329,7 @@ contract SamuraiLegendsStaking is Ownable, Pausable, Generatable, Recoverable {
     @param pendingAmount The pending amount metadata to use
     */
     function getClaimablePendingPortion(PendingAmount memory pendingAmount) private view returns (uint) {
-        // SWC-Block values as a proxy for time: L333
+        // SWC-116-Block values as a proxy for time: L333
         return (block.timestamp - pendingAmount.createdAt) / pendingAmount.pendingPeriod.period; // 0 1 2 3 4
     }
 
@@ -404,7 +404,7 @@ contract SamuraiLegendsStaking is Ownable, Pausable, Generatable, Recoverable {
         // checks
         require(_reward > 0, "Invalid input amount.");
 
-        // SWC-Block values as a proxy for time: L408
+        // SWC-116-Block values as a proxy for time: L408
         if (block.timestamp > rewardFinishedAt) { // Reward duration finished
             rewardRate = uint160(_reward / rewardDuration);
         } else {

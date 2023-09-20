@@ -67,7 +67,7 @@ contract Sliced is ERC20Burnable,Ownable,Pausable {
 	  accounts.push(Account('launchpad',launchpad,5,0,0));
 
     }
-//	SWC-Block values as a proxy for time：L72
+//	SWC-116-Block values as a proxy for time: L72
 	function sendTokens() public onlyAdmin{
 		require(block.timestamp>=lastTransferDate+duration,"SLICED::You already transfered tokens this month");
 		for (uint i=0; i< 7; i++) {

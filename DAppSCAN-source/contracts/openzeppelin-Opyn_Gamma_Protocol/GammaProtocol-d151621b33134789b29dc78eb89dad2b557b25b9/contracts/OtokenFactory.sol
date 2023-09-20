@@ -61,7 +61,7 @@ contract OtokenFactory is OtokenSpawner {
         bool _isPut
     ) external returns (address) {
         require(_expiry > now, "OtokenFactory: Can't create expired option");
-        //SWC-State Variable Default Visibility: L65
+        //SWC-108-State Variable Default Visibility: L65
         require(_expiry < 11865398400, "OtokenFactory: Can't create option with expiry > 2345/12/31");
         require(_expiry.sub(28800).mod(86400) == 0, "OtokenFactory: Option has to expire 08:00 UTC");
         bytes32 id = _getOptionId(_underlyingAsset, _strikeAsset, _collateralAsset, _strikePrice, _expiry, _isPut);

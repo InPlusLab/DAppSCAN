@@ -154,7 +154,7 @@ contract Governor {
         }
     }
 
-// SWC-Unchecked Call Return Value: L158 - L172
+// SWC-104-Unchecked Call Return Value: L158 - L172
     function _queueOrRevert(
         address target,
         uint256 value,
@@ -171,7 +171,7 @@ contract Governor {
         timelock.queueTransaction(target, value, signature, data, eta);
     }
 
-    // SWC-Unchecked Call Return Value: L175 - L192
+    // SWC-104-Unchecked Call Return Value: L175 - L192
     function execute(uint256 proposalId) public payable {
         require(
             state(proposalId) == ProposalState.Queued,
@@ -213,7 +213,7 @@ contract Governor {
         timelock.acceptAdmin();
     }
 
-    // SWC-Unchecked Call Return Value: L217 - L232
+    // SWC-104-Unchecked Call Return Value: L217 - L232
     function __queueSetTimelockPendingAdmin(
         address newPendingAdmin,
         uint256 eta
@@ -231,7 +231,7 @@ contract Governor {
         );
     }
 
-    // SWC-Unchecked Call Return Value: L235 - L250
+    // SWC-104-Unchecked Call Return Value: L235 - L250
     function __executeSetTimelockPendingAdmin(
         address newPendingAdmin,
         uint256 eta

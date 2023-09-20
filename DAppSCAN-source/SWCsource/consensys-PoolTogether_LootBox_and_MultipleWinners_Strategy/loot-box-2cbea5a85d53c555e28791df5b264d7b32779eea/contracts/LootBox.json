@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-PoolTogether_LootBox_and_MultipleWinners_Strategy/loot-box-2cbea5a85d53c555e28791df5b264d7b32779eea/contracts/LootBox.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-PoolTogether_LootBox_and_MultipleWinners_Strategy/loot-box-2cbea5a85d53c555e28791df5b264d7b32779eea/contracts/LootBox.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "transferEther",
    "lineNumber": "L64-L68"
   }

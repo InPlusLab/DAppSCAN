@@ -38,7 +38,7 @@ contract Summon is Ownable, Pausable {
         setAcceptedToken(_acceptedTokenAddress);
     }
 
-// SWC-Function Default Visibility: L42
+// SWC-100-Function Default Visibility: L42
     function setSignerPublicKey(address newSignerPublicKey) public onlyOwner {
         require(newSignerPublicKey != address(0), "Invalid address");
         require(
@@ -49,7 +49,7 @@ contract Summon is Ownable, Pausable {
         emit ChangeSignerPublicKey(newSignerPublicKey);
     }
 
-// SWC-Function Default Visibility: L53
+// SWC-100-Function Default Visibility: L53
     function setAcceptedToken(address newAcceptedTokenAddress)
         public
         onlyOwner
@@ -62,7 +62,7 @@ contract Summon is Ownable, Pausable {
         emit ChangeAcceptedToken(newAcceptedTokenAddress);
     }
 
-// SWC-Function Default Visibility: L67
+// SWC-100-Function Default Visibility: L67
     function setHeroSmartContractAddress(address newHeroSmartContractAddress)
         public
         onlyOwner
@@ -75,7 +75,7 @@ contract Summon is Ownable, Pausable {
         emit ChangeHeroAddress(newHeroSmartContractAddress);
     }
 
-// SWC-Function Default Visibility: L79
+// SWC-100-Function Default Visibility: L79
     function setFee(uint256 newFee) public onlyOwner {
         fee = newFee;
         emit ChangeFee(newFee);

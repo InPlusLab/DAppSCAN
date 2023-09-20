@@ -49,7 +49,7 @@ contract SpaceMonkey is SpaceMonkeyStorage, IERC20 {
     return true;
   }
 
-// SWC-Reentrancy: L53 - L64
+// SWC-107-Reentrancy: L53 - L64
   function transfer(address recipient, uint256 amount, bytes calldata data) external returns (bool) {
       if(recipient.isContract()) {
           require(_msgSender() != address(0), "ERC20: transfer from the zero address");
@@ -63,7 +63,7 @@ contract SpaceMonkey is SpaceMonkeyStorage, IERC20 {
       return true;
   }
 
-// SWC-Shadowing State Variables: L66
+// SWC-119-Shadowing State Variables: L66
   function allowance(address owner, address spender)
     public
     view
@@ -190,7 +190,7 @@ contract SpaceMonkey is SpaceMonkeyStorage, IERC20 {
     }
   }
 
-// SWC-Shadowing State Variables: L193
+// SWC-119-Shadowing State Variables: L193
   function _approve(
     address owner,
     address spender,

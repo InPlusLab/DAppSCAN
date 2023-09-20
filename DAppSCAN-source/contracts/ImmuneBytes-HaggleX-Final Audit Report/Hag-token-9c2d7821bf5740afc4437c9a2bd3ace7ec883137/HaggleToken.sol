@@ -1073,7 +1073,7 @@ contract HaggleXToken is ERC20, Owned {
         temp.stakeType = stakeType_;    
         temp.lastWithdrawTime = block.timestamp;
         temp.noOfWithdrawals = 0;
-        // SWC-DoS With Block Gas Limit: L1077
+        // SWC-128-DoS With Block Gas Limit: L1077
         _staking[_msgSender()].push(temp);
         _stakingOptions[stakeType_].totalStaked += amount_;
         emit staked(_msgSender(), amount_, _stakingOptions[stakeType_].lockedTime);

@@ -118,7 +118,7 @@ library UserConfiguration {
     returns (bool)
   {
     uint256 collateralData = self.data & COLLATERAL_MASK;
-    //SWC-Integer Overflow and Underflow: L122
+    //SWC-101-Integer Overflow and Underflow: L122
     return collateralData & (collateralData - 1) == 0;
   }
 

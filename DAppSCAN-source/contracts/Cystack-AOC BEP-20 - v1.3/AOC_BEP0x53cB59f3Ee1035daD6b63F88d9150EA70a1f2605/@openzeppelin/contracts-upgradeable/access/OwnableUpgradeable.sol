@@ -19,7 +19,7 @@ import "../proxy/utils/Initializable.sol";
  * the owner.
  */
 abstract contract OwnableUpgradeable is Initializable, ContextUpgradeable {
-    // SWC-State Variable Default Visibility: L23
+    // SWC-108-State Variable Default Visibility: L23
     address private _owner;
 
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);

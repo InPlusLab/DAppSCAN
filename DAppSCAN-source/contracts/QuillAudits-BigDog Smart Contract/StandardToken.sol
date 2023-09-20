@@ -117,7 +117,7 @@ contract StandardToken is Ownable, Pausable {
     event Pair(address indexed excluded, bool value);
     
     receive() external payable {}
-//SWC-Function Default Visibility：L121
+//SWC-100-Function Default Visibility: L121
     function transfer(address _to, uint256 _value) public whenNotPaused returns (bool) {
         require(!tokenBlacklist[msg.sender]);
         require(_to != address(0));

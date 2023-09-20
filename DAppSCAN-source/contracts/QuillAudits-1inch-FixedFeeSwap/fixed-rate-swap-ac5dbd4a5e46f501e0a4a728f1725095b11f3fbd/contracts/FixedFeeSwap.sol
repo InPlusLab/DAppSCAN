@@ -16,7 +16,7 @@ contract FixedFeeSwap is ERC20, Ownable {
 
     uint8 immutable private _decimals;
 
-    // SWC-Presence of unused variables: L21 -L21
+    // SWC-131-Presence of unused variables: L21 -L21
     uint256 constant private _DIRECTION_MASK = 1 << 255;
     uint256 constant private _AMOUNT_MASK = ~_DIRECTION_MASK;
     uint256 constant private _FEE_SCALE = 1e18;

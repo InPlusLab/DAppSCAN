@@ -18,11 +18,11 @@ interface IName {
 
 contract Strategy is BaseStrategy {
     using SafeERC20 for IERC20;
-    // SWC-Code With No Effects: L22
+    // SWC-135-Code With No Effects: L22
     using Address for address;
     using SafeMath for uint256;
 
-    // SWC-Presence of unused variables: L26
+    // SWC-131-Presence of unused variables: L26
     IERC20 internal constant weth = IERC20(address(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2));
     IBalancerVault public balancerVault;
     IBalancerPool public bpt;
@@ -132,7 +132,7 @@ contract Strategy is BaseStrategy {
         uint256 _maxSlippageOut,
         uint256 _maxSingleDeposit,
         uint256 _minDepositPeriod
-        // SWC-Code With No Effects: L134
+        // SWC-135-Code With No Effects: L134
     ) external returns (address payable newStrategy) {
         require(isOriginal);
 
@@ -422,6 +422,6 @@ contract Strategy is BaseStrategy {
         return swapSteps;
     }
 
-    // SWC-Code With No Effects: L426
+    // SWC-135-Code With No Effects: L426
     receive() external payable {}
 }

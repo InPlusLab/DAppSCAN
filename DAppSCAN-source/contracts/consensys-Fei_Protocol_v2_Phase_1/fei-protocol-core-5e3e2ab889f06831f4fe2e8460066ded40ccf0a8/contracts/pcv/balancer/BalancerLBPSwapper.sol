@@ -104,7 +104,7 @@ contract BalancerLBPSwapper is IPCVSwapper, OracleRef, Timed, WeightedBalancerPo
     Includes various checks to ensure the pool contract is correct and initialization can only be done once
     @param _pool the Balancer LBP used for swapping
     */
-    // SWC-Transaction Order Dependence: L108-118
+    // SWC-114-Transaction Order Dependence: L108-118
     function init(IWeightedPool _pool) external {
         require(address(pool) == address(0), "BalancerLBPSwapper: initialized");
 
@@ -170,7 +170,7 @@ contract BalancerLBPSwapper is IPCVSwapper, OracleRef, Timed, WeightedBalancerPo
         5. Transfer remaining tokenReceived to tokenReceivingAddress
         @dev assumes tokenSpent balance of contract exceeds minTokenSpentBalance to kick off a new auction
     */
-    // SWC-Unprotected Ether Withdrawal: L174-258
+    // SWC-105-Unprotected Ether Withdrawal: L174-258
     function swap() external override afterTime whenNotPaused {
         (
             uint256 spentReserves, 

@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./interfaces/IUniswapV2Router02.sol";
 
 contract TokenSale is Ownable, ReentrancyGuard {
-	// SWC-State Variable Default Visibility: L12 - L22
+	// SWC-108-State Variable Default Visibility: L12 - L22
 	uint256 price;
 	uint256 maxBuyAmount;
 	uint256 public cap;

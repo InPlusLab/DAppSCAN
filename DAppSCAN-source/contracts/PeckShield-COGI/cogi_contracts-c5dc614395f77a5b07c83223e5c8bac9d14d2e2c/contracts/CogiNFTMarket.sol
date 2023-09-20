@@ -83,7 +83,7 @@ contract CogiNFTMarket is
 
   /* Creates the sale of a marketplace item */
   /* Transfers ownership of the item, as well as funds between parties */
-  //SWC-Message call with hardcoded gas amount: L87-L102
+  //SWC-134-Message call with hardcoded gas amount: L87-L102
   function purchaseExecution(
     address nftContract,
     uint256 itemId

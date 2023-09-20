@@ -28,7 +28,7 @@ contract MixinAssetProxyDispatcher is
     Ownable,
     MAssetProxyDispatcher
 {
-    // SWC-Code With No Effects: L32
+    // SWC-135-Code With No Effects: L32
     using LibBytes for bytes;
     
     // Mapping from Asset Proxy Id's to their respective Asset Proxy

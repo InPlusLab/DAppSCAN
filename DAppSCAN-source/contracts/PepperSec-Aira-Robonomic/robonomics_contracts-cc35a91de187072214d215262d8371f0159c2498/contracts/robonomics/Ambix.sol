@@ -32,7 +32,7 @@ contract Ambix is Ownable {
      * @param _a Token recipe source token addresses
      * @param _n Token recipe source token counts
      **/
-    //SWC-DoS With Block Gas Limit: L36
+    //SWC-128-DoS With Block Gas Limit: L36
     function appendSource(
         address[] _a,
         uint256[] _n

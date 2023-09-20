@@ -33,7 +33,7 @@ contract AMPTChild {
     // keeping it for checking, whether deposit being called by valid address or not
     address public childChainManagerProxy;
     address deployer;
-//SWC-State Variable Default Visibility：L35
+//SWC-108-State Variable Default Visibility: L35
     /// @notice A record of votes checkpoints for each account, by index
     mapping (address => mapping (uint256 => Checkpoint)) public checkpoints;
 

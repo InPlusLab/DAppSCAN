@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Torekko/TRKContract-4f5cc91756b418cd0eb9eb733ca1c417698fc478/TRKContractWithoutMintFn.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Torekko/TRKContract-4f5cc91756b418cd0eb9eb733ca1c417698fc478/TRKContractWithoutMintFn.sol",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "pause",
    "lineNumber": "L23"
   },
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "unpause",
    "lineNumber": "L31"
   }

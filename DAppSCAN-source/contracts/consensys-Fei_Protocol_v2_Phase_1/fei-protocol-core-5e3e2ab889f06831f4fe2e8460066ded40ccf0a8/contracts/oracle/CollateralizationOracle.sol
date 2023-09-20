@@ -319,11 +319,11 @@ contract CollateralizationOracle is ICollateralizationOracle, CoreRef {
                 if (!_oracleValid) {
                     validityStatus = false;
                 }
-                // SWC-Integer Overflow and Underflow: L323
+                // SWC-101-Integer Overflow and Underflow: L323
                 protocolControlledValue += _oraclePrice.mul(_totalTokenBalance).asUint256();
             }
         }
-        // SWC-Integer Overflow and Underflow: L327
+        // SWC-101-Integer Overflow and Underflow: L327
         userCirculatingFei = fei().totalSupply() - _protocolControlledFei;
         protocolEquity = int256(protocolControlledValue) - int256(userCirculatingFei);
     }

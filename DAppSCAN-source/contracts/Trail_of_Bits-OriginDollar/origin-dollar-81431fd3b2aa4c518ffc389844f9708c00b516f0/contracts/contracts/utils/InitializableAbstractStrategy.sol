@@ -187,7 +187,7 @@ contract InitializableAbstractStrategy is Initializable, Governable {
      * @param _asset Address for the asset
      * @param _amount Amount of the asset to transfer
      */
-    //  SWC-Unchecked Call Return Value: L191 - L196
+    //  SWC-104-Unchecked Call Return Value: L191 - L196
     function transferToken(address _asset, uint256 _amount)
         public
         onlyGovernor

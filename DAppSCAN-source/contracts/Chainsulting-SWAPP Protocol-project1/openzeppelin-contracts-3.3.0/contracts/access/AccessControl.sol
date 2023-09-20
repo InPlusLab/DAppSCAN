@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity >=0.6.0 <0.8.0;
 
 import "../utils/EnumerableSet.sol";

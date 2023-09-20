@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-Centrality/bridge-contracts-047cecbfc86f10cdc3310c6ebb399de2e7c737a3/CENNZnetBridge.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-Centrality/bridge-contracts-047cecbfc86f10cdc3310c6ebb399de2e7c737a3/CENNZnetBridge.sol",
  "SWCs": [
   {
-   "category": "SWC-Unprotected Ether Withdrawal\uff1aL99-120",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "setValidators",
-   "lineNumber": "//    SWC-Unprotected Ether Withdrawal\uff1aL99-120"
+   "lineNumber": "L99-120"
   }
  ]
 }

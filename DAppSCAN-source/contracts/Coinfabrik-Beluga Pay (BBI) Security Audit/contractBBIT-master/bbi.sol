@@ -219,7 +219,7 @@ contract BBIToken is StandardToken {
             require(now < icoEndDate);
 
             // total tokens is price (1ETH = 960 tokens) multiplied by the ether value provided 
-            // SWC-Integer Overflow and Underflow: L223
+            // SWC-101-Integer Overflow and Underflow: L223
             uint tokens = (SafeMath.mul(_value, 960));
 
             // total used + tokens should be less than maximum available for sale
@@ -240,7 +240,7 @@ contract BBIToken is StandardToken {
      /*
      *  default fall back function      
      */
-    //  SWC-Unprotected Ether Withdrawal: L243 - L245
+    //  SWC-105-Unprotected Ether Withdrawal: L243 - L245
     function () payable onIcoRunning public {
                 buyBBITokens(msg.sender, msg.value);           
             }

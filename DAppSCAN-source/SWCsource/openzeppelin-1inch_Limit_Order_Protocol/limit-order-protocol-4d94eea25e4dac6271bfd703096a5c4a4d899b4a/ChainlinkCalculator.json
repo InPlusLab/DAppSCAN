@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-1inch_Limit_Order_Protocol/limit-order-protocol-4d94eea25e4dac6271bfd703096a5c4a4d899b4a/ChainlinkCalculator.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-1inch_Limit_Order_Protocol/limit-order-protocol-4d94eea25e4dac6271bfd703096a5c4a4d899b4a/ChainlinkCalculator.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "doublePrice",
    "lineNumber": "L23,27"
   }

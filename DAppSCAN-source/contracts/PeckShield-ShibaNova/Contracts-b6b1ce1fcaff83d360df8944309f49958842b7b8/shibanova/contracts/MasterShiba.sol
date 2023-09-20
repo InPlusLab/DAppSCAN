@@ -336,7 +336,7 @@ contract MasterShiba is Ownable, IMasterBonus {
             user.amount = user.amount.sub(_amount);
             uint256 _bonusAmount = _amount.mul(userBonus(_pid, msg.sender).add(10000)).div(10000);
             user.amountWithBonus = user.amountWithBonus.sub(_bonusAmount);
-            // SWC-Reentrancy: L339 - L341
+            // SWC-107-Reentrancy: L339 - L341
             pool.lpToken.safeTransfer(address(msg.sender), _amount);
             pool.lpSupply = pool.lpSupply.sub(_bonusAmount);
         }

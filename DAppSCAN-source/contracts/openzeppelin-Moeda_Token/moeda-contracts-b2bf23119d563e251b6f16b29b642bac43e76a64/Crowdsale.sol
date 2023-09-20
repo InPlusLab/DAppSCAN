@@ -1,7 +1,7 @@
 import './SafeMath.sol';
 import './Ownable.sol';
 import './MoedaToken.sol';
-//SWC-Outdated Compiler Version:L5
+//SWC-102-Outdated Compiler Version:L5
 pragma solidity ^0.4.8;
 
 /// @title Moeda crowdsale
@@ -90,7 +90,7 @@ contract Crowdsale is Ownable, SafeMath {
         } else {
             throw; // this shouldn't happen
         }
-//SWC-Code With No Effects:L91
+//SWC-135-Code With No Effects:L91
         return (limit, rate);
     }
 

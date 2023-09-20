@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/ImmuneBytes-Sheesha Finance- Audit Report/sheesha-finance-36adeff12204228c1473b00199c1a35bfb61e943/Sheesha.sol",
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-Sheesha Finance- Audit Report/sheesha-finance-36adeff12204228c1473b00199c1a35bfb61e943/Sheesha.sol",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lineNumber": "L13-16"
   },
   {
-   "category": "SWC-Typographical Error",
+   "category": "SWC-129-Typographical Error",
    "function": "transferVaultLPewards",
    "lineNumber": "L44"
   }

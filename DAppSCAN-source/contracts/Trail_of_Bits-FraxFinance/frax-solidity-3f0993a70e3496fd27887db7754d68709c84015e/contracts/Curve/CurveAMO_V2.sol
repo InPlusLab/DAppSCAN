@@ -238,7 +238,7 @@ contract CurveAMO_V2 is AccessControl {
             usdc_in_contract, // [3]
             usdc_withdrawable, // [4]
             usdc_subtotal, // [5]
-            // SWC-Integer Overflow and Underflow: L242
+            // SWC-101-Integer Overflow and Underflow: L242
             usdc_subtotal + (frax_in_contract.add(frax_withdrawable)).mul(fraxDiscountRate()).div(1e6 * (10 ** missing_decimals)), // [6] USDC Total
             lp_owned, // [7]
             frax3crv_supply, // [8]

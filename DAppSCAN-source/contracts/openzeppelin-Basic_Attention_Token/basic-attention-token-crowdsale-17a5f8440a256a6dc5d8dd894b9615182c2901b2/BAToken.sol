@@ -1,7 +1,7 @@
 pragma solidity ^0.4.10;
 import "./StandardToken.sol";
 import "./SafeMath.sol";
-//SWC-Outdated Compiler Version:L1,all contract
+//SWC-102-Outdated Compiler Version:L1,all contract
 contract BAToken is StandardToken, SafeMath {
 
     // metadata
@@ -13,7 +13,7 @@ contract BAToken is StandardToken, SafeMath {
     // contracts
     address public ethFundDeposit;      // deposit address for ETH for Brave International
     address public batFundDeposit;      // deposit address for Brave internal use and Brave User Fund 
-//SWC-Block values as a proxy for time:L19-20
+//SWC-116-Block values as a proxy for time:L19-20
     // crowdsale parameters
     bool public isFunding;              // State no longer important, but still useful for observation
     uint256 public fundingStartBlock;
@@ -43,7 +43,7 @@ contract BAToken is StandardToken, SafeMath {
       totalSupply = batFund;
       balances[batFundDeposit] = batFund;    //Deposit optimistic Brave share
     }
-//SWC-Code With No Effects:L58,61,79
+//SWC-135-Code With No Effects:L58,61,79
     /// @dev Accepts ether and creates new BAT tokens.
     function createTokens() payable external {
       if (!isFunding) throw;
@@ -72,7 +72,7 @@ contract BAToken is StandardToken, SafeMath {
       isFunding = false;
       if(!ethFundDeposit.send(this.balance)) throw;  // send the eth to Brave International
     }
-//SWC-Integer Overflow and Underflow:L84-85
+//SWC-101-Integer Overflow and Underflow:L84-85
     /// @dev Allows contributors to recover their ether in the case of a failed funding campaign.
     function refund() external {
       if(!isFunding) throw;                       // prevents refund if operational

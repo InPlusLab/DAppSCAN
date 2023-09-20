@@ -86,11 +86,11 @@ contract FLUX is ERC20Interface, Owned {
     }
 
 // stop the contract
-// SWC-Function Default Visibility: L90
+// SWC-100-Function Default Visibility: L90
 	function stop() onlyOwner {
         stopped = true;
     }
-// SWC-Function Default Visibility: L94
+// SWC-100-Function Default Visibility: L94
     function start() onlyOwner {
         stopped = false;
     }

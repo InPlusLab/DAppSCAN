@@ -126,13 +126,13 @@ contract Parameterizer {
 
     // attach name and value to pollID    
     proposals[propID] = ParamProposal({
-      // SWC-Integer Overflow and Underflow: L130
+      // SWC-101-Integer Overflow and Underflow: L130
       appExpiry: now + get("pApplyStageLen"),
       challengeID: 0,
       deposit: deposit,
       name: _name,
       owner: msg.sender,
-      // SWC-Integer Overflow and Underflow: L135
+      // SWC-101-Integer Overflow and Underflow: L135
       processBy: now + get("pApplyStageLen") + get("pCommitStageLen") +
         get("pRevealStageLen") + PROCESSBY,
       value: _value
@@ -163,7 +163,7 @@ contract Parameterizer {
 
     challenges[pollID] = Challenge({
       challenger: msg.sender,
-      // SWC-Integer Overflow and Underflow: L165
+      // SWC-101-Integer Overflow and Underflow: L165
       rewardPool: ((100 - get("pDispensationPct")) * deposit) / 100, 
       stake: deposit,
       resolved: false,

@@ -373,7 +373,7 @@ contract BPool is BBronze, BToken, BMath {
         require(_finalized, "ERR_NOT_FINALIZED");
 
         uint poolTotal = totalSupply();
-        // SWC-Integer Overflow and Underflow: L377
+        // SWC-101-Integer Overflow and Underflow: L377
         uint ratio = bdiv(poolAmountOut, poolTotal);
         require(ratio != 0, "ERR_MATH_APPROX");
 
@@ -399,7 +399,7 @@ contract BPool is BBronze, BToken, BMath {
 
         uint poolTotal = totalSupply();
         uint exitFee = bmul(poolAmountIn, EXIT_FEE);
-        // SWC-Integer Overflow and Underflow: L403
+        // SWC-101-Integer Overflow and Underflow: L403
         uint pAiAfterExitFee = bsub(poolAmountIn, exitFee);
         uint ratio = bdiv(pAiAfterExitFee, poolTotal);
         require(ratio != 0, "ERR_MATH_APPROX");

@@ -2619,7 +2619,7 @@ abstract contract StratX2QuickV2 is OwnableUpgradeable, ReentrancyGuardUpgradeab
     function wrapBNB() public virtual onlyAllowGov {
         _wrapBNB();
     }
-    //SWC-Transaction Order Dependence: L2623-L2643
+    //SWC-114-Transaction Order Dependence: L2623-L2643
     function _safeSwap(
         address _uniRouterAddress,
         uint256 _amountIn,

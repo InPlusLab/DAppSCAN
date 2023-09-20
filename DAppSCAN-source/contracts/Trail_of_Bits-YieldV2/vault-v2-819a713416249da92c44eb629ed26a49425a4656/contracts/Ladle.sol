@@ -141,7 +141,7 @@ contract Ladle is LadleStorage, AccessControl() {
     }
 
     /// @dev Add or remove a module.
-    // SWC-Delegatecall to Untrusted Callee: L145 - L151
+    // SWC-112-Delegatecall to Untrusted Callee: L145 - L151
     function addModule(address module, bool set)
         external
         auth
@@ -184,7 +184,7 @@ contract Ladle is LadleStorage, AccessControl() {
         return router.route(integration, data);
     }
 
-    // SWC-Delegatecall to Untrusted Callee: L187 - L198
+    // SWC-112-Delegatecall to Untrusted Callee: L187 - L198
     /// @dev Allow users to use functionality coded in a module, to be used with batch
     /// @notice Modules must not do any changes to the vault (owner, seriesId, ilkId),
     /// it would be disastrous in combination with batch vault caching 

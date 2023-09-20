@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-PlutosV1/plutos-eth-contract-0777815/contracts/PMintBurn.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-PlutosV1/plutos-eth-contract-0777815/contracts/PMintBurn.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "deposit",
    "lineNumber": "L48-L63"
   }

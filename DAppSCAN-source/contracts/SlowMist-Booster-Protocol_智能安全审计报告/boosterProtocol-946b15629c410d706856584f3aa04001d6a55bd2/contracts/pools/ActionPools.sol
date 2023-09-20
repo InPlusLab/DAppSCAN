@@ -68,7 +68,7 @@ contract ActionPools is Ownable, IActionPools {
     }
 
     // If the user transfers TH to contract, it will revert
-    // SWC-Code With No Effects: L72 - L74
+    // SWC-135-Code With No Effects: L72 - L74
     receive() external payable {
         revert();
     }
@@ -368,7 +368,7 @@ contract ActionPools is Ownable, IActionPools {
         uint256 balance = _token.balanceOf(address(this));
         value = _amount > balance ? balance : _amount;
         if ( value > 0 ) {
-            // SWC-Unchecked Call Return Value: L372
+            // SWC-104-Unchecked Call Return Value: L372
             _token.transfer(_to, value);
         }
     }

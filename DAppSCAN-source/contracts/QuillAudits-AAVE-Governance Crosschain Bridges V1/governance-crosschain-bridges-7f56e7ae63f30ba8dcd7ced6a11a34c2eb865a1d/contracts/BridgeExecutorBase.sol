@@ -199,7 +199,7 @@ abstract contract BridgeExecutorBase is IBridgeExecutor {
           )
         );
       require(!isActionQueued(actionHash), 'DUPLICATED_ACTION');
-      // SWC-Presence of unused variables: L203
+      // SWC-131-Presence of unused variables: L203
       _queuedActions[actionHash] = true;
     }
 
@@ -233,7 +233,7 @@ abstract contract BridgeExecutorBase is IBridgeExecutor {
   ) internal {
     bytes32 actionHash =
       keccak256(abi.encode(target, value, signature, data, executionTime, withDelegatecall));
-      // SWC-Presence of unused variables: L237
+      // SWC-131-Presence of unused variables: L237
     _queuedActions[actionHash] = false;
 
     bytes memory callData;
@@ -268,7 +268,7 @@ abstract contract BridgeExecutorBase is IBridgeExecutor {
   ) internal {
     bytes32 actionHash =
       keccak256(abi.encode(target, value, signature, data, executionTime, withDelegatecall));
-      // SWC-Presence of unused variables: 270
+      // SWC-131-Presence of unused variables: 270
     _queuedActions[actionHash] = false;
   }
 

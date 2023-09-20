@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Timvi Governance Token and Distribution DAO Smart Contract Audit/Timvi-Governance-a6e5929701b5da5ef9980b668216410245da59b7/Distribution.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Timvi Governance Token and Distribution DAO Smart Contract Audit/Timvi-Governance-a6e5929701b5da5ef9980b668216410245da59b7/Distribution.sol",
  "SWCs": [
   {
-   "category": "SWC-Use of Deprecated Solidity Functions",
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
    "function": "rewardPerToken",
    "lineNumber": "L73, 130-138"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "distributeAdditionalRewards",
    "lineNumber": "L138"
   }

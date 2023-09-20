@@ -33,7 +33,7 @@ contract TimeHelpers {
     *      Using a function rather than `block.timestamp` allows us to easily mock it in
     *      tests.
     */
-    // SWC-Code With No Effects: L37-L39
+    // SWC-135-Code With No Effects: L37-L39
     function getTimestamp() internal view returns (uint256) {
         return block.timestamp; // solium-disable-line security/no-block-members
     }

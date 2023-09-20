@@ -48,7 +48,7 @@ library SafeMath {
     return a < b ? a : b;
   }
 
-// SWC-Shadowing State Variables: L52 - L56
+// SWC-119-Shadowing State Variables: L52 - L56
   function assert(bool assertion) internal {
     if (!assertion) {
       throw;
@@ -369,7 +369,7 @@ contract UpgradeableToken is StandardToken {
   /*
    * Set an upgrade agent that handles
    */
-  //  SWC-Reentrancy: L373 - L394
+  //  SWC-107-Reentrancy: L373 - L394
   function setUpgradeAgent(address agent) external {
 
       if(!canUpgrade()) {

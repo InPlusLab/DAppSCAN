@@ -127,7 +127,7 @@ contract IdleLiquidityModule is BaseModule {
 
         (, int24 tick, , , , , ) = pool.slot0();
         int24 tickSpacing = int24(fee) / 50;
-        // SWC-Integer Overflow and Underflow: L131
+        // SWC-101-Integer Overflow and Underflow: L131
         return (((tick - tickDelta) / tickSpacing) * tickSpacing, ((tick + tickDelta) / tickSpacing) * tickSpacing);
     }
 }

@@ -304,7 +304,7 @@ contract StakingPools is ReentrancyGuard {
     /// Warning:
     /// Make the staking plan before add a new pool. If the amount of pool becomes too many would
     /// result the transaction failed due to high gas usage in for-loop.
-    //SWC-DoS With Block Gas Limit: L308-L313
+    //SWC-128-DoS With Block Gas Limit: L308-L313
     function _updatePools() internal {
         for (uint256 _poolId = 0; _poolId < _pools.length(); _poolId++) {
             Pool.Data storage _pool = _pools.get(_poolId);

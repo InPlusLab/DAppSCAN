@@ -213,7 +213,7 @@ abstract contract GetterUtils is StateUtils, IGetterUtils {
         returns(address)
     {
         AddressCheckpoint[] storage delegates = users[userAddress].delegates;
-        // SWC-DoS With Block Gas Limit: L217 - L223
+        // SWC-128-DoS With Block Gas Limit: L217 - L223
         for (uint256 i = delegates.length; i > 0; i--)
         {
             if (delegates[i - 1].fromBlock <= _block)
@@ -255,7 +255,7 @@ abstract contract GetterUtils is StateUtils, IGetterUtils {
         {
             return 0;
         }
-        // SWC-DoS With Block Gas Limit: L259 - L279
+        // SWC-128-DoS With Block Gas Limit: L259 - L279
         uint256 indUserShares = _userShares.length - 1;
         for (
                 uint256 indEpoch = currentEpoch;
@@ -293,7 +293,7 @@ abstract contract GetterUtils is StateUtils, IGetterUtils {
         view
         returns(uint256)
     {
-        // SWC-DoS With Block Gas Limit: L297 - L304
+        // SWC-128-DoS With Block Gas Limit: L297 - L304
         uint256 i = checkpoints.length;
         for (; i > minimumCheckpointIndex; i--)
         {

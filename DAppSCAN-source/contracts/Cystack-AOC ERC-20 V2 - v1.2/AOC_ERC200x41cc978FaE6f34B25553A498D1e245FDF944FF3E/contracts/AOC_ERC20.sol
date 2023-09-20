@@ -112,7 +112,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      */
     function initialize() public initializer {
         _mint(_msgSender(), (1000 * 10**8 * 10**18)); //mint the initial total supply
-        // SWC-Incorrect Constructor Name: L116
+        // SWC-118-Incorrect Constructor Name: L116
         ltafPercentage = 60;
 
         addLevels(1, 1640995200, 1704153599, 20);

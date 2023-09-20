@@ -2,7 +2,7 @@
  *Submitted for verification at Etherscan.io on 2017-12-14
 */
 
-// SWC-Outdated Compiler Version: L6
+// SWC-102-Outdated Compiler Version: L6
 pragma solidity 0.4.18;
 
 /**

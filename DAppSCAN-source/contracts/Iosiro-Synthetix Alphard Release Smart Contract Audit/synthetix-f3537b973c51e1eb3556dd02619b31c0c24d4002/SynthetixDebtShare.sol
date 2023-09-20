@@ -106,7 +106,7 @@ contract SynthetixDebtShare is Owned, MixinResolver, ISynthetixDebtShare {
     function totalSupply() public view returns (uint) {
         return totalSupplyOnPeriod[currentPeriodId];
     }
-//SWC-Code With No Effects:L110-118
+//SWC-135-Code With No Effects:L110-118
     function sharePercent(address account) external view returns (uint) {
         uint balance = balanceOf(account);
 
@@ -208,7 +208,7 @@ contract SynthetixDebtShare is Owned, MixinResolver, ISynthetixDebtShare {
     function finishSetup() external onlyOwner {
         isInitialized = true;
     }
-//SWC-Code With No Effects:L213-247
+//SWC-135-Code With No Effects:L213-247
     /* ========== INTERNAL FUNCTIONS ======== */
     function _increaseBalance(address account, uint amount) internal {
         uint accountBalanceCount = balances[account].length;

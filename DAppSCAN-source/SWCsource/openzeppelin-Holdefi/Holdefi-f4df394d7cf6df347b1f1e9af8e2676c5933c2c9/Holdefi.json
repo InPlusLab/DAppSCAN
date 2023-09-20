@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/Holdefi.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/Holdefi.sol",
  "SWCs": [
   {
-   "category": "SWC-Message call with hardcoded gas amount",
+   "category": "SWC-134-Message call with hardcoded gas amount",
    "function": "withdrawSupply ",
    "lineNumber": "L214, 325, 397"
   },
   {
-   "category": "SWC-Message call with hardcoded gas amount",
+   "category": "SWC-134-Message call with hardcoded gas amount",
    "function": "withdrawPromotionReserve ",
    "lineNumber": "L778"
   }

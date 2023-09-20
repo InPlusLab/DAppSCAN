@@ -327,7 +327,7 @@ contract Mooniswap is MooniswapGovernance, Ownable {
             return ret.mul(feeNumerator).div(feeDenominator);
         }
     }
-    // SWC-Unprotected Ether Withdrawal: L331-341
+    // SWC-105-Unprotected Ether Withdrawal: L331-341
     function rescueFunds(IERC20 token, uint256 amount) external nonReentrant onlyOwner {
         uint256 balance0 = token0.uniBalanceOf(address(this));
         uint256 balance1 = token1.uniBalanceOf(address(this));

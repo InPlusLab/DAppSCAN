@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-flexUSD/flexAssets-79ce4e195b077439a627196c1388035a1751c11c/fUSD.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-flexUSD/flexAssets-79ce4e195b077439a627196c1388035a1751c11c/fUSD.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L8"
   }

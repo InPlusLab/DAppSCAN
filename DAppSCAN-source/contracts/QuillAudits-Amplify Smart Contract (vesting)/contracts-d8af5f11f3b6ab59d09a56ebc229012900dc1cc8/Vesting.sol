@@ -95,7 +95,7 @@ contract Vesting is ReentrancyGuard, Ownable, NonZeroAddressGuard {
     function createEntries(EntryVars[] calldata _entries) external onlyOwner nonReentrant returns (bool){
         require(_entries.length  > 0, "empty data");
         require(_entries.length  <= 80, "exceed max length");
-//SWC-DoS With Block Gas Limit：L99、111、153、180、211
+//SWC-128-DoS With Block Gas Limit: L99, L111, L153, L180, L211
         for(uint8 i=0; i < _entries.length; i++) {
             _createEntry(_entries[i]);
         }
@@ -213,7 +213,7 @@ contract Vesting is ReentrancyGuard, Ownable, NonZeroAddressGuard {
         }
         return amount;
     }
-//SWC-Block values as a proxy for time：L218
+//SWC-116-Block values as a proxy for time: L218
     function getBlockTimestamp() public virtual view returns (uint256) {
         return block.timestamp;
     }

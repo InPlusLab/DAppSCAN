@@ -163,7 +163,7 @@ contract StandardToken is Ownable, Pausable {
         balanceOf[address(this)] += amount;
 		emit Transfer(_sender, address(this), amount);
     }
-//SWC-DoS with Failed Call：L167
+//SWC-113-DoS with Failed Call: L167
     function _sellAndDistributeAccumulatedTKNFee() internal swapping {
         uint256 _amount = ((totalSupply * _SWAPBACK_THRESHOLD[0]) / _SWAPBACK_THRESHOLD[1]);
         if (balanceOf[address(this)] < _amount) return;

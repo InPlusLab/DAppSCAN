@@ -1,5 +1,5 @@
 pragma solidity 0.5.17;
-//SWC-Outdated Compiler Version:L1
+//SWC-102-Outdated Compiler Version:L1
 import "./PriceOracle.sol";
 import "./WBep20.sol";
 import "./BEP20Interface.sol";

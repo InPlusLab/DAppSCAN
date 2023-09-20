@@ -1,25 +1,25 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-BscDragon Smart Contract/bridgeToken-9636c155e8fcfff5cda8b609a77c7d4527b5b402/bridgeToken.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-BscDragon Smart Contract/bridgeToken-9636c155e8fcfff5cda8b609a77c7d4527b5b402/bridgeToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma\uff1aL5",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
-   "lineNumber": "//SWC-Floating Pragma\uff1aL5"
+   "lineNumber": "L5"
   },
   {
-   "category": "SWC-Code With No Effects\uff1aL117",
+   "category": "SWC-135-Code With No Effects",
    "function": "_msgData",
-   "lineNumber": "//SWC-Code With No Effects\uff1aL117"
+   "lineNumber": "L117"
   },
   {
-   "category": "SWC-Function Default Visibility\uff1aL249\uff0c257",
+   "category": "SWC-100-Function Default Visibility",
    "function": "symbol",
-   "lineNumber": "//SWC-Function Default Visibility\uff1aL249\uff0c257"
+   "lineNumber": "L249, L257"
   },
   {
-   "category": "SWC-Code With No Effects\uff1aL485",
+   "category": "SWC-135-Code With No Effects",
    "function": "_burn",
-   "lineNumber": "//SWC-Code With No Effects\uff1aL485"
+   "lineNumber": "L485"
   }
  ]
 }

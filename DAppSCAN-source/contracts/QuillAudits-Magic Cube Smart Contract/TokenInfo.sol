@@ -465,7 +465,7 @@ contract ERC20 is Context, IERC20 {
         _approve(_msgSender(), spender, amount);
         return true;
     }
-//SWC-Transaction Order Dependence:L464-467
+//SWC-114-Transaction Order Dependence:L464-467
     /**
      * @dev See {IERC20-transferFrom}.
      *
@@ -882,7 +882,7 @@ abstract contract Ownable is Context {
  *Submitted for verification at Etherscan.io on 2019-05-09
  */
 pragma solidity >=0.6.0 <0.8.0;
-//SWC-Floating Pragma:L884
+//SWC-103-Floating Pragma:L884
 
 
 contract TokenInfo is ERC20, ERC20Burnable, ERC20Pausable, Ownable {

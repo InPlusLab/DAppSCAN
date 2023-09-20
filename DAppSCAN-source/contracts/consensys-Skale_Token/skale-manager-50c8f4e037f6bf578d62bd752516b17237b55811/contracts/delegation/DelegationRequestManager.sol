@@ -70,7 +70,7 @@ contract DelegationRequestManager is Permissions {
             "This delegation period is not allowed"
         );
         // check that there is enough money
-        // SWC-Integer Overflow and Underflow: L74-76
+        // SWC-101-Integer Overflow and Underflow: L74-76
         uint holderBalance = SkaleToken(contractManager.getContract("SkaleToken")).balanceOf(holder);
         uint lockedToDelegate = tokenState.getLockedCount(holder) - tokenState.getPurchasedAmount(holder);
         require(holderBalance >= amount + lockedToDelegate, "Delegator hasn't enough tokens to delegate");

@@ -181,7 +181,7 @@ contract MasterChef is Ownable {
         }));
         
     }
-//    SWC-DoS With Block Gas Limit：L189
+//    SWC-128-DoS With Block Gas Limit:L189
     // Add a new lp to the pool. Can only be called by the owner.
     function executeAddPools() external onlyOwner {
         uint256 length = waitingPoolInfo.length;
@@ -253,7 +253,7 @@ contract MasterChef is Ownable {
     
     // Update the given pool's XTT allocation point. Can only be called by the owner.
     function executeUpdateAllocPoint() external onlyOwner {
-        //    SWC-DoS With Block Gas Limit：L259
+        //    SWC-128-DoS With Block Gas Limit:L259
         uint256 length = poolAllocPointInfo.length;
         if(length > 0){
             for (uint256 index = 0; index < length; ++index) {

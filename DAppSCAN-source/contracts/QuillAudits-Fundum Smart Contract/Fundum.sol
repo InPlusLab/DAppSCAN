@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-//SWC-Floating Pragma:L3
+//SWC-103-Floating Pragma:L3
 pragma solidity ^0.8.4;
 
 import "./Address.sol";
@@ -351,7 +351,7 @@ contract Fundum is Context, IBEP20, Ownable {
           block.timestamp
       );
   }
-//SWC-Block values as a proxy for time:L351,369,388
+//SWC-116-Block values as a proxy for time:L351,369,388
   function swapTokensForETH(uint256 tokenAmount) private lockTheSwap {
       // generate the uniswap pair path of token -> weth
       address[] memory path = new address[](2);

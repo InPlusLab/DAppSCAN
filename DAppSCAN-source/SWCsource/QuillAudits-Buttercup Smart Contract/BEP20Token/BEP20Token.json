@@ -1,20 +1,20 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Buttercup Smart Contract/BEP20Token/BEP20Token.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Buttercup Smart Contract/BEP20Token/BEP20Token.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects\uff1aL368-370",
+   "category": "SWC-135-Code With No Effects",
    "function": "decimals",
-   "lineNumber": "//SWC-Code With No Effects\uff1aL368-370"
+   "lineNumber": "L368-370"
   },
   {
-   "category": "SWC-Code With No Effects\uff1aL557-563",
+   "category": "SWC-135-Code With No Effects",
    "function": "_approve",
-   "lineNumber": "//SWC-Code With No Effects\uff1aL557-563"
+   "lineNumber": "L557-563"
   },
   {
-   "category": "SWC-Code With No Effects\uff1aL592-595",
+   "category": "SWC-135-Code With No Effects",
    "function": "_burnFrom",
-   "lineNumber": "//SWC-Code With No Effects\uff1aL592-595"
+   "lineNumber": "L592-595"
   }
  ]
 }

@@ -1,0 +1,20 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Grumpee.Finance_Token/etherscan-0xdad57280919b81268e13591462fa80ef7d92b10c.sol",
+ "SWCs": [
+  {
+   "category": "SWC-119-Shadowing State Variables",
+   "function": "owner",
+   "lineNumber": "L394"
+  },
+  {
+   "category": "SWC-119-Shadowing State Variables",
+   "function": "allowance",
+   "lineNumber": "L486"
+  },
+  {
+   "category": "SWC-119-Shadowing State Variables",
+   "function": "_transfer",
+   "lineNumber": "L587"
+  }
+ ]
+}

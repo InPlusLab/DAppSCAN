@@ -1,23 +1,23 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Coinbae-Pud.Fi Strategy_Bacdai/StrategyBasisBacDaiLp0x31dfcB1C5dF01A27F8b0b5F9cD1585FE92C7970e/contracts/strategies/strategy-base.sol",
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Pud.Fi Strategy_Bacdai/StrategyBasisBacDaiLp0x31dfcB1C5dF01A27F8b0b5F9cD1585FE92C7970e/contracts/strategies/strategy-base.sol",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_swapUniswap",
    "lineNumber": "L237 - L268"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_swapUniswapWithPath",
    "lineNumber": "L271 - L288"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_swapSushiswap",
    "lineNumber": "L291 - L322"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_swapSushiswapWithPath",
    "lineNumber": "L325 - L342"
   }

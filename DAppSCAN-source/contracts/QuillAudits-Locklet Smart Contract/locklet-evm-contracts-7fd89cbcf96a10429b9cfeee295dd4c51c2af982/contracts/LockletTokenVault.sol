@@ -1,6 +1,6 @@
 // contracts/LockletTokenVault.sol
 // SPDX-License-Identifier: No License
-// SWC-Floating Pragma: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
@@ -162,7 +162,7 @@ contract LockletTokenVault is AccessControl, Pausable {
 
         uint256 totalAmountCheck = 0;
 
-        // SWC-DoS With Block Gas Limit: L166 - L184
+        // SWC-128-DoS With Block Gas Limit: L166 - L184
         for (uint256 i = 0; i < recipientsData.length; i++) {
             RecipientCallData calldata recipientData = recipientsData[i];
 
@@ -243,7 +243,7 @@ contract LockletTokenVault is AccessControl, Pausable {
         uint256 totalAmount = 0;
         uint256 totalUnlockedAmount = 0;
 
-        // SWC-DoS With Block Gas Limit: L247 - L262
+        // SWC-128-DoS With Block Gas Limit: L247 - L262
         for (uint256 i = 0; i < recipients.length; i++) {
             Recipient storage recipient = recipients[i];
 
@@ -309,7 +309,7 @@ contract LockletTokenVault is AccessControl, Pausable {
         LockWithRecipients[] memory results = new LockWithRecipients[](uint256(pageSize));
         uint256 index = 0;
         
-        // SWC-DoS With Block Gas Limit: L313 - L320
+        // SWC-128-DoS With Block Gas Limit: L313 - L320
         for (currentLockIndex; currentLockIndex >= queryEndLockIndex; currentLockIndex--) {
             uint256 currentLockIndexAsUnsigned = uint256(currentLockIndex);
             if (currentLockIndexAsUnsigned <= getLocksLength().sub(1)) {
@@ -328,7 +328,7 @@ contract LockletTokenVault is AccessControl, Pausable {
 
         LockWithRecipients[] memory results = new LockWithRecipients[](initiatorLocksLength);
 
-        // SWC-DoS With Block Gas Limit: L332 - L335
+        // SWC-128-DoS With Block Gas Limit: L332 - L335
         for (uint index = 0; index < initiatorLocksLength; index++) {
             uint256 lockIndex = _initiatorsLocksIndexes[initiatorAddress][index];
             results[index] = getLock(lockIndex);
@@ -343,7 +343,7 @@ contract LockletTokenVault is AccessControl, Pausable {
 
         LockWithRecipients[] memory results = new LockWithRecipients[](recipientLocksLength);
 
-        // SWC-DoS With Block Gas Limit: L347 - L350
+        // SWC-128-DoS With Block Gas Limit: L347 - L350
         for (uint index = 0; index < recipientLocksLength; index++) {
             uint256 lockIndex = _recipientsLocksIndexes[recipientAddress][index];
             results[index] = getLock(lockIndex);
@@ -392,7 +392,7 @@ contract LockletTokenVault is AccessControl, Pausable {
 
     function getRecipientIndexByAddress(Recipient[] storage recipients, address recipientAddress) private view returns (int256) {
         int256 recipientIndex = -1;
-        // SWC-DoS With Block Gas Limit: L393 - L398
+        // SWC-128-DoS With Block Gas Limit: L393 - L398
         for (uint256 i = 0; i < recipients.length; i++) {
             if (recipients[i].recipientAddress == recipientAddress) {
                 recipientIndex = int256(i);
@@ -405,7 +405,7 @@ contract LockletTokenVault is AccessControl, Pausable {
     function calculateClaim(Lock storage lock, Recipient storage recipient) private view returns (uint16, uint256) {
         require(recipient.amountClaimed < recipient.amount, "LockletTokenVault: The recipient has already claimed the maximum amount");
 
-        // SWC-Block values as a proxy for time: L410
+        // SWC-116-Block values as a proxy for time: L410
         if (block.timestamp < lock.startTime) {
             return (0, 0);
         }
@@ -426,7 +426,7 @@ contract LockletTokenVault is AccessControl, Pausable {
     }
 
     function blockTime() private view returns (uint256) {
-        // SWC-Block values as a proxy for time: 430
+        // SWC-116-Block values as a proxy for time: 430
         return block.timestamp;
     }
 

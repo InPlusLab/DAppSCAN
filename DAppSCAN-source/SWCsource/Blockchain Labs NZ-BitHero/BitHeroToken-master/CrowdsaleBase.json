@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-BitHero/BitHeroToken-master/CrowdsaleBase.sol",
+ "filePath": "DAppSCAN-source/contracts/Blockchain Labs NZ-BitHero/BitHeroToken-master/CrowdsaleBase.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L1 - L467"
   },
   {
-   "category": "SWC-Typographical Error",
+   "category": "SWC-129-Typographical Error",
    "function": "setEarlyParicipantWhitelist",
    "lineNumber": "L411 - L416"
   }

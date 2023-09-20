@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.8.0;
-// SWC-Code With No Effects: L4
+// SWC-135-Code With No Effects: L4
 import "../Tranche.sol";
 import "../InterestToken.sol";
 import "../interfaces/IERC20.sol";

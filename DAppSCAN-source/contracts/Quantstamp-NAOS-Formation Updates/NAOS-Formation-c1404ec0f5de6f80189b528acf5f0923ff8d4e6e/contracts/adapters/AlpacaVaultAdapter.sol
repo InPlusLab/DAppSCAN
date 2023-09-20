@@ -129,7 +129,7 @@ contract AlpacaVaultAdapter is IVaultAdapterV2 {
     vault.withdraw(_tokensToShares(_amount));
 
     // transfer all the busd in adapter to yum
-    //SWC-Unchecked Call Return Value: L132
+    //SWC-104-Unchecked Call Return Value: L132
     busdToken.transfer(_recipient, busdToken.balanceOf(address(this)));
   }
 
@@ -147,7 +147,7 @@ contract AlpacaVaultAdapter is IVaultAdapterV2 {
     if(vault.balanceOf(address(this)) > 0){
       vault.withdraw(vault.balanceOf(address(this)));
     }
-    //SWC-Unchecked Call Return Value: L151-158
+    //SWC-104-Unchecked Call Return Value: L151-158
     stakingPool.harvest(stakingPoolId);
     uniV2Router
       .swapExactTokensForTokens(alpacaToken.balanceOf(address(this)),
@@ -158,7 +158,7 @@ contract AlpacaVaultAdapter is IVaultAdapterV2 {
       );
 
     // transfer all the busd in adapter to user
-    //SWC-Unchecked Call Return Value: L162
+    //SWC-104-Unchecked Call Return Value: L162
     busdToken.transfer(_recipient, busdToken.balanceOf(address(this)));
   }
 

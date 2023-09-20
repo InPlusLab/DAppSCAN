@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: LGPL-3.0-or-later */
-//SWC-Floating Pragma: L3
+//SWC-103-Floating Pragma: L3
 pragma solidity ^0.7.0;
 
 import "@paulrberg/contracts/access/Admin.sol";

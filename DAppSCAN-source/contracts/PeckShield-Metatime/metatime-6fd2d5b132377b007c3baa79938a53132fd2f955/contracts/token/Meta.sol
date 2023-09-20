@@ -44,7 +44,7 @@ contract Meta is ERC20, Ownable {
     }
 
     function getMinter(uint256 _index) public view returns (address) {
-        //SWC-Integer Overflow and Underflow: L48
+        //SWC-101-Integer Overflow and Underflow: L48
         require(_index <= getMinterLength() - 1, "Token: index out of bounds");
         return EnumerableSet.at(_minters, _index);
     }

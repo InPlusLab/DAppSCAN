@@ -15,7 +15,7 @@
 // and also collects the validator fee for stakefish
 
 // SPDX-License-Identifier: Apache-2.0
-// SWC-Outdated Compiler Version: L19
+// SWC-102-Outdated Compiler Version: L19
 pragma solidity 0.6.11;
 
 import "../node_modules/@openzeppelin/contracts/utils/Pausable.sol";
@@ -82,7 +82,7 @@ contract BatchDeposit is Pausable, Ownable {
     /**
      * @dev Performs a batch deposit, asking for an additional fee payment.
      */
-    //  SWC-Transaction Order Dependence: L86 - L122
+    //  SWC-114-Transaction Order Dependence: L86 - L122
     function batchDeposit(
         bytes calldata pubkeys, 
         bytes calldata withdrawal_credentials, 

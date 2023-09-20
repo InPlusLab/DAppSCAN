@@ -148,7 +148,7 @@ contract PropsRewards is Initializable, ERC20 {
     * @param _applications address[] array of application addresses getting the daily reward
     * @param _amounts uint256[] array of amounts each app should get
     */
-    //SWC-DoS With Block Gas Limit: L152-L199
+    //SWC-128-DoS With Block Gas Limit: L152-L199
     function submitDailyRewards(
         uint256 _rewardsDay,
         bytes32 _rewardsHash,

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-//SWC-Floating Pragma: L3
+//SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.10;
 
 import { FixedPoint128 } from '@uniswap/v3-core-0.8-support/contracts/libraries/FixedPoint128.sol';

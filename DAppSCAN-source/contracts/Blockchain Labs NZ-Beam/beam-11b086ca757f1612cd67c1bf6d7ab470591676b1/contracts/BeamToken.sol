@@ -13,7 +13,7 @@ contract Ownable {
 
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
-    // SWC-Typographical Error: L17
+    // SWC-129-Typographical Error: L17
     event ManagerUpdated(address newManager);
 
    /**
@@ -68,7 +68,7 @@ contract Ownable {
     function setManager(address _manager) public onlyOwner {
         require(_manager != address(0));
         manager = _manager;
-        // SWC-Typographical Error: L72
+        // SWC-129-Typographical Error: L72
         emit ManagerUpdated(manager);
     }
 

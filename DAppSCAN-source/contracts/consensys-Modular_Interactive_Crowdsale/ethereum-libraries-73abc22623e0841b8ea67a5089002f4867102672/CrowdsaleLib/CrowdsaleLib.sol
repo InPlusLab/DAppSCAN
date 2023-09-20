@@ -200,7 +200,7 @@ library CrowdsaleLib {
   /// @dev send ether from the completed crowdsale to the owners wallet address
   /// @param self Stored crowdsale from crowdsale contract
   /// @return true if owner withdrew eth
-  // SWC-Unprotected SELFDESTRUCT Instruction: L204-L208
+  // SWC-106-Unprotected SELFDESTRUCT Instruction: L204-L208
   function withdrawOwnerEth(CrowdsaleStorage storage self) public returns (bool) {
     if ((!crowdsaleEnded(self)) && (self.token.balanceOf(this)>0)) {
       LogErrorMsg(0, "Cannot withdraw owner ether until after the sale!");

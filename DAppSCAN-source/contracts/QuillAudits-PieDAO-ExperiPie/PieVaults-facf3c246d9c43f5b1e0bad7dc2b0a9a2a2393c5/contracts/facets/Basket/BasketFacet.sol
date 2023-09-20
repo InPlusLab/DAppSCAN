@@ -42,7 +42,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
 
         // remove token from array
         // TODO consider limiting max amount of tokens to mitigate running out of gas.
-        // SWC-DoS With Block Gas Limit: L46 - L53
+        // SWC-128-DoS With Block Gas Limit: L46 - L53
         for(uint256 i; i < bs.tokens.length; i ++) {
             if(address(bs.tokens[i]) == _token) {
                 bs.tokens[i] = bs.tokens[bs.tokens.length - 1];
@@ -124,7 +124,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
 
         uint256 feeAmount = _amount.mul(bs.entryFee).div(10**18);
 
-        // SWC-DoS With Block Gas Limit: L128 - L132
+        // SWC-128-DoS With Block Gas Limit: L128 - L132
         for(uint256 i; i < bs.tokens.length; i ++) {
             IERC20 token = bs.tokens[i];
             uint256 tokenAmount = balance(address(token)).mul(_amount.add(feeAmount)).div(totalSupply);
@@ -157,7 +157,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
 
         uint256 feeAmount = _amount.mul(bs.exitFee).div(10**18);
 
-        // SWC-DoS With Block Gas Limit: L161 - L168
+        // SWC-128-DoS With Block Gas Limit: L161 - L168
         for(uint256 i; i < bs.tokens.length; i ++) {
             IERC20 token = bs.tokens[i];
             uint256 tokenBalance = balance(address(token));
@@ -200,7 +200,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
             return 0;
         }
 
-        // SWC-Block values as a proxy for time: L204
+        // SWC-116-Block values as a proxy for time: L204
         uint256 timePassed = block.timestamp.sub(lastFeeClaimed);
 
         return totalSupply.mul(annualizedFee).div(10**18).mul(timePassed).div(365 days);
@@ -210,7 +210,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
         uint256 outStandingFee = calcOutStandingAnnualizedFee();
         LibBasketStorage.BasketStorage storage bs = LibBasketStorage.basketStorage();
 
-        // SWC-Block values as a proxy for time: L214
+        // SWC-116-Block values as a proxy for time: L214
         bs.lastAnnualizedFeeClaimed = block.timestamp;
 
         // if there is any fee to mint and the beneficiary is set
@@ -276,7 +276,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
         tokens = new address[](bs.tokens.length);
         amounts = new uint256[](bs.tokens.length);
 
-        // SWC-DoS With Block Gas Limit: L278 - L287
+        // SWC-128-DoS With Block Gas Limit: L278 - L287
         for(uint256 i; i < bs.tokens.length; i ++) {
             IERC20 token = bs.tokens[i];
             uint256 tokenBalance = balance(address(token));
@@ -299,7 +299,7 @@ contract BasketFacet is ReentryProtection, CallProtection, IBasketFacet {
         tokens = new address[](bs.tokens.length);
         amounts = new uint256[](bs.tokens.length);
 
-        // SWC-DoS With Block Gas Limit: L301 - L308
+        // SWC-128-DoS With Block Gas Limit: L301 - L308
         for(uint256 i; i < bs.tokens.length; i ++) {
             IERC20 token = bs.tokens[i];
             uint256 tokenBalance = balance(address(token));

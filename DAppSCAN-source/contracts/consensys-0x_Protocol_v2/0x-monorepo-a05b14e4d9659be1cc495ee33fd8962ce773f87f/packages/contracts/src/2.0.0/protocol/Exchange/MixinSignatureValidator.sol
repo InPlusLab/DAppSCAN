@@ -48,7 +48,7 @@ contract MixinSignatureValidator is
     )
         external
     {
-        // SWC-Lack of Proper Signature Verification: L52-L59
+        // SWC-122-Lack of Proper Signature Verification: L52-L59
         require(
             isValidSignature(
                 hash,

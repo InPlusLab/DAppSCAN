@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Akt.io Smart Contract/Etherscan-0x70Cbf5E72A85B41808EF20f6EB05A9b8F223F220.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L11"
+  }
+ ]
+}

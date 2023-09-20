@@ -369,7 +369,7 @@ abstract contract HegicPool is IHegicPool, ERC721, AccessControl {
      * @param hedged The type of the liquidity tranche
      * @param minShare The minimum share in the pool for the user
      **/
-    //  SWC-Reentrancy: L373 - L409
+    //  SWC-107-Reentrancy: L373 - L409
     function provideFrom(
         address account,
         uint256 amount,

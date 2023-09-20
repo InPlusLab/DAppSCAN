@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/consensys-AragonBlack_Fundraising/fundraising-5ad1332955bab9d36cfad345ae92b7ad7dc0bdbe/templates/multisig/contracts/FundraisingMultisigTemplate.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-AragonBlack_Fundraising/fundraising-5ad1332955bab9d36cfad345ae92b7ad7dc0bdbe/templates/multisig/contracts/FundraisingMultisigTemplate.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "_setupCollaterals",
    "lineNumber": "L335"
   }

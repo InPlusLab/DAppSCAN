@@ -45,7 +45,7 @@ contract YVaultAssetProxy is WrappedPosition {
     ///      interest but less interest than yearn. All deposits use
     ///      the underlying token.
     /// @param _amount The amount of underlying to deposit
-    // SWC-Reentrancy: L49 - L80
+    // SWC-107-Reentrancy: L49 - L80
     function reserveDeposit(uint256 _amount) external {
         // Transfer from user, note variable 'token' is the immutable
         // inherited from the abstract WrappedPosition contract.

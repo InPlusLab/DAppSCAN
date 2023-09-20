@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PepperSec-Aira-Robonomic/robonomics_contracts-cc35a91de187072214d215262d8371f0159c2498/contracts/robonomics/RobotLiabilityLib.sol",
+ "filePath": "DAppSCAN-source/contracts/PepperSec-Aira-Robonomic/robonomics_contracts-cc35a91de187072214d215262d8371f0159c2498/contracts/robonomics/RobotLiabilityLib.sol",
  "SWCs": [
   {
-   "category": "SWC-Hash Collisions With Multiple Variable Length Arguments",
+   "category": "SWC-133-Hash Collisions With Multiple Variable Length Arguments",
    "function": "bid",
    "lineNumber": "L74-L75"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "finalize",
    "lineNumber": "L104"
   }

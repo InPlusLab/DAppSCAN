@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Set Protocol Exchange Issuance Smart Contract Audit/index-coop-contracts-legacy-a2904cf34be59a1ebde7ef186bd8535db80093b0/ExchangeIssuance.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Set Protocol Exchange Issuance Smart Contract Audit/index-coop-contracts-legacy-a2904cf34be59a1ebde7ef186bd8535db80093b0/ExchangeIssuance.sol",
  "SWCs": [
   {
-   "category": "SWC-Message call with hardcoded gas amount\uff1aL247\uff0c279\uff0c349",
+   "category": "SWC-134-Message call with hardcoded gas amount",
    "function": "issueExactSetFromToken",
-   "lineNumber": "//        SWC-Message call with hardcoded gas amount\uff1aL247\uff0c279\uff0c349"
+   "lineNumber": "L247, L279, L349"
   }
  ]
 }

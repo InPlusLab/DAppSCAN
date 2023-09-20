@@ -30,7 +30,7 @@ contract TimviSettings is ManagerRole {
         COMM_DIVIDER = 100000;
         GLOBAL_SAFETY_BAG = 34783; // 34,783%
         FEE_TOTAL = 6000; //6%
-//SWC-Presence of unused variables:L30
+//SWC-131-Presence of unused variables:L30
         emit MIN_DEPO_UPDATED(MIN_DEPO);
         emit SYS_COMM_UPDATED(SYS_COMM);
         emit USER_COMM_UPDATED(USER_COMM);

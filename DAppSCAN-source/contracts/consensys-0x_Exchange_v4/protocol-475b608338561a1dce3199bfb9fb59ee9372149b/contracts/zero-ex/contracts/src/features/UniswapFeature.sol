@@ -199,7 +199,7 @@ contract UniswapFeature is
                 }
 
                 // Call pair.getReserves(), store the results at `0xC00`
-                // SWC-Reentrancy: L203-206
+                // SWC-107-Reentrancy: L203-206
                 mstore(0xB00, UNISWAP_PAIR_RESERVES_CALL_SELECTOR_32)
                 if iszero(staticcall(gas(), pair, 0xB00, 0x4, 0xC00, 0x40)) {
                     bubbleRevert()

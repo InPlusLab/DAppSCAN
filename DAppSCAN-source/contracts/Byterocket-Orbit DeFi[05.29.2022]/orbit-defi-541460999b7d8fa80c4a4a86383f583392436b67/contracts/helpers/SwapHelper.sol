@@ -6,7 +6,7 @@ pragma abicoder v2;
 import '@uniswap/v3-core/contracts/libraries/FixedPoint96.sol';
 import '@uniswap/v3-core/contracts/libraries/TickMath.sol';
 import '@uniswap/v3-periphery/contracts/libraries/LiquidityAmounts.sol';
-// SWC-Integer Overflow and Underflow: L11-74
+// SWC-101-Integer Overflow and Underflow: L11-74
 ///@title library to help with swap amounts calculations
 library SwapHelper {
     ///@notice calculate the ratio of the token amounts for a given position

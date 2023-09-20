@@ -49,7 +49,7 @@ contract StakefishERC721Wrapper is IERC721, ReentrancyGuard {
 
     /// @dev It can be tricked into performing external calls to a malicious contract, 
     /// but the token system for each service servicesContract is entirely separate.
-    // SWC-Reentrancy: L53-L71
+    // SWC-107-Reentrancy: L53-L71
     function mintTo(address servicesContract, address to, uint256 amount) public nonReentrant returns (uint256) {
         require(amount > 0, "Amount can't be 0");
 

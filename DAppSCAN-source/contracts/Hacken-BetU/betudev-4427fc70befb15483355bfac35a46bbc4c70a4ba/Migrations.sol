@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
-//SWC-Outdated Compiler Version: L2
+//SWC-102-Outdated Compiler Version: L2
 contract Migrations {
   address public owner = msg.sender;
   uint public last_completed_migration;

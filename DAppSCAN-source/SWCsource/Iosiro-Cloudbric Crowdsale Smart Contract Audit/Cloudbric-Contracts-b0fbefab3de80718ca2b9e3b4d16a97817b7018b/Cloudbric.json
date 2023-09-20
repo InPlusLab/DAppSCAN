@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Cloudbric Crowdsale Smart Contract Audit/Cloudbric-Contracts-b0fbefab3de80718ca2b9e3b4d16a97817b7018b/Cloudbric.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Cloudbric Crowdsale Smart Contract Audit/Cloudbric-Contracts-b0fbefab3de80718ca2b9e3b4d16a97817b7018b/Cloudbric.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lineNumber": "L29"
   }

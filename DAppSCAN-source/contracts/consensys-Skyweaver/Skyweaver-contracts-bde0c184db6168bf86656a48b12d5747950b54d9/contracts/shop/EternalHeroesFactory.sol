@@ -275,7 +275,7 @@ contract EternalHeroesFactory is Ownable {
 
     // Check if enough ARC was sent and refund exceeding amount
     // .sub() will revert if insufficient amount received for purchase
-    // SWC-Reentrancy: L279-285
+    // SWC-107-Reentrancy: L279-285
     uint256 refundAmount = _arcAmount.sub(total_cost);
     if (refundAmount > 0) {
       arcadeumCoin.safeTransferFrom(address(this), _recipient, arcadeumCoinID, refundAmount, "");

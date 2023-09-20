@@ -1,15 +1,15 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Amplify Smart Contract (vesting)/contracts-d8af5f11f3b6ab59d09a56ebc229012900dc1cc8/Vesting.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Amplify Smart Contract (vesting)/contracts-d8af5f11f3b6ab59d09a56ebc229012900dc1cc8/Vesting.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit\uff1aL99\u3001111\u3001153\u3001180\u3001211",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "createEntries",
-   "lineNumber": "//SWC-DoS With Block Gas Limit\uff1aL99\u3001111\u3001153\u3001180\u3001211"
+   "lineNumber": "L99, L111, L153, L180, L211"
   },
   {
-   "category": "SWC-Block values as a proxy for time\uff1aL218",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "getBlockTimestamp",
-   "lineNumber": "//SWC-Block values as a proxy for time\uff1aL218"
+   "lineNumber": "L218"
   }
  ]
 }

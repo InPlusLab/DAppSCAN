@@ -68,7 +68,7 @@ contract Vault is IVault {
     WETH = weth_;
     manager = manager_;
   }
-  // SWC-Shadowing State Variables: L72-89
+  // SWC-119-Shadowing State Variables: L72-89
   function getStatus()
     external
     view

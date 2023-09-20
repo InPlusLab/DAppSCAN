@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Iosiro-Etherparty Smart Contract Audit/eth-smart-contracts-39ab46c841f2e8e5beff4508a3f05362bd583049/SafeERC20.sol",
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Etherparty Smart Contract Audit/eth-smart-contracts-39ab46c841f2e8e5beff4508a3f05362bd583049/SafeERC20.sol",
  "SWCs": [
   {
-   "category": "SWC-Assert Violation",
+   "category": "SWC-110-Assert Violation",
    "function": "N/A",
    "lineNumber": "L15\u300119\u300123"
   }

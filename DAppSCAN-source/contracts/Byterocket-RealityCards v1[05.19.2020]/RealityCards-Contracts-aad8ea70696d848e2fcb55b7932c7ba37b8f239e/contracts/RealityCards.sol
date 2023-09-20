@@ -23,7 +23,7 @@ contract RealityCards is ERC721Full, Ownable {
     uint256 public numberOfTokens;
     /// @dev counts how many NFTs have been minted 
     /// @dev when nftMintCount = numberOfTokens, increment state
-    // SWC-Code With No Effects: L27
+    // SWC-135-Code With No Effects: L27
     uint256 private nftMintCount;
     /// @dev the question ID of the question on realitio
     bytes32 public questionId;
@@ -194,7 +194,7 @@ contract RealityCards is ERC721Full, Ownable {
 
     /// @dev for front end only
     /// @return how much the user has deposited (note: user not owner)
-    // SWC-Code With No Effects: L198-204
+    // SWC-135-Code With No Effects: L198-204
     function userRemainingDeposit(uint256 _tokenId) external view returns (uint256) {
         if(ownerOf(_tokenId) == msg.sender) {
             return currentOwnerRemainingDeposit(_tokenId);
@@ -208,7 +208,7 @@ contract RealityCards is ERC721Full, Ownable {
     function rentalExpiryTime(uint256 _tokenId) external view returns (uint256) {
         uint256 pps;
         pps = price[_tokenId].div(1 days);
-        // SWC-Code With No Effects: L212-214
+        // SWC-135-Code With No Effects: L212-214
         if (pps == 0) {
             return now; //if price is so low that pps = 0 just return current time as a fallback
         }

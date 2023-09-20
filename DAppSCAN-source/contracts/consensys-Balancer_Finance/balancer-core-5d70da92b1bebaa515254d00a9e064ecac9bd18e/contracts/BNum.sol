@@ -64,7 +64,7 @@ contract BNum is BConst {
         internal pure
         returns (uint)
     {
-        // SWC-Integer Overflow and Underflow: L68-69
+        // SWC-101-Integer Overflow and Underflow: L68-69
         uint c0 = a * b;
         require(a == 0 || c0 / a == b, "ERR_MUL_OVERFLOW");
         uint c1 = c0 + (BONE / 2);

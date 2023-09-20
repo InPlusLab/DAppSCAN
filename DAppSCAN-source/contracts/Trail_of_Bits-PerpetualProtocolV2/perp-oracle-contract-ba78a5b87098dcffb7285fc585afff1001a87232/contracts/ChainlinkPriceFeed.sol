@@ -44,7 +44,7 @@ contract ChainlinkPriceFeed is IPriceFeed, BlockContext {
         uint256 baseTimestamp = timestamp.sub(interval);
 
         // if the latest timestamp <= base timestamp, which means there's no new price, return the latest price
-        // SWC-Unchecked Call Return Value: L48 - L50
+        // SWC-104-Unchecked Call Return Value: L48 - L50
         if (interval == 0 || round == 0 || latestTimestamp <= baseTimestamp) {
             return latestPrice;
         }
@@ -93,7 +93,7 @@ contract ChainlinkPriceFeed is IPriceFeed, BlockContext {
     {
         (uint80 round, int256 latestPrice, , uint256 latestTimestamp, ) = _aggregator.latestRoundData();
         finalPrice = uint256(latestPrice);
-        // SWC-Unchecked Call Return Value: L96 -L100
+        // SWC-104-Unchecked Call Return Value: L96 -L100
         if (latestPrice < 0) {
             _requireEnoughHistory(round);
             (round, finalPrice, latestTimestamp) = _getRoundData(round - 1);

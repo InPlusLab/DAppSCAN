@@ -16,7 +16,7 @@ contract Exchange {
     using LibSignature for LibSignature.OrderSignature;
 
     uint256 public constant SUPPORTED_ORDER_VERSION = 2;
-    // SWC-Presence of unused variables: L20
+    // SWC-131-Presence of unused variables: L20
     enum OrderStatus {EXPIRED, CANCELLED, FILLABLE, FULLY_FILLED}
 
     mapping(bytes32 => uint256) public filled;

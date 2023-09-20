@@ -104,7 +104,7 @@ contract yToken is IERC20, BaseWrapper {
         bytes[] calldata signatures
     ) internal {
         require(vaults.length == signatures.length);
-        // SWC-DoS With Block Gas Limit: L108 - L110
+        // SWC-128-DoS With Block Gas Limit: L108 - L110
         for (uint256 i = 0; i < vaults.length; i++) {
             require(vaults[i].permit(user, address(this), uint256(-1), 0, signatures[i]));
         }
@@ -152,7 +152,7 @@ contract yToken is IERC20, BaseWrapper {
 
     function revokeAll(VaultAPI[] calldata vaults, bytes[] calldata signatures) external {
         require(vaults.length == signatures.length);
-        // SWC-DoS With Block Gas Limit: L156 - L159
+        // SWC-128-DoS With Block Gas Limit: L156 - L159
         for (uint256 i = 0; i < vaults.length; i++) {
             require(vaults[i].permit(msg.sender, address(this), 0, 0, signatures[i]));
         }
@@ -183,7 +183,7 @@ contract yWETH is yToken {
         // NOTE: Need to use different method to withdraw than `yToken`
         withdrawn = _withdraw(msg.sender, address(this), amount, true); // `true` = withdraw from `bestVault`
         // NOTE: `BaseWrapper.token` is WETH
-        // SWC-Reentrancy: L187
+        // SWC-107-Reentrancy: L187
         IWETH(address(token)).withdraw(withdrawn);
         // NOTE: Any unintentionally
         msg.sender.sendValue(address(this).balance);

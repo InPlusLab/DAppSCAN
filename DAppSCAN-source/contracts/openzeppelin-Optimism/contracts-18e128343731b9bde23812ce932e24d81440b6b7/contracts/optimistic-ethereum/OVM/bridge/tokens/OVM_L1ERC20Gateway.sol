@@ -73,7 +73,7 @@ contract OVM_L1ERC20Gateway is Abs_L1TokenGateway {
         override
     {
          // Hold on to the newly deposited funds
-         //SWC-Unchecked Call Return Value: L76-L81
+         //SWC-104-Unchecked Call Return Value: L76-L81
         l1ERC20.transferFrom(
             _from,
             address(this),
@@ -96,7 +96,7 @@ contract OVM_L1ERC20Gateway is Abs_L1TokenGateway {
         override
     {
         // Transfer withdrawn funds out to withdrawer
-        //SWC-Unchecked Call Return Value: L100
+        //SWC-104-Unchecked Call Return Value: L100
         l1ERC20.transfer(_to, _amount);
     }
 }

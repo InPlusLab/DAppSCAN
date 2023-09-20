@@ -1,5 +1,5 @@
 pragma solidity ^0.4.11;
-//SWC-Uninitialized Storage Pointer:L10-360
+//SWC-109-Uninitialized Storage Pointer:L10-360
 /**
  * Originally from https://github.com/ConsenSys/MultiSigWallet
  * Modified by https://www.coinfabrik.com/

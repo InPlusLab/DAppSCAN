@@ -30,7 +30,7 @@ contract StakingRewardsFactory is Ownable {
     // rewards info by staking token
     mapping(address => uint256) public rewardTokenQuantities;
 
-    // SWC-Weak Sources of Randomness from Chain Attributes: L36
+    // SWC-120-Weak Sources of Randomness from Chain Attributes: L36
     constructor(uint256 _stakingRewardsGenesis) public Ownable() {
         require(
             _stakingRewardsGenesis >= block.timestamp,
@@ -117,7 +117,7 @@ contract StakingRewardsFactory is Ownable {
     // notify reward amount for an individual staking token.
     // this is a fallback in case the notifyRewardAmounts costs too much gas to call for all contracts
     function notifyRewardAmount(address stakingToken) public {
-        // SWC-Weak Sources of Randomness from Chain Attributes: L122
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L122
         require(
             block.timestamp >= stakingRewardsGenesis,
             "StakingRewardsFactory::notifyRewardAmount: not ready"

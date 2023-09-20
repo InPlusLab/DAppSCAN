@@ -11,7 +11,7 @@
 Alpaca Fin Corporation
 */
 
-// SWC-Outdated Compiler Version: L14
+// SWC-102-Outdated Compiler Version: L14
 pragma solidity 0.6.6;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol";

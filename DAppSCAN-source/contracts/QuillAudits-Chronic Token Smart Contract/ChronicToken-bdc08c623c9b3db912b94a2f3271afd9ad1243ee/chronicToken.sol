@@ -7,7 +7,7 @@
 */
 
 // SPDX-License-Identifier: Unlicensed
-//SWC-Outdated Compiler Version：L11
+//SWC-102-Outdated Compiler Version: L11
 pragma solidity ^0.6.12;
 
 interface IERC20 {
@@ -843,7 +843,7 @@ contract ChronicToken is Context, IERC20, Ownable {
         _isExcluded[account] = true;
         _excluded.push(account);
     }
-//SWC-DoS With Block Gas Limit：L847-858
+//SWC-128-DoS With Block Gas Limit: L847-858
     function includeInReward(address account) external onlyOwner() {
         require(_isExcluded[account], "Account is already excluded");
         for (uint256 i = 0; i < _excluded.length; i++) {
@@ -938,7 +938,7 @@ contract ChronicToken is Context, IERC20, Ownable {
         (uint256 rSupply, uint256 tSupply) = _getCurrentSupply();
         return rSupply.div(tSupply);
     }
-//SWC-DoS With Block Gas Limit：L942-952
+//SWC-128-DoS With Block Gas Limit: L942-952
     function _getCurrentSupply() private view returns(uint256, uint256) {
         uint256 rSupply = _rTotal;
         uint256 tSupply = _tTotal;      

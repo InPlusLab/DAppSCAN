@@ -3,7 +3,7 @@ pragma solidity 0.8.10;
 
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
-// SWC-Code With No Effects: L7
+// SWC-135-Code With No Effects: L7
 import '@openzeppelin/contracts/security/Pausable.sol';
 
 interface ILiquidityRestrictor {

@@ -50,7 +50,7 @@ contract ExchangeRateProvider is usingOraclize {
   // current implementation requires > 1e5 & < 2e5 callbackGasLimit
   function sendQuery(
     string _queryString,
-    // SWC-Code With No Effects: L54-55
+    // SWC-135-Code With No Effects: L54-55
     uint256 _callInterval,
     uint256 _callbackGasLimit,
     string _queryType

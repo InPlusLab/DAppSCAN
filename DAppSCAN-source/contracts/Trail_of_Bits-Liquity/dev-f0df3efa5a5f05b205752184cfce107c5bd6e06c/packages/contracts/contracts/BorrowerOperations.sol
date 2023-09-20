@@ -347,7 +347,7 @@ contract BorrowerOperations is LiquityBase, Ownable, IBorrowerOperations {
         if (_isCollIncrease) {
             _activePoolAddColl(_collChange);
         } else {
-            // SWC-Reentrancy: L351
+            // SWC-107-Reentrancy: L351
             activePool.sendETH(_borrower, _collChange);
         }
     }

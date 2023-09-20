@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-FarmHero/polygon-core-72130b46f9a0a8ce180406af5fbbf23433ec7cf3/contracts/StratX2_HERO_QuickV2.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-FarmHero/polygon-core-72130b46f9a0a8ce180406af5fbbf23433ec7cf3/contracts/StratX2_HERO_QuickV2.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "_safeSwap",
    "lineNumber": "L2623-L2643"
   }

@@ -53,7 +53,7 @@ contract PrimitiveEngine is IPrimitiveEngine {
     /// @inheritdoc IPrimitiveEngineView
     uint256 public immutable override MIN_LIQUIDITY;
     /// @inheritdoc IPrimitiveEngineView
-    // SWC-Code With No Effects: L57
+    // SWC-135-Code With No Effects: L57
     address public immutable override factory;
     /// @inheritdoc IPrimitiveEngineView
     address public immutable override risky;

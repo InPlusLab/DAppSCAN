@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-// SWC-Using old Solidity version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity ^0.8.0;
 
 import "./erc20/ERC20.sol";

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.9;
 
 import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";

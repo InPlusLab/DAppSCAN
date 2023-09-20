@@ -47,7 +47,7 @@ library ExchangeRate {
         // Fetches the latest answer from the chainlink oracle and buffer it by the apporpriate amount.
         uint256 rate = _fetchExchangeRate(er, false);
         uint128 absBalance = uint128(balance.abs());
-//SWC-Code With No Effects:L49
+//SWC-135-Code With No Effects:L49
         // We are converting to ETH here so we know that it has Common.DECIMAL precision. The calculation here is:
         // baseDecimals * rateDecimals * Common.DECIMAL /  (rateDecimals * baseDecimals)
         // er.buffer is in Common.DECIMAL precision

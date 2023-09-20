@@ -72,7 +72,7 @@ contract MixinSignatureValidator is
     ///      using the `Validator` signature type.
     /// @param validatorAddress Address of Validator contract.
     /// @param approval Approval or disapproval of  Validator contract.
-    // SWC-Transaction Order Dependence: L85
+    // SWC-114-Transaction Order Dependence: L85
     function setSignatureValidatorApproval(
         address validatorAddress,
         bool approval

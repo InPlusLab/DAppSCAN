@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-Degens/degens-contract-a777d578f9354de257a26e9cb0b3c6d92ea7f8e7/contracts/Degens.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-Degens/degens-contract-a777d578f9354de257a26e9cb0b3c6d92ea7f8e7/contracts/Degens.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L3"
   },
   {
-   "category": "SWC-Block values as a proxy for time",
+   "category": "SWC-116-Block values as a proxy for time",
    "function": "trade",
    "lineNumber": "L229"
   }

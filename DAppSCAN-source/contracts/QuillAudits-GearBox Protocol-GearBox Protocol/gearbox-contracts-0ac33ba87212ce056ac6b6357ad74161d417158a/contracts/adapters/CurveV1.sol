@@ -45,7 +45,7 @@ contract CurveV1Adapter is ICurvePool {
     /// @param j Index value of the coin to receive
     /// @param dx Amount of i being exchanged
     /// @param min_dy Minimum amount of j to receive
-    // SWC-Reentrancy: L49 - L85
+    // SWC-107-Reentrancy: L49 - L85
     function exchange(
         int128 i,
         int128 j,
@@ -93,7 +93,7 @@ contract CurveV1Adapter is ICurvePool {
         revert(Errors.NOT_IMPLEMENTED);
     }
 
-    // SWC-Code With No Effects: L97 - L103
+    // SWC-135-Code With No Effects: L97 - L103
     function get_dx_underlying(
         int128 i,
         int128 j,
@@ -110,7 +110,7 @@ contract CurveV1Adapter is ICurvePool {
         return curvePool.get_dy_underlying(i, j, dx);
     }
 
-    // SWC-Code With No Effects: L114 - L120
+    // SWC-135-Code With No Effects: L114 - L120
     function get_dx(
         int128 i,
         int128 j,

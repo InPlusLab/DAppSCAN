@@ -62,7 +62,7 @@ contract PRA {
     }
 
     //固定锁仓@line数量的代币
-    // SWC-Reentrancy: L66 - L80
+    // SWC-107-Reentrancy: L66 - L80
     function lock() external {
         address who = msg.sender;
         require(deposits[who].amount == 0, "sender already locked");

@@ -83,7 +83,7 @@ contract PositionManagerFactory is IPositionManagerFactory {
     ///@notice get all positionManager array of address
     ///@dev array need to return with a custom function to get all the array
     ///@return address[] return the array of positionManager
-    // SWC-Code With No Effects: L87-90
+    // SWC-135-Code With No Effects: L87-90
     function getAllPositionManagers() public view override returns (address[] memory) {
         return positionManagers;
     }

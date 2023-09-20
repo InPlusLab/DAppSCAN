@@ -148,7 +148,7 @@ contract DelegationService is Permissions, IHolderDelegation, IValidatorDelegati
         );
         delegationRequestManager.cancelRequest(delegationId, msg.sender);
     }
-    // SWC-Code With No Effects: L152-158
+    // SWC-135-Code With No Effects: L152-158
     function getAllDelegationRequests() external returns(uint[] memory) {
         revert("Not implemented");
     }
@@ -306,7 +306,7 @@ contract DelegationService is Permissions, IHolderDelegation, IValidatorDelegati
         address validatorAddress = validatorService.getValidator(validatorId).validatorAddress;
         skaleToken.send(address(skaleBalances), fee, abi.encode(validatorAddress));
         skaleBalances.lockBounty(validatorAddress, timeHelpers.addMonths(_launchTimestamp, 3));
-        // SWC-DoS With Block Gas Limit: L310-316
+        // SWC-128-DoS With Block Gas Limit: L310-316
         for (uint i = 0; i < shares.length; ++i) {
             skaleToken.send(address(skaleBalances), shares[i].amount, abi.encode(shares[i].holder));
 

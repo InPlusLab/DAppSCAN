@@ -383,7 +383,7 @@ contract Consideration is ConsiderationInterface, ConsiderationInternal {
      *
      * @return A boolean indicating whether the order has been fulfilled.
      */
-    //  SWC-Integer Overflow and Underflow: L387 - L399
+    //  SWC-101-Integer Overflow and Underflow: L387 - L399
     function fulfillAdvancedOrder(
         AdvancedOrder calldata advancedOrder,
         CriteriaResolver[] calldata criteriaResolvers,

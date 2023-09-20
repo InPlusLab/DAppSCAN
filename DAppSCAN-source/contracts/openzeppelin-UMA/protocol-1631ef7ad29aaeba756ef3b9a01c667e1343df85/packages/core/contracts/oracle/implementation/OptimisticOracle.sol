@@ -491,7 +491,7 @@ contract OptimisticOracle is OptimisticOracleInterface, Testable, Lockable {
      * @param ancillaryData ancillary data of the price being requested.
      * @return the State.
      */
-    // SWC-Code With No Effects: L495
+    // SWC-135-Code With No Effects: L495
     function hasPrice(
         address requester,
         bytes32 identifier,

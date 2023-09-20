@@ -4,7 +4,7 @@
 
 // SPDX-License-Identifier: none
 pragma solidity ^0.8.6; 
-//SWC-Floating Pragma：L6
+//SWC-103-Floating Pragma: L6
 contract Owned {
     
     /// Modifier for owner only function call

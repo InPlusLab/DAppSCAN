@@ -88,7 +88,7 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
    * @param amount the amount to be deposited
    * @param referralCode integrators are assigned a referral code and can potentially receive rewards.
    **/
-   // SWC-Reentrancy: L92-119
+   // SWC-107-Reentrancy: L92-119
   function deposit(
     address asset,
     uint256 amount,
@@ -576,7 +576,7 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
     vars.amountPlusPremium = amount.add(vars.premium);
 
     if (debtMode == ReserveLogic.InterestRateMode.NONE) {
-      // SWC-Unchecked Call Return Value: L579
+      // SWC-104-Unchecked Call Return Value: L579
       IERC20(asset).transferFrom(receiverAddress, vars.aTokenAddress, vars.amountPlusPremium);
 
       reserve.updateState();

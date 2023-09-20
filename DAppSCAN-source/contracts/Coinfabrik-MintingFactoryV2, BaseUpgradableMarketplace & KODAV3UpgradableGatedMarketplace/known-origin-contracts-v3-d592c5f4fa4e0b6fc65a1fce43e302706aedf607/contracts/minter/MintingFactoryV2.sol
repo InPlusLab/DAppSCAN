@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity 0.8.4;
 
 import {Context} from "@openzeppelin/contracts/utils/Context.sol";
@@ -89,7 +89,7 @@ contract MintingFactoryV2 is Context, UUPSUpgradeable {
     /// Mint & setup on primary marketplace //
     //////////////////////////////////////////
 
-// SWC-Reentrancy: L93 - L112
+// SWC-107-Reentrancy: L93 - L112
     function mintBatchEdition(
         SaleType _saleType,
         uint16 _editionSize,

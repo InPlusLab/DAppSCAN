@@ -77,7 +77,7 @@ contract Exchange is IExchange, Ownable
 	 * @param _minOutputAmount The output asset minimum amount to be received.
 	 * @return _outputAmount The output asset amount received.
 	 */
-	// SWC-Reentrancy: L80-90
+	// SWC-107-Reentrancy: L80-90
 	function convertFundsFromInput(address _from, address _to, uint256 _inputAmount, uint256 _minOutputAmount) external override returns (uint256 _outputAmount)
 	{
 		address _sender = msg.sender;

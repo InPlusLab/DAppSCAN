@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-UNILAYERX/openzeppelin-contracts-2.3.0/contracts/access/Roles.sol",
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-UNILAYERX/openzeppelin-contracts-2.3.0/contracts/access/Roles.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L2"
   }

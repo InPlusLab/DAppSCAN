@@ -156,7 +156,7 @@ contract Vesting is Ownable {
      * @dev Any outstanding tokens are returned to the system.
      * @param account the account of the user whos vesting schedule is being cancelled.
      */
-    // SWC-Transaction Order Dependence: L160
+    // SWC-114-Transaction Order Dependence: L160
     function rug(address account, uint256 scheduleId) external onlyOwner {
         Schedule storage schedule = schedules[account][scheduleId];
         require(!schedule.isFixed, "Vesting: Account is fixed");

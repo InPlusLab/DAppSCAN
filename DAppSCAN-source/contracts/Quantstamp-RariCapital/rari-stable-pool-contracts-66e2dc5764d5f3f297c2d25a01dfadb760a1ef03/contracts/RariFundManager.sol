@@ -712,7 +712,7 @@ contract RariFundManager is Ownable {
      * @param amount The amount of tokens to be withdrawn.
      * @return Boolean indicating success.
      */
-    //SWC-Reentrancy: L716-L758
+    //SWC-107-Reentrancy: L716-L758
     function _withdrawFrom(address from, string memory currencyCode, uint256 amount) internal fundEnabled cachePoolBalances returns (bool) {
         // Input validation
         address erc20Contract = _erc20Contracts[currencyCode];

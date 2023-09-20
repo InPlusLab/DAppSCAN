@@ -191,7 +191,7 @@ contract UniswapV3Pool is IUniswapV3Pool, NoDelegateCall {
 
     /// @inheritdoc IUniswapV3PoolActions
     /// @dev not locked because it initializes unlocked
-    // SWC-Transaction Order Dependence: L195 - L213
+    // SWC-114-Transaction Order Dependence: L195 - L213
     function initialize(uint160 sqrtPriceX96) external override {
         require(slot0.sqrtPriceX96 == 0, 'AI');
 
@@ -500,7 +500,7 @@ contract UniswapV3Pool is IUniswapV3Pool, NoDelegateCall {
     }
 
     /// @inheritdoc IUniswapV3PoolActions
-    // SWC-Unprotected Ether Withdrawal: L503 - L672
+    // SWC-105-Unprotected Ether Withdrawal: L503 - L672
     function swap(
         address recipient,
         bool zeroForOne,
@@ -543,7 +543,7 @@ contract UniswapV3Pool is IUniswapV3Pool, NoDelegateCall {
             });
 
         // continue swapping as long as we haven't used the entire input/output and haven't reached the price limit
-        // SWC-DoS With Block Gas Limit: L546 - L621
+        // SWC-128-DoS With Block Gas Limit: L546 - L621
         while (state.amountSpecifiedRemaining != 0 && state.sqrtPriceX96 != sqrtPriceLimitX96) {
             StepComputations memory step;
 

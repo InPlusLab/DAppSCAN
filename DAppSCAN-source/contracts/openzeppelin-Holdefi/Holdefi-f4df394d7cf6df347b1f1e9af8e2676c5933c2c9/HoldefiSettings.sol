@@ -115,7 +115,7 @@ contract HoldefiSettings is Ownable {
 	function getMarketsList() external view returns (address[] memory res){
 		res = marketsList;
 	}
-//SWC-Function Default Visibility:L120-122
+//SWC-100-Function Default Visibility:L120-122
 	// Returns true if an asset is in the market list
 	function getMarket(address market) external view returns (bool active){
 		active = marketAssets[market].isActive;

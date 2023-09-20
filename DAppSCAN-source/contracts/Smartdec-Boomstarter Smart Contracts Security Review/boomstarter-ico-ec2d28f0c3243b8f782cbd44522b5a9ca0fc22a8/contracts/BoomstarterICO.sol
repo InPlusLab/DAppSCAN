@@ -9,7 +9,7 @@ import '../minter-service/contracts/IICOInfo.sol';
 import '../minter-service/contracts/IMintableToken.sol';
 
 /// @title Boomstarter ICO contract
-// SWC-Incorrect Inheritance Order: L13
+// SWC-125-Incorrect Inheritance Order: L13
 contract BoomstarterICO is ArgumentsChecker, ReentrancyGuard, EthPriceDependentForICO, IICOInfo, IMintableToken {
 
     enum IcoState { INIT, ACTIVE, PAUSED, FAILED, SUCCEEDED }
@@ -124,7 +124,7 @@ contract BoomstarterICO is ArgumentsChecker, ReentrancyGuard, EthPriceDependentF
         require(3 == _owners.length);
 
         m_token = IBoomstarterToken(_token);
-        // SWC-Code With No Effects: L128
+        // SWC-135-Code With No Effects: L128
         m_deployer = msg.sender;
         m_ETHPriceUpdateInterval = _updateInterval;
     }

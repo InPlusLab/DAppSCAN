@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity >=0.6.11;
 
 // ============ External Imports ============

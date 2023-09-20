@@ -248,7 +248,7 @@ abstract contract ERC20MultiVotes is ERC20, Auth {
         _writeCheckpoint(delegatee, _add, amount);
     }
 
-    // SWC-Assert Violation: L252-261
+    // SWC-110-Assert Violation: L252-261
     function _undelegate(
         address delegator,
         address delegatee,

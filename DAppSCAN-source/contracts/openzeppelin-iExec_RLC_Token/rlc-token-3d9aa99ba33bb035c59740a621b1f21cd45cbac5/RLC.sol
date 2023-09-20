@@ -1,5 +1,5 @@
 pragma solidity ^0.4.8;
-//SWC-Outdated Compiler Version:L1
+//SWC-102-Outdated Compiler Version:L1
 import "./Ownable.sol";
 import "./SafeMath.sol";
 import "./ERC20.sol";
@@ -35,7 +35,7 @@ contract RLC is ERC20, SafeMath, Ownable {
     // lock the transfer function during the crowdsale
     locked = true;
     unlockBlock=  now + 45 days; // (testnet) - for mainnet put the block number
-//SWC-Block values as a proxy for time:L37,49
+//SWC-116-Block values as a proxy for time:L37,49
     initialSupply = 87000000000000000;
     totalSupply = initialSupply;
     balances[msg.sender] = initialSupply;// Give the creator all initial tokens                    
@@ -58,7 +58,7 @@ contract RLC is ERC20, SafeMath, Ownable {
     Transfer(msg.sender, burnAddress, _value);
     return true;
   }
-//SWC-Code With No Effects:L62-67,69-76, 79-81, 83-87, 97-99
+//SWC-135-Code With No Effects:L62-67,69-76, 79-81, 83-87, 97-99
   function transfer(address _to, uint _value) onlyUnlocked returns (bool success) {
     balances[msg.sender] = safeSub(balances[msg.sender], _value);
     balances[_to] = safeAdd(balances[_to], _value);

@@ -212,13 +212,13 @@ contract SherX is ISherX {
 
       weightAdd = weightAdd.add(_weights[i]);
       weightSub = weightSub.add(ps.sherXWeight);
-      //SWC-Integer Overflow and Underflow: L216
+      //SWC-101-Integer Overflow and Underflow: L216
       ps.sherXWeight = uint16(_weights[i]);
     }
     if (_watsons != uint256(-1)) {
       weightAdd = weightAdd.add(_watsons);
       weightSub = weightSub.add(gs.watsonsSherxWeight);
-      //SWC-Integer Overflow and Underflow: L222
+      //SWC-101-Integer Overflow and Underflow: L222
       gs.watsonsSherxWeight = uint16(_watsons);
     }
 

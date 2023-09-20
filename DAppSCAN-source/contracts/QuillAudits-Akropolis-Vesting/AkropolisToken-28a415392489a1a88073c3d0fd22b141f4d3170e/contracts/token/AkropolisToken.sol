@@ -36,7 +36,7 @@ contract AkropolisToken is AkropolisBaseToken, Pausable, Lockable, Whitelist {
     * double spend attacks. To modify allowances, clients should call safer increase/decreaseApproval methods.
     * Upon construction, all calls to approve() will revert unless this contract owner explicitly unlocks approve()
     */
-    // SWC-DoS with Failed Call: L42
+    // SWC-113-DoS with Failed Call: L42
     function approve(address _spender, uint256 _value) 
     public whenNotPaused  whenUnlocked returns (bool) {
         return super.approve(_spender, _value);
@@ -72,7 +72,7 @@ contract AkropolisToken is AkropolisBaseToken, Pausable, Lockable, Whitelist {
         return true;
     }
 
-    // SWC-DoS with Failed Call: L77
+    // SWC-113-DoS with Failed Call: L77
     function transfer(address _to, uint256 _amount) public whenNotPaused onlyWhitelist checkPermBalanceForWhitelist(_amount) returns (bool) {
         return super.transfer(_to, _amount);
     }
@@ -89,7 +89,7 @@ contract AkropolisToken is AkropolisBaseToken, Pausable, Lockable, Whitelist {
     * @param _amount The number of tokens to transfer
     * @return `true` if successful 
     */
-    // SWC-DoS with Failed Call: L95
+    // SWC-113-DoS with Failed Call: L95
     function transferFrom(address _from, address _to, uint256 _amount) 
     public whenNotPaused onlyWhitelist checkPermBalanceForWhitelist(_amount) returns (bool) {
         return super.transferFrom(_from, _to, _amount);

@@ -17,7 +17,7 @@ import "zeppelin-solidity/contracts/math/SafeMath.sol";
  * @title BondingManager
  * @dev Manages bonding, transcoder and rewards/fee accounting related operations of the Livepeer protocol
  */
-//  SWC-Weak Sources of Randomness from Chain Attributes: L21 - L955
+//  SWC-120-Weak Sources of Randomness from Chain Attributes: L21 - L955
 contract BondingManager is ManagerProxyTarget, IBondingManager {
     using SafeMath for uint256;
     using SortedDoublyLL for SortedDoublyLL.Data;

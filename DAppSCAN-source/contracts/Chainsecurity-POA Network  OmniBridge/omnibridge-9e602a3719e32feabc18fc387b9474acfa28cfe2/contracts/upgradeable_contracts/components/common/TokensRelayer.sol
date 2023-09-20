@@ -95,7 +95,7 @@ abstract contract TokensRelayer is BasicAMBMediator, ReentrancyGuard {
      * @param _value amount of tokens to be transferred to the other network.
      * @param _data additional transfer data to be used on the other side.
      */
-    // SWC-Reentrancy: L99-117
+    // SWC-107-Reentrancy: L99-117
     function _relayTokens(
         IERC677 token,
         address _receiver,

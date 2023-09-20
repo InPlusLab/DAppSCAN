@@ -191,7 +191,7 @@ contract Voting is IForwarder, AragonApp {
     function isForwarder() external pure returns (bool) {
         return true;
     }
-//SWC-Code With No Effects:L191-193
+//SWC-135-Code With No Effects:L191-193
     /**
     * @notice Creates a vote to execute the desired action, and casts a support vote if possible
     * @dev IForwarder interface conformance

@@ -20,7 +20,7 @@ import "./interfaces/IProvider.sol";
 import "./libraries/Errors.sol";
 import "./libraries/LibUniversalERC20Upgradeable.sol";
 
-// SWC-Unprotected SELFDESTRUCT Instruction: L23 - L673
+// SWC-106-Unprotected SELFDESTRUCT Instruction: L23 - L673
 contract FujiVault is VaultBaseUpgradeable, ReentrancyGuardUpgradeable, IVault {
   using SafeERC20Upgradeable for IERC20Upgradeable;
   using LibUniversalERC20Upgradeable for IERC20Upgradeable;
@@ -175,7 +175,7 @@ contract FujiVault is VaultBaseUpgradeable, ReentrancyGuardUpgradeable, IVault {
     }
 
     // Delegate Call Deposit to current provider
-    // SWC-Delegatecall to Untrusted Callee: L177 - L178
+    // SWC-112-Delegatecall to Untrusted Callee: L177 - L178
     _deposit(_collateralAmount, address(activeProvider));
 
     // Collateral Management
@@ -224,7 +224,7 @@ contract FujiVault is VaultBaseUpgradeable, ReentrancyGuardUpgradeable, IVault {
     IFujiERC1155(fujiERC1155).burn(msg.sender, vAssets.collateralID, amountToWithdraw);
 
     // Delegate Call Withdraw to current provider
-    // SWC-Delegatecall to Untrusted Callee: L227
+    // SWC-112-Delegatecall to Untrusted Callee: L227
     _withdraw(amountToWithdraw, address(activeProvider));
 
     // Transer Assets to User
@@ -288,7 +288,7 @@ contract FujiVault is VaultBaseUpgradeable, ReentrancyGuardUpgradeable, IVault {
       totalBorrow;
 
     // Debt Management
-    // SWC-Delegatecall to Untrusted Callee: L291
+    // SWC-112-Delegatecall to Untrusted Callee: L291
     IFujiERC1155(fujiERC1155).mint(msg.sender, vAssets.borrowID, _borrowAmount, "");
 
     // Delegate Call Borrow to current provider
@@ -337,7 +337,7 @@ contract FujiVault is VaultBaseUpgradeable, ReentrancyGuardUpgradeable, IVault {
       );
 
       // Transfer Asset from User to Vault
-      // SWC-Delegatecall to Untrusted Callee: L340
+      // SWC-112-Delegatecall to Untrusted Callee: L340
       IERC20Upgradeable(vAssets.borrowAsset).safeTransferFrom(
         msg.sender,
         address(this),

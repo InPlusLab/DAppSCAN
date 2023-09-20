@@ -3,7 +3,7 @@ import "./SafeMath.sol";
 import "./RLC.sol";
 import "./PullPayment.sol";
 import "./Pausable.sol";
-//SWC-Outdated Compiler Version:L1
+//SWC-102-Outdated Compiler Version:L1
 /*
   Crowdsale Smart Contract for the iEx.ec project
 
@@ -12,7 +12,7 @@ import "./Pausable.sol";
   Thanks to BeyondTheVoid and TokenMarket who helped us shaping this code.
 
  */
-//SWC-Integer Overflow and Underflow:L1-305
+//SWC-101-Integer Overflow and Underflow:L1-305
 // To do : create a generic test with parameter to run abitrary simulation
 // To test: RLC allowance when reach Maxcap, Unlock transfer, pausable
 
@@ -64,7 +64,7 @@ contract Crowdsale is SafeMath, PullPayment, Pausable {
 	    if (msg.sender != a) throw;  
 	    _;
 	}
-//SWC-Block values as a proxy for time:L69
+//SWC-116-Block values as a proxy for time:L69
 	modifier minCapNotReached() {
 		if ((now<endBlock) || isMinCapReached() || (now > endBlock + 15 days)) throw;
 		_;
@@ -125,7 +125,7 @@ contract Crowdsale is SafeMath, PullPayment, Pausable {
 	  rlc_team=12000000000000000;
 	  RLCEmitted = rlc_bounty + rlc_reserve + rlc_team;
 	}
-//SWC-Block values as a proxy for time:L116、145、295
+//SWC-116-Block values as a proxy for time:L116、145、295
 	/* 
 	* The fallback function corresponds to a donation in ETH
 	*/
@@ -205,7 +205,7 @@ contract Crowdsale is SafeMath, PullPayment, Pausable {
 	function isMinCapReached() internal returns (bool) {
 		return (RLCSentToETH + RLCSentToBTC ) > minCap;
 	}
-//SWC-Code With No Effects:L209-211
+//SWC-135-Code With No Effects:L209-211
 	function isMaxCapReached() internal returns (bool) { 
 		return (RLCSentToETH + RLCSentToBTC ) == maxCap;
 	}

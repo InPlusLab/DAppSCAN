@@ -18,7 +18,7 @@ contract OLETokenLock {
         uint128 startTime;
         uint128 endTime;
     }
-    //SWC-Code With No Effects: L22-L31
+    //SWC-135-Code With No Effects: L22-L31
     constructor(IOLEToken token_, address[] memory beneficiaries, uint256[] memory amounts, uint128[] memory startTimes, uint128[] memory endTimes, address delegateTo) {
         require(beneficiaries.length == amounts.length
         && beneficiaries.length == startTimes.length

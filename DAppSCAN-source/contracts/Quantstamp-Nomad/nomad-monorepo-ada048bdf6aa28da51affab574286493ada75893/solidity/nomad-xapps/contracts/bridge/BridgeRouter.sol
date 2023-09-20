@@ -208,7 +208,7 @@ contract BridgeRouter is Version0, Router {
      * @param _nonce The unique identifier for the message from origin to destination
      * @param _message The incoming transfer message to pre-fill
      */
-    //  SWC-Transaction Order Dependence: L212 - L254
+    //  SWC-114-Transaction Order Dependence: L212 - L254
     function preFill(
         uint32 _origin,
         uint32 _nonce,

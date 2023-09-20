@@ -5,7 +5,7 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721PausableUpgradeable.sol";
 import "./interfaces/IRegistrar.sol";
 
-// SWC-Code With No Effects: L8-11
+// SWC-135-Code With No Effects: L8-11
 contract Registrar is
   IRegistrar,
   OwnableUpgradeable,
@@ -48,7 +48,7 @@ contract Registrar is
   /*
     External Methods
   */
-  // SWC-Code With No Effects: L51-67
+  // SWC-135-Code With No Effects: L51-67
   /**
     @notice Authorizes a controller to control the registrar
     @param controller The address of the controller

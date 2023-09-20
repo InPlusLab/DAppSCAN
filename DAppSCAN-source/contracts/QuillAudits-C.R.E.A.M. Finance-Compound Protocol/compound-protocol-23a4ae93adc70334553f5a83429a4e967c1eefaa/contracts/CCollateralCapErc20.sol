@@ -405,7 +405,7 @@ contract CCollateralCapErc20 is CToken, CCollateralCapErc20Interface {
      * @notice Get the account's cToken balances
      * @param account The address of the account
      */
-    //  SWC-Code With No Effects: L410
+    //  SWC-135-Code With No Effects: L410
     function getCTokenBalanceInternal(address account) internal view returns (uint) {
         if (isCollateralTokenInit[account]) {
             return accountCollateralTokens[account];

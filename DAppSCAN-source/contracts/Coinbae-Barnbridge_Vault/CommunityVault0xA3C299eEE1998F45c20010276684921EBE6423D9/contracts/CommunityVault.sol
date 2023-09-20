@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -15,7 +15,7 @@ contract CommunityVault is Ownable {
     event SetAllowance(address indexed caller, address indexed spender, uint256 amount);
 
     function setAllowance(address spender, uint amount) public onlyOwner {
-        // SWC-Reentrancy: L18
+        // SWC-107-Reentrancy: L18
         _bond.approve(spender, amount);
 
         emit SetAllowance(msg.sender, spender, amount);

@@ -27,7 +27,7 @@ contract RariFundPriceConsumer is Initializable, Ownable {
     /**
      * @dev Chainlink price feed for ETH/USD.
      */
-    //  SWC-Uninitialized Storage Pointer: L31
+    //  SWC-109-Uninitialized Storage Pointer: L31
     AggregatorV3Interface private _ethUsdPriceFeed;
 
     /**

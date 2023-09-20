@@ -155,7 +155,7 @@ contract HomeBridgeErcToErc is ERC677Receiver, EternalStorage, BasicBridge, Basi
     function getBridgeMode() public pure returns(bytes4 _data) {
         return bytes4(keccak256(abi.encodePacked("erc-to-erc-core")));
     }
-    // SWC-Code With No Effects: L159-L161   
+    // SWC-135-Code With No Effects: L159-L161   
     function () payable public {
         revert();
     }

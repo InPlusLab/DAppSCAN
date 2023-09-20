@@ -4,7 +4,7 @@
  * Licensed under the Apache License, version 2.0: https://github.com/TokenMarketNet/ico/blob/master/LICENSE.txt
  */
 
-// SWC-Code With No Effects: L8 - L40
+// SWC-135-Code With No Effects: L8 - L40
 pragma solidity ^0.4.6;
 
 /**

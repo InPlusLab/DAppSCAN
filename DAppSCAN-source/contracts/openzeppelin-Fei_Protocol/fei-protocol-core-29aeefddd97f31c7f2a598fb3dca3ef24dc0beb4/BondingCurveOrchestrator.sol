@@ -5,7 +5,7 @@ import "../oracle/BondingCurveOracle.sol";
 import "../bondingcurve/EthBondingCurve.sol";
 
 contract BondingCurveOrchestrator is Ownable {
-//SWC-State Variable Default Visibility:L22
+//SWC-108-State Variable Default Visibility:L22
 	function init(
 		address core, 
 		address uniswapOracle, 

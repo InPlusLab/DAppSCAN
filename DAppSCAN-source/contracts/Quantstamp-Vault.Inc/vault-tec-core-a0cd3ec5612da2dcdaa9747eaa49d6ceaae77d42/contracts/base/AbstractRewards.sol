@@ -103,7 +103,7 @@ abstract contract AbstractRewards is IAbstractRewards {
     require(_from != address(0), "AbstractRewards._correctPointsForTransfer: address cannot be zero address");
     require(_to != address(0), "AbstractRewards._correctPointsForTransfer: address cannot be zero address");
     require(_shares != 0, "AbstractRewards._correctPointsForTransfer: shares cannot be zero");
-    //SWC-Integer Overflow and Underflow: L107
+    //SWC-101-Integer Overflow and Underflow: L107
     int256 _magCorrection = (pointsPerShare * _shares).toInt256();
     pointsCorrection[_from] = pointsCorrection[_from] + _magCorrection;
     pointsCorrection[_to] = pointsCorrection[_to] - _magCorrection;

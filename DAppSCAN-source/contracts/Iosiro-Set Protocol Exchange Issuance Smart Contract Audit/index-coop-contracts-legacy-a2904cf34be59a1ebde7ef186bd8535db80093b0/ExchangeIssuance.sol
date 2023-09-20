@@ -246,7 +246,7 @@ contract ExchangeIssuance is ReentrancyGuard {
             IWETH(WETH).withdraw(amountEthReturn);
             msg.sender.transfer(amountEthReturn);
         }
-//        SWC-Message call with hardcoded gas amount：L247，279，349
+//        SWC-134-Message call with hardcoded gas amount: L247, L279, L349
         emit ExchangeIssue(msg.sender, _setToken, _inputToken, _maxAmountInputToken, _amountSetToken);
     }
     

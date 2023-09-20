@@ -49,7 +49,7 @@ contract ZapIn is IZapIn {
         (, int24 tickPool, , , , , ) = IUniswapV3Pool(
             UniswapNFTHelper._getPool(Storage.uniswapAddressHolder.uniswapV3FactoryAddress(), token0, token1, fee)
         ).slot0();
-        // SWC-Integer Overflow and Underflow: L53-54
+        // SWC-101-Integer Overflow and Underflow: L53-54
         uint256 amountInTo0 = (amountIn * 1e18) / (SwapHelper.getRatioFromRange(tickPool, tickLower, tickUpper) + 1e18);
         uint256 amountInTo1 = amountIn - amountInTo0;
 

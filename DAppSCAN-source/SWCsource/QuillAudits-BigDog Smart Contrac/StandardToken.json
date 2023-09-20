@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-BigDog Smart Contract/StandardToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "transfer",
+   "lineNumber": "L121"
+  }
+ ]
+}

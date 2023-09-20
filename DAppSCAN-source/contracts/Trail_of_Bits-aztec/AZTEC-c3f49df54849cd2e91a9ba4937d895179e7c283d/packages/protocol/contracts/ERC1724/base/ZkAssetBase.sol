@@ -104,7 +104,7 @@ contract ZkAssetBase is IZkAsset, IAZTEC, LibEIP712 {
     * @param _signature - ECDSA signature from the note owner that validates the
     * confidentialApprove() instruction
     */
-    // SWC-Missing Protection against Signature Replay Attacks: L108-L125
+    // SWC-121-Missing Protection against Signature Replay Attacks: L108-L125
     function confidentialApprove(
         bytes32 _noteHash,
         address _spender,

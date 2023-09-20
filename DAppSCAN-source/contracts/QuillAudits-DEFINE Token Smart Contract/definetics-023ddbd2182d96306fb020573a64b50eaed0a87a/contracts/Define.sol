@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
@@ -471,7 +471,7 @@ contract Define is ERC20, Ownable {
 
     }
 
-    // SWC-Code With No Effects: L474 - L489
+    // SWC-135-Code With No Effects: L474 - L489
     function addLiquidity(uint256 tokenAmount, uint256 ethAmount) private {
 
         // approve token transfer to cover all possible scenarios

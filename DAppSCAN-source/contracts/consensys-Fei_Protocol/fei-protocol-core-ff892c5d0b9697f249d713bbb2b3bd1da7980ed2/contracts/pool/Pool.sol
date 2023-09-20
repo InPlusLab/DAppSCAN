@@ -117,7 +117,7 @@ abstract contract Pool is IPool, ERC20, ERC20Burnable, Timed {
 	function _deposit(address from, address to, uint amount) internal {
 		require(initialized, "Pool: Uninitialized");
 		require(amount <= stakedToken.balanceOf(from), "Pool: Balance too low to stake");
-		// SWC-Unchecked Call Return Value: L121
+		// SWC-104-Unchecked Call Return Value: L121
 		stakedToken.transferFrom(from, address(this), amount);
 
 		stakedBalance[to] += amount;

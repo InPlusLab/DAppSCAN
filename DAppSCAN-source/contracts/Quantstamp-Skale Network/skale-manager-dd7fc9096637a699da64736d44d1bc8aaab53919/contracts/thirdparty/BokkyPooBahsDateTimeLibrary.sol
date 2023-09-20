@@ -216,7 +216,7 @@ library BokkyPooBahsDateTimeLibrary {
             day = daysInMonth;
         }
         newTimestamp = _daysFromDate(year, month, day) * SECONDS_PER_DAY + timestamp % SECONDS_PER_DAY;
-        // SWC-Requirement Violation: L220
+        // SWC-123-Requirement Violation: L220
         require(newTimestamp >= timestamp);
     }
     function addMonths(uint timestamp, uint _months) internal pure returns (uint newTimestamp) {

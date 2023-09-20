@@ -224,7 +224,7 @@ contract Hypervisor is IUniswapV3MintCallback, ERC20Permit, ReentrancyGuard {
     /// @param from Address from which liquidity tokens are sent
     /// @return amount0 Amount of token0 redeemed by the submitted liquidity tokens
     /// @return amount1 Amount of token1 redeemed by the submitted liquidity tokens
-    // SWC-Reentrancy: L228-273
+    // SWC-107-Reentrancy: L228-273
     function withdraw(
         uint256 shares,
         address to,

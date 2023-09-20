@@ -1,5 +1,5 @@
 pragma solidity ^0.5.16;
-//SWC-Code With No Effects:L1-159
+//SWC-135-Code With No Effects:L1-159
 // Inheritance
 import "./Owned.sol";
 import "./LimitedSetup.sol";

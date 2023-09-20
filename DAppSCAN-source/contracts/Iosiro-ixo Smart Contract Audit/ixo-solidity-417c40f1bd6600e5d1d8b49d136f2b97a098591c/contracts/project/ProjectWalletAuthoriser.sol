@@ -34,7 +34,7 @@ contract ProjectWalletAuthoriser is Ownable {
     public onlyAuthoriser
     returns (bool)
     {
-        // SWC-Unchecked Call Return Value: L38
+        // SWC-104-Unchecked Call Return Value: L38
         ProjectWallet(_sender).transfer(_receiver, _amt);
     }
 

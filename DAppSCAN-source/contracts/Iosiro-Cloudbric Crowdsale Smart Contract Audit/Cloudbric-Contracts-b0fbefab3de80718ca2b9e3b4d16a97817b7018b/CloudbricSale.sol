@@ -6,7 +6,7 @@ import "zeppelin-solidity/contracts/lifecycle/Pausable.sol";
 
 contract CloudbricSale is Pausable {
     using SafeMath for uint256;
-//SWC-State Variable Default Visibility:L15、71
+//SWC-108-State Variable Default Visibility:L15、71
     // Start time of sale
     uint256 public startTime;
     // End time of sale

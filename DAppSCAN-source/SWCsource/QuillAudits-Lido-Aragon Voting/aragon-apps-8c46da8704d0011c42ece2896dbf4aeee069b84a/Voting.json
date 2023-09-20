@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Lido-Aragon Voting/aragon-apps-8c46da8704d0011c42ece2896dbf4aeee069b84a/Voting.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Lido-Aragon Voting/aragon-apps-8c46da8704d0011c42ece2896dbf4aeee069b84a/Voting.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "forward",
    "lineNumber": "L191-193"
   }

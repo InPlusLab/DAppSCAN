@@ -6,7 +6,7 @@ import "./modules/kap20/interfaces/IKAP20.sol";
 import "./interfaces/IMarketImpl.sol";
 
 contract MarketImpl is IMarketImpl {
-//    SWC-Transaction Order Dependence:L32-34、37、45-47
+//    SWC-114-Transaction Order Dependence:L32-34、37、45-47
     function merketSell(
         address market,
         address srcToken,
@@ -56,7 +56,7 @@ contract MarketImpl is IMarketImpl {
 
         return amounts[amounts.length - 1];
     }
-//    SWC-Transaction Order Dependence:L82、84、94、97
+//    SWC-114-Transaction Order Dependence:L82、84、94、97
     function marketBuy(
         address market,
         address srcToken,

@@ -96,7 +96,7 @@ contract MetaTransactionsFeature is
     );
 
     /// @dev Refunds up to `msg.value` leftover ETH at the end of the call.
-    // SWC-Reentrancy: L100-107
+    // SWC-107-Reentrancy: L100-107
     modifier refundsAttachedEth() {
         _;
         uint256 remainingBalance =

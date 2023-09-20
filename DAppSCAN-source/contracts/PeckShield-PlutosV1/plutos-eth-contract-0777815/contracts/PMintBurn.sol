@@ -44,7 +44,7 @@ contract PMintBurn is Ownable{
   }
 
   event PDeposit(address addr, bytes32 hash, uint256 amount, uint256 total);
-  //SWC-Reentrancy: L48-L63
+  //SWC-107-Reentrancy: L48-L63
   function deposit(uint256 _amount) public returns(bytes32){
     bytes32 hash = hash_from_address(msg.sender);
     IPMBParams param = IPMBParams(dispatcher.getTarget(param_key));

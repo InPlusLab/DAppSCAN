@@ -95,7 +95,7 @@ contract CENNZnetBridge is Ownable {
     // v,r,s are sparse arrays expected to align w addresses / public key in 'validators'
     // i.e. v[i], r[i], s[i] matches the i-th validator[i]
     // ~6,737,588 gas
-//    SWC-Unprotected Ether Withdrawal：L99-120
+//  SWC-105-Unprotected Ether Withdrawal: L99-120
     function setValidators(
         address[] memory newValidators,
         uint32 newValidatorSetId,

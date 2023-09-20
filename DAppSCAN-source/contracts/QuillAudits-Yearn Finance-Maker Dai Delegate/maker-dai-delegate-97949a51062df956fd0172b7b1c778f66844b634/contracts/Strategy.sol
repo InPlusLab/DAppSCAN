@@ -853,7 +853,7 @@ contract Strategy is BaseStrategy {
 
 
     function _buyInvestmentTokenWithWant(uint256 _amount) internal {
-        // SWC-Code With No Effects: L857
+        // SWC-135-Code With No Effects: L857
         if (_amount == 0 || address(investmentToken) == address(want)) {
             return;
         }

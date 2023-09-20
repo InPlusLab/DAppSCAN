@@ -25,7 +25,7 @@ contract LockedStakingRewards is Ownable {
 
     mapping(address => mapping(uint256 => uint256)) private _shares;
 
-    // SWC-DoS With Block Gas Limit: L30 - L32
+    // SWC-128-DoS With Block Gas Limit: L30 - L32
     constructor(Pool[] memory _initialPools) {
         for (uint256 i = 0; i < _initialPools.length; i++) {
             createPool(i, _initialPools[i]);

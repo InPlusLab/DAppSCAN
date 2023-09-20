@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/HAECHI_AUDIT-Eco_Defi/ECOPToken/ECOPToken.sol",
+ "filePath": "DAppSCAN-source/contracts/HAECHI_AUDIT-Eco_Defi/ECOPToken/ECOPToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "pwr",
    "lineNumber": "L196"
   }

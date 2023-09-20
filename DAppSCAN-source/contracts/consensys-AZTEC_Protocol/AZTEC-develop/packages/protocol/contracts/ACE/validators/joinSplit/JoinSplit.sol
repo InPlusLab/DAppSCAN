@@ -71,7 +71,7 @@ contract JoinSplit {
              * 0x1c4:0x1e4    = offset in byte array to outputOwners
              * 0x1e4:0x204    = offset in byte array to metadata
              */
-            // SWC-Integer Overflow and Underflow: L75-L78
+            // SWC-101-Integer Overflow and Underflow: L75-L78
             function validateJoinSplit() {
                 mstore(0x80, calldataload(0x44))
                 mstore(0xa0, calldataload(0x64))

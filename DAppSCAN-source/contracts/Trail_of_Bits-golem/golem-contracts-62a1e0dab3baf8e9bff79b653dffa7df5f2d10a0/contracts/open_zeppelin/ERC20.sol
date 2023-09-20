@@ -10,7 +10,7 @@ import "./ERC20Basic.sol";
 contract ERC20 is ERC20Basic {
   function allowance(address owner, address spender) public view returns (uint256);
   function transferFrom(address from, address to, uint256 value) public returns (bool);
-  // SWC-Transaction Order Dependence: L14
+  // SWC-114-Transaction Order Dependence: L14
   function approve(address spender, uint256 value) public returns (bool);
   event Approval(address indexed owner, address indexed spender, uint256 value);
 }

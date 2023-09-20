@@ -486,7 +486,7 @@ contract LendingPoolCollateralManager is VersionedInitializable, LendingPoolStor
     }
 
     fromReserve.updateInterestRates(fromAsset, address(vars.fromReserveAToken), 0, amountToSwap);
-    // SWC-Unprotected Ether Withdrawal: L490-517
+    // SWC-105-Unprotected Ether Withdrawal: L490-517
     vars.fromReserveAToken.burn(
       msg.sender,
       receiverAddress,

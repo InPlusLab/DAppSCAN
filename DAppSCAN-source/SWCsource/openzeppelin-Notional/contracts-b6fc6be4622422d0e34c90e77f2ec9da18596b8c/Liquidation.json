@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/Liquidation.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/Liquidation.sol",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lineNumber": "L33"
   }

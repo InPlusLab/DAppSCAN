@@ -2,7 +2,7 @@
 // File: @openzeppelin/contracts/utils/Context.sol
 
 
-//SWC-Floating Pragma: L6
+//SWC-103-Floating Pragma: L6
 pragma solidity ^0.8.0;
 
 /**
@@ -252,7 +252,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * - `recipient` cannot be the zero address.
      * - the caller must have a balance of at least `amount`.
      */
-    //SWC-Transaction Order Dependence: L256-L259
+    //SWC-114-Transaction Order Dependence: L256-L259
     function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
         _transfer(_msgSender(), recipient, amount);
         return true;
@@ -272,7 +272,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      *
      * - `spender` cannot be the zero address.
      */
-    //SWC-Transaction Order Dependence: L276-L279
+    //SWC-114-Transaction Order Dependence: L276-L279
     function approve(address spender, uint256 amount) public virtual override returns (bool) {
         _approve(_msgSender(), spender, amount);
         return true;

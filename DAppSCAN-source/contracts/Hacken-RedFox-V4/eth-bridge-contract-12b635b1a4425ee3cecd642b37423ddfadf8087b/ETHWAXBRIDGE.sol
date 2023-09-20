@@ -6,7 +6,7 @@ pragma experimental ABIEncoderV2;
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 
 import "./libraries/Endian.sol";
-//SWC-Code With No Effects:L10
+//SWC-135-Code With No Effects:L10
 import "./interfaces/ERC20Interface.sol";
 
 import "./Verify.sol";

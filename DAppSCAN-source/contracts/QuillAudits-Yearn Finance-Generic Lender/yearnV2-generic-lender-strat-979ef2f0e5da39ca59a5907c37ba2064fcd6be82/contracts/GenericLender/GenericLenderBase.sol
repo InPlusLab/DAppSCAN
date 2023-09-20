@@ -52,7 +52,7 @@ abstract contract GenericLenderBase is IGenericLender {
     function sweep(address _token) external virtual override management {
         address[] memory _protectedTokens = protectedTokens();
         for (uint256 i; i < _protectedTokens.length; i++) require(_token != _protectedTokens[i], "!protected");
-        // SWC-Unchecked Call Return Value: L56
+        // SWC-104-Unchecked Call Return Value: L56
         IERC20(_token).transfer(vault.governance(), IERC20(_token).balanceOf(address(this)));
     }
 

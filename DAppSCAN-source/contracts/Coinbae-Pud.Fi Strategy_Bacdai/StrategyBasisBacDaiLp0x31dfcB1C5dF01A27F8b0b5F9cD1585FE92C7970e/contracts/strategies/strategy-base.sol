@@ -233,7 +233,7 @@ abstract contract StrategyBase {
     }
 
     // **** Internal functions ****
-    // SWC-Unchecked Call Return Value: L237 - L268
+    // SWC-104-Unchecked Call Return Value: L237 - L268
     function _swapUniswap(
         address _from,
         address _to,
@@ -267,7 +267,7 @@ abstract contract StrategyBase {
         );
     }
 
-// SWC-Unchecked Call Return Value: L271 - L288
+// SWC-104-Unchecked Call Return Value: L271 - L288
     function _swapUniswapWithPath(
         address[] memory path,
         uint256 _amount
@@ -287,7 +287,7 @@ abstract contract StrategyBase {
         );
     }
 
-// SWC-Unchecked Call Return Value: L291 - L322
+// SWC-104-Unchecked Call Return Value: L291 - L322
     function _swapSushiswap(
         address _from,
         address _to,
@@ -321,7 +321,7 @@ abstract contract StrategyBase {
         );
     }
 
-    // SWC-Unchecked Call Return Value: L325 - L342
+    // SWC-104-Unchecked Call Return Value: L325 - L342
     function _swapSushiswapWithPath(
         address[] memory path,
         uint256 _amount

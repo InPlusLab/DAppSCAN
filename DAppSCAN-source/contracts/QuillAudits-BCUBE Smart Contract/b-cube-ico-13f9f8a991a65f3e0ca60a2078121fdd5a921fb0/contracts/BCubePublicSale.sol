@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2
+// SWC-102-Outdated Compiler Version: L2
 pragma solidity 0.5.17;
 
 import "@openzeppelin/contracts/math/SafeMath.sol";
@@ -157,7 +157,7 @@ contract BCubePublicSale is WhitelistedRole, ReentrancyGuard {
   }
 
   /// @dev public sale is open if current date is between openingTime and closingTime
-  // SWC-Weak Sources of Randomness from Chain Attributes: L162
+  // SWC-120-Weak Sources of Randomness from Chain Attributes: L162
   function isOpen() public view returns (bool) {
       // solhint-disable-next-line not-rely-on-time
       return block.timestamp >= openingTime && block.timestamp <= closingTime;
@@ -167,7 +167,7 @@ contract BCubePublicSale is WhitelistedRole, ReentrancyGuard {
     return HARD_CAP.sub(PRIVATE_ALLOCATION_CAP).sub(launchpadReservedBcube);
   }
 
-  // SWC-Weak Sources of Randomness from Chain Attributes: L173
+  // SWC-120-Weak Sources of Randomness from Chain Attributes: L173
   function setPrivateAllocation(address _wallet, uint256 _allocation)
     external
     onlyWhitelistAdmin {
@@ -264,7 +264,7 @@ contract BCubePublicSale is WhitelistedRole, ReentrancyGuard {
 
   /// @dev allowing users to allocate BCUBEs for themselves using USDT
   /// does all things similar to the above function, but for USDT
-  // SWC-Reentrancy: L264 - L278
+  // SWC-107-Reentrancy: L264 - L278
   function buyBcubeUsingUSDT(uint256 incomingUsdt)
     external
     onlyWhitelisted

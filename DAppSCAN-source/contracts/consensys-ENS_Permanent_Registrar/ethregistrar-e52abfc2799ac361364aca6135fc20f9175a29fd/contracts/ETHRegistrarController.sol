@@ -42,7 +42,7 @@ contract ETHRegistrarController is Ownable {
         bytes32 label = keccak256(bytes(name));
         return valid(name) && base.available(uint256(label));
     }
-    // SWC-Transaction Order Dependence: L46-L49
+    // SWC-114-Transaction Order Dependence: L46-L49
     function makeCommitment(string memory name, bytes32 secret) pure public returns(bytes32) {
         bytes32 label = keccak256(bytes(name));
         return keccak256(abi.encodePacked(label, secret));
@@ -52,7 +52,7 @@ contract ETHRegistrarController is Ownable {
         require(commitments[commitment] + MAX_COMMITMENT_AGE < now);
         commitments[commitment] = now;
     }
-    // SWC-Unchecked Call Return Value: L56-L65
+    // SWC-104-Unchecked Call Return Value: L56-L65
     function register(string calldata name, address owner, uint duration, bytes32 secret) external payable {
         // Require a valid commitment
         bytes32 commitment = makeCommitment(name, secret);

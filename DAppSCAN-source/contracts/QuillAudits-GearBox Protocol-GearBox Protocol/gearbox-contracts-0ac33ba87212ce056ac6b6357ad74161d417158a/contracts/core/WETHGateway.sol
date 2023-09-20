@@ -94,7 +94,7 @@ contract WETHGateway is IWETHGateway {
     ///                   own wallet, or a different address if the beneficiary of diesel tokens is a different wallet
     /// @param referralCode Code used to register the integrator originating the operation, for potential rewards.
     /// 0 if the action is executed directly by the user, without any middle-man
-    // SWC-Reentrancy: L98 - L112
+    // SWC-107-Reentrancy: L98 - L112
     function addLiquidityETH(
         address pool,
         address onBehalfOf,
@@ -117,7 +117,7 @@ contract WETHGateway is IWETHGateway {
     /// @param pool Address of PoolService contract which where user wants to withdraw liquidity. This pool should has WETH as underlying asset
     /// @param amount Amount of tokens to be transfer
     /// @param to Address to transfer liquidity
-    // SWC-Reentrancy: L120 - L140
+    // SWC-107-Reentrancy: L120 - L140
     function removeLiquidityETH(
         address pool,
         uint256 amount,
@@ -147,7 +147,7 @@ contract WETHGateway is IWETHGateway {
     /// @param leverageFactor Multiplier to borrowers own funds
     /// @param referralCode Code used to register the integrator originating the operation, for potential rewards.
     ///                     0 if the action is executed directly by the user, without any middle-man
-    // SWC-Reentrancy: L151 - L171
+    // SWC-107-Reentrancy: L151 - L171
     function openCreditAccountETH(
         address creditManager,
         address payable onBehalfOf,
@@ -175,7 +175,7 @@ contract WETHGateway is IWETHGateway {
     ///       - transfer all assets to "to" account
     /// @param creditManager Address of credit Manager. Should used WETH as underlying asset
     /// @param to Address to send credit account assets
-    // SWC-Reentrancy: L179 - L199
+    // SWC-107-Reentrancy: L179 - L199
     function repayCreditAccountETH(address creditManager, address to)
         external
         payable

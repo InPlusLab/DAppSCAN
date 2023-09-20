@@ -3,7 +3,7 @@
 */
 
 // SPDX-License-Identifier: UNLICENSED
-//SWC-Outdated Compiler Version：L7
+//SWC-102-Outdated Compiler Version: L7
 pragma solidity 0.5.0;
 
 contract ReentrancyGuard {
@@ -402,7 +402,7 @@ contract BsktEthLPPool is LPTokenWrapper {
         );
         _;
     }
-//SWC-Block values as a proxy for time：L400，417
+//SWC-116-Block values as a proxy for time: L400, L417
     modifier updateReward(address account) {
         rewardPerTokenStored = rewardPerToken();
         lastUpdateTime = lastTimeRewardApplicable();
@@ -454,7 +454,7 @@ contract BsktEthLPPool is LPTokenWrapper {
         
         emit Withdrawn(_msgSender(), amount);
     }
-//SWC-Reentrancy：L459-462
+//SWC-107-Reentrancy: L459-462
     // Withdraw staked lp token and earned reward immediately
     function exit() nonReentrant external {
         withdraw(balanceOf(_msgSender()));

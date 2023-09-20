@@ -34,7 +34,7 @@ library MerklePatriciaProofVerifier {
         uint256 mptKeyOffset = 0;
 
         bytes32 nodeHashHash;
-        // SWC-Presence of unused variables: L38
+        // SWC-131-Presence of unused variables: L38
         bytes memory rlpNode;
         RLPReader.RLPItem[] memory node;
 

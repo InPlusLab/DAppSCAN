@@ -139,7 +139,7 @@ contract BMath is BBronze, BConst, BNum {
 
         // uint newPoolSupply = (ratioTi ^ weightTi) * poolSupply;
         uint poolRatio = bpow(tokenInRatio, normalizedWeight);
-        // SWC-Integer Overflow and Underflow: L143
+        // SWC-101-Integer Overflow and Underflow: L143
         uint newPoolSupply = bmul(poolRatio, poolSupply);
         poolAmountOut = bsub(newPoolSupply, poolSupply);
         return poolAmountOut;

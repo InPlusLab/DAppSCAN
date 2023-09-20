@@ -104,7 +104,7 @@ contract VotingEscrow is VotingStorage, Ownable, ReentrancyGuard, NonZeroAddress
         }
         return _votePower;
     }
-//SWC-Shadowing State Variables：L108-110
+//SWC-119-Shadowing State Variables: L108-110
     function userOwnsTheLock(Lock memory _lock, address owner) internal pure returns (bool) {
         return _lock.owner == owner && _lock.delegator == address(0);
     }

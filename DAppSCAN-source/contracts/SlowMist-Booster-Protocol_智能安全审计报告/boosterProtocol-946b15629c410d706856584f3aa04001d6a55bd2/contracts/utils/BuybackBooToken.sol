@@ -62,7 +62,7 @@ contract BuybackBooToken is IBuyback {
         IERC20(_token).safeTransferFrom(msg.sender, address(this), _value);
         IERC20(_token).approve(address(router), _value);
 
-        // SWC-Transaction Order Dependence: L66
+        // SWC-114-Transaction Order Dependence: L66
         result = router.swapExactTokensForTokens(_value, 0, path, address(this), block.timestamp.add(60));
         if(result.length == 0) {
             return 0;

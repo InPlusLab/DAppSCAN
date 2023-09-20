@@ -1,4 +1,4 @@
-//SWC-Outdated Compiler Version: L2-L417
+//SWC-102-Outdated Compiler Version: L2-L417
 pragma solidity ^0.4.0;
 
 //This contract is backed by the constitution of SuperDAO deployed at : .
@@ -85,7 +85,7 @@ contract PromissoryToken {
     * @param _cofounderAddress The helper cofounder to aid founder key exchange in case of key loss/
     * @param _numOfBackers The number of Early backers. Will be used to control setting early backers
     */
-    //SWC-Code With No Effects: L87
+    //SWC-135-Code With No Effects: L87
     function PromissoryToken( bytes32 _founderHash, address _cofounderAddress, uint _numOfBackers){
         founder = msg.sender;
         founderHash = sha3(_founderHash);
@@ -116,7 +116,7 @@ contract PromissoryToken {
     * @param _oneTimesharedPhrase Secret phrase to be shared with coFounder to approve Address update
     * @return True if Address switch request successfully created and Temporary hash Values set
     */
-    //SWC-Code With No Effects: L87
+    //SWC-135-Code With No Effects: L87
     function founderSwitchRequest(bytes32 _founderHash, bytes32 _oneTimesharedPhrase) returns (bool success){
         if(sha3(_founderHash) != founderHash) throw;
 
@@ -160,7 +160,7 @@ contract PromissoryToken {
         founderCall
         returns (uint)
     {
-        //SWC-Integer Overflow and Underflow: L163
+        //SWC-101-Integer Overflow and Underflow: L163
         if (_tokenPrice == 0 || _tokenAmount == 0 || claimedPrepaidUnits>0 ||
             _tokenAmount + prepaidUnits + claimedUnits > promissoryUnits) throw;
         if (earlyBackerList.length == numOfBackers && backers[_backer].length == 0) throw ;

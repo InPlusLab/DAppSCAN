@@ -141,7 +141,7 @@ contract PoolService is IPoolService, ACLTrait, ReentrancyGuard {
         whenNotPaused // T:[PS-4]
         nonReentrant
     {
-        // SWC-Integer Overflow and Underflow: L145
+        // SWC-101-Integer Overflow and Underflow: L145
         require(
             expectedLiquidity() + amount <= expectedLiquidityLimit,
             Errors.POOL_MORE_THAN_EXPECTED_LIQUIDITY_LIMIT
@@ -235,7 +235,7 @@ contract PoolService is IPoolService, ACLTrait, ReentrancyGuard {
     ///
     /// @param borrowedAmount Borrowed amount for credit account
     /// @param creditAccount Credit account address
-    // SWC-Reentrancy: L238 - L258
+    // SWC-107-Reentrancy: L238 - L258
     function lendCreditAccount(uint256 borrowedAmount, address creditAccount)
         external
         override

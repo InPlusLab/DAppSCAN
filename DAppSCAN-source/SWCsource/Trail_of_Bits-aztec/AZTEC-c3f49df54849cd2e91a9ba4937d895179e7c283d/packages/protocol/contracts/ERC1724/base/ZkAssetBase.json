@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Trail_of_Bits-aztec/AZTEC-c3f49df54849cd2e91a9ba4937d895179e7c283d/packages/protocol/contracts/ERC1724/base/ZkAssetBase.sol",
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-aztec/AZTEC-c3f49df54849cd2e91a9ba4937d895179e7c283d/packages/protocol/contracts/ERC1724/base/ZkAssetBase.sol",
  "SWCs": [
   {
-   "category": "SWC-Missing Protection against Signature Replay Attacks",
+   "category": "SWC-121-Missing Protection against Signature Replay Attacks",
    "function": "confidentialApprove",
    "lineNumber": "L108-L125"
   }

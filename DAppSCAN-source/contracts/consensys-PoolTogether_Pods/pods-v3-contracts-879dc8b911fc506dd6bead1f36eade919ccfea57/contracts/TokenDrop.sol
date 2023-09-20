@@ -78,7 +78,7 @@ contract TokenDrop is Initializable {
     /**
      * @notice Initialize TokenDrop Smart Contract
      */
-    // SWC-Unprotected Ether Withdrawal: L82-88
+    // SWC-105-Unprotected Ether Withdrawal: L82-88
     function initialize(address _measure, address _asset) external {
         measure = IERC20Upgradeable(_measure);
         asset = IERC20Upgradeable(_asset);
@@ -137,7 +137,7 @@ contract TokenDrop is Initializable {
      * @dev Claim asset rewards
      * @param user User account
      */
-     // SWC-Reentrancy: L141-155
+     // SWC-107-Reentrancy: L141-155
     function claim(address user) external returns (uint256) {
         drop();
         _captureNewTokensForUser(user);

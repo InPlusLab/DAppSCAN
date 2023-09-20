@@ -33,7 +33,7 @@ contract StakingModel is IStakingModel {
         users[addr].balance += uint104(amount);
     }
 
-// SWC-Code With No Effects: L37 - L41
+// SWC-135-Code With No Effects: L37 - L41
     function removeVET(address addr, uint256 amount) restrict(amount) internal {
         _update(addr);
         require(users[addr].balance >= uint104(amount), "insuffcient vet");
@@ -83,7 +83,7 @@ contract StakingModel is IStakingModel {
     // @param t2 Time in seconds
     // @param vetAmount VET in wei
     // @return vtho generated in wei
-    // SWC-Integer Overflow and Underflow: L92
+    // SWC-101-Integer Overflow and Underflow: L92
     function calculateVTHO(
         uint48 t1,
         uint48 t2,

@@ -6,7 +6,7 @@
 
 
 // OpenZeppelin Contracts v4.4.0 (utils/math/SafeMath.sol)
-//SWC-Floating Pragma：L10
+//SWC-103-Floating Pragma: L10
 pragma solidity ^0.8.0;
 
 // CAUTION
@@ -763,7 +763,7 @@ contract Bollystake is ERC20("sBOLLY Staked Bollycoin", "sBOLLY"){
         usdt = _usdt;
     }
      uint256 private constant _TIMELOCK = 10 minutes;
-//     SWC-Function Default Visibility：L772
+//     SWC-100-Function Default Visibility: L772
      struct locked{
         uint256 expire;
         uint256 locked_amount;

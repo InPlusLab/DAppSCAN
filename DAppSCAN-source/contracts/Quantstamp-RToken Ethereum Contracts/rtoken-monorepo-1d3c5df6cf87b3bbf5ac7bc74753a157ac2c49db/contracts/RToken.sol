@@ -1,4 +1,4 @@
-//SWC-Floating Pragma: L2
+//SWC-103-Floating Pragma: L2
 pragma solidity ^0.5.8;
 pragma experimental ABIEncoderV2;
 
@@ -402,7 +402,7 @@ contract RToken is
         // redeem everything from the old strategy
         uint256 sOriginalBurned = oldIas.redeemUnderlying(totalSupply);
         // invest everything into the new strategy
-        //SWC-Unchecked Call Return Value: L406
+        //SWC-104-Unchecked Call Return Value: L406
         token.transferFrom(msg.sender, address(this), totalSupply);
         token.approve(address(ias), totalSupply);
         uint256 sOriginalCreated = ias.investUnderlying(totalSupply);
@@ -539,7 +539,7 @@ contract RToken is
         account.rAmount = account.rAmount.add(mintAmount);
 
         // update global stats
-        //SWC-Integer Overflow and Underflow: L543
+        //SWC-101-Integer Overflow and Underflow: L543
         savingAssetOrignalAmount += sOriginalCreated;
 
         // distribute saving assets as loans to recipients

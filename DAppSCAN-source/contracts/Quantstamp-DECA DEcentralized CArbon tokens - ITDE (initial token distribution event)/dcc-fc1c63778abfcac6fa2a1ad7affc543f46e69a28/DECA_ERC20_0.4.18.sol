@@ -1,4 +1,4 @@
-// SWC-Floating Pragma: L2
+// SWC-103-Floating Pragma: L2
 pragma solidity ^0.4.26;
 
 // ----------------------------------------------------------------------------
@@ -50,7 +50,7 @@ contract ERC20Interface {
     function balanceOf(address tokenOwner) public constant returns (uint balance);
     function allowance(address tokenOwner, address spender) public constant returns (uint remaining);
     function transfer(address to, uint tokens) public returns (bool success);
-    // SWC-DoS with Failed Call: L53 - L58
+    // SWC-113-DoS with Failed Call: L53 - L58
     function approve(address spender, uint tokens) public returns (bool success);
     function transferFrom(address from, address to, uint tokens) public returns (bool success);
 
@@ -224,7 +224,7 @@ contract DECAToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // 1,000 DECA Tokens per 1 ETH
     // ------------------------------------------------------------------------
-    // SWC-Integer Overflow and Underflow: L225 - L251
+    // SWC-101-Integer Overflow and Underflow: L225 - L251
     function () public payable {
         require(now >= startDate && now <= endDate);
         uint tokens;

@@ -152,7 +152,7 @@ contract AsyncArtwork_v2 is Initializable, ERC721, ERC721Enumerable, ERC721Metad
     // map a control token ID to its highest bid
     mapping(uint256 => PendingBid) public pendingBids;
     // map a control token id to a control token struct
-    // SWC-State Variable Default Visibility: L156
+    // SWC-108-State Variable Default Visibility: L156
     mapping(uint256 => ControlToken) controlTokenMapping;    
     // mapping of addresses that are allowed to control tokens on your behalf
     mapping(address => mapping(uint256 => address)) public permissionedControllers;
@@ -597,7 +597,7 @@ contract AsyncArtwork_v2 is Initializable, ERC721, ERC721Enumerable, ERC721Metad
             require(newValues[i] != lever.currentValue, "Must provide different val");
 
             // grab previous value for the event emit
-            // SWC-Presence of unused variables: L600
+            // SWC-131-Presence of unused variables: L600
             int256 previousValue = lever.currentValue;
 
             // Update token current value
@@ -643,7 +643,7 @@ contract AsyncArtwork_v2 is Initializable, ERC721, ERC721Enumerable, ERC721Metad
     // Safely transfer funds and if fail then store that amount as credits for a later pull
     function safeFundsTransfer(address payable recipient, uint256 amount) internal {
         // attempt to send the funds to the recipient
-        // SWC-Reentrancy: L647
+        // SWC-107-Reentrancy: L647
         (bool success, ) = recipient.call.value(amount).gas(2300)("");
         // if it failed, update their credit balance so they can pull it later
         if (success == false) {

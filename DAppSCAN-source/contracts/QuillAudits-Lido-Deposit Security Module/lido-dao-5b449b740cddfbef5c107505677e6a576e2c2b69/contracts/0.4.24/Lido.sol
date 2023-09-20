@@ -298,7 +298,7 @@ contract Lido is ILido, IsContract, StETH, AragonApp {
         uint256 balance;
         if (_token == ETH) {
             balance = _getUnaccountedEther();
-            // SWC-Insufficient Gas Griefing: L301
+            // SWC-126-Insufficient Gas Griefing: L301
             vault.transfer(balance);
         } else {
             ERC20 token = ERC20(_token);
@@ -614,7 +614,7 @@ contract Lido is ILido, IsContract, StETH, AragonApp {
         assert(recipients.length == shares.length);
 
         distributed = 0;
-        // SWC-DoS With Block Gas Limit: L618 - L626
+        // SWC-128-DoS With Block Gas Limit: L618 - L626
         for (uint256 idx = 0; idx < recipients.length; ++idx) {
             _transferShares(
                 address(this),

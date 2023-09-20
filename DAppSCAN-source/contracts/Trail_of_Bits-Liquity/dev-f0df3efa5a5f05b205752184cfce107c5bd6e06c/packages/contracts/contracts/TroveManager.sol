@@ -916,7 +916,7 @@ contract TroveManager is LiquityBase, Ownable, ITroveManager {
         } else {
             currentBorrower = sortedTroves.getLast();
             // Find the first trove with ICR >= MCR
-            // SWC-Unchecked Call Return Value: L920
+            // SWC-104-Unchecked Call Return Value: L920
             while (currentBorrower != address(0) && getCurrentICR(currentBorrower, price) < MCR) {
                 currentBorrower = sortedTroves.getPrev(currentBorrower);
             }
@@ -1272,7 +1272,7 @@ contract TroveManager is LiquityBase, Ownable, ITroveManager {
             return false;
         }
     }
-    // SWC-Code With No Effects: L1276-L1284
+    // SWC-135-Code With No Effects: L1276-L1284
     function getTCR() public view override returns (uint TCR) {
         uint price = priceFeed.getPrice();
         uint entireSystemColl = getEntireSystemColl();
@@ -1282,7 +1282,7 @@ contract TroveManager is LiquityBase, Ownable, ITroveManager {
 
         return TCR;
     }
-    // SWC-Code With No Effects: L1286-L1291
+    // SWC-135-Code With No Effects: L1286-L1291
     function getEntireSystemColl() public view override returns (uint entireSystemColl) {
         uint activeColl = activePool.getETH();
         uint liquidatedColl = defaultPool.getETH();

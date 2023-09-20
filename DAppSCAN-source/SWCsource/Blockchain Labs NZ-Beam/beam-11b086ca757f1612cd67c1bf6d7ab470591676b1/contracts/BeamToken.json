@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Blockchain Labs NZ-Beam/beam-11b086ca757f1612cd67c1bf6d7ab470591676b1/contracts/BeamToken.sol",
+ "filePath": "DAppSCAN-source/contracts/Blockchain Labs NZ-Beam/beam-11b086ca757f1612cd67c1bf6d7ab470591676b1/contracts/BeamToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Typographical Error",
+   "category": "SWC-129-Typographical Error",
    "function": "ManagerUpdated",
    "lineNumber": "L17"
   },
   {
-   "category": "SWC-Typographical Error",
+   "category": "SWC-129-Typographical Error",
    "function": "setManager",
    "lineNumber": "L72"
   }

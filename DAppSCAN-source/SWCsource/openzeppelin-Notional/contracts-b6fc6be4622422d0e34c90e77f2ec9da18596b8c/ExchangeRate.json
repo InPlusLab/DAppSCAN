@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/ExchangeRate.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/ExchangeRate.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_convertToETH",
    "lineNumber": "L49"
   }

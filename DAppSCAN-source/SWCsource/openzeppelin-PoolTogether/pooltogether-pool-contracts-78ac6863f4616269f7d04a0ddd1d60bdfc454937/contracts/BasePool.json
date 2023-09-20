@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-PoolTogether/pooltogether-pool-contracts-78ac6863f4616269f7d04a0ddd1d60bdfc454937/contracts/BasePool.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-PoolTogether/pooltogether-pool-contracts-78ac6863f4616269f7d04a0ddd1d60bdfc454937/contracts/BasePool.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "rewardAndOpenNextDraw",
    "lineNumber": "L307-L310"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "reward",
    "lineNumber": "L323-L374"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "calculateFee",
    "lineNumber": "L414-L415"
   }

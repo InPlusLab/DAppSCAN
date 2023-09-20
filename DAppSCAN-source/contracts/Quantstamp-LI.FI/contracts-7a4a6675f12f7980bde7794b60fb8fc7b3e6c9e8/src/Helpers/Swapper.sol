@@ -1,4 +1,4 @@
-// SWC-Code With No Effects: L1 - L36
+// SWC-135-Code With No Effects: L1 - L36
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 

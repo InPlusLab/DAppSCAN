@@ -21,7 +21,7 @@ pragma solidity 0.5.12;
 import "./ERC777Pool.sol";
 
 contract RecipientWhitelistERC777Pool is ERC777Pool {
-  //SWC-State Variable Default Visibility: L25-L26
+  //SWC-108-State Variable Default Visibility: L25-L26
   bool _recipientWhitelistEnabled;
   mapping(address => bool) _recipientWhitelist;
 

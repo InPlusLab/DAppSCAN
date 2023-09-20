@@ -141,7 +141,7 @@ contract LockAndDataForMainnet is OwnableForMainnet {
      * @dev Allows DepositBox to approve transfer.
      */
     function approveTransfer(address to, uint256 amount) external allow("DepositBox") {
-        // SWC-Integer Overflow and Underflow: L145
+        // SWC-101-Integer Overflow and Underflow: L145
         approveTransfers[to] += amount;
     }
 

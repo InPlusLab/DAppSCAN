@@ -60,7 +60,7 @@ library DydxFlashLoanAbstraction
 		// attempts to find the market id given a reserve token
 		uint256 _marketId = uint256(-1);
 		uint256 _numMarkets = SoloMargin(_solo).getNumMarkets();
-		// SWC-DoS With Block Gas Limit: L64-70
+		// SWC-128-DoS With Block Gas Limit: L64-70
 		for (uint256 _i = 0; _i < _numMarkets; _i++) {
 			address _address = SoloMargin(_solo).getMarketTokenAddress(_i);
 			if (_address == _token) {

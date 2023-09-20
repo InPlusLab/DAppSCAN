@@ -143,7 +143,7 @@ library LibBytes {
     assembly {
       let word := mload(add(index, add(32, data)))
       a := and(shr(240, word), 0xffff)
-      //SWC-Integer Overflow and Underflow: L147
+      //SWC-101-Integer Overflow and Underflow: L147
       newIndex := add(index, 2)
     }
     require(newIndex <= data.length, "LibBytes#readUint16: OUT_OF_BOUNDS");

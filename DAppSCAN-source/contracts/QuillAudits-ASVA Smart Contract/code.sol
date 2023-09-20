@@ -1,8 +1,8 @@
 /**
  *Submitted for verification at BscScan.com on 2021-02-27
 */
-// SWC-Floating Pragma: L5
-// SWC-Outdated Compiler Version: L6
+// SWC-103-Floating Pragma: L5
+// SWC-102-Outdated Compiler Version: L6
 pragma solidity >=0.6.0 <0.8.0;
 
 /*
@@ -972,7 +972,7 @@ contract ASVA is BEP20Burnable, Ownable {
         _mint(_user, initialSupply);
     }
 
-// SWC-Code With No Effects: L975 - L981
+// SWC-135-Code With No Effects: L975 - L981
     receive() payable external {
         payable(owner()).transfer(msg.value);
     }

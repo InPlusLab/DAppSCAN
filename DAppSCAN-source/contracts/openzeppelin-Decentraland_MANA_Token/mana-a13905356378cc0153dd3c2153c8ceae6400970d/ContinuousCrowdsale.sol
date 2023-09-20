@@ -34,7 +34,7 @@ contract ContinuousCrowdsale is Crowdsale {
             processPurchase(beneficiary);
         }
     }
-//SWC-Transaction Order Dependence:L33
+//SWC-114-Transaction Order Dependence:L33
     function prepareContinuousPurchase() internal {
         uint256 timestamp = block.timestamp;
         uint256 bucket = timestamp - (timestamp % BUCKET_SIZE);
@@ -49,7 +49,7 @@ contract ContinuousCrowdsale is Crowdsale {
         bucketAmount += tokens;
         require(bucketAmount <= issuance);
     }
-//SWC-Integer Overflow and Underflow:L49
+//SWC-101-Integer Overflow and Underflow:L49
     function processPurchase(address beneficiary) internal returns(uint256) {
         uint256 weiAmount = msg.value;
         uint256 updatedWeiRaised = weiRaised.add(weiAmount);

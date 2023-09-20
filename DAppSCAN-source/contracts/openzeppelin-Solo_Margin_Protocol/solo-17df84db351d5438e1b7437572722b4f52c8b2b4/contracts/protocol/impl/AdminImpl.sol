@@ -254,7 +254,7 @@ library AdminImpl {
 
     // ============ Private Functions ============
 
-    //SWC-Reentrancy: L258-L275
+    //SWC-107-Reentrancy: L258-L275
     function _setPriceOracle(
         Storage.State storage state,
         uint256 marketId,

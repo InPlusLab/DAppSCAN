@@ -71,7 +71,7 @@ contract BaseRewards is Ownable, BalanceAccounting {
             .div(1e18)
             .add(tr.rewards[account]);
     }
-//SWC-Reentrancy:L75
+//SWC-107-Reentrancy: L75
     function getReward(uint i) public updateReward(msg.sender) {
         TokenRewards storage tr = tokenRewards[i];
         uint256 reward = tr.rewards[msg.sender];
@@ -96,7 +96,7 @@ contract BaseRewards is Ownable, BalanceAccounting {
 
         uint balance = tr.gift.balanceOf(address(this));
         require(tr.rewardRate <= balance.div(duration), "Reward is too big");
-//SWC-Integer Overflow and Underflow：L98
+//SWC-101-Integer Overflow and Underflow: L98
         tr.lastUpdateTime = block.timestamp;
         tr.periodFinish = block.timestamp.add(duration);
         emit RewardAdded(reward);

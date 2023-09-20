@@ -90,7 +90,7 @@ contract StakingProxyUniV3 is IProxyVault{
     }
 
     //add to a current lock
-    //SWC-Reentrancy: L94-L113
+    //SWC-107-Reentrancy: L94-L113
     function lockAdditional(uint256 _token_id, uint256 _token0_amt, uint256 _token1_amt) external onlyOwner{
         uint256 userLiq = IFraxFarmUniV3(stakingAddress).lockedLiquidityOf(address(this));
 

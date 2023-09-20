@@ -67,7 +67,7 @@ abstract contract ERC20Farmable is ERC20, IERC20Farmable {
 
     function quitAll() public virtual {
         address[] memory farms = _userFarms[msg.sender].items.get();
-        // SWC-DoS With Block Gas Limit: L71 - L73
+        // SWC-128-DoS With Block Gas Limit: L71 - L73
         for (uint256 i = 0; i < farms.length; i++) {
             quit(farms[i]);
         }
@@ -114,12 +114,12 @@ abstract contract ERC20Farmable is ERC20, IERC20Farmable {
         if (amount > 0 && from != to) {
             address[] memory a = _userFarms[from].items.get();
             address[] memory b = _userFarms[to].items.get();
-            // SWC-DoS With Block Gas Limit: L118 - L137
+            // SWC-128-DoS With Block Gas Limit: L118 - L137
             for (uint256 i = 0; i < a.length; i++) {
                 address farm_ = a[i];
 
                 uint256 j;
-                // SWC-DoS With Block Gas Limit: L123 - L130
+                // SWC-128-DoS With Block Gas Limit: L123 - L130
                 for (j = 0; j < b.length; j++) {
                     if (farm_ == b[j]) {
                         // Both parties are farming the same token
@@ -136,7 +136,7 @@ abstract contract ERC20Farmable is ERC20, IERC20Farmable {
                 }
             }
 
-            // SWC-DoS With Block Gas Limit: L140 - L147
+            // SWC-128-DoS With Block Gas Limit: L140 - L147
             for (uint256 j = 0; j < b.length; j++) {
                 address farm_ = b[j];
                 if (farm_ != address(0)) {

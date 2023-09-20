@@ -124,7 +124,7 @@ contract TimeLock is Owned, BEP20 {
     
     function release() public returns (bool) {
         LockedAccounts storage lockedAccount = lock[msg.sender];
-//        SWC-Unchecked Call Return Value：L132
+//        SWC-104-Unchecked Call Return Value: L132
         for(uint i = 0; i < lockedAccount.locked.length; i++) {
             Locked storage loc = lockedAccount.locked[i];
             require(block.timestamp >= (loc.time + loc.lockedAt), "TimeLock: Release time not reached");

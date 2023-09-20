@@ -80,7 +80,7 @@ contract BrickblockAccount is Ownable {
     );
     return fmr.claimFee(_value);
   }
-  // SWC-Unprotected Ether Withdrawal: L84-95
+  // SWC-105-Unprotected Ether Withdrawal: L84-95
   function withdrawEthFunds(
     address _address,
     uint256 _value

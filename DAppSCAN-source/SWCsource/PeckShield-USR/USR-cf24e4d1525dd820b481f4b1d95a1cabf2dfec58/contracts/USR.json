@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/PeckShield-USR/USR-cf24e4d1525dd820b481f4b1d95a1cabf2dfec58/contracts/USR.sol",
+ "filePath": "DAppSCAN-source/contracts/PeckShield-USR/USR-cf24e4d1525dd820b481f4b1d95a1cabf2dfec58/contracts/USR.sol",
  "SWCs": [
   {
-   "category": "SWC-Typographical Error",
+   "category": "SWC-129-Typographical Error",
    "function": "equity",
    "lineNumber": "L295"
   }

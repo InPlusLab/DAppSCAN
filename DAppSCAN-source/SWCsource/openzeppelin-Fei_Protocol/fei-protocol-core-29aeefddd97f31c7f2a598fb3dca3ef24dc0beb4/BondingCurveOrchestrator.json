@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Fei_Protocol/fei-protocol-core-29aeefddd97f31c7f2a598fb3dca3ef24dc0beb4/BondingCurveOrchestrator.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Fei_Protocol/fei-protocol-core-29aeefddd97f31c7f2a598fb3dca3ef24dc0beb4/BondingCurveOrchestrator.sol",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "init",
    "lineNumber": "L22"
   }

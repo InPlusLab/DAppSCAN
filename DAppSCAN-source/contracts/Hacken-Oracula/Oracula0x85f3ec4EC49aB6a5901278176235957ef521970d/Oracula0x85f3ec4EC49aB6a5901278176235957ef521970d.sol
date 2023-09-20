@@ -202,7 +202,7 @@ abstract contract Ownable is Context {
 
     
 
-// SWC-Function Default Visibility: L206 - L212
+// SWC-100-Function Default Visibility: L206 - L212
     function renounceOwnership() public virtual onlyOwner {
 
         emit OwnershipTransferred(_owner, address(0));
@@ -215,7 +215,7 @@ abstract contract Ownable is Context {
 
 
 
-// SWC-Function Default Visibility: L219 - L227
+// SWC-100-Function Default Visibility: L219 - L227
     function transferOwnership(address newOwner) public virtual onlyOwner {
 
         require(newOwner != address(0), "Ownable: new owner is the zero address");
@@ -858,7 +858,7 @@ contract Oracula is Context, IBEP20, Ownable {
 
 
 
-// SWC-State Variable Default Visibility: L860 - L884
+// SWC-108-State Variable Default Visibility: L860 - L884
     uint256 burnFee;
 
     uint256 devFee;

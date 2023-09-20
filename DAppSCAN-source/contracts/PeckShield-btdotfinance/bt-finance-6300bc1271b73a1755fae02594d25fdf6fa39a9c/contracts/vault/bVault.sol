@@ -353,7 +353,7 @@ contract bVault is ERC20, ERC20Detailed {
     function depositAll() external {
         deposit(token.balanceOf(msg.sender));
     }
-    //SWC-Reentrancy: L357-L375
+    //SWC-107-Reentrancy: L357-L375
     function deposit(uint _amount) public onlyRestrictContractCall {
 		require(_amount > 0, "Cannot deposit 0");
         uint _pool = balance();

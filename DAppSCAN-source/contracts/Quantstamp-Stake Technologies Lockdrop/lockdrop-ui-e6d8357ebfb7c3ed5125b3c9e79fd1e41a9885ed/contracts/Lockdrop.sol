@@ -1,4 +1,4 @@
-//SWC-Floating Pragma: L1
+//SWC-103-Floating Pragma: L1
 pragma solidity ^0.5.0;
 
 import './Lock.sol';
@@ -43,7 +43,7 @@ contract Lockdrop {
         Lock lockAddr = (new Lock).value(eth)(msg.sender, unlockTime);
 
         // ensure lock contract has all ETH, or fail
-        //SWC-DoS with Failed Call: L47
+        //SWC-113-DoS with Failed Call: L47
         assert(address(lockAddr).balance == eth);
 
         emit Locked(eth, _days, address(lockAddr), _introducer);

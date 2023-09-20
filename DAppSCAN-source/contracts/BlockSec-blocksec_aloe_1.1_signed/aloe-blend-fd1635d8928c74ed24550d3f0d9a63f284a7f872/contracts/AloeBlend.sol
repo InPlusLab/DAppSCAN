@@ -181,7 +181,7 @@ contract AloeBlend is AloeBlendERC20, UniswapHelper, ReentrancyGuard, IAloeBlend
         limit.poke(UNI_POOL);
         silo0.delegate_poke();
         silo1.delegate_poke();
-        // SWC-Code With No Effects: L186
+        // SWC-135-Code With No Effects: L186
         // Fetch instantaneous price from Uniswap
         (uint160 sqrtPriceX96, , , , , , ) = UNI_POOL.slot0();
         uint224 priceX96 = uint224(FullMath.mulDiv(sqrtPriceX96, sqrtPriceX96, Q96));

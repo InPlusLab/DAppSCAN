@@ -149,14 +149,14 @@ contract AllCoinsYieldCapital is Context, IERC20, Ownable {
 
     // We expose these functions to be able to modify the fees and tx amounts
     function setReflectionsTax(uint256 tax) external onlyOwner {
-        // SWC-Code With No Effects: L153
+        // SWC-135-Code With No Effects: L153
         require(tax >= 0 && tax <= 10, "ERC20: tax out of band");
         _currentTaxForReflections = tax;
         _fixedTaxForReflections = tax;
     }
 
     function setTreasuryTax(uint256 tax) external onlyOwner {
-        // SWC-Code With No Effects: L160
+        // SWC-135-Code With No Effects: L160
         require(tax >= 0 && tax <= 10, "ERC20: tax out of band");
         _currentTaxForTreasury = tax;
         _fixedTaxForTreasury = tax;
@@ -174,7 +174,7 @@ contract AllCoinsYieldCapital is Context, IERC20, Ownable {
     }
 
     // public functions to do things
-    // SWC-Insufficient Gas Griefing: L176
+    // SWC-126-Insufficient Gas Griefing: L176
     function transfer(address recipient, uint256 amount)
         public
         override
@@ -330,7 +330,7 @@ contract AllCoinsYieldCapital is Context, IERC20, Ownable {
     // transfer function that sets up the context so that the
     // _tokenTransfer function can do the accounting work
     // to perform the transfer function
-    // SWC-Reentrancy: L331
+    // SWC-107-Reentrancy: L331
     function _transfer(
         address sender,
         address recipient,

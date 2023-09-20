@@ -450,7 +450,7 @@ contract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeabl
      * - `recipient` cannot be the zero address.
      * - the caller must have a balance of at least `amount`.
      */
-    //  SWC-Unprotected Ether Withdrawal: L454- L457
+    //  SWC-105-Unprotected Ether Withdrawal: L454- L457
     function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
         _transfer(_msgSender(), recipient, amount);
         return true;

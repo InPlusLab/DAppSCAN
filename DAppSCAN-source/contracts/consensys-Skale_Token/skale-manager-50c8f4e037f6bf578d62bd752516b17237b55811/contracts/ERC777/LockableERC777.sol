@@ -395,7 +395,7 @@ contract LockableERC777 is IERC777, IERC20 {
      * @param data bytes extra information provided by the token holder
      * @param operatorData bytes extra information provided by the operator (if any)
      */
-    // SWC-Reentrancy: L399-422
+    // SWC-107-Reentrancy: L399-422
     function _burn(
         address operator,
         address from,

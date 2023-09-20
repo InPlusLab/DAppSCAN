@@ -703,7 +703,7 @@ contract SphrVestingStatic is Ownable {
             }
             
         }
-        // SWC-Integer Overflow and Underflow: L707
+        // SWC-101-Integer Overflow and Underflow: L707
         vestedAmount_ -= _releaseAmount[msg.sender];
         return vestedAmount_;
     }

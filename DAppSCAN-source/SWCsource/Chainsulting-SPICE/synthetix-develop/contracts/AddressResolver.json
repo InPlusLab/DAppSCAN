@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Chainsulting-SPICE/synthetix-develop/contracts/AddressResolver.sol",
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-SPICE/synthetix-develop/contracts/AddressResolver.sol",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lineNumber": "L3"
   }

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L4
-// SWC-Outdated Compiler Version: L4
+// SWC-103-Floating Pragma: L4
+// SWC-102-Outdated Compiler Version: L4
 pragma solidity ^0.8.0;
 
 import "./IERC20.sol";

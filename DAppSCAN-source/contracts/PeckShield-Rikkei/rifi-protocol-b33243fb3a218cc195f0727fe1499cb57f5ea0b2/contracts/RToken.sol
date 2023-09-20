@@ -476,7 +476,7 @@ contract RToken is RTokenInterface, Exponential, TokenErrorReporter {
         // mintFresh emits the actual Mint event if successful and logs on errors, so we don't need to
         return mintFresh(msg.sender, mintAmount);
     }
-//SWC-Code With No Effects: L480-L487
+//SWC-135-Code With No Effects: L480-L487
     struct MintLocalVars {
         Error err;
         MathError mathErr;
@@ -734,7 +734,7 @@ contract RToken is RTokenInterface, Exponential, TokenErrorReporter {
       * @param borrowAmount The amount of the underlying asset to borrow
       * @return uint 0=success, otherwise a failure (see ErrorReporter.sol for details)
       */
-    //SWC-Reentrancy: L738-L802
+    //SWC-107-Reentrancy: L738-L802
     function borrowFresh(address payable borrower, uint borrowAmount) internal returns (uint) {
         /* Fail if borrow not allowed */
         uint allowed = cointroller.borrowAllowed(address(this), borrower, borrowAmount);

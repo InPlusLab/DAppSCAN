@@ -40,7 +40,7 @@ contract CryptoZoan is
     event Exp(uint256 indexed tokenId, uint256 exp);
     event Working(uint256 indexed tokenId, uint256 time);
 
-// SWC-Presence of unused variables: L44 - L56
+// SWC-131-Presence of unused variables: L44 - L56
     struct Zoan {
         uint256 collections;
         uint256 generation;

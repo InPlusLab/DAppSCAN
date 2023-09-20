@@ -115,7 +115,7 @@ contract Reward {
     
     /// @notice estimate last block number before given time
     /// @return blockNumber
-    // SWC-DoS with Failed Call: L119-134
+    // SWC-113-DoS with Failed Call: L119-134
     function getBlockByTime(uint _time) public view returns (uint) {
         // Binary search
         uint _min = 0;
@@ -265,7 +265,7 @@ contract Reward {
         uint endEpoch;
         uint reward;
     }
-    // SWC-DoS With Block Gas Limit: L269-275
+    // SWC-128-DoS With Block Gas Limit: L269-275
     function claimRewardMany(uint[] calldata tokenIds, Interval[][] calldata intervals) public returns (uint[] memory rewards) {
         rewards = new uint[] (tokenIds.length);
         for (uint i = 0; i < tokenIds.length; i++) {

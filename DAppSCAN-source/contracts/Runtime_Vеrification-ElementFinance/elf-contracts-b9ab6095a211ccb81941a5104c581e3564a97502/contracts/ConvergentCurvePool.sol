@@ -49,7 +49,7 @@ contract ConvergentCurvePool is IMinimalSwapInfoPool, BalancerPoolToken {
 
     // This is an error factor allowed in some fixed point operations
     // Equivalent to 10^-6 ie 0.0001% in 18 point fixed.
-    // SWC-Code With No Effects: L53
+    // SWC-135-Code With No Effects: L53
     uint256 public constant EPSILON = 1e12;
     // The max percent fee for governance, immutable after compilation
     uint256 public constant FEE_BOUND = 3e17;

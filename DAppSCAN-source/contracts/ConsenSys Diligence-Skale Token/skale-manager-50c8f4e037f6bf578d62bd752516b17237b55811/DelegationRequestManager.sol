@@ -71,7 +71,7 @@ contract DelegationRequestManager is Permissions {
         );
 
         // check that there is enough money
-//        SWC-Integer Overflow and Underflow：L75-77
+//        SWC-101-Integer Overflow and Underflow: L75-77
         uint holderBalance = SkaleToken(contractManager.getContract("SkaleToken")).balanceOf(holder);
         uint lockedToDelegate = tokenState.getLockedCount(holder) - tokenState.getPurchasedAmount(holder);
         require(holderBalance >= amount + lockedToDelegate, "Delegator hasn't enough tokens to delegate");

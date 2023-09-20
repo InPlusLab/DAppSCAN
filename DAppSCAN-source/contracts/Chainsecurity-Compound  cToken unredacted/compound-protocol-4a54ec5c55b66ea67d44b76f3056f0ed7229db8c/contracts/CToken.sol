@@ -926,7 +926,7 @@ abstract contract CToken is CTokenInterface, ExponentialNoError, TokenErrorRepor
       * @dev Admin function to set a new comptroller
       * @return uint 0=success, otherwise a failure (see ErrorReporter.sol for details)
       */
-    // SWC-Reentrancy: L930-947
+    // SWC-107-Reentrancy: L930-947
     function _setComptroller(ComptrollerInterface newComptroller) override public returns (uint) {
         // Check caller is admin
         if (msg.sender != admin) {

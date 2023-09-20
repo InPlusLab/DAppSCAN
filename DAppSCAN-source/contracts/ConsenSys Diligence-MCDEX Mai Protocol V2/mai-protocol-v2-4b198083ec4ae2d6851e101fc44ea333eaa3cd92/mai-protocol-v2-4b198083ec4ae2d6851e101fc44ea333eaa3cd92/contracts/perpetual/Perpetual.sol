@@ -1,6 +1,6 @@
 pragma solidity ^0.5.2;
 pragma experimental ABIEncoderV2; // to enable structure-type parameter
-// SWC-Code With No Effects: L4-5
+// SWC-135-Code With No Effects: L4-5
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 
@@ -30,7 +30,7 @@ contract Perpetual is Brokerage, Position {
     event Sell(address indexed guy, uint256 price, uint256 amount);
     event Liquidate(address indexed keeper, address indexed guy, uint256 price, uint256 amount);
     event EndGlobalSettlement();
-    // SWC-Shadowing State Variables: L34-41
+    // SWC-119-Shadowing State Variables: L34-41
     constructor(address globalConfig, address devAddress, address collateral, uint256 collateralDecimals)
         public
         Position(collateral, collateralDecimals)
@@ -246,7 +246,7 @@ contract Perpetual is Brokerage, Position {
     }
 
     // safe for liquidation
-    // SWC-State Variable Default Visibility: L250-254
+    // SWC-108-State Variable Default Visibility: L250-254
     function isSafeWithPrice(address guy, uint256 currentMarkPrice) public returns (bool) {
         return
             marginBalanceWithPrice(guy, currentMarkPrice) >=

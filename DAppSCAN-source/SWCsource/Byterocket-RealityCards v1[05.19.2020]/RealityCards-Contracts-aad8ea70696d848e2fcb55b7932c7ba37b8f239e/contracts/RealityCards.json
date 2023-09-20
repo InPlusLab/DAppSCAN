@@ -1,18 +1,18 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Byterocket-RealityCards v1[05.19.2020]/RealityCards-Contracts-aad8ea70696d848e2fcb55b7932c7ba37b8f239e/contracts/RealityCards.sol",
+ "filePath": "DAppSCAN-source/contracts/Byterocket-RealityCards v1[05.19.2020]/RealityCards-Contracts-aad8ea70696d848e2fcb55b7932c7ba37b8f239e/contracts/RealityCards.sol",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lineNumber": "L27"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "userRemainingDeposit",
    "lineNumber": "L198-204"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "rentalExpiryTime",
    "lineNumber": "L212-214"
   }

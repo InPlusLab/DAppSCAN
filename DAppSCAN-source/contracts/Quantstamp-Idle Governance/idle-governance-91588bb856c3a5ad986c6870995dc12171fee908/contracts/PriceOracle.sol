@@ -1,4 +1,4 @@
-//SWC-Integer Overflow and Underflow: L1-L96
+//SWC-101-Integer Overflow and Underflow: L1-L96
 pragma solidity 0.6.12;
 
 import "@openzeppelin/contracts/access/Ownable.sol";

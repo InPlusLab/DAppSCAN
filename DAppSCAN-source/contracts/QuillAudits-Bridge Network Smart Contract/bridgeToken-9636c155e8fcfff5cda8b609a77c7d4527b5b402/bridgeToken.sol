@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/ERC20.sol)
 
-//SWC—Floating Pragma：L5
+//SWC-103-Floating Pragma: L5
 pragma solidity ^0.8.0;
 
 /**
@@ -173,7 +173,7 @@ abstract contract Ownable is Context {
         emit OwnershipTransferred(_owner, address(0));
         _owner = address(0);
     }
-//SWC—Function Default Visibility:L172
+//  SWC-100-Function Default Visibility: L172
     /**
      * @dev Transfers ownership of the contract to a new account (`newOwner`).
      * Can only be called by the current owner.
@@ -498,7 +498,7 @@ contract bridgeToken is Context, IERC20, IERC20Metadata , Ownable {
 
         _afterTokenTransfer(account, address(0), amount);
     }
-//SWC-Code With No Effects：L485-500
+//SWC-135-Code With No Effects: L485-500
     /**
      * @dev Sets `amount` as the allowance of `spender` over the `owner` s tokens.
      *

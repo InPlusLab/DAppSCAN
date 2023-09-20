@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-ElementFinance/elf-contracts-637c6f959315cbb11a164555e588520c7d89122b/contracts/YVaultAssetProxy.sol",
+ "filePath": "DAppSCAN-source/contracts/Runtime_V\u0435rification-ElementFinance/elf-contracts-637c6f959315cbb11a164555e588520c7d89122b/contracts/YVaultAssetProxy.sol",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "reserveDeposit",
    "lineNumber": "L49 - L80"
   }

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Checkdot Smart Contract/CheckdotERC20Contract-8a47ef13ace93e0bd473fb1c3893790569a2adc8/contracts/CheckDot.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Checkdot Smart Contract/CheckdotERC20Contract-8a47ef13ace93e0bd473fb1c3893790569a2adc8/contracts/CheckDot.sol",
  "SWCs": [
   {
-   "category": "SWC-Using old Solidity version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lineNumber": "L3"
   }

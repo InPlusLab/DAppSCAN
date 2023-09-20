@@ -26,7 +26,7 @@ contract Registry is IRegistry {
     /// @param version the version of the safeGuard
     function register(address safeGuard, uint8 version) external override {
         require(version != 0, "Registry: Invalid version");
-        //SWC-Code With No Effects: L30-L33
+        //SWC-135-Code With No Effects: L30-L33
         require(
             !safeGuards.contains(safeGuard),
             "Registry: SafeGuard already registered"

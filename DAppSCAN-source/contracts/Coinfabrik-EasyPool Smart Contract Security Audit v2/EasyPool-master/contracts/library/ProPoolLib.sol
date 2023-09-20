@@ -1,4 +1,4 @@
-// SWC-Outdated Compiler Version: L2
+// SWC-102-Outdated Compiler Version: L2
 pragma solidity ^0.4.24;
 
 import "../abstract/erc/IERC20Base.sol";
@@ -116,7 +116,7 @@ library ProPoolLib {
         address presaleAddress;
 
         // Presale address can be locked.
-        // SWC-Transaction Order Dependence: L120
+        // SWC-114-Transaction Order Dependence: L120
         bool lockPresale;
 
         // FeeService contract interface.

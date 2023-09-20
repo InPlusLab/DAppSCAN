@@ -22,7 +22,7 @@ contract IdentityProxy {
    * the IdentityProxyHub after it checks the identity heuristic.
    */
   function makeCall(address destination, bytes calldata data) external payable onlyDeployer {
-    // SWC-Unchecked Call Return Value: L26
+    // SWC-104-Unchecked Call Return Value: L26
     ExternalCall.execute(destination, msg.value, data);
   }
 }

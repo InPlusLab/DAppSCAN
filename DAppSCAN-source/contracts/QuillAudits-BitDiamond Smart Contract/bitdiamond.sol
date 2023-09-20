@@ -402,7 +402,7 @@ library Address {
  */
 contract Ownable is Context {
     address private _owner;
-//SWC-Shadowing State Variables：L404
+//SWC-119-Shadowing State Variables: L404
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
     /**
@@ -455,7 +455,7 @@ contract Ownable is Context {
 contract bitdiamond is Context, IBEP20, Ownable {
     using SafeMath for uint256;
     using Address for address;
-//SWC-Code With No Effects：L460
+//SWC-135-Code With No Effects: L460
     mapping (address => uint256) private _rOwned;
     mapping (address => uint256) private _tOwned;
     mapping (address => mapping (address => uint256)) private _allowances;

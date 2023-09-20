@@ -55,7 +55,7 @@ contract Crowdfund is NonZero, CanReclaimToken {
     event TokenPurchase(address indexed purchaser, uint256 value, uint256 amount);
 
     /////////////////////// MODIFIERS ///////////////////////
-//SWC-Block values as a proxy for time:L61、68、76、162、173、180
+//SWC-116-Block values as a proxy for time:L61、68、76、162、173、180
     // Ensure the crowdfund is ongoing
     modifier duringCrowdfund() {
         require(now >= startsAt && now <= endsAt, "time must be greater than start but less than end");

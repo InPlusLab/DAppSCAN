@@ -330,7 +330,7 @@ library Contract {
       // Increment buffer length - 0x24 plus the previous length
       mstore(ptr, add(0x24, mload(ptr)))
       // Set the current action being executed (STORES) -
-      // SWC-Code With No Effects: L334
+      // SWC-135-Code With No Effects: L334
       mstore(0xe0, action_req)
       // Set the expected next function - STORE_DEST
       mstore(0x100, 2)

@@ -136,7 +136,7 @@ contract TokenDrop is Initializable {
      * @dev Claim asset rewards
      * @param user User account
      */
-    // SWC-Reentrancy: L140-154
+    // SWC-107-Reentrancy: L140-154
     function claim(address user) external returns (uint256) {
         drop();
         _captureNewTokensForUser(user);

@@ -13,11 +13,11 @@ import "hardhat/console.sol";
 contract ContractsRegister is ACLTrait {
     // Pools list
     address[] public pools;
-    // SWC-State Variable Default Visibility: L17
+    // SWC-108-State Variable Default Visibility: L17
     mapping(address => bool) _poolSet;
 
     // Credit Managers list
-    // SWC-State Variable Default Visibility： L21
+    // SWC-108-State Variable Default Visibility: L21
     address[] public creditManagers;
     mapping(address => bool) _creditManagersSet;
 

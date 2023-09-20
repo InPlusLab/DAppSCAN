@@ -111,7 +111,7 @@ contract OKLGRaffle is OKLGProduct {
 
   function drawWinner(bytes32 _id) external {
     Raffle storage _raffle = raffles[_id];
-    // SWC-Weak Sources of Randomness from Chain Attributes: L115 - L159
+    // SWC-120-Weak Sources of Randomness from Chain Attributes: L115 - L159
     require(
       _raffle.end == 0 || block.timestamp > _raffle.end,
       'Raffle entry period is not over yet.'

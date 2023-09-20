@@ -49,7 +49,7 @@ library Encoding {
             }
         }
         // abusing underflow here =_=
-        // SWC-Integer Overflow and Underflow: L53
+        // SWC-101-Integer Overflow and Underflow: L53
         for (uint8 i = 15; i < 255; i -= 1) {
             uint8 _b = uint8(_bytes >> (i * 8));
             _secondHalf |= _byteHex(_b);

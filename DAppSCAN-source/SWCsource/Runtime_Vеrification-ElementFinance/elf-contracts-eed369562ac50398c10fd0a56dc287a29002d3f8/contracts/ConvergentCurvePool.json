@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Runtime_V\u0435rification-ElementFinance/elf-contracts-eed369562ac50398c10fd0a56dc287a29002d3f8/contracts/ConvergentCurvePool.sol",
+ "filePath": "DAppSCAN-source/contracts/Runtime_V\u0435rification-ElementFinance/elf-contracts-eed369562ac50398c10fd0a56dc287a29002d3f8/contracts/ConvergentCurvePool.sol",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_mintGovernanceLP",
    "lineNumber": "L607 - L612"
   }

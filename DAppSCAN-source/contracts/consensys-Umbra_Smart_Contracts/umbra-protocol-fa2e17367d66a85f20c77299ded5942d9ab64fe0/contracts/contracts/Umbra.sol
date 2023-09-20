@@ -304,7 +304,7 @@ contract Umbra is Ownable {
    * @param _r ECDSA signature component: x-coordinate of `R`
    * @param _s ECDSA signature component: `s` value of the signature
    */
-   // SWC-Missing Protection against Signature Replay Attacks: L308-330
+   // SWC-121-Missing Protection against Signature Replay Attacks: L308-330
   function _validateWithdrawSignature(
     address _stealthAddr,
     address _acceptor,

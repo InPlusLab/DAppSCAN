@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -145,7 +145,7 @@ contract Vesting is Ownable, ReentrancyGuard {
                     _input[i].unlockAt.length > MAX_LOCK_LENGTH
                 ) {
                     require(false, "Wrong array length");
-                    // SWC-Code With No Effects: L149
+                    // SWC-135-Code With No Effects: L149
                 } else if (_input[i].unlockAt.length == 0) {
                     require(false, "Zero array length");
                 }

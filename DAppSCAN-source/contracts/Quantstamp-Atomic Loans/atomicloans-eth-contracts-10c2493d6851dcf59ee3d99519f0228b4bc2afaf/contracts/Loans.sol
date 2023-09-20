@@ -10,7 +10,7 @@ import './P2WSHInterface.sol';
 import './ISPVRequestManager.sol';
 import './DSMath.sol';
 import './Medianizer.sol';
-//SWC-Floating Pragma: L14
+//SWC-103-Floating Pragma: L14
 pragma solidity ^0.5.10;
 
 contract Loans is DSMath {
@@ -487,7 +487,7 @@ contract Loans is DSMath {
                 }
 
                 collateralDeposits[loan][collateralDepositIndex[loan]].finalized = true;
-                //SWC-DoS With Block Gas Limit: L491-L497
+                //SWC-128-DoS With Block Gas Limit: L491-L497
                 for (uint i = collateralDepositFinalizedIndex[loan]; i < sub(collateralDepositIndex[loan], collateralDepositFinalizedIndex[loan]); i++) { // check if collateralDepositFinalizedIndex should be increased
                     if (collateralDeposits[loan][i].finalized == true) {
                         collateralDepositFinalizedIndex[loan] = add(collateralDepositFinalizedIndex[loan], 1);

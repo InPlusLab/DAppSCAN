@@ -22,7 +22,7 @@ contract OVM_ProxySequencerEntrypoint {
     fallback()
         external
     {
-        //SWC-Unchecked Call Return Value: L26-L30
+        //SWC-104-Unchecked Call Return Value: L26-L30
         Lib_SafeExecutionManagerWrapper.safeDELEGATECALL(
             gasleft(),
             _getImplementation(),

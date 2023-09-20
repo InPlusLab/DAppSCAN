@@ -476,7 +476,7 @@ contract VToken is VTokenInterface, Exponential, TokenErrorReporter {
         // mintFresh emits the actual Mint event if successful and logs on errors, so we don't need to
         return mintFresh(msg.sender, mintAmount);
     }
-    //SWC-Code With No Effects: L480-L488
+    //SWC-135-Code With No Effects: L480-L488
     struct MintLocalVars {
         Error err;
         MathError mathErr;

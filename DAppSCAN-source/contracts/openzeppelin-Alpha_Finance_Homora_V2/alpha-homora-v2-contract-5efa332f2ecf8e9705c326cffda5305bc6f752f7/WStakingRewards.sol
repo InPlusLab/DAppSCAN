@@ -28,7 +28,7 @@ contract WStakingRewards is ERC1155('WStakingRewards'), ReentrancyGuard, IERC20W
     reward = _reward;
     IERC20(_underlying).approve(_staking, uint(-1));
   }
-//SWC-Unchecked Call Return Value:L29
+//SWC-104-Unchecked Call Return Value:L29
   /// @dev Return the underlying ERC20 for the given ERC1155 token id.
   function getUnderlyingToken(uint) external view override returns (address) {
     return underlying;

@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/math/SafeMath.sol";
 
 library Random {
     using SafeMath for uint256;
-    //SWC-Weak Sources of Randomness from Chain Attributes: L11-L35
+    //SWC-120-Weak Sources of Randomness from Chain Attributes: L11-L35
     function computerSeed() internal view returns (uint256) {
         uint256 seed =
         uint256(

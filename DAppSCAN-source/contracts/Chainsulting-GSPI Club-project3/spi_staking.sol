@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.3;
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -32,7 +32,7 @@ contract Staking is Ownable, Pausable, ReentrancyGuard {
 
 	mapping(address => UserInfo) public userInfo;
 
-// SWC-
+// SWC-135-Code With No Effects: L36 
 	event StakeClaimed(address user, uint256 amount);
 	event RewardAdded(uint256 amount);
 	event EmissionRateChanged(uint256 newEmissionRate);

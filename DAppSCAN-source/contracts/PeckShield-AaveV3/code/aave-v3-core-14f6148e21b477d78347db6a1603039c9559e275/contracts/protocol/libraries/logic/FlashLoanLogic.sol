@@ -179,7 +179,7 @@ library FlashLoanLogic {
     uint256 premiumToProtocol;
     uint256 amountPlusPremium;
   }
-  //SWC-Reentrancy: L182-L240
+  //SWC-107-Reentrancy: L182-L240
   function executeFlashLoanSimple(
     DataTypes.ReserveData storage reserve,
     DataTypes.FlashloanSimpleParams memory params

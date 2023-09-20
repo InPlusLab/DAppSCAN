@@ -144,7 +144,7 @@ contract TheAbyssDAICO is Ownable, SafeMath, Pausable, ISimpleCrowdsale {
     /**
      * @dev check contribution amount and time
      */
-    //  SWC-Block values as a proxy for time: L148
+    //  SWC-116-Block values as a proxy for time: L148
     function isValidContribution() internal view returns(bool) {
         uint256 currentUserContribution = safeAdd(msg.value, userTotalContributed[msg.sender]);
         if(whiteList[msg.sender] && msg.value >= ETHER_MIN_CONTRIB) {

@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Bitbook Smart Contract V2/BitBookStake.sol",
+ "SWCs": [
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "owner",
+   "lineNumber": "L113"
+  }
+ ]
+}

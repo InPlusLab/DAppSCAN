@@ -1,5 +1,5 @@
 pragma solidity >=0.5.0 <0.6.0;
-//SWC-Contracts are unused:L1-45
+// Code With No Effects: L1-45
 import "./IERC20.sol";
 
 

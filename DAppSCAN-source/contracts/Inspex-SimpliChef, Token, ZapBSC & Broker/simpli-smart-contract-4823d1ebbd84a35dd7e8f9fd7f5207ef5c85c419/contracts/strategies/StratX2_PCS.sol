@@ -2249,7 +2249,7 @@ abstract contract StratX2 is Ownable, ReentrancyGuard, Pausable {
         emit WrapBNB();
     }
 
-// SWC-Transaction Order Dependence: L2253
+// SWC-114-Transaction Order Dependence: L2253
     function _safeSwap(
         address _uniRouterAddress,
         uint256 _amountIn,

@@ -171,7 +171,7 @@ contract CryptoHeroesUniverse is Ownable {
   }
 
   // Deposit LP tokens to Contract for cheroes allocation.
-  // SWC-Reentrancy: L175 - L203
+  // SWC-107-Reentrancy: L175 - L203
   function deposit(uint256 _pid, uint256 _amount) public {
 
 

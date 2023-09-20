@@ -15,7 +15,7 @@
   limitations under the License.
 
 */
-// SWC-Outdated Compiler Version: L19
+// SWC-102-Outdated Compiler Version: L19
 pragma solidity 0.4.10;
 
 import "../../multisig/MultiSigWalletWithTimeLock.sol";

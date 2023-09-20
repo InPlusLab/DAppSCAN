@@ -234,7 +234,7 @@ contract CoreVoting is Authorizable {
     /// @param proposalId proposal identifier.
     /// @param targets list of target addresses the timelock contract will interact with.
     /// @param calldatas execution calldata for each target.
-    // SWC-Reentrancy: L238 - L277
+    // SWC-107-Reentrancy: L238 - L277
     function execute(
         uint256 proposalId,
         address[] memory targets,

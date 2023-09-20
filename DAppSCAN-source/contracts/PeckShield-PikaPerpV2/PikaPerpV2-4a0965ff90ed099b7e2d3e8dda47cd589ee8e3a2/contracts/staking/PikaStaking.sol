@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "../perp/IPikaPerp.sol";
-//SWC-Code With No Effects: L11-L140
+//SWC-135-Code With No Effects: L11-L140
 contract PikaStaking is ReentrancyGuard, Pausable {
 
     using SafeERC20 for IERC20;

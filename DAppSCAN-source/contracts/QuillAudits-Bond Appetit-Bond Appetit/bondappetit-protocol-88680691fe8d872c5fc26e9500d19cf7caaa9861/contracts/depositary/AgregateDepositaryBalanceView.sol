@@ -46,7 +46,7 @@ contract AgregateDepositaryBalanceView is IDepositaryBalanceView, OwnablePausabl
      * @notice Add depositary address to agregate.
      * @param depositary Added depositary address.
      */
-    //  SWC-Code With No Effects: L50 - L71
+    //  SWC-135-Code With No Effects: L50 - L71
     function addDepositary(address depositary) external onlyOwner {
         require(depositariesIndex[depositary] == 0, "AgregateDepositaryBalanceView::addDepositary: depositary already added");
         require(size() < maxSize, "AgregateDepositaryBalanceView::addDepositary: too many depositaries");

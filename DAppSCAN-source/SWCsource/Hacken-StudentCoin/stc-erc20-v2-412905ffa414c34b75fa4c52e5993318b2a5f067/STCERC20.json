@@ -1,10 +1,10 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Hacken-StudentCoin/stc-erc20-v2-412905ffa414c34b75fa4c52e5993318b2a5f067/STCERC20.sol",
+ "filePath": "DAppSCAN-source/contracts/Hacken-StudentCoin/stc-erc20-v2-412905ffa414c34b75fa4c52e5993318b2a5f067/STCERC20.sol",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit\uff1aL20-21",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "batchTransfer",
-   "lineNumber": "//SWC-DoS With Block Gas Limit\uff1aL20-21"
+   "lineNumber": "L20-21"
   }
  ]
 }

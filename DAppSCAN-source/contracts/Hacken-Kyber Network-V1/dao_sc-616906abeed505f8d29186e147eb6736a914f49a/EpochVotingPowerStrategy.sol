@@ -62,7 +62,7 @@ contract EpochVotingPowerStrategy is IVotingPowerStrategy, EpochUtils {
    * @dev remove proposalId from proposalIds per epoch mapping, so when user withdraws,
    * voting power strategy is aware of which proposals are affected
    */
-//  SWC-Insufficient Gas Griefing：L66-79
+//  SWC-126-Insufficient Gas Griefing: L66-79
   function handleProposalCancellation(uint256 proposalId) external override onlyGovernance {
     IKyberGovernance.ProposalWithoutVote memory proposal = governance.getProposalById(proposalId);
     uint256 epoch = getEpochNumber(proposal.startTime);
@@ -97,7 +97,7 @@ contract EpochVotingPowerStrategy is IVotingPowerStrategy, EpochUtils {
    * @dev handle user withdraw from staking contract
    * @dev notice for governance that voting power for proposalIds in current epoch is changed
    */
-  //  SWC-DoS With Block Gas Limit：L100-112
+  //  SWC-128-DoS With Block Gas Limit: L100-112
   function handleWithdrawal(
     address user,
     uint256 /*reduceAmount*/

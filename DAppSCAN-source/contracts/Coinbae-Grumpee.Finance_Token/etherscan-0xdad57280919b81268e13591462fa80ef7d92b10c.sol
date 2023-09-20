@@ -390,7 +390,7 @@
         /**
         * @dev Returns the address of the current owner.
         */
-        // SWC-Shadowing State Variables: L394
+        // SWC-119-Shadowing State Variables: L394
         function owner() public view returns (address) {
             return _owner;
         }
@@ -483,7 +483,7 @@
             return true;
         }
 
-        // SWC-Shadowing State Variables: L486
+        // SWC-119-Shadowing State Variables: L486
         function allowance(address owner, address spender) public view override returns (uint256) {
             return _allowances[owner][spender];
         }
@@ -583,7 +583,7 @@
             return (_amount, _donation);
         }
 
-        // SWC-Shadowing State Variables: L587
+        // SWC-119-Shadowing State Variables: L587
         function _transfer(address sender, address recipient, uint256 amount) private {
             require(sender != address(0), "ERC20: transfer from the zero address");
             require(recipient != address(0), "ERC20: transfer to the zero address");

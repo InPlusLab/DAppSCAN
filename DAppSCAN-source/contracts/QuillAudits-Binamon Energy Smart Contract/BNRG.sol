@@ -101,7 +101,7 @@ contract BNRG is IERC20, Ownable {
         emit Transfer(msg.sender, receiver, numTokens);
         return true;
     }
-//SWC-Function Default Visibility：L105
+//SWC-100-Function Default Visibility: L105
     function approve(address delegate, uint256 numTokens) public override returns (bool) {
         allowed[msg.sender][delegate] = numTokens;
         emit Approval(msg.sender, delegate, numTokens);

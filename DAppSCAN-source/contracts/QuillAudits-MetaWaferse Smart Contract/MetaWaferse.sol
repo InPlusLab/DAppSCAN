@@ -4,7 +4,7 @@
 
 // SPDX-License-Identifier: none
 pragma solidity ^0.8.6; 
-//SWC-Floating Pragma:L6
+//SWC-103-Floating Pragma:L6
 contract Owned {
     
     /// Modifier for owner only function call
@@ -151,7 +151,7 @@ contract BEP20 is Owned {
         balances[account] += amount;
         emit Transfer(address(0), account, amount);
     }
-//    SWC-Code With No Effects:L145
+//    SWC-135-Code With No Effects:L145
     /**
      * @dev Destroys `amount` tokens from `account`, reducing the
      * total supply.

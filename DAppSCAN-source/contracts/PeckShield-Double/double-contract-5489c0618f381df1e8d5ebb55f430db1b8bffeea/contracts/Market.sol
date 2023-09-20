@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./IMarket.sol";
 import "./OwnableContract.sol";
 import "./IBaseDoNFT.sol";
-//SWC-Presence of unused variables: L9-L18
+//SWC-131-Presence of unused variables: L9-L18
 contract Market is OwnableContract,ReentrancyGuard,IMarket{
     uint64 constant private E5 = 1e5;
     uint64 constant private SECONDS_IN_DAY = 86400;

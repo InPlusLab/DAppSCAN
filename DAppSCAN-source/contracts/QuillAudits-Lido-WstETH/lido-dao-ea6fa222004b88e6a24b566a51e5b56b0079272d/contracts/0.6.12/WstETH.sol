@@ -54,7 +54,7 @@ contract WstETH is ERC20Permit {
         require(_stETHAmount > 0, "wstETH: can't wrap zero stETH");
         uint256 wstETHAmount = stETH.getSharesByPooledEth(_stETHAmount);
         _mint(msg.sender, wstETHAmount);
-        // SWC-Unchecked Call Return Value: L58
+        // SWC-104-Unchecked Call Return Value: L58
         stETH.transferFrom(msg.sender, address(this), _stETHAmount);
         return wstETHAmount;
     }
@@ -71,7 +71,7 @@ contract WstETH is ERC20Permit {
         require(_wstETHAmount > 0, "wstETH: zero amount unwrap not allowed");
         uint256 stETHAmount = stETH.getPooledEthByShares(_wstETHAmount);
         _burn(msg.sender, _wstETHAmount);
-        // SWC-Unchecked Call Return Value: L75
+        // SWC-104-Unchecked Call Return Value: L75
         stETH.transfer(msg.sender, stETHAmount);
         return stETHAmount;
     }

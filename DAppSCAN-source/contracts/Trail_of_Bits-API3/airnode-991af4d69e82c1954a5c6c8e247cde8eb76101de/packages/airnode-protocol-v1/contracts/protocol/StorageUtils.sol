@@ -133,7 +133,7 @@ contract StorageUtils is IStorageUtils {
         require(requester != address(0), "Requester address zero");
         require(fulfillFunctionId != bytes4(0), "Fulfill function ID zero");
         subscriptionId = keccak256(
-            // SWC-Hash Collisions With Multiple Variable Length Arguments: L137-L147
+            // SWC-133-Hash Collisions With Multiple Variable Length Arguments: L137-L147
             abi.encodePacked(
                 chainId,
                 airnode,

@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/openzeppelin-Fuel_Token/FUEL-Contracts-3717b751bb2fa57ae300776a93ee4d7d7beb2c07/FuelToken.sol",
+ "filePath": "DAppSCAN-source/contracts/openzeppelin-Fuel_Token/FUEL-Contracts-3717b751bb2fa57ae300776a93ee4d7d7beb2c07/FuelToken.sol",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "finalizePresale",
    "lineNumber": "L189"
   }

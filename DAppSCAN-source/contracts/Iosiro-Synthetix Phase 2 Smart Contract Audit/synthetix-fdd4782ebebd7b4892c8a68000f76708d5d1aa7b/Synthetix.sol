@@ -429,7 +429,7 @@ contract Synthetix is ExternStateToken {
 
         // verify gas price limit
         gasPriceLimit.validateGasPrice(tx.gasprice);
-//SWC-Transaction Order Dependence:L434-440
+//SWC-114-Transaction Order Dependence:L434-440
         //  If protectionCircuit is true then we burn the synths through _internalLiquidation()
         if (protectionCircuit) {
             return _internalLiquidation(

@@ -125,7 +125,7 @@ contract AllocationStaking is OwnableUpgradeable {
     }
 
     // Fund the farm, increase the end block
-    // SWC-Integer Overflow and Underflow: L129-134
+    // SWC-101-Integer Overflow and Underflow: L129-134
     function fund(uint256 _amount) public {
         require(block.timestamp < endTimestamp, "fund: too late, the farm is closed");
         erc20.safeTransferFrom(address(msg.sender), address(this), _amount);
@@ -203,7 +203,7 @@ contract AllocationStaking is OwnableUpgradeable {
     // NOTE: this is not necessarily the sum of all pending sums on all pools and users
     //      example 1: when tokens have been wiped by emergency withdraw
     //      example 2: when one pool has no LP supply
-    // SWC-Integer Overflow and Underflow: L207-214
+    // SWC-101-Integer Overflow and Underflow: L207-214
     function totalPending() external view returns (uint256) {
         if (block.timestamp <= startTimestamp) {
             return 0;
@@ -468,7 +468,7 @@ contract AllocationStaking is OwnableUpgradeable {
     }
 
     // Transfer ERC20 and update the required ERC20 to payout all rewards
-    // SWC-Integer Overflow and Underflow: L472-475
+    // SWC-101-Integer Overflow and Underflow: L472-475
     function erc20Transfer(address _to, uint256 _amount) internal {
         erc20.transfer(_to, _amount);
         paidOut += _amount;

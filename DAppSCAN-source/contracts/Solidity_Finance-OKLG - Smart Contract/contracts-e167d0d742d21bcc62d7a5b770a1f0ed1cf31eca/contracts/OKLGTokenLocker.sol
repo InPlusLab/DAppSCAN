@@ -122,7 +122,7 @@ contract MTGYTokenLocker is OKLGProduct {
       'Must be locker owner or a withdrawable wallet.'
     );
 
-    // SWC-Reentrancy: L126
+    // SWC-107-Reentrancy: L126
     _locker.amountWithdrawn += _locker.isNft ? 1 : _amountOrTokenId;
 
     if (_locker.isNft) {

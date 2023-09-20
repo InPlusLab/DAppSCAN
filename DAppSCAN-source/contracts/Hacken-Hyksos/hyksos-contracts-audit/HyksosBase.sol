@@ -28,7 +28,7 @@ abstract contract HyksosBase is IHyksos, DepositQueue {
     }
 
     function payErc20(address _receiver, uint256 _amount) internal virtual;
-//SWC-DoS With Block Gas Limit：L32-85
+//SWC-128-DoS With Block Gas Limit: L32-85
     function distributeRewards(uint256 _id, uint256 _reward, uint256 _nftWorkValue) internal {
             withdrawNftAndRewardCaller(_id, _reward, _nftWorkValue);
     }

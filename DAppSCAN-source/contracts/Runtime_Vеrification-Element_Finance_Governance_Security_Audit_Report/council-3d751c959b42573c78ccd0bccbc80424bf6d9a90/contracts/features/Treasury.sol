@@ -65,7 +65,7 @@ contract Treasury {
     ///@notice Performs a generic call from this contract.
     ///@param _target The target address where the call will be performed.
     ///@param _callData The execution calldata to pass.
-    // SWC-Unchecked Call Return Value: L73
+    // SWC-104-Unchecked Call Return Value: L73
     function genericCall(address _target, bytes calldata _callData)
         external
         onlyGovernance

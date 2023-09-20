@@ -144,7 +144,7 @@ contract DelegatorFactory is Ownable, ReentrancyGuard, DSTest {
     * @dev Only owner  can call it
     * @dev Increases duration of rewards
     */
-   //  SWC-Requirement Violation: L147 - L174
+   //  SWC-123-Requirement Violation: L147 - L174
    function notifyRewardAmount(uint256 reward_)
       external
       onlyOwner

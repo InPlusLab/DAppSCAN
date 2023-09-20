@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity 0.5.17;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol";

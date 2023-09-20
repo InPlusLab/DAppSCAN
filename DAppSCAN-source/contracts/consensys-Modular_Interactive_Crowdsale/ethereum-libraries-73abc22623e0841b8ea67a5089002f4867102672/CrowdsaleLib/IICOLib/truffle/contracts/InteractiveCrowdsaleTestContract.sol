@@ -18,7 +18,7 @@ contract InteractiveCrowdsaleTestContract {
 
   function InteractiveCrowdsaleTestContract(
     address owner,
-    // SWC-Code With No Effects: L22
+    // SWC-135-Code With No Effects: L22
     uint256[] saleData,
     uint256 priceBonusPercent,
     uint256 minimumRaise,

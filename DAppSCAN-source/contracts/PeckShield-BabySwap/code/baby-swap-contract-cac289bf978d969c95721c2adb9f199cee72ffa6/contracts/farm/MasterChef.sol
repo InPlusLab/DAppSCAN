@@ -245,7 +245,7 @@ contract MasterChef is Ownable {
     }
 
     // Withdraw LP tokens from MasterChef.
-    //SWC-Reentrancy: L249-L267
+    //SWC-107-Reentrancy: L249-L267
     function withdraw(uint256 _pid, uint256 _amount) public {
 
         require (_pid != 0, 'withdraw CAKE by unstaking');

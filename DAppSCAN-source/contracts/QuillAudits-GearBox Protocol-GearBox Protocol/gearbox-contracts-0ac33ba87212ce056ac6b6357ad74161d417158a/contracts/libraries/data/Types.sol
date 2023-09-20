@@ -5,7 +5,7 @@ pragma solidity ^0.7.4;
 
 /// @title DataType library
 /// @notice Contains data types used in data compressor.
-// SWC-Code With No Effects: L1 - L115
+// SWC-135-Code With No Effects: L1 - L115
 library DataTypes {
     struct Exchange {
         address[] path;

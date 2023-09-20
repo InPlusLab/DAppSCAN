@@ -238,7 +238,7 @@ contract IdleCDO is Initializable, PausableUpgradeable, GuardedLaunchUpgradable,
   /// @param _amount amount of underlyings (`token`) to deposit
   /// @param _tranche tranche address
   /// @return _minted number of tranche tokens minted
-  // SWC-Reentrancy: L242-258
+  // SWC-107-Reentrancy: L242-258
   function _deposit(uint256 _amount, address _tranche) internal returns (uint256 _minted) {
     // check that we are not depositing more than the contract available limit
     _guarded(_amount);

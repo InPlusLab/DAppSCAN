@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-CoinDogg Smart Contract/CoinDogg.sol",
+ "SWCs": [
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "_transfer",
+   "lineNumber": "L387"
+  },
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "_mint",
+   "lineNumber": "L407"
+  }
+ ]
+}

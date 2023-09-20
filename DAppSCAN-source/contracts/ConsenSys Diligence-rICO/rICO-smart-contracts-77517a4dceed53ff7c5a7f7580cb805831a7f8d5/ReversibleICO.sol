@@ -226,7 +226,7 @@ contract ReversibleICO is IERC777Recipient {
      * @param _stageBlockCount The duration of each stage in blocks.
      * @param _stagePriceIncrease A factor used to increase the token price from the _commitPhasePrice at each subsequent stage. The increase already happens in the first stage too.
      */
-//    SWC-DoS with Failed Call：L230-299
+//    SWC-113-DoS with Failed Call: L230-299
     function init(
         address _tokenAddress,
         address _whitelistingAddress,
@@ -943,7 +943,7 @@ contract ReversibleICO is IERC777Recipient {
         calcParticipantAllocation(_participantAddress);
 
         // Iterate over all stages and their pending contributions
-//        SWC-Shadowing State Variables：L948
+//        SWC-119-Shadowing State Variables: L948
         for (uint8 stageId = 0; stageId <= currentStage; stageId++) {
             ParticipantStageDetails storage stages = participantStats.stages[stageId];
 

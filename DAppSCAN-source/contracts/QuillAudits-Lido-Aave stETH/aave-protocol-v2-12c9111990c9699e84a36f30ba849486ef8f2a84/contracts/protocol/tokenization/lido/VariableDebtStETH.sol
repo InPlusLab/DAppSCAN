@@ -171,7 +171,7 @@ contract VariableDebtStETH is DebtTokenBase, IVariableDebtToken {
     return (super.totalSupply(), _totalSharesBorrowed);
   }
 
-  // SWC-Code With No Effects: L175 - L177
+  // SWC-135-Code With No Effects: L175 - L177
   function fetchStETHTotalSupply() internal view returns (uint256) {
     return ISTETH(UNDERLYING_ASSET_ADDRESS).totalSupply();
   }

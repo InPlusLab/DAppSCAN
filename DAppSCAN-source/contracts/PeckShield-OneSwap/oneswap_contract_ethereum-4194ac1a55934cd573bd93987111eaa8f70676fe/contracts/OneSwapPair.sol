@@ -998,7 +998,7 @@ contract OneSwapPair is OneSwapPool, IOneSwapPair {
         // for buy-order, it's stock amount; for sell-order, it's money amount
         uint amountToTaker = outAmount + otherToTaker;
         require(amountToTaker < uint(1<<112), "OneSwap: AMOUNT_TOO_LARGE");
-        //SWC-Integer Overflow and Underflow: L1002
+        //SWC-101-Integer Overflow and Underflow: L1002
         uint fee = amountToTaker * feeBPS / 10000;
         amountToTaker -= fee;
 

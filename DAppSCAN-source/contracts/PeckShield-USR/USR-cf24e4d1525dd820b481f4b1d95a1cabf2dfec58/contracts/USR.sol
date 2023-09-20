@@ -291,7 +291,7 @@ contract USR is LibNote, Pausable, ERC20SafeTransfer {
      * @return int > 0 indicates no debts,
      *         otherwise in debt, and it indicates lossing amount, scaled by 1e18.
      */
-    //  SWC-Typographical Error: L295
+    //  SWC-129-Typographical Error: L295
     function equity() external view returns (int) {
         uint _totalAmount = rmul(totalSupply, getExchangeRate());
         uint _banance = IERC20(usdx).balanceOf(address(this));

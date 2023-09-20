@@ -233,7 +233,7 @@ contract MasterMilker is Ownable {
     }
 
     // Withdraw without caring about rewards. EMERGENCY ONLY.
-    //SWC-Reentrancy: L237-L244
+    //SWC-107-Reentrancy: L237-L244
     function emergencyWithdraw(uint256 _pid) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];

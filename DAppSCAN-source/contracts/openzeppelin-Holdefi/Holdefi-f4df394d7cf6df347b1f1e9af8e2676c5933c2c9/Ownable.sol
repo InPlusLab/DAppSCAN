@@ -29,7 +29,7 @@ contract Ownable {
 
         emit OwnershipTransferRequested(newOwner);
     }
-//SWC-Transaction Order Dependence:L26-31,34-42
+//SWC-114-Transaction Order Dependence:L26-31,34-42
     // Owner changer can accept if owner call transferOwnership function
     function acceptTransferOwnership () external {
         require (msg.sender == ownerChanger, 'Sender should be ownerChanger');

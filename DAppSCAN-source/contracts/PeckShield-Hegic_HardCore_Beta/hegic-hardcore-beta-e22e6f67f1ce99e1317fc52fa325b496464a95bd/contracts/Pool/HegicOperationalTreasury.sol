@@ -177,7 +177,7 @@ contract HegicOperationalTreasury is IHegicOperationalTreasury, AccessControl {
     }
 
     function _replenish(uint256 additionalAmount) internal {
-        //SWC-Integer Overflow and Underflow: L181
+        //SWC-101-Integer Overflow and Underflow: L181
         uint256 transferAmount =
             benchmark + additionalAmount - totalBalance + lockedPremium;
         stakeandcoverPool.payOut(transferAmount);

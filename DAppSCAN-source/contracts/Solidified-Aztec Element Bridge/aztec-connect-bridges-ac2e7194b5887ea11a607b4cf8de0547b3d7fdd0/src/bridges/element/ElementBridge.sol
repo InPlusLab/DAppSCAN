@@ -459,7 +459,7 @@ contract ElementBridge is IDefiBridge {
         ERC20(inputAssetA.erc20Address).approve(balancerAddress, totalInputValue);
         // execute the swap on balancer
         address inputAsset = inputAssetA.erc20Address;
-        // SWC-Unchecked Call Return Value: L463
+        // SWC-104-Unchecked Call Return Value: L463
         uint256 principalTokensAmount = IVault(balancerAddress).swap(
             IVault.SingleSwap({
                 poolId: pool.poolId,

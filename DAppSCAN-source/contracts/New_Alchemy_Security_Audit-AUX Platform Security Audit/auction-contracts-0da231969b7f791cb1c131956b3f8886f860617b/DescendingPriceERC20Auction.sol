@@ -1,7 +1,7 @@
 pragma solidity ^0.4.23;
-//SWC-Transaction Order Dependence:L1-492
+//SWC-114-Transaction Order Dependence:L1-492
 // File: openzeppelin-solidity/contracts/ownership/Ownable.sol
-//SWC-Transaction Order Dependence:L1-482
+//SWC-114-Transaction Order Dependence:L1-482
 /**
  * @title Ownable
  * @dev The Ownable contract has an owner address, and provides basic authorization control
@@ -252,7 +252,7 @@ contract DescendingPriceAuction is AuctionBase, FeeCollector {
 
     auctionIdToAcceptingBids[auctionId] = false;
     transferWinnings(msg.sender, auctionId);
-//SWC-Code With No Effects:L245
+//SWC-135-Code With No Effects:L245
     //Check for overbid.
     uint256 overbidAmount = msg.value.sub(currentPrice);
     if (overbidAmount > 0) {

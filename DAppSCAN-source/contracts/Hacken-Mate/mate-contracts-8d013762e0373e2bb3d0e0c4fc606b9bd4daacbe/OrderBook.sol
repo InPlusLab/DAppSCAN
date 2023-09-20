@@ -59,7 +59,7 @@ contract OrderBook is UniswapHandler, Pausable {
      * @param _recipient Address of dest token recipient
      * @param _expiration Unix timestamp of order expiration
      */
-//    SWC-Block values as a proxy for time:L76、105、145
+//    SWC-116-Block values as a proxy for time:L76、105、145
     function placeOrder(
         address _tokenIn,
         address _tokenOut,

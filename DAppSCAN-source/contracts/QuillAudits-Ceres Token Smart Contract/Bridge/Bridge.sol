@@ -1,6 +1,6 @@
 pragma solidity ^0.7.4;
 // "SPDX-License-Identifier: Apache License 2.0"
-//SWC-Floating Pragma：L1，all contract
+//SWC-103-Floating Pragma: L1, all contract
 import "./MasterToken.sol";
 import "./Ownable.sol";
 import "./ERC20Burnable.sol";

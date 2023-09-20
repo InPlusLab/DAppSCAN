@@ -371,7 +371,7 @@ contract LenderPool is ILenderPool, Ownable {
      * @param amountOutMin, The minimum amount tokens to receive
      * @return amount TRADE swapped
      */
-    //  SWC-Transaction Order Dependence: L375
+    //  SWC-114-Transaction Order Dependence: L375
     function _swapExactTokens(
         address lender,
         uint roundId,

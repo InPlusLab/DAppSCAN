@@ -991,7 +991,7 @@ contract MoonShip is Context, IBEP20, Ownable, ReentrancyGuard {
         if (_isExcluded[account]) return _tOwned[account];
         return tokenFromReflection(_rOwned[account]);
     }
-//SWC-Reentrancy:L995.1009
+//SWC-107-Reentrancy:L995.1009
     function transfer(address recipient, uint256 amount) public override returns (bool) {
         _transfer(_msgSender(), recipient, amount, 0);
         return true;
@@ -1249,7 +1249,7 @@ contract MoonShip is Context, IBEP20, Ownable, ReentrancyGuard {
         } else {
             _transferStandard(sender, recipient, amount);
         }
-//SWC-Code With No Effects:L1245
+//SWC-135-Code With No Effects:L1245
         if (!takeFee)
             restoreAllFee();
     }

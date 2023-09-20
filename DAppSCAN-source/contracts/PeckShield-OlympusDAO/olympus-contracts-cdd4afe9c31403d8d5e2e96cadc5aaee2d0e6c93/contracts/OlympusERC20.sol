@@ -1241,7 +1241,7 @@ contract VaultOwned is Ownable {
   }
 
 }
-//SWC-Code With No Effects: L1245-L1303
+//SWC-135-Code With No Effects: L1245-L1303
 contract TWAPOracleUpdater is ERC20Permit, VaultOwned {
 
   using EnumerableSet for EnumerableSet.AddressSet;

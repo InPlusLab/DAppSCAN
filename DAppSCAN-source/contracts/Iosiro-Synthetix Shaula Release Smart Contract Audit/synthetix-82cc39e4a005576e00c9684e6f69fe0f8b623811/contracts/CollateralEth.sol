@@ -74,7 +74,7 @@ contract CollateralEth is Collateral, ICollateralEth {
 
         pendingWithdrawals[msg.sender] = pendingWithdrawals[msg.sender].sub(amount);
 
-// SWC-Message call with hardcoded gas amount: L78
+// SWC-134-Message call with hardcoded gas amount: L78
         msg.sender.transfer(amount);
     }
 }

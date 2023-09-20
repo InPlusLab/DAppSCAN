@@ -25,7 +25,7 @@ contract VVET9 is StakingModel, IVthoClaimable {
         emit Deposit(msg.sender, msg.value);
     }
 
-// SWC-Code With No Effects: L29 - L34
+// SWC-135-Code With No Effects: L29 - L34
     function withdraw(uint256 wad) public {
         require(vetBalance(msg.sender) >= wad);
         removeVET(msg.sender, wad);
@@ -42,7 +42,7 @@ contract VVET9 is StakingModel, IVthoClaimable {
         return address(this).balance;
     }
 
-// SWC-Transaction Order Dependence: L44-48
+// SWC-114-Transaction Order Dependence: L44-48
     function approve(address guy, uint256 wad) public returns (bool) {
         allowance[msg.sender][guy] = wad;
         emit Approval(msg.sender, guy, wad);

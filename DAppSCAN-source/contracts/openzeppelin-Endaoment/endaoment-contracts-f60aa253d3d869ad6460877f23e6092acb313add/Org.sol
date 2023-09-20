@@ -95,7 +95,7 @@ contract Org is Administratable {
         token.transfer(desiredWithdrawlAddress, cashOutAmount);
         emit cashOutComplete(cashOutAmount);
     }
-//SWC-Unchecked Call Return Value:L93,95
+//SWC-104-Unchecked Call Return Value:L93,95
     function setOrgWallet(address providedWallet, address adminContractAddress) public onlyAdminOrRole(adminContractAddress, IEndaomentAdmin.Role.REVIEWER){
         orgWallet = providedWallet;
     }

@@ -158,7 +158,7 @@ abstract contract BaseStrategy {
     }
 
     bool public emergencyExit;
-//SWC-Unchecked Call Return Value:L164
+//SWC-104-Unchecked Call Return Value:L164
     constructor(address _vault) public {
         vault = VaultAPI(_vault);
         want = IERC20(vault.token());
@@ -331,7 +331,7 @@ abstract contract BaseStrategy {
         uint256 credit = vault.creditAvailable();
         return (profitFactor * callCost < credit.add(profit));
     }
-//SWC-Integer Overflow and Underflow:L332
+//SWC-101-Integer Overflow and Underflow:L332
     function harvest() external {
         if (keeper != address(0)) {
             require(msg.sender == keeper || msg.sender == strategist || msg.sender == governance(), "!authorized");

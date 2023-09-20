@@ -1,8 +1,8 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/Quantstamp-SKALE Allocator/skale-allocator-b427bb2eab1b137cff2f7d216248079a40d3e7b2/contracts/thirdparty/BokkyPooBahsDateTimeLibrary.sol",
+ "filePath": "DAppSCAN-source/contracts/Quantstamp-SKALE Allocator/skale-allocator-b427bb2eab1b137cff2f7d216248079a40d3e7b2/contracts/thirdparty/BokkyPooBahsDateTimeLibrary.sol",
  "SWCs": [
   {
-   "category": "SWC-Requirement Violation",
+   "category": "SWC-123-Requirement Violation",
    "function": "addYears",
    "lineNumber": "L218"
   }

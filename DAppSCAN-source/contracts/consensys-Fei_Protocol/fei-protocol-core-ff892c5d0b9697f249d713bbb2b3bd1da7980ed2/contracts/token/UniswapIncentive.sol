@@ -124,7 +124,7 @@ contract UniswapIncentive is IUniswapIncentive, UniRef {
         Decimal.D256 memory penalty = calculateSellPenaltyMultiplier(deviation);
         return incentive.equals(penalty);
     }
-    // SWC-Integer Overflow and Underflow: L128-149
+    // SWC-101-Integer Overflow and Underflow: L128-149
     function getBuyIncentive(uint amount) public view override returns(
         uint incentive, 
         uint32 weight,

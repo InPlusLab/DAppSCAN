@@ -1,4 +1,4 @@
-// SWC-Integer Overflow and Underflow: L2-L230
+// SWC-101-Integer Overflow and Underflow: L2-L230
 pragma solidity ^0.4.18;
 
 /**

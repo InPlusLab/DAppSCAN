@@ -198,13 +198,13 @@ contract GovStaking is Ownable, ReentrancyGuard, Pausable {
         emit Claim(msg.sender, toClaim);
     }
 
-// SWC-Function Default Visibility: L202 - L205
+// SWC-100-Function Default Visibility: L202 - L205
     function claim() public nonReentrant whenNotPaused {
         rewards.updateAllRewards(msg.sender);
         _claim();
     }
 
-// SWC-Function Default Visibility: L208 - L212
+// SWC-100-Function Default Visibility: L208 - L212
     function claimAll() public nonReentrant whenNotPaused {
         rewards.updateAllRewards(msg.sender);
         _claim();
@@ -284,7 +284,7 @@ contract GovStaking is Ownable, ReentrancyGuard, Pausable {
                 (max - min)) + rewardRates[min];
     }
 
-// SWC-Function Default Visibility: L288 - l299
+// SWC-100-Function Default Visibility: L288 - l299
     function earned() public view returns (uint256) {
         GovStakingStorage.UserInfo memory user = store.getUserInformation(
             msg.sender

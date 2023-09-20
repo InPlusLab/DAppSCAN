@@ -209,7 +209,7 @@ library ReserveLogic {
       reserveCache.nextVariableBorrowIndex
     );
   }
-  //SWC-Presence of unused variables: L213-L222
+  //SWC-131-Presence of unused variables: L213-L222
   struct AccrueToTreasuryLocalVars {
     uint256 prevTotalStableDebt;
     uint256 prevTotalVariableDebt;

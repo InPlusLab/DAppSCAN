@@ -17,7 +17,7 @@ library TransferHelper {
         uint256 value
     ) internal {
         (bool success, bytes memory data) =
-        // SWC-Unchecked Call Return Value: L21
+        // SWC-104-Unchecked Call Return Value: L21
             token.call(abi.encodeWithSelector(IERC20Minimal.transfer.selector, to, value));
         require(success && (data.length == 0 || abi.decode(data, (bool))), 'TF');
     }

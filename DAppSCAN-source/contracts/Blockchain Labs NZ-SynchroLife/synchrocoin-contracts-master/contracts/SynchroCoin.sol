@@ -114,7 +114,7 @@ contract SynchroCoin is Ownable, StandardToken {
     function withdraw() public returns (bool success){
         return proxyWithdraw(msg.sender);
     }
-    // SWC-Function Default Visibility: L118
+    // SWC-100-Function Default Visibility: L118
     function proxyWithdraw(address participant) public returns (bool success){
         require(now > ENDDATE);
         require(withdrawalStatuses[participant]);

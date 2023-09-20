@@ -1,7 +1,7 @@
 /**
  *Submitted for verification at Etherscan.io on 2020-10-13
 */
-// SWC-Outdated Compiler Version: L5
+// SWC-102-Outdated Compiler Version: L5
 pragma solidity ^0.5.16;
 
 interface IERC20 {

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.6.12;
-//SWC-Outdated Compiler Version:L3,all contract
+//SWC-102-Outdated Compiler Version:L3,all contract
 import "./Context.sol";
 import "./IERC20.sol";
 import "./SafeMath.sol";

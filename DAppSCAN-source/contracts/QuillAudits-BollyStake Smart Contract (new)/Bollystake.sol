@@ -837,7 +837,8 @@ contract Bollystake is ERC20("sBOLLY Staked Bollycoin", "sBOLLY"),Ownable{
     uint256 private constant _TIMELOCK_540 = 54 minutes;
     uint256 private constant _TIMELOCK_730 = 73 minutes;
 
-//     SWC-Code With No Effects：L845，SWC-State Variable Default Visibility：L845-846
+// SWC-135-Code With No Effects: L846
+// SWC-108-State Variable Default Visibility: L846-847
      struct locked{
         uint256 expire;
         uint256 locked_amount;
@@ -1012,7 +1013,7 @@ contract Bollystake is ERC20("sBOLLY Staked Bollycoin", "sBOLLY"),Ownable{
         _mint(msg.sender, _amount);
         emit _enter_stake(_amount,msg.sender,_days);
     }
-//    SWC-Block values as a proxy for time：L1022
+//    SWC-116-Block values as a proxy for time: L1022
     function relock_stake(uint256 _days) external {
         (bool _isStakeholder, ) = isStakeholder(msg.sender);
         require(_isStakeholder==true, "only current stakeholders can relock stake");

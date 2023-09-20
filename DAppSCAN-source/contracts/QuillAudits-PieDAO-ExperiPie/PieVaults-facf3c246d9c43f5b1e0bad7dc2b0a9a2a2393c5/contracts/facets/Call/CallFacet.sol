@@ -40,7 +40,7 @@ contract CallFacet is ReentryProtection, ICallFacet {
 
     callStorage.canCall[_caller] = false;
 
-    // SWC-DoS With Block Gas Limit: L44 - L53
+    // SWC-128-DoS With Block Gas Limit: L44 - L53
     for(uint256 i = 0; i < callStorage.callers.length; i ++) {
       address currentCaller = callStorage.callers[i];
 
@@ -65,7 +65,7 @@ contract CallFacet is ReentryProtection, ICallFacet {
       "ARRAY_LENGTH_MISMATCH"
     );
 
-    // SWC-DoS With Block Gas Limit: L69 -L71
+    // SWC-128-DoS With Block Gas Limit: L69 -L71
     for (uint256 i = 0; i < _targets.length; i++) {
       _call(_targets[i], _calldata[i], _values[i]);
     }
@@ -80,7 +80,7 @@ contract CallFacet is ReentryProtection, ICallFacet {
       "ARRAY_LENGTH_MISMATCH"
     );
 
-    // SWC-DoS With Block Gas Limit: L84 - L86
+    // SWC-128-DoS With Block Gas Limit: L84 - L86
     for (uint256 i = 0; i < _targets.length; i++) {
       _call(_targets[i], _calldata[i], 0);
     }

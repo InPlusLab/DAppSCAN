@@ -20,7 +20,7 @@ contract RandomBase is OwnedEternalStorage, IRandom {
 
     /// @dev Ensures the caller is the ValidatorSet contract address
     /// (EternalStorageProxy proxy contract for ValidatorSet).
-    //SWC-Code With No Effects: L24-L27
+    //SWC-135-Code With No Effects: L24-L27
     modifier onlyValidatorSetContract() {
         require(msg.sender == address(validatorSetContract()));
         _;

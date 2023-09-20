@@ -58,7 +58,7 @@ interface IStructs {
     /// @param currentEpochBalance balance in the current epoch.
     /// @param nextEpochBalance balance in `currentEpoch+1`.
     struct StoredBalance {
-        // SWC-Code With No Effects: L62
+        // SWC-135-Code With No Effects: L62
         bool isInitialized;
         uint32 currentEpoch;
         uint96 currentEpochBalance;
@@ -111,7 +111,7 @@ interface IStructs {
     /// @param operatorShare Fraction of the total balance owned by the operator, in ppm.
     /// @param numberOfMakers Number of makers in the pool.
     struct Pool {
-        // SWC-Code With No Effects: L115
+        // SWC-135-Code With No Effects: L115
         bool initialized;
         address payable operator;
         uint32 operatorShare;

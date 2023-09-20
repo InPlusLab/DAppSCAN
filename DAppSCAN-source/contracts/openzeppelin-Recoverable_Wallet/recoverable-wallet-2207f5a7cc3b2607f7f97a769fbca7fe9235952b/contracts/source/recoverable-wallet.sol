@@ -35,7 +35,7 @@ contract Ownable {
 		_;
 	}
 
-	//SWC-Transaction Order Dependence: L39-L57
+	//SWC-114-Transaction Order Dependence: L39-L57
 	function start_ownership_transfer(address _pending_owner) external only_owner {
 		require(_pending_owner != address(0), "Contract must have an owner.");
 		pending_owner = _pending_owner;
@@ -65,7 +65,7 @@ contract RecoverableWallet is Ownable, Erc777TokensRecipient {
 
 	mapping(address => uint16) public recovery_delays;
 	address public active_recovery_address;
-	//SWC-Presence of unused variables: L68
+	//SWC-131-Presence of unused variables: L68
 	uint256 public active_recovery_end_time = uint256(-1);
 
 	modifier only_during_recovery() {
@@ -86,7 +86,7 @@ contract RecoverableWallet is Ownable, Erc777TokensRecipient {
 	// accept ETH into this contract
 	function () external payable { }
 
-	//SWC-Transaction Order Dependence: L88-L128
+	//SWC-114-Transaction Order Dependence: L88-L128
 	function add_recovery_address(address _new_recovery_address, uint16 _recovery_delay_in_days) external only_owner only_outside_recovery {
 		require(_recovery_delay_in_days > 0, "Recovery delay must be at least 1 day.");
 		recovery_delays[_new_recovery_address] = _recovery_delay_in_days;
@@ -120,7 +120,7 @@ contract RecoverableWallet is Ownable, Erc777TokensRecipient {
 	}
 
 	function finish_recovery() external only_during_recovery {
-		//SWC-Code With No Effects: L124
+		//SWC-135-Code With No Effects: L124
 		require(active_recovery_address != address(0), "No recovery in progress.");
 		require(block.timestamp > active_recovery_end_time, "You must wait until the recovery delay is over before finishing the recovery.");
 
@@ -147,7 +147,7 @@ contract RecoverableWallet is Ownable, Erc777TokensRecipient {
 	}
 
 	function reset_recovery() private {
-		//SWC-Presence of unused variables: L146
+		//SWC-131-Presence of unused variables: L146
 		active_recovery_address = address(0);
 		active_recovery_end_time = uint256(-1);
 	}

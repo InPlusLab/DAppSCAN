@@ -245,7 +245,7 @@ contract STokensV2 is
 		uint256 _lastMovingRewardLength = _lastMovingRewardTimestamp.length.sub(
 			1
 		);
-		// SWC-DoS With Block Gas Limit: L249
+		// SWC-128-DoS With Block Gas Limit: L249
 		for (_index = _lastMovingRewardLength; _index >= 0; ) {
 			// logic applies for all indexes of array except last index
 			if (_index < _lastMovingRewardTimestamp.length.sub(1)) {

@@ -21,7 +21,7 @@ contract UniswapHandler {
      * @param _recipient Address to send output tokens to
      * @return Amount of output tokens received
      */
-//    SWC-Block values as a proxy for time:L38
+//    SWC-116-Block values as a proxy for time:L38
     function _swap(
         address[] memory _path,
         uint256 _amountIn,

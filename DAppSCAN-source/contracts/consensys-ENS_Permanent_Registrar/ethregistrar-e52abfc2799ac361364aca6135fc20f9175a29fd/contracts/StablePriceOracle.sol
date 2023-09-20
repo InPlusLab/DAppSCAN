@@ -54,7 +54,7 @@ contract StablePriceOracle is Ownable, PriceOracle {
      * @param duration How long the name is being registered or extended for, in seconds.
      * @return The price of this renewal or registration, in wei.
      */
-    // SWC-Integer Overflow and Underflow: L58-L64
+    // SWC-101-Integer Overflow and Underflow: L58-L64
     function price(string calldata name, uint /*expires*/, uint duration) view external returns(uint) {
         uint len = name.strlen();
         require(len > 0);

@@ -174,7 +174,7 @@ contract xMPH is ERC20Upgradeable, AccessControlUpgradeable {
         require(_mphAmount > 0, "xMPH: amount");
         shareAmount = _mphAmount.decdiv(getPricePerFullShare());
         _mint(msg.sender, shareAmount);
-        // SWC-Unchecked Call Return Value: L178
+        // SWC-104-Unchecked Call Return Value: L178
         mph.transferFrom(msg.sender, address(this), _mphAmount);
     }
 
@@ -192,7 +192,7 @@ contract xMPH is ERC20Upgradeable, AccessControlUpgradeable {
         );
         mphAmount = _shareAmount.decmul(getPricePerFullShare());
         _burn(msg.sender, _shareAmount);
-        // SWC-Unchecked Call Return Value: L196
+        // SWC-104-Unchecked Call Return Value: L196
         mph.transfer(msg.sender, mphAmount);
     }
 
@@ -209,7 +209,7 @@ contract xMPH is ERC20Upgradeable, AccessControlUpgradeable {
         require(hasRole(DISTRIBUTOR_ROLE, msg.sender), "xMPH: not distributor");
 
         // transfer rewards from sender
-        // SWC-Unchecked Call Return Value: L212
+        // SWC-104-Unchecked Call Return Value: L212
         mph.transferFrom(msg.sender, address(this), rewardAmount);
 
         if (block.timestamp >= currentUnlockEndTimestamp) {

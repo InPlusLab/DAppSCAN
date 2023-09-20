@@ -253,7 +253,7 @@ contract CrabStrategy is StrategyBase, StrategyFlashSwap, ReentrancyGuard {
      * @param _crabAmount amount of crab token to burn
      * @param _wSqueethAmount amount of wSqueeth to burn
      */
-    // SWC-Transaction Order Dependence: L257-L264
+    // SWC-114-Transaction Order Dependence: L257-L264
     function withdraw(uint256 _crabAmount, uint256 _wSqueethAmount) external payable nonReentrant {
         uint256 ethToWithdraw = _withdraw(msg.sender, _crabAmount, _wSqueethAmount, false);
 

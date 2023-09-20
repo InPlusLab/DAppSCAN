@@ -150,7 +150,7 @@ contract Replica is Version0, NomadBase {
         // Hook for future use
         _beforeUpdate();
         // set the new root's confirmation timer
-        // SWC-Integer Overflow and Underflow: L154
+        // SWC-101-Integer Overflow and Underflow: L154
         confirmAt[_newRoot] = block.timestamp + optimisticSeconds;
         // update committedRoot
         committedRoot = _newRoot;

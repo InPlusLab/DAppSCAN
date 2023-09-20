@@ -138,7 +138,7 @@ contract BountyV2 is Permissions {
         
         _changeEffectiveDelegatedSum(validatorId, false);
     }
-    // SWC-Code With No Effects: L142-159
+    // SWC-135-Code With No Effects: L142-159
     function estimateBounty(uint /* nodeIndex */) external pure returns (uint) {
         revert("Not implemented");
         // ConstantsHolder constantsHolder = ConstantsHolder(contractManager.getContract("ConstantsHolder"));

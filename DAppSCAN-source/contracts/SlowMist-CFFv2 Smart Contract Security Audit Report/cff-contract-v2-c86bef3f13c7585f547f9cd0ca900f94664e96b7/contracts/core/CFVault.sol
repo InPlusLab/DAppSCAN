@@ -117,7 +117,7 @@ contract CFVaultV2 is Ownable, ReentrancyGuard{
 
   event CFFWithdraw(address from, uint256 target_amount, uint256 cff_amount, uint256 target_fee, uint256 virtual_price);
   //@_amount: CFLPToken amount
-  // SWC-Reentrancy: L121 - L153
+  // SWC-107-Reentrancy: L121 - L153
   function withdraw(uint256 _amount) public{
     require(controller != CFControllerInterface(0x0) && controller.get_current_pool() != ICurvePool(0x0), "paused");
     require(slip != 0, "Slippage not set");

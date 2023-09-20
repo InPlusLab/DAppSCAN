@@ -16,7 +16,7 @@ contract BondService {
 
     // The amount of Ether received from the commissions of the system.
     uint256 systemETH;
-//SWC-State Variable Default Visibility:L18
+//SWC-108-State Variable Default Visibility:L18
     // Commission percentage charged from the emitter
     uint256 public emitterFee;
 

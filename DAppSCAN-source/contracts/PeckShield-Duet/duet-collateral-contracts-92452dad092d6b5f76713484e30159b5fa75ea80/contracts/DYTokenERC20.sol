@@ -25,7 +25,7 @@ constructor(address _underlying,
   function deposit(uint _amount, address _toVault) external override {
     depositTo(msg.sender, _amount, _toVault);
   }
-  //SWC-Transaction Order Dependence: L29-L57
+  //SWC-114-Transaction Order Dependence: L29-L57
   function depositTo(address _to, uint _amount, address _toVault) public override {
     uint total = underlyingTotal();
     IERC20 underlyingToken = IERC20(underlying);

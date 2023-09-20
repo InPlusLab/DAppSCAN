@@ -57,7 +57,7 @@ contract EscrowStorage {
         // Whether or not the token charges transfer fees
         bool hasTransferFee;
     }
-//SWC-DoS With Block Gas Limit:L61
+//SWC-128-DoS With Block Gas Limit:L61
     uint16 public maxCurrencyId;
     mapping(uint16 => address) public currencyIdToAddress;
     mapping(uint16 => uint256) public currencyIdToDecimals;

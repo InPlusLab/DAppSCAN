@@ -1,13 +1,13 @@
 {
- "filePath": "../DAppSCAN/DAppSCAN-source/contracts/QuillAudits-Abyss Finance-Abyss Eth2 Depositor/abyss-eth2depositor-a2d58dea4d79846dc682fe93ac3e0eca02323d11/contracts/AbyssEth2Depositor.sol",
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Abyss Finance-Abyss Eth2 Depositor/abyss-eth2depositor-a2d58dea4d79846dc682fe93ac3e0eca02323d11/contracts/AbyssEth2Depositor.sol",
  "SWCs": [
   {
-   "category": "SWC-Lack of Proper Signature Verification",
+   "category": "SWC-122-Lack of Proper Signature Verification",
    "function": "deposit",
    "lineNumber": "L61 - L90"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "deposit",
    "lineNumber": "L82"
   }

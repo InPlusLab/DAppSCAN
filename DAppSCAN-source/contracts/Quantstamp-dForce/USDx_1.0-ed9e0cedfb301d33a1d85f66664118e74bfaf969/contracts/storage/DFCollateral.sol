@@ -15,7 +15,7 @@ contract DFCollateral is DSMath, DSAuth, Utils {
     {
         uint _balance = IERC20Token(_tokenID).balanceOf(_to);
         IERC20Token(_tokenID).transfer(_to, _amount);
-        //SWC-DoS with Failed Call: L19
+        //SWC-113-DoS with Failed Call: L19
         assert(sub(IERC20Token(_tokenID).balanceOf(_to), _balance) == _amount);
         return true;
     }

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// SWC-Floating Pragma: L3
+// SWC-103-Floating Pragma: L3
 pragma solidity =0.8.6;
 import "./OwnableToken.sol";
 import "./ERC20Interface.sol";

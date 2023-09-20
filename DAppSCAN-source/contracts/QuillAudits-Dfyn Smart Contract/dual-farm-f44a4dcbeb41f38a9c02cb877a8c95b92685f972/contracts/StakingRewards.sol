@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-// SWC-Outdated Compiler Version: L4
-// SWC-Floating Pragma: L4
+// SWC-102-Outdated Compiler Version: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity >=0.6.11;
 
 import "@openzeppelin/contracts/math/Math.sol";
@@ -82,7 +82,7 @@ contract StakingRewards is
         return (stakers, balances);
     }
 
-    // SWC-Weak Sources of Randomness from Chain Attributes: L87
+    // SWC-120-Weak Sources of Randomness from Chain Attributes: L87
     function lastTimeRewardApplicable() public view override returns (uint256) {
         return Math.min(block.timestamp, periodFinish);
     }
@@ -218,7 +218,7 @@ contract StakingRewards is
         onlyRewardsDistribution
         updateReward(address(0))
     {
-        // SWC-Weak Sources of Randomness from Chain Attributes: L223, L225, L227
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L223, L225, L227
         uint256 rewardRate = tokenRewardRate[rewardToken];
         if (block.timestamp >= periodFinish) {
             rewardRate = reward.div(rewardsDuration);
@@ -234,13 +234,13 @@ contract StakingRewards is
         // very high values of rewardRate in the earned and rewardsPerToken functions;
         // Reward + leftover must be less than 2^256 / 10^18 to avoid overflow.
         uint256 balance = IERC20(rewardToken).balanceOf(address(this));
-        // SWC-Weak Sources of Randomness from Chain Attributes: L239
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: L239
         require(
             rewardRate <= balance.div(periodFinish.sub(block.timestamp)),
             "Provided reward too high"
         );
 
-        // SWC-Weak Sources of Randomness from Chain Attributes: 244
+        // SWC-120-Weak Sources of Randomness from Chain Attributes: 244
         rewardLastUpdatedTime[rewardToken] = block.timestamp;
         tokenRewardRate[rewardToken] = rewardRate;
         emit RewardAdded(reward);

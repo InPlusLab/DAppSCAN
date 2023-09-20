@@ -1,5 +1,5 @@
-//SWC-Integer Overflow and Underflow: All
-//SWC-Outdated Compiler Version: All
+//SWC-101-Integer Overflow and Underflow: All
+//SWC-102-Outdated Compiler Version: All
 pragma solidity ^0.4.4;
 
 /**
@@ -196,7 +196,7 @@ contract ROSCA {
       throw;
     }
     contributionSize = contributionSize_;
-    //SWC-Block values as a proxy for time: L199
+    //SWC-116-Block values as a proxy for time: L199
     if (startTime_ < (now + MINIMUM_TIME_BEFORE_ROSCA_START)) {
       throw;
     }
@@ -285,7 +285,7 @@ contract ROSCA {
     // among them (if we didn't do that and there were a few consecutive paid participants, we'll be more likely to select the
     // next unpaid member).
     swapWinner(winnerIndex, winnerSelectedThroughBid, numUnpaidParticipants - 1);
-    //SWC-Code With No Effects: L288
+    //SWC-135-Code With No Effects: L288
     uint256 currentRoundTotalDiscounts = removeFees(contributionSize * membersAddresses.length - lowestBid);
     totalDiscounts += currentRoundTotalDiscounts / membersAddresses.length;
     members[winnerAddress].credit += removeFees(lowestBid);
@@ -314,7 +314,7 @@ contract ROSCA {
         grossTotalFees -= debit - credit - totalDiscounts;
       }
     }
-    //SWC-Code With No Effects: L316
+    //SWC-135-Code With No Effects: L316
     totalFees = grossTotalFees * serviceFeeInThousandths / 1000;
   }
 
@@ -340,7 +340,7 @@ contract ROSCA {
   // Calculates the specified amount net amount after fees.
   function removeFees(uint256 amount) internal returns (uint256) {
     // First multiply to reduce roundoff errors.
-    //SWC-Code With No Effects: L342
+    //SWC-135-Code With No Effects: L342
     return amount * (1000 - serviceFeeInThousandths) / 1000;
   }
 
@@ -381,14 +381,14 @@ contract ROSCA {
         // participant not in good standing
         members[msg.sender].credit + totalDiscounts < (currentRound * contributionSize) ||
         // bid is less than minimum allowed
-        //SWC-Code With No Effects: L384
+        //SWC-135-Code With No Effects: L384
         bidInWei < contributionSize * membersAddresses.length * MIN_DISTRIBUTION_PERCENT / 100) {
       throw;
     }
 
     // If winnerAddress is 0, this is the first bid, hence allow full pot.
     // Otherwise, make sure bid is low enough compared to previous bid.
-    //SWC-Code With No Effects: L391
+    //SWC-135-Code With No Effects: L391
     uint256 maxAllowedBid = winnerAddress == 0
         ? contributionSize * membersAddresses.length
         : lowestBid * MAX_NEXT_BID_RATIO / 100;
@@ -443,7 +443,7 @@ contract ROSCA {
    * Returns how much a user can withdraw (positive return value),
    * or how much they need to contribute to be in good standing (negative return value)
    */
-  //SWC-Code With No Effects: L446-L456 
+  //SWC-135-Code With No Effects: L446-L456 
   function getParticipantBalance(address user) onlyFromMember external constant returns(int256) {
     int256 totalCredit = int256(members[user].credit + totalDiscounts);
 
@@ -506,7 +506,7 @@ contract ROSCA {
       totalFees = tempTotalFees;
       return false;
     } else {
-      //SWC-Code With No Effects: L507
+      //SWC-135-Code With No Effects: L507
       LogFundsWithdrawal(FEE_ADDRESS, totalFees);
     }
   }

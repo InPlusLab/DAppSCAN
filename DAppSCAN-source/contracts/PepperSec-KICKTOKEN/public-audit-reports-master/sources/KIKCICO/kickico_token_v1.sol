@@ -67,7 +67,7 @@ contract CToken is AccountFrozenBalances {
 
     mapping (address => bool) private _whitelisteds;
 
-// SWC-Code With No Effects: L71 - L81
+// SWC-135-Code With No Effects: L71 - L81
     modifier onlyWhitelisted() {
         require(_whitelisteds[msg.sender] == true, "caller does not have the Whitelisted role");
         _;
@@ -298,7 +298,7 @@ contract CToken is AccountFrozenBalances {
     function transferFrozenToken(address from, address to, uint256 amount) public onlyOwner returns (bool) {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
-        // SWC-Code With No Effects: L301
+        // SWC-135-Code With No Effects: L301
         require(_frozen_balanceOf(from) >= amount, "ERC20: transfer frozen tokens: balance of sender should be >= amount");
 
         _balances[from] = _balances[from].sub(amount);

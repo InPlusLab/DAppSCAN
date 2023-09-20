@@ -141,7 +141,7 @@ contract KinTokenSale is Ownable, TokenHolder {
         tokenGrantees.push(KIK_ADDRESS);
         tokenGrants[KIK_ADDRESS] = TokenGrant(30 * 100000000000 * TOKEN_DECIMALS, 0, 0, 120 weeks, 12 weeks, 100);
     }
-//SWC-DoS With Block Gas Limit:L148-161、165-179
+//SWC-128-DoS With Block Gas Limit:L148-161、165-179
     /// @dev Adds a Kin token vesting grant.
     /// @param _grantee address The address of the token grantee. Can be granted only once.
     /// @param _value uint256 The value of the grant.

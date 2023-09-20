@@ -25,7 +25,7 @@ contract DistributionManager is IAaveDistributionManager {
 
   uint8 public constant PRECISION = 18;
 
-  // SWC-Shadowing State Variables: L29
+  // SWC-119-Shadowing State Variables: L29
   mapping(address => AssetData) public assets;
 
   uint256 internal _distributionEnd;

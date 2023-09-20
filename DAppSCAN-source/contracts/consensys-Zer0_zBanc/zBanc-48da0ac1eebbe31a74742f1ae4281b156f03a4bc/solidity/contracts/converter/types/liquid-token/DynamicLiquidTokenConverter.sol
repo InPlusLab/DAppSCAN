@@ -120,8 +120,8 @@ contract DynamicLiquidTokenConverter is LiquidTokenConverter {
       * 
       * @param _reserveToken    address of the reserve token
     */
-    // SWC-Transaction Order Dependence: L124-L132
-    // SWC-Reentrancy: L125-L130
+    // SWC-114-Transaction Order Dependence: L124-L132
+    // SWC-107-Reentrancy: L125-L130
     function reduceWeight(IERC20Token _reserveToken)
         public
         validReserve(_reserveToken)

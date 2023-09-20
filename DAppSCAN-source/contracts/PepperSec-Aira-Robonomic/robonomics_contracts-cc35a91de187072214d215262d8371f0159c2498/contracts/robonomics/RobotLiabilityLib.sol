@@ -70,7 +70,7 @@ contract RobotLiabilityLib is RobotLiabilityABI
     {
         require(msg.sender == address(factory));
         require(block.number < _deadline);
-        //SWC-Hash Collisions With Multiple Variable Length Arguments: L74-L75
+        //SWC-133-Hash Collisions With Multiple Variable Length Arguments: L74-L75
         require(keccak256(abi.encodePacked(model, objective))
                 == keccak256(abi.encodePacked(_model, _objective)));
         require(_token == token);
@@ -100,7 +100,7 @@ contract RobotLiabilityLib is RobotLiabilityABI
      * @param _agree Validation network confirmation
      * @param _signature Result sender signature
      */
-     //SWC-Reentrancy: L104
+     //SWC-107-Reentrancy: L104
     function finalize(
         bytes _result,
         bytes _signature,

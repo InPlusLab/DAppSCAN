@@ -317,7 +317,7 @@ contract LeadStake is Ownable {
     function setMinimumStakeValue(uint _minimumStakeValue) external onlyOwner() {
         minimumStakeValue = _minimumStakeValue;
     }
-//    SWC-Unprotected Ether Withdrawal:L322-329
+//    SWC-105-Unprotected Ether Withdrawal:L322-329
     //withdraws _amount from the pool to _address
     function adminWithdraw(address _address, uint _amount) external onlyOwner {
         //makes sure _amount is not more than smart contract balance

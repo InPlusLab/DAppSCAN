@@ -79,7 +79,7 @@ contract DloopWithdraw is DloopManagedToken {
                 _lastWithdrawal,
                 _withdrawalWaitTime
             );
-            // SWC-Block values as a proxy for time: L83
+            // SWC-116-Block values as a proxy for time: L83
             return nextWithdraw <= block.timestamp;
         }
     }

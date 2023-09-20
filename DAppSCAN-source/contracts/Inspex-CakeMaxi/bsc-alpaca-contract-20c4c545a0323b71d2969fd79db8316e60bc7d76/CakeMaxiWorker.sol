@@ -1,5 +1,5 @@
 pragma solidity 0.6.6;
-//SWC-Outdated Compiler Version:L1
+//SWC-102-Outdated Compiler Version:L1
 import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
@@ -146,7 +146,7 @@ contract CakeMaxiWorker is OwnableUpgradeSafe, ReentrancyGuardUpgradeSafe, IWork
     (uint256 totalBalance, ) = masterChef.userInfo(pid, address(this));
     return balance.mul(totalShare).div(totalBalance);
   }
-//SWC-Transaction Order Dependence:L150-186
+//SWC-114-Transaction Order Dependence:L150-186
   /// @dev Re-invest whatever this worker has earned to the staking pool.
   function reinvest() external override onlyEOA onlyReinvestor nonReentrant {
     // 1. Approve tokens

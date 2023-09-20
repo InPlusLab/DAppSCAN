@@ -277,7 +277,7 @@ contract LimitOrderProtocol is
         return fillOrderTo(order, signature, makingAmount, takingAmount, thresholdAmount, target);
     }
 
-    // SWC-Reentrancy: L28 - L346
+    // SWC-107-Reentrancy: L28 - L346
     function fillOrderTo(
         Order memory order,
         bytes calldata signature,
@@ -333,7 +333,7 @@ contract LimitOrderProtocol is
         // Taker => Maker
         _callTakerAssetTransferFrom(order.takerAsset, order.takerAssetData, takingAmount);
 
-        // SWC-DoS With Block Gas Limit: L339
+        // SWC-128-DoS With Block Gas Limit: L339
         // Maker can handle funds interactively
         if (order.interaction.length > 0) {
             InteractiveMaker(order.makerAssetData.decodeAddress(_FROM_INDEX))

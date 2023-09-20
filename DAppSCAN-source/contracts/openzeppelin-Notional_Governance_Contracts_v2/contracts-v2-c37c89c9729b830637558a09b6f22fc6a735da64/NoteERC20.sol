@@ -134,7 +134,7 @@ contract NoteERC20 is Initializable {
     function balanceOf(address account) external view returns (uint256) {
         return balances[account];
     }
-//SWC-Integer Overflow and Underflow:L135
+//SWC-101-Integer Overflow and Underflow:L135
     /// @notice Transfer `amount` tokens from `msg.sender` to `dst`
     /// @dev emit:Transfer
     /// @param dst The address of the destination account

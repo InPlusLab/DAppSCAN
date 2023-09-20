@@ -99,7 +99,7 @@ contract MasterChef is Ownable {
 
     // Add a new lp to the pool. Can only be called by the owner.
     // XXX DO NOT add the same LP token more than once. Rewards will be messed up if you do.
-    // SWC-Code With No Effects: L103 - L115
+    // SWC-135-Code With No Effects: L103 - L115
     function add(uint256 _allocPoint, IERC20 _lpToken, bool _withUpdate) public onlyOwner {
         if (_withUpdate) {
             massUpdatePools();
@@ -193,7 +193,7 @@ contract MasterChef is Ownable {
     }
 
     // Deposit LP tokens to MasterChef for kaoya allocation.
-    // SWC-Reentrancy: L196 - L208
+    // SWC-107-Reentrancy: L196 - L208
     function deposit(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];

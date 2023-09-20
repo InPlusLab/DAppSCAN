@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// SWC-Outdated Compiler Version: L3
+// SWC-102-Outdated Compiler Version: L3
 pragma solidity 0.6.9;
 pragma experimental ABIEncoderV2;
 
@@ -51,7 +51,7 @@ contract Ark is IArk, PerpFiOwnableUpgrade, BlockContext, ReentrancyGuardUpgrade
             // rounds down when token decimals are less than 18
             _amount = _amount.addD(_toDecimal(_quoteToken, 1));
         }
-        // SWC-DoS with Failed Call: L54
+        // SWC-113-DoS with Failed Call: L54
         require(_balanceOf(_quoteToken, address(this)).toUint() >= _amount.toUint(), "insufficient funds");
 
         // stores timestamp and cumulative amount of withdrawn token

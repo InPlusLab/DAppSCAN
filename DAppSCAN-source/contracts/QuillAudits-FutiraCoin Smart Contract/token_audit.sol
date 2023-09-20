@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 contract XXXToken is ERC20 {
    mapping(address => bool) public signers;
-   uint pendingTransactionID = 1;//SWC-State Variable Default Visibility:L5
+   uint pendingTransactionID = 1;//SWC-108-State Variable Default Visibility:L5
    uint public TransactionsCount = 0;
    uint[] public PendingTransactionList;
    uint public currentTotalSupply;
@@ -17,7 +17,7 @@ contract XXXToken is ERC20 {
        uint ExecuteDate;
        uint DueDate;
    }
-//SWC-TransferedFromCurrentSupply:L21,83
+//SWC-135-Code With No Effects:L21,83
    event TransferedFromCurrentSupply(uint from, address indexed to, uint256 value); 
    event SoldToken(address from, address to, uint256 amount);  
    modifier onlyOwner {

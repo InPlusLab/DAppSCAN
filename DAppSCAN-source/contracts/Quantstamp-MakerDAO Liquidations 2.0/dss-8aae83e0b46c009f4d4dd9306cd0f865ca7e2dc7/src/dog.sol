@@ -17,7 +17,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-// SWC-Floating Pragma: L21
+// SWC-103-Floating Pragma: L21
 pragma solidity >=0.6.12;
 
 interface ClipperLike {
@@ -202,7 +202,7 @@ contract Dog {
             uint256 room = min(Hole - Dirt, milk.hole - milk.dirt);
 
             // uint256.max()/(RAD*WAD) = 115,792,089,237,316
-            // SWC-Integer Overflow and Underflow: L205
+            // SWC-101-Integer Overflow and Underflow: L205
             dart = min(art, mul(room, WAD) / rate / milk.chop);
 
             // Partial liquidation edge case logic

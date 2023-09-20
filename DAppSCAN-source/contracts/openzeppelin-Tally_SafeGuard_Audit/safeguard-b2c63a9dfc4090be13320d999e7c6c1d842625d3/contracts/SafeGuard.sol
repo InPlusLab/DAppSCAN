@@ -59,13 +59,13 @@ contract SafeGuard is AccessControlEnumerable {
     }
 
     function queueTransaction(address target, uint256 value, string memory signature, bytes memory data, uint256 eta) public justByRole(PROPOSER_ROLE) {
-        //SWC-Code With No Effects: L63-L64
+        //SWC-135-Code With No Effects: L63-L64
         bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));
         _queueTimelockTransaction(txHash, target, value, signature, data, eta);
     }
 
     function queueTransactionWithDescription(address target, uint256 value, string memory signature, bytes memory data, uint256 eta, string memory description) public justByRole(PROPOSER_ROLE) {
-        //SWC-Code With No Effects: L69-L71
+        //SWC-135-Code With No Effects: L69-L71
         bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));
         _queueTimelockTransaction(txHash, target, value, signature, data, eta);
         emit QueueTransactionWithDescription(txHash, target, value, signature, data, eta, description);

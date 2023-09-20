@@ -14,7 +14,7 @@ contract ChainlinkAdapter {
     }
 
     function price() public view returns (uint256 newPrice, uint256 timestamp) {
-        // SWC-Integer Overflow and Underflow: L18
+        // SWC-101-Integer Overflow and Underflow: L18
         newPrice = (feeder.latestAnswer() * chainlinkDecimalsAdapter).toUint256();
         timestamp = feeder.latestTimestamp();
     }
