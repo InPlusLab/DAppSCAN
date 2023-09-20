@@ -83,6 +83,7 @@ contract PLCRVoting {
     @param _numTokens The number of ERC20 tokens desired in exchange for voting rights
     */
     function withdrawVotingRights(uint _numTokens) external {
+        // SWC-101-Integer Overflow and Underflow: L87
         uint availableTokens = voteTokenBalance[msg.sender] - getLockedTokens(msg.sender);
         require(availableTokens >= _numTokens);
         require(token.transfer(msg.sender, _numTokens));
@@ -207,9 +208,9 @@ contract PLCRVoting {
     function startPoll(uint _voteQuorum, uint _commitDuration, uint _revealDuration) public returns (uint pollID) {
         pollNonce = pollNonce + 1;
 
+// SWC-101-Integer Overflow and Underflow: L211
         pollMap[pollNonce] = Poll({
             voteQuorum: _voteQuorum,
-            // SWC-101-Integer Overflow and Underflow: L213
             commitEndDate: block.timestamp + _commitDuration,
             revealEndDate: block.timestamp + _commitDuration + _revealDuration,
             votesFor: 0,
@@ -290,6 +291,7 @@ contract PLCRVoting {
     @param _pollID Integer identifier associated with target poll
     @return Boolean indication of whether user has already revealed
     */
+    // SWC-101-Integer Overflow and Underflow: L294 - L298
     function hasBeenRevealed(address _voter, uint _pollID) constant public returns (bool revealed) {
         require(pollExists(_pollID));
 
