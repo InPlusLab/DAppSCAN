@@ -1,5 +1,5 @@
 # DAppSCAN
-DAppSCAN: Building Large-Scale Datasets for Smart Contract Weaknesses in DApp Projects.
+DAppSCAN: Building Large-Scale Datasets for Smart Contract Weaknesses in DApp Projects. ([PDF](https://arxiv.org/abs/2305.08456))
 
 DAppSCAN consists of two datasets: DAppSCAN-source and DAppSCAN-bytecode.
 
