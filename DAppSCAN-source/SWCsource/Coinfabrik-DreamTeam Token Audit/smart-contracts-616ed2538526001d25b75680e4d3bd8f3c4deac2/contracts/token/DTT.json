@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-DreamTeam Token Audit/smart-contracts-616ed2538526001d25b75680e4d3bd8f3c4deac2/contracts/token/DTT.sol",
+ "SWCs": [
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "multiMint ",
+   "lineNumber": "L375-376"
+  },
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "lastMint ",
+   "lineNumber": "L399"
+  }
+ ]
+}

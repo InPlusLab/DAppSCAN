@@ -2,10 +2,10 @@
  "node name": "CollateralsWallet.json",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "to Get in touch with Holdefi contract",
    "lines": "L14-17",
-   "sourcePath": "openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/CollateralsWallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Holdefi/Holdefi-f4df394d7cf6df347b1f1e9af8e2676c5933c2c9/CollateralsWallet.sol"
   }
  ]
 }

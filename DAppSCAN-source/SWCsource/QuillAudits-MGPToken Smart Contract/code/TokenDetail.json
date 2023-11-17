@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-MGPToken Smart Contract/code/TokenDetail.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "upgradeGovernance",
+   "lineNumber": "L867"
+  }
+ ]
+}

@@ -2,10 +2,10 @@
  "node name": "SignatureBouncerMock.json",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L2",
-   "sourcePath": "Chainsulting-UNILAYERX/openzeppelin-contracts-2.3.0/contracts/access/Roles.sol"
+   "sourcePath": "rce/contracts/Chainsulting-UNILAYERX/openzeppelin-contracts-2.3.0/contracts/access/Roles.sol"
   }
  ]
 }

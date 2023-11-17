@@ -2,10 +2,10 @@
  "node name": "Storage.json",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "initialize",
    "lines": "L63 - L76",
-   "sourcePath": "Hacken-Bolide-V2/contracts-9ca0cf09d7707bcbd942f0000f11059c5fb9c026/strategies/low_risk/contracts/Storage.sol"
+   "sourcePath": "rce/contracts/Hacken-Bolide-V2/contracts-9ca0cf09d7707bcbd942f0000f11059c5fb9c026/strategies/low_risk/contracts/Storage.sol"
   }
  ]
 }

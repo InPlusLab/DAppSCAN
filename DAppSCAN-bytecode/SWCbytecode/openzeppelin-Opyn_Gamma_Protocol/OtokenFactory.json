@@ -2,10 +2,10 @@
  "node name": "OtokenFactory.json",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "createOtoken",
    "lines": "L65",
-   "sourcePath": "openzeppelin-Opyn_Gamma_Protocol/GammaProtocol-d151621b33134789b29dc78eb89dad2b557b25b9/contracts/OtokenFactory.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Opyn_Gamma_Protocol/GammaProtocol-d151621b33134789b29dc78eb89dad2b557b25b9/contracts/OtokenFactory.sol"
   }
  ]
 }

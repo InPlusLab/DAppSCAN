@@ -2,28 +2,28 @@
  "node name": "VVET9.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "removeVET",
    "lines": "L37 - L41",
-   "sourcePath": "PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/StakingModel.sol"
+   "sourcePath": "rce/contracts/PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/StakingModel.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "calculateVTHO",
    "lines": "L92",
-   "sourcePath": "PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/StakingModel.sol"
+   "sourcePath": "rce/contracts/PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/StakingModel.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "withdraw",
    "lines": "L29 - L34",
-   "sourcePath": "PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/VVET9.sol"
+   "sourcePath": "rce/contracts/PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/VVET9.sol"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "approve",
    "lines": "L44-48",
-   "sourcePath": "PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/VVET9.sol"
+   "sourcePath": "rce/contracts/PeckShield-VeChain/vvet-818fa11f7595e257cb28fa5475c17c60c11a4902/vvet/contracts/VVET9.sol"
   }
  ]
 }

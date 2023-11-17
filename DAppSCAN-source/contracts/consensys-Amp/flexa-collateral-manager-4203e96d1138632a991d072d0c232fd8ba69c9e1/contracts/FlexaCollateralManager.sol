@@ -1456,7 +1456,7 @@ contract FlexaCollateralManager is IAmpTokensSender, IAmpTokensRecipient, ERC182
             nonceB := mload(add(_operatorData, 84))
         }
         uint256 nonce = uint256(nonceB);
-
+        // SWC-128-DoS With Block Gas Limit: L1463-L1470
         uint256 proofNb = (_operatorData.length - 84) / 32;
         bytes32[] memory proof = new bytes32[](proofNb);
         uint256 index = 0;

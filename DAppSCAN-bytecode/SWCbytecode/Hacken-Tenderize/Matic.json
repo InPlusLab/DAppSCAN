@@ -2,22 +2,22 @@
  "node name": "Matic.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_stake",
    "lines": "L88 - L90",
-   "sourcePath": "Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol"
+   "sourcePath": "rce/contracts/Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_stake",
    "lines": "L93",
-   "sourcePath": "Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol"
+   "sourcePath": "rce/contracts/Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_withdraw",
    "lines": "L147",
-   "sourcePath": "Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol"
+   "sourcePath": "rce/contracts/Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/matic/Matic.sol"
   }
  ]
 }

@@ -1,0 +1,30 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-HE - v1.2/heroes-empires-contract-f24ba85db4bf40e39caaa5fc322a02cd8e82c2c7/src/contracts/Stake.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L1"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "max",
+   "lineNumber": "L3-L13, L101-122"
+  },
+  {
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
+   "function": "N/A",
+   "lineNumber": "L263"
+  },
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "changeTimeLockWithdraw",
+   "lineNumber": "L276 "
+  },
+  {
+   "category": "SWC-123-Requirement Violation",
+   "function": "withdraw",
+   "lineNumber": "L438"
+  }
+ ]
+}

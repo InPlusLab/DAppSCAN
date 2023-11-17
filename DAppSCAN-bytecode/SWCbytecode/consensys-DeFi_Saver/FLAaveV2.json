@@ -2,10 +2,10 @@
  "node name": "FLAaveV2.json",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "executeOperation",
    "lines": "L106-137",
-   "sourcePath": "consensys-DeFi_Saver/defisaver-v3-contracts-cb29669a84c2d6fffaf2231c0938eb407c060919/contracts/actions/flashloan/FLAaveV2.sol"
+   "sourcePath": "rce/contracts/consensys-DeFi_Saver/defisaver-v3-contracts-cb29669a84c2d6fffaf2231c0938eb407c060919/contracts/actions/flashloan/FLAaveV2.sol"
   }
  ]
 }

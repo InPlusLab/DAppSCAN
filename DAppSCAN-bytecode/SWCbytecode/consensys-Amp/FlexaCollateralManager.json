@@ -1,0 +1,11 @@
+{
+ "node name": "FlexaCollateralManager.json",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "_decodeWithdrawalOperatorData",
+   "lines": "L1463-L1470",
+   "sourcePath": "rce/contracts/consensys-Amp/flexa-collateral-manager-4203e96d1138632a991d072d0c232fd8ba69c9e1/contracts/FlexaCollateralManager.sol"
+  }
+ ]
+}

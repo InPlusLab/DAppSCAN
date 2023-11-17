@@ -2,16 +2,16 @@
  "node name": "claimToken.json",
  "SWCs": [
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "burn",
    "lines": "L131-140",
-   "sourcePath": "Hacken-LunaFi/lunafi-smart-contracts-6ff9a601e9bc72326b8e89f69daaa3105ed6afb0/claimToken.sol"
+   "sourcePath": "rce/contracts/Hacken-LunaFi/lunafi-smart-contracts-6ff9a601e9bc72326b8e89f69daaa3105ed6afb0/claimToken.sol"
   },
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "mint",
    "lines": "L144-156",
-   "sourcePath": "Hacken-LunaFi/lunafi-smart-contracts-6ff9a601e9bc72326b8e89f69daaa3105ed6afb0/claimToken.sol"
+   "sourcePath": "rce/contracts/Hacken-LunaFi/lunafi-smart-contracts-6ff9a601e9bc72326b8e89f69daaa3105ed6afb0/claimToken.sol"
   }
  ]
 }

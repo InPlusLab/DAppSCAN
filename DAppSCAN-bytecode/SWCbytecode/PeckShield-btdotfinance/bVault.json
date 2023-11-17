@@ -2,10 +2,10 @@
  "node name": "bVault.json",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "deposit",
    "lines": "L357-L375",
-   "sourcePath": "PeckShield-btdotfinance/bt-finance-6300bc1271b73a1755fae02594d25fdf6fa39a9c/contracts/vault/bVault.sol"
+   "sourcePath": "rce/contracts/PeckShield-btdotfinance/bt-finance-6300bc1271b73a1755fae02594d25fdf6fa39a9c/contracts/vault/bVault.sol"
   }
  ]
 }

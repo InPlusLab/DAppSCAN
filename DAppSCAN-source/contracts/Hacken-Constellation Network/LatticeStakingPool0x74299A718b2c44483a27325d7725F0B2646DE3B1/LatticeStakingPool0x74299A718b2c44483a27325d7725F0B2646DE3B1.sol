@@ -1791,7 +1791,7 @@ contract LatticeStakingPool is ReentrancyGuard {
         );
 
         
-
+        // SWC-128-DoS With Block Gas Limit: L1795
         for (uint i=0; i < _newAddressesToWhitelist.length; i++) {
 
             if(!projectIdToWhitelistedAddress[_projectId][_newAddressesToWhitelist[i]]){

@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Avalaunch Audit Allocation Staking and Sales/xava-protocol-fd252f8b9b0283d245d9d561130fe789ff08dfe9/contracts/Admin.sol",
+ "SWCs": [
+  {
+   "category": "SWC-113-DoS with Failed Call",
+   "function": "removeAdmin",
+   "lineNumber": "L43"
+  }
+ ]
+}

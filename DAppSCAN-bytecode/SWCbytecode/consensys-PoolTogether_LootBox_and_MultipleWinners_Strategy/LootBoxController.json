@@ -2,10 +2,10 @@
  "node name": "LootBoxController.json",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "transferEther",
    "lines": "L64-L68",
-   "sourcePath": "consensys-PoolTogether_LootBox_and_MultipleWinners_Strategy/loot-box-2cbea5a85d53c555e28791df5b264d7b32779eea/contracts/LootBox.sol"
+   "sourcePath": "rce/contracts/consensys-PoolTogether_LootBox_and_MultipleWinners_Strategy/loot-box-2cbea5a85d53c555e28791df5b264d7b32779eea/contracts/LootBox.sol"
   }
  ]
 }

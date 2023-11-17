@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-DSLA Protocol-project1/Stacktical/DSLA Token Smart Contract/contracts/DSLA/LockupToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "constructor",
+   "lineNumber": "L24"
+  }
+ ]
+}

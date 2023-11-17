@@ -2,16 +2,16 @@
  "node name": "RocketNodeStaking.json",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "N/A",
    "lines": "L150",
-   "sourcePath": "consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/node/RocketNodeStaking.sol"
+   "sourcePath": "rce/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/node/RocketNodeStaking.sol"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "withdrawRPL",
    "lines": "L166",
-   "sourcePath": "consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/node/RocketNodeStaking.sol"
+   "sourcePath": "rce/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/node/RocketNodeStaking.sol"
   }
  ]
 }

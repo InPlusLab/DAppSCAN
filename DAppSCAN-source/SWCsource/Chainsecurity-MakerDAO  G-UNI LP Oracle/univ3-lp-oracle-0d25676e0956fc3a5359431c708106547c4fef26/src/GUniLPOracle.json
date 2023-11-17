@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Chainsecurity-MakerDAO  G-UNI LP Oracle/univ3-lp-oracle-0d25676e0956fc3a5359431c708106547c4fef26/src/GUniLPOracle.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "toll { require",
+   "lineNumber": "// SWC-135-Code With No Effects"
+  }
+ ]
+}

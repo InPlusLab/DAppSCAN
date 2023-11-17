@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/SlowMist-DODO-NFTPool Smart Contract Security Audit Report/contractV2-e16ceb038ed6bf070ea75d9359c7ad54e6f3e226/contracts/NFTPool/impl/BaseFilterV1.sol",
+ "SWCs": [
+  {
+   "category": "SWC-120-Weak Sources of Randomness from Chain Attributes",
+   "function": "_getRandomNum",
+   "lineNumber": "L175"
+  }
+ ]
+}

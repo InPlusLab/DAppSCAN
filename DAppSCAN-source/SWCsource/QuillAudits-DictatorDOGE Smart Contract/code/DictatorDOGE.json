@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-DictatorDOGE Smart Contract/code/DictatorDOGE.sol",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "_removeOldSellHistories",
+   "lineNumber": "L1021-1034"
+  }
+ ]
+}

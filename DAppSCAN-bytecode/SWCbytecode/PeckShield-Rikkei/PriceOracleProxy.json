@@ -2,16 +2,16 @@
  "node name": "PriceOracleProxy.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L480-L487",
-   "sourcePath": "PeckShield-Rikkei/rifi-protocol-b33243fb3a218cc195f0727fe1499cb57f5ea0b2/contracts/RToken.sol"
+   "sourcePath": "rce/contracts/PeckShield-Rikkei/rifi-protocol-b33243fb3a218cc195f0727fe1499cb57f5ea0b2/contracts/RToken.sol"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "borrowFresh",
    "lines": "L738-L802",
-   "sourcePath": "PeckShield-Rikkei/rifi-protocol-b33243fb3a218cc195f0727fe1499cb57f5ea0b2/contracts/RToken.sol"
+   "sourcePath": "rce/contracts/PeckShield-Rikkei/rifi-protocol-b33243fb3a218cc195f0727fe1499cb57f5ea0b2/contracts/RToken.sol"
   }
  ]
 }

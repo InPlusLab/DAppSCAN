@@ -2,16 +2,16 @@
  "node name": "Livepeer.json",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_withdraw",
    "lines": "L122",
-   "sourcePath": "Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/livepeer/Livepeer.sol"
+   "sourcePath": "rce/contracts/Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/livepeer/Livepeer.sol"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "_claimSecondaryRewards",
    "lines": "L162 - L164",
-   "sourcePath": "Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/livepeer/Livepeer.sol"
+   "sourcePath": "rce/contracts/Hacken-Tenderize/tender-core-1fd606141625171fe792045ae9233890262d2d62/contracts/tenderizer/integrations/livepeer/Livepeer.sol"
   }
  ]
 }

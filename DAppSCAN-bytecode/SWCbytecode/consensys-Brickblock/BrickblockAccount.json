@@ -2,10 +2,10 @@
  "node name": "BrickblockAccount.json",
  "SWCs": [
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "withdrawEthFunds",
    "lines": "L84-95",
-   "sourcePath": "consensys-Brickblock/smart-contracts-f1f5b04722b9569e1d4c0b62ac4c490c0a785fd8/contracts/BrickblockAccount.sol"
+   "sourcePath": "rce/contracts/consensys-Brickblock/smart-contracts-f1f5b04722b9569e1d4c0b62ac4c490c0a785fd8/contracts/BrickblockAccount.sol"
   }
  ]
 }

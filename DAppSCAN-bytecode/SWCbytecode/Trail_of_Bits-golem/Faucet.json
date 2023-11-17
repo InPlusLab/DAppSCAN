@@ -2,16 +2,16 @@
  "node name": "Faucet.json",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lines": "L2",
-   "sourcePath": "Trail_of_Bits-golem/golem-contracts-62a1e0dab3baf8e9bff79b653dffa7df5f2d10a0/contracts/Faucet.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-golem/golem-contracts-62a1e0dab3baf8e9bff79b653dffa7df5f2d10a0/contracts/Faucet.sol"
   },
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lines": "L2",
-   "sourcePath": "Trail_of_Bits-golem/golem-contracts-62a1e0dab3baf8e9bff79b653dffa7df5f2d10a0/contracts/GolemNetworkToken.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-golem/golem-contracts-62a1e0dab3baf8e9bff79b653dffa7df5f2d10a0/contracts/GolemNetworkToken.sol"
   }
  ]
 }

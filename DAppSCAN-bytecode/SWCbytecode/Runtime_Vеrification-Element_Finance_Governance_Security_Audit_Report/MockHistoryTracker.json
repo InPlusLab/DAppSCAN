@@ -2,16 +2,16 @@
  "node name": "MockHistoryTracker.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_find",
    "lines": "L225",
-   "sourcePath": "Runtime_V\u0435rification-Element_Finance_Governance_Security_Audit_Report/council-3d751c959b42573c78ccd0bccbc80424bf6d9a90/contracts/libraries/History.sol"
+   "sourcePath": "rce/contracts/Runtime_V\u0435rification-Element_Finance_Governance_Security_Audit_Report/council-3d751c959b42573c78ccd0bccbc80424bf6d9a90/contracts/libraries/History.sol"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_clear",
    "lines": "L279 - L301",
-   "sourcePath": "Runtime_V\u0435rification-Element_Finance_Governance_Security_Audit_Report/council-3d751c959b42573c78ccd0bccbc80424bf6d9a90/contracts/libraries/History.sol"
+   "sourcePath": "rce/contracts/Runtime_V\u0435rification-Element_Finance_Governance_Security_Audit_Report/council-3d751c959b42573c78ccd0bccbc80424bf6d9a90/contracts/libraries/History.sol"
   }
  ]
 }

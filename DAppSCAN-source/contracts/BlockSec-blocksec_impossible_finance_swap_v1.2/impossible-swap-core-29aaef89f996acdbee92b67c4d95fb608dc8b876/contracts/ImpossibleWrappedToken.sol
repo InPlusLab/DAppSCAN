@@ -49,6 +49,7 @@ contract ImpossibleWrappedToken is IImpossibleWrappedToken {
         symbol = string(abi.encodePacked('WIF ', desc));
     }
 
+    // SWC-107-Reentrancy: L53-61
     // wad = amount of wrapped tokens
     function deposit(address dst, uint256 wad) public returns (uint256 transferAmt) {
         transferAmt = wad.mul(ratioDenom).div(ratioNum);
@@ -59,6 +60,8 @@ contract ImpossibleWrappedToken is IImpossibleWrappedToken {
         emit Transfer(address(0), msg.sender, wad);
     }
 
+    // SWC-107-Reentrancy: L65-73
+    // SWC-114-Transaction Order Dependence: L65-73
     // wad = amount of wrapped tokens
     function deposit(address dst) public override returns (uint256 transferAmt) {
         uint256 balance = IERC20(underlying).balanceOf(address(this));

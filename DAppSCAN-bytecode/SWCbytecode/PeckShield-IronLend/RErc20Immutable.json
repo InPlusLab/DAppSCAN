@@ -2,10 +2,10 @@
  "node name": "RErc20Immutable.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_acceptAdmin",
    "lines": "L1133",
-   "sourcePath": "PeckShield-IronLend/iron-lend-f9a669850885895215579e3c2ae8d7124f0ef5c8/src/RToken/RToken.sol"
+   "sourcePath": "rce/contracts/PeckShield-IronLend/iron-lend-f9a669850885895215579e3c2ae8d7124f0ef5c8/src/RToken/RToken.sol"
   }
  ]
 }

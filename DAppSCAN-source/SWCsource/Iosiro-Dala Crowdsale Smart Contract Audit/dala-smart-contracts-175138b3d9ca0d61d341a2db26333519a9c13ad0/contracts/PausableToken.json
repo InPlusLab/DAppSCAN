@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Dala Crowdsale Smart Contract Audit/dala-smart-contracts-175138b3d9ca0d61d341a2db26333519a9c13ad0/contracts/PausableToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "transfer",
+   "lineNumber": "L14-20"
+  }
+ ]
+}

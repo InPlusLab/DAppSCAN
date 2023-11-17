@@ -1,4 +1,5 @@
 pragma solidity ^0.8.2;
+// SWC-103-Floating Pragma: L1
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract MyToken is ERC20, AccessControl {

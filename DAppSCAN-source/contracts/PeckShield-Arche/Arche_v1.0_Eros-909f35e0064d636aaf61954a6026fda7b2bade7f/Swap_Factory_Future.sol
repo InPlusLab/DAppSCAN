@@ -272,7 +272,7 @@ contract D_Swap is Owned {
         
         return (amount_back,reward_back);   
     }
-    
+    // SWC-101-Integer Overflow and Underflow: L292-L322
     function Deposit_For_Tail(uint256 amount,address referer)public
     {
 
@@ -356,6 +356,7 @@ contract D_Swap is Owned {
         D_Swap_Main(m_DSwap_Main_Address).Triger_Remaining_Supply( address(this) ,
         m_Total_Amount_Head.sub(m_Amount_Head_Swapped),m_Total_Amount_Tail.sub(m_Amount_Tail_Swapped));
     }
+    // SWC-107-Reentrancy: L360-L380
     function Impl_Delivery(address user) internal
     {
        

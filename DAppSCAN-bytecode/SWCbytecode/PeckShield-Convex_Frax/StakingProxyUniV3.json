@@ -2,10 +2,10 @@
  "node name": "StakingProxyUniV3.json",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "lockAdditional",
    "lines": "L94-L113",
-   "sourcePath": "PeckShield-Convex_Frax/frax-cvx-platform-2f8573ee796daa022c1050b4a749bf08049c439b/contracts/contracts/StakingProxyUniV3.sol"
+   "sourcePath": "rce/contracts/PeckShield-Convex_Frax/frax-cvx-platform-2f8573ee796daa022c1050b4a749bf08049c439b/contracts/contracts/StakingProxyUniV3.sol"
   }
  ]
 }

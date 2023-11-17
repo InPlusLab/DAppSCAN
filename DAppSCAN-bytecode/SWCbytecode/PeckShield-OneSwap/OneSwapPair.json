@@ -2,10 +2,10 @@
  "node name": "OneSwapPair.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_dealWithPoolAndCollectFee",
    "lines": "L1002",
-   "sourcePath": "PeckShield-OneSwap/oneswap_contract_ethereum-4194ac1a55934cd573bd93987111eaa8f70676fe/contracts/OneSwapPair.sol"
+   "sourcePath": "rce/contracts/PeckShield-OneSwap/oneswap_contract_ethereum-4194ac1a55934cd573bd93987111eaa8f70676fe/contracts/OneSwapPair.sol"
   }
  ]
 }

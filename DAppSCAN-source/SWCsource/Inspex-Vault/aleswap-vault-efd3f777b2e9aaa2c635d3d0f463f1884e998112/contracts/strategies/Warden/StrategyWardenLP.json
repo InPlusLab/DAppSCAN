@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Inspex-Vault/aleswap-vault-efd3f777b2e9aaa2c635d3d0f463f1884e998112/contracts/strategies/Warden/StrategyWardenLP.sol",
+ "SWCs": [
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "harvest",
+   "lineNumber": "// SWC-114-Transaction Order Dependence"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Worldbit Token Sale Smart Contract Audit/ico-445cc0c28894a85cb58f54631666deafdd35d859/contracts/TokenTranchePricing.sol",
+ "SWCs": [
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "TokenTranchePricing",
+   "lineNumber": "L45-69"
+  }
+ ]
+}

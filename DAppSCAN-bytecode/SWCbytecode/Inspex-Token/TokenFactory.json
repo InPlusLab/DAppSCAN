@@ -2,10 +2,10 @@
  "node name": "TokenFactory.json",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lines": "L3",
-   "sourcePath": "Inspex-Token/iAM-Admin-Poll-Token-0f8bb7a04c439286a5dffa223c3b30265acb4b5c/EventToken.sol"
+   "sourcePath": "rce/contracts/Inspex-Token/iAM-Admin-Poll-Token-0f8bb7a04c439286a5dffa223c3b30265acb4b5c/EventToken.sol"
   }
  ]
 }

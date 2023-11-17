@@ -2,10 +2,10 @@
  "node name": "Migration_Diphda.json",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L3",
-   "sourcePath": "Chainsulting-SPICE/synthetix-develop/contracts/AddressResolver.sol"
+   "sourcePath": "rce/contracts/Chainsulting-SPICE/synthetix-develop/contracts/AddressResolver.sol"
   }
  ]
 }

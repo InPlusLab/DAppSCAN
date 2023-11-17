@@ -2,22 +2,22 @@
  "node name": "Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.json",
  "SWCs": [
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "renounceOwnership",
    "lines": "L206 - L212",
-   "sourcePath": "Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol"
+   "sourcePath": "rce/contracts/Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol"
   },
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "transferOwnership",
    "lines": "L219 - L227",
-   "sourcePath": "Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol"
+   "sourcePath": "rce/contracts/Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol"
   },
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lines": "L860 - L884",
-   "sourcePath": "Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol"
+   "sourcePath": "rce/contracts/Hacken-Oracula/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d/Oracula0x85f3ec4EC49aB6a5901278176235957ef521970d.sol"
   }
  ]
 }

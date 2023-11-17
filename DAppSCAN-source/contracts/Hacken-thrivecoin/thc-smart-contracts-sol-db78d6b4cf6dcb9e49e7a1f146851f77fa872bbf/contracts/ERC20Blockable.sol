@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.0;
 
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";

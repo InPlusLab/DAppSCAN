@@ -2,40 +2,40 @@
  "node name": "PrimitiveFactory.json",
  "SWCs": [
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "withdraw",
    "lines": "L223 - L233",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "allocate",
    "lines": "L238 - L270",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "swap",
    "lines": "L304 - L403",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/PrimitiveEngine.sol"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "safeTransfer",
    "lines": "L13 - L22",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Transfers.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Transfers.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "scaleToX64",
    "lines": "L41",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "percentage",
    "lines": "L59",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
   }
  ]
 }

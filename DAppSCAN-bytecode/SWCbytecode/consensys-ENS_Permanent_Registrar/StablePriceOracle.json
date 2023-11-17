@@ -2,10 +2,10 @@
  "node name": "StablePriceOracle.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "price",
    "lines": "L58-L64",
-   "sourcePath": "consensys-ENS_Permanent_Registrar/ethregistrar-e52abfc2799ac361364aca6135fc20f9175a29fd/contracts/StablePriceOracle.sol"
+   "sourcePath": "rce/contracts/consensys-ENS_Permanent_Registrar/ethregistrar-e52abfc2799ac361364aca6135fc20f9175a29fd/contracts/StablePriceOracle.sol"
   }
  ]
 }

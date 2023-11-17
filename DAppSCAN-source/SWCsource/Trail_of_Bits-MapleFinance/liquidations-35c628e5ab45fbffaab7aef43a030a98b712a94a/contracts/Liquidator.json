@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Trail_of_Bits-MapleFinance/liquidations-35c628e5ab45fbffaab7aef43a030a98b712a94a/contracts/Liquidator.sol",
+ "SWCs": [
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "liquidatePortion",
+   "lineNumber": "L41-L51"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/PeckShield-ERC20_FAT/code/code.sol",
+ "SWCs": [
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "_delegate",
+   "lineNumber": "L1030 - L1040"
+  }
+ ]
+}

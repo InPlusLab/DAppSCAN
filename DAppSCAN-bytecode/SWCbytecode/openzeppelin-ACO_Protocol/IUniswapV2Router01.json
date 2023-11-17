@@ -2,10 +2,10 @@
  "node name": "IUniswapV2Router01.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L2-L96",
-   "sourcePath": "openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/interfaces/IUniswapV2Router01.sol"
+   "sourcePath": "rce/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/interfaces/IUniswapV2Router01.sol"
   }
  ]
 }

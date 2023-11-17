@@ -2,34 +2,34 @@
  "node name": "ACOToken.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "init",
    "lines": "L207",
-   "sourcePath": "openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
+   "sourcePath": "rce/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "burnFrom",
    "lines": "L441-L443",
-   "sourcePath": "openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
+   "sourcePath": "rce/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_mintToken",
    "lines": "L570-L573",
-   "sourcePath": "openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
+   "sourcePath": "rce/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_validateAndBurn",
    "lines": "L741",
-   "sourcePath": "openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
+   "sourcePath": "rce/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_getFormattedStrikePrice",
    "lines": "L1018",
-   "sourcePath": "openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
+   "sourcePath": "rce/contracts/openzeppelin-ACO_Protocol/aco-36bcab024c9781d799381f8f973e99fd5b0f4d2d/smart-contracts/contracts/core/ACOToken.sol"
   }
  ]
 }

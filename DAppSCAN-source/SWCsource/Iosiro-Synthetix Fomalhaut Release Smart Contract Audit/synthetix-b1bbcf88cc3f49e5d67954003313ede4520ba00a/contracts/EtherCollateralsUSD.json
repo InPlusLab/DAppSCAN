@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Synthetix Fomalhaut Release Smart Contract Audit/synthetix-b1bbcf88cc3f49e5d67954003313ede4520ba00a/contracts/EtherCollateralsUSD.sol",
+ "SWCs": [
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "withdrawCollateral",
+   "lineNumber": "L504"
+  },
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "liquidateLoan",
+   "lineNumber": "L588"
+  }
+ ]
+}

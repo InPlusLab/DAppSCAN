@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-Binamon Energy Smart Contract/code/BNRG.sol",
+ "SWCs": [
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "approve",
+   "lineNumber": "L105"
+  }
+ ]
+}

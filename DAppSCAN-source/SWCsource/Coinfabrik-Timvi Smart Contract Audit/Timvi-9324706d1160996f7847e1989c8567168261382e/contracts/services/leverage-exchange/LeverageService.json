@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Timvi Smart Contract Audit/Timvi-9324706d1160996f7847e1989c8567168261382e/contracts/services/leverage-exchange/LeverageService.sol",
+ "SWCs": [
+  {
+   "category": "SWC-115-Authorization through tx.origin",
+   "function": "create",
+   "lineNumber": "L131"
+  }
+ ]
+}

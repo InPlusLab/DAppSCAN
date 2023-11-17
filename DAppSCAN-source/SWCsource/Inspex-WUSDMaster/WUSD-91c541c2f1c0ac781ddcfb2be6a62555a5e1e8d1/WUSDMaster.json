@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Inspex-WUSDMaster/WUSD-91c541c2f1c0ac781ddcfb2be6a62555a5e1e8d1/WUSDMaster.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  },
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "stake",
+   "lineNumber": "L703-728"
+  }
+ ]
+}

@@ -2,10 +2,10 @@
  "node name": "Ownable.json",
  "SWCs": [
   {
-   "category": "SWC-Incorrect Inheritance Order",
+   "category": "SWC-125-Incorrect Inheritance Order",
    "function": "N/A",
    "lines": "L1-77",
-   "sourcePath": "openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/Ownable.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Notional/contracts-b6fc6be4622422d0e34c90e77f2ec9da18596b8c/Ownable.sol"
   }
  ]
 }

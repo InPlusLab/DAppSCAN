@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-Powerbomb-V1/powerbomb-lite-0f86ff1eecdd723be733a9b33ff4ffa3bbdadcee/hardhat/contracts/PowerBombOneCurve.sol",
+ "SWCs": [
+  {
+   "category": "SWC-131-Presence of unused variables",
+   "function": "N/A",
+   "lineNumber": "uint public ibRewardTokenBaseAmt; // SWC-131-Presence of unused variables"
+  }
+ ]
+}

@@ -2,16 +2,16 @@
  "node name": "DummyExitGame.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L7",
-   "sourcePath": "consensys-OmiseGo_MoreVP/plasma-contracts-e13aaf759c979cf6516c1d8de865c9e324bc2db6/plasma_framework/contracts/src/framework/PlasmaFramework.sol"
+   "sourcePath": "rce/contracts/consensys-OmiseGo_MoreVP/plasma-contracts-e13aaf759c979cf6516c1d8de865c9e324bc2db6/plasma_framework/contracts/src/framework/PlasmaFramework.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L10",
-   "sourcePath": "consensys-OmiseGo_MoreVP/plasma-contracts-e13aaf759c979cf6516c1d8de865c9e324bc2db6/plasma_framework/contracts/src/framework/PlasmaFramework.sol"
+   "sourcePath": "rce/contracts/consensys-OmiseGo_MoreVP/plasma-contracts-e13aaf759c979cf6516c1d8de865c9e324bc2db6/plasma_framework/contracts/src/framework/PlasmaFramework.sol"
   }
  ]
 }

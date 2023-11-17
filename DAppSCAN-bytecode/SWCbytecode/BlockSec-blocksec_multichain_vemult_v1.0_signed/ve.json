@@ -2,22 +2,22 @@
  "node name": "ve.json",
  "SWCs": [
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "ownerOf",
    "lines": "L491-493",
-   "sourcePath": "BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol"
+   "sourcePath": "rce/contracts/BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "safeTransferFrom",
    "lines": "L675-697",
-   "sourcePath": "BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol"
+   "sourcePath": "rce/contracts/BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "withdraw",
    "lines": "L1097-1104",
-   "sourcePath": "BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol"
+   "sourcePath": "rce/contracts/BlockSec-blocksec_multichain_vemult_v1.0_signed/veMULTI-bac804399d1ea280e5bd8cdc9488b6fa6a0a7fcc/contracts/ve.sol"
   }
  ]
 }

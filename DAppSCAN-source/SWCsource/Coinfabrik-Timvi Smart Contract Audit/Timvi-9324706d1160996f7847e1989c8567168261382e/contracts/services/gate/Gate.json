@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Timvi Smart Contract Audit/Timvi-9324706d1160996f7847e1989c8567168261382e/contracts/services/gate/Gate.sol",
+ "SWCs": [
+  {
+   "category": "SWC-113-DoS with Failed Call",
+   "function": "multiFill",
+   "lineNumber": "// SWC-113-DoS with Failed Call"
+  }
+ ]
+}

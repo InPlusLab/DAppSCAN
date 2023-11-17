@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-BonFi(Legendary)- Final Audit Report/code/Legendary_v9.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  }
+ ]
+}

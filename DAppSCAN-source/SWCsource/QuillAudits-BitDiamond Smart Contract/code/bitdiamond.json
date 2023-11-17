@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-BitDiamond Smart Contract/code/bitdiamond.sol",
+ "SWCs": [
+  {
+   "category": "SWC-119-Shadowing State Variables",
+   "function": "OwnershipTransferred",
+   "lineNumber": "L404"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "L460"
+  }
+ ]
+}

@@ -2,10 +2,10 @@
  "node name": "Market.json",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lines": "L9-L18",
-   "sourcePath": "PeckShield-Double/double-contract-5489c0618f381df1e8d5ebb55f430db1b8bffeea/contracts/Market.sol"
+   "sourcePath": "rce/contracts/PeckShield-Double/double-contract-5489c0618f381df1e8d5ebb55f430db1b8bffeea/contracts/Market.sol"
   }
  ]
 }

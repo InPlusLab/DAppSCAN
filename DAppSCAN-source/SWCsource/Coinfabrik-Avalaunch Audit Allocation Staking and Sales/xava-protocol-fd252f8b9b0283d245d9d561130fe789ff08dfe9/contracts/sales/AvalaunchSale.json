@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Avalaunch Audit Allocation Staking and Sales/xava-protocol-fd252f8b9b0283d245d9d561130fe789ff08dfe9/contracts/sales/AvalaunchSale.sol",
+ "SWCs": [
+  {
+   "category": "SWC-113-DoS with Failed Call",
+   "function": "to postpone the sale",
+   "lineNumber": "L294"
+  },
+  {
+   "category": "SWC-113-DoS with Failed Call",
+   "function": "depositTokens",
+   "lineNumber": "L346"
+  }
+ ]
+}

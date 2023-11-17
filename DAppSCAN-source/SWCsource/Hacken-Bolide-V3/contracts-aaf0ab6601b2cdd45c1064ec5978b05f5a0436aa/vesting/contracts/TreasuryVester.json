@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-Bolide-V3/contracts-aaf0ab6601b2cdd45c1064ec5978b05f5a0436aa/vesting/contracts/TreasuryVester.sol",
+ "SWCs": [
+  {
+   "category": "SWC-102-Outdated Compiler Version",
+   "function": "N/A",
+   "lineNumber": "// SWC-102-Outdated Compiler Version"
+  }
+ ]
+}

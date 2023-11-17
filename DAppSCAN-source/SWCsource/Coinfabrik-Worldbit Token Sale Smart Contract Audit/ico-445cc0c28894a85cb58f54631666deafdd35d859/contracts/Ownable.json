@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Worldbit Token Sale Smart Contract Audit/ico-445cc0c28894a85cb58f54631666deafdd35d859/contracts/Ownable.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "// SWC-135-Code With No Effects"
+  }
+ ]
+}

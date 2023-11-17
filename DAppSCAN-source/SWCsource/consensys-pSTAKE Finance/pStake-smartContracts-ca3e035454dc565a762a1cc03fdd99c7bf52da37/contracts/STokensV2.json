@@ -1,5 +1,5 @@
 {
- "filePath": "DAppSCAN-source/contracts/ConsenSys Diligence-pSTAKE Finance/pStake-smartContracts-ca3e035454dc565a762a1cc03fdd99c7bf52da37/contracts/STokensV2.sol",
+ "filePath": "DAppSCAN-source/contracts/consensys-pSTAKE Finance/pStake-smartContracts-ca3e035454dc565a762a1cc03fdd99c7bf52da37/contracts/STokensV2.sol",
  "SWCs": [
   {
    "category": "SWC-128-DoS With Block Gas Limit",

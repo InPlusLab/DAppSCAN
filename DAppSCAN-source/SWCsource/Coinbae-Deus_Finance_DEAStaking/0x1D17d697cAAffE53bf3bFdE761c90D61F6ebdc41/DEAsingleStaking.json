@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinbae-Deus_Finance_DEAStaking/0x1D17d697cAAffE53bf3bFdE761c90D61F6ebdc41/DEAsingleStaking.sol",
+ "SWCs": [
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "setWallets",
+   "lineNumber": "L70"
+  }
+ ]
+}

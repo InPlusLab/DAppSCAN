@@ -2,10 +2,10 @@
  "node name": "RocketDepositPool.json",
  "SWCs": [
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "assignDeposits",
    "lines": "L116-129",
-   "sourcePath": "consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/deposit/RocketDepositPool.sol"
+   "sourcePath": "rce/contracts/consensys-Rocketpool/rocketpool-2.5-Tokenomics-updates/contracts/contract/deposit/RocketDepositPool.sol"
   }
  ]
 }

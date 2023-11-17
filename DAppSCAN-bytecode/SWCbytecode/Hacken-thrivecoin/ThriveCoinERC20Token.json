@@ -1,0 +1,11 @@
+{
+ "node name": "ThriveCoinERC20Token.json",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lines": "L3",
+   "sourcePath": "rce/contracts/Hacken-thrivecoin/thc-smart-contracts-sol-db78d6b4cf6dcb9e49e7a1f146851f77fa872bbf/contracts/ERC20Blockable.sol"
+  }
+ ]
+}

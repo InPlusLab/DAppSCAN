@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-GARFIELD Smart Contract/code/GARFIELD.sol",
+ "SWCs": [
+  {
+   "category": "SWC-120-Weak Sources of Randomness from Chain Attributes",
+   "function": "random",
+   "lineNumber": "L693-707"
+  }
+ ]
+}

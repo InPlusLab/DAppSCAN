@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Nahmii Security Audit/nahmii-contracts-f1942e422411679f660b6d30fd1452451169bf92/contracts/TokenHolderRevenueFund.sol",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "closeAccrualPeriod",
+   "lineNumber": "L291"
+  }
+ ]
+}

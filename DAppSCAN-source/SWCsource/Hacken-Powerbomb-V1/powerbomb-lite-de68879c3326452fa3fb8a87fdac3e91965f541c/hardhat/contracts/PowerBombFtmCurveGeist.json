@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-Powerbomb-V1/powerbomb-lite-de68879c3326452fa3fb8a87fdac3e91965f541c/hardhat/contracts/PowerBombFtmCurveGeist.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "_harvest",
+   "lineNumber": "// SWC-135-Code With No Effects"
+  }
+ ]
+}

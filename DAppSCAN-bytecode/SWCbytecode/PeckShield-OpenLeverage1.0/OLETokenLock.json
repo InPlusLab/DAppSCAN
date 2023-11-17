@@ -2,10 +2,10 @@
  "node name": "OLETokenLock.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "constructor",
    "lines": "L22-L31",
-   "sourcePath": "PeckShield-OpenLeverage1.0/openleverage-contracts-e31d971bcb38ec8737cf1942b8fdf6a9452e5834/contracts/OLETokenLock.sol"
+   "sourcePath": "rce/contracts/PeckShield-OpenLeverage1.0/openleverage-contracts-e31d971bcb38ec8737cf1942b8fdf6a9452e5834/contracts/OLETokenLock.sol"
   }
  ]
 }

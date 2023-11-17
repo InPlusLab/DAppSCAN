@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-RedFox-V5/eth-bridge-contract-f0486c5e158bd29bc6280bc3844f7d689d4b7b19/contracts/ETHWAXBRIDGE.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "import \"./interfaces/ERC20Interface.sol\"; // SWC-135-Code With No Effects"
+  }
+ ]
+}

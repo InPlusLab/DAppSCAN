@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-Bird Money-Final Audit Report/bird-farm-contracts-dfd2502b73c8f54c9081682c3eb070fcd3c00629/contracts/MasterChef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "deposit",
+   "lineNumber": "L261-284"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "withdraw",
+   "lineNumber": "L287-306"
+  }
+ ]
+}

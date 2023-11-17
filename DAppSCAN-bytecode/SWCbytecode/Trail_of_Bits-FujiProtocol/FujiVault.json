@@ -2,40 +2,40 @@
  "node name": "FujiVault.json",
  "SWCs": [
   {
-   "category": "SWC-Unprotected SELFDESTRUCT Instruction",
+   "category": "SWC-106-Unprotected SELFDESTRUCT Instruction",
    "function": "N/A",
    "lines": "L23 - L673",
-   "sourcePath": "Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "deposit",
    "lines": "L177 - L178",
-   "sourcePath": "Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "withdraw",
    "lines": "L227",
-   "sourcePath": "Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "borrow",
    "lines": "L291",
-   "sourcePath": "Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "payback",
    "lines": "L340",
-   "sourcePath": "Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/FujiVault.sol"
   },
   {
-   "category": "SWC-Delegatecall to Untrusted Callee",
+   "category": "SWC-112-Delegatecall to Untrusted Callee",
    "function": "_execute",
    "lines": "L101",
-   "sourcePath": "Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/abstracts/vault/VaultBaseUpgradeable.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-FujiProtocol/fuji-protocol-933ea57b11889d87744efa23e95c90b7bf589402/contracts/abstracts/vault/VaultBaseUpgradeable.sol"
   }
  ]
 }

@@ -2,22 +2,22 @@
  "node name": "Submitter.json",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "sponsorProposal",
    "lines": "L266-305",
-   "sourcePath": "consensys-The_LAO/moloch-4bc443f4dad60279b47978fc6987bb978d3dfc58/contracts/Moloch.sol"
+   "sourcePath": "rce/contracts/consensys-The_LAO/moloch-4bc443f4dad60279b47978fc6987bb978d3dfc58/contracts/Moloch.sol"
   },
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "processProposal",
    "lines": "L408-413",
-   "sourcePath": "consensys-The_LAO/moloch-4bc443f4dad60279b47978fc6987bb978d3dfc58/contracts/Moloch.sol"
+   "sourcePath": "rce/contracts/consensys-The_LAO/moloch-4bc443f4dad60279b47978fc6987bb978d3dfc58/contracts/Moloch.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "max",
    "lines": "L638-640",
-   "sourcePath": "consensys-The_LAO/moloch-4bc443f4dad60279b47978fc6987bb978d3dfc58/contracts/Moloch.sol"
+   "sourcePath": "rce/contracts/consensys-The_LAO/moloch-4bc443f4dad60279b47978fc6987bb978d3dfc58/contracts/Moloch.sol"
   }
  ]
 }

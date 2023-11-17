@@ -2,10 +2,10 @@
  "node name": "IndividuallyCappedCrowdsaleImpl.json",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L2",
-   "sourcePath": "Chainsulting-Shopping-project1/openzeppelin-contracts-2.0.1/contracts/access/roles/CapperRole.sol"
+   "sourcePath": "rce/contracts/Chainsulting-Shopping-project1/openzeppelin-contracts-2.0.1/contracts/access/roles/CapperRole.sol"
   }
  ]
 }

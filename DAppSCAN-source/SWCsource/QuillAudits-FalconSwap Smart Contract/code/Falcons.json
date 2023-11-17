@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-FalconSwap Smart Contract/code/Falcons.sol",
+ "SWCs": [
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "_mint",
+   "lineNumber": "L755-766"
+  }
+ ]
+}

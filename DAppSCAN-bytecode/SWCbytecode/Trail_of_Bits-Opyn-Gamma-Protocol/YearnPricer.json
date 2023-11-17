@@ -2,10 +2,10 @@
  "node name": "YearnPricer.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "toScaledUint",
    "lines": "L72 - L95",
-   "sourcePath": "Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/libs/FixedPointInt256.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/libs/FixedPointInt256.sol"
   }
  ]
 }

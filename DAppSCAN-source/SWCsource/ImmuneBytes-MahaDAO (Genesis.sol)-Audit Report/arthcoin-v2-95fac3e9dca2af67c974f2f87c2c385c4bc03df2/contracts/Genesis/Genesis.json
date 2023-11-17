@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-MahaDAO (Genesis.sol)-Audit Report/arthcoin-v2-95fac3e9dca2af67c974f2f87c2c385c4bc03df2/contracts/Genesis/Genesis.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "hasStarted",
+   "lineNumber": "L74-77"
+  }
+ ]
+}

@@ -2,10 +2,10 @@
  "node name": "ERC721Enumerable.json",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L3",
-   "sourcePath": "PeckShield-LensProtocol/lens-protocol-dd137b2dee64c5edf288df297ee4249a0e6c11d4/contracts/core/base/ERC721Enumerable.sol"
+   "sourcePath": "rce/contracts/PeckShield-LensProtocol/lens-protocol-dd137b2dee64c5edf288df297ee4249a0e6c11d4/contracts/core/base/ERC721Enumerable.sol"
   }
  ]
 }

@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/PeckShield-Arche/Arche_v1.0_Eros-909f35e0064d636aaf61954a6026fda7b2bade7f/Swap_Factory_Future.sol",
+ "SWCs": [
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "Deposit_For_Tail",
+   "lineNumber": "L292-L322"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "Impl_Delivery",
+   "lineNumber": "L360-L380"
+  }
+ ]
+}

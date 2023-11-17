@@ -205,12 +205,14 @@ contract DeltaNeutralVault is ERC20Upgradeable, ReentrancyGuardUpgradeable, Owna
     }
   }
 
+  // SWC-114-Transaction Order Dependence
   /// @notice Deposit to delta neutral vault.
   /// @param _shareReceiver Addresses to be receive share.
   /// @param _minShareReceive Minimum share that _shareReceiver must receive.
   /// @param _stableTokenAmount Amount of stable token transfer to vault.
   /// @param _assetTokenAmount Amount of asset token transfer to vault.
   /// @param _data The calldata to pass along to the proxy action for more working context.
+  // 
   function deposit(
     address _shareReceiver,
     uint256 _minShareReceive,
@@ -260,6 +262,7 @@ contract DeltaNeutralVault is ERC20Upgradeable, ReentrancyGuardUpgradeable, Owna
     return _shares;
   }
 
+  // SWC-114-Transaction Order Dependence
   /// @notice Withdraw from delta neutral vault.
   /// @param _shareAmount Amount of share to withdraw from vault.
   /// @param _minStableTokenAmount Minimum stable token shareOwner expect to receive.

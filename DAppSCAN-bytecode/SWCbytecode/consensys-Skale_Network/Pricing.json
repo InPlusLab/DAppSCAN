@@ -2,22 +2,22 @@
  "node name": "Pricing.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "estimateBounty",
    "lines": "L142-159",
-   "sourcePath": "consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/BountyV2.sol"
+   "sourcePath": "rce/contracts/consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/BountyV2.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_setNodeLeft",
    "lines": "L800",
-   "sourcePath": "consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/Nodes.sol"
+   "sourcePath": "rce/contracts/consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/Nodes.sol"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "N/A",
    "lines": "L532",
-   "sourcePath": "consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/SchainsInternal.sol"
+   "sourcePath": "rce/contracts/consensys-Skale_Network/skale-manager-cf4a07a5198b387fd128e1863a26bbfc789856c4/contracts/SchainsInternal.sol"
   }
  ]
 }

@@ -2,10 +2,10 @@
  "node name": "SimpleMultiSig.json",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lines": "L2",
-   "sourcePath": "consensys-Paxos/simple-multisig-master/contracts/SimpleMultiSig.sol"
+   "sourcePath": "rce/contracts/consensys-Paxos/simple-multisig-master/contracts/SimpleMultiSig.sol"
   }
  ]
 }

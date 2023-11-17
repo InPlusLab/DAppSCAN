@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-ApeCoin/0x4d224452801ACEd8B2F0aebE155379bb5D594381/SimpeToken.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "// SWC-103-Floating Pragma"
+  }
+ ]
+}

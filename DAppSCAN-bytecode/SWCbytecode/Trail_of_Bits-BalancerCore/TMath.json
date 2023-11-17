@@ -2,10 +2,10 @@
  "node name": "TMath.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "calcPoolOutGivenSingleIn",
    "lines": "L143",
-   "sourcePath": "Trail_of_Bits-BalancerCore/balancer-core-942a51e202cc5bf9158bad77162bc72aa0a8afaf/contracts/BMath.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-BalancerCore/balancer-core-942a51e202cc5bf9158bad77162bc72aa0a8afaf/contracts/BMath.sol"
   }
  ]
 }

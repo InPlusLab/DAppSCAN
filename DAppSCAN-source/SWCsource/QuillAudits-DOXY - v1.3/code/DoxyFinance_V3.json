@@ -1,0 +1,50 @@
+{
+ "filePath": "DAppSCAN-source/contracts/QuillAudits-DOXY - v1.3/code/DoxyFinance_V3.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3, all contract"
+  },
+  {
+   "category": "SWC-108-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L270"
+  },
+  {
+   "category": "SWC-108-State Variable Default Visibility",
+   "function": "lockTheSwap",
+   "lineNumber": "L282-284"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "lockTheSwap",
+   "lineNumber": "L284, L312-315"
+  },
+  {
+   "category": "SWC-129-Typographical Error",
+   "function": "lockTheSwap",
+   "lineNumber": "L339, 488, 500, 514, 658, 661, 780, 781, 782, 783, 784, 785, 821, 261, 262"
+  },
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "transfer",
+   "lineNumber": "L373-381, 393-411, 413-430, 432-443, 445-460, 679-695, 754-756, 758-764, 824-826, 828-830, 832-834, 836-838, 881-883, 972-974, 976-978, 980-982, 984-986, 988-990, 998-1000, 1002-1004, 1010-1012, 1014-1016, 1077-1079"
+  },
+  {
+   "category": "SWC-122-Lack of Proper Signature Verification",
+   "function": "_transfer",
+   "lineNumber": "L497-502\uff0c511-516"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "N/A",
+   "lineNumber": "L809-818"
+  },
+  {
+   "category": "SWC-129-Typographical Error",
+   "function": "setAirdropWallet",
+   "lineNumber": "L918, 928, 938, 948, 958, 968"
+  }
+ ]
+}

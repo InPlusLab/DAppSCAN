@@ -382,7 +382,7 @@ contract Quotation is MasterAware, ReentrancyGuard {
       } else {
         require(dai.transfer(userAddress, coverPremium), "Quotation: DAI refund transfer failed");
       }
-
+      // SWC-134-Message call with hardcoded gas amount: L386
       userAddress.transfer(refundedETH);
     }
   }

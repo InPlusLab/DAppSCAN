@@ -2,16 +2,16 @@
  "node name": "strategy-curve-scrv-v3_1.test.json",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lines": "L34",
-   "sourcePath": "HAECHI_AUDIT-Pickle_Finance/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/src/controller-v3.sol"
+   "sourcePath": "rce/contracts/HAECHI_AUDIT-Pickle_Finance/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/src/controller-v3.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L8",
-   "sourcePath": "HAECHI_AUDIT-Pickle_Finance/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/src/strategies/curve/strategy-curve-scrv-v3_1.sol"
+   "sourcePath": "rce/contracts/HAECHI_AUDIT-Pickle_Finance/protocol-9b0f330a16bc35c964211feae3b335ab398c01b6/src/strategies/curve/strategy-curve-scrv-v3_1.sol"
   }
  ]
 }

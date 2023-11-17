@@ -2,10 +2,10 @@
  "node name": "ChainlinkOracle.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L14 - L18",
-   "sourcePath": "Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/InitializableGovernable.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-OriginDollar/origin-dollar-81431fd3b2aa4c518ffc389844f9708c00b516f0/contracts/contracts/governance/InitializableGovernable.sol"
   }
  ]
 }

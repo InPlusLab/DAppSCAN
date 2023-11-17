@@ -2,34 +2,34 @@
  "node name": "BountiesMetaTxRelayer.json",
  "SWCs": [
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lines": "L2-L725",
-   "sourcePath": "consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
+   "sourcePath": "rce/contracts/consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
   },
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L3",
-   "sourcePath": "consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
+   "sourcePath": "rce/contracts/consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
   },
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "N/A",
    "lines": "L48-L49",
-   "sourcePath": "consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
+   "sourcePath": "rce/contracts/consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
   },
   {
-   "category": "SWC-State Variable Default Visibility",
+   "category": "SWC-108-State Variable Default Visibility",
    "function": "contribute",
    "lines": "L246-L265",
-   "sourcePath": "consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
+   "sourcePath": "rce/contracts/consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "contribute",
    "lines": "L249",
-   "sourcePath": "consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
+   "sourcePath": "rce/contracts/consensys-Bounties_Network/StandardBounties-3d7c1771f78c5afdd896e2e2d34cf3dfc7fd4813/contracts/StandardBounties.sol"
   }
  ]
 }

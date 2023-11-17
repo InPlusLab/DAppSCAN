@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Inspex-Revenue Sharing Pool & Shield/Lucky-farm-5c8e9e7ebd3c897c920675dda3c3621b42d9d0dd/contracts/MasterchefShield.sol",
+ "SWCs": [
+  {
+   "category": "SWC-131-Presence of unused variables",
+   "function": "add",
+   "lineNumber": "L14-15"
+  },
+  {
+   "category": "SWC-131-Presence of unused variables",
+   "function": "set",
+   "lineNumber": "L18-19"
+  }
+ ]
+}

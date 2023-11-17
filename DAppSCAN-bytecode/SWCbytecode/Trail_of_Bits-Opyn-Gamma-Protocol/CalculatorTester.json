@@ -2,28 +2,28 @@
  "node name": "CalculatorTester.json",
  "SWCs": [
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "CollateralDustUpdated",
    "lines": "L78 - L85",
-   "sourcePath": "Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "setCollateralDust",
    "lines": "L107",
-   "sourcePath": "Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_convertAmountOnLivePrice",
    "lines": "L895 - L909",
-   "sourcePath": "Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/core/MarginCalculator.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "toScaledUint",
    "lines": "L72 - L95",
-   "sourcePath": "Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/libs/FixedPointInt256.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Opyn-Gamma-Protocol/GammaProtocol-9a75da2ad8beefdaa4caa97d17799b50552ca450/contracts/libs/FixedPointInt256.sol"
   }
  ]
 }

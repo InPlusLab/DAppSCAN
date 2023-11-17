@@ -2,16 +2,16 @@
  "node name": "FinToken.json",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L7",
-   "sourcePath": "Chainsulting-NOM/FinToken/FinToken.sol"
+   "sourcePath": "rce/contracts/Chainsulting-NOM/FinToken/FinToken.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "N/A",
    "lines": "L226",
-   "sourcePath": "Chainsulting-NOM/FinToken/FinToken.sol"
+   "sourcePath": "rce/contracts/Chainsulting-NOM/FinToken/FinToken.sol"
   }
  ]
 }

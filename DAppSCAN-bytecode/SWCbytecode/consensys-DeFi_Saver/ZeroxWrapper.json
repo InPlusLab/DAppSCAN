@@ -2,10 +2,10 @@
  "node name": "ZeroxWrapper.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "takeOrder",
    "lines": "L42-50",
-   "sourcePath": "consensys-DeFi_Saver/defisaver-v3-contracts-cb29669a84c2d6fffaf2231c0938eb407c060919/contracts/exchangeV3/offchainWrappersV3/ZeroxWrapper.sol"
+   "sourcePath": "rce/contracts/consensys-DeFi_Saver/defisaver-v3-contracts-cb29669a84c2d6fffaf2231c0938eb407c060919/contracts/exchangeV3/offchainWrappersV3/ZeroxWrapper.sol"
   }
  ]
 }

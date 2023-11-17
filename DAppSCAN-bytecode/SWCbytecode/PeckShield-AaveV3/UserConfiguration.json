@@ -2,10 +2,10 @@
  "node name": "UserConfiguration.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "isUsingAsCollateralOne",
    "lines": "L122",
-   "sourcePath": "PeckShield-AaveV3/code/aave-v3-core-14f6148e21b477d78347db6a1603039c9559e275/contracts/protocol/libraries/configuration/UserConfiguration.sol"
+   "sourcePath": "rce/contracts/PeckShield-AaveV3/code/aave-v3-core-14f6148e21b477d78347db6a1603039c9559e275/contracts/protocol/libraries/configuration/UserConfiguration.sol"
   }
  ]
 }

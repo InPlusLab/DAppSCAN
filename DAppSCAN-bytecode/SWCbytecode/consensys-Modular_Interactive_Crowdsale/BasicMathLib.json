@@ -2,10 +2,10 @@
  "node name": "BasicMathLib.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "N/A",
    "lines": "L1-L106",
-   "sourcePath": "consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/BasicMathLib/BasicMathLib.sol"
+   "sourcePath": "rce/contracts/consensys-Modular_Interactive_Crowdsale/ethereum-libraries-73abc22623e0841b8ea67a5089002f4867102672/BasicMathLib/BasicMathLib.sol"
   }
  ]
 }

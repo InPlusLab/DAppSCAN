@@ -2,10 +2,10 @@
  "node name": "ThorusDummy.json",
  "SWCs": [
   {
-   "category": "SWC-Outdated Compiler Version",
+   "category": "SWC-102-Outdated Compiler Version",
    "function": "N/A",
    "lines": "L3",
-   "sourcePath": "Inspex-ThorusDummy/contracts-main/ThorusDummy.sol"
+   "sourcePath": "rce/contracts/Inspex-ThorusDummy/contracts-main/ThorusDummy.sol"
   }
  ]
 }

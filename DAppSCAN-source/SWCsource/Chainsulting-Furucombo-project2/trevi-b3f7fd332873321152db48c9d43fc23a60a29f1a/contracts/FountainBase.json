@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Chainsulting-Furucombo-project2/trevi-b3f7fd332873321152db48c9d43fc23a60a29f1a/contracts/FountainBase.sol",
+ "SWCs": [
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "_depositAngel",
+   "lineNumber": "L290-291"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "_withdrawAngel",
+   "lineNumber": "// SWC-107-Reentrancy"
+  }
+ ]
+}

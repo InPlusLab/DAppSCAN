@@ -1,0 +1,23 @@
+{
+ "node name": "ImpossibleWrappedToken.json",
+ "SWCs": [
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "deposit",
+   "lines": "L53-61",
+   "sourcePath": "rce/contracts/BlockSec-blocksec_impossible_finance_swap_v1.2/impossible-swap-core-29aaef89f996acdbee92b67c4d95fb608dc8b876/contracts/ImpossibleWrappedToken.sol"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "deposit",
+   "lines": "L65-73",
+   "sourcePath": "rce/contracts/BlockSec-blocksec_impossible_finance_swap_v1.2/impossible-swap-core-29aaef89f996acdbee92b67c4d95fb608dc8b876/contracts/ImpossibleWrappedToken.sol"
+  },
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "deposit",
+   "lines": "L65-73",
+   "sourcePath": "rce/contracts/BlockSec-blocksec_impossible_finance_swap_v1.2/impossible-swap-core-29aaef89f996acdbee92b67c4d95fb608dc8b876/contracts/ImpossibleWrappedToken.sol"
+  }
+ ]
+}

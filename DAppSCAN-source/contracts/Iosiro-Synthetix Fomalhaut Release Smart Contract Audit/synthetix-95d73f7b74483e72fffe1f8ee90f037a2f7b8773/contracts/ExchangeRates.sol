@@ -542,7 +542,7 @@ contract ExchangeRates is Owned, SelfDestructible, MixinResolver, MixinSystemSet
             }
         }
     }
-
+    // SWC-101-Integer Overflow and Underflow: L548-549
     function _formatAggregatorAnswer(bytes32 currencyKey, int256 rate) internal view returns (uint) {
         if (currencyKeyDecimals[currencyKey] > 0) {
             uint multiplier = 10**uint(18 - currencyKeyDecimals[currencyKey]);

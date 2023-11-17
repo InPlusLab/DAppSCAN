@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-Pluteus-Audit Report/code/Pluteus (1).sol",
+ "SWCs": [
+  {
+   "category": "SWC-129-Typographical Error",
+   "function": "geUnlockTime",
+   "lineNumber": "L455"
+  }
+ ]
+}

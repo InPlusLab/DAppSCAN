@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/PeckShield-Spherium/code/code.sol",
+ "SWCs": [
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "vestedAmount",
+   "lineNumber": "L707"
+  }
+ ]
+}

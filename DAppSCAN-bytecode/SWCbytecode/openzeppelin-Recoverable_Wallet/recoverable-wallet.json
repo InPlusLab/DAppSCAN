@@ -2,34 +2,34 @@
  "node name": "recoverable-wallet.json",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "start_ownership_transfer",
    "lines": "L39-L57",
-   "sourcePath": "openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
   },
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "N/A",
    "lines": "L68",
-   "sourcePath": "openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
   },
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "add_recovery_address",
    "lines": "L88-L128",
-   "sourcePath": "openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "finish_recovery",
    "lines": "L124",
-   "sourcePath": "openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
   },
   {
-   "category": "SWC-Presence of unused variables",
+   "category": "SWC-131-Presence of unused variables",
    "function": "reset_recovery",
    "lines": "L146",
-   "sourcePath": "openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Recoverable_Wallet/recoverable-wallet-2207f5a7cc3b2607f7f97a769fbca7fe9235952b/contracts/source/recoverable-wallet.sol"
   }
  ]
 }

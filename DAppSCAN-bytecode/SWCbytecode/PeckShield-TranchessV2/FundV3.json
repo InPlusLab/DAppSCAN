@@ -2,10 +2,10 @@
  "node name": "FundV3.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "ProfitReported",
    "lines": "L30-L41",
-   "sourcePath": "PeckShield-TranchessV2/contract-core-6876889ff08ddadb78973cadca821128ebb6503c/contracts/fund/FundV3.sol"
+   "sourcePath": "rce/contracts/PeckShield-TranchessV2/contract-core-6876889ff08ddadb78973cadca821128ebb6503c/contracts/fund/FundV3.sol"
   }
  ]
 }

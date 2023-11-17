@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-Bolide-V3/contracts-aaf0ab6601b2cdd45c1064ec5978b05f5a0436aa/farming/contracts/MasterChef.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "// SWC-103-Floating Pragma"
+  }
+ ]
+}

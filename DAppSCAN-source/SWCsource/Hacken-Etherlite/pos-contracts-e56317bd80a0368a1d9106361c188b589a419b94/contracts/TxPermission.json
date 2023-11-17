@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-Etherlite/pos-contracts-e56317bd80a0368a1d9106361c188b589a419b94/contracts/TxPermission.sol",
+ "SWCs": [
+  {
+   "category": "SWC-131-Presence of unused variables",
+   "function": "allowedTxTypes",
+   "lineNumber": "L184"
+  },
+  {
+   "category": "SWC-131-Presence of unused variables",
+   "function": "isInitialized",
+   "lineNumber": "L313-314s"
+  }
+ ]
+}

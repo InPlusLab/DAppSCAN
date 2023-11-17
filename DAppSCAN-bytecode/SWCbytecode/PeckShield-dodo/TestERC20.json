@@ -1,0 +1,11 @@
+{
+ "node name": "TestERC20.json",
+ "SWCs": [
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "sqrt",
+   "lines": "L56",
+   "sourcePath": "rce/contracts/PeckShield-dodo/dodo-smart-contract-d74964085d115022635dbfa07cf8396b8f450ab0/contracts/lib/SafeMath.sol"
+  }
+ ]
+}

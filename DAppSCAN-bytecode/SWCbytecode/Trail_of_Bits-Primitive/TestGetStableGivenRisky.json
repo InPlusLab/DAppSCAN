@@ -2,16 +2,16 @@
  "node name": "TestGetStableGivenRisky.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "scaleToX64",
    "lines": "L41",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
   },
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "percentage",
    "lines": "L59",
-   "sourcePath": "Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Primitive/rmm-core-5dcf4306fc32fb9a4e3c154deb86f6b9d513c344/contracts/libraries/Units.sol"
   }
  ]
 }

@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/BlockSec-blocksec_alpaca_v1.0_signed/bsc-alpaca-contract-cb13e32fe5a4ba6f63b0235bd4624715592e4abe/contracts/8.10/protocol/DeltaNeutralVault.sol",
+ "SWCs": [
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "deposit",
+   "lineNumber": "// SWC-114-Transaction Order Dependence"
+  },
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "withdraw",
+   "lineNumber": "// SWC-114-Transaction Order Dependence"
+  }
+ ]
+}

@@ -153,7 +153,7 @@ contract StandardMintableToken is owned{
     }
     
     /* A function to add more tokens to the total supply, accessible only to owner*/
-    
+    // SWC-101-Integer Overflow and Underflow
     function mintToken(address target, uint256 mintedAmount) onlyOwner {
         if (balanceOf[target] + mintedAmount < balanceOf[target]) throw; // Check for overflows
         balanceOf[target] += mintedAmount;

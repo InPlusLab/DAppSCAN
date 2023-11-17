@@ -2,10 +2,10 @@
  "node name": "Vesting.json",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "rug",
    "lines": "L160",
-   "sourcePath": "Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/vesting-a02cbd5e73e629b5d80c0af0202a3ee6f18d0216/contracts/Vesting.sol"
+   "sourcePath": "rce/contracts/Runtime_V\u0435rification-Tracer_Perpetual_Pools_V2/vesting-a02cbd5e73e629b5d80c0af0202a3ee6f18d0216/contracts/Vesting.sol"
   }
  ]
 }

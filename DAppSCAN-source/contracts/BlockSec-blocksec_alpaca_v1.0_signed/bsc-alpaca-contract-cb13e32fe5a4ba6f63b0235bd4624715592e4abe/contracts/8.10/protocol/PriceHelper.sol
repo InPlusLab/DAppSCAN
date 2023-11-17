@@ -66,6 +66,7 @@ contract PriceHelper is IPriceHelper, Initializable, OwnableUpgradeable {
   /// @notice Get token price in dollar
   /// @dev getTokenPrice from address
   /// @param tokenAddress tokenAddress
+  // SWC-116-Block values as a proxy for time
   function getTokenPrice(address tokenAddress) public view returns (uint256) {
     (uint256 price, uint256 lastTimestamp) = chainLinkPriceOracle.getPrice(tokenAddress, usd);
     return price;

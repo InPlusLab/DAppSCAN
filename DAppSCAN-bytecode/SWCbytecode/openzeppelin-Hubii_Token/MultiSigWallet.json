@@ -2,10 +2,10 @@
  "node name": "MultiSigWallet.json",
  "SWCs": [
   {
-   "category": "SWC-Uninitialized Storage Pointer",
+   "category": "SWC-109-Uninitialized Storage Pointer",
    "function": "N/A",
    "lines": "L10-360",
-   "sourcePath": "openzeppelin-Hubii_Token/ico-142f43f3bec4afd0ffff3fce06946cf67cb0272f/MultiSigWallet.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Hubii_Token/ico-142f43f3bec4afd0ffff3fce06946cf67cb0272f/MultiSigWallet.sol"
   }
  ]
 }

@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/BlockSec-blocksec_alpaca_v1.0_signed/bsc-alpaca-contract-cb13e32fe5a4ba6f63b0235bd4624715592e4abe/contracts/8.10/protocol/PriceHelper.sol",
+ "SWCs": [
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "getTokenPrice",
+   "lineNumber": "// SWC-116-Block values as a proxy for time"
+  }
+ ]
+}

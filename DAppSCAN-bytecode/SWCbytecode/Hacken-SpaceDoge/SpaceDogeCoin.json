@@ -2,16 +2,16 @@
  "node name": "SpaceDogeCoin.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "addLiquidity",
    "lines": "L1144",
-   "sourcePath": "Hacken-SpaceDoge/SpaceDoge-b4170e5899e917f7ec6efe463e054068369fcdaa/SpaceDogeCoin.sol"
+   "sourcePath": "rce/contracts/Hacken-SpaceDoge/SpaceDoge-b4170e5899e917f7ec6efe463e054068369fcdaa/SpaceDogeCoin.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "_tokenTransfer",
    "lines": "L1171 - L1172",
-   "sourcePath": "Hacken-SpaceDoge/SpaceDoge-b4170e5899e917f7ec6efe463e054068369fcdaa/SpaceDogeCoin.sol"
+   "sourcePath": "rce/contracts/Hacken-SpaceDoge/SpaceDoge-b4170e5899e917f7ec6efe463e054068369fcdaa/SpaceDogeCoin.sol"
   }
  ]
 }

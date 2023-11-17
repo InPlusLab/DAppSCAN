@@ -2,10 +2,10 @@
  "node name": "StakingV2TestWrapper.json",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "deposit",
    "lines": "L340-L359",
-   "sourcePath": "PeckShield-TranchessV1.1/contract-core-68a86350313c1cb9e5467e791d3e9efaf228a0df/contracts/exchange/StakingV2.sol"
+   "sourcePath": "rce/contracts/PeckShield-TranchessV1.1/contract-core-68a86350313c1cb9e5467e791d3e9efaf228a0df/contracts/exchange/StakingV2.sol"
   }
  ]
 }

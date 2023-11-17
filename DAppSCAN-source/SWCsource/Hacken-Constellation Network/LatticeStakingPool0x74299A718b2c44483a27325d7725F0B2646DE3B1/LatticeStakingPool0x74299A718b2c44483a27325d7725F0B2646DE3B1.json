@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Hacken-Constellation Network/LatticeStakingPool0x74299A718b2c44483a27325d7725F0B2646DE3B1/LatticeStakingPool0x74299A718b2c44483a27325d7725F0B2646DE3B1.sol",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "whitelistAddresses",
+   "lineNumber": "L1795"
+  }
+ ]
+}

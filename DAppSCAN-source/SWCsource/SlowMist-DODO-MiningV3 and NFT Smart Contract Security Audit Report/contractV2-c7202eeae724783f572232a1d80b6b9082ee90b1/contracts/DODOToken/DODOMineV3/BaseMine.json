@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/SlowMist-DODO-MiningV3 and NFT Smart Contract Security Audit Report/contractV2-c7202eeae724783f572232a1d80b6b9082ee90b1/contracts/DODOToken/DODOMineV3/BaseMine.sol",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "_updateAllReward",
+   "lineNumber": "L260-L262"
+  }
+ ]
+}

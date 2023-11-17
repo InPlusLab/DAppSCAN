@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/ImmuneBytes-BonFi(Liquidity)-Final Audit Report/code/Liquidity_v9(1).sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L3"
+  }
+ ]
+}

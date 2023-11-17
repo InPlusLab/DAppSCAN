@@ -2,10 +2,10 @@
  "node name": "OpenOracleData.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "source",
    "lines": "L9-28",
-   "sourcePath": "openzeppelin-Compound_Open_Oracle/open-oracle-e7a928334e5e454a88eec38e4ee1be5ee3b13f08/OpenOracleData.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Compound_Open_Oracle/open-oracle-e7a928334e5e454a88eec38e4ee1be5ee3b13f08/OpenOracleData.sol"
   }
  ]
 }

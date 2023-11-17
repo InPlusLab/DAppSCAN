@@ -40,7 +40,7 @@ contract TeamsStorageController {
     function storageGetNumberOfTeams (address db) internal view returns(uint) {
         return StorageInterface(db).getUint(keccak256(Storage.teams));
     }
-
+    // SWC-104-Unchecked Call Return Value: L48
     function storageGetTeamMemberIndexByAddress (address db, uint teamId, address memberAddress) internal view returns(uint) {
         uint i = 0;
         address addr;

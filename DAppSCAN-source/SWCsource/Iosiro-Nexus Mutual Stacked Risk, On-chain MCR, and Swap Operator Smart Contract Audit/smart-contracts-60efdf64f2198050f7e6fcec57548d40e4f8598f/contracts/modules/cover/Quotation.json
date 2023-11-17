@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Nexus Mutual Stacked Risk, On-chain MCR, and Swap Operator Smart Contract Audit/smart-contracts-60efdf64f2198050f7e6fcec57548d40e4f8598f/contracts/modules/cover/Quotation.sol",
+ "SWCs": [
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "freeUpHeldCovers",
+   "lineNumber": "L386"
+  }
+ ]
+}

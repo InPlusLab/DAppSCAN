@@ -2,28 +2,28 @@
  "node name": "UniswapV3PoolDeployer.json",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "initialize",
    "lines": "L195 - L213",
-   "sourcePath": "Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/UniswapV3Pool.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/UniswapV3Pool.sol"
   },
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "swap",
    "lines": "L503 - L672",
-   "sourcePath": "Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/UniswapV3Pool.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/UniswapV3Pool.sol"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "swap",
    "lines": "L546 - L621",
-   "sourcePath": "Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/UniswapV3Pool.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/UniswapV3Pool.sol"
   },
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "safeTransfer",
    "lines": "L21",
-   "sourcePath": "Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/libraries/TransferHelper.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-UniswapV3Core/v3-core-99223f33fd69a9e024f00bd8eea17b029d3f8f2d/contracts/libraries/TransferHelper.sol"
   }
  ]
 }

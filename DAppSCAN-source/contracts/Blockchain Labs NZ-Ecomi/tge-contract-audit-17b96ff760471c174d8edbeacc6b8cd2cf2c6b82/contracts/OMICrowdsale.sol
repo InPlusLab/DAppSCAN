@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-
+// SWC-102-Outdated Compiler Version: L1
 import "./OMIToken.sol";
 import "./OMITokenLock.sol";
 import "../node_modules/zeppelin-solidity/contracts/math/SafeMath.sol";

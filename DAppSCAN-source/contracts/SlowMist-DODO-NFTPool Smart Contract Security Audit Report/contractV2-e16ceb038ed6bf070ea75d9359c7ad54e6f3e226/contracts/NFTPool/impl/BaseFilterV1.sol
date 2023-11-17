@@ -169,7 +169,7 @@ contract BaseFilterV1 is InitializableOwnable, ReentrancyGuard {
         uint256 qm = DecimalMath.powFloor(q, start);
         return a1.mul(qn.sub(qm)).div(q.sub(DecimalMath.ONE));
     }
-
+    // SWC-120-Weak Sources of Randomness from Chain Attributes: L175
     function _getRandomNum() public view returns (uint256 randomNum) {
         randomNum = uint256(
             keccak256(abi.encodePacked(tx.origin, blockhash(block.number - 1), gasleft()))

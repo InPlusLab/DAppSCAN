@@ -150,7 +150,7 @@ contract DjinnAutoBuyer
         emit BoughtToken(_amountOut);
         return _amountRefund;
     }
-
+    // SWC-114-Transaction Order Dependence: L154-L169
     function buyTokenFromBnb(
         address _outTarget
         ) external payable

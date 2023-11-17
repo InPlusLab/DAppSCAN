@@ -501,7 +501,7 @@ contract EtherCollateralsUSD is Owned, Pausable, ReentrancyGuard, MixinResolver,
         require(collateralRatioAfter > liquidationRatio, "Collateral ratio below liquidation after withdraw");
 
         // transfer ETH to msg.sender
-        msg.sender.transfer(withdrawAmount);
+        msg.sender.transfer(withdrawAmount); // SWC-134-Message call with hardcoded gas amount: L504
 
         // Tell the Dapps collateral was added to loan
         emit CollateralWithdrawn(msg.sender, loanID, withdrawAmount, loanAfter.collateralAmount);
@@ -585,7 +585,7 @@ contract EtherCollateralsUSD is Owned, Pausable, ReentrancyGuard, MixinResolver,
         _updateLoan(synthLoan, totalLoanAmount.sub(amountToLiquidate), interestAmount, now);
 
         // Send liquidated ETH collateral to msg.sender
-        msg.sender.transfer(totalCollateralLiquidated);
+        msg.sender.transfer(totalCollateralLiquidated); // SWC-134-Message call with hardcoded gas amount: L588
 
         // emit loan liquidation event
         emit LoanPartiallyLiquidated(

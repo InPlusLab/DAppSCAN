@@ -2,10 +2,10 @@
  "node name": "Liquidator.json",
  "SWCs": [
   {
-   "category": "SWC-Unprotected Ether Withdrawal",
+   "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "distribute",
    "lines": "L35",
-   "sourcePath": "BlockSec-blocksec_stnd_v1.7_signed/standard-evm-d7c016ca098a4e5a554583c499fc0cead4db7088/contracts/pools/liquidation/Liquidator.sol"
+   "sourcePath": "rce/contracts/BlockSec-blocksec_stnd_v1.7_signed/standard-evm-d7c016ca098a4e5a554583c499fc0cead4db7088/contracts/pools/liquidation/Liquidator.sol"
   }
  ]
 }

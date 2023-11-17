@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Synthetix Alkaid Release Smart Contract Audit/synthetix-7d4e868c295bb432640c0478edfd185ab8932785/contracts/ExchangeRatesWithDexPricing.sol",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "synthTooVolatileForAtomicExchange",
+   "lineNumber": "L121-149"
+  }
+ ]
+}

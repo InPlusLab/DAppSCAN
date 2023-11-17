@@ -2,22 +2,22 @@
  "node name": "MultiCDPGetter.json",
  "SWCs": [
   {
-   "category": "SWC-Unchecked Call Return Value",
+   "category": "SWC-104-Unchecked Call Return Value",
    "function": "redeemCollateral",
    "lines": "L920",
-   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "getTCR",
    "lines": "L1276-L1284",
-   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
   },
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "getEntireSystemColl",
    "lines": "L1286-L1291",
-   "sourcePath": "Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-Liquity/dev-f0df3efa5a5f05b205752184cfce107c5bd6e06c/packages/contracts/contracts/TroveManager.sol"
   }
  ]
 }

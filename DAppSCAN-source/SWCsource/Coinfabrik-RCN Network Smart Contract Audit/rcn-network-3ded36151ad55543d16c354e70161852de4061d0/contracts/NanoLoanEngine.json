@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-RCN Network Smart Contract Audit/rcn-network-3ded36151ad55543d16c354e70161852de4061d0/contracts/NanoLoanEngine.sol",
+ "SWCs": [
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "tokenOfOwnerByIndex",
+   "lineNumber": "L46"
+  }
+ ]
+}

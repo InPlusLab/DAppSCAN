@@ -1,0 +1,2 @@
+contracts/**/I*.sol
+contracts/examples/*.sol

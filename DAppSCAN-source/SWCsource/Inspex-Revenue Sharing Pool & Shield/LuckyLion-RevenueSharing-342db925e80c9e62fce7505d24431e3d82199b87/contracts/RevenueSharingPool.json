@@ -1,0 +1,20 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Inspex-Revenue Sharing Pool & Shield/LuckyLion-RevenueSharing-342db925e80c9e62fce7505d24431e3d82199b87/contracts/RevenueSharingPool.sol",
+ "SWCs": [
+  {
+   "category": "SWC-103-Floating Pragma",
+   "function": "N/A",
+   "lineNumber": "L2"
+  },
+  {
+   "category": "SWC-108-State Variable Default Visibility",
+   "function": "N/A",
+   "lineNumber": "L33"
+  },
+  {
+   "category": "SWC-128-DoS With Block Gas Limit",
+   "function": "calculateTotalLuckyReward",
+   "lineNumber": "L241-243"
+  }
+ ]
+}

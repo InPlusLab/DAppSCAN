@@ -2,10 +2,10 @@
  "node name": "RebalancingSetTokenFactory.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "hasDuplicate",
    "lines": "L303 - L315",
-   "sourcePath": "Trail_of_Bits-setprotocol/set-protocol-contracts-b4acf144c10b1d9f3ecde4ee2820931df1cb8e4a/contracts/lib/AddressArrayUtils.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-setprotocol/set-protocol-contracts-b4acf144c10b1d9f3ecde4ee2820931df1cb8e4a/contracts/lib/AddressArrayUtils.sol"
   }
  ]
 }

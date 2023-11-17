@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Coinfabrik-Polymath Core Audit/polymath-core-bdb055769dd87a09327c6200aed5d994ab0237e8/contracts/modules/STO/USDTiered/USDTieredSTO.sol",
+ "SWCs": [
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "finalize",
+   "lineNumber": "L360"
+  }
+ ]
+}

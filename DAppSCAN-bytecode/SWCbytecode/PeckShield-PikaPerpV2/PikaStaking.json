@@ -2,10 +2,10 @@
  "node name": "PikaStaking.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L11-L140",
-   "sourcePath": "PeckShield-PikaPerpV2/PikaPerpV2-4a0965ff90ed099b7e2d3e8dda47cd589ee8e3a2/contracts/staking/PikaStaking.sol"
+   "sourcePath": "rce/contracts/PeckShield-PikaPerpV2/PikaPerpV2-4a0965ff90ed099b7e2d3e8dda47cd589ee8e3a2/contracts/staking/PikaStaking.sol"
   }
  ]
 }

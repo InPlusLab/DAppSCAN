@@ -2,16 +2,16 @@
  "node name": "Zunami.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "N/A",
    "lines": "L45-47",
-   "sourcePath": "Ackee_Blockchain-Zunami_protocol/ZunamiProtocol-37dccabf5aa3697dce5eaf6457debb3ac7404fdd/contracts/Zunami.sol"
+   "sourcePath": "rce/contracts/Ackee_Blockchain-Zunami_protocol/ZunamiProtocol-37dccabf5aa3697dce5eaf6457debb3ac7404fdd/contracts/Zunami.sol"
   },
   {
-   "category": "SWC-Function Default Visibility",
+   "category": "SWC-100-Function Default Visibility",
    "function": "calcManagementFee",
    "lines": "L74",
-   "sourcePath": "Ackee_Blockchain-Zunami_protocol/ZunamiProtocol-37dccabf5aa3697dce5eaf6457debb3ac7404fdd/contracts/Zunami.sol"
+   "sourcePath": "rce/contracts/Ackee_Blockchain-Zunami_protocol/ZunamiProtocol-37dccabf5aa3697dce5eaf6457debb3ac7404fdd/contracts/Zunami.sol"
   }
  ]
 }

@@ -2,10 +2,10 @@
  "node name": "HegicOperationalTreasury.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "_replenish",
    "lines": "L181",
-   "sourcePath": "PeckShield-Hegic_HardCore_Beta/hegic-hardcore-beta-e22e6f67f1ce99e1317fc52fa325b496464a95bd/contracts/Pool/HegicOperationalTreasury.sol"
+   "sourcePath": "rce/contracts/PeckShield-Hegic_HardCore_Beta/hegic-hardcore-beta-e22e6f67f1ce99e1317fc52fa325b496464a95bd/contracts/Pool/HegicOperationalTreasury.sol"
   }
  ]
 }

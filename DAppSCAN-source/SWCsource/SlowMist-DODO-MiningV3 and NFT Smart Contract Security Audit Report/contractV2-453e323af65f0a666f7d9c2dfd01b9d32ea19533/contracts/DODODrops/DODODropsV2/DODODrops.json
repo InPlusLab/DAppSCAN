@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/SlowMist-DODO-MiningV3 and NFT Smart Contract Security Audit Report/contractV2-453e323af65f0a666f7d9c2dfd01b9d32ea19533/contracts/DODODrops/DODODropsV2/DODODrops.sol",
+ "SWCs": [
+  {
+   "category": "SWC-120-Weak Sources of Randomness from Chain Attributes",
+   "function": "_redeemSinglePrize",
+   "lineNumber": "L156"
+  }
+ ]
+}

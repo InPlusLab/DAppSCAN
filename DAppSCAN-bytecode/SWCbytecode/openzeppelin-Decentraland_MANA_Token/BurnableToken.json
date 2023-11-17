@@ -2,10 +2,10 @@
  "node name": "BurnableToken.json",
  "SWCs": [
   {
-   "category": "SWC-Transaction Order Dependence",
+   "category": "SWC-114-Transaction Order Dependence",
    "function": "burn",
    "lines": "L17-22",
-   "sourcePath": "openzeppelin-Decentraland_MANA_Token/mana-a13905356378cc0153dd3c2153c8ceae6400970d/BurnableToken.sol"
+   "sourcePath": "rce/contracts/openzeppelin-Decentraland_MANA_Token/mana-a13905356378cc0153dd3c2153c8ceae6400970d/BurnableToken.sol"
   }
  ]
 }

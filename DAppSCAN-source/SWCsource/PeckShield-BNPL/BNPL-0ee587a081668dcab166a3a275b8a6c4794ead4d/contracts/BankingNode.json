@@ -1,0 +1,15 @@
+{
+ "filePath": "DAppSCAN-source/contracts/PeckShield-BNPL/BNPL-0ee587a081668dcab166a3a275b8a6c4794ead4d/contracts/BankingNode.sol",
+ "SWCs": [
+  {
+   "category": "SWC-114-Transaction Order Dependence",
+   "function": "collectFees",
+   "lineNumber": "L453-L470"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "unstake",
+   "lineNumber": "L615-L637"
+  }
+ ]
+}

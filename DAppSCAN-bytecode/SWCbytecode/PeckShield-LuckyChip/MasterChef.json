@@ -2,10 +2,10 @@
  "node name": "MasterChef.json",
  "SWCs": [
   {
-   "category": "SWC-Code With No Effects",
+   "category": "SWC-135-Code With No Effects",
    "function": "add",
    "lines": "L173 - L190",
-   "sourcePath": "PeckShield-LuckyChip/staking-23e5db6078aa12754ae69048c7754c7f1e90b375/contracts/MasterChef.sol"
+   "sourcePath": "rce/contracts/PeckShield-LuckyChip/staking-23e5db6078aa12754ae69048c7754c7f1e90b375/contracts/MasterChef.sol"
   }
  ]
 }

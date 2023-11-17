@@ -2,16 +2,16 @@
  "node name": "CommunityVault.json",
  "SWCs": [
   {
-   "category": "SWC-Floating Pragma",
+   "category": "SWC-103-Floating Pragma",
    "function": "N/A",
    "lines": "L2",
-   "sourcePath": "Coinbae-Barnbridge_Vault/CommunityVault0xA3C299eEE1998F45c20010276684921EBE6423D9/contracts/CommunityVault.sol"
+   "sourcePath": "rce/contracts/Coinbae-Barnbridge_Vault/CommunityVault0xA3C299eEE1998F45c20010276684921EBE6423D9/contracts/CommunityVault.sol"
   },
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "setAllowance",
    "lines": "L18",
-   "sourcePath": "Coinbae-Barnbridge_Vault/CommunityVault0xA3C299eEE1998F45c20010276684921EBE6423D9/contracts/CommunityVault.sol"
+   "sourcePath": "rce/contracts/Coinbae-Barnbridge_Vault/CommunityVault0xA3C299eEE1998F45c20010276684921EBE6423D9/contracts/CommunityVault.sol"
   }
  ]
 }

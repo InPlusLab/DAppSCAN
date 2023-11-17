@@ -2,16 +2,16 @@
  "node name": "Consideration.json",
  "SWCs": [
   {
-   "category": "SWC-Integer Overflow and Underflow",
+   "category": "SWC-101-Integer Overflow and Underflow",
    "function": "fulfillAdvancedOrder",
    "lines": "L387 - L399",
-   "sourcePath": "Trail_of_Bits-SeaportProtocol/seaport-f17082fca3e99b409f53040d8858e84b0246aa22/contracts/Consideration.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-SeaportProtocol/seaport-f17082fca3e99b409f53040d8858e84b0246aa22/contracts/Consideration.sol"
   },
   {
-   "category": "SWC-DoS With Block Gas Limit",
+   "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_revertWithReasonIfOneIsReturned",
    "lines": "L1255 - L1266",
-   "sourcePath": "Trail_of_Bits-SeaportProtocol/seaport-f17082fca3e99b409f53040d8858e84b0246aa22/contracts/lib/ConsiderationPure.sol"
+   "sourcePath": "rce/contracts/Trail_of_Bits-SeaportProtocol/seaport-f17082fca3e99b409f53040d8858e84b0246aa22/contracts/lib/ConsiderationPure.sol"
   }
  ]
 }

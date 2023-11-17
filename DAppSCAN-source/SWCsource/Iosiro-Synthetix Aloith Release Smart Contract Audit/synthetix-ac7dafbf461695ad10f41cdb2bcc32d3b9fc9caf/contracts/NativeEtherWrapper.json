@@ -1,0 +1,10 @@
+{
+ "filePath": "DAppSCAN-source/contracts/Iosiro-Synthetix Aloith Release Smart Contract Audit/synthetix-ac7dafbf461695ad10f41cdb2bcc32d3b9fc9caf/contracts/NativeEtherWrapper.sol",
+ "SWCs": [
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "burn",
+   "lineNumber": "L81"
+  }
+ ]
+}

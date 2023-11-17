@@ -2,10 +2,10 @@
  "node name": "SimplePriceOracle.json",
  "SWCs": [
   {
-   "category": "SWC-Reentrancy",
+   "category": "SWC-107-Reentrancy",
    "function": "borrowFresh",
    "lines": "L738-L802",
-   "sourcePath": "PeckShield-Atlantis/atlantis-protocol-bsc-766acebba9316eced1c15abf6158b31f470a947f/contracts/AToken.sol"
+   "sourcePath": "rce/contracts/PeckShield-Atlantis/atlantis-protocol-bsc-766acebba9316eced1c15abf6158b31f470a947f/contracts/AToken.sol"
   }
  ]
 }
