@@ -4,7 +4,7 @@ pragma solidity ^0.6.0;
 
 import "../interfaces/IGovernanceModule.sol";
 
-/// @title Base governance contract with notification logics
+
 abstract contract BaseGovernanceModule is IGovernanceModule {
     address public immutable mothership;
 

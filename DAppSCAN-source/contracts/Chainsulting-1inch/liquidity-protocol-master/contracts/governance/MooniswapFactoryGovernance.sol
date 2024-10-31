@@ -3,7 +3,6 @@
 pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Pausable.sol";
 import "../interfaces/IMooniswapFactoryGovernance.sol";
 import "../libraries/ExplicitLiquidVoting.sol";
 import "../libraries/MooniswapConstants.sol";
@@ -11,8 +10,8 @@ import "../libraries/SafeCast.sol";
 import "../utils/BalanceAccounting.sol";
 import "./BaseGovernanceModule.sol";
 
-/// @title 1inch Mooniswap factory governance
-contract MooniswapFactoryGovernance is IMooniswapFactoryGovernance, BaseGovernanceModule, BalanceAccounting, Ownable, Pausable {
+
+contract MooniswapFactoryGovernance is IMooniswapFactoryGovernance, BaseGovernanceModule, BalanceAccounting, Ownable {
     using Vote for Vote.Data;
     using ExplicitLiquidVoting for ExplicitLiquidVoting.Data;
     using VirtualVote for VirtualVote.Data;
@@ -24,20 +23,18 @@ contract MooniswapFactoryGovernance is IMooniswapFactoryGovernance, BaseGovernan
     event DefaultDecayPeriodVoteUpdate(address indexed user, uint256 decayPeriod, bool isDefault, uint256 amount);
     event ReferralShareVoteUpdate(address indexed user, uint256 referralShare, bool isDefault, uint256 amount);
     event GovernanceShareVoteUpdate(address indexed user, uint256 governanceShare, bool isDefault, uint256 amount);
-    event GovernanceWalletUpdate(address governanceWallet);
-    event FeeCollectorUpdate(address feeCollector);
+    event GovernanceFeeReceiverUpdate(address governanceFeeReceiver);
+    event ReferralFeeReceiverUpdate(address referralFeeReceiver);
 
     ExplicitLiquidVoting.Data private _defaultFee;
     ExplicitLiquidVoting.Data private _defaultSlippageFee;
     ExplicitLiquidVoting.Data private _defaultDecayPeriod;
     ExplicitLiquidVoting.Data private _referralShare;
     ExplicitLiquidVoting.Data private _governanceShare;
-    /// @inheritdoc IMooniswapFactoryGovernance
-    address public override governanceWallet;
-    /// @inheritdoc IMooniswapFactoryGovernance
-    address public override feeCollector;
+    address public override governanceFeeReceiver;
+    address public override referralFeeReceiver;
 
-    mapping(address => bool) public override isFeeCollector;
+    mapping(address => bool) public override isFeeReceiver;
 
     constructor(address _mothership) public BaseGovernanceModule(_mothership) {
         _defaultFee.data.result = MooniswapConstants._DEFAULT_FEE.toUint104();
@@ -47,164 +44,129 @@ contract MooniswapFactoryGovernance is IMooniswapFactoryGovernance, BaseGovernan
         _governanceShare.data.result = MooniswapConstants._DEFAULT_GOVERNANCE_SHARE.toUint104();
     }
 
-    function shutdown() external onlyOwner {
-        _pause();
+    function shareParameters() external view override returns(uint256, uint256, address, address) {
+        return (_referralShare.data.current(), _governanceShare.data.current(), governanceFeeReceiver, referralFeeReceiver);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function isActive() external view override returns (bool) {
-        return !paused();
-    }
-
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function shareParameters() external view override returns (uint256, uint256, address, address) {
-        return (_referralShare.data.current(), _governanceShare.data.current(), governanceWallet, feeCollector);
-    }
-
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function defaults() external view override returns (uint256, uint256, uint256) {
+    function defaults() external view override returns(uint256, uint256, uint256) {
         return (_defaultFee.data.current(), _defaultSlippageFee.data.current(), _defaultDecayPeriod.data.current());
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function defaultFee() external view override returns (uint256) {
+    function defaultFee() external view override returns(uint256) {
         return _defaultFee.data.current();
     }
 
-    /// @notice Returns user stance to preferred default fee
-    function defaultFeeVotes(address user) external view returns (uint256) {
+    function defaultFeeVotes(address user) external view returns(uint256) {
         return _defaultFee.votes[user].get(MooniswapConstants._DEFAULT_FEE);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function virtualDefaultFee() external view override returns (uint104, uint104, uint48) {
+    function virtualDefaultFee() external view returns(uint104, uint104, uint48) {
         return (_defaultFee.data.oldResult, _defaultFee.data.result, _defaultFee.data.time);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function defaultSlippageFee() external view override returns (uint256) {
+    function defaultSlippageFee() external view override returns(uint256) {
         return _defaultSlippageFee.data.current();
     }
 
-    /// @notice Returns user stance to preferred default slippage fee
-    function defaultSlippageFeeVotes(address user) external view returns (uint256) {
+    function defaultSlippageFeeVotes(address user) external view returns(uint256) {
         return _defaultSlippageFee.votes[user].get(MooniswapConstants._DEFAULT_SLIPPAGE_FEE);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function virtualDefaultSlippageFee() external view override returns (uint104, uint104, uint48) {
+    function virtualDefaultSlippageFee() external view returns(uint104, uint104, uint48) {
         return (_defaultSlippageFee.data.oldResult, _defaultSlippageFee.data.result, _defaultSlippageFee.data.time);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function defaultDecayPeriod() external view override returns (uint256) {
+    function defaultDecayPeriod() external view override returns(uint256) {
         return _defaultDecayPeriod.data.current();
     }
 
-    /// @notice Returns user stance to preferred default decay period
-    function defaultDecayPeriodVotes(address user) external view returns (uint256) {
+    function defaultDecayPeriodVotes(address user) external view returns(uint256) {
         return _defaultDecayPeriod.votes[user].get(MooniswapConstants._DEFAULT_DECAY_PERIOD);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function virtualDefaultDecayPeriod() external view override returns (uint104, uint104, uint48) {
+    function virtualDefaultDecayPeriod() external view returns(uint104, uint104, uint48) {
         return (_defaultDecayPeriod.data.oldResult, _defaultDecayPeriod.data.result, _defaultDecayPeriod.data.time);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function referralShare() external view override returns (uint256) {
+    function referralShare() external view override returns(uint256) {
         return _referralShare.data.current();
     }
 
-    /// @notice Returns user stance to preferred referral share
-    function referralShareVotes(address user) external view returns (uint256) {
+    function referralShareVotes(address user) external view returns(uint256) {
         return _referralShare.votes[user].get(MooniswapConstants._DEFAULT_REFERRAL_SHARE);
     }
 
-    function virtualReferralShare() external view returns (uint104, uint104, uint48) {
+    function virtualReferralShare() external view returns(uint104, uint104, uint48) {
         return (_referralShare.data.oldResult, _referralShare.data.result, _referralShare.data.time);
     }
 
-    /// @inheritdoc IMooniswapFactoryGovernance
-    function governanceShare() external view override returns (uint256) {
+    function governanceShare() external view override returns(uint256) {
         return _governanceShare.data.current();
     }
 
-    /// @notice Returns user stance to preferred governance share
-    function governanceShareVotes(address user) external view returns (uint256) {
+    function governanceShareVotes(address user) external view returns(uint256) {
         return _governanceShare.votes[user].get(MooniswapConstants._DEFAULT_GOVERNANCE_SHARE);
     }
 
-    function virtualGovernanceShare() external view returns (uint104, uint104, uint48) {
+    function virtualGovernanceShare() external view returns(uint104, uint104, uint48) {
         return (_governanceShare.data.oldResult, _governanceShare.data.result, _governanceShare.data.time);
     }
 
-    /// @notice Changes governance wallet
-    function setGovernanceWallet(address newGovernanceWallet) external onlyOwner {
-        governanceWallet = newGovernanceWallet;
-        emit GovernanceWalletUpdate(newGovernanceWallet);
+    function setGovernanceFeeReceiver(address newGovernanceFeeReceiver) external onlyOwner {
+        governanceFeeReceiver = newGovernanceFeeReceiver;
+        isFeeReceiver[newGovernanceFeeReceiver] = true;
+        emit GovernanceFeeReceiverUpdate(newGovernanceFeeReceiver);
     }
 
-    /// @notice Changes fee collector wallet
-    function setFeeCollector(address newFeeCollector) external onlyOwner {
-        feeCollector = newFeeCollector;
-        isFeeCollector[newFeeCollector] = true;
-        emit FeeCollectorUpdate(newFeeCollector);
+    function setReferralFeeReceiver(address newReferralFeeReceiver) external onlyOwner {
+        referralFeeReceiver = newReferralFeeReceiver;
+        isFeeReceiver[newReferralFeeReceiver] = true;
+        emit ReferralFeeReceiverUpdate(newReferralFeeReceiver);
     }
 
-    /// @notice Records `msg.senders`'s vote for default fee
     function defaultFeeVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_FEE, "Fee vote is too high");
         _defaultFee.updateVote(msg.sender, _defaultFee.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), MooniswapConstants._DEFAULT_FEE, _emitDefaultFeeVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for default fee
-    function discardDefaultFeeVote() external {
-        _defaultFee.updateVote(msg.sender, _defaultFee.votes[msg.sender], Vote.init(), balanceOf(msg.sender), MooniswapConstants._DEFAULT_FEE, _emitDefaultFeeVoteUpdate);
+   function discardDefaultFeeVote() external {
+       _defaultFee.updateVote(msg.sender, _defaultFee.votes[msg.sender], Vote.init(), balanceOf(msg.sender), MooniswapConstants._DEFAULT_FEE, _emitDefaultFeeVoteUpdate);
     }
 
-    /// @notice Records `msg.senders`'s vote for default slippage fee
     function defaultSlippageFeeVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_SLIPPAGE_FEE, "Slippage fee vote is too high");
         _defaultSlippageFee.updateVote(msg.sender, _defaultSlippageFee.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), MooniswapConstants._DEFAULT_SLIPPAGE_FEE, _emitDefaultSlippageFeeVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for default slippage fee
-    function discardDefaultSlippageFeeVote() external {
+   function discardDefaultSlippageFeeVote() external {
         _defaultSlippageFee.updateVote(msg.sender, _defaultSlippageFee.votes[msg.sender], Vote.init(), balanceOf(msg.sender), MooniswapConstants._DEFAULT_SLIPPAGE_FEE, _emitDefaultSlippageFeeVoteUpdate);
     }
 
-    /// @notice Records `msg.senders`'s vote for default decay period
     function defaultDecayPeriodVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_DECAY_PERIOD, "Decay period vote is too high");
         require(vote >= MooniswapConstants._MIN_DECAY_PERIOD, "Decay period vote is too low");
         _defaultDecayPeriod.updateVote(msg.sender, _defaultDecayPeriod.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), MooniswapConstants._DEFAULT_DECAY_PERIOD, _emitDefaultDecayPeriodVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for default decay period
     function discardDefaultDecayPeriodVote() external {
         _defaultDecayPeriod.updateVote(msg.sender, _defaultDecayPeriod.votes[msg.sender], Vote.init(), balanceOf(msg.sender), MooniswapConstants._DEFAULT_DECAY_PERIOD, _emitDefaultDecayPeriodVoteUpdate);
     }
 
-    /// @notice Records `msg.senders`'s vote for referral share
     function referralShareVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_SHARE, "Referral share vote is too high");
         require(vote >= MooniswapConstants._MIN_REFERRAL_SHARE, "Referral share vote is too low");
         _referralShare.updateVote(msg.sender, _referralShare.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), MooniswapConstants._DEFAULT_REFERRAL_SHARE, _emitReferralShareVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for referral share
     function discardReferralShareVote() external {
         _referralShare.updateVote(msg.sender, _referralShare.votes[msg.sender], Vote.init(), balanceOf(msg.sender), MooniswapConstants._DEFAULT_REFERRAL_SHARE, _emitReferralShareVoteUpdate);
     }
 
-    /// @notice Records `msg.senders`'s vote for governance share
     function governanceShareVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_SHARE, "Gov share vote is too high");
         _governanceShare.updateVote(msg.sender, _governanceShare.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), MooniswapConstants._DEFAULT_GOVERNANCE_SHARE, _emitGovernanceShareVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for governance share
     function discardGovernanceShareVote() external {
         _governanceShare.updateVote(msg.sender, _governanceShare.votes[msg.sender], Vote.init(), balanceOf(msg.sender), MooniswapConstants._DEFAULT_GOVERNANCE_SHARE, _emitGovernanceShareVoteUpdate);
     }

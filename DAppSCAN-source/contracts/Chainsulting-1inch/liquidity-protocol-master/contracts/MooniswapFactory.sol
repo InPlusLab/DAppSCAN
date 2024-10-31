@@ -8,7 +8,7 @@ import "./libraries/UniERC20.sol";
 import "./Mooniswap.sol";
 import "./governance/MooniswapFactoryGovernance.sol";
 
-/// @title Factory that holds list of deployed pools
+
 contract MooniswapFactory is IMooniswapFactory, MooniswapFactoryGovernance {
     using UniERC20 for IERC20;
 
@@ -33,7 +33,6 @@ contract MooniswapFactory is IMooniswapFactory, MooniswapFactoryGovernance {
         return allPools;
     }
 
-    /// @inheritdoc IMooniswapFactory
     function pools(IERC20 tokenA, IERC20 tokenB) external view override returns (Mooniswap pool) {
         (IERC20 token1, IERC20 token2) = sortTokens(tokenA, tokenB);
         return _pools[token1][token2];
@@ -50,8 +49,8 @@ contract MooniswapFactory is IMooniswapFactory, MooniswapFactoryGovernance {
         pool = mooniswapDeployer.deploy(
             token1,
             token2,
-            string(abi.encodePacked("1inch Liquidity Pool (", symbol1, "-", symbol2, ")")),
-            string(abi.encodePacked("1LP-", symbol1, "-", symbol2)),
+            string(abi.encodePacked("Mooniswap V2 (", symbol1, "-", symbol2, ")")),
+            string(abi.encodePacked("MOON-V2-", symbol1, "-", symbol2)),
             poolOwner
         );
 

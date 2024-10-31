@@ -62,12 +62,12 @@ library ExplicitLiquidVoting {
 
         if (!oldVote.isDefault()) {
             newWeightedSum = newWeightedSum.sub(oldBalance.mul(oldVote.get(defaultVote)));
-            newVotedSupply = newVotedSupply.sub(oldBalance);
+            newVotedSupply = oldVotedSupply.sub(oldBalance);
         }
 
         if (!newVote.isDefault()) {
             newWeightedSum = newWeightedSum.add(newBalance.mul(newVote.get(defaultVote)));
-            newVotedSupply = newVotedSupply.add(newBalance);
+            newVotedSupply = oldVotedSupply.add(newBalance);
         }
 
         if (newWeightedSum != oldWeightedSum) {
@@ -83,12 +83,9 @@ library ExplicitLiquidVoting {
             VirtualVote.Data memory data = self.data;
 
             if (newResult != data.result) {
-                VirtualVote.Data storage sdata = self.data;
-                (sdata.oldResult, sdata.result, sdata.time) = (
-                    data.current().toUint104(),
-                    newResult.toUint104(),
-                    block.timestamp.toUint48()
-                );
+                self.data.oldResult = data.current().toUint104();
+                self.data.result = newResult.toUint104();
+                self.data.time = block.timestamp.toUint48();
             }
         }
 

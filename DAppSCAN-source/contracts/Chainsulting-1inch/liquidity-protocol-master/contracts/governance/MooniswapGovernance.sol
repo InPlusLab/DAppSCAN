@@ -2,7 +2,6 @@
 
 pragma solidity ^0.6.0;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "../interfaces/IMooniswapFactoryGovernance.sol";
@@ -10,8 +9,8 @@ import "../libraries/LiquidVoting.sol";
 import "../libraries/MooniswapConstants.sol";
 import "../libraries/SafeCast.sol";
 
-/// @title 1inch Mooniswap governance
-abstract contract MooniswapGovernance is ERC20, Ownable, ReentrancyGuard {
+
+abstract contract MooniswapGovernance is ERC20, ReentrancyGuard {
     using Vote for Vote.Data;
     using LiquidVoting for LiquidVoting.Data;
     using VirtualVote for VirtualVote.Data;
@@ -21,7 +20,7 @@ abstract contract MooniswapGovernance is ERC20, Ownable, ReentrancyGuard {
     event SlippageFeeVoteUpdate(address indexed user, uint256 slippageFee, bool isDefault, uint256 amount);
     event DecayPeriodVoteUpdate(address indexed user, uint256 decayPeriod, bool isDefault, uint256 amount);
 
-    IMooniswapFactoryGovernance public mooniswapFactoryGovernance;
+    IMooniswapFactoryGovernance public immutable mooniswapFactoryGovernance;
     LiquidVoting.Data private _fee;
     LiquidVoting.Data private _slippageFee;
     LiquidVoting.Data private _decayPeriod;
@@ -33,73 +32,54 @@ abstract contract MooniswapGovernance is ERC20, Ownable, ReentrancyGuard {
         _decayPeriod.data.result = _mooniswapFactoryGovernance.defaultDecayPeriod().toUint104();
     }
 
-    function setMooniswapFactoryGovernance(IMooniswapFactoryGovernance newMooniswapFactoryGovernance) external onlyOwner {
-        mooniswapFactoryGovernance = newMooniswapFactoryGovernance;
-        this.discardFeeVote();
-        this.discardSlippageFeeVote();
-        this.discardDecayPeriodVote();
-    }
-
-    /// @notice Current fee
     function fee() public view returns(uint256) {
         return _fee.data.current();
     }
 
-    /// @notice Current slippage
     function slippageFee() public view returns(uint256) {
         return _slippageFee.data.current();
     }
 
-    /// @notice Current decay period
     function decayPeriod() public view returns(uint256) {
         return _decayPeriod.data.current();
     }
 
-    /// @notice Describes previous fee that had place, current one and time on which this changed
     function virtualFee() external view returns(uint104, uint104, uint48) {
         return (_fee.data.oldResult, _fee.data.result, _fee.data.time);
     }
 
-    /// @notice Describes previous slippage fee that had place, current one and time on which this changed
     function virtualSlippageFee() external view returns(uint104, uint104, uint48) {
         return (_slippageFee.data.oldResult, _slippageFee.data.result, _slippageFee.data.time);
     }
 
-    /// @notice Describes previous decay period that had place, current one and time on which this changed
     function virtualDecayPeriod() external view returns(uint104, uint104, uint48) {
         return (_decayPeriod.data.oldResult, _decayPeriod.data.result, _decayPeriod.data.time);
     }
 
-    /// @notice Returns user stance to preferred fee
     function feeVotes(address user) external view returns(uint256) {
         return _fee.votes[user].get(mooniswapFactoryGovernance.defaultFee);
     }
 
-    /// @notice Returns user stance to preferred slippage fee
     function slippageFeeVotes(address user) external view returns(uint256) {
         return _slippageFee.votes[user].get(mooniswapFactoryGovernance.defaultSlippageFee);
     }
 
-    /// @notice Returns user stance to preferred decay period
     function decayPeriodVotes(address user) external view returns(uint256) {
         return _decayPeriod.votes[user].get(mooniswapFactoryGovernance.defaultDecayPeriod);
     }
 
-    /// @notice Records `msg.senders`'s vote for fee
     function feeVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_FEE, "Fee vote is too high");
 
         _fee.updateVote(msg.sender, _fee.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), totalSupply(), mooniswapFactoryGovernance.defaultFee(), _emitFeeVoteUpdate);
     }
 
-    /// @notice Records `msg.senders`'s vote for slippage fee
     function slippageFeeVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_SLIPPAGE_FEE, "Slippage fee vote is too high");
 
         _slippageFee.updateVote(msg.sender, _slippageFee.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), totalSupply(), mooniswapFactoryGovernance.defaultSlippageFee(), _emitSlippageFeeVoteUpdate);
     }
 
-    /// @notice Records `msg.senders`'s vote for decay period
     function decayPeriodVote(uint256 vote) external {
         require(vote <= MooniswapConstants._MAX_DECAY_PERIOD, "Decay period vote is too high");
         require(vote >= MooniswapConstants._MIN_DECAY_PERIOD, "Decay period vote is too low");
@@ -107,17 +87,14 @@ abstract contract MooniswapGovernance is ERC20, Ownable, ReentrancyGuard {
         _decayPeriod.updateVote(msg.sender, _decayPeriod.votes[msg.sender], Vote.init(vote), balanceOf(msg.sender), totalSupply(), mooniswapFactoryGovernance.defaultDecayPeriod(), _emitDecayPeriodVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for fee
     function discardFeeVote() external {
         _fee.updateVote(msg.sender, _fee.votes[msg.sender], Vote.init(), balanceOf(msg.sender), totalSupply(), mooniswapFactoryGovernance.defaultFee(), _emitFeeVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for slippage fee
     function discardSlippageFeeVote() external {
         _slippageFee.updateVote(msg.sender, _slippageFee.votes[msg.sender], Vote.init(), balanceOf(msg.sender), totalSupply(), mooniswapFactoryGovernance.defaultSlippageFee(), _emitSlippageFeeVoteUpdate);
     }
 
-    /// @notice Retracts `msg.senders`'s vote for decay period
     function discardDecayPeriodVote() external {
         _decayPeriod.updateVote(msg.sender, _decayPeriod.votes[msg.sender], Vote.init(), balanceOf(msg.sender), totalSupply(), mooniswapFactoryGovernance.defaultDecayPeriod(), _emitDecayPeriodVoteUpdate);
     }
@@ -140,9 +117,8 @@ abstract contract MooniswapGovernance is ERC20, Ownable, ReentrancyGuard {
             return;
         }
 
-        IMooniswapFactoryGovernance _mooniswapFactoryGovernance = mooniswapFactoryGovernance;
-        bool updateFrom = !(from == address(0) || _mooniswapFactoryGovernance.isFeeCollector(from));
-        bool updateTo = !(to == address(0) || _mooniswapFactoryGovernance.isFeeCollector(to));
+        bool updateFrom = !(from == address(0) || mooniswapFactoryGovernance.isFeeReceiver(from));
+        bool updateTo = !(to == address(0) || mooniswapFactoryGovernance.isFeeReceiver(to));
 
         if (!updateFrom && !updateTo) {
             // mint to feeReceiver or burn from feeReceiver
@@ -166,7 +142,7 @@ abstract contract MooniswapGovernance is ERC20, Ownable, ReentrancyGuard {
             newTotalSupply: newTotalSupply
         });
 
-        (uint256 defaultFee, uint256 defaultSlippageFee, uint256 defaultDecayPeriod) = _mooniswapFactoryGovernance.defaults();
+        (uint256 defaultFee, uint256 defaultSlippageFee, uint256 defaultDecayPeriod) = mooniswapFactoryGovernance.defaults();
 
         _updateOnTransfer(params, defaultFee, _emitFeeVoteUpdate, _fee);
         _updateOnTransfer(params, defaultSlippageFee, _emitSlippageFeeVoteUpdate, _slippageFee);

@@ -4,7 +4,7 @@ pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
-/// @title Provides helper methods for token-like contracts
+
 contract BalanceAccounting {
     using SafeMath for uint256;
 

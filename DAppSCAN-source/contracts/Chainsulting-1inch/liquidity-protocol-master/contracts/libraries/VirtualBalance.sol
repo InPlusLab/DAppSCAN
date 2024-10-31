@@ -18,10 +18,8 @@ library VirtualBalance {
     }
 
     function set(VirtualBalance.Data storage self, uint256 balance) internal {
-        (self.balance, self.time) = (
-            balance.toUint216(),
-            block.timestamp.toUint40()
-        );
+        self.balance = balance.toUint216();
+        self.time = block.timestamp.toUint40();
     }
 
     function update(VirtualBalance.Data storage self, uint256 decayPeriod, uint256 realBalance) internal {

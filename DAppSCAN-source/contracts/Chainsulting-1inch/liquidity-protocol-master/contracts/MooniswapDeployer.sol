@@ -4,7 +4,6 @@ pragma solidity ^0.6.0;
 
 import "./Mooniswap.sol";
 
-/// @title Helper contract to deploy mooniswap pools
 contract MooniswapDeployer {
     function deploy(
         IERC20 token1,

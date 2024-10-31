@@ -7,8 +7,16 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
 contract TokenMock is ERC20, Ownable {
-    // solhint-disable-next-line no-empty-blocks
-    constructor(string memory name, string memory symbol) public ERC20(name, symbol) {}
+    constructor(
+        string memory name,
+        string memory symbol,
+        uint8 decimals
+    )
+        public
+        ERC20(name, symbol)
+    {
+        _setupDecimals(decimals);
+    }
 
     function mint(address account, uint256 amount) external onlyOwner {
         _mint(account, amount);

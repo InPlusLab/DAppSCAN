@@ -2,14 +2,12 @@
 
 pragma solidity ^0.6.0;
 
-import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
-import "./interfaces/IFeeCollector.sol";
+import "./interfaces/IReferralFeeReceiver.sol";
 import "./libraries/UniERC20.sol";
 import "./utils/Converter.sol";
 
-/// @title Referral fee collector
-// SWC-107-Reentrancy: L11
-contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
+// SWC-107-Reentrancy: L10
+contract ReferralFeeReceiver is IReferralFeeReceiver, Converter {
     using UniERC20 for IERC20;
 
     struct UserInfo {
@@ -37,15 +35,7 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
     // solhint-disable-next-line no-empty-blocks
     constructor(IERC20 _inchToken, IMooniswapFactory _mooniswapFactory) public Converter(_inchToken, _mooniswapFactory) {}
 
-    /// @inheritdoc IFeeCollector
-    function updateRewards(address[] calldata receivers, uint256[] calldata amounts) external override {
-        for (uint i = 0; i < receivers.length; i++) {
-            updateReward(receivers[i], amounts[i]);
-        }
-    }
-
-    /// @inheritdoc IFeeCollector
-    function updateReward(address referral, uint256 amount) public override {
+    function updateReward(address referral, uint256 amount) external override {
         Mooniswap mooniswap = Mooniswap(msg.sender);
         TokenInfo storage token = tokenInfo[mooniswap];
         UserInfo storage user = userInfo[referral];
@@ -59,8 +49,7 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
         _collectProcessedEpochs(user, token, mooniswap, currentEpoch);
     }
 
-    /// @notice Freezes current epoch and creates new as an active one
-    function freezeEpoch(Mooniswap mooniswap) external nonReentrant validPool(mooniswap) validSpread(mooniswap) {
+    function freezeEpoch(Mooniswap mooniswap) external validPool(mooniswap) validSpread(mooniswap) {
         TokenInfo storage token = tokenInfo[mooniswap];
         uint256 currentEpoch = token.currentEpoch;
         require(token.firstUnprocessedEpoch == currentEpoch, "Previous epoch is not finalized");
@@ -74,9 +63,7 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
         token.currentEpoch = currentEpoch.add(1);
     }
 
-    /// @notice Perform chain swap described by `path`. First element of `path` should match either token of the `mooniswap`.
-    /// The last token in chain should always be `1INCH`
-    function trade(Mooniswap mooniswap, IERC20[] memory path) external nonReentrant validPool(mooniswap) validPath(path) {
+    function trade(Mooniswap mooniswap, IERC20[] memory path) external validPool(mooniswap) validPath(path) {
         TokenInfo storage token = tokenInfo[mooniswap];
         uint256 firstUnprocessedEpoch = token.firstUnprocessedEpoch;
         EpochBalance storage epochBalance = token.epochBalance[firstUnprocessedEpoch];
@@ -123,7 +110,6 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
         }
     }
 
-    /// @notice Collects `msg.sender`'s tokens from pools and transfers them to him
     function claim(Mooniswap[] memory pools) external {
         UserInfo storage user = userInfo[msg.sender];
         for (uint256 i = 0; i < pools.length; ++i) {
@@ -140,8 +126,7 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
         }
     }
 
-    /// @notice Collects current epoch `msg.sender`'s tokens from pool and transfers them to him
-    function claimCurrentEpoch(Mooniswap mooniswap) external nonReentrant validPool(mooniswap) {
+    function claimCurrentEpoch(Mooniswap mooniswap) external validPool(mooniswap) {
         TokenInfo storage token = tokenInfo[mooniswap];
         UserInfo storage user = userInfo[msg.sender];
         uint256 currentEpoch = token.currentEpoch;
@@ -153,8 +138,7 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
         }
     }
 
-    /// @notice Collects frozen epoch `msg.sender`'s tokens from pool and transfers them to him
-    function claimFrozenEpoch(Mooniswap mooniswap) external nonReentrant validPool(mooniswap) {
+    function claimFrozenEpoch(Mooniswap mooniswap) external validPool(mooniswap) {
         TokenInfo storage token = tokenInfo[mooniswap];
         UserInfo storage user = userInfo[msg.sender];
         uint256 firstUnprocessedEpoch = token.firstUnprocessedEpoch;
@@ -188,19 +172,18 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
     }
 
     function _collectProcessedEpochs(UserInfo storage user, TokenInfo storage token, Mooniswap mooniswap, uint256 currentEpoch) private {
-        uint256 userEpoch = user.firstUnprocessedEpoch[mooniswap];
-
         // Early return for the new users
-        if (user.share[mooniswap][userEpoch] == 0) {
+        if (user.share[mooniswap][user.firstUnprocessedEpoch[mooniswap]] == 0) {
             user.firstUnprocessedEpoch[mooniswap] = currentEpoch;
             return;
         }
 
+        uint256 userEpoch = user.firstUnprocessedEpoch[mooniswap];
         uint256 tokenEpoch = token.firstUnprocessedEpoch;
-        if (tokenEpoch <= userEpoch) {
+        uint256 epochCount = Math.min(2, tokenEpoch.sub(userEpoch)); // 0, 1 or 2 epochs
+        if (epochCount == 0) {
             return;
         }
-        uint256 epochCount = Math.min(2, tokenEpoch - userEpoch); // 0, 1 or 2 epochs
 
         // Claim 1 or 2 processed epochs for the user
         uint256 collected = _collectEpoch(user, token, mooniswap, userEpoch);
@@ -215,16 +198,14 @@ contract ReferralFeeReceiver is IFeeCollector, Converter, ReentrancyGuard {
     }
 
     function _collectEpoch(UserInfo storage user, TokenInfo storage token, Mooniswap mooniswap, uint256 epoch) private returns(uint256 collected) {
+        uint256 inchBalance = token.epochBalance[epoch].inchBalance;
         uint256 share = user.share[mooniswap][epoch];
-        if (share > 0) {
-            uint256 inchBalance = token.epochBalance[epoch].inchBalance;
-            uint256 totalSupply = token.epochBalance[epoch].totalSupply;
+        uint256 totalSupply = token.epochBalance[epoch].totalSupply;
 
-            collected = inchBalance.mul(share).div(totalSupply);
+        collected = inchBalance.mul(share).div(totalSupply);
 
-            user.share[mooniswap][epoch] = 0;
-            token.epochBalance[epoch].totalSupply = totalSupply.sub(share);
-            token.epochBalance[epoch].inchBalance = inchBalance.sub(collected);
-        }
+        user.share[mooniswap][epoch] = 0;
+        token.epochBalance[epoch].totalSupply = totalSupply.sub(share);
+        token.epochBalance[epoch].inchBalance = inchBalance.sub(collected);
     }
 }
