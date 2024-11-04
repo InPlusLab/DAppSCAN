@@ -13,7 +13,7 @@ DAppSCAN consists of two datasets: DAppSCAN-source and DAppSCAN-bytecode.
 
 - **SWC_source**: the analysis report of SWCs in the source code.
 
-### Statistics of the dataset, as the Table 3 in paper.
+### Statistics of the dataset (as the Table 3 in paper).
 | Information | Numbers |
 | - | - |
 | Total audit reports | 608 |
