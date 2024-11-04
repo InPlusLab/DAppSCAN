@@ -5,13 +5,26 @@ DAppSCAN consists of two datasets: DAppSCAN-source and DAppSCAN-bytecode.
 
 ## DAppSCAN-source
 
+### Description of the files
+
 - **contracts**: the source of smart contracts in the DApps.
 
 - **audit_report**: the original audit reports of the DApps (in pdf form).
 
 - **SWC_source**: the analysis report of SWCs in the source code.
 
+### Statistics of the dataset, as the Table 3 in paper.
+| Information | Numbers |
+| - | - |
+| Total audit reports | 608 |
+| Total DApps | 682 |
+| Total Solidity files | 21457 |
+| Average Solidity files in a DApp | 31 |
+| Average LOC in a DApp | 4318 |
+
 ## DAppSCAN-bytecode
+
+### Description of the files
 
 - **bytecode**: the compiled bytecode of each smart contract in the DApps.
 
