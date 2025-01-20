@@ -104,7 +104,7 @@
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
-   "lineNumber": "L712"
+   "lineNumber": "L718"
   },
   {
    "category": "SWC-124-Write to Arbitrary Storage Location",
@@ -114,42 +114,42 @@
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
-   "lineNumber": "L717"
+   "lineNumber": "L724"
   },
   {
    "category": "SWC-128-DoS With Block Gas Limit",
    "function": "sample",
-   "lineNumber": "L726 - 736"
+   "lineNumber": "L728 - 739"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
-   "lineNumber": "L723"
+   "lineNumber": "L731"
   },
   {
    "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "sample",
-   "lineNumber": "L733, L734"
+   "lineNumber": "L734, 735"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sample",
-   "lineNumber": "L728"
+   "lineNumber": "L737"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "sqrt",
-   "lineNumber": "L770 - L776"
+   "lineNumber": "L780 - L786"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "stddev",
-   "lineNumber": "L790 - L798"
+   "lineNumber": "L796 - L809"
   },
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "_swap",
-   "lineNumber": "L848"
+   "lineNumber": "L849"
   }
  ]
 }

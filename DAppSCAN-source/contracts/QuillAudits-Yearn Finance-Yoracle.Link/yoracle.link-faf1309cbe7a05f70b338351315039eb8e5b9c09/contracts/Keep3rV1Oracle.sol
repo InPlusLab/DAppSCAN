@@ -714,26 +714,26 @@ contract Keep3rV1Oracle {
         if (token0 == tokenIn) {
             for (; i < length; i+=window) {
                 // SWC-128-DoS With Block Gas Limit: L714 - L724
-                // SWC-101-Integer Overflow and Underflow: L712
+                // SWC-101-Integer Overflow and Underflow: L718
                 nextIndex = i + window;
                 _prices[index] = computeAmountOut(
                     // SWC-124-Write to Arbitrary Storage Location: L720, L721
                     observations[pair][i].price0Cumulative,
                     observations[pair][nextIndex].price0Cumulative,
-                    // SWC-101-Integer Overflow and Underflow: L717
+                    // SWC-101-Integer Overflow and Underflow: L724
                     observations[pair][nextIndex].timestamp - observations[pair][i].timestamp, amountIn);
                 index = index + 1;
             }
         } else {
             for (; i < length; i+=window) {
-                // SWC-128-DoS With Block Gas Limit: L726 - 736
-                // SWC-101-Integer Overflow and Underflow: L723
+                // SWC-128-DoS With Block Gas Limit: L728 - 739
+                // SWC-101-Integer Overflow and Underflow: L731
                 nextIndex = i + window;
                 _prices[index] = computeAmountOut(
-                    // SWC-124-Write to Arbitrary Storage Location: L733, L734
+                    // SWC-124-Write to Arbitrary Storage Location: L734, L735
                     observations[pair][i].price1Cumulative,
                     observations[pair][nextIndex].price1Cumulative,
-                    // SWC-101-Integer Overflow and Underflow: L728
+                    // SWC-101-Integer Overflow and Underflow: L737
                     observations[pair][nextIndex].timestamp - observations[pair][i].timestamp, amountIn);
                 index = index + 1;
             }
@@ -776,7 +776,7 @@ contract Keep3rV1Oracle {
      * @param x uint256 number for the calculation of square root
      */
     function sqrt(uint256 x) public pure returns (uint256) {
-        // SWC-101-Integer Overflow and Underflow: L770 - L776
+        // SWC-101-Integer Overflow and Underflow: L780 - L786
         uint256 c = (x + 1) / 2;
         uint256 b = x;
         while (c < b) {
@@ -792,7 +792,7 @@ contract Keep3rV1Oracle {
      * @dev the decimal place must be moved prior to passing the params
      * @param numbers uint[] array of numbers to be used in calculation
      */
-     // SWC-101-Integer Overflow and Underflow: L790 - L798
+     // SWC-101-Integer Overflow and Underflow: L796 - L809
     function stddev(uint[] memory numbers) public pure returns (uint256 sd) {
         uint sum = 0;
         for(uint i = 0; i < numbers.length; i++) {
@@ -845,7 +845,7 @@ contract Keep3rV1Oracle {
     receive() external payable {}
 
     function _swap(uint _amount) internal returns (uint) {
-        // SWC-104-Unchecked Call Return Value: L848
+        // SWC-104-Unchecked Call Return Value: L849
         KP3R.approve(address(UNI), _amount);
 
         address[] memory path = new address[](2);

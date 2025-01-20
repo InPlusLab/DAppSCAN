@@ -14,7 +14,7 @@
   {
    "category": "SWC-107-Reentrancy",
    "function": "donate",
-   "lineNumber": "L92"
+   "lineNumber": "L95"
   }
  ]
 }

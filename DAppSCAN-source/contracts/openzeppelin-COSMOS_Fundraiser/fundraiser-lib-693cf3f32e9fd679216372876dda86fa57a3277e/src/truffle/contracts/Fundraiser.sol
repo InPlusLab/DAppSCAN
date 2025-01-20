@@ -91,7 +91,7 @@ contract Fundraiser {
 	if (!(sha3(bytes32(_donor)^bytes32(_returnAddress)) == checksum)) throw;
 
 	// forward the funds to the treasurer
-        // SWC-107-Reentrancy: L92
+        // SWC-107-Reentrancy: L95
         if (!treasury.call.value(msg.value)()) throw;
 
 	// calculate the number of atoms at the current rate
