@@ -114,7 +114,7 @@ contract ArthController is AccessControl, IARTHController {
         _;
     }
 
-// SWC-135-Code With No Effects: L117
+    // SWC-135-Code With No Effects: L117
     modifier onlyByOwnerGovernanceOrPool() {
         require(
             msg.sender == ownerAddress ||

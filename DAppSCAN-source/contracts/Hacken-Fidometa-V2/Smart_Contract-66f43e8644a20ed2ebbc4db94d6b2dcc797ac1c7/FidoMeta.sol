@@ -771,7 +771,7 @@ contract Fidometa is Context, IERC20, Ownable {
         uint256 rSupply = _rTotal;
         uint256 tSupply = _tTotal;
         uint cacheLength = _excluded.length;
-        // SWC-128-DoS With Block Gas Limit: L772 - L779
+        // SWC-128-DoS With Block Gas Limit: L775 - L782
         for (uint256 i = 0; i < cacheLength; i++) {
             if (
                 _rOwned[_excluded[i]] > rSupply ||
@@ -974,7 +974,7 @@ contract Fidometa is Context, IERC20, Ownable {
             _isExcludedFromReward[sender] && _isExcludedFromReward[recipient]
         ) {
             _transferBothExcluded(sender, recipient, amount);
-            // SWC-135-Code With No Effects: L977 - L979
+            // SWC-135-Code With No Effects: L978 - L980
         } else {
             _transferStandard(sender, recipient, amount);
         }
@@ -1005,7 +1005,7 @@ contract Fidometa is Context, IERC20, Ownable {
             block.timestamp > startTime + (initialLock * 1 days),
             "UnLocking period is not opened"
         );
-        // SWC-101-Integer Overflow and Underflow: L1004 - L1005
+        // SWC-101-Integer Overflow and Underflow: L1009 - L1010
         uint256 timePassed = block.timestamp -
             (startTime + (initialLock * 1 days));
 
@@ -1043,7 +1043,7 @@ contract Fidometa is Context, IERC20, Ownable {
             locks[recipient].lockedToken == 0,
             "This address is already in vesting period"
         );
-        // SWC-135-Code With No Effects: L1044 - L1047
+        // SWC-135-Code With No Effects: L1047 - L1050
         require(
             initialLock >= 0,
             "timeindays should be greater than or equal to 0"

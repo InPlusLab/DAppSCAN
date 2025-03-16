@@ -157,7 +157,7 @@ contract Crowdsale is CrowdsaleBase {
    * This is e.g. for the accredited investor clearing.
    *
    */
-  //  SWC-100-Function Default Visibility: L160
+  //  SWC-100-Function Default Visibility: L161
   function setRequireSignedAddress(bool value, address _signerAddress) onlyOwner {
     requiredSignedAddress = value;
     signerAddress = _signerAddress;

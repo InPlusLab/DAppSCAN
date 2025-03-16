@@ -1,7 +1,6 @@
 pragma solidity ^0.4.23;
-//SWC-114-Transaction Order Dependence:L1-492
 // File: openzeppelin-solidity/contracts/ownership/Ownable.sol
-//SWC-114-Transaction Order Dependence:L1-482
+// SWC-114-Transaction Order Dependence:L1-481
 /**
  * @title Ownable
  * @dev The Ownable contract has an owner address, and provides basic authorization control

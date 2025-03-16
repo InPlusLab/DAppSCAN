@@ -11,7 +11,7 @@
 Alpaca Fin Corporation
 */
 
-// SWC-102-Outdated Compiler Version: L14
+// SWC-102-Outdated Compiler Version: L15
 pragma solidity 0.6.6;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";

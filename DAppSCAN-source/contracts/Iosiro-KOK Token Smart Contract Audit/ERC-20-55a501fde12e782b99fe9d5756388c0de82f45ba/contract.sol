@@ -85,11 +85,11 @@ contract KOK_Contract is ERC20Interface, Owned {
     }
 
 // stop the contract
-// SWC-100-Function Default Visibility: L88
+// SWC-100-Function Default Visibility: L89 - L91
 	function stop() onlyOwner {
         stopped = true;
     }
-// SWC-100-Function Default Visibility: L92
+// SWC-100-Function Default Visibility: L93 - L95
     function start() onlyOwner {
         stopped = false;
     }

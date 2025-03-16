@@ -244,9 +244,10 @@ contract ExchangeIssuance is ReentrancyGuard {
         uint256 amountEthReturn = initETHAmount.sub(amountEthSpent);
         if (amountEthReturn > 0) {
             IWETH(WETH).withdraw(amountEthReturn);
+            // SWC-134-Message call with hardcoded gas amount: L248
             msg.sender.transfer(amountEthReturn);
         }
-//        SWC-134-Message call with hardcoded gas amount: L247, L279, L349
+    //  SWC-134-Message call with hardcoded gas amount: L247, L279, L349
         emit ExchangeIssue(msg.sender, _setToken, _inputToken, _maxAmountInputToken, _amountSetToken);
     }
     
@@ -276,6 +277,7 @@ contract ExchangeIssuance is ReentrancyGuard {
         
         if (returnAmount > 0) {
             IWETH(WETH).withdraw(returnAmount);
+            // SWC-134-Message call with hardcoded gas amount: L281
             msg.sender.transfer(returnAmount);    
         }
         
@@ -346,6 +348,7 @@ contract ExchangeIssuance is ReentrancyGuard {
         require(amountEthOut > _minETHReceive, "ExchangeIssuance: INSUFFICIENT_OUTPUT_AMOUNT");
         
         IWETH(WETH).withdraw(amountEthOut);
+        // SWC-134-Message call with hardcoded gas amount: L352
         msg.sender.transfer(amountEthOut);
 
         emit ExchangeRedeem(msg.sender, _setToken, IERC20(ETH_ADDRESS), _amountSetToRedeem, amountEthOut);

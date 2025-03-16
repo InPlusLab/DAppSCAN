@@ -116,12 +116,12 @@ contract InitializableERC20 {
         return true;
     }
 
-// SWC-100-Function Default Visibility: L120
+    // SWC-100-Function Default Visibility: L120
     function balanceOf(address owner) public view returns (uint256 balance) {
         return balances[owner];
     }
 
-// SWC-100-Function Default Visibility: L128
+    // SWC-100-Function Default Visibility: L125
     function transferFrom(
         address from,
         address to,

@@ -119,7 +119,7 @@ contract Staking is AccessControl, ReentrancyGuard, IStaking {
         delete feesCollected;
     }
 
-// SWC-116-Block values as a proxy for time: L123
+    // SWC-116-Block values as a proxy for time: L125
     function startPool() external onlyRole(DEFAULT_ADMIN_ROLE) {
         require(poolStartTime == 0, "Already started");
         poolStartTime = block.timestamp;

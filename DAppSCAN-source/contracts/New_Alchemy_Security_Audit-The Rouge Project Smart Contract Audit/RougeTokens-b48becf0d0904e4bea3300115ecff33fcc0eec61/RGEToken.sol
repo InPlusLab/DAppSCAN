@@ -35,7 +35,7 @@ contract RGEToken is EIP20 {
         endTGE = _endTGE;
         crowdsale = address(0);
     }
-//    SWC-101-Integer Overflow and Underflow:L43,69,79,80
+    // SWC-101-Integer Overflow and Underflow: L43
     function startCrowdsaleY0(address _crowdsale) onlyBy(owner) public {
         require(crowdsale == address(0));
         require(now < endTGE);
@@ -66,6 +66,7 @@ contract RGEToken is EIP20 {
 
     // later than end of TGE to let people withdraw (put a max?)
     function endCrowdsale(uint256 _unsold) onlyBy(crowdsale) public {
+        // SWC-101-Integer Overflow and Underflow: L70
         reserveY2 += _unsold;
         Transfer(crowdsale, address(0), _unsold);
         crowdsale = address(0);
@@ -76,6 +77,7 @@ contract RGEToken is EIP20 {
     function burn(uint256 _value) public returns (bool success) {
         require(_value > 0);
         require(balances[msg.sender] >= _value);
+        // SWC-101-Integer Overflow and Underflow: L81 - L82
         balances[msg.sender] -= _value;
         totalSupply -= _value;
         Transfer(msg.sender, address(0), _value);

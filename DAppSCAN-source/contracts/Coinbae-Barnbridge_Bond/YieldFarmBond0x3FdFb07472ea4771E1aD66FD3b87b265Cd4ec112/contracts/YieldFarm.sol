@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-// SWC-103-Floating Pragma: L2
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
@@ -69,7 +69,7 @@ contract YieldFarm {
             epochId = NR_OF_EPOCHS;
         }
 
-        // SWC-128-DoS With Block Gas Limit: L71
+        // SWC-128-DoS With Block Gas Limit: L76
         for (uint128 i = lastEpochIdHarvested[msg.sender] + 1; i <= epochId; i++) {
             // i = epochId
             // compute distributed Value and do one single transfer at the end

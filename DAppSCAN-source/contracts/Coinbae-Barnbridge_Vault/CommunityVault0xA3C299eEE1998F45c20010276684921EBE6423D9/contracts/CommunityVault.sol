@@ -15,7 +15,7 @@ contract CommunityVault is Ownable {
     event SetAllowance(address indexed caller, address indexed spender, uint256 amount);
 
     function setAllowance(address spender, uint amount) public onlyOwner {
-        // SWC-107-Reentrancy: L18
+        // SWC-107-Reentrancy: L19
         _bond.approve(spender, amount);
 
         emit SetAllowance(msg.sender, spender, amount);

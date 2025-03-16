@@ -6,7 +6,7 @@ import "./interfaces/IReferralFeeReceiver.sol";
 import "./libraries/UniERC20.sol";
 import "./utils/Converter.sol";
 
-// SWC-107-Reentrancy: L10
+// SWC-107-Reentrancy: L11
 contract ReferralFeeReceiver is IReferralFeeReceiver, Converter {
     using UniERC20 for IERC20;
 

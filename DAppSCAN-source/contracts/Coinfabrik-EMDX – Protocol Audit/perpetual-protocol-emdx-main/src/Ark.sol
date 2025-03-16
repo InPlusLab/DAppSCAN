@@ -51,7 +51,7 @@ contract Ark is IArk, PerpFiOwnableUpgrade, BlockContext, ReentrancyGuardUpgrade
             // rounds down when token decimals are less than 18
             _amount = _amount.addD(_toDecimal(_quoteToken, 1));
         }
-        // SWC-113-DoS with Failed Call: L54
+        // SWC-113-DoS with Failed Call: L55
         require(_balanceOf(_quoteToken, address(this)).toUint() >= _amount.toUint(), "insufficient funds");
 
         // stores timestamp and cumulative amount of withdrawn token

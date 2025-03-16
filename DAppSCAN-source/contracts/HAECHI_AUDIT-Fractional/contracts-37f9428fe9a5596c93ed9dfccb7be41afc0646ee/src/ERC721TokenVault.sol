@@ -258,7 +258,7 @@ contract TokenVault is ERC20, ERC721Holder {
     }
 
     /// @notice an external function to bid on purchasing the vaults NFT. The msg.value is the bid amount
-    // SWC-113-DoS with Failed Call: L262
+    // SWC-113-DoS with Failed Call: L262 - L278
     function bid() external payable {
         uint256 increase = ISettings(settings).minBidIncrease() + 1000;
         require(msg.value >= livePrice * increase / 1000, "bid:too low bid");

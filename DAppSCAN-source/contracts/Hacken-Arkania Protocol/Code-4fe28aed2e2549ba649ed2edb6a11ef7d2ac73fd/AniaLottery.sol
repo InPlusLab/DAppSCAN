@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-// SWC-102-Outdated Compiler Version: L3
-// SWC-103-Floating Pragma: L8
+// SWC-102-Outdated Compiler Version: L4
+// SWC-103-Floating Pragma: L4
 pragma solidity ^0.8.2;
 
 import "./AniaStake.sol";
@@ -115,7 +115,7 @@ contract AniaLottery {
     }
 
     // If there are any resources, the owner can withdraw them
-    // SWC-105-Unprotected Ether Withdrawal: L117 - L119
+    // SWC-105-Unprotected Ether Withdrawal: L119 - L121
     function withdraw() public payable onlyOwner {
         payable (msg.sender).transfer(address(this).balance);
     }

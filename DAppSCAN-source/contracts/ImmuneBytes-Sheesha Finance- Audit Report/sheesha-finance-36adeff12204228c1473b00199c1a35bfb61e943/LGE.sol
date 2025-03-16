@@ -86,7 +86,7 @@ contract LGE is SHEESHA {
         );
         return SHEESHAxWETHPair;
     }
-//SWC-129-Typographical Error:L91、126、134
+    //SWC-129-Typographical Error:L91、126、134
     //anyone/admin will call this function after 2 weeks to mint LGE
     // Sends all avaibile balances and mints LP tokens
     // Possible ways this could break addressed

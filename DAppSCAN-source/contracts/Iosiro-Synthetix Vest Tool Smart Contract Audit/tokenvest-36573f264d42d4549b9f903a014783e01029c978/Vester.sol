@@ -44,7 +44,7 @@ contract Vester is ERC721Enumerable {
 
         emit Redemption(tokenId, msg.sender, amount);
     }
-//SWC-107-Reentrancy:L51, 127
+    // SWC-107-Reentrancy: L51 - L58
     /// @notice Redeem all available vested tokens and transfer in arbitrary tokens (to make this an exchange rather than income)
     /// @param incomingTokenAddress The address of the token being transferred in
     /// @param incomingTokenAmount The amount of the token being transferred in
@@ -115,6 +115,7 @@ contract Vester is ERC721Enumerable {
         emit GrantUpdate(tokenId, startTimestamp, cliffTimestamp, vestAmount, totalAmount, amountRedeemed, vestInterval);
     }
 
+    // SWC-107-Reentrancy: L128 - L132
     /// @notice Create a new grant
     /// @dev Only the owner of the contract may call this function.
     /// @param granteeAddress The address of the grant recipient

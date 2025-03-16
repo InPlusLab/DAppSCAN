@@ -405,7 +405,7 @@ contract CrowdsaleBase is Haltable {
     ownerTestValue = val;
   }
 
- // SWC-129-Typographical Error: L411 - L416
+ // SWC-129-Typographical Error: L414 - L417
   /**
    * Allow addresses to do early participation.
    *

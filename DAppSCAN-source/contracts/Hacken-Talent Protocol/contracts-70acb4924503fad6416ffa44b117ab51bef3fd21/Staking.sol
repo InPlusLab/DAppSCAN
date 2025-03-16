@@ -438,7 +438,7 @@ contract Staking is AccessControl, StableThenToken, RewardCalculator, IERC1363Re
         _updateS();
         disabled = true;
     }
-//SWC-116-Block values as a proxy for time: L444, L601, L650, L651, L748, L749
+    // SWC-116-Block values as a proxy for time: L444, L601, L650, L651, L748, L749
     /// Allows the admin to withdraw whatever is left of the reward pool
     function adminWithdraw() public onlyRole(DEFAULT_ADMIN_ROLE) {
         require(disabled || block.timestamp < end, "not disabled, and not end of staking either");

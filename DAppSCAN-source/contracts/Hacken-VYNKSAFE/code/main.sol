@@ -114,7 +114,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
 
 
-// SWC-104-Unchecked Call Return Value: L117
+    // SWC-104-Unchecked Call Return Value: L117
     function stake(uint256 amount) external nonReentrant {
         busd.transferFrom(msg.sender, address(this), amount);
         userInfo[msg.sender]
@@ -186,7 +186,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
     }
 
 
-// SWC-104-Unchecked Call Return Value: L189
+    // SWC-104-Unchecked Call Return Value: L189
     function unStake(uint256 amount, uint256 unstakeOption)
         external
         nonReentrant
@@ -568,7 +568,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
 
 
-// SWC-104-Unchecked Call Return Value: L570
+    // SWC-104-Unchecked Call Return Value: L570
     function claim() public nonReentrant {
         require(
             userInfo[msg.sender].isStaker == true ||
