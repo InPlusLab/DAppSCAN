@@ -59,7 +59,7 @@ contract OrderBook is UniswapHandler, Pausable {
      * @param _recipient Address of dest token recipient
      * @param _expiration Unix timestamp of order expiration
      */
-    // SWC-116-Block values as a proxy for time:L76、105、145
+    
     function placeOrder(
         address _tokenIn,
         address _tokenOut,
@@ -73,7 +73,7 @@ contract OrderBook is UniswapHandler, Pausable {
         require(_amountIn > 0, "Invalid input amount");
         require(_amountOutMin > 0, "Invalid output amount");
         require(_recipient != address(0), "Invalid recipient address");
-        require(_expiration > block.timestamp, "Invalid expiration timestamp");
+        require(_expiration > block.timestamp, "Invalid expiration timestamp"); // SWC-116-Block values as a proxy for time:L76
 
         uint256 balance = IERC20(_tokenIn).balanceOf(msg.sender);
         require(balance >= _amountIn, "Insufficient balance");
@@ -102,7 +102,7 @@ contract OrderBook is UniswapHandler, Pausable {
         order.amountOutMin = _amountOutMin;
         order.recipient = _recipient;
         order.creator = msg.sender;
-        order.createdAt = block.timestamp;
+        order.createdAt = block.timestamp; // SWC-116-Block values as a proxy for time:L105
         order.expiration = _expiration;
 
         _lockedBalance[order.creator][order.tokenIn] += order.amountIn;
@@ -141,7 +141,7 @@ contract OrderBook is UniswapHandler, Pausable {
         for (uint256 i = 0; i < _orderIds.length; i++) {
             bytes32 orderId = _orderIds[i];
             Order storage order = orders[orderId];
-
+// SWC-116-Block values as a proxy for time:L145
             if (order.expiration <= block.timestamp) {
                 _cancelOrder(order);
             }

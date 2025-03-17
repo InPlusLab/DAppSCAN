@@ -108,7 +108,7 @@ contract Bolide is Context, IBEP20, Ownable {
 
     string private _name;
     string private _symbol;
-    // SWC-108-State Variable Default Visibility
+    // SWC-108-State Variable Default Visibility : L112
     uint256 timestampCreated;
     uint256 private immutable _cap;
 

@@ -39,7 +39,7 @@ contract Admin {
         isAdmin[_adminAddress] = true;
     }
 
-    // SWC-113-DoS with Failed Call: L43
+    // SWC-113-DoS with Failed Call: L43-68
     function removeAdmin(
         address _adminAddress
     )

@@ -508,8 +508,8 @@ contract Vault {
      * @param timestamp: unique data generated from client (timestamp for example)
      * @param signData: signature of an unique data that is signed by an account which is generated from user's incognito privkey
      */
-    //  SWC-114-Transaction Order Dependence: L512 - L547
-    // SWC-105-Unprotected Ether Withdrawal: L513 - 548
+    //  SWC-114-Transaction Order Dependence: L513 - L548
+    // SWC-105-Unprotected Ether Withdrawal: L513 - L548
     function execute(
         address token,
         uint amount,

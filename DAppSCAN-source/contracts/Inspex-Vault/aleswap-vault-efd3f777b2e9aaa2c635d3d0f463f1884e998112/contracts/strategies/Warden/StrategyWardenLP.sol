@@ -125,7 +125,7 @@ contract StrategyWardenLP is OwnableUpgradeable, PausableUpgradeable {
     }
 
     // compounds earnings and charges performance fee
-    // SWC-114-Transaction Order Dependence
+    // SWC-114-Transaction Order Dependence : L129-L136
     function harvest() external whenNotPaused onlyEOA {
         IMasterChef(masterchef).deposit(poolId, 0);
         chargeFees();

@@ -92,7 +92,6 @@ contract SIGHBoostersSale is IERC721Receiver,Ownable,ISIGHBoostersSale {
     // ######## FUNCTION TO BY A BOOSTER ########
     // ##########################################
 
-// SWC-129-Typographical Error: L96
     function buyBoosters(address receiver, string memory _BoosterType, uint boostersToBuy) override external {
         require( block.timestamp > initiateTimestamp,'Sale not begin');
         require(boostersToBuy >= 1,"Invalid number of boosters");

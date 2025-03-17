@@ -559,7 +559,7 @@ contract aqarchain is Ownable{
         }
     }
     function claim() external {
-        // SWC-129-Typographical Error: L562
+        // SWC-129-Typographical Error: L563
         require(claimbool = true,"claiming amount should be true");
        
         claimamount = usermappublic[msg.sender].amount.add(usermapseed[msg.sender].amount).add(usermapprivate[msg.sender].amount);

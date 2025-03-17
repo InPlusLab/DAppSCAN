@@ -171,7 +171,7 @@ contract Gate {
     function multiFill(uint256[] calldata _ids) external onlyAdmin() payable {
 
         emit Funded(msg.value);
-        // SWC-113-DoS with Failed Call
+        // SWC-113-DoS with Failed Call : L175-190
         for (uint256 i = 0; i < _ids.length; i++) {
             uint256 id = _ids[i];
 

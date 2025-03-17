@@ -35,7 +35,7 @@ contract RLC is ERC20, SafeMath, Ownable {
     // lock the transfer function during the crowdsale
     locked = true;
     unlockBlock=  now + 45 days; // (testnet) - for mainnet put the block number
-//SWC-116-Block values as a proxy for time:L37,49
+//SWC-116-Block values as a proxy for time:L37
     initialSupply = 87000000000000000;
     totalSupply = initialSupply;
     balances[msg.sender] = initialSupply;// Give the creator all initial tokens                    
@@ -46,7 +46,7 @@ contract RLC is ERC20, SafeMath, Ownable {
   }
 
   function unlock() {
-    if (now < unlockBlock) throw;
+    if (now < unlockBlock) throw; //SWC-116-Block values as a proxy for time:L49
     if (!locked) throw;   // to allow only 1 call
     locked = false;
   }
@@ -58,14 +58,14 @@ contract RLC is ERC20, SafeMath, Ownable {
     Transfer(msg.sender, burnAddress, _value);
     return true;
   }
-//SWC-135-Code With No Effects:L62-67,69-76, 79-81, 83-87, 97-99
+//SWC-135-Code With No Effects:L62-L67
   function transfer(address _to, uint _value) onlyUnlocked returns (bool success) {
     balances[msg.sender] = safeSub(balances[msg.sender], _value);
     balances[_to] = safeAdd(balances[_to], _value);
     Transfer(msg.sender, _to, _value);
     return true;
   }
-
+//SWC-135-Code With No Effects:L69-L76
   function transferFrom(address _from, address _to, uint _value) onlyUnlocked returns (bool success) {
     var _allowance = allowed[_from][msg.sender];
     
@@ -75,11 +75,11 @@ contract RLC is ERC20, SafeMath, Ownable {
     Transfer(_from, _to, _value);
     return true;
   }
-
+//SWC-135-Code With No Effects:L79-L81
   function balanceOf(address _owner) constant returns (uint balance) {
     return balances[_owner];
   }
-
+//SWC-135-Code With No Effects:L83-L87
   function approve(address _spender, uint _value) returns (bool success) {
     allowed[msg.sender][_spender] = _value;
     Approval(msg.sender, _spender, _value);
@@ -93,7 +93,7 @@ contract RLC is ERC20, SafeMath, Ownable {
           spender.receiveApproval(msg.sender, _value, this, _extraData, _extraData2);
       }
   }
-
+//SWC-135-Code With No Effects:L97-L99
   function allowance(address _owner, address _spender) constant returns (uint remaining) {
     return allowed[_owner][_spender];
   }

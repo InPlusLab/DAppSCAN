@@ -130,7 +130,7 @@ contract AMOCoinSale is Pausable {
     modifier onlyValidPurchase() {
         require(round <= SaleRounds.CrowdSale);
         require(now >= startTime && now <= endTime);
-//SWC-116-Block values as a proxy for time:L132、349、358
+//SWC-116-Block values as a proxy for time:L132
         uint256 contributionInWei = msg.value;
         address purchaser = msg.sender;
 
@@ -346,7 +346,7 @@ contract AMOCoinSale is Pausable {
         require(roundInfos[uint8(round)].minContribution > 0
             && roundInfos[uint8(round)].hardCap > 0);
         stage = Stages.Started;
-        startTime = now;
+        startTime = now; //SWC-116-Block values as a proxy for time:L349
         endTime = startTime.add(durationInSeconds);
         SaleStarted(startTime, endTime, round);
     }
@@ -355,7 +355,7 @@ contract AMOCoinSale is Pausable {
      * End sale in crrent round
      */
     function endSale() external onlyOwner atStage(Stages.Started) {
-        endTime = now;
+        endTime = now; //SWC-116-Block values as a proxy for time:L358
         stage = Stages.Ended;
 
         SaleEnded(endTime, totalWeiRaised, round);

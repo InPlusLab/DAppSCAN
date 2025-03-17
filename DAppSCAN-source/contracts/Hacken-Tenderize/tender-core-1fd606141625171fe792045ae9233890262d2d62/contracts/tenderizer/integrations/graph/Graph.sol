@@ -132,7 +132,7 @@ contract Graph is Tenderizer {
         uint256 amount = withdrawPool.withdraw(_withdrawalID, _account);
 
         // Transfer amount from unbondingLock to _account
-        // SWC-104-Unchecked Call Return Value: L135
+        // SWC-104-Unchecked Call Return Value: L136
         try steak.transfer(_account, amount) {} catch {
             // Account for roundoff errors in shares calculations
             uint256 steakBal = steak.balanceOf(address(this));

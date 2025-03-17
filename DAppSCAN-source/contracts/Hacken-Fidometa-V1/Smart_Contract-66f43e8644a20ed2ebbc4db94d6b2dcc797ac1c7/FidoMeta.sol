@@ -1005,7 +1005,7 @@ contract Fidometa is Context, IERC20, Ownable {
             block.timestamp > startTime + (initialLock * 1 days),
             "UnLocking period is not opened"
         );
-        // SWC-101-Integer Overflow and Underflow: L1010
+        // SWC-101-Integer Overflow and Underflow: L1009-L1010
         uint256 timePassed = block.timestamp -
             (startTime + (initialLock * 1 days));
 

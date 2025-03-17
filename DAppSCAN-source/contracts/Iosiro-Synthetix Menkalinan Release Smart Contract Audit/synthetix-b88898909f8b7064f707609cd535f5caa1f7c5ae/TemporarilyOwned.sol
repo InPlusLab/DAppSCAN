@@ -10,12 +10,12 @@ contract TemporarilyOwned {
         temporaryOwner = _temporaryOwner;
         expiryTime = now + _ownershipDuration;
     }
-    // SWC-111-Use of Deprecated Solidity Functions:L14, L19
+    // SWC-111-Use of Deprecated Solidity Functions:L14-L17
     modifier onlyTemporaryOwner {
         _onlyTemporaryOwner();
         _;
     }
-
+    // SWC-111-Use of Deprecated Solidity Functions:L19-22
     function _onlyTemporaryOwner() private view {
         require(now < expiryTime, "Ownership expired");
         require(msg.sender == temporaryOwner, "Only executable by temp owner");

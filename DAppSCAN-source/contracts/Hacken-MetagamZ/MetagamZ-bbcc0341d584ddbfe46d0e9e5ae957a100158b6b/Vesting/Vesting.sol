@@ -317,7 +317,7 @@ contract TokenVesting is Ownable {
                 _amounts.length == _releases.length,
             "Invalid data"
         );
-        // SWC-128-DoS With Block Gas Limit: L321 - L328
+        // SWC-128-DoS With Block Gas Limit: L322 - L329
         // SWC-113-DoS with Failed Call: L322 - L329
         for (uint256 i = 0; i < _receivers.length; i++) {
             bool success = createVesting(

@@ -597,7 +597,7 @@ contract AsyncArtwork_v2 is Initializable, ERC721, ERC721Enumerable, ERC721Metad
             require(newValues[i] != lever.currentValue, "Must provide different val");
 
             // grab previous value for the event emit
-            // SWC-131-Presence of unused variables: L600
+            // SWC-131-Presence of unused variables: L601
             int256 previousValue = lever.currentValue;
 
             // Update token current value

@@ -208,7 +208,7 @@ contract SynthetixDebtShare is Owned, MixinResolver, ISynthetixDebtShare {
     function finishSetup() external onlyOwner {
         isInitialized = true;
     }
-    // SWC-135-Code With No Effects: L213 - L247
+    // SWC-135-Code With No Effects: L213 - L229
     /* ========== INTERNAL FUNCTIONS ======== */
     function _increaseBalance(address account, uint amount) internal {
         uint accountBalanceCount = balances[account].length;
@@ -227,7 +227,7 @@ contract SynthetixDebtShare is Owned, MixinResolver, ISynthetixDebtShare {
                 uint128(uint(balances[account][accountBalanceCount - 1].amount).add(amount));
         }
     }
-
+// SWC-135-Code With No Effects: L231 - L247
     function _deductBalance(address account, uint amount) internal {
         uint accountBalanceCount = balances[account].length;
 

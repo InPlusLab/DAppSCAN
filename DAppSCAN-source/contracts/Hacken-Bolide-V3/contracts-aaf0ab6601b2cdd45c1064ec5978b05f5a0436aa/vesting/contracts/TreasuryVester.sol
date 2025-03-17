@@ -1,5 +1,5 @@
+// SWC-102-Outdated Compiler Version : L2
 pragma solidity 0.6.12;
-// SWC-102-Outdated Compiler Version
 
 import '@openzeppelin/contracts/utils/math/SafeMath.sol';
 

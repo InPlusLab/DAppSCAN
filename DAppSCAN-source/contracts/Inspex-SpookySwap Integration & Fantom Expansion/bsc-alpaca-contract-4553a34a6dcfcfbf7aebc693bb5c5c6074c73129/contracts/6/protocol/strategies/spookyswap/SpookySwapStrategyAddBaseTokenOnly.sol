@@ -55,7 +55,7 @@ contract SpookySwapStrategyAddBaseTokenOnly is OwnableUpgradeSafe, ReentrancyGua
   /// @notice This function is written base on fee=998, feeDenom=1000
   /// @dev Execute worker strategy. Take BaseToken. Return LP tokens.
   /// @param data Extra calldata information passed along to this strategy.
-  // SWC-114-Transaction Order Dependence: L59
+  // SWC-114-Transaction Order Dependence: L59-L105
   function execute(
     address, /* user */
     uint256, /* debt */

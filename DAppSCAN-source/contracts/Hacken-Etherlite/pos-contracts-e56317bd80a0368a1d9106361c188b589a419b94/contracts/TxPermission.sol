@@ -309,7 +309,7 @@ contract TxPermission is UpgradeableOwned, ITxPermission {
     uint32 internal constant ALL = 0xffffffff;
     uint32 internal constant BASIC = 0x01;
     uint32 internal constant CALL = 0x02;
-    // SWC-131-Presence of unused variables: L313-314s
+    // SWC-131-Presence of unused variables: L313-L314
     uint32 internal constant CREATE = 0x04;
     uint32 internal constant PRIVATE = 0x08;
 

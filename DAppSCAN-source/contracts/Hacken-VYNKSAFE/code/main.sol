@@ -114,7 +114,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
 
 
-    // SWC-104-Unchecked Call Return Value: L117
+    
     function stake(uint256 amount) external nonReentrant {
         busd.transferFrom(msg.sender, address(this), amount);
         userInfo[msg.sender]
@@ -150,7 +150,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
         uint256 vyncOut = swapBusdToVync(amountToSwap);
         uint256 amountLeft = amount.sub(amountToSwap);
-
+        // SWC-104-Unchecked Call Return Value: L154
         (, uint256 busdAdded, uint256 liquidityAmount) = router.addLiquidity(
             address(vync),
             address(busd),
@@ -186,7 +186,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
     }
 
 
-    // SWC-104-Unchecked Call Return Value: L189
+    
     function unStake(uint256 amount, uint256 unstakeOption)
         external
         nonReentrant
@@ -198,7 +198,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
         uint256 lpAmountNeeded;
         uint256 pending = compoundedReward(msg.sender);
         uint256 stakeBalance = userInfo[msg.sender].stakeBalance;
-        (, , uint256 up) = data.returnData();
+        (, , uint256 up) = data.returnData(); // SWC-104-Unchecked Call Return Value: L201
 
         if (amount >= stakeBalance) {
             // withdraw all
@@ -568,7 +568,7 @@ contract BUSDVYNCSTAKE is ReentrancyGuard, Ownable {
 
 
 
-    // SWC-104-Unchecked Call Return Value: L570
+    
     function claim() public nonReentrant {
         require(
             userInfo[msg.sender].isStaker == true ||

@@ -1058,7 +1058,7 @@ contract Fidometa is Context, IERC20, Ownable {
         );
     }
 
-// SWC-135-Code With No Effects: L1061 - L1063
+// SWC-135-Code With No Effects: L1062 - L1071
     function _transferFromExcluded(
         address sender,
         address recipient,

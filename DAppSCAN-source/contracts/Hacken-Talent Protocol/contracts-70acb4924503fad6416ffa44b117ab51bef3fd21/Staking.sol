@@ -438,7 +438,7 @@ contract Staking is AccessControl, StableThenToken, RewardCalculator, IERC1363Re
         _updateS();
         disabled = true;
     }
-    // SWC-116-Block values as a proxy for time: L444, L601, L650, L651, L748, L749
+    // SWC-116-Block values as a proxy for time: L444
     /// Allows the admin to withdraw whatever is left of the reward pool
     function adminWithdraw() public onlyRole(DEFAULT_ADMIN_ROLE) {
         require(disabled || block.timestamp < end, "not disabled, and not end of staking either");
@@ -598,7 +598,7 @@ contract Staking is AccessControl, StableThenToken, RewardCalculator, IERC1363Re
 
         rewardsGiven += stakerRewards + talentRewards;
         stake.S = maxS;
-        stake.lastCheckpointAt = block.timestamp;
+        stake.lastCheckpointAt = block.timestamp; // SWC-116-Block values as a proxy for time: L601
 
         talentRedeemableRewards[_talent] += talentRewards;
 
@@ -646,7 +646,7 @@ contract Staking is AccessControl, StableThenToken, RewardCalculator, IERC1363Re
         if (totalTokensStaked == 0) {
             return;
         }
-
+// SWC-116-Block values as a proxy for time: L650-L651
         S = S + (calculateGlobalReward(SAt, block.timestamp)) / totalAdjustedShares;
         SAt = block.timestamp;
     }
@@ -743,7 +743,7 @@ contract Staking is AccessControl, StableThenToken, RewardCalculator, IERC1363Re
             isAlreadyUpdatingAdjustedShares = false;
         }
     }
-
+// SWC-116-Block values as a proxy for time: L748-L749
     modifier onlyWhileStakingEnabled() {
         require(block.timestamp >= start, "staking period not yet started");
         require(block.timestamp <= end, "staking period already finished");

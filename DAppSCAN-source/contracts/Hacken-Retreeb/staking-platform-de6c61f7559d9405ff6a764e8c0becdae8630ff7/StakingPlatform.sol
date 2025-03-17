@@ -47,7 +47,6 @@ contract StakingPlatform is IStakingPlatform, Ownable {
         fixedAPY = _fixedAPY;
         stakingMax = _maxAmountStaked;
     }
-    // SWC-116-Block values as a proxy for time:L58-60、72、82、99、125、214、217、250、252
     /**
      * @notice function that start the staking
      * @dev set `startPeriod` to the current current `block.timestamp`
@@ -56,6 +55,7 @@ contract StakingPlatform is IStakingPlatform, Ownable {
     function startStaking() external override onlyOwner {
         require(startPeriod == 0, "Staking has already started");
         startPeriod = block.timestamp;
+        // SWC-116-Block values as a proxy for time:L58-L60
         lockupPeriod = block.timestamp + lockupDuration;
         endPeriod = block.timestamp + stakingDuration;
         emit StartStaking(startPeriod, endPeriod);
@@ -68,7 +68,7 @@ contract StakingPlatform is IStakingPlatform, Ownable {
      * @param amount, the amount to be deposited
      */
     function deposit(uint amount) external override {
-        require(
+        require( // SWC-116-Block values as a proxy for time:L72
             endPeriod == 0 || endPeriod > block.timestamp,
             "Staking period ended"
         );
@@ -77,8 +77,8 @@ contract StakingPlatform is IStakingPlatform, Ownable {
             "Amount staked exceeds MaxStake"
         );
         require(amount >= 1E18, "Amount must be greater than 1E18");
-
-        if (userStartTime[_msgSender()] == 0) {
+        // SWC-116-Block values as a proxy for time : L82
+        if (userStartTime[_msgSender()] == 0) { 
             userStartTime[_msgSender()] = block.timestamp;
         }
 
@@ -95,7 +95,7 @@ contract StakingPlatform is IStakingPlatform, Ownable {
      * @dev must be called only when `block.timestamp` >= `endPeriod`
      */
     function withdraw() external override {
-        require(
+        require( // SWC-116-Block values as a proxy for time : L99
             block.timestamp >= lockupPeriod,
             "No withdraw until lockup ends"
         );
@@ -121,7 +121,7 @@ contract StakingPlatform is IStakingPlatform, Ownable {
      * @dev Can only be called one year after the end of the staking period
      */
     function withdrawResidualBalance() external onlyOwner {
-        require(
+        require( // SWC-116-Block values as a proxy for time : L125
             block.timestamp >= endPeriod + (365 * 1 days),
             "Withdraw 1year after endPeriod"
         );
@@ -211,10 +211,10 @@ contract StakingPlatform is IStakingPlatform, Ownable {
     {
         bool early = startPeriod > userStartTime[stakeHolder];
         uint startTime;
-        if (endPeriod > block.timestamp) {
+        if (endPeriod > block.timestamp) { // SWC-116-Block values as a proxy for time : L214
             startTime = early ? startPeriod : userStartTime[stakeHolder];
-            uint timeRemaining = stakingDuration -
-                (block.timestamp - startTime);
+            uint timeRemaining = stakingDuration - // SWC-116-Block values as a proxy for time : L216-L217
+                (block.timestamp - startTime); 
             return
                 (precision * (stakingDuration - timeRemaining)) /
                 stakingDuration;
@@ -247,7 +247,7 @@ contract StakingPlatform is IStakingPlatform, Ownable {
      */
     function _updateRewards() private {
         rewardsToClaim[_msgSender()] = _calculateRewards(_msgSender());
-        userStartTime[_msgSender()] = (block.timestamp >= endPeriod)
+        userStartTime[_msgSender()] = (block.timestamp >= endPeriod) // SWC-116-Block values as a proxy for time : L250-L252
             ? endPeriod
             : block.timestamp;
     }

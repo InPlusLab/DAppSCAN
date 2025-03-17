@@ -122,7 +122,7 @@ contract PowerBombFtmCurveGeist is PowerBombAvaxCurve {
 
             uint GEISTAmt = GEIST.balanceOf(address(this));
             if (GEISTAmt > 0) WFTMAmt += swap2(address(GEIST), address(WFTM), GEISTAmt);
-            // SWC-135-Code With No Effects
+            // SWC-135-Code With No Effects : L126
             isDeposit; // To silence warning
 
             // Swap WFTM to reward token

@@ -328,19 +328,21 @@ contract SHIELDToken is Context, IBEP20, Ownable {
   /**
    * @dev Returns the token decimals.
    */
-  //  SWC-135-Code With No Effects: L332 - L346
+  //  SWC-135-Code With No Effects: L332 - L334
   function decimals() external view override returns (uint256) {
     return _decimals;
   }
   /**
    * @dev Returns the token symbol.
    */
+  //  SWC-135-Code With No Effects: L339 - L341
   function symbol() external view override returns (string memory) {
     return _symbol;
   }
   /**
   * @dev Returns the token name.
   */
+  //  SWC-135-Code With No Effects: L346 - L348
   function name() external view override returns (string memory) {
     return _name;
   }

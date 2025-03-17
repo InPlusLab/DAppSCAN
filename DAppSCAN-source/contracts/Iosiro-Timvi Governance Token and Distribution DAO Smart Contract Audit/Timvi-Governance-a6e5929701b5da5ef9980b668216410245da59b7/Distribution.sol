@@ -72,7 +72,7 @@ contract Distribution is LPTokenWrapper, IRewardDistributionRecipient {
     function lastTimeRewardApplicable() public view returns (uint256) {
         return Math.min(now, periodFinish);
     }
-    //SWC-111-Use of Deprecated Solidity Functions:L73, 130-138
+    //SWC-111-Use of Deprecated Solidity Functions:L73
     function rewardPerToken() public view returns (uint256) {
         if (totalSupply() == 0) {
             return rewardPerTokenStored;
@@ -126,7 +126,7 @@ contract Distribution is LPTokenWrapper, IRewardDistributionRecipient {
         override
         onlyRewardDistribution
         updateReward(address(0))
-    {
+    {//SWC-111-Use of Deprecated Solidity Functions:L130-L135
         if (now >= periodFinish) {
             rewardRate = reward.div(DURATION);
         } else {

@@ -204,7 +204,7 @@ contract SpookyWorker03 is OwnableUpgradeSafe, ReentrancyGuardUpgradeSafe, IWork
   /// @param _treasuryBountyBps - The bounty bps deducted from the reinvest reward.
   /// @param _callerBalance - The balance that is owned by the msg.sender within the execution scope.
   /// @param _reinvestThreshold - The threshold to be reinvested if reward pass over.
-  // SWC-114-Transaction Order Dependence: L208
+  // SWC-114-Transaction Order Dependence: L208-L246
   function _reinvest(
     address _treasuryAccount,
     uint256 _treasuryBountyBps,

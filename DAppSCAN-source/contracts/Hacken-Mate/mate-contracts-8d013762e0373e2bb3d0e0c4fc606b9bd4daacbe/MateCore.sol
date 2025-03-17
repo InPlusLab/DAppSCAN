@@ -3,7 +3,7 @@ pragma solidity >=0.8.0;
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./OrderBook.sol";
 import "./FeeManager.sol";
-//    SWC-116-Block values as a proxy for time:L86、166、225
+
 contract MateCore is OrderBook, FeeManager, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
@@ -82,7 +82,7 @@ contract MateCore is OrderBook, FeeManager, ReentrancyGuard {
         );
         if (allowance < order.amountIn)
             return (false, "Insufficient allowance");
-
+//    SWC-116-Block values as a proxy for time: L86
         if (block.timestamp > order.expiration) return (false, "Expired order");
 
         if (order.status != Status.Open) return (false, "Invalid status");
@@ -162,7 +162,7 @@ contract MateCore is OrderBook, FeeManager, ReentrancyGuard {
             address(this)
         );
         require(allowance >= order.amountIn, "Insufficient allowance");
-
+//    SWC-116-Block values as a proxy for time: L166
         require(block.timestamp <= order.expiration, "Expired order");
 
         require(order.status == Status.Open, "Invalid status");
@@ -216,7 +216,7 @@ contract MateCore is OrderBook, FeeManager, ReentrancyGuard {
         _removeOpenOrder(order.id);
 
         _transferFees(fee, executorFee, order.tokenIn, _pathToMate);
-
+//    SWC-116-Block values as a proxy for time: L225
         emit OrderExecuted(
             _orderId,
             order.creator,
