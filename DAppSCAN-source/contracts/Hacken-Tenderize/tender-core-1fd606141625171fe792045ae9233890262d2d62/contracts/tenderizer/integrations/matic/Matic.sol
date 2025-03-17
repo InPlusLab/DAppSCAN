@@ -90,7 +90,7 @@ contract Matic is Tenderizer {
         }
 
         // approve tokens
-        // SWC-104-Unchecked Call Return Value: L93
+        // SWC-104-Unchecked Call Return Value: L94
         steak.approve(maticStakeManager, amount);
 
         // stake tokens
@@ -144,7 +144,7 @@ contract Matic is Tenderizer {
         require(amount > 0, "ZERO_AMOUNT");
 
         // Transfer amount from unbondingLock to _account
-        // SWC-104-Unchecked Call Return Value: L147
+        // SWC-104-Unchecked Call Return Value: L148
         steak.transfer(_account, amount);
 
         emit Withdraw(_account, amount, _withdrawalID);

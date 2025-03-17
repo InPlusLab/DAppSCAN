@@ -21,7 +21,7 @@ contract SealedController {
 	function calculateSealed(address from, uint256 amount) public view returns (uint256){
 		return amount.mul(1e5);
 	}
-	// SWC-100-Function Default Visibility: L24
+	// SWC-100-Function Default Visibility: L25
 	function calculateWithdrawAmount(address to, uint256 amount) public view returns (uint256){
 		return amount.mul(1e5);
 	}
@@ -92,7 +92,7 @@ contract Vault is Ownable {
 		return (sealedAmount, timeAmount);
 	}
 
-	// SWC-100-Function Default Visibility: L94
+	// SWC-100-Function Default Visibility: L96
     function lockFor(uint256 amount, address _user) public returns (uint256) {
 		require(block.number > startBlock && block.number < endLockBlock, 'inappropriate time for locking');
 

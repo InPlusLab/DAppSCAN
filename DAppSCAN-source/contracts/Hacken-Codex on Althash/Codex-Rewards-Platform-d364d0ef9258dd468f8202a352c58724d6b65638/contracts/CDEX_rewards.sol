@@ -414,7 +414,7 @@ contract CDEXStakingPool is ReentrancyGuard, Pausable {
             CDEXRanking.insert(_balances[msg.sender], msg.sender);
         }
         /// Transfers the tokens into the sender's address
-        // SWC-104-Unchecked Call Return Value: L415
+        // SWC-104-Unchecked Call Return Value: L418
         CDEXToken.transfer(msg.sender, amount);
         /// Emits the event
         emit Withdrawn(msg.sender, amount);

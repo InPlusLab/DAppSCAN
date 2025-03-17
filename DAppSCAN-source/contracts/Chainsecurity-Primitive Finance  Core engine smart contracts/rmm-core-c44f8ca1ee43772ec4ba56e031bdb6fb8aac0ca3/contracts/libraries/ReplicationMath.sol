@@ -66,7 +66,7 @@ library ReplicationMath {
     /// @param   sigma          Volatility of the Pool as an unsigned 256-bit integer w/ precision of 1e4, 10000 = 100%
     /// @param   tau            Time until expiry in seconds as an unsigned 256-bit integer
     /// @return  riskyPerLiquidity = 1 - CDF(CDF^-1((stablePerLiquidity - invariantLastX64)/K) + sigma*sqrt(tau))
-    // SWC-135-Code With No Effects: L70-117
+    // SWC-135-Code With No Effects: L70-86
     function getRiskyGivenStable(
         int128 invariantLastX64,
         uint256 scaleFactorRisky,

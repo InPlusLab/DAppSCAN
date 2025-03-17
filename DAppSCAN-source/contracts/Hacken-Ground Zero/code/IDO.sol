@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-// SWC-103-Floating Pragma: L4
+// SWC-103-Floating Pragma: L3
 pragma solidity ^0.8.4;
 
 /**
@@ -81,8 +81,8 @@ contract IDO is Ownable {
         emit NewIDOParticipant(token, msg.sender, amountToSpent);
     }
 
-// SWC-105-Unprotected Ether Withdrawal: L83 - L106
-// SWC-107-Reentrancy: L84 - L107
+// SWC-105-Unprotected Ether Withdrawal: L86 - L110
+// SWC-107-Reentrancy: L86 - L110
     function claim() external {
         require(block.timestamp > idoFinish, "The IDO is not finished yet");
         require(pool[msg.sender].start != 0, "You're not participating in IDO");
@@ -145,11 +145,11 @@ contract IDO is Ownable {
         allowedAmountToClaim = _allowedAmountToClaim;
     }
 
-// SWC-105-Unprotected Ether Withdrawal: L145 - l149
+    // SWC-105-Unprotected Ether Withdrawal: L149 - L154
     function claimTheInvestments(IERC20 token, uint256 amount) external onlyOwner {
         require(block.timestamp > idoFinish, "The IDO is not finished yet");
 
-// SWC-104-Unchecked Call Return Value: L150
+    // SWC-104-Unchecked Call Return Value: L153
         token.transfer(msg.sender, amount);
     }
 

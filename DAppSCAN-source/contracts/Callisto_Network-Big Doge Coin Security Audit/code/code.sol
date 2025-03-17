@@ -706,7 +706,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     uint256 public _tTotal;
     uint256 private _rTotal;
     uint256 private _tFeeTotal;
-    // SWC-135-Code With No Effects: L709
+    // SWC-135-Code With No Effects: L710
     bool public mintedByDxsale = true;
     string public _name;
     string public _symbol;

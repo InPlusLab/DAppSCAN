@@ -17,7 +17,7 @@ import "./interfaces/ILayerZeroUltraLightNodeV1.sol";
 
 contract Relayer is ILayerZeroRelayer, ReentrancyGuard, OwnableUpgradeable, Proxied {
     using SafeERC20 for IERC20;
-    // SWC-101-Integer Overflow and Underflow: L20-22
+    // SWC-101-Integer Overflow and Underflow: L21-23
     using SafeMath for uint;
     using SafeMath for uint128;
     using SafeMath for uint64;

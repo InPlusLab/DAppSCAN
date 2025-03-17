@@ -79,7 +79,7 @@ contract Voting{
         deposits[pid][msg.sender] = deposits[pid][msg.sender].add(amount);
         proposals[pid].votes[agree] = proposals[pid].votes[agree].add(amount);
     }
-//SWC-113-DoS with Failed Call:L83-101, 133-139
+    // SWC-113-DoS with Failed Call: L83 - L101
     function finalizeVoting () external {
         uint256 pid = this.getCurrentVoting();
         require(proposals[pid].end_time <= block.timestamp);
@@ -130,6 +130,7 @@ contract Voting{
         revert();
     }
 
+    // SWC-113-DoS with Failed Call: L134 - L140, 
     function isPassed (uint256 pid) public constant returns(bool) {
         require(proposals[pid].isFinalized);
         uint256 ayes = getAyes(pid);

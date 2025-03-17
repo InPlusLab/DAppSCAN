@@ -790,7 +790,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
     function balanceOf(address account) public view override returns (uint256) {
-      // SWC-135-Code With No Effects: L793 - L794
+      // SWC-135-Code With No Effects: L794 - L795
         if (_isExcluded[account]) return _tOwned[account];
         return tokenFromReflection(_rOwned[account]);
     }
@@ -951,7 +951,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         return (rSupply, tSupply);
     }
     
-    // SWC-135-Code With No Effects: L952 - L958
+    // SWC-135-Code With No Effects: L955 - L961
     function _takeLiquidity(uint256 tLiquidity) private {
         uint256 currentRate =  _getRate();
         uint256 rLiquidity = tLiquidity.mul(currentRate);
@@ -1102,7 +1102,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
     //this method is responsible for taking all fee, if takeFee is true
-    // SWC-135-Code With No Effects: L1103 - L1121
+    // SWC-135-Code With No Effects: L1106 - L1124
     function _tokenTransfer(address sender, address recipient, uint256 amount,bool takeFee) private {
         if(!takeFee)
             removeAllFee();
@@ -1133,7 +1133,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
     }
 
 
-// SWC-135-Code With No Effects: L1134 - L1143
+// SWC-135-Code With No Effects: L1137 - L1145
     function _transferToExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
         _rOwned[sender] = _rOwned[sender].sub(rAmount);
@@ -1144,7 +1144,7 @@ contract LiquidityGeneratorToken is Context, IERC20, Ownable {
         emit Transfer(sender, recipient, tTransferAmount);
     }
 
-// SWC-135-Code With No Effects: L1145 - L1153
+// SWC-135-Code With No Effects: L1148 - L1156
     function _transferFromExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
         _tOwned[sender] = _tOwned[sender].sub(tAmount);

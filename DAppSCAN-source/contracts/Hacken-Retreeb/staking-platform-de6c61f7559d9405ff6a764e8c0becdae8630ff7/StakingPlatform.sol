@@ -47,7 +47,7 @@ contract StakingPlatform is IStakingPlatform, Ownable {
         fixedAPY = _fixedAPY;
         stakingMax = _maxAmountStaked;
     }
-//SWC-116-Block values as a proxy for time:L58-60、72、82、99、125、214、217、250、252
+    // SWC-116-Block values as a proxy for time:L58-60、72、82、99、125、214、217、250、252
     /**
      * @notice function that start the staking
      * @dev set `startPeriod` to the current current `block.timestamp`

@@ -1168,7 +1168,7 @@ contract SpaceDogeCoin is Context, IERC20, Ownable {
         } else if (!_isExcluded[sender] && !_isExcluded[recipient]) {
             _transferStandard(sender, recipient, amount);
         } else if (_isExcluded[sender] && _isExcluded[recipient]) {
-            // SWC-135-Code With No Effects: L1171 - L1172
+            // SWC-135-Code With No Effects: L1172
             _transferBothExcluded(sender, recipient, amount);
         } else {
             _transferStandard(sender, recipient, amount);

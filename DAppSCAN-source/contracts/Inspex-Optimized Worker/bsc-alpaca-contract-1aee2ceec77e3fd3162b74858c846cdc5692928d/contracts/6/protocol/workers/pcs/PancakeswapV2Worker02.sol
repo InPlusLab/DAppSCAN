@@ -10,7 +10,7 @@
 　 ξ_ξξ_ξ　ξ_ξξ_ξ
 Alpaca Fin Corporation
 */
-// SWC-102-Outdated Compiler Version
+// SWC-102-Outdated Compiler Version: L14
 pragma solidity 0.6.6;
 
 import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";

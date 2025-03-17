@@ -63,7 +63,7 @@ contract SpaceMonkey is SpaceMonkeyStorage, IERC20 {
       return true;
   }
 
-// SWC-119-Shadowing State Variables: L66
+// SWC-119-Shadowing State Variables: L67
   function allowance(address owner, address spender)
     public
     view
@@ -190,7 +190,7 @@ contract SpaceMonkey is SpaceMonkeyStorage, IERC20 {
     }
   }
 
-// SWC-119-Shadowing State Variables: L193
+// SWC-119-Shadowing State Variables: L194
   function _approve(
     address owner,
     address spender,

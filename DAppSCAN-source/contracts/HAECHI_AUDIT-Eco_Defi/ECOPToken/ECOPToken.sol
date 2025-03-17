@@ -192,7 +192,7 @@ library SafeMath {
   /**
    * @dev x to the power of y
    */
-// SWC-104-Unchecked Call Return Value: L196
+// SWC-104-Unchecked Call Return Value: L196 - L210
   function pwr(uint256 x, uint256 y)
   internal
   pure

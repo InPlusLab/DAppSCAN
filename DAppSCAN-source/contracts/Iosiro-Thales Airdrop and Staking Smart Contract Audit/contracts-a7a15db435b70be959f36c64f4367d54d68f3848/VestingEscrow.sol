@@ -54,9 +54,10 @@ contract VestingEscrow is ReentrancyGuard, Owned {
         }
 
         initialLockedSupply = initialLockedSupply.add(_totalAmount);
+        //SWC-101-Integer Overflow and Underflow: L58
         unallocatedSupply -= _totalAmount;
     }
-//SWC-101-Integer Overflow and Underflow:L57
+
     function _totalVestedOf(address _recipient, uint256 _time) internal view returns (uint256) {
         uint256 start = startTime;
         uint256 end = endTime;

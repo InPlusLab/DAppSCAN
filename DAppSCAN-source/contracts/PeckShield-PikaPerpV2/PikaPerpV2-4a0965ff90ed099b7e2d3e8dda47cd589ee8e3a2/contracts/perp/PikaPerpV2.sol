@@ -398,7 +398,7 @@ contract PikaPerpV2 is ReentrancyGuard {
     }
 
     // Closes position from Position with id = positionId
-    //SWC-107-Reentrancy: L402-359
+    // SWC-107-Reentrancy: L402-459
     function closePositionWithId(
         uint256 positionId,
         uint256 margin

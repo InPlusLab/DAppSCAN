@@ -357,8 +357,8 @@ contract AOC_BEP is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20
         _unpause();
     }
 
-// SWC-135-Code With No Effects: L360
-// SWC-105-Unprotected Ether Withdrawal: L361
+// SWC-135-Code With No Effects: L362
+// SWC-105-Unprotected Ether Withdrawal: L362
     function withdrawBNBFromContract(address payable recipient, uint256 amount) external onlyOwner payable {
         require(recipient != address(0), "Address cant be zero address");
         require(amount <= address(this).balance, "withdrawBNBFromContract: withdraw amount exceeds BNB balance");              

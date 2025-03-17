@@ -291,7 +291,7 @@ abstract contract FountainBase is FountainToken, ReentrancyGuard, ErrorMsg {
         info.totalBalance = info.totalBalance.add(amount);
     }
 
-    // SWC-107-Reentrancy
+    // SWC-107-Reentrancy: L295-L308
     function _withdrawAngel(
         address user,
         IAngel angel,

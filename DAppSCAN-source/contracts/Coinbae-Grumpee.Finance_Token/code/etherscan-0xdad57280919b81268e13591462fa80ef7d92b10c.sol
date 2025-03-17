@@ -483,7 +483,7 @@
             return true;
         }
 
-        // SWC-119-Shadowing State Variables: L486
+        // SWC-119-Shadowing State Variables: L487
         function allowance(address owner, address spender) public view override returns (uint256) {
             return _allowances[owner][spender];
         }
