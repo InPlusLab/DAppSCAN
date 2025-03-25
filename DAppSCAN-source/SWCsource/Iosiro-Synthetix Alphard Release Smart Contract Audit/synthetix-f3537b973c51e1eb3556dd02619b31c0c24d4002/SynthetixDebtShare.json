@@ -9,7 +9,12 @@
   {
    "category": "SWC-135-Code With No Effects",
    "function": "finishSetup",
-   "lineNumber": "L213-247"
+   "lineNumber": "L213 - L229"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "_deductBalance",
+   "lineNumber": "L231 - L247"
   }
  ]
 }

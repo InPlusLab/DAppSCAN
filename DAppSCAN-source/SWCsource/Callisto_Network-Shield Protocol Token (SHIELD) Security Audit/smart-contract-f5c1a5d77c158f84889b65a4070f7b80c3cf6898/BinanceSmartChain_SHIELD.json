@@ -4,7 +4,17 @@
   {
    "category": "SWC-135-Code With No Effects",
    "function": "decimals",
-   "lineNumber": "L332 - L346"
+   "lineNumber": "L332 - L334"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "symbol",
+   "lineNumber": "L339 - L341"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "name",
+   "lineNumber": "L346 - L348"
   }
  ]
 }

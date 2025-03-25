@@ -4,7 +4,7 @@
   {
    "category": "SWC-128-DoS With Block Gas Limit",
    "function": "distributeRewards",
-   "lineNumber": "L32-85"
+   "lineNumber": "L32-34"
   }
  ]
 }

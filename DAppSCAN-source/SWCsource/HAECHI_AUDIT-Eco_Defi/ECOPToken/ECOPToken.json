@@ -4,7 +4,7 @@
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "pwr",
-   "lineNumber": "L196"
+   "lineNumber": "L196 - L210"
   }
  ]
 }

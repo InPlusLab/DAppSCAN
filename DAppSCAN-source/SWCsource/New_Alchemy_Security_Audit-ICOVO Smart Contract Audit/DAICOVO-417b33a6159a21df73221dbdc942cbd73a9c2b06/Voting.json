@@ -4,7 +4,12 @@
   {
    "category": "SWC-113-DoS with Failed Call",
    "function": "finalizeVoting ",
-   "lineNumber": "L83-101, 133-139"
+   "lineNumber": "L83 - L101"
+  },
+  {
+   "category": "SWC-113-DoS with Failed Call",
+   "function": "isPassed ",
+   "lineNumber": "L134 - L140, "
   }
  ]
 }

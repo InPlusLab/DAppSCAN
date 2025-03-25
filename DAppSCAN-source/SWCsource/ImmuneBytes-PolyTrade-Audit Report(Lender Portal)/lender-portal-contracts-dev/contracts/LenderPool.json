@@ -4,7 +4,7 @@
   {
    "category": "SWC-114-Transaction Order Dependence",
    "function": "_swapExactTokens",
-   "lineNumber": "L375"
+   "lineNumber": "L375-L391"
   }
  ]
 }

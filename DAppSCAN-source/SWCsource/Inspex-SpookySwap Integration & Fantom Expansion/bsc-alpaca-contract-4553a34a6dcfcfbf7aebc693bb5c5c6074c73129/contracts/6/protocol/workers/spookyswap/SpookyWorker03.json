@@ -4,7 +4,7 @@
   {
    "category": "SWC-114-Transaction Order Dependence",
    "function": "_reinvest",
-   "lineNumber": "L208"
+   "lineNumber": "L208-L246"
   }
  ]
 }

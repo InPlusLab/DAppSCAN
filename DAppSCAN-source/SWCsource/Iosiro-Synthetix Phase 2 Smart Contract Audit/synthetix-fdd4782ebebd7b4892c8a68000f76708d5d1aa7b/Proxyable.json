@@ -3,8 +3,8 @@
  "SWCs": [
   {
    "category": "SWC-108-State Variable Default Visibility",
-   "function": "constructor",
-   "lineNumber": "L41"
+   "function": "s, otherwise their invocations can use stale values. */",
+   "lineNumber": "L42"
   }
  ]
 }

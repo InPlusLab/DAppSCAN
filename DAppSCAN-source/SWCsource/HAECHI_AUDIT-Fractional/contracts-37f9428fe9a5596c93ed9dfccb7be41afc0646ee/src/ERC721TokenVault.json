@@ -4,7 +4,7 @@
   {
    "category": "SWC-113-DoS with Failed Call",
    "function": "bid",
-   "lineNumber": "L262"
+   "lineNumber": "L262 - L278"
   }
  ]
 }

@@ -129,7 +129,7 @@
   {
    "category": "SWC-124-Write to Arbitrary Storage Location",
    "function": "sample",
-   "lineNumber": "L734, 735"
+   "lineNumber": "L734, L735"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",

@@ -3,7 +3,7 @@
  "SWCs": [
   {
    "category": "SWC-108-State Variable Default Visibility",
-   "function": "N/A",
+   "function": "initialize",
    "lineNumber": "L63 - L76"
   }
  ]

@@ -9,7 +9,7 @@
   {
    "category": "SWC-114-Transaction Order Dependence",
    "function": "execute",
-   "lineNumber": "L59"
+   "lineNumber": "L59-L105"
   }
  ]
 }

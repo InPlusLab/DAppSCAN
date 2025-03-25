@@ -4,12 +4,12 @@
   {
    "category": "SWC-103-Floating Pragma",
    "function": "N/A",
-   "lineNumber": "L2"
+   "lineNumber": "L3"
   },
   {
    "category": "SWC-128-DoS With Block Gas Limit",
    "function": "massHarvest",
-   "lineNumber": "L71"
+   "lineNumber": "L76"
   }
  ]
 }

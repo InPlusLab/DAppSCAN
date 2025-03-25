@@ -4,7 +4,12 @@
   {
    "category": "SWC-111-Use of Deprecated Solidity Functions",
    "function": "onlyTemporaryOwner {",
-   "lineNumber": "L11, 20"
+   "lineNumber": "L14-L17"
+  },
+  {
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
+   "function": "_onlyTemporaryOwner",
+   "lineNumber": "L19-22"
   }
  ]
 }

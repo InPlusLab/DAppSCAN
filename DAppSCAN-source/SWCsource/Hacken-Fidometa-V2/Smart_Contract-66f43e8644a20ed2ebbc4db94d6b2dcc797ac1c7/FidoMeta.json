@@ -19,7 +19,7 @@
   {
    "category": "SWC-128-DoS With Block Gas Limit",
    "function": "_getCurrentSupply",
-   "lineNumber": "L772 - L779"
+   "lineNumber": "L775 - L782"
   },
   {
    "category": "SWC-135-Code With No Effects",
@@ -29,22 +29,22 @@
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_tokenTransfer",
-   "lineNumber": "L977 - L979"
+   "lineNumber": "L978 - L980"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "unlock",
-   "lineNumber": "L1004 - L1005"
+   "lineNumber": "L1009 - L1010"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "transferWithLock",
-   "lineNumber": "L1044 - L1047"
+   "lineNumber": "L1047 - L1050"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_transferFromExcluded",
-   "lineNumber": "L1061 - L1063"
+   "lineNumber": "L1062 - L1071"
   }
  ]
 }

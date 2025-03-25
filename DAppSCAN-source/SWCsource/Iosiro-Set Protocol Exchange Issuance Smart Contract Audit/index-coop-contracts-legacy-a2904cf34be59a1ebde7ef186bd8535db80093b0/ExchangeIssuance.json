@@ -4,7 +4,22 @@
   {
    "category": "SWC-134-Message call with hardcoded gas amount",
    "function": "issueExactSetFromToken",
+   "lineNumber": "L248"
+  },
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "issueExactSetFromToken",
    "lineNumber": "L247, L279, L349"
+  },
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "issueExactSetFromETH",
+   "lineNumber": "L281"
+  },
+  {
+   "category": "SWC-134-Message call with hardcoded gas amount",
+   "function": "redeemExactSetForETH",
+   "lineNumber": "L352"
   }
  ]
 }

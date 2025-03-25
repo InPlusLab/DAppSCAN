@@ -4,7 +4,7 @@
   {
    "category": "SWC-107-Reentrancy",
    "function": "closePositionWithId",
-   "lineNumber": "L402-359"
+   "lineNumber": "L402-459"
   }
  ]
 }

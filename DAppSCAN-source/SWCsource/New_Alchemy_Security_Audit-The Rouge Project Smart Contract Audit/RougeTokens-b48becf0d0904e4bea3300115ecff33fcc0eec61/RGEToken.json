@@ -9,7 +9,17 @@
   {
    "category": "SWC-101-Integer Overflow and Underflow",
    "function": "startCrowdsaleY0",
-   "lineNumber": "L43,69,79,80"
+   "lineNumber": "L43"
+  },
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "endCrowdsale",
+   "lineNumber": "L70"
+  },
+  {
+   "category": "SWC-101-Integer Overflow and Underflow",
+   "function": "burn",
+   "lineNumber": "L81 - L82"
   }
  ]
 }

@@ -9,7 +9,7 @@
   {
    "category": "SWC-107-Reentrancy",
    "function": "setAllowance",
-   "lineNumber": "L18"
+   "lineNumber": "L19"
   }
  ]
 }

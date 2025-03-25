@@ -19,7 +19,7 @@
   {
    "category": "SWC-135-Code With No Effects",
    "function": "balanceOf",
-   "lineNumber": "L793 - L794"
+   "lineNumber": "L794 - L795"
   },
   {
    "category": "SWC-135-Code With No Effects",
@@ -44,22 +44,22 @@
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_takeLiquidity",
-   "lineNumber": "L952 - L958"
+   "lineNumber": "L955 - L961"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_tokenTransfer",
-   "lineNumber": "L1103 - L1121"
+   "lineNumber": "L1106 - L1124"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_transferToExcluded",
-   "lineNumber": "L1134 - L1143"
+   "lineNumber": "L1137 - L1145"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_transferFromExcluded",
-   "lineNumber": "L1145 - L1153"
+   "lineNumber": "L1148 - L1156"
   }
  ]
 }

@@ -9,7 +9,7 @@
   {
    "category": "SWC-100-Function Default Visibility",
    "function": "calculateWithdrawAmount",
-   "lineNumber": "L24"
+   "lineNumber": "L25"
   },
   {
    "category": "SWC-100-Function Default Visibility",
@@ -24,7 +24,7 @@
   {
    "category": "SWC-100-Function Default Visibility",
    "function": "lockFor",
-   "lineNumber": "L94"
+   "lineNumber": "L96"
   },
   {
    "category": "SWC-100-Function Default Visibility",

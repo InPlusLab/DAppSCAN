@@ -4,7 +4,17 @@
   {
    "category": "SWC-116-Block values as a proxy for time",
    "function": "onlyValidPurchase",
-   "lineNumber": "L132\u3001349\u3001358"
+   "lineNumber": "L132"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "startSale",
+   "lineNumber": "L349"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "endSale",
+   "lineNumber": "L358"
   }
  ]
 }

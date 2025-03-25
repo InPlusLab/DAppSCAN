@@ -4,12 +4,17 @@
   {
    "category": "SWC-111-Use of Deprecated Solidity Functions",
    "function": "rewardPerToken",
-   "lineNumber": "L73, 130-138"
+   "lineNumber": "L73"
+  },
+  {
+   "category": "SWC-111-Use of Deprecated Solidity Functions",
+   "function": "notifyRewardAmount",
+   "lineNumber": "L130-L135"
   },
   {
    "category": "SWC-101-Integer Overflow and Underflow",
-   "function": "distributeAdditionalRewards",
-   "lineNumber": "L138"
+   "function": "notifyRewardAmount",
+   "lineNumber": "L139"
   }
  ]
 }

@@ -9,12 +9,12 @@
   {
    "category": "SWC-100-Function Default Visibility",
    "function": "stop",
-   "lineNumber": "L88"
+   "lineNumber": "L89 - L91"
   },
   {
    "category": "SWC-100-Function Default Visibility",
    "function": "start",
-   "lineNumber": "L92"
+   "lineNumber": "L93 - L95"
   }
  ]
 }

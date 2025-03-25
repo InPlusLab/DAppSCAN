@@ -3,8 +3,8 @@
  "SWCs": [
   {
    "category": "SWC-101-Integer Overflow and Underflow",
-   "function": "_totalVestedOf",
-   "lineNumber": "L57"
+   "function": "fund",
+   "lineNumber": "L58"
   }
  ]
 }

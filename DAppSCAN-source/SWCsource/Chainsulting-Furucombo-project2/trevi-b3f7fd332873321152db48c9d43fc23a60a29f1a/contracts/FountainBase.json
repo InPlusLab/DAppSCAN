@@ -9,7 +9,7 @@
   {
    "category": "SWC-107-Reentrancy",
    "function": "_withdrawAngel",
-   "lineNumber": "// SWC-107-Reentrancy"
+   "lineNumber": "L295-L308"
   }
  ]
 }

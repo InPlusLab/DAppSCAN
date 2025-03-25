@@ -9,12 +9,12 @@
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "_stake",
-   "lineNumber": "L93"
+   "lineNumber": "L94"
   },
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "_withdraw",
-   "lineNumber": "L147"
+   "lineNumber": "L148"
   }
  ]
 }

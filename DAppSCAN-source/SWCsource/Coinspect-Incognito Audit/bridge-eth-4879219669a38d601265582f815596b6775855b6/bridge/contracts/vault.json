@@ -9,12 +9,12 @@
   {
    "category": "SWC-114-Transaction Order Dependence",
    "function": "execute",
-   "lineNumber": "L512 - L547"
+   "lineNumber": "L513 - L548"
   },
   {
    "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "execute",
-   "lineNumber": "L513 - 548"
+   "lineNumber": "L513 - L548"
   }
  ]
 }

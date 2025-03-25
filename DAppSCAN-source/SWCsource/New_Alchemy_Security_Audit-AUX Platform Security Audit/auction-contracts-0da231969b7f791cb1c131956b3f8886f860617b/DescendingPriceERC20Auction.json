@@ -4,12 +4,7 @@
   {
    "category": "SWC-114-Transaction Order Dependence",
    "function": "N/A",
-   "lineNumber": "L1-492"
-  },
-  {
-   "category": "SWC-114-Transaction Order Dependence",
-   "function": "N/A",
-   "lineNumber": "L1-482"
+   "lineNumber": "L1-481"
   },
   {
    "category": "SWC-135-Code With No Effects",

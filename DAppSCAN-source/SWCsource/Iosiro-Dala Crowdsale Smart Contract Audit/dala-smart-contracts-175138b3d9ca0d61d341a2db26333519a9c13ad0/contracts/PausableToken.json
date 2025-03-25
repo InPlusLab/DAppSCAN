@@ -4,7 +4,12 @@
   {
    "category": "SWC-100-Function Default Visibility",
    "function": "transfer",
-   "lineNumber": "L14-20"
+   "lineNumber": "L14-L16"
+  },
+  {
+   "category": "SWC-100-Function Default Visibility",
+   "function": "transferFrom",
+   "lineNumber": "L18-L20"
   }
  ]
 }

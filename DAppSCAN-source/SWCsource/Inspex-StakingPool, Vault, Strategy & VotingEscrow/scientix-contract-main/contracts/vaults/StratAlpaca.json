@@ -4,7 +4,7 @@
   {
    "category": "SWC-114-Transaction Order Dependence",
    "function": "deposit",
-   "lineNumber": "L191"
+   "lineNumber": "L191-L205"
   }
  ]
 }

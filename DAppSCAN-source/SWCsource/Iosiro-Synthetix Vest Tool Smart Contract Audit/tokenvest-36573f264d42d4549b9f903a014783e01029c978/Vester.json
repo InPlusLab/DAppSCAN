@@ -4,7 +4,12 @@
   {
    "category": "SWC-107-Reentrancy",
    "function": "redeemWithTransfer",
-   "lineNumber": "L51, 127"
+   "lineNumber": "L51 - L58"
+  },
+  {
+   "category": "SWC-107-Reentrancy",
+   "function": "mint",
+   "lineNumber": "L128 - L132"
   }
  ]
 }

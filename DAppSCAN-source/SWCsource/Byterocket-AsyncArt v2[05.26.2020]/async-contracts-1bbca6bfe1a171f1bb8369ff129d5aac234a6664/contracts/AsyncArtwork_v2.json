@@ -9,12 +9,7 @@
   {
    "category": "SWC-131-Presence of unused variables",
    "function": "useControlToken",
-   "lineNumber": "L600"
-  },
-  {
-   "category": "SWC-107-Reentrancy",
-   "function": "safeFundsTransfer",
-   "lineNumber": "L647"
+   "lineNumber": "L601"
   }
  ]
 }

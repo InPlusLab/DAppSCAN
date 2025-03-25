@@ -19,22 +19,22 @@
   {
    "category": "SWC-107-Reentrancy",
    "function": "deposit",
-   "lineNumber": "L245 - L249"
+   "lineNumber": "L247 - L251"
   },
   {
    "category": "SWC-107-Reentrancy",
    "function": "withdraw",
-   "lineNumber": "L270 - L304"
+   "lineNumber": "L272 - L306"
   },
   {
    "category": "SWC-107-Reentrancy",
    "function": "emergencyWithdraw",
-   "lineNumber": "L307 - L326"
+   "lineNumber": "L310 - L329"
   },
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "safePudTransfer",
-   "lineNumber": "L328 - L345"
+   "lineNumber": "L333 - L340"
   },
   {
    "category": "SWC-107-Reentrancy",
@@ -44,7 +44,7 @@
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "setPoolStrategy",
-   "lineNumber": "L378 - L384"
+   "lineNumber": "L384 - L389"
   }
  ]
 }

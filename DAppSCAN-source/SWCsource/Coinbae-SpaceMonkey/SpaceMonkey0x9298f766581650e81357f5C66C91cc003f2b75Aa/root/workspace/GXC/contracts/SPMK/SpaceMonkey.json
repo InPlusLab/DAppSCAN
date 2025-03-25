@@ -9,12 +9,12 @@
   {
    "category": "SWC-119-Shadowing State Variables",
    "function": "allowance",
-   "lineNumber": "L66"
+   "lineNumber": "L67"
   },
   {
    "category": "SWC-119-Shadowing State Variables",
    "function": "_approve",
-   "lineNumber": "L193"
+   "lineNumber": "L194"
   }
  ]
 }

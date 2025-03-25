@@ -4,7 +4,7 @@
   {
    "category": "SWC-103-Floating Pragma",
    "function": "N/A",
-   "lineNumber": "L4"
+   "lineNumber": "L3"
   },
   {
    "category": "SWC-135-Code With No Effects",
@@ -14,12 +14,12 @@
   {
    "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "claim",
-   "lineNumber": "L83 - L106"
+   "lineNumber": "L86 - L110"
   },
   {
    "category": "SWC-107-Reentrancy",
    "function": "claim",
-   "lineNumber": "L84 - L107"
+   "lineNumber": "L86 - L110"
   },
   {
    "category": "SWC-104-Unchecked Call Return Value",
@@ -29,12 +29,12 @@
   {
    "category": "SWC-105-Unprotected Ether Withdrawal",
    "function": "claimTheInvestments",
-   "lineNumber": "L145 - l149"
+   "lineNumber": "L149 - L154"
   },
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "claimTheInvestments",
-   "lineNumber": "L150"
+   "lineNumber": "L153"
   }
  ]
 }

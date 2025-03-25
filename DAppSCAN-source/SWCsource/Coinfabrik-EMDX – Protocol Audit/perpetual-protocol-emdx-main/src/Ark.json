@@ -9,7 +9,7 @@
   {
    "category": "SWC-113-DoS with Failed Call",
    "function": "withdrawForLoss",
-   "lineNumber": "L54"
+   "lineNumber": "L55"
   }
  ]
 }

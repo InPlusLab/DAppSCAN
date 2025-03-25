@@ -3,8 +3,18 @@
  "SWCs": [
   {
    "category": "SWC-116-Block values as a proxy for time",
-   "function": "N/A",
-   "lineNumber": "L86\u3001166\u3001225"
+   "function": "_canExecuteOrder",
+   "lineNumber": "L86"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_executeOrder",
+   "lineNumber": "L166"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_executeOrder",
+   "lineNumber": "L225"
   }
  ]
 }

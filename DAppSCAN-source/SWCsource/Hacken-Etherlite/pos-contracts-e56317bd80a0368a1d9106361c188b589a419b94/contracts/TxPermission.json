@@ -8,7 +8,7 @@
   },
   {
    "category": "SWC-131-Presence of unused variables",
-   "function": "N/A",
+   "function": "isInitialized",
    "lineNumber": "L313-L314"
   }
  ]

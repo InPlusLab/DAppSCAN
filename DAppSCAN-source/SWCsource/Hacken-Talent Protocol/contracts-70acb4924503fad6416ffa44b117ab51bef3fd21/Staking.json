@@ -4,7 +4,22 @@
   {
    "category": "SWC-116-Block values as a proxy for time",
    "function": "adminWithdraw",
-   "lineNumber": "L444, L601, L650, L651, L748, L749"
+   "lineNumber": "L444"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_checkpoint",
+   "lineNumber": "L601"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_updateS",
+   "lineNumber": "L650-L651"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "onlyWhileStakingEnabled",
+   "lineNumber": "L748-L749"
   }
  ]
 }

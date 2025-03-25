@@ -9,12 +9,37 @@
   {
    "category": "SWC-116-Block values as a proxy for time",
    "function": "RLC",
-   "lineNumber": "L37,49"
+   "lineNumber": "L37"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "unlock",
+   "lineNumber": "L49"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "transfer",
-   "lineNumber": "L62-67,69-76, 79-81, 83-87, 97-99"
+   "lineNumber": "L62-L67"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "transferFrom",
+   "lineNumber": "L69-L76"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "balanceOf",
+   "lineNumber": "L79-L81"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "approve",
+   "lineNumber": "L83-L87"
+  },
+  {
+   "category": "SWC-135-Code With No Effects",
+   "function": "allowance",
+   "lineNumber": "L97-L99"
   }
  ]
 }

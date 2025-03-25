@@ -3,7 +3,7 @@
  "SWCs": [
   {
    "category": "SWC-113-DoS with Failed Call",
-   "function": "to postpone the sale",
+   "function": "postponeSale",
    "lineNumber": "L294"
   },
   {

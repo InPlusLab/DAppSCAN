@@ -4,7 +4,7 @@
   {
    "category": "SWC-128-DoS With Block Gas Limit",
    "function": "createMultipleVesting",
-   "lineNumber": "L321 - L328"
+   "lineNumber": "L322 - L329"
   },
   {
    "category": "SWC-113-DoS with Failed Call",

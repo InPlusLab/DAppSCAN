@@ -4,7 +4,42 @@
   {
    "category": "SWC-116-Block values as a proxy for time",
    "function": "startStaking",
-   "lineNumber": "L58-60\u300172\u300182\u300199\u3001125\u3001214\u3001217\u3001250\u3001252"
+   "lineNumber": "L58-L60"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "deposit",
+   "lineNumber": "L72"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "deposit",
+   "lineNumber": "L82"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "withdraw",
+   "lineNumber": "L99"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "withdrawResidualBalance",
+   "lineNumber": "L125"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_percentageTimeRemaining",
+   "lineNumber": "L214"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_percentageTimeRemaining",
+   "lineNumber": "L216-L217"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "_updateRewards",
+   "lineNumber": "L250-L252"
   }
  ]
 }

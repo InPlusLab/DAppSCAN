@@ -9,7 +9,7 @@
   {
    "category": "SWC-135-Code With No Effects",
    "function": "_tokenTransfer",
-   "lineNumber": "L1171 - L1172"
+   "lineNumber": "L1172"
   }
  ]
 }

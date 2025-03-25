@@ -9,22 +9,17 @@
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "stake",
-   "lineNumber": "L117"
+   "lineNumber": "L154"
   },
   {
    "category": "SWC-104-Unchecked Call Return Value",
    "function": "unStake",
-   "lineNumber": "L189"
+   "lineNumber": "L201"
   },
   {
    "category": "SWC-135-Code With No Effects",
    "function": "unStake",
    "lineNumber": "L215 - L218"
-  },
-  {
-   "category": "SWC-104-Unchecked Call Return Value",
-   "function": "claim",
-   "lineNumber": "L570"
   }
  ]
 }

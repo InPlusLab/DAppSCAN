@@ -4,7 +4,17 @@
   {
    "category": "SWC-116-Block values as a proxy for time",
    "function": "placeOrder",
-   "lineNumber": "L76\u3001105\u3001145"
+   "lineNumber": "L76"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "placeOrder",
+   "lineNumber": "L105"
+  },
+  {
+   "category": "SWC-116-Block values as a proxy for time",
+   "function": "cancelExpiredOrders",
+   "lineNumber": "L145"
   }
  ]
 }
